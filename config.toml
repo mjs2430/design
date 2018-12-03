@@ -1,0 +1,5 @@
+baseURL = "https://mcclatchy.github.io/design"
+title = "McClatchy Design"
+
+languageCode = "en-us"
+relativeURLs = true

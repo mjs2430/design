@@ -1,0 +1,90 @@
+/**
+ * Story organism: Saratoga design system
+ */
+
+.story {
+  background-color: white;
+}
+
+.story > * {
+  max-width: 720px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.story > figure {
+  max-width: 1140px;
+  padding: 0;
+}
+
+/** API cleanup */
+.story > p:empty {
+  display: none;
+}
+
+.story > h2, .story > h3, .story > h4, .story > h5, .story > h6 {
+  font-weight: 600;
+  font-family: "McClatchy Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.story p a {
+  text-decoration: underline;
+}
+
+/** Header molecule */
+
+.story header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.story header > * {
+  padding: 15px;
+  margin: 0;
+  align-items: center;
+}
+
+/** Inline CTA */
+
+.inline-cta {
+  display: block;
+  margin: 50px auto;
+}
+
+/** Author card */
+
+.author-card-row {
+  display: flex;
+  align-items: center;
+}
+
+.author-card-thumbnail {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.author-card-name {
+  flex: 1;
+  padding: 15px;
+}
+
+.author-card-name a {
+  border-bottom: 1px solid #757575;
+}
+
+.author-card-cta {
+  padding-left: 0;
+  padding-right: 0;
+  border-top: 1px solid #ddd;
+}
+
+.author-card-cta h4 {
+  color: #0066B3;
+  font-weight: bold;
+}
