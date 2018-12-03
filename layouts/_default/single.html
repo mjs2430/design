@@ -1,3 +1,12 @@
+{{ define "stylesheets" }}
+<link rel="stylesheet" href="/css/story.css">
+{{ end }}
+
 {{ define "content" }}
-{{ .Content }}
+<div class="story">
+  <header class="card-info">
+    <h1>{{ .Title }}</h1>
+  </header>
+  {{ .Content }}
+</div>
 {{ end }}

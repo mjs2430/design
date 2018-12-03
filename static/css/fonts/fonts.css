@@ -1,0 +1,30 @@
+/**
+ * McClatchy Fonts
+ */
+
+@font-face {
+  font-family: "McClatchy Sans";
+  src: url("McClatchySans-Regular.woff") format("woff")
+}
+
+@font-face {
+  font-family: "McClatchy Sans";
+  font-weight: 600;
+  src: url("McClatchySans-Semibold.woff") format("woff")
+}
+
+@font-face {
+  font-family: "McClatchy Serif";
+  src: url("McClatchySerif-Regular.woff") format("woff")
+}
+
+@font-face {
+  font-family: "McClatchy Serif";
+  font-weight: 600;
+  src: url("McClatchySerif-Semibold.woff") format("woff")
+}
+
+@font-face {
+  font-family: "Lyon";
+  src: url("LyonTextWeb-Regular.woff") format("woff")
+}

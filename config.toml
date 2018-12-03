@@ -3,3 +3,4 @@ title = "McClatchy Design"
 
 languageCode = "en-us"
 relativeURLs = true
+disableLiveReload = true
