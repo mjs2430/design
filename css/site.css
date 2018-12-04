@@ -45,16 +45,13 @@
  */
 
 section {
-  padding: 35px 0 50px;
+  margin: 50px auto;
+  max-width: 540px;
 }
 
 .grid-label {
-  padding: 15px;
-}
-
-.grid, .grid-label {
-  max-width: 540px;
-  margin: 0 auto;
+  margin: 15px auto;
+  padding: 0 15px;
 }
 
 .grid > * {
@@ -62,7 +59,7 @@ section {
 }
 
 @supports(display: grid) {
-  .grid, .grid-label {
+  section {
     max-width: 960px;
   }
 
@@ -81,6 +78,22 @@ section {
       padding: 0 15px;
     }
   }
+}
+
+/**
+ * Bio differences
+ */
+
+.bio * {
+  font-family: "McClatchy Sans", sans-serif;
+}
+
+.bio h4 {
+  font-weight: bold;
+}
+
+.bio p {
+  font-size: 14px;
 }
 
 /**
