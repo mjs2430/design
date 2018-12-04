@@ -1,0 +1,131 @@
+/**
+ * Molecules: Saratoga design system
+ */
+
+/** Paper */
+
+.paper, .card {
+  position: relative;
+  background-color: white;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .13)
+}
+
+.paper .card {
+  box-shadow: none;
+}
+
+/** Cards */
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-info > * {
+  margin: 10px 0 0 0;
+}
+
+.card-info > :first-child {
+  margin-top: 0;
+}
+
+.card-info > time {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+/** Reverse impact */
+
+.impact {
+  background-color: #373737;
+  color: white;
+}
+
+.impact * {
+  color: white;
+  border-color: white;
+}
+
+.impact .card {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.impact .kicker {
+  background-color: white;
+  color: #222;
+}
+
+.impact .button.primary {
+  background-color: white;
+  color: #222;
+}
+
+/** Ad */
+
+.ad {
+  justify-self: center;
+  background-color: #ddd;
+}
+
+/** Social media icons */
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.social-media > * {
+  padding: 15px;
+}
+
+.social-media svg {
+  width: 20px;
+  height: 20px;
+}
+
+/** Button rows */
+
+.buttons {
+  display: flex;
+  margin-top: 30px;
+}
+
+/** Promo */
+
+.promo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.promo * {
+  font-family: "McClatchy Sans", sans-serif;
+}
+
+.promo .card-info {
+  padding: 30px;
+}
+
+.promo-title {
+  background-color: #0066B3;
+  color: white;
+  flex: 1 1 300px;
+}
+
+.promo-title h1 {
+  font-size: 48px;
+}
+
+.promo-message {
+  flex: 0 1 345px;
+  align-self: center;
+}

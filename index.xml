@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>McClatchy Design</title>
+    <link>https://mcclatchy.github.io/design/</link>
+    <description>Recent content on McClatchy Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 04 Dec 2018 08:53:05 -0600</lastBuildDate>
+    
+	<atom:link href="https://mcclatchy.github.io/design/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Second Post</title>
+      <link>https://mcclatchy.github.io/design/blog/second-post/</link>
+      <pubDate>Tue, 04 Dec 2018 08:53:05 -0600</pubDate>
+      
+      <guid>https://mcclatchy.github.io/design/blog/second-post/</guid>
+      <description>Nulla ultricies dui at metus facilisis ullamcorper. Praesent bibendum eget leo ac pharetra. Etiam odio urna, feugiat nec arcu vitae, laoreet vestibulum velit. Curabitur varius tellus lorem, a laoreet ex interdum et.</description>
+    </item>
+    
+    <item>
+      <title>Example Post</title>
+      <link>https://mcclatchy.github.io/design/blog/example-post/</link>
+      <pubDate>Mon, 03 Dec 2018 16:47:44 -0600</pubDate>
+      
+      <guid>https://mcclatchy.github.io/design/blog/example-post/</guid>
+      <description>Sed rhoncus est sed volutpat efficitur. Donec ullamcorper massa eros, vel auctor ex vestibulum eu. Donec lorem velit, suscipit ac vehicula non, feugiat eget felis. In vitae sagittis ante.</description>
+    </item>
+    
+    <item>
+      <title>About the design team</title>
+      <link>https://mcclatchy.github.io/design/about/</link>
+      <pubDate>Sun, 02 Dec 2018 15:31:22 +0000</pubDate>
+      
+      <guid>https://mcclatchy.github.io/design/about/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pulvinar purus non nulla lobortis efficitur. Suspendisse enim lacus, fermentum ac turpis ac, aliquam luctus purus. Donec et turpis arcu.</description>
+    </item>
+    
+  </channel>
+</rss>
