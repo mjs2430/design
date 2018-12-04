@@ -1,0 +1,23 @@
+{{ define "content" }}
+<section class="grid">
+  {{- range $.Site.Data.team }}
+  <div class="card bio">
+    <div class="card-info">
+      <h5 class="author">{{ .title }}</h5>
+      <h4>{{ .name | upper }}</h4>
+      <p>{{ delimit .badges ", " }}</p>
+
+      {{- with .patronus }}
+      <p><b>Patronus:</b> {{ . }}</p>
+      {{ end }}
+
+      {{- with .anagram }}
+      <p><b>Anagram:</b> {{ . }}</p>
+      {{ end }}
+
+      <p>{{ .bio }}</p>
+    </div>
+  </div>
+  {{ end }}
+</section>
+{{ end }}
