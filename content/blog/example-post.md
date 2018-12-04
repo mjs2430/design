@@ -1,9 +1,8 @@
 ---
-title: About the design team
-date: 2018-12-02T15:31:22
+title: "Example Post"
+date: 2018-12-03T16:47:44-06:00
+author: Jay Pilgreen
 ---
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pulvinar purus non nulla lobortis efficitur. Suspendisse enim lacus, fermentum ac turpis ac, aliquam luctus purus. Donec et turpis arcu. In nec luctus odio. Ut fringilla lacus ut posuere varius. Curabitur pharetra arcu ullamcorper blandit ultrices. Donec condimentum, nulla et aliquam hendrerit, est ipsum viverra odio, a rhoncus ante urna eu ipsum. Nam tincidunt vestibulum semper. Quisque mauris urna, tincidunt nec est id, condimentum lacinia risus. Suspendisse varius hendrerit lectus, vitae mattis purus tempor sed. Fusce ornare finibus justo nec feugiat. Quisque a felis tortor. Nulla enim nibh, venenatis sed metus id, pharetra iaculis nisl. Mauris faucibus, nisi non posuere molestie, dolor nisi dapibus massa, id molestie felis augue at elit. Nullam commodo dolor eget auctor semper. Nunc sollicitudin finibus nunc eu pharetra.
 
 Sed rhoncus est sed volutpat efficitur. Donec ullamcorper massa eros, vel auctor ex vestibulum eu. Donec lorem velit, suscipit ac vehicula non, feugiat eget felis. In vitae sagittis ante. Nunc vitae elit at quam scelerisque vehicula ac vitae lacus. Nunc nec ex dolor. Aenean egestas purus ut venenatis sagittis. Duis ultricies nisl dui. Suspendisse sollicitudin leo nisi, vel hendrerit augue blandit et. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse at velit metus. Donec sed eros lacinia, suscipit magna cursus, pulvinar urna.
 
@@ -16,5 +15,3 @@ Etiam vel arcu faucibus tellus ullamcorper molestie. Donec iaculis tincidunt fel
 Maecenas ac feugiat dui. Fusce id interdum ligula. Integer at turpis id tellus eleifend lobortis. Ut ultrices purus lorem, vel ultrices ex ullamcorper eu. Integer varius lectus velit, vitae aliquam dui molestie ut. Duis vel malesuada ipsum. Vestibulum ultricies varius lectus nec porttitor. Aenean id neque lobortis, finibus purus quis, lobortis justo. Nullam pharetra dui fermentum tortor blandit finibus. Phasellus quis pretium odio. Curabitur et mi arcu.
 
 Vivamus ac tortor non ex egestas vehicula vitae vel nisl. Morbi enim lectus, cursus a nulla ac, ornare dapibus enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque eu pretium ipsum, nec finibus justo. Phasellus a convallis ante, eget molestie nisi. Pellentesque dictum ligula nisi. Nullam id erat malesuada, euismod quam quis, luctus leo. Suspendisse vitae odio sem.
-
-Aenean ultricies, metus et vulputate facilisis, libero nulla sollicitudin turpis, et rutrum libero nibh et lorem. Morbi placerat sapien ac dignissim bibendum. Donec facilisis metus vel cursus sagittis. Morbi nulla massa, faucibus a hendrerit vitae, ornare vel diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis dui auctor, tincidunt dolor id, ullamcorper nisl. Nunc semper facilisis risus, eu accumsan augue eleifend in. Nunc porttitor enim turpis, eu luctus lectus volutpat id. Fusce nec purus dolor. Pellentesque laoreet sed metus in laoreet. Nullam ac auctor erat.

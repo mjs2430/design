@@ -1,3 +1,17 @@
 {{ define "content" }}
-<h1>Index page<h1>
+<figure>
+  <svg class="hero" viewBox="0 0 16 9">
+    <rect x="0" y="0" width="16" height="9" fill="#FF7400" />
+    <text fill="white" font-size="2" font-family="Helvetica" x="1" y="8">hero</text>
+  </svg>
+</figure>
+
+<section>
+  <h5 class="grid-label">THE LATEST WORD</h5>
+  <div class="grid">
+    {{- range where .Site.RegularPages "Section" "blog" }}
+      {{ .Render "card" }}
+    {{- end }}
+  </div>
+</section>
 {{ end }}

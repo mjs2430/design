@@ -18,11 +18,22 @@
   </head>
 
   <body>
-    <nav class="mast">
-      <a href="/">Home</a>
-      <a href="/about/">About Us</a>
-    </nav>
+    <div class="banner paper">
+      <svg class="logo" viewBox="-1 -1 2 2">
+        <circle cx="0" cy="0" r="1" />
+      </svg>
+      <nav>
+        {{- $currentPage := . }}
+        {{- range .Site.Menus.main }}
+        <a href="{{ .URL | absURL }}" class="{{ if eq $currentPage.URL .URL }}active{{ end }}">
+          <span>{{ .Name }}</span>
+        </a>
+        {{- end }}
+      </nav>
+    </div>
 
     {{- block "content" . }}{{ end }}
+
+    <footer></footer>
   </body>
 </html>

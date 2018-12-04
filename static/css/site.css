@@ -2,16 +2,92 @@
  * Nav
  */
 
-.mast {
+.banner {
   padding: 15px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  background-color: white;
-  position: relative;
-  box-shadow: 0 1px 2px 0 rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.13);
+  justify-content: space-between;
 }
 
-.mast > * {
-  padding-left: 15px;
+.banner .logo {
+  fill: #ddd;
+  height: 150px;
+  width: 150px;
+  padding: 15px;
+}
+
+.banner nav {
+  display: flex;
+}
+
+.banner a {
+  font: 600 14px/1.2em "McClatchy Sans", sans-serif;
+  padding: 13px 15px;
+  text-transform: uppercase;
+}
+
+.banner a span {
+  padding: 2px 0;
+}
+
+.banner a.active span {
+  border-bottom: 2px solid #333;
+}
+
+@media (max-width: 600px) {
+  .banner {
+    flex-direction: column;
+  }
+}
+
+/**
+ * Grid
+ */
+
+section {
+  padding: 35px 0 50px;
+}
+
+.grid-label {
+  padding: 15px;
+}
+
+.grid, .grid-label {
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.grid > * {
+  margin-bottom: 30px;
+}
+
+@supports(display: grid) {
+  .grid, .grid-label {
+    max-width: 960px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+  }
+
+  .grid > * {
+    margin-bottom: 0;
+  }
+
+  @media(min-width: 540px) {
+    .grid {
+      padding: 0 15px;
+    }
+  }
+}
+
+/**
+ * Footer
+ */
+
+footer {
+  background-color: #373737;
+  min-height: 20px;
 }
