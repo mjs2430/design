@@ -7,10 +7,23 @@
 </figure>
 
 <section>
-  <h5 class="grid-label">THE LATEST WORD</h5>
+  <h5 class="grid-label">THE LATEST FROM BUZZFEED'S BLOG</h5>
   <div class="grid">
-    {{- range where .Site.RegularPages "Section" "blog" }}
-      {{ .Render "card" }}
+    {{- range first 9 .Site.Data.blog.items }}
+    <article class="card medium">
+      <figure class="medium-art">
+        {{- $content := default .description .content }}
+        {{- $leadArt := findRE "<img .*?>" $content 1 }}
+        <a href="{{ .link }}">
+          {{ range first 1 $leadArt }}{{ . | safeHTML }}{{ end }}
+        </a>
+      </figure>
+      <div class="card-info">
+        <p class="author">{{ .author.name }}</p>
+        <h3><a href="{{ .link }}">{{ .title }}</a></h3>
+        <time>{{ .published }}</time>
+      </div>
+    </article>
     {{- end }}
   </div>
 </section>

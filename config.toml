@@ -13,8 +13,12 @@ summaryLength = 25
     url = "/"
     weight = 1
   [[menu.main]]
-    identifier = "about"
     name = "about us"
     title = "Who's on the team"
     url = "/about/"
     weight = 2
+  [[menu.main]]
+    name = "blog"
+    title = "Our blog."
+    url = "https://medium.com/mcclatchy-design"
+    weight = 3

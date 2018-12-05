@@ -60,7 +60,7 @@ section {
 
 @supports(display: grid) {
   section {
-    max-width: 960px;
+    max-width: 990px;
   }
 
   .grid {
@@ -78,6 +78,25 @@ section {
       padding: 0 15px;
     }
   }
+}
+
+/**
+ * Medium art
+ */
+
+.medium-art {
+  position: relative;
+  padding-top: 56.25%;
+  overflow: hidden;
+}
+
+.medium-art img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 /**
