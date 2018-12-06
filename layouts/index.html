@@ -1,13 +1,14 @@
+{{ define "stylesheets" }}
+<link rel="stylesheet" href="/css/animations.css">
+{{ end }}
+
 {{ define "content" }}
-<figure>
-  <svg class="hero" viewBox="0 0 16 9">
-    <rect x="0" y="0" width="16" height="9" fill="#FF7400" />
-    <text fill="white" font-size="2" font-family="Helvetica" x="1" y="8">hero</text>
-  </svg>
+<figure class="hero">
+  {{ readFile "/static/img/logo.svg" | safeHTML }}
 </figure>
 
 <section>
-  <h5 class="grid-label">THE LATEST FROM BUZZFEED'S BLOG</h5>
+  <h5 class="grid-label">THE LATEST FROM {{ .Site.Data.blog.title | upper }}</h5>
   <div class="grid">
     {{- range first 9 .Site.Data.blog.items }}
     <article class="card medium">

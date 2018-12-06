@@ -41,6 +41,21 @@
 }
 
 /**
+ * Hero
+ */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.hero svg {
+  max-width: 720px;
+}
+
+/**
  * Grid
  */
 
@@ -60,7 +75,7 @@ section {
 
 @supports(display: grid) {
   section {
-    max-width: 990px;
+    max-width: 1140px;
   }
 
   .grid {
