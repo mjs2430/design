@@ -10,10 +10,7 @@
 }
 
 .banner .logo {
-  fill: #ddd;
-  height: 150px;
-  width: 150px;
-  padding: 15px;
+  height: 60px;
 }
 
 .banner nav {
