@@ -34,29 +34,29 @@
 }
 
 .hero #saratoga {
-  animation: saratoga 1.4s ease;
+  animation: saratoga 3.2s ease;
 }
 
 .hero #engage {
-  animation: engage 1.6s ease;
+  animation: engage 2.8s ease;
 }
 
 .hero #apps {
-  animation: apps 1.2s ease;
+  animation: apps 2.4s;
 }
 
 .hero #editorial {
-  animation: editorial 1.4s ease;
+  animation: editorial 2.6s;
 }
 
 .hero #ux {
-  animation: ux 1.8s ease;
+  animation: ux 2.8s ease;
 }
 
 .hero #next {
-  animation: next 2s ease;
+  animation: next 3s;
 }
 
 .hero #design {
-  animation: design 1s ease;
+  animation: design 1.2s;
 }
