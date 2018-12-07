@@ -1,0 +1,67 @@
+/**
+ * About page
+ */
+
+.about {
+  background-color: white;
+  padding: 50px 0;
+}
+
+header {
+  max-width: 710px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+p {
+  font: 14px/1.5em "McClatchy Sans", sans-serif;
+}
+
+.bios {
+  max-width: 1130px;
+  margin: 0 auto;
+  padding: 50px 15px;
+  display: grid;
+  grid-gap: 30px;
+}
+
+@media (min-width: 700px) {
+  .bios {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 85px;
+}
+
+.avatar.manager {
+  width: 105px;
+}
+
+.badges {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.badges img {
+  width: 50px;
+  padding-left: 10px;
+}
+
+.name > * {
+  margin: 10px;
+}
