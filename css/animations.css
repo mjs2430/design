@@ -1,63 +1,62 @@
 @keyframes saratoga {
-  from { transform: translate(200px, -500px) }
+  from { transform: translate(200px, -200vh) }
   to { transform: translate(0, 0) }
 }
 
 @keyframes engage {
-  from { transform: translate(500px, 100px) }
+  from { transform: translate(500px, -200vh) }
   to { transform: translate(0, 0) }
 }
 
 @keyframes apps {
-  from { transform: translate(400px, 300px) }
+  from { transform: translate(200vw, 300px) }
   to { transform: translate(0, 0) }
 }
 
 @keyframes editorial {
-  from { transform: translate(-10vw, -600px) }
+  from { transform: translate(-200vw, -600px) }
   to { transform: translate(0, 0) }
 }
 
 @keyframes ux {
-  from { transform: translate(-100vw, 10vw) }
+  from { transform: translate(-200vw, 10vw) }
   to { transform: translate(0, 0) }
 }
 
 @keyframes next {
-  from { transform: translate(-10vw, 100vh) }
+  from { transform: translate(-10vw, 200vh) }
   to { transform: translate(0, 0) }
 }
 
 @keyframes design {
-  from { transform: scale(0.1); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+  from { transform: translate(30vw, 200vh) }
+  to { transform: translate(0, 0) }
 }
 
 .hero #saratoga {
-  animation: saratoga 1s ease;
+  animation: saratoga 1.4s ease;
 }
 
 .hero #engage {
-  animation: engage 1.2s ease;
+  animation: engage 1.6s ease;
 }
 
 .hero #apps {
-  animation: apps .9s ease;
+  animation: apps 1.2s ease;
 }
 
 .hero #editorial {
-  animation: editorial .8s ease;
+  animation: editorial 1.4s ease;
 }
 
 .hero #ux {
-  animation: ux .8s ease;
+  animation: ux 1.8s ease;
 }
 
 .hero #next {
-  animation: next 1.6s ease;
+  animation: next 2s ease;
 }
 
 .hero #design {
-  animation: design 1s ease-in;
-  transform-origin: center;
+  animation: design 1s ease;
 }
