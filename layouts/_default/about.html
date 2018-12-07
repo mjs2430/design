@@ -1,23 +1,42 @@
+{{ define "stylesheets" }}
+<link rel="stylesheet" href="/css/about.css">
+{{ end }}
+
 {{ define "content" }}
-<section class="grid">
-  {{- range $.Site.Data.team }}
-  <div class="card bio">
-    <div class="card-info">
-      <h5 class="author">{{ .title }}</h5>
-      <h4>{{ .name | upper }}</h4>
-      <p>{{ delimit .badges ", " }}</p>
+<article class="about">
+  <header>
+    {{ .Content }}
+  </header>
 
-      {{- with .patronus }}
-      <p><b>Patronus:</b> {{ . }}</p>
-      {{ end }}
+  <div class="bios">
+    {{- range $.Site.Data.team }}
+    <div class="bio">
+      <div class="row">
+        <img class="avatar" src="/img/avatars/jessica.gif">
+        <div class="name">
+          <h5 class="author">{{ .title }}</h5>
+          <h4>{{ .name | upper }}</h4>
+        </div>
+        <div class="badges">
+          {{- range .badges }}
+          <img src="/img/badges/{{ . }}.svg">
+          {{- end }}
+        </div>
+      </div>
+      <div class="card-info">
+        <p>{{ .bio }}</p>
 
-      {{- with .anagram }}
-      <p><b>Anagram:</b> {{ . }}</p>
-      {{ end }}
+        {{- with .patronus }}
+        <p><b>Patronus:</b> {{ . }}</p>
+        {{ end }}
 
-      <p>{{ .bio }}</p>
+        {{- with .anagram }}
+        <p><b>Anagram:</b> {{ . }}</p>
+        {{ end }}
+
+      </div>
     </div>
+    {{ end }}
   </div>
-  {{ end }}
 </section>
 {{ end }}
