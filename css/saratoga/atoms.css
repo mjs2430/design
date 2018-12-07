@@ -118,7 +118,7 @@ hr {
   text-transform: uppercase;
 }
 
-.author, .credit {
+.author, .credit, .job-title {
   font: 600 11px "McClatchy Sans";
   color: #989898;
   text-transform: uppercase;
