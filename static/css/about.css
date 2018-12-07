@@ -43,11 +43,7 @@ p {
 }
 
 .avatar {
-  width: 85px;
-}
-
-.avatar.manager {
-  width: 105px;
+  width: 75px;
 }
 
 .badges {
@@ -55,13 +51,23 @@ p {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .badges img {
   width: 50px;
-  padding-left: 10px;
+  padding: 5px;
 }
 
 .name > * {
   margin: 10px;
 }
+
+.bio.manager {
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.bio.manager .avatar {
+  width: 125px;
+}
+

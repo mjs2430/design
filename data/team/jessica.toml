@@ -1,0 +1,7 @@
+manager = true
+avatar = "jessica.gif"
+name = "Jessica Gilbert"
+badges = ["apps", "editorial", "engage", "saratoga", "ux"]
+title = "Director of Design"
+anagram = "Baltic jigs seer"
+bio = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet nisi libero. Duis ultricies tortor nec purus venenatis faucibus."

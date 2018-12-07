@@ -9,34 +9,12 @@
   </header>
 
   <div class="bios">
+    {{ partial "member.html" $.Site.Data.team.jessica }}
+    {{ partial "member.html" $.Site.Data.team.eddie }}
+
     {{- range $.Site.Data.team }}
-    <div class="bio">
-      <div class="row">
-        <img class="avatar" src="/img/avatars/jessica.gif">
-        <div class="name">
-          <h5 class="author">{{ .title }}</h5>
-          <h4>{{ .name | upper }}</h4>
-        </div>
-        <div class="badges">
-          {{- range .badges }}
-          <img src="/img/badges/{{ . }}.svg">
-          {{- end }}
-        </div>
-      </div>
-      <div class="card-info">
-        <p>{{ .bio }}</p>
-
-        {{- with .patronus }}
-        <p><b>Patronus:</b> {{ . }}</p>
-        {{ end }}
-
-        {{- with .anagram }}
-        <p><b>Anagram:</b> {{ . }}</p>
-        {{ end }}
-
-      </div>
-    </div>
-    {{ end }}
+    {{ if not .manager }}{{ partial "member.html" . }}{{ end }}
+    {{- end }}
   </div>
-</section>
+</article>
 {{ end }}

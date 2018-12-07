@@ -1,0 +1,38 @@
+<div class="bio {{ if .manager }}manager{{ end }}">
+  <div class="row">
+    {{- if .avatar }}
+    <img class="avatar" src="/img/avatars/{{ .avatar }}">
+    {{- else }}
+    <img class="avatar" src="/img/avatars/missing.svg">
+    {{- end }}
+
+    {{- if not .manager }}
+    <div class="name">
+      <h5 class="job-title">{{ .title }}</h5>
+      <h4>{{ .name | upper }}</h4>
+    </div>
+    {{- end }}
+
+    <div class="badges">
+      {{- range .badges }}
+      <img src="/img/badges/{{ . }}.svg">
+      {{- end }}
+    </div>
+  </div>
+  <div class="card-info">
+    {{- if .manager }}
+    <h5 class="job-title">{{ .title }}</h5>
+    <h2>{{ .name | upper }}</h2>
+    {{- end }}
+
+    <p>{{ .bio }}</p>
+
+    {{- with .patronus }}
+    <p><b>Patronus:</b> {{ . }}</p>
+    {{ end }}
+
+    {{- with .anagram }}
+    <p><b>Anagram:</b> {{ . }}</p>
+    {{ end }}
+  </div>
+</div>

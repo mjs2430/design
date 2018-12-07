@@ -1,0 +1,8 @@
+manager = true
+avatar = "eddie.gif"
+name = "Eddie Alvarez"
+badges = ["editorial", "engage"]
+title = "Senior Manager of Design"
+patronus = "Lion"
+anagram = "EA Daredevilz"
+bio = "I like to think of myself as a translator: I facilitate interactions between the Design Team and stakeholders in newsrooms and in marketing. I maintain my sanity by designing in Photoshop and racing my bicycle. Not at the same time, though."
