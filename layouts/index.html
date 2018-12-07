@@ -16,7 +16,7 @@
         {{- $content := default .description .content }}
         {{- $leadArt := findRE "<img .*?>" $content 1 }}
         <a href="{{ .link }}">
-          {{ range first 1 $leadArt }}{{ . | safeHTML }}{{ end }}
+          {{ range first 1 $leadArt }}{{ . | replaceRE " src" " decoding=\"async\" src" | safeHTML }}{{ end }}
         </a>
       </figure>
       <div class="card-info">
