@@ -11,8 +11,7 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit;
-  cursor: pointer;
+  color: #0066b3;
 }
 
 h1 {
@@ -70,8 +69,8 @@ figure img {
 
 figcaption {
   font: 14px/1.4em "McClatchy Sans", sans-serif;
-  color: #757575;
-  padding: 10px 15px 0;
+  color: #989898;
+  padding: 10px 0 0;
 }
 
 input, select {
@@ -118,14 +117,19 @@ hr {
   text-transform: uppercase;
 }
 
-.author, .credit, .job-title {
-  font: 600 11px "McClatchy Sans";
+.author {
+  display: inline-block;
+  font: 400 11px/1.5em "McClatchy Sans";
   color: #989898;
   text-transform: uppercase;
 }
 
+.author a {
+  font-weight: 700;
+  color: inherit;
+}
+
 .credit {
-  font-weight: 400;
   font-style: italic;
 }
 

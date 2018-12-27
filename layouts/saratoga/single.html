@@ -1,0 +1,17 @@
+{{ define "stylesheets" }}
+<link rel="stylesheet" href="/css/style-guide.css">
+{{ end }}
+
+{{ define "content" }}
+<div class="paper main">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+
+  <h3>All {{ .Params.level | pluralize }}</h3>
+  <p>
+  {{ range where .Site.Pages "Params.level" .Params.level }}
+  <a class="comma-list" href="{{ .Permalink }}">{{ .Title }}</a>
+  {{ end }}
+  </p>
+</div>
+{{ end }}

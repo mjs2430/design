@@ -3,9 +3,7 @@ title = "McClatchy Design"
 
 languageCode = "en-us"
 relativeURLs = true
-disableLiveReload = true
-
-summaryLength = 25
+pluralizeListTitles = false
 
 [menu]
   [[menu.main]]
@@ -14,11 +12,13 @@ summaryLength = 25
     weight = 1
   [[menu.main]]
     name = "about us"
-    title = "Who's on the team"
     url = "/about/"
     weight = 2
   [[menu.main]]
     name = "blog"
-    title = "Our blog."
     url = "https://medium.com/mcclatchy-design"
     weight = 3
+  [[menu.main]]
+    name = "style guide"
+    url = "/saratoga/"
+    weight = 4

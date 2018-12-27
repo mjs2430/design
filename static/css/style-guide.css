@@ -1,0 +1,65 @@
+/*
+ * Style guide native defaults
+ */
+
+pre {
+  padding: 15px;
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+}
+
+small {
+  font-size: .6em;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  border-spacing: 0;
+}
+
+td {
+  padding: 5px 0;
+}
+
+th {
+  display: none;
+}
+
+td:first-child {
+  font-weight: bold;
+}
+
+/*
+ * Style guide main rules.
+ */
+
+.main {
+  padding: 15px;
+}
+
+.main > * {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 690px;
+}
+
+.main > :not(.example) {
+  font-family: "McClatchy Sans", sans-serif;
+}
+
+.main > h2, .main > h3, .main > h4, .main > h5, .main > h6 {
+  font-weight: 700;
+  margin-top: 2em;
+  text-transform: uppercase;
+}
+
+.main .title {
+  text-transform: none;
+}
+
+.comma-list:not(:last-child):after {
+  content: ", ";
+  color: #222;
+}

@@ -1,0 +1,14 @@
+{{ define "stylesheets" }}
+<link rel="stylesheet" href="/css/style-guide.css">
+{{ end }}
+
+{{ define "content" }}
+<div class="paper main">
+  <h1>Atoms</h1>
+  {{ range where .Pages "Params.level" "atom" }}
+  <hr>
+  <h2 class="title">{{ .Title }} <small><a href="{{ .Permalink }}">DETAILS</a></small></h2>
+  <p>{{ .Description }}</p>
+  {{ end }}
+</div>
+{{ end }}

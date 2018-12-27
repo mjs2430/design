@@ -21,6 +21,7 @@
   font: 600 14px/1.2em "McClatchy Sans", sans-serif;
   padding: 13px 15px;
   text-transform: uppercase;
+  color: inherit;
 }
 
 .banner a span {
