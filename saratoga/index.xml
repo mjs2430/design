@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>McClatchy Design</title>
-    <link>https://mcclatchy.github.io/design/</link>
-    <description>Recent content on McClatchy Design</description>
+    <title>Saratoga on McClatchy Design</title>
+    <link>https://mcclatchy.github.io/design/saratoga/</link>
+    <description>Recent content in Saratoga on McClatchy Design</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Dec 2018 15:31:22 +0000</lastBuildDate>
     
-	<atom:link href="https://mcclatchy.github.io/design/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mcclatchy.github.io/design/saratoga/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Our Team</title>
-      <link>https://mcclatchy.github.io/design/about/</link>
-      <pubDate>Sun, 02 Dec 2018 15:31:22 +0000</pubDate>
-      
-      <guid>https://mcclatchy.github.io/design/about/</guid>
-      <description>Our Team A short intro about the uniqueness and awesomeness of our distributed, cross-functional team. Space for short description. Space for short description. Space for short description. Space for short description. Space for short description. Maybe Jessica should write this?</description>
-    </item>
     
     <item>
       <title></title>
