@@ -4,6 +4,8 @@
 
 {{ define "content" }}
 <div class="paper main">
+  <p>Below is the list of atoms and molecules defined in the design system. <a href="./about/">Click here</a> for some background on our process or to better understand how the different parts of our structure work together.</p>
+
   <h1 class="underline">Atoms <a href="/css/saratoga/atoms.css"><img class="detail-icon" src="/img/icons/file.svg"></a></h1>
   {{ range where .Pages "Params.level" "atom" }}
     {{ .Render "link" }}
