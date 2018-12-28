@@ -1,6 +1,6 @@
 ---
-title: "<figcaption>"
-description: "Media captions"
+title: "figcaption"
+description: "Default styles for all media captions."
 level: "atom"
 ---
 
@@ -8,20 +8,19 @@ All captions have the same style. The figcaption is used as a semantic wrapper a
 
 #### example
 <div class="example">
-  <figure>
-    <img src="https://www.kansascity.com/latest-news/4psbzf/picture220199830/alternates/LANDSCAPE_768/LEAD%20PHOTO%20RoyCollinsshooting100918tll">
-    <figcaption>On May 10, 1987, 13-year-old Roy Collins was shot while jumping fences in a Kansas City neighborhood. We recreate the shooting according to police and witness reports. <span class="author">By <a href="#">Neil Nakahodo</a> | <a href="#">Joe Robertson</a></span></figcaption>
-  </figure>
+  {{< figure >}}
 </div>
 
 #### CSS
 ```css
-figcaption {
+figcaption, .caption {
   font: 14px/1.5em "McClatchy Sans", sans-serif;
   color: #989898;
   padding: 10px 0 0;
 }
 ```
+
+#### RULES 
 
 Property | Value
 --- | ---
@@ -31,3 +30,26 @@ Size | 14px
 Line height | 1.5em
 Case | Sentence
 Letter Spacing | Default
+
+## Byline and Credit
+
+The byline has it's own rules and can be used inside or outside the figcaption. Contents of the byline should display inline with the caption when there is enough room, but wrap to it's own line when there isn't. Example above.
+
+#### CSS
+```css
+.byline {
+  display: inline-block;
+  font: 400 11px/1.5em "McClatchy Sans";
+  color: #989898;
+  text-transform: uppercase;
+}
+
+.byline a {
+  font-weight: 700;
+  color: inherit;
+}
+
+.credit {
+  font-style: italic;
+}
+```

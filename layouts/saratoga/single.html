@@ -3,15 +3,32 @@
 {{ end }}
 
 {{ define "content" }}
-<div class="paper main">
+<div class="paper main details">
   <h1>{{ .Title }}</h1>
   {{ .Content }}
-
-  <h3>All {{ .Params.level | pluralize }}</h3>
-  <p>
-  {{ range where .Site.Pages "Params.level" .Params.level }}
-  <a class="comma-list" href="{{ .Permalink }}">{{ .Title }}</a>
-  {{ end }}
-  </p>
 </div>
+
+<section class="grid sans">
+  <div class="card">
+    <h5 class="label"><span class="impact">Atoms</span></h5>
+    <div class="card-info center">
+      {{ range where .Site.Pages "Params.level" "atom" }}
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      {{ end }}
+    </div>
+  </div>
+  <div class="card"> 
+    <h5 class="label"><span class="impact">Molecules</span></h3>
+    <div class="card-info center">
+      {{ range where .Site.Pages "Params.level" "molecule" }}
+      <a class="blue" href="{{ .Permalink }}">{{ .Title }}</a>
+      {{ end }}
+    </div>
+  </div>
+  <div class="card">
+    <h5 class="label"><span class="impact">Organisms</span></h5>
+    <div class="card-info">
+    </div>
+  </div>
+</section>
 {{ end }}

@@ -4,11 +4,14 @@
 
 {{ define "content" }}
 <div class="paper main">
-  <h1>Atoms</h1>
+  <h1 class="underline">Atoms <a href="/css/saratoga/atoms.css"><img class="detail-icon" src="/img/icons/file.svg"></a></h1>
   {{ range where .Pages "Params.level" "atom" }}
-  <hr>
-  <h2 class="title">{{ .Title }} <small><a href="{{ .Permalink }}">DETAILS</a></small></h2>
-  <p>{{ .Description }}</p>
+    {{ .Render "link" }}
+  {{ end }}
+
+  <h1 class="underline">Molecules <a href="/css/saratoga/molecules.css"><img class="detail-icon" src="/img/icons/file.svg"></a></h1>
+  {{ range where .Pages "Params.level" "molecule" }}
+    {{ .Render "link" }}
   {{ end }}
 </div>
 {{ end }}

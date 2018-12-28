@@ -1,5 +1,5 @@
 ---
-title: "<ul>, <ol>, <li>"
+title: "lists"
 description: "Default styles for lists in story bodies."
 level: "atom"
 ---
@@ -16,11 +16,37 @@ level: "atom"
 #### CSS
 ```css
 ul, ol {
-  list-style-type: outside;
-  margin-left: 1.6em;
+  padding-left: 0;
+  font-family: "Lyon", serif;
 }
 
 li {
-  font: 17px/1.5em "Lyon", serif;
+  font-size: 17px;
+  line-height: 1.5em;
+  list-style: none;
+  position: relative;
+  margin-left: 1em;
+}
+
+li:before {
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: .4em;
+  left: -1em;
 }
 ```
+
+#### RULES
+
+Property | Value
+--- | ---
+Typeface | McClatchy Serif
+Weight | 400
+Size | 17px
+Line height | 1.5em
+Case | From text
+Letter Spacing | Default

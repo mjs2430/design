@@ -24,6 +24,10 @@
   color: inherit;
 }
 
+.banner a:hover {
+  text-decoration: none;
+}
+
 .banner a span {
   padding: 2px 0;
 }

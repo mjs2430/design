@@ -1,5 +1,5 @@
 ---
-title: "<p>"
+title: "p"
 description: "Default text on story pages."
 level: "atom"
 ---
@@ -17,8 +17,9 @@ p {
   font: 17px/1.5em "Lyon", serif;
 }
 ```
+#### RULES
 
-Rules | 
+Property | Value
 --- | ---
 Typeface | Lyon
 Weight | 400

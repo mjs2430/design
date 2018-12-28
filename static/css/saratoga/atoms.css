@@ -14,27 +14,31 @@ a {
   color: #0066b3;
 }
 
-h1 {
+a:hover {
+  text-decoration: underline;
+}
+
+h1, .h1 {
   font: 600 30px/1.2em "McClatchy Serif", serif;
 }
 
-h2 {
+h2, .h2 {
   font: 400 22px/1.2em "McClatchy Serif", serif;
 }
 
-h3 {
+h3, .h3 {
   font: 400 18px/1.2em "McClatchy Serif", serif;
 }
 
-h4 {
+h4, .h4 {
   font: 400 16px/1.2em "McClatchy Serif", serif;
 }
 
-h5 {
+h5, .h5 {
   font: 600 14px/1.2em "McClatchy Sans", sans-serif;
 }
 
-h6 {
+h6, .h6 {
   font: 400 12px/1.2em "McClatchy Sans", sans-serif;
 }
 
@@ -43,12 +47,27 @@ p {
 }
 
 ul, ol {
-  list-style-type: outside;
-  margin-left: 1.6em;
+  padding-left: 0;
+  font-family: "Lyon", serif;
 }
 
 li {
-  font: 17px/1.5em "Lyon", serif;
+  font-size: 17px;
+  line-height: 1.5em;
+  list-style: none;
+  position: relative;
+  margin-left: 1em;
+}
+
+li:before {
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: .4em;
+  left: -1em;
 }
 
 time {
@@ -67,64 +86,52 @@ figure img {
   max-width: 100%;
 }
 
-figcaption {
+figcaption, .caption {
   font: 14px/1.4em "McClatchy Sans", sans-serif;
   color: #989898;
   padding: 10px 0 0;
 }
 
-input, select {
-  display: block;
-  width: 100%;
-  border: none;
-  background-color: white;
-  color: #222;
-  font-size: 14px;
-  padding: 13px;
-  box-sizing: border-box;
-}
-
-input[type=submit] {
-  width: auto;
-  padding: 0;
-  background-color: transparent;
-  color: inherit;
-}
-
 button, .button {
-  font: 400 14px "McClatchy Sans";
+  display: inline-block;
+  font: 600 14px "McClatchy Sans";
   padding: .6em 1em .3em;
+  border: 1px solid #4a4a4a;
   border-radius: 2px;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.ghost {
+  border: none;
 }
 
 hr {
-  border: .5px solid #ddd;
+  border: .5px solid #989898;
 }
 
 /** Typography */
 
 .summary {
-  font: 14px/1.5em "McClatchy Sans";
-  color: #373737;
+  font: 400 14px/1.5em "McClatchy Sans";
 }
 
 .kicker {
   display: inline-block;
   padding: .4em .6em .2em;
-  border: 1px solid #4A4A4A;
+  border: 1px solid #4a4a4a;
   border-radius: 2px;
   text-transform: uppercase;
 }
 
-.author {
+.byline {
   display: inline-block;
   font: 400 11px/1.5em "McClatchy Sans";
   color: #989898;
   text-transform: uppercase;
 }
 
-.author a {
+.byline a {
   font-weight: 700;
   color: inherit;
 }
@@ -141,6 +148,10 @@ hr {
   font-family: "McClatchy Serif", serif;
 }
 
+.soft {
+  font-weight: 400;
+}
+
 .bold {
   font-weight: 600;
 }
@@ -151,6 +162,7 @@ hr {
   margin: 0;
   display: flex;
   justify-content: center;
+  color: inherit;
 }
 
 .label > * {
@@ -172,10 +184,10 @@ hr {
 .more-link {
   display: flex;
   align-items: center;
-  font: 500 14px/18px "McClatchy Sans";
+  font: 600 14px/1.5em "McClatchy Sans";
   color: #989898;
-  margin: 15px 15px 0;
   text-transform: uppercase;
+  margin-top: 15px;
 }
 
 .more-link:after, .arrow:after {
@@ -184,8 +196,6 @@ hr {
   margin-left: 4px;
 }
 
-@media (min-width: 660px) {
-  .more-link {
-    margin-left: 0;
-  }
+.more-link:hover {
+  text-decoration: none;
 }

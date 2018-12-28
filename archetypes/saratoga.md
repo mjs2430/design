@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "{{ .Name | lower }}"
 description: ""
 level: ""
 ---

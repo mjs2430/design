@@ -8,10 +8,6 @@ pre {
   box-sizing: border-box;
 }
 
-small {
-  font-size: .6em;
-}
-
 table {
   width: 100%;
   text-align: left;
@@ -24,11 +20,21 @@ td {
 }
 
 th {
-  display: none;
+  font-size: .8em;
+  padding-bottom: 8px;
 }
 
 td:first-child {
   font-weight: bold;
+}
+
+.detail-icon {
+  height: .7em;
+}
+
+.underline {
+  padding-bottom: .2em;
+  border-bottom: 1px solid #989898;
 }
 
 /*
@@ -36,30 +42,27 @@ td:first-child {
  */
 
 .main {
-  padding: 15px;
+  padding: 15px 15px 50px;
 }
 
 .main > * {
   margin-left: auto;
   margin-right: auto;
   max-width: 690px;
-}
-
-.main > :not(.example) {
   font-family: "McClatchy Sans", sans-serif;
 }
 
 .main > h2, .main > h3, .main > h4, .main > h5, .main > h6 {
-  font-weight: 700;
+  font-weight: 600;
   margin-top: 2em;
   text-transform: uppercase;
-}
-
-.main .title {
-  text-transform: none;
 }
 
 .comma-list:not(:last-child):after {
   content: ", ";
   color: #222;
+}
+
+.card-info.center {
+  align-items: center;
 }
