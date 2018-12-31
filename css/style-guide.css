@@ -3,9 +3,6 @@
  */
 
 pre {
-  padding: 15px;
-  background-color: #f4f4f4;
-  box-sizing: border-box;
   overflow-x: scroll;
 }
 
