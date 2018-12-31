@@ -7,7 +7,6 @@ sections:
 - type: document
   path: content/about/index.md
   label: About Us
-  match: "**/*"
 - type: directory
   path: data/team
   label: The Team
