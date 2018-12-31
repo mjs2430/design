@@ -11,3 +11,34 @@ The card molecule extends the paper base molecule and adds Flexbox. By doing so 
  {{< card >}}
  {{< card >}}
 </div>
+
+#### HTML
+{{< highlight html >}}{{< card >}}{{< /highlight >}}
+
+#### CSS
+```css
+/**
+ * Paper
+ */
+
+.paper, .card {
+  position: relative;
+  background-color: white;
+  box-shadow: 
+    0 1px 2px 0 rgba(0, 0, 0, .2), 
+    0 1px 5px 0 rgba(0, 0, 0, .13);
+}
+
+.paper .card {
+  box-shadow: none;
+}
+
+/**
+ * Story cards
+ */
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+```

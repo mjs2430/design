@@ -11,6 +11,15 @@ The card-info molecule is the backbone of the design system. Spacing for  most m
   {{< card >}}
 </div>
 
+#### HTML
+```html
+<div class="card-info">
+  <h6><a class="kicker" href="https://mcclatchy.github.io/saratoga/food/">FOOD</a></h6>
+  <h3><a href="https://mcclatchy.github.io/saratoga/food/205504249/">Hatch chiles bring heat and hearty flavor to New Mexican cuisine {{ if .Get 0 }}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent.{{ end }}</a></h3>
+  <time>March 16, 2018 11:33 am</time>
+</div>
+```
+
 #### CSS
 ```css
 .card-info {

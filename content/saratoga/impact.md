@@ -12,6 +12,9 @@ The impact molecule simply reverses the color scheme of any element, and has a c
   <div>{{< card paper="impact" >}}</div>
 </div>
 
+#### HTML
+{{< highlight html >}}{{< card paper="impact" >}}{{< /highlight >}}
+
 #### CSS
 ```css
 .impact {
