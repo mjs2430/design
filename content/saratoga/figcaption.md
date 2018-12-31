@@ -1,9 +1,9 @@
 ---
-title: "figcaption"
-description: "Default styles for all media captions."
-level: "atom"
----
+title: figcaption
+description: Default styles for all media captions.
+level: atom
 
+---
 All captions have the same style. The figcaption is used as a semantic wrapper and to keep the cascade as configurable as possible.
 
 #### example
