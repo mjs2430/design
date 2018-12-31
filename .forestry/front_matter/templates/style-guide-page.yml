@@ -36,7 +36,6 @@ pages:
 - content/saratoga/label.md
 - content/saratoga/time.md
 - content/saratoga/digest.md
-- content/saratoga/paper.md
 - content/saratoga/card-info.md
 - content/saratoga/h1.md
 - content/saratoga/h2.md
@@ -45,3 +44,4 @@ pages:
 - content/saratoga/impact.md
 - content/saratoga/li.md
 - content/saratoga/card.md
+- content/saratoga/paper.md
