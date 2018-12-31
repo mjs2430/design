@@ -10,6 +10,10 @@ fields:
   default: ''
   config:
     required: true
+- type: text
+  name: function
+  label: Function Title
+  description: Term used for designers.
 - name: description
   label: Description
   type: textarea
