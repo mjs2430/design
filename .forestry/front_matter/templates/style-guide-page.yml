@@ -25,6 +25,7 @@ fields:
   config:
     required: true
 pages:
+- content/saratoga/paper.md
 - content/saratoga/figure.md
 - content/saratoga/p.md
 - content/saratoga/figcaption.md
@@ -44,4 +45,3 @@ pages:
 - content/saratoga/impact.md
 - content/saratoga/li.md
 - content/saratoga/card.md
-- content/saratoga/paper.md
