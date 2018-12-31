@@ -1,20 +1,26 @@
 ---
-label: Style Guide page
-hide_body: 
-is_partial: 
+label: Style Guide
+hide_body: false
+is_partial: false
 fields:
 - name: title
   label: Title
   type: text
   hidden: false
   default: ''
+  config:
+    required: true
 - name: description
   label: Description
   type: textarea
   hidden: false
   default: ''
-- name: level
+  description: Used for the list page.
+  config:
+    required: true
+- type: text
+  name: level
   label: Level
-  type: text
-  hidden: false
-  default: ''
+  description: Should be atom, molecule or organism
+  config:
+    required: true
