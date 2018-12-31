@@ -4,10 +4,9 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: directory
-  path: content/about
+- type: document
+  path: content/about/index.md
   label: About Us
-  create: documents
   match: "**/*"
 - type: directory
   path: data/team
