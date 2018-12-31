@@ -45,8 +45,8 @@ EXAMPLE Impact button Regular button Ghost button  CSS button, .button { font: 6
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mcclatchy.github.io/design/saratoga/card/</guid>
-      <description> The card molecule extends the paper base molecule and adds Flexbox. By doing so the size of the card is stretched to match adjacent cards in each row. Card molecules should be the direct children of any Flexbox or Grid container.
-Example    FOOD Hatch chiles bring heat and hearty flavor to New Mexican cuisine  March 16, 2018 11:33 am      FOOD Hatch chiles bring heat and hearty flavor to New Mexican cuisine  March 16, 2018 11:33 am    </description>
+      <description>The card molecule extends the paper base molecule and adds Flexbox. By doing so the size of the card is stretched to match adjacent cards in each row. Card molecules should be the direct children of any Flexbox or Grid container.
+Example    FOOD Hatch chiles bring heat and hearty flavor to New Mexican cuisine  March 16, 2018 11:33 am      FOOD Hatch chiles bring heat and hearty flavor to New Mexican cuisine  March 16, 2018 11:33 am    HTML &amp;lt;article class=&amp;#34;card &amp;#34;&amp;gt; &amp;lt;figure&amp;gt; &amp;lt;a href=&amp;#34;https://mcclatchy.</description>
     </item>
     
     <item>
@@ -56,7 +56,7 @@ Example    FOOD Hatch chiles bring heat and hearty flavor to New Mexican cuisine
       
       <guid>https://mcclatchy.github.io/design/saratoga/card-info/</guid>
       <description>The card-info molecule is the backbone of the design system. Spacing for most molecules and organisms is based on these default rules. This molecule only provides spacing rules.
-Example    FOOD Hatch chiles bring heat and hearty flavor to New Mexican cuisine  March 16, 2018 11:33 am    CSS .card-info { padding: 15px; display: flex; flex-direction: column; flex: 1; } .card-info &amp;gt; * { margin: 10px 0 0 0; } .</description>
+Example    FOOD Hatch chiles bring heat and hearty flavor to New Mexican cuisine  March 16, 2018 11:33 am    HTML &amp;lt;div class=&amp;#34;card-info&amp;#34;&amp;gt; &amp;lt;h6&amp;gt;&amp;lt;a class=&amp;#34;kicker&amp;#34; href=&amp;#34;https://mcclatchy.github.io/saratoga/food/&amp;#34;&amp;gt;FOOD&amp;lt;/a&amp;gt;&amp;lt;/h6&amp;gt; &amp;lt;h3&amp;gt;&amp;lt;a href=&amp;#34;https://mcclatchy.github.io/saratoga/food/205504249/&amp;#34;&amp;gt;Hatch chiles bring heat and hearty flavor to New Mexican cuisine {{ if .</description>
     </item>
     
     <item>
@@ -156,7 +156,7 @@ Example SPORTS  CSS h6, .h6 { font: 400 12px/1.2em &amp;#34;McClatchy Serif&amp;
       
       <guid>https://mcclatchy.github.io/design/saratoga/impact/</guid>
       <description>The impact molecule simply reverses the color scheme of any element, and has a couple of additional rules to deal with card and label descendants.
-Example OPINION  Kudlow joins White House that sorely needs cooler heads to prevail March 19, 2018 5:34 pm  The Episcopal Church changed course for our LGBT members March 16, 2018 3:42 pm  The Kansas Republican Party is taking a stance on transgender identity March 16, 2018 3:58 pm  Letters: Readers discuss teen drinking, tax-cut benefits in Missouri and student protests March 16, 2018 4:08 pm   MORE OPINION     FOOD Hatch chiles bring heat and hearty flavor to New Mexican cuisine  March 16, 2018 11:33 am     CSS .</description>
+Example OPINION  Kudlow joins White House that sorely needs cooler heads to prevail March 19, 2018 5:34 pm  The Episcopal Church changed course for our LGBT members March 16, 2018 3:42 pm  The Kansas Republican Party is taking a stance on transgender identity March 16, 2018 3:58 pm  Letters: Readers discuss teen drinking, tax-cut benefits in Missouri and student protests March 16, 2018 4:08 pm   MORE OPINION     FOOD Hatch chiles bring heat and hearty flavor to New Mexican cuisine  March 16, 2018 11:33 am     HTML &amp;lt;article class=&amp;#34;card impact&amp;#34;&amp;gt; &amp;lt;figure&amp;gt; &amp;lt;a href=&amp;#34;https://mcclatchy.</description>
     </item>
     
     <item>
