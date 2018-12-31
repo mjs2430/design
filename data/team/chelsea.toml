@@ -1,7 +1,7 @@
-name = "Chelsea Brown"
+title = "Chelsea Brown"
 avatar = "chelsea.gif"
 badges = ["saratoga"]
-title = "Product Designer"
+job = "Product Designer"
 anagram = "ca$h nonrenewable"
 patronus = "Tonkinese cat"
 bio = "I am working on implementing and growing our atomic design system across all sites, pages and products at McClatchy. I love creating pixel perfect, user-friendly designs and leading brainstorming sessions for our team. I am our resident Taylor Swift fanatic (don’t @ me.)"

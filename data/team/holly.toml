@@ -1,7 +1,7 @@
-name = "Holly Braford"
+title = "Holly Braford"
 avatar = "holly.gif"
 badges = ["engage", "editorial"]
-title = "Product Designer"
+job = "Product Designer"
 anagram = "Hobo Rally RFD"
 patronus = "Bloodhound"
 bio = "I like to make stuff."

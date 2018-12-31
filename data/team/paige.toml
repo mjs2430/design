@@ -1,7 +1,7 @@
-name = "Paige Barefoot"
+title = "Paige Barefoot"
 avatar = "paige.gif"
 badges = ["engage"]
-title = "Product Designer"
+job = "Product Designer"
 anagram = "bee goo parfait"
 patronus = "St. Bernard"
 bio = "I like to make things look nice and easy to understand."
