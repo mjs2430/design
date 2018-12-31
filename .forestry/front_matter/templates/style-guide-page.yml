@@ -25,6 +25,7 @@ fields:
   config:
     required: true
 pages:
+- content/saratoga/figure.md
 - content/saratoga/p.md
 - content/saratoga/figcaption.md
 - content/saratoga/h4.md
