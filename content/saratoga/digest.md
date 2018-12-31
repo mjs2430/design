@@ -26,4 +26,4 @@ The `card` and `card-info` molecules can be used in any combination here. The fi
 
 #### CSS
 
-There is no additional CSS required for this module.
+There is no additional CSS required for this organism.
