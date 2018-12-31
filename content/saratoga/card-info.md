@@ -1,9 +1,9 @@
 ---
-title: "card-info"
-description: "Provides spacing for test in cards and digests."
-level: "molecule"
----
+title: card-info
+description: Provides spacing for test in cards and digests.
+level: molecule
 
+---
 The card-info molecule is the backbone of the design system. Spacing for  most molecules and organisms is based on these default rules. This molecule only provides spacing rules.
 
 #### Example
