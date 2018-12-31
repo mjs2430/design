@@ -1,9 +1,9 @@
 ---
-title: "digest"
-description: "Headline stacks for section content."
-level: "organism"
----
+title: digest
+description: Headline stacks for section content.
+level: organism
 
+---
 The digest is simple stack of modules using the block layout.
 
 #### Example

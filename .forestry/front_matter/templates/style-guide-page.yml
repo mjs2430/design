@@ -24,3 +24,5 @@ fields:
   description: Should be atom, molecule or organism
   config:
     required: true
+pages:
+- content/saratoga/digest.md
