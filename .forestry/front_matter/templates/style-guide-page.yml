@@ -25,6 +25,7 @@ fields:
   config:
     required: true
 pages:
+- content/saratoga/p.md
 - content/saratoga/more-link.md
 - content/saratoga/h3.md
 - content/saratoga/h5.md
