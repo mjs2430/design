@@ -1,9 +1,9 @@
 ---
-title: "more-link"
-description: "Used below grid digests."
-level: "atom"
----
+title: more-link
+description: Used below grid digests.
+level: atom
 
+---
 The more-link atom signifies that clicking it will take the reader to another web page. It is only used at the bottom of digests and isn't a headline, so typography and spacing is built in.
 
 #### Example
