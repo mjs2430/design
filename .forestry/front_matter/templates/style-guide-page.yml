@@ -26,6 +26,7 @@ fields:
     required: true
 pages:
 - content/saratoga/h6.md
+- content/saratoga/label.md
 - content/saratoga/time.md
 - content/saratoga/digest.md
 - content/saratoga/card-info.md
