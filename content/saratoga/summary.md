@@ -1,9 +1,9 @@
 ---
-title: "summary"
-description: "Summary text used in cards and headline stacks."
-level: "atom"
----
+title: summary
+description: Summary text used in cards and headline stacks.
+level: atom
 
+---
 The `.summary` atom is an alternate use of the `<p>` element when presenting articles in cards or headline stacks.
 
 #### Example
