@@ -25,4 +25,5 @@ fields:
   config:
     required: true
 pages:
+- content/saratoga/time.md
 - content/saratoga/digest.md
