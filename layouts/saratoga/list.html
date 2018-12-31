@@ -15,5 +15,10 @@
   {{ range where .Pages "Params.level" "molecule" }}
     {{ .Render "link" }}
   {{ end }}
+
+  <h1 class="underline">Organisms</h1>
+  {{ range where .Pages "Params.level" "organism" }}
+    {{ .Render "link" }}
+  {{ end }}
 </div>
 {{ end }}

@@ -3,19 +3,24 @@
     <a href="https://mcclatchy.github.io/saratoga/opinion/" class="label {{ .Get "label" }}">
       <h5 class="impact">OPINION</h5>
     </a>
+    {{- if eq (.Get "label") "sticky" }}
     <article class="card">
-      {{ if eq (.Get "label") "sticky" }}
       <figure>
         <a href="https://mcclatchy.github.io/saratoga/opinion/205928724/">
           <img src="https://pics.mcclatchyinteractive.com/opinion/gi1163/picture205928719/ALTERNATES/LANDSCAPE_640/AP_18073734498485" srcset="https://pics.mcclatchyinteractive.com/opinion/gi1163/picture205928719/ALTERNATES/LANDSCAPE_1140/AP_18073734498485 1140w"> 
         </a>
       </figure>
-      {{ end }}
       <div class="card-info">
         <h3><a href="https://mcclatchy.github.io/saratoga/opinion/205928724/">Kudlow joins White House that sorely needs cooler heads to prevail</a></h3>
         <time>March 19, 2018 5:34 pm</time>
       </div>
     </article>
+    {{- else }}
+    <article class="card-info">
+      <h3><a href="https://mcclatchy.github.io/saratoga/opinion/205928724/">Kudlow joins White House that sorely needs cooler heads to prevail</a></h3>
+      <time>March 19, 2018 5:34 pm</time>
+    </article>
+    {{- end }}
     <article class="card-info">
       <h3><a href="https://mcclatchy.github.io/saratoga/opinion/205579084/">The Episcopal Church changed course for our LGBT members</a></h3>
       <time>March 16, 2018 3:42 pm</time>

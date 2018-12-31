@@ -27,7 +27,10 @@
   </div>
   <div class="card">
     <h5 class="label"><span class="impact">Organisms</span></h5>
-    <div class="card-info">
+    <div class="card-info center">
+      {{ range where .Site.Pages "Params.level" "organism" }}
+      <a class="blue" href="{{ .Permalink }}">{{ .Title }}</a>
+      {{ end }}
     </div>
   </div>
 </section>
