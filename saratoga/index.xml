@@ -26,7 +26,7 @@
       
       <guid>https://mcclatchy.github.io/design/saratoga/button/</guid>
       <description> Buttons are designed to be placed in a center-aligned row using browser defaults and to have different levels of impact. There are three different types of button, but they all use the same base code.
-EXAMPLE Impact button Regular button Ghost button  CSS button, .button { font: 600 14px &amp;quot;McClatchy Sans&amp;quot;; padding: .6em 1em .3em; border: 1px solid #4a4a4a; border-radius: 2px; text-transform: uppercase; cursor: pointer; } .ghost { border: none; }  RULES    Property Value     Typeface McClatchy Sans   Weight 600   Size 14px   Border 1 pixel solid #989898 with a 2-pixel radius   Case Uppercase    </description>
+EXAMPLE Impact button Regular button Ghost button  CSS button, .button { font: 600 14px &amp;#34;McClatchy Sans&amp;#34;; padding: .6em 1em .3em; border: 1px solid #4a4a4a; border-radius: 2px; text-transform: uppercase; cursor: pointer; } .ghost { border: none; } RULES    Property Value     Typeface McClatchy Sans   Weight 600   Size 14px   Border 1 pixel solid #989898 with a 2-pixel radius   Case Uppercase    </description>
     </item>
     
     <item>
@@ -50,13 +50,23 @@ Example    FOOD Hatch chiles bring heat and hearty flavor to New Mexican cuisine
     </item>
     
     <item>
+      <title>digest</title>
+      <link>https://mcclatchy.github.io/design/saratoga/digest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mcclatchy.github.io/design/saratoga/digest/</guid>
+      <description>The digest is simple stack of modules using the block layout.
+Example OPINION  Kudlow joins White House that sorely needs cooler heads to prevail March 19, 2018 5:34 pm  The Episcopal Church changed course for our LGBT members March 16, 2018 3:42 pm  The Kansas Republican Party is taking a stance on transgender identity March 16, 2018 3:58 pm  Letters: Readers discuss teen drinking, tax-cut benefits in Missouri and student protests March 16, 2018 4:08 pm   MORE OPINION  OPINION     Kudlow joins White House that sorely needs cooler heads to prevail March 19, 2018 5:34 pm   The Episcopal Church changed course for our LGBT members March 16, 2018 3:42 pm  The Kansas Republican Party is taking a stance on transgender identity March 16, 2018 3:58 pm  Letters: Readers discuss teen drinking, tax-cut benefits in Missouri and student protests March 16, 2018 4:08 pm   MORE OPINION   HTML This HTML snippet is a digest that doesn&amp;rsquo;t have lead art.</description>
+    </item>
+    
+    <item>
       <title>figcaption</title>
       <link>https://mcclatchy.github.io/design/saratoga/figcaption/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mcclatchy.github.io/design/saratoga/figcaption/</guid>
       <description>All captions have the same style. The figcaption is used as a semantic wrapper and to keep the cascade as configurable as possible.
-example  On May 10, 1987, 13-year-old Roy Collins was shot while jumping fences in a Kansas City neighborhood. We recreate the shooting according to police and witness reports. By Neil Nakahodo The Kansas City Star     CSS figcaption, .caption { font: 14px/1.5em &amp;quot;McClatchy Sans&amp;quot;, sans-serif; color: #989898; padding: 10px 0 0; }  RULES    Property Value     Typeface McClatchy Sans   Weight 400   Size 14px   Line height 1.</description>
+example  On May 10, 1987, 13-year-old Roy Collins was shot while jumping fences in a Kansas City neighborhood. We recreate the shooting according to police and witness reports. By Neil Nakahodo The Kansas City Star     CSS figcaption, .caption { font: 14px/1.5em &amp;#34;McClatchy Sans&amp;#34;, sans-serif; color: #989898; padding: 10px 0 0; } RULES    Property Value     Typeface McClatchy Sans   Weight 400   Size 14px   Line height 1.</description>
     </item>
     
     <item>
@@ -76,7 +86,7 @@ EXAMPLE  On May 10, 1987, 13-year-old Roy Collins was shot while jumping fences 
       
       <guid>https://mcclatchy.github.io/design/saratoga/h1/</guid>
       <description>Default browser spacing for the &amp;lt;h1&amp;gt; atom should be used unless specifically set at the molecule or organism level. Doing so reduces bloat, given that this atom is used in many scenarios, and allows for cascading to apply properly at that level.
-Example Jayhawks back in town, start practicing for Saturday’s Eastern Michigan game  CSS h1, .h1 { font: 600 30px/1.2em &amp;quot;McClatchy Serif&amp;quot;, serif; }  RULES    Property Value     Typeface McClatchy Serif   Weight 600   Size 30px   Line height 1.</description>
+Example Jayhawks back in town, start practicing for Saturday’s Eastern Michigan game  CSS h1, .h1 { font: 600 30px/1.2em &amp;#34;McClatchy Serif&amp;#34;, serif; } RULES    Property Value     Typeface McClatchy Serif   Weight 600   Size 30px   Line height 1.</description>
     </item>
     
     <item>
@@ -86,7 +96,7 @@ Example Jayhawks back in town, start practicing for Saturday’s Eastern Michiga
       
       <guid>https://mcclatchy.github.io/design/saratoga/h2/</guid>
       <description>Default browser spacing for the &amp;lt;h2&amp;gt; atom should be used unless specifically set at the molecule or organism level. Doing so reduces bloat, given that this atom is used in many scenarios, and allows for cascading to apply properly at that level.
-Example Jayhawks back in town, start practicing for Saturday’s Eastern Michigan game  CSS h2, .h2 { font: 400 22px/1.2em &amp;quot;McClatchy Serif&amp;quot;, serif; }  RULES    Property Value     Typeface McClatchy Serif   Weight 400   Size 22px   Line height 1.</description>
+Example Jayhawks back in town, start practicing for Saturday’s Eastern Michigan game  CSS h2, .h2 { font: 400 22px/1.2em &amp;#34;McClatchy Serif&amp;#34;, serif; } RULES    Property Value     Typeface McClatchy Serif   Weight 400   Size 22px   Line height 1.</description>
     </item>
     
     <item>
@@ -96,7 +106,7 @@ Example Jayhawks back in town, start practicing for Saturday’s Eastern Michiga
       
       <guid>https://mcclatchy.github.io/design/saratoga/h3/</guid>
       <description>Default browser spacing for the &amp;lt;h3&amp;gt; atom should be used unless specifically set at the molecule or organism level. Doing so reduces bloat, given that this atom is used in many scenarios, and allows for cascading to apply properly at that level.
-Example Jayhawks back in town, start practicing for Saturday’s Eastern Michigan game  CSS h3, .h3 { font: 400 18px/1.2em &amp;quot;McClatchy Serif&amp;quot;, serif; }  RULES    Property Value     Typeface McClatchy Serif   Weight 400   Size 18px   Line height 1.</description>
+Example Jayhawks back in town, start practicing for Saturday’s Eastern Michigan game  CSS h3, .h3 { font: 400 18px/1.2em &amp;#34;McClatchy Serif&amp;#34;, serif; } RULES    Property Value     Typeface McClatchy Serif   Weight 400   Size 18px   Line height 1.</description>
     </item>
     
     <item>
@@ -106,7 +116,7 @@ Example Jayhawks back in town, start practicing for Saturday’s Eastern Michiga
       
       <guid>https://mcclatchy.github.io/design/saratoga/h4/</guid>
       <description>Default browser spacing for the &amp;lt;h4&amp;gt; atom should be used unless specifically set at the molecule or organism level. Doing so reduces bloat, given that this atom is used in a couple different scenarios, and allows for cascading to apply properly at that level.
-Example Jayhawks back in town, start practicing for Saturday’s Eastern Michigan game  CSS h4, .h4 { font: 400 16px/1.2em &amp;quot;McClatchy Serif&amp;quot;, serif; }  RULES    Property Value     Typeface McClatchy Serif   Weight 400   Size 16px   Line height 1.</description>
+Example Jayhawks back in town, start practicing for Saturday’s Eastern Michigan game  CSS h4, .h4 { font: 400 16px/1.2em &amp;#34;McClatchy Serif&amp;#34;, serif; } RULES    Property Value     Typeface McClatchy Serif   Weight 400   Size 16px   Line height 1.</description>
     </item>
     
     <item>
@@ -116,7 +126,7 @@ Example Jayhawks back in town, start practicing for Saturday’s Eastern Michiga
       
       <guid>https://mcclatchy.github.io/design/saratoga/h5/</guid>
       <description>Default browser spacing for the &amp;lt;h5&amp;gt; atom should be used unless specifically set at the molecule or organism level. Doing so reduces bloat, given that this atom is used in a couple different scenarios, and allows for cascading to apply properly at that level.
-Example Jayhawks back in town, start practicing for Saturday’s Eastern Michigan game  CSS h5, .h5 { font: 600 14px/1.2em &amp;quot;McClatchy Serif&amp;quot;, serif; }  RULES    Property Value     Typeface McClatchy Serif   Weight 600   Size 14px   Line height 1.</description>
+Example Jayhawks back in town, start practicing for Saturday’s Eastern Michigan game  CSS h5, .h5 { font: 600 14px/1.2em &amp;#34;McClatchy Serif&amp;#34;, serif; } RULES    Property Value     Typeface McClatchy Serif   Weight 600   Size 14px   Line height 1.</description>
     </item>
     
     <item>
@@ -126,7 +136,7 @@ Example Jayhawks back in town, start practicing for Saturday’s Eastern Michiga
       
       <guid>https://mcclatchy.github.io/design/saratoga/h6/</guid>
       <description>Default browser spacing for the &amp;lt;h6&amp;gt; atom should be used unless specifically set at the molecule or organism level. Doing so reduces bloat, given that this atom is used in a couple different scenarios, and allows for cascading to apply properly at that level.
-Example SPORTS  CSS h6, .h6 { font: 400 12px/1.2em &amp;quot;McClatchy Serif&amp;quot;, serif; }  RULES    Property Value     Typeface McClatchy Serif   Weight 400   Size 12px   Line height 1.</description>
+Example SPORTS  CSS h6, .h6 { font: 400 12px/1.2em &amp;#34;McClatchy Serif&amp;#34;, serif; } RULES    Property Value     Typeface McClatchy Serif   Weight 400   Size 12px   Line height 1.</description>
     </item>
     
     <item>
@@ -136,7 +146,7 @@ Example SPORTS  CSS h6, .h6 { font: 400 12px/1.2em &amp;quot;McClatchy Serif&amp
       
       <guid>https://mcclatchy.github.io/design/saratoga/impact/</guid>
       <description>The impact molecule simply reverses the color scheme of any element, and has a couple of additional rules to deal with card and label descendants.
-Example OPINION  Kudlow joins White House that sorely needs cooler heads to prevail March 19, 2018 5:34 pm   The Episcopal Church changed course for our LGBT members March 16, 2018 3:42 pm  The Kansas Republican Party is taking a stance on transgender identity March 16, 2018 3:58 pm  Letters: Readers discuss teen drinking, tax-cut benefits in Missouri and student protests March 16, 2018 4:08 pm   MORE OPINION     FOOD Hatch chiles bring heat and hearty flavor to New Mexican cuisine  March 16, 2018 11:33 am     CSS .</description>
+Example OPINION  Kudlow joins White House that sorely needs cooler heads to prevail March 19, 2018 5:34 pm  The Episcopal Church changed course for our LGBT members March 16, 2018 3:42 pm  The Kansas Republican Party is taking a stance on transgender identity March 16, 2018 3:58 pm  Letters: Readers discuss teen drinking, tax-cut benefits in Missouri and student protests March 16, 2018 4:08 pm   MORE OPINION     FOOD Hatch chiles bring heat and hearty flavor to New Mexican cuisine  March 16, 2018 11:33 am     CSS .</description>
     </item>
     
     <item>
@@ -155,7 +165,7 @@ The label atom is just used for spacing and can accept any element. Currently, w
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mcclatchy.github.io/design/saratoga/li/</guid>
-      <description>EXAMPLE  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula libero ut posuere tincidunt. Quisque aliquet est non leo ullamcorper, eu sagittis est cursus. Morbi tempus mauris at est congue, quis tincidunt augue venenatis.   CSS ul, ol { padding-left: 0; font-family: &amp;quot;Lyon&amp;quot;, serif; } li { font-size: 17px; line-height: 1.5em; list-style: none; position: relative; margin-left: 1em; } li:before { content: &amp;quot;&amp;quot;; height: 8px; width: 8px; background-color: black; border-radius: 50%; position: absolute; top: .</description>
+      <description>EXAMPLE  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula libero ut posuere tincidunt. Quisque aliquet est non leo ullamcorper, eu sagittis est cursus. Morbi tempus mauris at est congue, quis tincidunt augue venenatis.   CSS ul, ol { padding-left: 0; font-family: &amp;#34;Lyon&amp;#34;, serif; } li { font-size: 17px; line-height: 1.5em; list-style: none; position: relative; margin-left: 1em; } li:before { content: &amp;#34;&amp;#34;; height: 8px; width: 8px; background-color: black; border-radius: 50%; position: absolute; top: .</description>
     </item>
     
     <item>
@@ -165,7 +175,7 @@ The label atom is just used for spacing and can accept any element. Currently, w
       
       <guid>https://mcclatchy.github.io/design/saratoga/more-link/</guid>
       <description>The more-link atom signifies that clicking it will take the reader to another web page. It is only used at the bottom of digests and isn&amp;rsquo;t a headline, so typography and spacing is built in.
-Example OPINION  Kudlow joins White House that sorely needs cooler heads to prevail March 19, 2018 5:34 pm   The Episcopal Church changed course for our LGBT members March 16, 2018 3:42 pm  The Kansas Republican Party is taking a stance on transgender identity March 16, 2018 3:58 pm  Letters: Readers discuss teen drinking, tax-cut benefits in Missouri and student protests March 16, 2018 4:08 pm   MORE OPINION   CSS .</description>
+Example OPINION  Kudlow joins White House that sorely needs cooler heads to prevail March 19, 2018 5:34 pm  The Episcopal Church changed course for our LGBT members March 16, 2018 3:42 pm  The Kansas Republican Party is taking a stance on transgender identity March 16, 2018 3:58 pm  Letters: Readers discuss teen drinking, tax-cut benefits in Missouri and student protests March 16, 2018 4:08 pm   MORE OPINION   CSS .</description>
     </item>
     
     <item>
@@ -176,7 +186,7 @@ Example OPINION  Kudlow joins White House that sorely needs cooler heads to prev
       <guid>https://mcclatchy.github.io/design/saratoga/p/</guid>
       <description>The default values for &amp;lt;p&amp;gt; are designed for the normal body text of the story page in order to keep our primary CSS as small as possible.
 EXAMPLE Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut arcu consequat, pretium libero non, consectetur risus. Aenean sed turpis ac sem iaculis egestas sit.
- CSS p { font: 17px/1.5em &amp;quot;Lyon&amp;quot;, serif; }  RULES    Property Value     Typeface Lyon   Weight 400   Size 17px   Line Height 1.</description>
+ CSS p { font: 17px/1.5em &amp;#34;Lyon&amp;#34;, serif; } RULES    Property Value     Typeface Lyon   Weight 400   Size 17px   Line Height 1.</description>
     </item>
     
     <item>
@@ -197,7 +207,7 @@ In our digests, the design dictates that there be 15px of space between the labe
       <guid>https://mcclatchy.github.io/design/saratoga/summary/</guid>
       <description>The .summary atom is an alternate use of the &amp;lt;p&amp;gt; element when presenting articles in cards or headline stacks.
 Example Perhaps no one can speak to the legacy of former Kansas State football coach Bill Snyder like former K-State president Jon Wefald, who presided over his hiring and offered his perspective to The Star.
- CSS .summary { font: 400 14px/1.5em &amp;quot;McClatchy Sans&amp;quot;; }  RULES    Property Value     Typeface McClatchy Sans   Weight 400   Size 14px   Line height 1.</description>
+ CSS .summary { font: 400 14px/1.5em &amp;#34;McClatchy Sans&amp;#34;; } RULES    Property Value     Typeface McClatchy Sans   Weight 400   Size 14px   Line height 1.</description>
     </item>
     
     <item>
@@ -207,7 +217,7 @@ Example Perhaps no one can speak to the legacy of former Kansas State football c
       
       <guid>https://mcclatchy.github.io/design/saratoga/time/</guid>
       <description> Timestamps are always displayed on their own line, so &amp;lt;time&amp;gt; is converted to a block level element by default.
-EXAMPLE DECEMBER 27, 2018 01:27 PM  CSS time { display: block; font: 300 11px/1.5em &amp;quot;McClatchy Sans&amp;quot;, sans-serif; text-transform: uppercase; color: #989898; }  RULES    Property Value     Typeface McClatchy Sans   Weight 300   Size 11px   Line height 1.5em   Case Uppercase   Letter spacing Default   Color #989898    </description>
+EXAMPLE DECEMBER 27, 2018 01:27 PM  CSS time { display: block; font: 300 11px/1.5em &amp;#34;McClatchy Sans&amp;#34;, sans-serif; text-transform: uppercase; color: #989898; } RULES    Property Value     Typeface McClatchy Sans   Weight 300   Size 11px   Line height 1.5em   Case Uppercase   Letter spacing Default   Color #989898    </description>
     </item>
     
   </channel>

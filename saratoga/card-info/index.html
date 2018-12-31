@@ -61,33 +61,30 @@
 </div>
 
 <h4 id="css">CSS</h4>
-
-<pre><code class="language-css">.card-info {
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">card-info</span> {
+  <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">15</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
+  <span style="color:#66d9ef">flex-direction</span>: <span style="color:#66d9ef">column</span>;
+  <span style="color:#66d9ef">flex</span>: <span style="color:#ae81ff">1</span>;
 }
 
-.card-info &gt; * {
-  margin: 10px 0 0 0;
+.<span style="color:#a6e22e">card-info</span> <span style="color:#f92672">&gt;</span> <span style="color:#f92672">*</span> {
+  <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>;
 }
 
-.card-info &gt; :first-child {
-  margin-top: 0;
+.<span style="color:#a6e22e">card-info</span> <span style="color:#f92672">&gt;</span> :<span style="color:#a6e22e">first-child</span> {
+  <span style="color:#66d9ef">margin-top</span>: <span style="color:#ae81ff">0</span>;
 }
 
-.card-info &gt; time {
-  flex: 1;
-  display: flex;
-  align-items: flex-end;
+.<span style="color:#a6e22e">card-info</span> <span style="color:#f92672">&gt;</span> <span style="color:#f92672">time</span> {
+  <span style="color:#66d9ef">flex</span>: <span style="color:#ae81ff">1</span>;
+  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
+  <span style="color:#66d9ef">align-items</span>: <span style="color:#66d9ef">flex</span><span style="color:#f92672">-</span><span style="color:#66d9ef">end</span>;
 }
 
-.card-info a {
-  color: inherit;
-}
-</code></pre>
-
+.<span style="color:#a6e22e">card-info</span> <span style="color:#f92672">a</span> {
+  <span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">inherit</span>;
+}</code></pre></div>
 <h4 id="rules">Rules</h4>
 
 <p>The basic rules are simple:</p>
@@ -113,12 +110,9 @@
     <a href="https://mcclatchy.github.io/saratoga/opinion/" class="label ">
       <h5 class="impact">OPINION</h5>
     </a>
-    <article class="card">
-      
-      <div class="card-info">
-        <h3><a href="https://mcclatchy.github.io/saratoga/opinion/205928724/">Kudlow joins White House that sorely needs cooler heads to prevail</a></h3>
-        <time>March 19, 2018 5:34 pm</time>
-      </div>
+    <article class="card-info">
+      <h3><a href="https://mcclatchy.github.io/saratoga/opinion/205928724/">Kudlow joins White House that sorely needs cooler heads to prevail</a></h3>
+      <time>March 19, 2018 5:34 pm</time>
     </article>
     <article class="card-info">
       <h3><a href="https://mcclatchy.github.io/saratoga/opinion/205579084/">The Episcopal Church changed course for our LGBT members</a></h3>
@@ -225,7 +219,10 @@
   </div>
   <div class="card">
     <h5 class="label"><span class="impact">Organisms</span></h5>
-    <div class="card-info">
+    <div class="card-info center">
+      
+      <a class="blue" href="https://mcclatchy.github.io/design/saratoga/digest/">digest</a>
+      
     </div>
   </div>
 </section>
