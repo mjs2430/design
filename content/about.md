@@ -6,6 +6,6 @@ layout: about
 ---
 # Our Team
 
-A short intro about the uniqueness and awesomeness of our distributed, cross-functional team. Space for short description. Space for short description. Space for short description. Space for short description. Space for short description. Added from Forestry. Maybe Jessica should write this?
+A short intro about the uniqueness and awesomeness of our distributed, cross-functional team. Space for short description. Space for short description. Space for short description. Space for short description. Space for short description. Maybe Jessica should write this?
 
 <!-- Grid is handled in the /layouts/_default/about.html file -->
