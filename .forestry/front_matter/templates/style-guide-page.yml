@@ -10,6 +10,10 @@ fields:
   default: ''
   config:
     required: true
+- type: text
+  name: function
+  label: Function Title
+  description: Term used for designers.
 - name: description
   label: Description
   type: textarea
@@ -25,6 +29,7 @@ fields:
   config:
     required: true
 pages:
+- content/saratoga/paper.md
 - content/saratoga/figure.md
 - content/saratoga/p.md
 - content/saratoga/figcaption.md
@@ -36,7 +41,6 @@ pages:
 - content/saratoga/label.md
 - content/saratoga/time.md
 - content/saratoga/digest.md
-- content/saratoga/paper.md
 - content/saratoga/card-info.md
 - content/saratoga/h1.md
 - content/saratoga/h2.md
