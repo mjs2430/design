@@ -1,9 +1,9 @@
 ---
-title: "impact"
-description: "Reverse impact on any element."
-level: "molecule"
----
+title: impact
+description: Reverse impact on any element.
+level: molecule
 
+---
 The impact molecule simply reverses the color scheme of any element, and has a couple of additional rules to deal with card and label descendants. 
 
 #### Example
