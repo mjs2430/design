@@ -1,9 +1,9 @@
 ---
-title: "lists"
-description: "Default styles for lists in story bodies."
-level: "atom"
----
+title: lists
+description: Default styles for lists in story bodies.
+level: atom
 
+---
 #### EXAMPLE
 <div class="example">
   <ul>
