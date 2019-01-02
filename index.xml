@@ -6,19 +6,9 @@
     <description>Recent content on McClatchy Design</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Dec 2018 15:31:22 +0000</lastBuildDate>
     
 	<atom:link href="https://mcclatchy.github.io/design/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Our Team</title>
-      <link>https://mcclatchy.github.io/design/about/</link>
-      <pubDate>Sun, 02 Dec 2018 15:31:22 +0000</pubDate>
-      
-      <guid>https://mcclatchy.github.io/design/about/</guid>
-      <description>Our Team A short intro about the uniqueness and awesomeness of our distributed, cross-functional team. Space for short description. Space for short description. Space for short description. Space for short description. Space for short description. Maybe Jessica should write this?</description>
-    </item>
     
     <item>
       <title></title>
@@ -27,6 +17,15 @@
       
       <guid>https://mcclatchy.github.io/design/saratoga/about/</guid>
       <description>Design system explainer   Coming up with a design system We adopted the atomic design methodology to ensure consistency between our products, make communication better, and to make development of our designs easier. In doing so, we created a system of elements that can be used together to build our pages. We started from the ground up, and were very careful to design each layer adhering to all previous choices.</description>
+    </item>
+    
+    <item>
+      <title>Our Team</title>
+      <link>https://mcclatchy.github.io/design/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mcclatchy.github.io/design/about/</guid>
+      <description>Our Team A short intro about the uniqueness and awesomeness of our distributed, cross-functional team. Space for short description. Space for short description. Space for short description. Space for short description. Space for short description. Maybe Jessica should write this?</description>
     </item>
     
     <item>
