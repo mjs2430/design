@@ -4,6 +4,7 @@
 
 pre {
   overflow-x: scroll;
+  margin-bottom: 30px;
 }
 
 small {
@@ -12,10 +13,12 @@ small {
 
 table {
   width: 100%;
+  max-width: 750px !important;
   text-align: left;
   font-size: 14px;
   border-spacing: 0;
   font-family: "McClatchy Sans", sans-serif;
+  box-sizing: content-box;
 }
 
 td {
@@ -37,7 +40,8 @@ td:first-child {
  */
 
 .underline {
-  padding-bottom: .2em;
+  padding: 0 0 .2em;
+  margin: 15px 15px 0;
   border-bottom: 1px solid #989898;
 }
 
@@ -45,10 +49,6 @@ td:first-child {
   position: relative;
   background-color: #f4f4f4;
   z-index: 1;
-}
-
-.list .card-info {
-  padding: 15px 0;
 }
 
 .details {

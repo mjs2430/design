@@ -5,10 +5,10 @@
 {{ define "content" }}
 <div class="panels">
   <div id="details" class="details paper story sans">
-    {{- with .GetPage "./h1/" }}
-    <h2>{{ .Title }}</h2>
-    {{ .Content | markdownify }}
-    {{- end }}
+    <h2>Overview</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam nisi, lobortis eu lacus vitae, euismod rutrum diam. Sed ultricies eros non tellus tempus elementum. Fusce convallis libero vitae mauris blandit, non ultricies arcu commodo. Morbi ut felis sagittis, varius orci vitae, congue nibh. Quisque id eleifend dolor, vel pharetra orci. Nam gravida neque vitae nisl volutpat pellentesque. Cras condimentum fringilla diam, ut gravida tortor tempus eget. Nulla tempor lacus vel enim ullamcorper, eu aliquam massa elementum. Vivamus varius, diam sit amet tincidunt ultrices, risus lorem viverra ante, et maximus massa felis quis urna. Nulla varius auctor bibendum.</p>
+    <p>Quisque cursus arcu ut nunc ultricies, a pulvinar orci hendrerit. Sed lobortis pharetra justo aliquam ultrices. Ut venenatis tellus enim, vel imperdiet nulla auctor vitae. Integer non dictum orci. Sed aliquet lectus vel scelerisque pellentesque. Quisque suscipit ultricies ultricies. Ut vel ullamcorper tortor. Ut convallis non libero ut mollis. Nulla est tortor, mollis eu arcu ac, convallis lobortis enim. Pellentesque sapien odio, finibus et consequat vel, finibus in ante.</p>
+    <p>In auctor molestie ex, vel sagittis libero bibendum et. Quisque at blandit metus. Etiam eu egestas nisl, ac condimentum nulla. Vivamus porta, enim et dictum suscipit, nibh urna sollicitudin ante, blandit imperdiet enim turpis vitae velit. Ut sed ipsum in orci elementum semper nec non lacus. Nullam aliquam nulla quam, ac faucibus nisi fringilla eu. Aenean finibus augue massa, eget congue nibh lacinia id. Nullam risus sapien, tristique eget lacus vel, lobortis varius nisi. Sed pulvinar et lorem a ornare. In malesuada tellus quis dui egestas consequat. Quisque pellentesque lectus arcu, vel pretium diam pellentesque eu. In quis quam mi. Mauris venenatis dictum nisl, sed ornare ex imperdiet ut. Morbi sollicitudin dictum aliquet. Sed vel sagittis mauris. Donec suscipit, magna in placerat dictum, tortor nisi dignissim ipsum, vel vulputate ex nunc et velit.</p>
   </div>
 
   {{ partial "atomic-list.html" . }}

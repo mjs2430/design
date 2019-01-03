@@ -9,18 +9,14 @@ pygmentsStyle = "borland"
 
 [menu]
   [[menu.main]]
-    name = "home"
-    url = "/"
-    weight = 1
-  [[menu.main]]
     name = "about us"
     url = "/about/"
-    weight = 2
+    weight = 1
   [[menu.main]]
     name = "blog"
     url = "https://medium.com/mcclatchy-design"
-    weight = 3
+    weight = 2
   [[menu.main]]
     name = "style guide"
     url = "/saratoga/"
-    weight = 4
+    weight = 3

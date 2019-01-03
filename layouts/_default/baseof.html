@@ -20,11 +20,12 @@
 
   <body class="{{ .Type }}">
     <div class="banner paper">
-      <img class="logo" src="/img/banner-logo.2.svg">
+      <a href="/" style="padding: 0;"><img class="logo" src="/img/banner-logo.2.svg"></a>
       <nav>
         {{- $currentPage := . }}
         {{- range .Site.Menus.main }}
-        <a href="{{ .URL | absURL }}" class="{{ if eq $currentPage.URL .URL }}active{{ end }}">
+        {{- $matches := findRE .URL $currentPage.URL }}
+        <a href="{{ .URL | absURL }}" class="{{ if gt (len $matches) 0 }}active{{ end }}">
           <span>{{ .Name }}</span>
         </a>
         {{- end }}

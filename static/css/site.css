@@ -70,38 +70,12 @@
 
 section {
   margin: 50px auto;
-  max-width: 540px;
+  max-width: 1140px;
 }
 
 .grid-label {
   margin: 15px auto;
   padding: 0 15px;
-}
-
-.grid > * {
-  margin-bottom: 30px;
-}
-
-@supports(display: grid) {
-  section {
-    max-width: 1140px;
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 30px;
-  }
-
-  .grid > * {
-    margin-bottom: 0;
-  }
-
-  @media(min-width: 540px) {
-    .grid {
-      padding: 0 15px;
-    }
-  }
 }
 
 /**
