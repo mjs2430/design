@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>h4</title>
+    <title>grid</title>
     
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -37,20 +37,34 @@
     </div>
 <div class="panels">
   <div class="paper story details">
-    <h2>h4</h2>
+    <h2>grid</h2>
     
 
-<p>Default browser spacing for the <code>&lt;h4&gt;</code> atom should be used unless specifically set at the molecule or organism level. Doing so reduces bloat, given that this atom is used in a couple different scenarios, and allows for cascading to apply properly at that level.</p>
+<p>This is the smallest method of creating a grid following the design rules, which state that grid elements should be no smaller than 300px and have 30px of space between each item. It is very likely that at the template level more sophisticated grids will be required to fit everything onto the page dynamically.</p>
 
-<h4 id="example">Example</h4>
+<p><em>Note: We have not decided yet if the CSS Grid has enough browser support for full use. This page may change in the future.</em></p>
 
-<div class="example">
-  <h4>Jayhawks back in town, start practicing for Saturday’s Eastern Michigan game</h4>
-</div>
-
+<h4 id="html">HTML</h4>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">section</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;grid&#34;</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">article</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card&#34;</span>&gt; 
+    ...  
+  &lt;/<span style="color:#000080;font-weight:bold">article</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">article</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card&#34;</span>&gt; 
+    ...  
+  &lt;/<span style="color:#000080;font-weight:bold">article</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">article</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card&#34;</span>&gt; 
+    ...  
+  &lt;/<span style="color:#000080;font-weight:bold">article</span>&gt;
+&lt;/<span style="color:#000080;font-weight:bold">section</span>&gt;</code></pre></div>
 <h4 id="css">CSS</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#000080;font-weight:bold">h4</span>, .h4 {
-  <span style="color:#000080;font-weight:bold">font</span>: <span style="color:#00f">400</span> <span style="color:#00f">16</span><span style="color:#000080;font-weight:bold">px</span>/<span style="color:#00f">1.2</span><span style="color:#000080;font-weight:bold">em</span> <span style="color:#00f">&#34;McClatchy Serif&#34;</span>, <span style="color:#000080;font-weight:bold">serif</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.grid {
+  <span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">grid</span>;
+  <span style="color:#000080;font-weight:bold">grid-template-columns</span>: repeat(<span style="color:#000080;font-weight:bold">auto</span>-<span style="color:#000080;font-weight:bold">fill</span>, minmax(<span style="color:#00f">300</span><span style="color:#000080;font-weight:bold">px</span>, <span style="color:#00f">1</span>fr));
+  <span style="color:#000080;font-weight:bold">grid-gap</span>: <span style="color:#00f">30</span><span style="color:#000080;font-weight:bold">px</span>;
+}
+
+@<span style="color:#000080;font-weight:bold">media</span> (<span style="color:#000080;font-weight:bold">min-width</span>: <span style="color:#000080;font-weight:bold">660px</span>) {
+  <span style="color:#000080;font-weight:bold">grid-gap</span>: <span style="color:#000080;font-weight:bold">15px</span>;
 }</code></pre></div>
 <h4 id="rules">RULES</h4>
 
@@ -64,63 +78,13 @@
 
 <tbody>
 <tr>
-<td>Typeface</td>
-<td>McClatchy Serif</td>
+<td>Column width</td>
+<td>300px minimum and stretches to fill between sizes.</td>
 </tr>
 
 <tr>
-<td>Weight</td>
-<td>400</td>
-</tr>
-
-<tr>
-<td>Size</td>
-<td>16px</td>
-</tr>
-
-<tr>
-<td>Line height</td>
-<td>1.2em</td>
-</tr>
-
-<tr>
-<td>Case</td>
-<td>Sentence</td>
-</tr>
-
-<tr>
-<td>Letter spacing</td>
-<td>Default</td>
-</tr>
-</tbody>
-</table>
-
-<h2 id="story-body-rules">Story body rules</h2>
-
-<p>In the story body, when added through the CMS system, subheads have an alternative appearance.</p>
-
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Value</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>Typeface</td>
-<td>McClatchy Sans</td>
-</tr>
-
-<tr>
-<td>Weight</td>
-<td>700 (bold)</td>
-</tr>
-
-<tr>
-<td>Case</td>
-<td>Uppercase</td>
+<td>Spacing between columns</td>
+<td>30px</td>
 </tr>
 </tbody>
 </table>
