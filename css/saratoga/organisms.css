@@ -1,0 +1,19 @@
+/**
+ * Story body
+ */
+
+.story {
+  padding: 15px;
+}
+
+.story > * {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 690px;
+}
+
+.story > h2, .story > h3, .story > h4, .story > h5, .story > h6 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "McClatchy Sans";
+}
