@@ -1,37 +1,15 @@
-{{ define "stylesheets" }}
+{{ define "head" }}
 <link rel="stylesheet" href="/css/style-guide.css">
+<script async src="/js/style-guide.js"></script>
 {{ end }}
 
 {{ define "content" }}
-<div class="paper main details">
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-</div>
+<div class="panels">
+  <div class="paper story details">
+    <h2>{{ .Title }}</h2>
+    {{ .Content }}
+  </div>
 
-<section class="grid sans">
-  <div class="card">
-    <h5 class="label"><span class="impact">Atoms</span></h5>
-    <div class="card-info center">
-      {{ range where .Site.Pages "Params.level" "atom" }}
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-      {{ end }}
-    </div>
-  </div>
-  <div class="card"> 
-    <h5 class="label"><span class="impact">Molecules</span></h3>
-    <div class="card-info center">
-      {{ range where .Site.Pages "Params.level" "molecule" }}
-      <a class="blue" href="{{ .Permalink }}">{{ .Title }}</a>
-      {{ end }}
-    </div>
-  </div>
-  <div class="card">
-    <h5 class="label"><span class="impact">Organisms</span></h5>
-    <div class="card-info center">
-      {{ range where .Site.Pages "Params.level" "organism" }}
-      <a class="blue" href="{{ .Permalink }}">{{ .Title }}</a>
-      {{ end }}
-    </div>
-  </div>
-</section>
+  {{ partial "atomic-list.html" .Site }}
+</div>
 {{ end }}

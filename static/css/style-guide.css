@@ -6,11 +6,16 @@ pre {
   overflow-x: scroll;
 }
 
+small {
+  font-size: 14px;
+}
+
 table {
   width: 100%;
   text-align: left;
   font-size: 14px;
   border-spacing: 0;
+  font-family: "McClatchy Sans", sans-serif;
 }
 
 td {
@@ -24,43 +29,52 @@ th {
 
 td:first-child {
   font-weight: bold;
-}
-
-.detail-icon {
-  height: .7em;
-}
-
-.underline {
-  padding-bottom: .2em;
-  border-bottom: 1px solid #989898;
+  width: 150px;
 }
 
 /*
  * Style guide main rules.
  */
 
-.main {
-  padding: 15px 15px 50px;
+.underline {
+  padding-bottom: .2em;
+  border-bottom: 1px solid #989898;
 }
 
-.main > * {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 690px;
-  font-family: "McClatchy Sans", sans-serif;
+.list {
+  position: relative;
+  background-color: #f4f4f4;
+  z-index: 1;
 }
 
-.main > h2, .main > h3, .main > h4, .main > h5, .main > h6 {
-  font-weight: 600;
-  margin-top: 2em;
-  text-transform: uppercase;
+.list .card-info {
+  padding: 15px 0;
 }
 
-.comma-list:not(:last-child):after {
-  content: ", ";
-  color: #222;
+.details {
+  position: relative;
+  z-index: 2;
 }
 
-.card-info.center {
-  align-items: center;
+@media (min-width: 769px) {
+  .panels {
+    position: relative;
+    height: calc(100vh - 90px);
+    display: flex;
+  }
+
+  .panels > * {
+    flex: 1;
+    overflow: scroll;
+  }
+
+  .list {
+    max-width: 400px;
+    order: 1;
+  }
+
+  .details {
+    order: 2;
+  }
 }
+

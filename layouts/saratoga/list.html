@@ -1,24 +1,17 @@
-{{ define "stylesheets" }}
+{{ define "head" }}
 <link rel="stylesheet" href="/css/style-guide.css">
+<script async src="/js/style-guide.js"></script>
 {{ end }}
 
 {{ define "content" }}
-<div class="paper main">
-  <p>Below is the list of atoms and molecules defined in the design system. <a href="./about/">Click here</a> for some background on our process or to better understand how the different parts of our structure work together.</p>
+<div class="panels">
+  <div id="details" class="details paper story sans">
+    {{- with .GetPage "./h1/" }}
+    <h2>{{ .Title }}</h2>
+    {{ .Content | markdownify }}
+    {{- end }}
+  </div>
 
-  <h1 class="underline">Atoms <a href="/css/saratoga/atoms.css"><img class="detail-icon" src="/img/icons/file.svg"></a></h1>
-  {{ range where .Pages "Params.level" "atom" }}
-    {{ .Render "link" }}
-  {{ end }}
-
-  <h1 class="underline">Molecules <a href="/css/saratoga/molecules.css"><img class="detail-icon" src="/img/icons/file.svg"></a></h1>
-  {{ range where .Pages "Params.level" "molecule" }}
-    {{ .Render "link" }}
-  {{ end }}
-
-  <h1 class="underline">Organisms</h1>
-  {{ range where .Pages "Params.level" "organism" }}
-    {{ .Render "link" }}
-  {{ end }}
+  {{ partial "atomic-list.html" . }}
 </div>
 {{ end }}
