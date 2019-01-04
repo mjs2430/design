@@ -45,6 +45,12 @@ td:first-child {
   border-bottom: 1px solid #989898;
 }
 
+.updated {
+  display: block;
+  font-size: 11px;
+  color: #377f6a;
+}
+
 .list {
   position: relative;
   background-color: #f4f4f4;
