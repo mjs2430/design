@@ -28,6 +28,9 @@ fields:
   description: Should be atom, molecule or organism
   config:
     required: true
+- type: boolean
+  name: updated
+  label: Recently Updated
 pages:
 - content/saratoga/figure.md
 - content/saratoga/p.md
@@ -35,7 +38,6 @@ pages:
 - content/saratoga/h4.md
 - content/saratoga/more-link.md
 - content/saratoga/h5.md
-- content/saratoga/h6.md
 - content/saratoga/label.md
 - content/saratoga/time.md
 - content/saratoga/h1.md
@@ -47,4 +49,5 @@ pages:
 - content/saratoga/h3.md
 - content/saratoga/paper.md
 - content/saratoga/digest.md
+- content/saratoga/h6.md
 - content/saratoga/h2.md
