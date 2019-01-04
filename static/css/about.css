@@ -23,12 +23,28 @@ p {
   font: 14px/1.5em "McClatchy Sans", sans-serif;
 }
 
+/**
+ * Bios
+ */
+
 .bios {
   max-width: 1130px;
   margin: 0 auto;
   padding: 50px 15px;
   display: grid;
   grid-gap: 30px;
+}
+
+.bio * {
+  font-family: "McClatchy Sans", sans-serif;
+}
+
+.bio h4 {
+  font-weight: bold;
+}
+
+.bio p {
+  font-size: 14px;
 }
 
 @media (min-width: 700px) {
@@ -62,6 +78,8 @@ p {
 .name > * {
   margin: 10px;
 }
+
+/* Manager specials */
 
 .bio.manager {
   border-bottom: 1px solid #d8d8d8;
