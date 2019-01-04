@@ -1,12 +1,20 @@
 {{ define "head" }}
 <link rel="stylesheet" href="/css/style-guide.css">
-<!-- <script async src="/js/style-guide.js"></script> -->
 {{ end }}
 
 {{ define "content" }}
 <div class="panels">
   <div class="paper story details">
-    <h2>{{ .Title }}</h2>
+    <h2>
+      {{- if .Param "updated" }}
+      <span class="updated">RECENTLY UPDATED</span>
+      {{- end }}
+      {{- if .Param "function" }}
+      {{- .Param "function" }} <small>({{ .Title }})</small>
+      {{- else }}
+      {{- .Title }}
+      {{- end -}}
+    </h2>
     {{ .Content }}
   </div>
 
