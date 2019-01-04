@@ -20,7 +20,7 @@
 }
 
 .story > h2, .story > h3, .story > h4, .story > h5, .story > h6 {
-  font-weight: 700;
+  font-weight: 600;
   font-family: "McClatchy Sans";
   text-transform: uppercase;
 }
