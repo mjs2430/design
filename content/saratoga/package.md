@@ -2,6 +2,7 @@
 title: package
 description: Provides spacing for text in cards and digests.
 level: molecule
+updated: true
 
 ---
 The package molecule is the backbone of the design system. Spacing for  most molecules and organisms is based on these default rules. This molecule only provides spacing rules.
