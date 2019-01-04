@@ -45,27 +45,7 @@
 }
 
 /**
- * Hero
- */
-
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px 30px;
-  background-image: url("../img/team-process.jpg");
-  background-position: cover;
-  overflow: hidden;
-  border-bottom: 1px solid #ddd;
-}
-
-.hero svg {
-  height: 360px;
-  overflow: visible;
-}
-
-/**
- * Grid
+ * Generics
  */
 
 section {
@@ -78,41 +58,6 @@ section {
   padding: 0 15px;
 }
 
-/**
- * Medium art
- */
-
-.medium-art {
-  position: relative;
-  padding-top: 56.25%;
-  overflow: hidden;
-  background-color: #fafafa;
-}
-
-.medium-art img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-/**
- * Bio differences
- */
-
-.bio * {
-  font-family: "McClatchy Sans", sans-serif;
-}
-
-.bio h4 {
-  font-weight: bold;
-}
-
-.bio p {
-  font-size: 14px;
-}
 
 /**
  * Footer
