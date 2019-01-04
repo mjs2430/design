@@ -19,7 +19,7 @@
           {{ range first 1 $leadArt }}{{ . | replaceRE " src" " decoding=\"async\" src" | safeHTML }}{{ end }}
         </a>
       </figure>
-      <div class="card-info">
+      <div class="package">
         <p class="byline">{{ .author.name }}</p>
         <h3><a href="{{ .link }}">{{ .title }}</a></h3>
         <time>{{ .published }}</time>

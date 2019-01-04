@@ -22,7 +22,7 @@ This snippet is a digest that does have lead art.
 
 {{< highlight html >}}{{< digest label="sticky" >}}{{< /highlight >}}
 
-The `card` and `card-info` molecules can be used in any combination here. The first snippet above shows a different HTML structure for the first article to illustrate a simple loop, but if the structure from the second snippet is used and the `figure` is ommitted the result is the same.
+The `card` and `package` molecules can be used in any combination here. The first snippet above shows a different HTML structure for the first article to illustrate a simple loop, but if the structure from the second snippet is used and the `figure` is ommitted the result is the same.
 
 #### CSS
 
