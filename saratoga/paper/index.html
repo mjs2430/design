@@ -42,7 +42,7 @@
 
 <p>The paper and card molecules both do the same thing of lifting them a plane higher than the background. The paper molecule is the more simple of the two, by having block for the display property. This allows default sizing and spacing of the children to dictate the height of the molecule.</p>
 
-<p>In our digests, the design dictates that there be 15px of space between the label and the first headline, then 30px of space between each additional headline. This is easily done by stacking a label atom and several card-info molecules inside a paper molecule. The card-info molecule has 15px of padding on all sides, and therefore creates the proper space automatically.</p>
+<p>In our digests, the design dictates that there be 15px of space between the label and the first headline, then 30px of space between each additional headline. This is easily done by stacking a label atom and several <code>package</code> molecules inside a paper molecule. The <code>package</code> molecule has 15px of padding on all sides, and therefore creates the proper space automatically.</p>
 
 <h4 id="example">Example</h4>
 
@@ -52,19 +52,19 @@
     <a href="https://mcclatchy.github.io/saratoga/opinion/" class="label ">
       <h5 class="impact">OPINION</h5>
     </a>
-    <article class="card-info">
+    <article class="package">
       <h3><a href="https://mcclatchy.github.io/saratoga/opinion/205928724/">Kudlow joins White House that sorely needs cooler heads to prevail</a></h3>
       <time>March 19, 2018 5:34 pm</time>
     </article>
-    <article class="card-info">
+    <article class="package">
       <h3><a href="https://mcclatchy.github.io/saratoga/opinion/205579084/">The Episcopal Church changed course for our LGBT members</a></h3>
       <time>March 16, 2018 3:42 pm</time>
     </article>
-    <article class="card-info">
+    <article class="package">
       <h3><a href="https://mcclatchy.github.io/saratoga/opinion/205581414/">The Kansas Republican Party is taking a stance on transgender identity</a></h3>
       <time>March 16, 2018 3:58 pm</time>
     </article>
-    <article class="card-info">
+    <article class="package">
       <h3><a href="https://mcclatchy.github.io/saratoga/opinion/205583064/">Letters: Readers discuss teen drinking, tax-cut benefits in Missouri and student protests</a></h3>
       <time>March 16, 2018 4:08 pm</time>
     </article>
@@ -83,20 +83,20 @@
           <img src="https://pics.mcclatchyinteractive.com/opinion/gi1163/picture205928719/ALTERNATES/LANDSCAPE_640/AP_18073734498485" srcset="https://pics.mcclatchyinteractive.com/opinion/gi1163/picture205928719/ALTERNATES/LANDSCAPE_1140/AP_18073734498485 1140w"> 
         </a>
       </figure>
-      <div class="card-info">
+      <div class="package">
         <h3><a href="https://mcclatchy.github.io/saratoga/opinion/205928724/">Kudlow joins White House that sorely needs cooler heads to prevail</a></h3>
         <time>March 19, 2018 5:34 pm</time>
       </div>
     </article>
-    <article class="card-info">
+    <article class="package">
       <h3><a href="https://mcclatchy.github.io/saratoga/opinion/205579084/">The Episcopal Church changed course for our LGBT members</a></h3>
       <time>March 16, 2018 3:42 pm</time>
     </article>
-    <article class="card-info">
+    <article class="package">
       <h3><a href="https://mcclatchy.github.io/saratoga/opinion/205581414/">The Kansas Republican Party is taking a stance on transgender identity</a></h3>
       <time>March 16, 2018 3:58 pm</time>
     </article>
-    <article class="card-info">
+    <article class="package">
       <h3><a href="https://mcclatchy.github.io/saratoga/opinion/205583064/">Letters: Readers discuss teen drinking, tax-cut benefits in Missouri and student protests</a></h3>
       <time>March 16, 2018 4:08 pm</time>
     </article>
@@ -108,11 +108,11 @@
 
 <h4 id="html">HTML</h4>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;paper&#34;</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">article</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card-info&#34;</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">article</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package&#34;</span>&gt;
     &lt;<span style="color:#000080;font-weight:bold">h3</span>&gt;&lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;https://mcclatchy.github.io/saratoga/opinion/205579084/&#34;</span>&gt;The Episcopal Church changed course for our LGBT members&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">h3</span>&gt;
     &lt;<span style="color:#000080;font-weight:bold">time</span>&gt;March 16, 2018 3:42 pm&lt;/<span style="color:#000080;font-weight:bold">time</span>&gt;
   &lt;/<span style="color:#000080;font-weight:bold">article</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">article</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card-info&#34;</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">article</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package&#34;</span>&gt;
     &lt;<span style="color:#000080;font-weight:bold">h3</span>&gt;&lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;https://mcclatchy.github.io/saratoga/opinion/205581414/&#34;</span>&gt;The Kansas Republican Party is taking a stance on transgender identity&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">h3</span>&gt;
     &lt;<span style="color:#000080;font-weight:bold">time</span>&gt;March 16, 2018 3:58 pm&lt;/<span style="color:#000080;font-weight:bold">time</span>&gt;
   &lt;/<span style="color:#000080;font-weight:bold">article</span>&gt;
@@ -134,91 +134,91 @@
   <div class="paper story list">
   <h2 class="underline">Atoms <small><a href="../../css/saratoga/atoms.css">Download</a></small></h2>
   
-  <article class="card-info">
+  <article class="package">
   <h3 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/button/">button</a></h3>
   <p class="summary">Button styles to ensure proper row alignment.</p>
 </article>
 
   
-  <article class="card-info">
+  <article class="package">
   <h3 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/figcaption/">figcaption</a></h3>
   <p class="summary">Default styles for all media captions.</p>
 </article>
 
   
-  <article class="card-info">
+  <article class="package">
   <h3 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/figure/">figure</a></h3>
   <p class="summary">Semantic wrapper for media in stories and cards.</p>
 </article>
 
   
-  <article class="card-info">
+  <article class="package">
   <h3 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/h1/">h1</a></h3>
   <p class="summary">Primary headline on story pages, video pages and video playlists. Lead headline on homepage and section pages.</p>
 </article>
 
   
-  <article class="card-info">
+  <article class="package">
   <h3 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/h2/">h2</a></h3>
   <p class="summary">Secondary headlines in the lead group on the homepage and section pages.</p>
 </article>
 
   
-  <article class="card-info">
+  <article class="package">
   <h3 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/h3/">h3</a></h3>
   <p class="summary">Used in headline stacks and cards on the homepage and section pages; primary subhead in articles.</p>
 </article>
 
   
-  <article class="card-info">
+  <article class="package">
   <h3 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/h4/">h4</a></h3>
   <p class="summary">Used as footer labels.</p>
 </article>
 
   
-  <article class="card-info">
+  <article class="package">
   <h3 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/h5/">h5</a></h3>
   <p class="summary">Used as labels for headline stacks.</p>
 </article>
 
   
-  <article class="card-info">
+  <article class="package">
   <h3 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/h6/">h6</a></h3>
   <p class="summary">Used primarily for kickers.</p>
 </article>
 
   
-  <article class="card-info">
+  <article class="package">
   <h3 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/label/">label</a></h3>
   <p class="summary">Labels for the tops of cards and headline stacks on section pages.</p>
 </article>
 
   
-  <article class="card-info">
+  <article class="package">
   <h3 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/li/">lists</a></h3>
   <p class="summary">Default styles for lists in story bodies.</p>
 </article>
 
   
-  <article class="card-info">
+  <article class="package">
   <h3 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/more-link/">more-link</a></h3>
   <p class="summary">Used below grid digests.</p>
 </article>
 
   
-  <article class="card-info">
+  <article class="package">
   <h3 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/p/">p</a></h3>
   <p class="summary">Default text on story pages.</p>
 </article>
 
   
-  <article class="card-info">
+  <article class="package">
   <h3 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/summary/">summary</a></h3>
   <p class="summary">Summary text used in cards and headline stacks.</p>
 </article>
 
   
-  <article class="card-info">
+  <article class="package">
   <h3 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/time/">time</a></h3>
   <p class="summary">Used for publish and modified times.</p>
 </article>
@@ -227,25 +227,25 @@
 
   <h2 class="underline">Molecules <small><a href="../../css/saratoga/molecules.css">Download</a></small></h2>
   
-  <article class="card-info">
+  <article class="package">
   <h3 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/card/">card</a></h3>
   <p class="summary">Enhanced paper molecule with flex display.</p>
 </article>
 
   
-  <article class="card-info">
-  <h3 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/card-info/">card-info</a></h3>
-  <p class="summary">Provides spacing for test in cards and digests.</p>
-</article>
-
-  
-  <article class="card-info">
+  <article class="package">
   <h3 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/impact/">impact</a></h3>
   <p class="summary">Reverse impact on any element.</p>
 </article>
 
   
-  <article class="card-info">
+  <article class="package">
+  <h3 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/package/">package</a></h3>
+  <p class="summary">Provides spacing for text in cards and digests.</p>
+</article>
+
+  
+  <article class="package">
   <h3 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/paper/">paper</a></h3>
   <p class="summary">Default paper molecule with a block display.</p>
 </article>
@@ -254,13 +254,13 @@
 
   <h2 class="underline">Organisms <small><a href="../../css/saratoga/organisms.css">Download</a></small></h2>
   
-  <article class="card-info">
+  <article class="package">
   <h3 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/digest/">digest</a></h3>
   <p class="summary">Headline stacks for section content.</p>
 </article>
 
   
-  <article class="card-info">
+  <article class="package">
   <h3 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/grid/">grid</a></h3>
   <p class="summary">A very basic starter grid</p>
 </article>

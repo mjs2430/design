@@ -23,28 +23,28 @@
   flex-direction: column;
 }
 
-.card-info {
+.package {
   padding: 15px;
   display: flex;
   flex-direction: column;
   flex: 1;
 }
 
-.card-info > * {
+.package > * {
   margin: 10px 0 0 0;
 }
 
-.card-info > :first-child {
+.package > :first-child {
   margin-top: 0;
 }
 
-.card-info > time {
+.package > time {
   flex: 1;
   display: flex;
   align-items: flex-end;
 }
 
-.card-info a {
+.package a {
   color: inherit;
 }
 

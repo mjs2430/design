@@ -49,16 +49,6 @@ Example    FOOD Hatch chiles bring heat and hearty flavor to New Mexican cuisine
     </item>
     
     <item>
-      <title>card-info</title>
-      <link>https://mcclatchy.github.io/design/saratoga/card-info/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mcclatchy.github.io/design/saratoga/card-info/</guid>
-      <description>The card-info molecule is the backbone of the design system. Spacing for most molecules and organisms is based on these default rules. This molecule only provides spacing rules.
-Example    FOOD Hatch chiles bring heat and hearty flavor to New Mexican cuisine  March 16, 2018 11:33 am    HTML &amp;lt;div class=&amp;#34;card-info&amp;#34;&amp;gt; &amp;lt;h6&amp;gt;&amp;lt;a class=&amp;#34;kicker&amp;#34; href=&amp;#34;https://mcclatchy.github.io/saratoga/food/&amp;#34;&amp;gt;FOOD&amp;lt;/a&amp;gt;&amp;lt;/h6&amp;gt; &amp;lt;h3&amp;gt;&amp;lt;a href=&amp;#34;https://mcclatchy.github.io/saratoga/food/205504249/&amp;#34;&amp;gt;Hatch chiles bring heat and hearty flavor to New Mexican cuisine {{ if .</description>
-    </item>
-    
-    <item>
       <title>digest</title>
       <link>https://mcclatchy.github.io/design/saratoga/digest/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -206,6 +196,16 @@ Example OPINION  Kudlow joins White House that sorely needs cooler heads to prev
       <description>The default values for &amp;lt;p&amp;gt; are designed for the normal body text of the story page in order to keep our primary CSS as small as possible.
 EXAMPLE Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut arcu consequat, pretium libero non, consectetur risus. Aenean sed turpis ac sem iaculis egestas sit.
  CSS p { font: 17px/1.5em &amp;#34;Lyon&amp;#34;, serif; } RULES    Property Value     Typeface Lyon   Weight 400   Size 17px   Line Height 1.</description>
+    </item>
+    
+    <item>
+      <title>package</title>
+      <link>https://mcclatchy.github.io/design/saratoga/package/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mcclatchy.github.io/design/saratoga/package/</guid>
+      <description>The pakage molecule is the backbone of the design system. Spacing for most molecules and organisms is based on these default rules. This molecule only provides spacing rules.
+Example    FOOD Hatch chiles bring heat and hearty flavor to New Mexican cuisine  March 16, 2018 11:33 am    HTML &amp;lt;div class=&amp;#34;package&amp;#34;&amp;gt; &amp;lt;h6&amp;gt;&amp;lt;a class=&amp;#34;kicker&amp;#34; href=&amp;#34;https://mcclatchy.github.io/saratoga/food/&amp;#34;&amp;gt;FOOD&amp;lt;/a&amp;gt;&amp;lt;/h6&amp;gt; &amp;lt;h3&amp;gt;&amp;lt;a href=&amp;#34;https://mcclatchy.github.io/saratoga/food/205504249/&amp;#34;&amp;gt;Hatch chiles bring heat and hearty flavor to New Mexican cuisine {{ if .</description>
     </item>
     
     <item>

@@ -10,23 +10,18 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
 
-    <link rel="stylesheet" href="../../css/fonts.css">
-    <link rel="stylesheet" href="./css/atoms.css">
-    <link rel="stylesheet" href="./css/molecules.css">
-
-    
-    <link rel="stylesheet" href="./css/explainer.css">
+    <link rel="stylesheet" href="./v1.min.css">
   </head>
 
   <body>
     <h1>Coming up with a design system</h1>
     <p>We adopted the atomic design methodology to ensure consistency between our products, make communication better, and to make development of our designs easier. In doing so, we created a system of elements that can be used together to build our pages. We started from the ground up, and were very careful to design each layer adhering to all previous choices.</p>
 
-    <h1>Atoms and Typograhy | <small><a href="../../css/saratoga/atoms.css" class="code" target="_blank">atoms.css</a></small></h1>
+    <h1>Atoms and Typograhy</h1>
     <p>During our design process we had a lot of discussion defining atoms and understanding how our definition of them would affect our current design goals, possible future goals and development. After creating multiple test pages to determine how different organizational structures interacted with each other, and identifying potential bottlenecks with development, we decided that the most flexible definition of atoms was each piece of text itself.</p>
     <p>We took all native HTML text items, along with a handful of custom classes, and defined styles that you can see in our <a href="./css/atoms.css">atoms.css</a> file. We kept it basic and decided to only define the font properties at this level. When we began organizing our designs into repeatable molecules, we noticed that things like spacing were more dependent on the molecule than the atoms that comprised the molecule.</p>
 
-    <h1>Molecules | <small><a href="../../css/saratoga/molecules.css" class="code" target="_blank">molecules.css</a></small></h1>
+    <h1>Molecules</h1>
     <p>Once we had defined the rules for text we started identifying the repeatable elements of our designs. Trying to adhere to the methodology, we didn't allow ourselves to alter the rules we had previously set. In doing so, we immediately saw the advantages of the methodology. Molecules required very little CSS to separate themselves and were extremely flexible. We identified three base molecules with a few variations.</p>
 
     <div class="grid">
