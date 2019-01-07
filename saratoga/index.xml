@@ -20,6 +20,16 @@
     </item>
     
     <item>
+      <title>Sample story</title>
+      <link>https://mcclatchy.github.io/design/saratoga/sample/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mcclatchy.github.io/design/saratoga/sample/</guid>
+      <description> SECTION Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus lorem a  By John Doe SAMPLE NEWSPAPER
+AUG 13, 2018, UPDATED 4 MONTHS AGO           Secretary of State Kris Kobach (right) has pulled ahead of Gov. Jeff Colyer as counties count provisional votes. FILE PHOTO  </description>
+    </item>
+    
+    <item>
       <title>button</title>
       <link>https://mcclatchy.github.io/design/saratoga/button/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -140,6 +150,17 @@ Example SPORTS  CSS h6, .h6 { font: 400 12px/1.2em &amp;#34;McClatchy Serif&amp;
     </item>
     
     <item>
+      <title>header</title>
+      <link>https://mcclatchy.github.io/design/saratoga/header/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mcclatchy.github.io/design/saratoga/header/</guid>
+      <description>The header organism is based on the standard package molecule but increases the space between each direct child and centers the content on the device.
+EXAMPLE SECTION Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus lorem a  By John Doe SAMPLE NEWSPAPER
+AUG 13, 2018, UPDATED 4 MONTHS AGO           HTML &amp;lt;header class=&amp;#34;package&amp;#34;&amp;gt; &amp;lt;h6 class=&amp;#34;kicker&amp;#34;&amp;gt;&amp;lt;a href=&amp;#34;#&amp;#34;&amp;gt;SECTION&amp;lt;/a&amp;gt;&amp;lt;/h6&amp;gt; &amp;lt;h1&amp;gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
       <title>impact</title>
       <link>https://mcclatchy.github.io/design/saratoga/impact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -207,6 +228,16 @@ Example    FOOD Hatch chiles bring heat and hearty flavor to New Mexican cuisine
       <guid>https://mcclatchy.github.io/design/saratoga/paper/</guid>
       <description>The paper and card molecules both do the same thing of lifting them a plane higher than the background. The paper molecule is the more simple of the two, by having block for the display property. This allows default sizing and spacing of the children to dictate the height of the molecule.
 In our digests, the design dictates that there be 15px of space between the label and the first headline, then 30px of space between each additional headline.</description>
+    </item>
+    
+    <item>
+      <title>social-media</title>
+      <link>https://mcclatchy.github.io/design/saratoga/social-media/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mcclatchy.github.io/design/saratoga/social-media/</guid>
+      <description>A very small molecule, the icons are simply a center-justified flex row with optimal padding for all devices.
+Example         HTML &amp;lt;div class=&amp;#34;social-media&amp;#34;&amp;gt; &amp;lt;a href=&amp;#34;#&amp;#34;&amp;gt; &amp;lt;svg data-name=&amp;#34;twitter&amp;#34; viewBox=&amp;#34;0 0 512 512&amp;#34;&amp;gt;&amp;lt;path d=&amp;#34;M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.</description>
     </item>
     
     <item>

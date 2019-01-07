@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>p</title>
+    <title>header</title>
     
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -37,64 +37,59 @@
     </div>
 <div class="panels">
   <div class="paper story details">
-    <h2>p</h2>
+    <h2>header</h2>
     
 
-<p>The default values for <code>&lt;p&gt;</code> are designed for the normal body text of the story page in order to keep our primary CSS as small as possible.</p>
+<p>The <code>header</code> organism is based on the standard <code>package</code> molecule but increases the space between each direct child and centers the content on the device.</p>
 
 <h4 id="example">EXAMPLE</h4>
 
-<div class="example">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut arcu consequat, pretium libero non, consectetur risus. Aenean sed turpis ac sem iaculis egestas sit.</p>
+<article class="example">
+  <header class="package">
+    <h6 class="kicker"><a href="#">SECTION</a></h6>
+    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus lorem a</h1>
+    <div>
+      <p class="byline">By <a href="#">John Doe</a> <span class="credit">SAMPLE NEWSPAPER</span></p>
+      <time>AUG 13, 2018, UPDATED 4 MONTHS AGO</time>
+      <div class="social-media">
+  <a href="#">
+    <svg data-name="twitter" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+  </a>
+  <a href="#">
+    <svg data-name="facebook" viewBox="0 0 264 512"><path d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path></svg>
+  </a>
+  <a href="#">
+    <svg data-name="envelope" viewBox="0 0 512 512"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>
+  </a>
 </div>
 
+    </div>
+  </header>
+</article>
+
+<h4 id="html">HTML</h4>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">header</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package&#34;</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">h6</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;kicker&#34;</span>&gt;&lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;SECTION&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">h6</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">h1</span>&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus lorem a&lt;/<span style="color:#000080;font-weight:bold">h1</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;byline&#34;</span>&gt;By &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;John Doe&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt; &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;credit&#34;</span>&gt;SAMPLE NEWSPAPER&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">time</span>&gt;AUG 13, 2018, UPDATED 4 MONTHS AGO&lt;/<span style="color:#000080;font-weight:bold">time</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;social-media&#34;</span>&gt;
+      ...
+    &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+  &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#000080;font-weight:bold">header</span>&gt;</code></pre></div>
 <h4 id="css">CSS</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#000080;font-weight:bold">p</span> {
-  <span style="color:#000080;font-weight:bold">font</span>: <span style="color:#00f">17</span><span style="color:#000080;font-weight:bold">px</span>/<span style="color:#00f">1.5</span><span style="color:#000080;font-weight:bold">em</span> <span style="color:#00f">&#34;Lyon&#34;</span>, <span style="color:#000080;font-weight:bold">serif</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#000080;font-weight:bold">header</span>.package {
+  <span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">flex</span>;
+  <span style="color:#000080;font-weight:bold">flex-direction</span>: <span style="color:#000080;font-weight:bold">column</span>;
+  <span style="color:#000080;font-weight:bold">align-items</span>: <span style="color:#000080;font-weight:bold">center</span>;
+  <span style="color:#000080;font-weight:bold">text-align</span>: <span style="color:#000080;font-weight:bold">center</span>;
+}
+
+<span style="color:#000080;font-weight:bold">header</span>.package &gt; * {
+  <span style="color:#000080;font-weight:bold">margin</span>: <span style="color:#00f">15</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#00f">0</span>;
 }</code></pre></div>
-<h4 id="rules">RULES</h4>
-
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Value</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>Typeface</td>
-<td>Lyon</td>
-</tr>
-
-<tr>
-<td>Weight</td>
-<td>400</td>
-</tr>
-
-<tr>
-<td>Size</td>
-<td>17px</td>
-</tr>
-
-<tr>
-<td>Line Height</td>
-<td>1.5em</td>
-</tr>
-
-<tr>
-<td>Letter spacing</td>
-<td>browser default</td>
-</tr>
-
-<tr>
-<td>Spacing</td>
-<td>browser default, 1em margin above and below</td>
-</tr>
-</tbody>
-</table>
-
   </div>
 
   <div class="paper story list">
