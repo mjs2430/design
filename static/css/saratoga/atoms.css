@@ -134,10 +134,11 @@ hr {
 .byline a {
   font-weight: 700;
   color: inherit;
+  text-decoration: underline;
 }
 
 .credit {
-  font-style: italic;
+  font: italic 400 11px/1.5em "McClatchy Sans";
 }
 
 .sans {

@@ -46,10 +46,11 @@ The byline has it's own rules and can be used inside or outside the figcaption. 
 
 .byline a {
   font-weight: 700;
+  text-decoration: underline;
   color: inherit;
 }
 
 .credit {
-  font-style: italic;
+  font: italic 400 11px/1.5em "McClatchy Sans";
 }
 ```

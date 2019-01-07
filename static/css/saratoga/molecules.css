@@ -76,3 +76,19 @@
   justify-self: center;
   background-color: #ddd;
 }
+
+/** Social media */
+
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.social-media > a {
+  padding: 15px;
+}
+
+.social-media svg {
+  height: 20px;
+  width: 20px;
+}
