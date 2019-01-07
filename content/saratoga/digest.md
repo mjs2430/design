@@ -8,8 +8,8 @@ The digest is simple stack of modules using the block layout.
 
 #### Example
 <div class="example grid">
-  {{< digest >}}
   {{< digest label="sticky" >}}
+  {{< digest >}}
 </div>
 
 #### HTML

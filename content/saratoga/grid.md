@@ -8,6 +8,14 @@ This is the smallest method of creating a grid following the design rules, which
 
 *Note: We have not decided yet if the CSS Grid has enough browser support for full use. This page may change in the future.*
 
+#### Example
+<div class="example grid">
+  {{< card >}}
+  {{< card >}}
+  {{< card true >}}
+  {{< card >}}
+</div>
+
 #### HTML
 ```html
 <section class="grid">
