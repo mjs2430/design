@@ -1,15 +1,15 @@
 <div class="paper story list">
-  <h2 class="underline">Atoms <small><a href="/css/saratoga/atoms.css">Download</a></small></h2>
+  <h2 class="underline">Atoms <small><a href="/css/atoms.css">Download</a></small></h2>
   {{ range where .Pages "Params.level" "atom" }}
   {{ .Render "link" }}
   {{ end }}
 
-  <h2 class="underline">Molecules <small><a href="/css/saratoga/molecules.css">Download</a></small></h2>
+  <h2 class="underline">Molecules <small><a href="/css/molecules.css">Download</a></small></h2>
   {{ range where .Pages "Params.level" "molecule" }}
   {{ .Render "link" }}
   {{ end }}
 
-  <h2 class="underline">Organisms <small><a href="/css/saratoga/organisms.css">Download</a></small></h2>
+  <h2 class="underline">Organisms <small><a href="/css/organisms.css">Download</a></small></h2>
   {{ range where .Pages "Params.level" "organism" }}
   {{ .Render "link" }}
   {{ end }}

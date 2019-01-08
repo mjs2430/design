@@ -1,0 +1,153 @@
+/**
+ * Story body
+ */
+
+.story {
+  padding: 15px 0 50px;
+}
+
+.story > * {
+  max-width: 720px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.story > h2, .story > h3, .story > h4, .story > h5, .story > h6 {
+  font-weight: 600;
+  font-family: "McClatchy Sans";
+  text-transform: uppercase;
+}
+
+.story > figure {
+  max-width: 1140px;
+  padding: 15px 0;
+}
+
+@media (max-width: 1155px) {
+  .story > figure figcaption {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.story .ad {
+  margin: 50px auto;
+  padding: 0;
+}
+
+/**
+ * Generic grid
+ */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px;
+}
+
+@media (min-width: 660px) {
+  grid-gap: 15px;
+}
+
+/**
+ * Header package
+ */
+
+header.package {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+header.package > * {
+  margin: 15px 0;
+}
+
+/**
+ * Series nav
+ */
+
+.series-nav hr {
+  border-color: #dfdfdf;
+}
+
+.series-nav .summary {
+  color: #989898;
+}
+
+.series-nav .article {
+  display: flex;
+  margin: 15px 0;
+}
+
+.series-nav section {
+  display: none;
+}
+
+.series-nav .article figure {
+  width: 80px;
+}
+
+.series-nav .article h4 {
+  flex: 1;
+  padding: 0 15px;
+  margin: 0;
+  max-width: 375px;
+}
+
+.series-nav.open section {
+  display: block;
+}
+
+.series-nav.open .expander:after {
+  transform: rotateX(180deg);
+}
+
+/**
+ * Related stories
+ */
+
+.related-stories {
+  margin: 30px auto;
+}
+
+.related-stories .package {
+  padding: 0;
+}
+
+/**
+ * Author card
+ */
+
+.author-card {
+  margin: 30px auto;
+}
+
+.author-card .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.author-thumb {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.author-card .byline {
+  flex: 1;
+  padding: 0 15px;
+}
+
+.author-card .package {
+  padding: 15px 0;
+}
+
+.author-card .callout {
+  font: 14px/20px mcclatchy sans,sans-serif;
+  color: #0066b3;
+}
