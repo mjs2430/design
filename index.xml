@@ -34,8 +34,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mcclatchy.github.io/design/saratoga/sample/</guid>
-      <description> SECTION Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus lorem a  By John Doe SAMPLE NEWSPAPER
-AUG 13, 2018, UPDATED 4 MONTHS AGO           Secretary of State Kris Kobach (right) has pulled ahead of Gov. Jeff Colyer as counties count provisional votes. FILE PHOTO  </description>
+      <description>SECTION Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus lorem a  By John Doe SAMPLE NEWSPAPER
+AUG 13, 2018, UPDATED 4 MONTHS AGO           Secretary of State Kris Kobach (right) has pulled ahead of Gov. Jeff Colyer as counties count provisional votes. FILE PHOTO   MORE FROM THIS SERIES  Series headline goes here Nullam ultricies hendrerit est a bibendum.</description>
     </item>
     
     <item>
@@ -237,6 +237,27 @@ Example    FOOD Hatch chiles bring heat and hearty flavor to New Mexican cuisine
       <guid>https://mcclatchy.github.io/design/saratoga/paper/</guid>
       <description>The paper and card molecules both do the same thing of lifting them a plane higher than the background. The paper molecule is the more simple of the two, by having block for the display property. This allows default sizing and spacing of the children to dictate the height of the molecule.
 In our digests, the design dictates that there be 15px of space between the label and the first headline, then 30px of space between each additional headline.</description>
+    </item>
+    
+    <item>
+      <title>related-stories</title>
+      <link>https://mcclatchy.github.io/design/saratoga/related-stories/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mcclatchy.github.io/design/saratoga/related-stories/</guid>
+      <description>This organism is actually just a combination of the grid and package molecules, and doesn&amp;rsquo;t have any styles of its own. The organism should appear directly under the story body when stories are added to the related bucket in CUE.
+Example RELATED STORIES Elections Sedgwick County adds 1,326 votes to election; counting rules differ in Johnson County AUG 13, 2018  Government and Politics Kobach deputy says unaffiliated voters can’t be counted; Colyer’s office disagrees AUG 13, 2018  Government and Politics JoCo accepts nearly 1,500 new votes.</description>
+    </item>
+    
+    <item>
+      <title>series-nav</title>
+      <link>https://mcclatchy.github.io/design/saratoga/series-nav/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mcclatchy.github.io/design/saratoga/series-nav/</guid>
+      <description>The series nav is a visual tool to link stories together than may or may not be part of the same section or publication.
+Example  MORE FROM THIS SERIES  Series headline goes here Nullam ultricies hendrerit est a bibendum. Suspendisse scelerisque vitae nisi et consequat. Vivamus cursus vitae ante eu tristique. Sed nec velit maximus diam laoreet venenatis.
+EXPAND ALL     Women are fleeing Venezuela for a better life.</description>
     </item>
     
     <item>
