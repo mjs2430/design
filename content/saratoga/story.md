@@ -1,9 +1,10 @@
 ---
-title: "story"
-description: "The main article body"
-level: "organism"
----
+title: story
+description: The main article body
+level: organism
+updated: true
 
+---
 The primary challenge with the story body is the design rule that media should bleed all the way to the edge of the screen on mobile and tablet devices, but be restricted to a maximum width as the screen gets larger. Additionally, different media or embeddable content will have different widths. 
 
 A container-based approach to these rules requires multiple breakpoints and creates a couple of pressure points as the number of organisms increases. Code grows quickly with each addition, as all breakpoints for each change must be considered or written. Re-use suffers as elements get more and more isolated with deeply nested CSS rules.
