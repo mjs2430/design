@@ -39,6 +39,16 @@ AUG 13, 2018, UPDATED 4 MONTHS AGO           Secretary of State Kris Kobach (rig
     </item>
     
     <item>
+      <title>author-card</title>
+      <link>https://mcclatchy.github.io/design/saratoga/author-card/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mcclatchy.github.io/design/saratoga/author-card/</guid>
+      <description>The author card should appear directly underneath the related stories organism, if it is rendered, or directly under the story body if it is not.
+As the organism compresses to fit smaller screens, the icons should wrap under the author&amp;rsquo;s name and still right of the thumbnail. The biography uses the summary molecule and shoudn&amp;rsquo;t deviate from the defaults. Also, the author&amp;rsquo;s name should be made a link and shown in the standard byline style.</description>
+    </item>
+    
+    <item>
       <title>button</title>
       <link>https://mcclatchy.github.io/design/saratoga/button/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -46,6 +56,17 @@ AUG 13, 2018, UPDATED 4 MONTHS AGO           Secretary of State Kris Kobach (rig
       <guid>https://mcclatchy.github.io/design/saratoga/button/</guid>
       <description> Buttons are designed to be placed in a center-aligned row using browser defaults and to have different levels of impact. There are three different types of button, but they all use the same base code.
 EXAMPLE Impact button Regular button Ghost button  CSS button, .button { font: 600 14px &amp;#34;McClatchy Sans&amp;#34;; padding: .6em 1em .3em; border: 1px solid #4a4a4a; border-radius: 2px; text-transform: uppercase; cursor: pointer; } .ghost { border: none; } RULES    Property Value     Typeface McClatchy Sans   Weight 600   Size 14px   Border 1 pixel solid #989898 with a 2-pixel radius   Case Uppercase    </description>
+    </item>
+    
+    <item>
+      <title>byline</title>
+      <link>https://mcclatchy.github.io/design/saratoga/byline/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mcclatchy.github.io/design/saratoga/byline/</guid>
+      <description>The byline and credit rules should have this standard anywhere attribution applies. This includes articles and all media. The byline should display inline with a caption, when applicable, unless there is not enough room to display the byline in full. If that occurs the whole byline should wrap to a new line.
+EXAMPLE By John Doe SAMPLE NEWSPAPER
+ HTML &amp;lt;p class=&amp;#34;byline&amp;#34;&amp;gt;By &amp;lt;a href=&amp;#34;#&amp;#34;&amp;gt;John Doe&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;#34;credit&amp;#34;&amp;gt;SAMPLE NEWSPAPER&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt; CSS .</description>
     </item>
     
     <item>
@@ -245,7 +266,7 @@ In our digests, the design dictates that there be 15px of space between the labe
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mcclatchy.github.io/design/saratoga/related-stories/</guid>
-      <description>This organism is actually just a combination of the grid and package molecules, and doesn&amp;rsquo;t have any styles of its own. The organism should appear directly under the story body when stories are added to the related bucket in CUE.
+      <description>This organism is mostly a combination of the grid and package molecules, with a single override for package molecules inside the element. The organism should appear directly under the story body when stories are added to the related bucket in CUE.
 Example RELATED STORIES Elections Sedgwick County adds 1,326 votes to election; counting rules differ in Johnson County AUG 13, 2018  Government and Politics Kobach deputy says unaffiliated voters can’t be counted; Colyer’s office disagrees AUG 13, 2018  Government and Politics JoCo accepts nearly 1,500 new votes.</description>
     </item>
     
@@ -276,7 +297,8 @@ Example         HTML &amp;lt;div class=&amp;#34;social-media&amp;#34;&amp;gt; &a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mcclatchy.github.io/design/saratoga/story/</guid>
-      <description></description>
+      <description>The primary challenge with the story body is the design rule that media should bleed all the way to the edge of the screen on mobile and tablet devices, but be restricted to a maximum width as the screen gets larger. Additionally, different media or embeddable content will have different widths.
+A container-based approach to these rules requires multiple breakpoints and creates a couple of pressure points as the number of organisms increases.</description>
     </item>
     
     <item>

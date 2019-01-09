@@ -43,6 +43,9 @@ td:first-child {
   padding: 0 0 .2em;
   margin: 15px 15px 0;
   border-bottom: 1px solid #989898;
+  font-family: "McClatchy Sans";
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .updated {

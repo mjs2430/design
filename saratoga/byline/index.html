@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>grid</title>
+    <title>byline</title>
     
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -37,93 +37,37 @@
     </div>
 <div class="panels">
   <div class="paper story details">
-    <h2>grid</h2>
+    <h2>byline</h2>
     
 
-<p>This is the smallest method of creating a grid following the design rules, which state that grid elements should be no smaller than 300px and have 30px of space between each item. It is very likely that at the template level more sophisticated grids will be required to fit everything onto the page dynamically.</p>
+<p>The byline and credit rules should have this standard anywhere attribution applies. This includes articles and all media. The byline should display inline with a caption, when applicable, unless there is not enough room to display the byline in full. If that occurs the whole byline should wrap to a new line.</p>
 
-<p><em>Note: We have not decided yet if the CSS Grid has enough browser support for full use. This page may change in the future.</em></p>
+<h4 id="example">EXAMPLE</h4>
 
-<h4 id="example">Example</h4>
-
-<div class="example grid">
-  <article class="card ">
-  <figure>
-    <a href="https://mcclatchy.github.io/saratoga/food/205504249/">
-      <img src="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_640/0321%20cimk%20kuwata%2003022018%20s%20%284%29" srcset="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_1140/0321%20cimk%20kuwata%2003022018%20s%20%284%29 1140w"> 
-    </a>
-  </figure>
-  <div class="package">
-    <h6><a class="kicker" href="https://mcclatchy.github.io/saratoga/food/">FOOD</a></h6>
-    <h3><a href="https://mcclatchy.github.io/saratoga/food/205504249/">Hatch chiles bring heat and hearty flavor to New Mexican cuisine </a></h3>
-    <time>March 16, 2018 11:33 am</time>
-  </div>
-</article>
-
-  <article class="card ">
-  <figure>
-    <a href="https://mcclatchy.github.io/saratoga/food/205504249/">
-      <img src="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_640/0321%20cimk%20kuwata%2003022018%20s%20%284%29" srcset="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_1140/0321%20cimk%20kuwata%2003022018%20s%20%284%29 1140w"> 
-    </a>
-  </figure>
-  <div class="package">
-    <h6><a class="kicker" href="https://mcclatchy.github.io/saratoga/food/">FOOD</a></h6>
-    <h3><a href="https://mcclatchy.github.io/saratoga/food/205504249/">Hatch chiles bring heat and hearty flavor to New Mexican cuisine </a></h3>
-    <time>March 16, 2018 11:33 am</time>
-  </div>
-</article>
-
-  <article class="card ">
-  <figure>
-    <a href="https://mcclatchy.github.io/saratoga/food/205504249/">
-      <img src="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_640/0321%20cimk%20kuwata%2003022018%20s%20%284%29" srcset="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_1140/0321%20cimk%20kuwata%2003022018%20s%20%284%29 1140w"> 
-    </a>
-  </figure>
-  <div class="package">
-    <h6><a class="kicker" href="https://mcclatchy.github.io/saratoga/food/">FOOD</a></h6>
-    <h3><a href="https://mcclatchy.github.io/saratoga/food/205504249/">Hatch chiles bring heat and hearty flavor to New Mexican cuisine Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent.</a></h3>
-    <time>March 16, 2018 11:33 am</time>
-  </div>
-</article>
-
-  <article class="card ">
-  <figure>
-    <a href="https://mcclatchy.github.io/saratoga/food/205504249/">
-      <img src="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_640/0321%20cimk%20kuwata%2003022018%20s%20%284%29" srcset="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_1140/0321%20cimk%20kuwata%2003022018%20s%20%284%29 1140w"> 
-    </a>
-  </figure>
-  <div class="package">
-    <h6><a class="kicker" href="https://mcclatchy.github.io/saratoga/food/">FOOD</a></h6>
-    <h3><a href="https://mcclatchy.github.io/saratoga/food/205504249/">Hatch chiles bring heat and hearty flavor to New Mexican cuisine </a></h3>
-    <time>March 16, 2018 11:33 am</time>
-  </div>
-</article>
-
+<div class="example">
+  <p class="byline">By <a href="#">John Doe</a> <span class="credit">SAMPLE NEWSPAPER</span></p>
 </div>
 
 <h4 id="html">HTML</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">section</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;grid&#34;</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">article</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card&#34;</span>&gt; 
-    ...  
-  &lt;/<span style="color:#000080;font-weight:bold">article</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">article</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card&#34;</span>&gt; 
-    ...  
-  &lt;/<span style="color:#000080;font-weight:bold">article</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">article</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card&#34;</span>&gt; 
-    ...  
-  &lt;/<span style="color:#000080;font-weight:bold">article</span>&gt;
-&lt;/<span style="color:#000080;font-weight:bold">section</span>&gt;</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;byline&#34;</span>&gt;By &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;John Doe&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt; &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;credit&#34;</span>&gt;SAMPLE NEWSPAPER&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;</code></pre></div>
 <h4 id="css">CSS</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.grid {
-  <span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">grid</span>;
-  <span style="color:#000080;font-weight:bold">grid-template-columns</span>: repeat(<span style="color:#000080;font-weight:bold">auto</span>-<span style="color:#000080;font-weight:bold">fill</span>, minmax(<span style="color:#00f">300</span><span style="color:#000080;font-weight:bold">px</span>, <span style="color:#00f">1</span>fr));
-  <span style="color:#000080;font-weight:bold">grid-gap</span>: <span style="color:#00f">30</span><span style="color:#000080;font-weight:bold">px</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.byline {
+  <span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">inline</span>-<span style="color:#000080;font-weight:bold">block</span>;
+  <span style="color:#000080;font-weight:bold">font</span>: <span style="color:#00f">400</span> <span style="color:#00f">11</span><span style="color:#000080;font-weight:bold">px</span>/<span style="color:#00f">1.5</span><span style="color:#000080;font-weight:bold">em</span> <span style="color:#00f">&#34;McClatchy Sans&#34;</span>;
+  <span style="color:#000080;font-weight:bold">color</span>: <span style="color:#00f">#989898</span>;
+  <span style="color:#000080;font-weight:bold">text-transform</span>: <span style="color:#000080;font-weight:bold">uppercase</span>;
 }
 
-@<span style="color:#000080;font-weight:bold">media</span> (<span style="color:#000080;font-weight:bold">min-width</span>: <span style="color:#000080;font-weight:bold">660px</span>) {
-  <span style="color:#000080;font-weight:bold">grid-gap</span>: <span style="color:#000080;font-weight:bold">15px</span>;
+.byline <span style="color:#000080;font-weight:bold">a</span> {
+  <span style="color:#000080;font-weight:bold">font-weight</span>: <span style="color:#00f">700</span>;
+  <span style="color:#000080;font-weight:bold">color</span>: <span style="color:#000080;font-weight:bold">inherit</span>;
+  <span style="color:#000080;font-weight:bold">text-decoration</span>: <span style="color:#000080;font-weight:bold">underline</span>;
+}
+
+.credit {
+  <span style="color:#000080;font-weight:bold">font</span>: <span style="color:#000080;font-weight:bold">italic</span> <span style="color:#00f">400</span> <span style="color:#00f">11</span><span style="color:#000080;font-weight:bold">px</span>/<span style="color:#00f">1.5</span><span style="color:#000080;font-weight:bold">em</span> <span style="color:#00f">&#34;McClatchy Sans&#34;</span>;
 }</code></pre></div>
-<h4 id="rules">RULES</h4>
+<h4 id="byline-rules">BYLINE RULES</h4>
 
 <table>
 <thead>
@@ -135,13 +79,43 @@
 
 <tbody>
 <tr>
-<td>Column width</td>
-<td>300px minimum and stretches to fill between sizes.</td>
+<td>Typeface</td>
+<td>McClatchy Sans</td>
 </tr>
 
 <tr>
-<td>Spacing between columns</td>
-<td>30px</td>
+<td>Weight</td>
+<td>400, 700 for linked items</td>
+</tr>
+
+<tr>
+<td>Size</td>
+<td>11px</td>
+</tr>
+
+<tr>
+<td>Color</td>
+<td>#989898</td>
+</tr>
+
+<tr>
+<td>Case</td>
+<td>Uppercase</td>
+</tr>
+
+<tr>
+<td>Letter Spacing</td>
+<td>Default</td>
+</tr>
+
+<tr>
+<td>Display</td>
+<td>Inline block</td>
+</tr>
+
+<tr>
+<td>Credit style</td>
+<td>Italic</td>
 </tr>
 </tbody>
 </table>
