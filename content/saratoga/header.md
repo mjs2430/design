@@ -41,6 +41,7 @@ header.package {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 0 15px;
 }
 
 header.package > * {
