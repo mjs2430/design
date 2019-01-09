@@ -45,6 +45,6 @@ header.package {
 }
 
 header.package > * {
-  margin: 15px 0;
+  margin-top: 15px;
 }
 ```

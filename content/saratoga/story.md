@@ -46,7 +46,8 @@ This site is made with these rules, so this panel is one example. There is also 
 
 .story > figure {
   max-width: 1140px;
-  padding: 15px 0;
+  padding: 0;
+  margin: 30px auto;
 }
 
 @media (max-width: 1155px) {
@@ -62,7 +63,7 @@ This site is made with these rules, so this panel is one example. There is also 
 }
 
 .story .ad {
-  margin: 50px auto;
   padding: 0;
+  margin: 50px auto;
 }
 ```
