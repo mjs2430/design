@@ -38,3 +38,5 @@ fields:
   type: textarea
   hidden: false
   default: ''
+pages:
+- data/team/matt.toml
