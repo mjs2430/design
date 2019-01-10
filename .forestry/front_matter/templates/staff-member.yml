@@ -40,3 +40,4 @@ fields:
   default: ''
 pages:
 - data/team/matt.toml
+- data/team/farhin.toml
