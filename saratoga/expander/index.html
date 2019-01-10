@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>impact</title>
+    <title>expander</title>
     
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -37,88 +37,98 @@
     </div>
 <div class="panels">
   <div class="paper story details">
-    <h2>impact</h2>
+    <h2>expander</h2>
     
 
-<p>The impact molecule simply reverses the color scheme of any element, and has a couple of additional rules to deal with card and label descendants.</p>
+<p>The expander is a simplified version of the <code>&lt;amp-accordion&gt;</code> component. The class is placed on a container and the first child acts as the toggle button. The last child is hidden unless the <code>open</code> class is placed on the expander. This can be toggled a number of ways, but to keep things simple for the demo we used the <code>on</code> attribute.</p>
 
 <h4 id="example">Example</h4>
 
-<div class="example grid">
-  <div class="digest">
-  <div class="paper impact">
-    <a href="https://mcclatchy.github.io/saratoga/opinion/" class="label ">
-      <h5 class="impact">OPINION</h5>
-    </a>
-    <article class="package">
-      <h3><a href="https://mcclatchy.github.io/saratoga/opinion/205928724/">Kudlow joins White House that sorely needs cooler heads to prevail</a></h3>
-      <time>March 19, 2018 5:34 pm</time>
-    </article>
-    <article class="package">
-      <h3><a href="https://mcclatchy.github.io/saratoga/opinion/205579084/">The Episcopal Church changed course for our LGBT members</a></h3>
-      <time>March 16, 2018 3:42 pm</time>
-    </article>
-    <article class="package">
-      <h3><a href="https://mcclatchy.github.io/saratoga/opinion/205581414/">The Kansas Republican Party is taking a stance on transgender identity</a></h3>
-      <time>March 16, 2018 3:58 pm</time>
-    </article>
-    <article class="package">
-      <h3><a href="https://mcclatchy.github.io/saratoga/opinion/205583064/">Letters: Readers discuss teen drinking, tax-cut benefits in Missouri and student protests</a></h3>
-      <time>March 16, 2018 4:08 pm</time>
-    </article>
+<div class="series-nav package story-module">
+  <h5>MORE FROM THIS SERIES</h5>
+  <hr>
+  <h3>Series headline goes here</h3>
+  <p class="summary">Nullam ultricies hendrerit est a bibendum. Suspendisse scelerisque vitae nisi et consequat. Vivamus cursus vitae ante eu tristique. Sed nec velit maximus diam laoreet venenatis.</p>
+  <div class="expander" onclick="this.classList.toggle('open')">
+    <h5>EXPAND ALL</h5>
+    <section>
+      <a class="article" href="#">
+        <figure>
+          <img src="https://www.miamiherald.com/latest-news/722q03/picture222631695/alternates/LANDSCAPE_1140/Keyframe1_MH.jpg">
+        </figure>
+        <h4>Women are fleeing Venezuela for a better life. They’re turning up dead.</h4>
+      </a>
+      <a class="article" href="#">
+        <figure>
+          <img src="https://www.miamiherald.com/latest-news/gj3f9s/picture222628815/alternates/LANDSCAPE_1140/Keyframe2.png">
+        </figure>
+        <h4>They left Venezuela with dreams. They were met with forced prostitution — and their deaths</h4>
+      </a>
+      <a class="article" href="#">
+        <figure>
+          <img src="https://www.miamiherald.com/latest-news/6s0zku/picture222627840/alternates/LANDSCAPE_1140/Miami%20(Cruise)_Bumper_REV2.00_01_04_16.Still007.jpg">
+        </figure>
+        <h4>They want justice after their daughters were killed abroad. But it’s like the murders never happened</h4>
+      </a>
+    </section>
   </div>
-  <a href="https://mcclatchy.github.io/saratoga/opinion/" class="more-link">MORE OPINION</a>
+  <hr>
 </div>
 
-  <div><article class="card impact">
-  <figure>
-    <a href="https://mcclatchy.github.io/saratoga/food/205504249/">
-      <img src="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_640/0321%20cimk%20kuwata%2003022018%20s%20%284%29" srcset="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_1140/0321%20cimk%20kuwata%2003022018%20s%20%284%29 1140w"> 
-    </a>
-  </figure>
-  <div class="package">
-    <h6><a class="kicker" href="https://mcclatchy.github.io/saratoga/food/">FOOD</a></h6>
-    <h3><a href="https://mcclatchy.github.io/saratoga/food/205504249/">Hatch chiles bring heat and hearty flavor to New Mexican cuisine </a></h3>
-    <time>March 16, 2018 11:33 am</time>
-  </div>
-</article>
-</div>
-</div>
 
 <h4 id="html">HTML</h4>
-
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">article</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card impact&#34;</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">figure</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;https://mcclatchy.github.io/saratoga/food/205504249/&#34;</span>&gt;
-      &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_640/0321%20cimk%20kuwata%2003022018%20s%20%284%29&#34;</span> <span style="color:#f00">srcset</span>=<span style="color:#00f">&#34;https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_1140/0321%20cimk%20kuwata%2003022018%20s%20%284%29 1140w&#34;</span>&gt; 
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;expander&#34;</span> <span style="color:#f00">onclick</span>=<span style="color:#00f">&#34;this.classList.toggle(&#39;open&#39;)&#34;</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">h5</span>&gt;EXPAND ALL&lt;/<span style="color:#000080;font-weight:bold">h5</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">section</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;article&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">figure</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;https://www.miamiherald.com/latest-news/722q03/picture222631695/alternates/LANDSCAPE_1140/Keyframe1_MH.jpg&#34;</span>&gt;
+      &lt;/<span style="color:#000080;font-weight:bold">figure</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">h4</span>&gt;Women are fleeing Venezuela for a better life. They’re turning up dead.&lt;/<span style="color:#000080;font-weight:bold">h4</span>&gt;
     &lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-  &lt;/<span style="color:#000080;font-weight:bold">figure</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package&#34;</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">h6</span>&gt;&lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;kicker&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;https://mcclatchy.github.io/saratoga/food/&#34;</span>&gt;FOOD&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">h6</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">h3</span>&gt;&lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;https://mcclatchy.github.io/saratoga/food/205504249/&#34;</span>&gt;Hatch chiles bring heat and hearty flavor to New Mexican cuisine &lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">h3</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">time</span>&gt;March 16, 2018 11:33 am&lt;/<span style="color:#000080;font-weight:bold">time</span>&gt;
-  &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-&lt;/<span style="color:#000080;font-weight:bold">article</span>&gt;</code></pre></div>
-
+    &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;article&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">figure</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;https://www.miamiherald.com/latest-news/gj3f9s/picture222628815/alternates/LANDSCAPE_1140/Keyframe2.png&#34;</span>&gt;
+      &lt;/<span style="color:#000080;font-weight:bold">figure</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">h4</span>&gt;They left Venezuela with dreams. They were met with forced prostitution — and their deaths&lt;/<span style="color:#000080;font-weight:bold">h4</span>&gt;
+    &lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;article&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">figure</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;https://www.miamiherald.com/latest-news/6s0zku/picture222627840/alternates/LANDSCAPE_1140/Miami%20(Cruise)_Bumper_REV2.00_01_04_16.Still007.jpg&#34;</span>&gt;
+      &lt;/<span style="color:#000080;font-weight:bold">figure</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">h4</span>&gt;They want justice after their daughters were killed abroad. But it’s like the murders never happened&lt;/<span style="color:#000080;font-weight:bold">h4</span>&gt;
+    &lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+  &lt;/<span style="color:#000080;font-weight:bold">section</span>&gt;
+&lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
 <h4 id="css">CSS</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.impact {
-  <span style="color:#000080;font-weight:bold">background-color</span>: <span style="color:#00f">#373737</span>;
-  <span style="color:#000080;font-weight:bold">color</span>: <span style="color:#000080;font-weight:bold">white</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.expander &gt; * {
+  <span style="color:#000080;font-weight:bold">margin</span>: <span style="color:#00f">0</span>;
 }
 
-.impact * {
-  <span style="color:#000080;font-weight:bold">color</span>: <span style="color:#000080;font-weight:bold">white</span>;
-  <span style="color:#000080;font-weight:bold">border-color</span>: <span style="color:#000080;font-weight:bold">white</span>;
+.expander &gt; :first-child {
+  <span style="color:#000080;font-weight:bold">cursor</span>: <span style="color:#000080;font-weight:bold">pointer</span>;
 }
 
-.impact .card {
-  <span style="color:#000080;font-weight:bold">background-color</span>: <span style="color:#000080;font-weight:bold">transparent</span>;
-  <span style="color:#000080;font-weight:bold">box-shadow</span>: <span style="color:#000080;font-weight:bold">none</span>;
+.expander &gt; :first-child:after {
+  <span style="color:#000080;font-weight:bold">content</span>: url(<span style="color:#00f">./icons/caret-up.svg</span>);
+  <span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">inline</span>-<span style="color:#000080;font-weight:bold">block</span>;
+  <span style="color:#000080;font-weight:bold">width</span>: <span style="color:#00f">1</span><span style="color:#000080;font-weight:bold">em</span>;
+  <span style="color:#000080;font-weight:bold">margin-left</span>: <span style="color:#00f">5</span><span style="color:#000080;font-weight:bold">px</span>;
+  <span style="color:#000080;font-weight:bold">transition</span>: <span style="color:#000080;font-weight:bold">transform</span> <span style="color:#00f">.5</span><span style="color:#000080;font-weight:bold">s</span> <span style="color:#000080;font-weight:bold">ease</span>;
+  <span style="color:#000080;font-weight:bold">transform</span>: rotateX(<span style="color:#00f">180</span><span style="color:#000080;font-weight:bold">deg</span>);
+  <span style="color:#000080;font-weight:bold">transform-origin</span>: <span style="color:#00f">50</span><span style="color:#000080;font-weight:bold">%</span> <span style="color:#00f">45</span><span style="color:#000080;font-weight:bold">%</span>;
 }
 
-.impact .label &gt; * {
-  <span style="color:#000080;font-weight:bold">background-color</span>: <span style="color:#000080;font-weight:bold">white</span>;
-  <span style="color:#000080;font-weight:bold">color</span>: <span style="color:#00f">#222</span>;
+.expander &gt; :last-child {
+  <span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">none</span>;
+}
+
+.expander.open &gt; :first-child:after {
+  <span style="color:#000080;font-weight:bold">transform</span>: rotateX(<span style="color:#00f">0</span>);
+}
+
+.expander.open &gt; :last-child {
+  <span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">block</span>;
 }</code></pre></div>
   </div>
 

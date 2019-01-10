@@ -92,3 +92,35 @@
   height: 20px;
   width: 20px;
 }
+
+/** Expander */
+
+.expander > * {
+  margin: 0;
+}
+
+.expander > :first-child {
+  cursor: pointer;
+}
+
+.expander > :first-child:after {
+  content: url(./icons/caret-up.svg);
+  display: inline-block;
+  width: 1em;
+  margin-left: 5px;
+  transition: transform .5s ease;
+  transform: rotateX(180deg);
+  transform-origin: 50% 45%;
+}
+
+.expander > :last-child {
+  display: none;
+}
+
+.expander.open > :first-child:after {
+  transform: rotateX(0);
+}
+
+.expander.open > :last-child {
+  display: block;
+}

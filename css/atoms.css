@@ -204,18 +204,3 @@ hr {
 .more-link:hover {
   text-decoration: none;
 }
-
-/** Expander */
-
-.expander {
-  cursor: pointer;
-}
-
-.expander:after {
-  content: url(./icons/caret-down.svg);
-  display: inline-block;
-  width: .625em;
-  margin-left: 5px;
-  transition: transform .5s ease;
-  transform-origin: 50% 40%;
-}

@@ -45,10 +45,6 @@ header.package > * {
   margin: 15px 0;
 }
 
-.series-nav section {
-  display: none;
-}
-
 .series-nav .article figure {
   width: 80px;
 }
@@ -58,14 +54,6 @@ header.package > * {
   padding: 0 15px;
   margin: 0;
   max-width: 375px;
-}
-
-.series-nav.open section {
-  display: block;
-}
-
-.series-nav.open .expander:after {
-  transform: rotateX(180deg);
 }
 
 /**
