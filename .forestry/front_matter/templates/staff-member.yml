@@ -1,0 +1,40 @@
+---
+label: Staff member
+hide_body: 
+is_partial: 
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: avatar
+  label: Avatar
+  type: file
+  hidden: false
+  default: ''
+- name: badges
+  label: Badges
+  type: list
+  hidden: false
+  default: ''
+- name: job
+  label: Job
+  type: text
+  hidden: false
+  default: ''
+- name: anagram
+  label: Anagram
+  type: text
+  hidden: false
+  default: ''
+- name: patronus
+  label: Patronus
+  type: text
+  hidden: false
+  default: ''
+- name: bio
+  label: Bio
+  type: textarea
+  hidden: false
+  default: ''
