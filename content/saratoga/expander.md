@@ -4,7 +4,7 @@ description: "A collapsible box with a caret."
 level: "molecule"
 ---
 
-The expander is a simplified version of the `<amp-accordion>` component. The class is placed on a container and the first child acts as the toggle button. The last child is hidden unless the `open` class is placed on the expander. This can be toggled a number of ways, but to keep things simple for the demo we used the `on` attribute.
+The expander is a simplified version of the `<amp-accordion>` component. The class is placed on a container and the first child acts as the toggle button. The last child is hidden unless the `open` class is placed on the expander. This can be toggled a number of ways, but to keep things simple for the demo we used the `onclick` attribute.
 
 #### Example
 {{< series-nav >}}
