@@ -11,9 +11,10 @@ The expander is a simplified version of the `<amp-accordion>` component. The cla
 
 #### HTML
 ```html
-<div class="expander" onclick="this.classList.toggle('open')">
+<div class="expander package" onclick="this.classList.toggle('open')">
   <h5>EXPAND ALL</h5>
-  <section>
+  <p class="summary">This is a sample paragraph</p>
+  <div class="package">
     <a class="article" href="#">
       <figure>
         <img src="https://www.miamiherald.com/latest-news/722q03/picture222631695/alternates/LANDSCAPE_1140/Keyframe1_MH.jpg">
@@ -32,39 +33,36 @@ The expander is a simplified version of the `<amp-accordion>` component. The cla
       </figure>
       <h4>They want justice after their daughters were killed abroad. But it’s like the murders never happened</h4>
     </a>
-  </section>
+  </div>
 </div>
 ```
 
 #### CSS
 ```css
-.expander > * {
-  margin: 0;
-}
-
 .expander > :first-child {
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .expander > :first-child:after {
-  content: url(./icons/caret-up.svg);
-  display: inline-block;
-  width: 1em;
+  content: url(./icons/caret-expander.svg);
+  width: 14px;
   margin-left: 5px;
   transition: transform .5s ease;
-  transform: rotateX(180deg);
-  transform-origin: 50% 45%;
+  transform: translateY(-.1em) rotateX(180deg);
+  transform-origin: 50% 50%;
 }
 
-.expander > :last-child {
+.expander > :nth-child(n+2) {
   display: none;
 }
 
 .expander.open > :first-child:after {
-  transform: rotateX(0);
+  transform: translateY(-.1em) rotateX(0);
 }
 
-.expander.open > :last-child {
+.expander.open > :nth-child(n+2) {
   display: block;
 }
 ```

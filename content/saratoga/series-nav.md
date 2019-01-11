@@ -16,6 +16,10 @@ The series nav is a visual tool to link stories together than may or may not be 
 
 #### CSS
 ```css
+.series-nav .package {
+  padding: 0;
+}
+
 .series-nav hr {
   border-color: #dfdfdf;
 }
@@ -26,7 +30,6 @@ The series nav is a visual tool to link stories together than may or may not be 
 
 .series-nav .article {
   display: flex;
-  margin: 15px 0;
 }
 
 .series-nav .article figure {

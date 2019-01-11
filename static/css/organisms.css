@@ -32,6 +32,10 @@ header.package > * {
  * Series nav
  */
 
+.series-nav .package {
+  padding: 0;
+}
+
 .series-nav hr {
   border-color: #dfdfdf;
 }
@@ -42,7 +46,6 @@ header.package > * {
 
 .series-nav .article {
   display: flex;
-  margin: 15px 0;
 }
 
 .series-nav .article figure {
