@@ -49,9 +49,10 @@
   <hr>
   <h3>Series headline goes here</h3>
   <p class="summary">Nullam ultricies hendrerit est a bibendum. Suspendisse scelerisque vitae nisi et consequat. Vivamus cursus vitae ante eu tristique. Sed nec velit maximus diam laoreet venenatis.</p>
-  <div class="expander" onclick="this.classList.toggle('open')">
+  <div class="expander package" onclick="this.classList.toggle('open')">
     <h5>EXPAND ALL</h5>
-    <section>
+    <p class="summary">This is a sample paragraph</p>
+    <div class="package">
       <a class="article" href="#">
         <figure>
           <img src="https://www.miamiherald.com/latest-news/722q03/picture222631695/alternates/LANDSCAPE_1140/Keyframe1_MH.jpg">
@@ -70,16 +71,17 @@
         </figure>
         <h4>They want justice after their daughters were killed abroad. But it’s like the murders never happened</h4>
       </a>
-    </section>
+    </div>
   </div>
   <hr>
 </div>
 
 
 <h4 id="html">HTML</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;expander&#34;</span> <span style="color:#f00">onclick</span>=<span style="color:#00f">&#34;this.classList.toggle(&#39;open&#39;)&#34;</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;expander package&#34;</span> <span style="color:#f00">onclick</span>=<span style="color:#00f">&#34;this.classList.toggle(&#39;open&#39;)&#34;</span>&gt;
   &lt;<span style="color:#000080;font-weight:bold">h5</span>&gt;EXPAND ALL&lt;/<span style="color:#000080;font-weight:bold">h5</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">section</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;This is a sample paragraph&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package&#34;</span>&gt;
     &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;article&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;
       &lt;<span style="color:#000080;font-weight:bold">figure</span>&gt;
         &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;https://www.miamiherald.com/latest-news/722q03/picture222631695/alternates/LANDSCAPE_1140/Keyframe1_MH.jpg&#34;</span>&gt;
@@ -98,36 +100,33 @@
       &lt;/<span style="color:#000080;font-weight:bold">figure</span>&gt;
       &lt;<span style="color:#000080;font-weight:bold">h4</span>&gt;They want justice after their daughters were killed abroad. But it’s like the murders never happened&lt;/<span style="color:#000080;font-weight:bold">h4</span>&gt;
     &lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-  &lt;/<span style="color:#000080;font-weight:bold">section</span>&gt;
+  &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
 &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
 <h4 id="css">CSS</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.expander &gt; * {
-  <span style="color:#000080;font-weight:bold">margin</span>: <span style="color:#00f">0</span>;
-}
-
-.expander &gt; :first-child {
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.expander &gt; :first-child {
   <span style="color:#000080;font-weight:bold">cursor</span>: <span style="color:#000080;font-weight:bold">pointer</span>;
+  <span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">flex</span>;
+  <span style="color:#000080;font-weight:bold">align-items</span>: <span style="color:#000080;font-weight:bold">center</span>;
 }
 
 .expander &gt; :first-child:after {
-  <span style="color:#000080;font-weight:bold">content</span>: url(<span style="color:#00f">./icons/caret-up.svg</span>);
-  <span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">inline</span>-<span style="color:#000080;font-weight:bold">block</span>;
-  <span style="color:#000080;font-weight:bold">width</span>: <span style="color:#00f">1</span><span style="color:#000080;font-weight:bold">em</span>;
+  <span style="color:#000080;font-weight:bold">content</span>: url(<span style="color:#00f">./icons/caret-expander.svg</span>);
+  <span style="color:#000080;font-weight:bold">width</span>: <span style="color:#00f">14</span><span style="color:#000080;font-weight:bold">px</span>;
   <span style="color:#000080;font-weight:bold">margin-left</span>: <span style="color:#00f">5</span><span style="color:#000080;font-weight:bold">px</span>;
   <span style="color:#000080;font-weight:bold">transition</span>: <span style="color:#000080;font-weight:bold">transform</span> <span style="color:#00f">.5</span><span style="color:#000080;font-weight:bold">s</span> <span style="color:#000080;font-weight:bold">ease</span>;
-  <span style="color:#000080;font-weight:bold">transform</span>: rotateX(<span style="color:#00f">180</span><span style="color:#000080;font-weight:bold">deg</span>);
-  <span style="color:#000080;font-weight:bold">transform-origin</span>: <span style="color:#00f">50</span><span style="color:#000080;font-weight:bold">%</span> <span style="color:#00f">45</span><span style="color:#000080;font-weight:bold">%</span>;
+  <span style="color:#000080;font-weight:bold">transform</span>: translateY(<span style="color:#00f">-.1</span><span style="color:#000080;font-weight:bold">em</span>) rotateX(<span style="color:#00f">180</span><span style="color:#000080;font-weight:bold">deg</span>);
+  <span style="color:#000080;font-weight:bold">transform-origin</span>: <span style="color:#00f">50</span><span style="color:#000080;font-weight:bold">%</span> <span style="color:#00f">50</span><span style="color:#000080;font-weight:bold">%</span>;
 }
 
-.expander &gt; :last-child {
+.expander &gt; :nth-child(<span style="color:#000080;font-weight:bold">n</span>+<span style="color:#000080;font-weight:bold">2</span>) {
   <span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">none</span>;
 }
 
 .expander.open &gt; :first-child:after {
-  <span style="color:#000080;font-weight:bold">transform</span>: rotateX(<span style="color:#00f">0</span>);
+  <span style="color:#000080;font-weight:bold">transform</span>: translateY(<span style="color:#00f">-.1</span><span style="color:#000080;font-weight:bold">em</span>) rotateX(<span style="color:#00f">0</span>);
 }
 
-.expander.open &gt; :last-child {
+.expander.open &gt; :nth-child(<span style="color:#000080;font-weight:bold">n</span>+<span style="color:#000080;font-weight:bold">2</span>) {
   <span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">block</span>;
 }</code></pre></div>
   </div>
