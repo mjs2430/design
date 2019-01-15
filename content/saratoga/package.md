@@ -27,6 +27,7 @@ The package molecule is the backbone of the design system. Spacing for  most mol
 
 ```css
 .package {
+  position: relative;
   padding: 15px;
   display: flex;
   flex-direction: column;

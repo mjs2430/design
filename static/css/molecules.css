@@ -24,6 +24,7 @@
 }
 
 .package {
+  position: relative;
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -95,13 +96,13 @@
 
 /** Expander */
 
-.expander > :first-child {
+.expander {
   cursor: pointer;
   display: flex;
   align-items: center;
 }
 
-.expander > :first-child:after {
+.expander:after {
   content: url(./icons/caret-expander.svg);
   width: 14px;
   margin-left: 5px;
@@ -110,14 +111,14 @@
   transform-origin: 50% 50%;
 }
 
-.expander > :nth-child(n+2) {
+.expander ~ * {
   display: none;
 }
 
-.expander.open > :first-child:after {
+.expander.open:after {
   transform: translateY(-.1em) rotateX(0);
 }
 
-.expander.open > :nth-child(n+2) {
+.expander.open ~ * {
   display: block;
 }

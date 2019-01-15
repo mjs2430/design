@@ -35,7 +35,8 @@ This site is made with these rules, so this panel is one example. There is also 
   max-width: 720px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 1em auto;
+	margin-right: auto;
+  margin-left: auto;
 }
 
 .story > h2, .story > h3, .story > h4, .story > h5, .story > h6 {

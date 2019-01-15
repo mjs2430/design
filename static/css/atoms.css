@@ -2,11 +2,18 @@
  * Atoms: Saratoga design system
  */
 
+:root {
+  --headerFamily: "McClatchy Serif", serif;
+  --headerWeight: 400;
+  --headerTransform: none;
+}
+
 body {
   position: relative;
   margin: 0;
   background-color: #f4f4f4;
   color: #222;
+  font-family: "McClatchy Serif", serif;
 }
 
 a {
@@ -23,15 +30,18 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font: 400 22px/1.2em "McClatchy Serif", serif;
+  font: var(--headerWeight) 22px/1.2em var(--headerFamily);
+  text-transform: var(--headerTransform);
 }
 
 h3, .h3 {
-  font: 400 18px/1.2em "McClatchy Serif", serif;
+  font: var(--headerWeight) 18px/1.2em var(--headerFamily);
+  text-transform: var(--headerTransform);
 }
 
 h4, .h4 {
-  font: 400 16px/1.2em "McClatchy Serif", serif;
+  font: var(--headerWeight) 16px/1.2em var(--headerFamily);
+  text-transform: var(--headerTransform);
 }
 
 h5, .h5 {
@@ -96,14 +106,14 @@ button, .button {
   display: inline-block;
   font: 600 14px "McClatchy Sans";
   padding: .6em 1em .3em;
-  border: 1px solid #4a4a4a;
+  border: 1px solid transparent;
   border-radius: 2px;
   text-transform: uppercase;
   cursor: pointer;
 }
 
 .ghost {
-  border: none;
+  border-color: #4a4a4a;
 }
 
 hr {
