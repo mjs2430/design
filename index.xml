@@ -54,8 +54,8 @@ As the organism compresses to fit smaller screens, the icons should wrap under t
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mcclatchy.github.io/design/saratoga/button/</guid>
-      <description> Buttons are designed to be placed in a center-aligned row using browser defaults and to have different levels of impact. There are three different types of button, but they all use the same base code.
-EXAMPLE Impact button Regular button Ghost button  CSS button, .button { font: 600 14px &amp;#34;McClatchy Sans&amp;#34;; padding: .6em 1em .3em; border: 1px solid #4a4a4a; border-radius: 2px; text-transform: uppercase; cursor: pointer; } .ghost { border: none; } RULES    Property Value     Typeface McClatchy Sans   Weight 600   Size 14px   Border 1 pixel solid #989898 with a 2-pixel radius   Case Uppercase    </description>
+      <description>Buttons are designed to be placed in a center-aligned row using browser defaults and to have different levels of impact. There are three different types of button, but they all use the same base code.
+EXAMPLE Impact button Ghost button Text button  HTML &amp;lt;div&amp;gt; &amp;lt;button class=&amp;#34;impact&amp;#34;&amp;gt;Impact button&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;ghost&amp;#34;&amp;gt;Ghost button&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;Text button&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; CSS button, .button { display: inline-block; font: 600 14px &amp;#34;McClatchy Sans&amp;#34;; padding: .6em 1em .3em; border: 1px solid transparent; border-radius: 2px; text-transform: uppercase; cursor: pointer; } .</description>
     </item>
     
     <item>
@@ -95,8 +95,8 @@ Example OPINION     Kudlow joins White House that sorely needs cooler heads to p
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mcclatchy.github.io/design/saratoga/expander/</guid>
-      <description>The expander is a simplified version of the &amp;lt;amp-accordion&amp;gt; component. The class is placed on a container and the first child acts as the toggle button. The last child is hidden unless the open class is placed on the expander. This can be toggled a number of ways, but to keep things simple for the demo we used the onclick attribute.
-Example MORE FROM THIS SERIES  Series headline goes here Nullam ultricies hendrerit est a bibendum.</description>
+      <description>The expander is a simple molecule to toggle the visibility of it&amp;rsquo;s siblings. The element itself acts as the toggle by swapping the open class. This can be done a number of ways, but to keep things simple for the demo we used the onclick attribute directly.
+The generic rules make for a very flexible setup, where we can force each child to display in all cases inline or with additional CSS in the future.</description>
     </item>
     
     <item>
@@ -286,10 +286,8 @@ Example RELATED STORIES Elections Sedgwick County adds 1,326 votes to election; 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mcclatchy.github.io/design/saratoga/series-nav/</guid>
-      <description>The series nav is a visual tool to link stories together than may or may not be part of the same section or publication.
-Example MORE FROM THIS SERIES  Series headline goes here Nullam ultricies hendrerit est a bibendum. Suspendisse scelerisque vitae nisi et consequat. Vivamus cursus vitae ante eu tristique. Sed nec velit maximus diam laoreet venenatis.
-EXPAND ALL This is a sample paragraph
-  Women are fleeing Venezuela for a better life.</description>
+      <description>The series nav is a visual tool to link stories together than may or may not be part of the same section or publication. The code is just an expander molecule with a little additional styling for the text.
+Example MORE FROM THIS SERIES  Series headline goes here Nullam ultricies hendrerit est a bibendum. Suspendisse scelerisque vitae nisi et consequat. Vivamus cursus vitae ante eu tristique. Sed nec velit maximus diam laoreet venenatis.</description>
     </item>
     
     <item>
@@ -331,6 +329,16 @@ Example Perhaps no one can speak to the legacy of former Kansas State football c
       <guid>https://mcclatchy.github.io/design/saratoga/time/</guid>
       <description> Timestamps are always displayed on their own line, so &amp;lt;time&amp;gt; is converted to a block level element by default.
 EXAMPLE DECEMBER 27, 2018 01:27 PM  CSS time { display: block; font: 300 11px/1.5em &amp;#34;McClatchy Sans&amp;#34;, sans-serif; text-transform: uppercase; color: #989898; } RULES    Property Value     Typeface McClatchy Sans   Weight 300   Size 11px   Line height 1.5em   Case Uppercase   Letter spacing Default   Color #989898    </description>
+    </item>
+    
+    <item>
+      <title>timeline</title>
+      <link>https://mcclatchy.github.io/design/saratoga/timeline/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mcclatchy.github.io/design/saratoga/timeline/</guid>
+      <description>The timeline organism is a stack of events styled for chronological display. In the live blogging implementation, all events should be shown at all times. When using the timeline as a story telling enhancement to a normal story, it should be combined with an expander molecule to hide what&amp;rsquo;s not completely necessary to the story on initial load. This will change from story to story.
+Example Before the case went cold A look at the murder of 18-year-old David Krulewicz and the rape of his 15-year-old girlfriend Susan Weed — and the years&#39; long investigation before the case went cold in 1983.</description>
     </item>
     
   </channel>

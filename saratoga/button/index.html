@@ -40,28 +40,35 @@
     <h2>button</h2>
     
 
-<p>Buttons are designed to be placed in a center-aligned row using browser defaults and to have different levels of impact. There are three different types of button,  but they all use the same base code.</p>
+<p>Buttons are designed to be placed in a center-aligned row using browser defaults and to have different levels of impact. There are three different types of button, but they all use the same base code.</p>
 
 <h4 id="example">EXAMPLE</h4>
 
 <div class="example">
   <button class="impact">Impact button</button>
-  <button>Regular button</button>
   <button class="ghost">Ghost button</button>
+  <button>Text button</button>
 </div>
 
+<h4 id="html">HTML</h4>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">button</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;impact&#34;</span>&gt;Impact button&lt;/<span style="color:#000080;font-weight:bold">button</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">button</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;ghost&#34;</span>&gt;Ghost button&lt;/<span style="color:#000080;font-weight:bold">button</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">button</span>&gt;Text button&lt;/<span style="color:#000080;font-weight:bold">button</span>&gt;
+&lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
 <h4 id="css">CSS</h4>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#000080;font-weight:bold">button</span>, .button {
+  <span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">inline</span>-<span style="color:#000080;font-weight:bold">block</span>;
   <span style="color:#000080;font-weight:bold">font</span>: <span style="color:#00f">600</span> <span style="color:#00f">14</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#00f">&#34;McClatchy Sans&#34;</span>;
   <span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">.6</span><span style="color:#000080;font-weight:bold">em</span> <span style="color:#00f">1</span><span style="color:#000080;font-weight:bold">em</span> <span style="color:#00f">.3</span><span style="color:#000080;font-weight:bold">em</span>;
-  <span style="color:#000080;font-weight:bold">border</span>: <span style="color:#00f">1</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#000080;font-weight:bold">solid</span> <span style="color:#00f">#4a4a4a</span>;
+  <span style="color:#000080;font-weight:bold">border</span>: <span style="color:#00f">1</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#000080;font-weight:bold">solid</span> <span style="color:#000080;font-weight:bold">transparent</span>;
   <span style="color:#000080;font-weight:bold">border-radius</span>: <span style="color:#00f">2</span><span style="color:#000080;font-weight:bold">px</span>;
   <span style="color:#000080;font-weight:bold">text-transform</span>: <span style="color:#000080;font-weight:bold">uppercase</span>;
   <span style="color:#000080;font-weight:bold">cursor</span>: <span style="color:#000080;font-weight:bold">pointer</span>;
 }
 
 .ghost {
-  <span style="color:#000080;font-weight:bold">border</span>: <span style="color:#000080;font-weight:bold">none</span>;
+  <span style="color:#000080;font-weight:bold">border-color</span>: <span style="color:#00f">#4a4a4a</span>;
 }</code></pre></div>
 <h4 id="rules">RULES</h4>
 
@@ -283,6 +290,12 @@
   <article class="package">
   <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/story/">story</a></h4>
   <p class="summary">The main article body</p>
+</article>
+
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/timeline/">timeline</a></h4>
+  <p class="summary">Used in live blogging and for static timelines.</p>
 </article>
 
   

@@ -32,6 +32,12 @@ header.package > * {
  * Series nav
  */
 
+.series-nav {
+	--headerFamily: "McClatchy Serif", serif;
+	--headerWeight: 400;
+	--headerTransform: none;
+}
+
 .series-nav .package {
   padding: 0;
 }
@@ -105,24 +111,44 @@ header.package > * {
 }
 
 /**
+ * Timeline
+ */
+
+.timeline-event {
+	border-left: 1px solid #989898;
+}
+
+.timeline-event:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 18px;
+	height: 18px;
+	box-sizing: border-box;
+	background-color: #989898;
+	border: 4px solid white;
+	border-radius: 50%;
+	transform: translate(-9.5px, 12px);
+}
+
+/**
  * Story body
  */
 
 .story {
   padding: 15px 0 50px;
+  --headerFamily: "McClatchy Sans", sans-serif;
+  --headerWeight: 600;
+  --headerTransform: uppercase;
 }
 
 .story > * {
   max-width: 720px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 1em auto;
-}
-
-.story > h2, .story > h3, .story > h4, .story > h5, .story > h6 {
-  font-weight: 600;
-  font-family: "McClatchy Sans";
-  text-transform: uppercase;
+	margin-right: auto;
+  margin-left: auto;
 }
 
 .story > figure {
