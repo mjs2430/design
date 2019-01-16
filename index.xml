@@ -337,7 +337,7 @@ EXAMPLE DECEMBER 27, 2018 01:27 PM  CSS time { display: block; font: 300 11px/1.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mcclatchy.github.io/design/saratoga/timeline/</guid>
-      <description>The timeline organism is a stack of events styled for chronological display. In the live blogging implementation, all events should be shown at all times. When using the timeline as a story telling enhancement to a normal story, it should be combined with an expander molecule to hide what&amp;rsquo;s not completely necessary to the story on initial load. This will change from story to story.
+      <description>The timeline organism is a stack of events styled for chronological display. In the live updates implementation, all events should be shown at all times. When using the timeline as a story telling enhancement to a normal story, it should be combined with an expander molecule to hide what&amp;rsquo;s not completely necessary to the story on initial load. This will change from story to story.
 Example Before the case went cold A look at the murder of 18-year-old David Krulewicz and the rape of his 15-year-old girlfriend Susan Weed — and the years&#39; long investigation before the case went cold in 1983.</description>
     </item>
     
