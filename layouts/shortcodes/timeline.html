@@ -17,7 +17,6 @@
   {{- if eq (.Get "type") "story" }}
   <div>
     <h5 class="expander" onclick="this.classList.toggle('open')">SEE ALL EVENTS</h5>
-  {{- end }}
     <div class="timeline-event package">
       <time>7:15 PM - MAY 1, 1980</time>
       <h4>EVENT TITLE</h4>
@@ -41,7 +40,20 @@
       <h4>EVENT TITLE</h4>
       <p class="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at dolor purus. Duis a venenatis justo. Phasellus venenatis, arcu a elementum aliquam, quam velit facilisis.</p>
     </div>
-  {{- if eq (.Get "type") "story" }}
+  </div>
+  {{- else }}
+  <div class="timeline-event package">
+    <time>7:15 PM - MAY 1, 1980</time>
+    <h4>EVENT TITLE</h4>
+    <p class="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at dolor purus. Duis a venenatis justo. Phasellus venenatis, arcu a elementum aliquam, quam velit facilisis.</p>
+  </div>
+  <div class="timeline-event package">
+    <time>7:15 PM - MAY 1, 1980</time>
+    <h4>EVENT TITLE</h4>
+    <figure>
+      <img src="https://www.kansas.com/news/local/sh6ynl/picture52529900/alternates/LANDSCAPE_768/LYLE%20LOVETT">
+    </figure>
+    <p class="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at dolor purus. Duis a venenatis justo. Phasellus venenatis, arcu a elementum aliquam, quam velit facilisis.</p>
   </div>
   {{- end }}
 </div>
