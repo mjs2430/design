@@ -11,13 +11,13 @@ A container-based approach to these rules requires multiple breakpoints and crea
 
 To combat these issues, we looked at the story body itself instead of each possible element to determine the design rules. We came up with a small list of general ideas.
 
-1. Text should be centered in the middle and no wider than 720px.
-2. Everything except media should have 15px of space on the left and right.
-3. Text should have 1em of vertical space.
-4. Media should be allowed to go to 1140px wide to elevate value.
-4. Media and story modules should have 30px of vertical space.
-5. Advertising should have 50px of vertical space.
-6. Subheads should be 600 weight and Sans Serif.
++ Text should be centered in the middle and no wider than 720px.
++ Everything except media should have 15px of space on the left and right.
++ Text should have 1em of vertical space.
++ Media should be allowed to go to 1140px wide to elevate value.
++ Media and story modules should have 30px of vertical space.
++ Advertising should have 50px of vertical space.
++ Subheads should be 600 weight and Sans Serif.
 
 The last challenge was to tackle the idea that as dynamic content becomes more important to our designs, the structure would need to be able to adopt it without increasing the code base more than necessary. We needed a basic default setup that could be easily overloaded. We settled on a direct child approach, which could provide what we needed in the fewest lines of code.
 

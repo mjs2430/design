@@ -56,28 +56,13 @@ p {
   font: 17px/1.5em "Lyon", serif;
 }
 
-ul, ol {
-  padding-left: 0;
-  font-family: "Lyon", serif;
-}
-
 li {
-  font-size: 17px;
-  line-height: 1.5em;
-  list-style: none;
-  position: relative;
-  margin-left: 1em;
+  font: 17px/1.5em "Lyon", serif;
+  margin: 10px 0 10px calc(1em + 15px);
 }
 
-li:before {
-  content: "";
-  height: 8px;
-  width: 8px;
-  background-color: black;
-  border-radius: 50%;
-  position: absolute;
-  top: .4em;
-  left: -1em;
+ul li {
+  list-style-image: url("icons/circle.svg");
 }
 
 time {
