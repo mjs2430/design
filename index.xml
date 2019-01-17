@@ -226,7 +226,8 @@ The label atom is just used for spacing and can accept any element. Currently, w
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mcclatchy.github.io/design/saratoga/li/</guid>
-      <description>EXAMPLE  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula libero ut posuere tincidunt. Quisque aliquet est non leo ullamcorper, eu sagittis est cursus. Morbi tempus mauris at est congue, quis tincidunt augue venenatis.   CSS ul, ol { padding-left: 0; font-family: &amp;#34;Lyon&amp;#34;, serif; } li { font-size: 17px; line-height: 1.5em; list-style: none; position: relative; margin-left: 1em; } li:before { content: &amp;#34;&amp;#34;; height: 8px; width: 8px; background-color: black; border-radius: 50%; position: absolute; top: .</description>
+      <description>List items should be indented an additional 15px left from the normal text, and have 10 px of space between them. Unordered lists should use the circle icon from fontawesome.com in order to increase the bullet size.
+EXAMPLE Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra venenatis leo ut tempus. Quisque auctor posuere placerat. Integer pulvinar convallis massa ac ultrices. Fusce sit amet aliquet dolor. Aenean fermentum euismod ultrices.</description>
     </item>
     
     <item>
