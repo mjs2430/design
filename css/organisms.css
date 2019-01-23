@@ -69,6 +69,12 @@ header.package > * {
  * Related stories
  */
 
+.related-stories {
+	--headerFamily: "McClatchy Serif", serif;
+	--headerWeight: 400;
+	--headerTransform: none;
+}
+
 .related-stories .package {
   padding: 0;
 }
