@@ -33,8 +33,8 @@ This site is made with these rules, so this panel is one example. There is also 
 
 .story > * {
   max-width: 720px;
-	padding: 0 15px;
-	margin-right: auto;
+  padding: 0 15px;
+  margin-right: auto;
   margin-left: auto;
 }
 
