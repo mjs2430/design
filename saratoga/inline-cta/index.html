@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>card</title>
+    <title>inline-cta</title>
     
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -37,82 +37,42 @@
     </div>
 <div class="panels">
   <div class="paper story details">
-    <h2>card</h2>
+    <h2>inline-cta</h2>
     
 
-<p>The card molecule extends the paper base molecule and adds Flexbox. By doing so the size of the card is stretched to match adjacent cards in each row. Card molecules should be the direct children of any Flexbox or Grid container.</p>
+<p>The inline CTA should be used in the story body. Under the dynamic content rules, it will be moved on the page and the wording will change. To allow for maximum flexibility, it&rsquo;s a standard stack of atoms and follows the same rules as all other ads on the page.</p>
 
-<h4 id="example">Example</h4>
+<h4 id="example">EXAMPLE</h4>
 
-<div class="example grid">
- <article class="card ">
-  <figure>
-    <a href="https://mcclatchy.github.io/saratoga/food/205504249/">
-      <img src="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_640/0321%20cimk%20kuwata%2003022018%20s%20%284%29" srcset="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_1140/0321%20cimk%20kuwata%2003022018%20s%20%284%29 1140w"> 
-    </a>
-  </figure>
-  <div class="package">
-    <h6><a class="kicker" href="https://mcclatchy.github.io/saratoga/food/">FOOD</a></h6>
-    <h3><a href="https://mcclatchy.github.io/saratoga/food/205504249/">Hatch chiles bring heat and hearty flavor to New Mexican cuisine </a></h3>
-    <time>March 16, 2018 11:33 am</time>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis ex ex, at blandit sapien suscipit eget. Maecenas gravida, erat vitae commodo semper, lorem sem molestie metus, quis faucibus tellus.</p>
+
+<div class="ad">
+  <h1>Digital access for only $0.99</h1>
+  <p class="summary">For the most comprehensive local coverage, subscribe today.</p>
+  <div>
+    <a class="button impact" href="#">SUBSCRIBE NOW</a>
+    <span class="button">#READLOCAL</span>
   </div>
-</article>
-
- <article class="card ">
-  <figure>
-    <a href="https://mcclatchy.github.io/saratoga/food/205504249/">
-      <img src="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_640/0321%20cimk%20kuwata%2003022018%20s%20%284%29" srcset="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_1140/0321%20cimk%20kuwata%2003022018%20s%20%284%29 1140w"> 
-    </a>
-  </figure>
-  <div class="package">
-    <h6><a class="kicker" href="https://mcclatchy.github.io/saratoga/food/">FOOD</a></h6>
-    <h3><a href="https://mcclatchy.github.io/saratoga/food/205504249/">Hatch chiles bring heat and hearty flavor to New Mexican cuisine </a></h3>
-    <time>March 16, 2018 11:33 am</time>
-  </div>
-</article>
-
 </div>
+
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis ex ex, at blandit sapien suscipit eget. Maecenas gravida, erat vitae commodo semper, lorem sem molestie metus, quis faucibus tellus.</p>
 
 <h4 id="html">HTML</h4>
 
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">article</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card &#34;</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">figure</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;https://mcclatchy.github.io/saratoga/food/205504249/&#34;</span>&gt;
-      &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_640/0321%20cimk%20kuwata%2003022018%20s%20%284%29&#34;</span> <span style="color:#f00">srcset</span>=<span style="color:#00f">&#34;https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_1140/0321%20cimk%20kuwata%2003022018%20s%20%284%29 1140w&#34;</span>&gt; 
-    &lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-  &lt;/<span style="color:#000080;font-weight:bold">figure</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package&#34;</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">h6</span>&gt;&lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;kicker&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;https://mcclatchy.github.io/saratoga/food/&#34;</span>&gt;FOOD&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">h6</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">h3</span>&gt;&lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;https://mcclatchy.github.io/saratoga/food/205504249/&#34;</span>&gt;Hatch chiles bring heat and hearty flavor to New Mexican cuisine &lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">h3</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">time</span>&gt;March 16, 2018 11:33 am&lt;/<span style="color:#000080;font-weight:bold">time</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;ad&#34;</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">h1</span>&gt;Digital access for only $0.99&lt;/<span style="color:#000080;font-weight:bold">h1</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;For the most comprehensive local coverage, subscribe today.&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button impact&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;SUBSCRIBE NOW&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button&#34;</span>&gt;#READLOCAL&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
   &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-&lt;/<span style="color:#000080;font-weight:bold">article</span>&gt;</code></pre></div>
+&lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
 
 <h4 id="css">CSS</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#080;font-style:italic">/**
-</span><span style="color:#080;font-style:italic"> * Paper
-</span><span style="color:#080;font-style:italic"> */</span>
 
-.paper, .card {
-  <span style="color:#000080;font-weight:bold">position</span>: <span style="color:#000080;font-weight:bold">relative</span>;
-  <span style="color:#000080;font-weight:bold">background-color</span>: <span style="color:#000080;font-weight:bold">white</span>;
-  <span style="color:#000080;font-weight:bold">box-shadow</span>: 
-    <span style="color:#00f">0</span> <span style="color:#00f">1</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#00f">2</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#00f">0</span> rgba(<span style="color:#00f">0</span>, <span style="color:#00f">0</span>, <span style="color:#00f">0</span>, <span style="color:#00f">.2</span>), 
-    <span style="color:#00f">0</span> <span style="color:#00f">1</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#00f">5</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#00f">0</span> rgba(<span style="color:#00f">0</span>, <span style="color:#00f">0</span>, <span style="color:#00f">0</span>, <span style="color:#00f">.13</span>);
-}
+<p>This organism requires no additional CSS.</p>
 
-.paper .card {
-  <span style="color:#000080;font-weight:bold">box-shadow</span>: <span style="color:#000080;font-weight:bold">none</span>;
-}
-
-<span style="color:#080;font-style:italic">/**
-</span><span style="color:#080;font-style:italic"> * Story cards
-</span><span style="color:#080;font-style:italic"> */</span>
-
-.card {
-  <span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">flex</span>;
-  <span style="color:#000080;font-weight:bold">flex-direction</span>: <span style="color:#000080;font-weight:bold">column</span>;
-}</code></pre></div>
   </div>
 
   <div class="paper digest list">

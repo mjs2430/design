@@ -202,6 +202,16 @@ Example OPINION  Kudlow joins White House that sorely needs cooler heads to prev
     </item>
     
     <item>
+      <title>inline-cta</title>
+      <link>https://mcclatchy.github.io/design/saratoga/inline-cta/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mcclatchy.github.io/design/saratoga/inline-cta/</guid>
+      <description>The inline CTA should be used in the story body. Under the dynamic content rules, it will be moved on the page and the wording will change. To allow for maximum flexibility, it&amp;rsquo;s a standard stack of atoms and follows the same rules as all other ads on the page.
+EXAMPLE Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis ex ex, at blandit sapien suscipit eget. Maecenas gravida, erat vitae commodo semper, lorem sem molestie metus, quis faucibus tellus.</description>
+    </item>
+    
+    <item>
       <title>label</title>
       <link>https://mcclatchy.github.io/design/saratoga/label/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
