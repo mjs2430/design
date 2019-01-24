@@ -34,6 +34,10 @@ button, .button {
   cursor: pointer;
 }
 
+.button:hover {
+  text-decoration: none;
+}
+
 .ghost {
   border-color: #4a4a4a;
 }

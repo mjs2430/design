@@ -22,6 +22,10 @@ The impact molecule simply reverses the color scheme of any element, and has a c
   color: white;
 }
 
+a.impact {
+  color: white;
+}
+
 .impact * {
   color: white;
   border-color: white;
