@@ -13,7 +13,6 @@ To combat these issues, we looked at the story body itself instead of each possi
 
 + Text should be centered in the middle and no wider than 720px.
 + Everything except media should have 15px of space on the left and right.
-+ Text should have 1em of vertical space.
 + Media should be allowed to go to 1140px wide to elevate value.
 + Media and story modules should have 30px of vertical space.
 + Advertising should have 50px of vertical space.
