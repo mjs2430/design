@@ -197,7 +197,7 @@ Example SPORTS  CSS h6, .h6 { font: 400 12px/1.2em &amp;#34;McClatchy Serif&amp;
       <guid>https://mcclatchy.github.io/design/saratoga/header/</guid>
       <description>The header organism is based on the standard package molecule but increases the space between each direct child and centers the content on the device.
 EXAMPLE SECTION Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus lorem a  By John Doe SAMPLE NEWSPAPER
-AUG 13, 2018, UPDATED 4 MONTHS AGO           HTML &amp;lt;header class=&amp;#34;package&amp;#34;&amp;gt; &amp;lt;h6 class=&amp;#34;kicker&amp;#34;&amp;gt;&amp;lt;a href=&amp;#34;#&amp;#34;&amp;gt;SECTION&amp;lt;/a&amp;gt;&amp;lt;/h6&amp;gt; &amp;lt;h1&amp;gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+AUG 13, 2018, UPDATED 4 MONTHS AGO          HTML &amp;lt;header class=&amp;#34;package&amp;#34;&amp;gt; &amp;lt;h6 class=&amp;#34;kicker&amp;#34;&amp;gt;&amp;lt;a href=&amp;#34;#&amp;#34;&amp;gt;SECTION&amp;lt;/a&amp;gt;&amp;lt;/h6&amp;gt; &amp;lt;h1&amp;gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
     </item>
     
     <item>
