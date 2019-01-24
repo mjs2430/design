@@ -56,6 +56,10 @@
   color: white;
 }
 
+a.impact {
+  color: white;
+}
+
 .impact * {
   color: white;
   border-color: white;
