@@ -27,7 +27,7 @@ This site is made with these rules, so this panel is one example. There is also 
 #### CSS
 ```css
 .story {
-  padding: 15px 0 50px;
+	padding-bottom: 30px;
 }
 
 .story > * {

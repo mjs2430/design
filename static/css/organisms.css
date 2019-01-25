@@ -21,6 +21,8 @@ header.package {
   flex-direction: column;
   align-items: center;
   text-align: center;
+	padding-top: 30px;
+	padding-top: 30px;
 }
 
 header.package > * {
@@ -143,7 +145,7 @@ header.package > * {
  */
 
 .story {
-  padding: 15px 0 50px;
+	padding-bottom: 30px;
   --headerFamily: "McClatchy Sans", sans-serif;
   --headerWeight: 600;
   --headerTransform: uppercase;
