@@ -17,7 +17,7 @@ The more-link atom signifies that clicking it will take the reader to another we
   display: flex;
   align-items: center;
   font: 600 14px/1.5em "McClatchy Sans";
-  color: #989898;
+  color: #707070;
   text-transform: uppercase;
   margin-top: 15px;
 }
@@ -41,6 +41,6 @@ Typeface | McClatchy Sans
 Weight | 600
 Size | 14px
 Line height | 1.5em
-Color | #989898
+Color | #707070
 Case | uppercase
 Letter spacing | Default

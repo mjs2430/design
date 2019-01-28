@@ -46,9 +46,9 @@ td:first-child {
 }
 
 .underline {
-  padding: 0 0 .2em;
-  margin: 15px 15px 0;
-  border-bottom: 1px solid #989898;
+  padding: 15px 0 .2em;
+  margin: 0 15px 0;
+  border-bottom: 1px solid #707070;
   font-family: "McClatchy Sans";
   font-weight: 600;
   text-transform: uppercase;
@@ -91,4 +91,9 @@ td:first-child {
   .details {
     order: 2;
   }
+}
+
+.page-header {
+  margin-top: 0;
+  padding-top: 30px;
 }

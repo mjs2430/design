@@ -50,5 +50,5 @@ Property | Value
 Typeface | McClatchy Sans
 Weight | 600
 Size | 14px
-Border | 1 pixel solid #989898 with a 2-pixel radius
+Border | 1 pixel solid #4a4a4a with a 2-pixel radius
 Case | Uppercase

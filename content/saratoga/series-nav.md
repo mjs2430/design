@@ -25,7 +25,7 @@ The series nav is a visual tool to link stories together than may or may not be 
 }
 
 .series-nav .summary {
-  color: #989898;
+  color: #707070;
 }
 
 .series-nav .article {

@@ -1,7 +1,7 @@
 var list = document.querySelector(".list");
 var lastScroll = localStorage.getItem("scroll")
 
-if(lastScroll) {
+if(lastScroll && (window.innerWidth > 769)) {
   list.scrollBy(0, lastScroll);
 }
 

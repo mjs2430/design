@@ -71,7 +71,7 @@ time {
   display: block;
   font: 300 11px/1.2em "McClatchy Sans", sans-serif;
   text-transform: uppercase;
-  color: #989898;
+  color: #707070;
 }
 
 figure {
@@ -85,7 +85,7 @@ figure img {
 
 figcaption, .caption {
   font: 14px/1.4em "McClatchy Sans", sans-serif;
-  color: #989898;
+  color: #707070;
   padding: 10px 0 0;
 }
 
@@ -108,7 +108,7 @@ button, .button {
 }
 
 hr {
-  border: .5px solid #989898;
+  border: .5px solid #707070;
 }
 
 /** Typography */
@@ -132,7 +132,7 @@ hr {
 .byline {
   display: inline-block;
   font: 400 11px/1.5em "McClatchy Sans";
-  color: #989898;
+  color: #707070;
   text-transform: uppercase;
 }
 
@@ -191,7 +191,7 @@ hr {
   display: flex;
   align-items: center;
   font: 600 14px/1.5em "McClatchy Sans";
-  color: #989898;
+  color: #707070;
   text-transform: uppercase;
   margin-top: 15px;
 }

@@ -17,7 +17,7 @@ time {
   display: block;
   font: 300 11px/1.5em "McClatchy Sans", sans-serif;
   text-transform: uppercase;
-  color: #989898;
+  color: #707070;
 }
 ```
 
@@ -31,4 +31,4 @@ Size | 11px
 Line height | 1.5em
 Case | Uppercase
 Letter spacing | Default
-Color | #989898
+Color | #707070

@@ -42,7 +42,7 @@ As the organism compresses to fit smaller screens, the icons should wrap under t
 
 .author-subscription {
   padding: 10px 0;
-  color: #989898;
+  color: #707070;
 }
 
 .author-card .callout {

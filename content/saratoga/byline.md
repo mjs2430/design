@@ -21,7 +21,7 @@ The byline and credit rules should have this standard anywhere attribution appli
 .byline {
   display: inline-block;
   font: 400 11px/1.5em "McClatchy Sans";
-  color: #989898;
+  color: #707070;
   text-transform: uppercase;
 }
 
@@ -43,7 +43,7 @@ Property | Value
 Typeface | McClatchy Sans
 Weight | 400, 700 for linked items
 Size | 11px
-Color | #989898
+Color | #707070
 Case | Uppercase
 Letter Spacing | Default
 Display | Inline block

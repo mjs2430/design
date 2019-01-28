@@ -15,7 +15,7 @@ The timeline organism is a stack of events styled for chronological display. In 
 #### CSS
 ```css
 .timeline-event {
-	border-left: 1px solid #989898;
+	border-left: 1px solid #707070;
 }
 
 .timeline-event:before {
@@ -26,7 +26,7 @@ The timeline organism is a stack of events styled for chronological display. In 
 	width: 18px;
 	height: 18px;
 	box-sizing: border-box;
-	background-color: #989898;
+	background-color: #707070;
 	border: 4px solid white;
 	border-radius: 50%;
 	transform: translate(-9.5px, 12px);
