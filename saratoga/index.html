@@ -37,10 +37,83 @@
     </div>
 <div class="panels">
   <div id="details" class="details paper story sans">
-    <h2>Overview</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam nisi, lobortis eu lacus vitae, euismod rutrum diam. Sed ultricies eros non tellus tempus elementum. Fusce convallis libero vitae mauris blandit, non ultricies arcu commodo. Morbi ut felis sagittis, varius orci vitae, congue nibh. Quisque id eleifend dolor, vel pharetra orci. Nam gravida neque vitae nisl volutpat pellentesque. Cras condimentum fringilla diam, ut gravida tortor tempus eget. Nulla tempor lacus vel enim ullamcorper, eu aliquam massa elementum. Vivamus varius, diam sit amet tincidunt ultrices, risus lorem viverra ante, et maximus massa felis quis urna. Nulla varius auctor bibendum.</p>
-    <p>Quisque cursus arcu ut nunc ultricies, a pulvinar orci hendrerit. Sed lobortis pharetra justo aliquam ultrices. Ut venenatis tellus enim, vel imperdiet nulla auctor vitae. Integer non dictum orci. Sed aliquet lectus vel scelerisque pellentesque. Quisque suscipit ultricies ultricies. Ut vel ullamcorper tortor. Ut convallis non libero ut mollis. Nulla est tortor, mollis eu arcu ac, convallis lobortis enim. Pellentesque sapien odio, finibus et consequat vel, finibus in ante.</p>
-    <p>In auctor molestie ex, vel sagittis libero bibendum et. Quisque at blandit metus. Etiam eu egestas nisl, ac condimentum nulla. Vivamus porta, enim et dictum suscipit, nibh urna sollicitudin ante, blandit imperdiet enim turpis vitae velit. Ut sed ipsum in orci elementum semper nec non lacus. Nullam aliquam nulla quam, ac faucibus nisi fringilla eu. Aenean finibus augue massa, eget congue nibh lacinia id. Nullam risus sapien, tristique eget lacus vel, lobortis varius nisi. Sed pulvinar et lorem a ornare. In malesuada tellus quis dui egestas consequat. Quisque pellentesque lectus arcu, vel pretium diam pellentesque eu. In quis quam mi. Mauris venenatis dictum nisl, sed ornare ex imperdiet ut. Morbi sollicitudin dictum aliquet. Sed vel sagittis mauris. Donec suscipit, magna in placerat dictum, tortor nisi dignissim ipsum, vel vulputate ex nunc et velit.</p>
+    
+    <h2 class="page-header">button</h2>
+    
+
+<p>Buttons are designed to be placed in a center-aligned row using browser defaults and to have different levels of impact. There are three different types of button, but they all use the same base code.</p>
+
+<h4 id="example">EXAMPLE</h4>
+
+<div class="example">
+  <button class="impact">Impact button</button>
+  <button class="ghost">Ghost button</button>
+  <button>Text button</button>
+</div>
+
+<h4 id="html">HTML</h4>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">button</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;impact&#34;</span>&gt;Impact button&lt;/<span style="color:#000080;font-weight:bold">button</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">button</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;ghost&#34;</span>&gt;Ghost button&lt;/<span style="color:#000080;font-weight:bold">button</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">button</span>&gt;Text button&lt;/<span style="color:#000080;font-weight:bold">button</span>&gt;
+&lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
+<h4 id="css">CSS</h4>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#000080;font-weight:bold">button</span>, .button {
+  <span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">inline</span>-<span style="color:#000080;font-weight:bold">block</span>;
+  <span style="color:#000080;font-weight:bold">font</span>: <span style="color:#00f">600</span> <span style="color:#00f">14</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#00f">&#34;McClatchy Sans&#34;</span>;
+  <span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">.6</span><span style="color:#000080;font-weight:bold">em</span> <span style="color:#00f">1</span><span style="color:#000080;font-weight:bold">em</span> <span style="color:#00f">.3</span><span style="color:#000080;font-weight:bold">em</span>;
+  <span style="color:#000080;font-weight:bold">border</span>: <span style="color:#00f">1</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#000080;font-weight:bold">solid</span> <span style="color:#000080;font-weight:bold">transparent</span>;
+  <span style="color:#000080;font-weight:bold">border-radius</span>: <span style="color:#00f">2</span><span style="color:#000080;font-weight:bold">px</span>;
+  <span style="color:#000080;font-weight:bold">text-transform</span>: <span style="color:#000080;font-weight:bold">uppercase</span>;
+  <span style="color:#000080;font-weight:bold">cursor</span>: <span style="color:#000080;font-weight:bold">pointer</span>;
+}
+
+.button:hover {
+  <span style="color:#000080;font-weight:bold">text-decoration</span>: <span style="color:#000080;font-weight:bold">none</span>;
+}
+
+.ghost {
+  <span style="color:#000080;font-weight:bold">border-color</span>: <span style="color:#00f">#4a4a4a</span>;
+}</code></pre></div>
+<h4 id="rules">RULES</h4>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Typeface</td>
+<td>McClatchy Sans</td>
+</tr>
+
+<tr>
+<td>Weight</td>
+<td>600</td>
+</tr>
+
+<tr>
+<td>Size</td>
+<td>14px</td>
+</tr>
+
+<tr>
+<td>Border</td>
+<td>1 pixel solid #4a4a4a with a 2-pixel radius</td>
+</tr>
+
+<tr>
+<td>Case</td>
+<td>Uppercase</td>
+</tr>
+</tbody>
+</table>
+
+    
   </div>
 
   <div class="paper digest list">

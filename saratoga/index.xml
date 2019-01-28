@@ -97,7 +97,7 @@ The generic rules make for a very flexible setup, where we can force each child 
       
       <guid>https://mcclatchy.github.io/design/saratoga/figcaption/</guid>
       <description>All captions have the same style. The figcaption is used as a semantic wrapper and to keep the cascade as configurable as possible.
-example  On May 10, 1987, 13-year-old Roy Collins was shot while jumping fences in a Kansas City neighborhood. We recreate the shooting according to police and witness reports. By Neil Nakahodo The Kansas City Star     CSS figcaption, .caption { font: 14px/1.5em &amp;#34;McClatchy Sans&amp;#34;, sans-serif; color: #989898; padding: 10px 0 0; } RULES    Property Value     Typeface McClatchy Sans   Weight 400   Size 14px   Line height 1.</description>
+example  On May 10, 1987, 13-year-old Roy Collins was shot while jumping fences in a Kansas City neighborhood. We recreate the shooting according to police and witness reports. By Neil Nakahodo The Kansas City Star     CSS figcaption, .caption { font: 14px/1.5em &amp;#34;McClatchy Sans&amp;#34;, sans-serif; color: #707070; padding: 10px 0 0; } RULES    Property Value     Typeface McClatchy Sans   Weight 400   Size 14px   Line height 1.</description>
     </item>
     
     <item>
@@ -330,7 +330,7 @@ Example Perhaps no one can speak to the legacy of former Kansas State football c
       
       <guid>https://mcclatchy.github.io/design/saratoga/time/</guid>
       <description> Timestamps are always displayed on their own line, so &amp;lt;time&amp;gt; is converted to a block level element by default.
-EXAMPLE DECEMBER 27, 2018 01:27 PM  CSS time { display: block; font: 300 11px/1.5em &amp;#34;McClatchy Sans&amp;#34;, sans-serif; text-transform: uppercase; color: #989898; } RULES    Property Value     Typeface McClatchy Sans   Weight 300   Size 11px   Line height 1.5em   Case Uppercase   Letter spacing Default   Color #989898    </description>
+EXAMPLE DECEMBER 27, 2018 01:27 PM  CSS time { display: block; font: 300 11px/1.5em &amp;#34;McClatchy Sans&amp;#34;, sans-serif; text-transform: uppercase; color: #707070; } RULES    Property Value     Typeface McClatchy Sans   Weight 300   Size 11px   Line height 1.5em   Case Uppercase   Letter spacing Default   Color #707070    </description>
     </item>
     
     <item>
