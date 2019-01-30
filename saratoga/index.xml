@@ -343,5 +343,15 @@ EXAMPLE DECEMBER 27, 2018 01:27 PM  CSS time { display: block; font: 300 11px/1.
 Example Before the case went cold A look at the murder of 18-year-old David Krulewicz and the rape of his 15-year-old girlfriend Susan Weed — and the years&#39; long investigation before the case went cold in 1983.</description>
     </item>
     
+    <item>
+      <title>transparency</title>
+      <link>https://mcclatchy.github.io/design/saratoga/transparency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mcclatchy.github.io/design/saratoga/transparency/</guid>
+      <description>The transparency organism is an extension of the expander molecule made to house background information for a story or coverage of a topic in general.
+EXAMPLE BEHIND OUR REPORTING Why did we report this story? Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc.</description>
+    </item>
+    
   </channel>
 </rss>
