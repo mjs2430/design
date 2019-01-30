@@ -197,7 +197,6 @@ header.package > * {
 }
 
 .transparency .expander {
-	display: flex;
 	justify-content: space-between;
 }
 

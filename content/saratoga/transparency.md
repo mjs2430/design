@@ -30,7 +30,6 @@ The transparency organism is an extension of the `expander` molecule made to hou
 }
 
 .transparency .expander {
-	display: flex;
 	justify-content: space-between;
 }
 
