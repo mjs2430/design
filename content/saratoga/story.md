@@ -28,6 +28,9 @@ This site is made with these rules, so this panel is one example. There is also 
 ```css
 .story {
 	padding-bottom: 30px;
+  --headerFamily: "McClatchy Sans", sans-serif;
+  --headerWeight: 600;
+  --headerTransform: uppercase;
 }
 
 .story > * {
@@ -37,23 +40,10 @@ This site is made with these rules, so this panel is one example. There is also 
   margin-left: auto;
 }
 
-.story > h2, .story > h3, .story > h4, .story > h5, .story > h6 {
-  font-weight: 600;
-  font-family: "McClatchy Sans";
-  text-transform: uppercase;
-}
-
 .story > figure {
   max-width: 1140px;
   padding: 0;
   margin: 30px auto;
-}
-
-@media (max-width: 1155px) {
-  .story > figure figcaption {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
 }
 
 .story .story-module {

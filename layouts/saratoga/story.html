@@ -2,4 +2,8 @@
 <article class="story paper">
   {{ .Content }}
 </article>
+
+<div class="spill" style="padding: 30px 0; background-color: #f4f4f4;">
+ {{ readFile "layouts/shortcodes/big-news.html" | safeHTML }}
+</div>
 {{ end }}

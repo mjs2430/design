@@ -7,9 +7,7 @@ level: atom
 All captions have the same style. The figcaption is used as a semantic wrapper and to keep the cascade as configurable as possible.
 
 #### example
-<div class="example">
-  {{< figure >}}
-</div>
+{{< figure >}}
 
 #### CSS
 ```css
