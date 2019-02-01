@@ -86,7 +86,7 @@ figure img {
 figcaption, .caption {
   font: 14px/1.4em "McClatchy Sans", sans-serif;
   color: #707070;
-  padding: 10px 0 0;
+  margin: 10px 15px;
 }
 
 button, .button {

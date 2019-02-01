@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>big-news</title>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="../../favicon.ico">
+
+    <link rel="stylesheet" href="../../css/fonts.css">
+    <link rel="stylesheet" href="../../css/atoms.css">
+    <link rel="stylesheet" href="../../css/molecules.css">
+    <link rel="stylesheet" href="../../css/organisms.css">
+    <link rel="stylesheet" href="../../css/site.css">
+<link rel="stylesheet" href="../../css/style-guide.css">
+
+  </head>
+
+  <body class="saratoga">
+    <div class="banner paper">
+      <a href="../../" style="padding: 0;"><img class="logo" src="../../img/banner-logo.2.svg"></a>
+      <nav>
+        <a href="https://mcclatchy.github.io/design/about/" class="">
+          <span>about us</span>
+        </a>
+        <a href="https://medium.com/mcclatchy-design" class="">
+          <span>blog</span>
+        </a>
+        <a href="https://mcclatchy.github.io/design/saratoga/" class="active">
+          <span>style guide</span>
+        </a>
+      </nav>
+    </div>
+<div class="panels">
+  <div class="paper story details">
+    <h2 class="page-header">big-news</h2>
+    
+
+<p>The big news organism is a series of independent areas designed to give newsrooms control of the volume depending on what they have. Each zone is managed separately and nothing is required.</p>
+
+<h4 id="example">EXAMPLE</h4>
+
+<div class="example" style="max-width: 100%; padding: 15px 0; background-color: #f4f4f4; border-top: 2px solid #ddd; border-bottom: 2px solid #ddd;"><div class="big-news paper">
+  <h5 class="grid-label">LATEST NEWS</h5>
+  <div class="grid">
+    <article class="package">
+      <h3><a href="#">Looking for water or gas? Here are some places that have them </a></h3>
+      <time>February 23, 2018 2PM</time>
+    </article>
+    <article class="package">
+      <h3><a href="#">Hurrican Irma makes landfall in the Carribean: where's she headed next</a></h3>
+      <time>February 23, 2018 2PM</time>
+    </article>
+    <article class="package">
+      <h3><a href="#">Hurricane Irma's menacing eye strenghens</a></h3>
+      <time>February 23, 2018 2PM</time>
+    </article>
+  </div>
+  <h1>Hurricane Florence now a Category 4 &mdash; state of emergency declared</h1>
+  <figure>
+    <img src="https://www.mcclatchydc.com/latest-news/2dp7ij/picture218293685/alternates/LANDSCAPE_1140/Flood_td_103_LEDE.JPG">
+    <figcaption>Officers carry June Loch to dry land after she was rescued from her home in the Pine Glen subdivision of Columbia, S.C. on Oct. 5, 2015. Record rainfall that October triggered floods that killed at least 19 people in South Carolina and caused extensive damage to neighborhoods that had never flooded before. Despite that disaster, only 9 percent of South Carolina households had purchased flood insurance by May of last year. <span class="byline"><a href="#">Tim Dominick</a></span>
+  </figure>
+  <div class="grid bottom-grid">
+    <article class="card">
+      <figure>
+        <img src="https://www.mcclatchydc.com/news/nation-world/national/7g1ahc/picture174166396/alternates/LANDSCAPE_640/Hurricane%20Irma%202">
+      </figure>
+      <div class="package">
+        <h3><a href="#">Looking for water or gas? Here are some places that have them </a></h3>
+        <time>February 23, 2018 2PM</time>
+      </div>
+    </article>
+    <article class="card">
+      <figure>
+        <img src="https://www.miamiherald.com/news/weather/hurricane/c3x8sb/picture172257337/alternates/LANDSCAPE_640/Coconut%20Grove%20Irma%2004%20EKM%20(1)">
+      </figure>
+      <div class="package">
+        <h3><a href="#">Hurrican Irma makes landfall in the Carribean: where's she headed next</a></h3>
+        <time>February 23, 2018 2PM</time>
+      </div>
+    </article>
+    <article class="card">
+      <figure>
+        <img src="https://www.mcclatchydc.com/news/nation-world/national/w763tv/picture172700996/alternates/LANDSCAPE_640/AP_17254522905028">
+      </figure>
+      <div class="package">
+        <h3><a href="#">Hurrican Irma makes landfall in the Carribean: where's she headed next</a></h3>
+        <time>February 23, 2018 2PM</time>
+      </div>
+    </article>
+  </div>
+</div>
+</div>
+
+<h4 id="html">HTML</h4>
+
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;big-news paper&#34;</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">h5</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;grid-label&#34;</span>&gt;LATEST NEWS&lt;/<span style="color:#000080;font-weight:bold">h5</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;grid&#34;</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">article</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package&#34;</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">h3</span>&gt;&lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;Looking for water or gas? Here are some places that have them &lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">h3</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">time</span>&gt;February 23, 2018 2PM&lt;/<span style="color:#000080;font-weight:bold">time</span>&gt;
+    &lt;/<span style="color:#000080;font-weight:bold">article</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">article</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package&#34;</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">h3</span>&gt;&lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;Hurrican Irma makes landfall in the Carribean: where&#39;s she headed next&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">h3</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">time</span>&gt;February 23, 2018 2PM&lt;/<span style="color:#000080;font-weight:bold">time</span>&gt;
+    &lt;/<span style="color:#000080;font-weight:bold">article</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">article</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package&#34;</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">h3</span>&gt;&lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;Hurricane Irma&#39;s menacing eye strenghens&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">h3</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">time</span>&gt;February 23, 2018 2PM&lt;/<span style="color:#000080;font-weight:bold">time</span>&gt;
+    &lt;/<span style="color:#000080;font-weight:bold">article</span>&gt;
+  &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">h1</span>&gt;Hurricane Florence now a Category 4 &amp;mdash; state of emergency declared&lt;/<span style="color:#000080;font-weight:bold">h1</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">figure</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;https://www.mcclatchydc.com/latest-news/2dp7ij/picture218293685/alternates/LANDSCAPE_1140/Flood_td_103_LEDE.JPG&#34;</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">figcaption</span>&gt;Officers carry June Loch to dry land after she was rescued from her home in the Pine Glen subdivision of Columbia, S.C. on Oct. 5, 2015. Record rainfall that October triggered floods that killed at least 19 people in South Carolina and caused extensive damage to neighborhoods that had never flooded before. Despite that disaster, only 9 percent of South Carolina households had purchased flood insurance by May of last year. &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;byline&#34;</span>&gt;&lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;Tim Dominick&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
+  &lt;/<span style="color:#000080;font-weight:bold">figure</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;grid bottom-grid&#34;</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">article</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card&#34;</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">figure</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;https://www.mcclatchydc.com/news/nation-world/national/7g1ahc/picture174166396/alternates/LANDSCAPE_640/Hurricane%20Irma%202&#34;</span>&gt;
+      &lt;/<span style="color:#000080;font-weight:bold">figure</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package&#34;</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">h3</span>&gt;&lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;Looking for water or gas? Here are some places that have them &lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">h3</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">time</span>&gt;February 23, 2018 2PM&lt;/<span style="color:#000080;font-weight:bold">time</span>&gt;
+      &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+    &lt;/<span style="color:#000080;font-weight:bold">article</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">article</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card&#34;</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">figure</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;https://www.miamiherald.com/news/weather/hurricane/c3x8sb/picture172257337/alternates/LANDSCAPE_640/Coconut%20Grove%20Irma%2004%20EKM%20(1)&#34;</span>&gt;
+      &lt;/<span style="color:#000080;font-weight:bold">figure</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package&#34;</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">h3</span>&gt;&lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;Hurrican Irma makes landfall in the Carribean: where&#39;s she headed next&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">h3</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">time</span>&gt;February 23, 2018 2PM&lt;/<span style="color:#000080;font-weight:bold">time</span>&gt;
+      &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+    &lt;/<span style="color:#000080;font-weight:bold">article</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">article</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card&#34;</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">figure</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;https://www.mcclatchydc.com/news/nation-world/national/w763tv/picture172700996/alternates/LANDSCAPE_640/AP_17254522905028&#34;</span>&gt;
+      &lt;/<span style="color:#000080;font-weight:bold">figure</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package&#34;</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">h3</span>&gt;&lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;Hurrican Irma makes landfall in the Carribean: where&#39;s she headed next&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">h3</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">time</span>&gt;February 23, 2018 2PM&lt;/<span style="color:#000080;font-weight:bold">time</span>&gt;
+      &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+    &lt;/<span style="color:#000080;font-weight:bold">article</span>&gt;
+  &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
+
+<h4 id="css">CSS</h4>
+
+<p><em>Coming soon once finalized</em></p>
+
+  </div>
+
+  <div class="paper digest list">
+  <h3 class="underline">Atoms <small><a href="../../css/atoms.css">Download</a></small></h3>
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/button/">button</a></h4>
+  <p class="summary">Button styles to ensure proper row alignment.</p>
+</article>
+
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/byline/">byline</a></h4>
+  <p class="summary">Standard byline and credit styles</p>
+</article>
+
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/figcaption/">figcaption</a></h4>
+  <p class="summary">Default styles for all media captions.</p>
+</article>
+
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/figure/">figure</a></h4>
+  <p class="summary">Semantic wrapper for media in stories and cards.</p>
+</article>
+
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/h1/">h1</a></h4>
+  <p class="summary">Primary headline on story pages, video pages and video playlists. Lead headline on homepage and section pages.</p>
+</article>
+
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/h2/">h2</a></h4>
+  <p class="summary">Secondary headlines in the lead group on the homepage and section pages.</p>
+</article>
+
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/h3/">h3</a></h4>
+  <p class="summary">Used in headline stacks and cards on the homepage and section pages; primary subhead in articles.</p>
+</article>
+
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/h4/">h4</a></h4>
+  <p class="summary">Used as footer labels.</p>
+</article>
+
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/h5/">h5</a></h4>
+  <p class="summary">Used as labels for headline stacks.</p>
+</article>
+
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/h6/">h6</a></h4>
+  <p class="summary">Used primarily for kickers.</p>
+</article>
+
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/label/">label</a></h4>
+  <p class="summary">Labels for the tops of cards and headline stacks on section pages.</p>
+</article>
+
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/li/">lists</a></h4>
+  <p class="summary">Default styles for lists in story bodies.</p>
+</article>
+
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/more-link/">more-link</a></h4>
+  <p class="summary">Used below grid digests.</p>
+</article>
+
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/p/">p</a></h4>
+  <p class="summary">Default text on story pages.</p>
+</article>
+
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/summary/">summary</a></h4>
+  <p class="summary">Summary text used in cards and headline stacks.</p>
+</article>
+
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/time/">time</a></h4>
+  <p class="summary">Used for publish and modified times.</p>
+</article>
+
+  
+
+  <h3 class="underline">Molecules <small><a href="../../css/molecules.css">Download</a></small></h3>
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/card/">card</a></h4>
+  <p class="summary">Enhanced paper molecule with flex display.</p>
+</article>
+
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/expander/">expander</a></h4>
+  <p class="summary">A collapsible box with a caret.</p>
+</article>
+
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/impact/">impact</a></h4>
+  <p class="summary">Reverse impact on any element.</p>
+</article>
+
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/package/">package</a></h4>
+  <p class="summary">Provides spacing for text in cards and digests.</p>
+</article>
+
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/paper/">paper</a></h4>
+  <p class="summary">Default paper molecule with a block display.</p>
+</article>
+
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/social-media/">social-media</a></h4>
+  <p class="summary">Social media icon row for story pages.</p>
+</article>
+
+  
+
+  <h3 class="underline">Organisms <small><a href="../../css/organisms.css">Download</a></small></h3>
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/author-card/">author-card</a></h4>
+  <p class="summary">Author information at the bottom of articles</p>
+</article>
+
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/big-news/">big-news</a></h4>
+  <p class="summary">Goes on the top of the homepage during large news events.</p>
+</article>
+
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/digest/">digest</a></h4>
+  <p class="summary">Headline stacks for section content.</p>
+</article>
+
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/grid/">grid</a></h4>
+  <p class="summary">A very basic starter grid</p>
+</article>
+
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/header/">header</a></h4>
+  <p class="summary">An expanded package for article headers.</p>
+</article>
+
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/inline-cta/">inline-cta</a></h4>
+  <p class="summary">Inline call to action for story display.</p>
+</article>
+
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/related-stories/">related-stories</a></h4>
+  <p class="summary">Display for stories related in CUE.</p>
+</article>
+
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/series-nav/">series-nav</a></h4>
+  <p class="summary">Series nav for article pages.</p>
+</article>
+
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/story/">story</a></h4>
+  <p class="summary">The main article body</p>
+</article>
+
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/timeline/">timeline</a></h4>
+  <p class="summary">Used in live updates and for static timelines.</p>
+</article>
+
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/transparency/">transparency</a></h4>
+  <p class="summary">Provides story background information.</p>
+</article>
+
+  
+
+  <script src="../../js/style-guide.js"></script>
+</div>
+
+</div>
+
+  </body>
+</html>

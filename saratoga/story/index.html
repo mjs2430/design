@@ -65,6 +65,9 @@
 <h4 id="css">CSS</h4>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.story {
 	<span style="color:#000080;font-weight:bold">padding-bottom</span>: <span style="color:#00f">30</span><span style="color:#000080;font-weight:bold">px</span>;
+  --headerFamily: <span style="color:#00f">&#34;McClatchy Sans&#34;</span>, <span style="color:#000080;font-weight:bold">sans-serif</span>;
+  --headerWeight: <span style="color:#00f">600</span>;
+  --headerTransform: <span style="color:#000080;font-weight:bold">uppercase</span>;
 }
 
 .story &gt; * {
@@ -74,23 +77,10 @@
   <span style="color:#000080;font-weight:bold">margin-left</span>: <span style="color:#000080;font-weight:bold">auto</span>;
 }
 
-.story &gt; <span style="color:#000080;font-weight:bold">h2</span>, .story &gt; <span style="color:#000080;font-weight:bold">h3</span>, .story &gt; <span style="color:#000080;font-weight:bold">h4</span>, .story &gt; <span style="color:#000080;font-weight:bold">h5</span>, .story &gt; <span style="color:#000080;font-weight:bold">h6</span> {
-  <span style="color:#000080;font-weight:bold">font-weight</span>: <span style="color:#00f">600</span>;
-  <span style="color:#000080;font-weight:bold">font-family</span>: <span style="color:#00f">&#34;McClatchy Sans&#34;</span>;
-  <span style="color:#000080;font-weight:bold">text-transform</span>: <span style="color:#000080;font-weight:bold">uppercase</span>;
-}
-
 .story &gt; <span style="color:#000080;font-weight:bold">figure</span> {
   <span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#00f">1140</span><span style="color:#000080;font-weight:bold">px</span>;
   <span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">0</span>;
   <span style="color:#000080;font-weight:bold">margin</span>: <span style="color:#00f">30</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#000080;font-weight:bold">auto</span>;
-}
-
-@<span style="color:#000080;font-weight:bold">media</span> (<span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#000080;font-weight:bold">1155px</span>) {
-  .story &gt; <span style="color:#000080;font-weight:bold">figure</span> <span style="color:#000080;font-weight:bold">figcaption</span> {
-    <span style="color:#000080;font-weight:bold">padding-left</span>: <span style="color:#00f">15</span><span style="color:#000080;font-weight:bold">px</span>;
-    <span style="color:#000080;font-weight:bold">padding-right</span>: <span style="color:#00f">15</span><span style="color:#000080;font-weight:bold">px</span>;
-  }
 }
 
 .story .story-module {
@@ -247,6 +237,12 @@
   <article class="package">
   <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/author-card/">author-card</a></h4>
   <p class="summary">Author information at the bottom of articles</p>
+</article>
+
+  
+  <article class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/big-news/">big-news</a></h4>
+  <p class="summary">Goes on the top of the homepage during large news events.</p>
 </article>
 
   

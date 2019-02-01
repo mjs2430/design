@@ -40,6 +40,16 @@ As the organism compresses to fit smaller screens, the icons should wrap under t
     </item>
     
     <item>
+      <title>big-news</title>
+      <link>https://mcclatchy.github.io/design/saratoga/big-news/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mcclatchy.github.io/design/saratoga/big-news/</guid>
+      <description>The big news organism is a series of independent areas designed to give newsrooms control of the volume depending on what they have. Each zone is managed separately and nothing is required.
+EXAMPLE LATEST NEWS Looking for water or gas? Here are some places that have them  February 23, 2018 2PM  Hurrican Irma makes landfall in the Carribean: where&#39;s she headed next February 23, 2018 2PM  Hurricane Irma&#39;s menacing eye strenghens February 23, 2018 2PM   Hurricane Florence now a Category 4 &amp;mdash; state of emergency declared  Officers carry June Loch to dry land after she was rescued from her home in the Pine Glen subdivision of Columbia, S.</description>
+    </item>
+    
+    <item>
       <title>button</title>
       <link>https://mcclatchy.github.io/design/saratoga/button/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -97,7 +107,7 @@ The generic rules make for a very flexible setup, where we can force each child 
       
       <guid>https://mcclatchy.github.io/design/saratoga/figcaption/</guid>
       <description>All captions have the same style. The figcaption is used as a semantic wrapper and to keep the cascade as configurable as possible.
-example  On May 10, 1987, 13-year-old Roy Collins was shot while jumping fences in a Kansas City neighborhood. We recreate the shooting according to police and witness reports. By Neil Nakahodo The Kansas City Star     CSS figcaption, .caption { font: 14px/1.5em &amp;#34;McClatchy Sans&amp;#34;, sans-serif; color: #707070; padding: 10px 0 0; } RULES    Property Value     Typeface McClatchy Sans   Weight 400   Size 14px   Line height 1.</description>
+example  On May 10, 1987, 13-year-old Roy Collins was shot while jumping fences in a Kansas City neighborhood. We recreate the shooting according to police and witness reports. By Neil Nakahodo The Kansas City Star    CSS figcaption, .caption { font: 14px/1.5em &amp;#34;McClatchy Sans&amp;#34;, sans-serif; color: #707070; padding: 10px 0 0; } RULES    Property Value     Typeface McClatchy Sans   Weight 400   Size 14px   Line height 1.</description>
     </item>
     
     <item>
