@@ -207,6 +207,10 @@ header.package > * {
  * Big News
  */
 
+.big-news a {
+	color: inherit;
+}
+
 .big-news > * {
 	max-width: 1140px;
 	margin: 0 auto;
@@ -226,7 +230,6 @@ header.package > * {
 .big-news h1 {
 	font-size: 40px;
 	text-align: center;
-	padding: 15px;
 }
 
 .big-news > figure {
@@ -241,11 +244,11 @@ header.package > * {
 .big-news figcaption {
 	max-width: 1140px;
 	margin: 0 auto;
+	padding: 10px 15px 15px;
 }
 
 .big-news .featured {
 	display: block;
-	padding-top: 15px;
 }
 
 @media (min-width: 680px) {
@@ -255,10 +258,6 @@ header.package > * {
 
 	.big-news h1 {
 		font-size: 52px;
-	}
-
-	.big-news .featured {
-		padding-top: 0;
 	}
 
 	.big-news .featured .card {
