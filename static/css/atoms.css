@@ -80,13 +80,13 @@ figure {
 
 figure img {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 
 figcaption, .caption {
-  font: 14px/1.4em "McClatchy Sans", sans-serif;
+  font: 14px/1.5em "McClatchy Sans", sans-serif;
   color: #707070;
-  margin: 10px 15px;
+  padding: 10px 15px 0;
 }
 
 button, .button {

@@ -14,7 +14,7 @@ All captions have the same style. The figcaption is used as a semantic wrapper a
 figcaption, .caption {
   font: 14px/1.5em "McClatchy Sans", sans-serif;
   color: #707070;
-  padding: 10px 0 0;
+  padding: 10px 15px 0;
 }
 ```
 
