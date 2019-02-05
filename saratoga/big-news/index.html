@@ -158,9 +158,67 @@
 &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
 
 <h4 id="css">CSS</h4>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.big-news <span style="color:#000080;font-weight:bold">a</span> {
+	<span style="color:#000080;font-weight:bold">color</span>: <span style="color:#000080;font-weight:bold">inherit</span>;
+}
 
-<p><em>Coming soon once finalized</em></p>
+.big-news &gt; * {
+	<span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#00f">1140</span><span style="color:#000080;font-weight:bold">px</span>;
+	<span style="color:#000080;font-weight:bold">margin</span>: <span style="color:#00f">0</span> <span style="color:#000080;font-weight:bold">auto</span>;
+}
 
+.big-news .latest {
+	<span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">15</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#00f">15</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#00f">0</span>;
+}
+
+.big-news .grid {
+	<span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#00f">1170</span><span style="color:#000080;font-weight:bold">px</span>;
+	<span style="color:#000080;font-weight:bold">grid-gap</span>: <span style="color:#00f">0</span>;
+	<span style="color:#000080;font-weight:bold">grid-template-columns</span>: repeat(<span style="color:#00f">3</span>, <span style="color:#00f">1</span>fr);
+	<span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">block</span>;
+}
+
+.big-news <span style="color:#000080;font-weight:bold">h1</span> {
+	<span style="color:#000080;font-weight:bold">font-size</span>: <span style="color:#00f">40</span><span style="color:#000080;font-weight:bold">px</span>;
+	<span style="color:#000080;font-weight:bold">text-align</span>: <span style="color:#000080;font-weight:bold">center</span>;
+}
+
+.big-news &gt; <span style="color:#000080;font-weight:bold">figure</span> {
+	<span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#00f">100</span><span style="color:#000080;font-weight:bold">%</span>;
+}
+
+.big-news <span style="color:#000080;font-weight:bold">img</span> {
+	<span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#00f">1600</span><span style="color:#000080;font-weight:bold">px</span>;
+	<span style="color:#000080;font-weight:bold">margin</span>: <span style="color:#00f">0</span> <span style="color:#000080;font-weight:bold">auto</span>;
+}
+
+.big-news <span style="color:#000080;font-weight:bold">figcaption</span> {
+	<span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#00f">1140</span><span style="color:#000080;font-weight:bold">px</span>;
+	<span style="color:#000080;font-weight:bold">margin</span>: <span style="color:#00f">0</span> <span style="color:#000080;font-weight:bold">auto</span>;
+	<span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">10</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#00f">15</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#00f">15</span><span style="color:#000080;font-weight:bold">px</span>;
+}
+
+.big-news .featured {
+	<span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">block</span>;
+}
+
+@<span style="color:#000080;font-weight:bold">media</span> (<span style="color:#000080;font-weight:bold">min-width</span>: <span style="color:#000080;font-weight:bold">680px</span>) {
+	.big-news .grid {
+		<span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">grid</span>;
+	}
+
+	.big-news <span style="color:#000080;font-weight:bold">h1</span> {
+		<span style="color:#000080;font-weight:bold">font-size</span>: <span style="color:#00f">52</span><span style="color:#000080;font-weight:bold">px</span>;
+	}
+
+	.big-news .featured .card {
+		<span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">15</span><span style="color:#000080;font-weight:bold">px</span>;
+	}
+
+	.big-news .featured .package {
+		<span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">15</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#00f">0</span> <span style="color:#00f">0</span>;
+	}
+}</code></pre></div>
   </div>
 
   <div class="paper digest list">
