@@ -40,10 +40,19 @@ This site is made with these rules, so this panel is one example. There is also 
   margin-left: auto;
 }
 
+.story > header {
+	padding-top: 30px;
+}
+
 .story > figure {
-  max-width: 1140px;
-  padding: 0;
-  margin: 30px auto;
+	max-width: 100%;
+	margin: 30px 0;
+	padding: 0;
+}
+
+.story img, .story figcaption {
+	max-width: 1140px;
+	margin: 0 auto;
 }
 
 .story .story-module {
