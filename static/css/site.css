@@ -49,8 +49,22 @@
  */
 
 section {
-  margin: 50px auto;
+  margin: 50px 0;
+}
+
+section > * {
   max-width: 1140px;
+  margin: 0 auto;
+}
+
+@media (min-width: 630px) {
+  section > * {
+    padding: 0 15px;
+  }
+}
+
+.grid-label {
+  padding: 15px;
 }
 
 /**
