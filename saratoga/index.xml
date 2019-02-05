@@ -107,7 +107,7 @@ The generic rules make for a very flexible setup, where we can force each child 
       
       <guid>https://mcclatchy.github.io/design/saratoga/figcaption/</guid>
       <description>All captions have the same style. The figcaption is used as a semantic wrapper and to keep the cascade as configurable as possible.
-example  On May 10, 1987, 13-year-old Roy Collins was shot while jumping fences in a Kansas City neighborhood. We recreate the shooting according to police and witness reports. By Neil Nakahodo The Kansas City Star    CSS figcaption, .caption { font: 14px/1.5em &amp;#34;McClatchy Sans&amp;#34;, sans-serif; color: #707070; padding: 10px 0 0; } RULES    Property Value     Typeface McClatchy Sans   Weight 400   Size 14px   Line height 1.</description>
+example  On May 10, 1987, 13-year-old Roy Collins was shot while jumping fences in a Kansas City neighborhood. We recreate the shooting according to police and witness reports. By Neil Nakahodo The Kansas City Star    CSS figcaption, .caption { font: 14px/1.5em &amp;#34;McClatchy Sans&amp;#34;, sans-serif; color: #707070; padding: 10px 15px 0; } RULES    Property Value     Typeface McClatchy Sans   Weight 400   Size 14px   Line height 1.</description>
     </item>
     
     <item>
