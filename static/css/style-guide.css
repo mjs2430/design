@@ -97,3 +97,12 @@ td:first-child {
   margin-top: 0;
   padding-top: 30px;
 }
+
+/**
+ * Phone view
+ */
+
+.phone {
+  width: 375px;
+  margin: 0 auto;
+}

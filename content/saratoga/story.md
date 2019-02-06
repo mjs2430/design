@@ -22,7 +22,7 @@ The last challenge was to tackle the idea that as dynamic content becomes more i
 
 #### EXAMPLE
 
-This site is made with these rules, so this panel is one example. There is also a [sample story](/saratoga/sample/) that has content more representative of our articles. 
+This site is made with these rules, so this panel is one example. There is also a [sample story](/saratoga/sample/story/) that has content more representative of our articles. 
 
 #### CSS
 ```css

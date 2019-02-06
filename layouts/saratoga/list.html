@@ -1,25 +1,9 @@
-{{ define "head" }}
-<link rel="stylesheet" href="/css/style-guide.css">
-{{ end }}
-
-{{ define "content" }}
-<div class="panels">
-  <div id="details" class="details paper story sans">
-    {{ with .Site.GetPage "/saratoga/button.md" }}
-    <h2 class="page-header">
-      {{- if .Param "updated" }}
-      <span class="updated">RECENTLY UPDATED</span>
-      {{- end }}
-      {{- if .Param "function" }}
-      {{- .Param "function" }} <small>({{ .Title }})</small>
-      {{- else }}
-      {{- .Title }}
-      {{- end -}}
-    </h2>
-    {{ .Content }}
-    {{ end }}
-  </div>
-
-  {{ partial "atomic-list.html" . }}
-</div>
-{{ end }}
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>saratoga</title>
+    {{- $page := .GetPage "/saratoga/button" }}
+    <meta http-equiv="refresh" content="0; {{ $page.Permalink }}">
+  </head>
+  <body></body>
+</html>
