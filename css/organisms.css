@@ -12,15 +12,38 @@
  * Header package
  */
 
-header.package {
+.header {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+	padding: 30px 15px 15px;
 }
 
-header.package > * {
-  margin-top: 15px;
+.header a {
+	color: inherit;
+}
+
+.header > * {
+	margin: 15px 0 0;
+}
+
+.header .bio {
+  display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+@media (min-width: 500px) {
+	.header .bio {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.header .bio > * {
+		text-align: left;
+	}
 }
 
 /**

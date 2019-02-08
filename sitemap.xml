@@ -7,11 +7,6 @@
   </url>
   
   <url>
-    <loc>https://mcclatchy.github.io/design/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://mcclatchy.github.io/design/</loc>
     <priority>0</priority>
   </url>
@@ -21,7 +16,7 @@
   </url>
   
   <url>
-    <loc>https://mcclatchy.github.io/design/saratoga/sample/</loc>
+    <loc>https://mcclatchy.github.io/design/saratoga/sample/story/</loc>
   </url>
   
   <url>
@@ -30,8 +25,12 @@
   </url>
   
   <url>
-    <loc>https://mcclatchy.github.io/design/tags/</loc>
+    <loc>https://mcclatchy.github.io/design/subscription/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mcclatchy.github.io/design/subscription/sample/</loc>
   </url>
   
   <url>

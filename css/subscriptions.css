@@ -1,0 +1,17 @@
+/**
+ * Top navigation
+ */
+
+.contact {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #EBEBEB;
+}
+
+.contact > * {
+  padding: 0 5px;
+}
+
+.contact a {
+  color: inherit;
+}
