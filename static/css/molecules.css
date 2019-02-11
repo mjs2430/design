@@ -29,6 +29,7 @@
 }
 
 .card.horizontal figure {
+  position: relative;
   flex: 1 1 300px;
 }
 
