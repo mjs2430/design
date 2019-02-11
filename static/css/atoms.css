@@ -97,6 +97,7 @@ button, .button {
   border-radius: 2px;
   text-transform: uppercase;
   cursor: pointer;
+  align-self: flex-start;
 }
 
 .button:hover {
@@ -112,10 +113,6 @@ hr {
 }
 
 /** Typography */
-
-.summary {
-  font: 400 14px/1.5em "McClatchy Sans";
-}
 
 .kicker {
   display: inline-block;
@@ -146,24 +143,6 @@ hr {
   font: italic 400 11px/1.5em "McClatchy Sans";
 }
 
-.sans {
-  font-family: "McClatchy Sans", sans-serif;
-}
-
-.serif {
-  font-family: "McClatchy Serif", serif;
-}
-
-.soft {
-  font-weight: 400;
-}
-
-.bold {
-  font-weight: 600;
-}
-
-/** Section labels */
-
 .label {
   margin: 0;
   display: flex;
@@ -185,8 +164,6 @@ hr {
   z-index: 2;
 }
 
-/** More link */
-
 .more-link {
   display: flex;
   align-items: center;
@@ -204,4 +181,34 @@ hr {
 
 .more-link:hover {
   text-decoration: none;
+}
+
+/** Utility classes */
+
+.sans {
+  font-family: "McClatchy Sans", sans-serif;
+}
+
+.serif {
+  font-family: "McClatchy Serif", serif;
+}
+
+.soft {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.summary {
+  font: 400 14px/1.5em "McClatchy Sans", sans-serif;
+}
+
+.small {
+  font: 400 11px/1.5em "McClatchy Sans", sans-serif;
+}
+
+.error {
+  color: #D63031;
 }

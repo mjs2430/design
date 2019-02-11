@@ -3,15 +3,44 @@
  */
 
 .contact {
+  margin: 0;
   padding: 10px;
   text-align: center;
   border-bottom: 1px solid #EBEBEB;
 }
 
-.contact > * {
-  padding: 0 5px;
+.columns {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 1fr 1fr;
 }
 
-.contact a {
-  color: inherit;
+label {
+  display: block;
+  font: 500 13px/1.5em "McClatchy Sans", sans-serif;
+  margin: 10px 0;
+}
+
+input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #707070;
+  border-radius: 2px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox] + label {
+  background: url('./icons/square.svg') top left / 16px no-repeat;
+  padding-left: 25px;
+  min-height: 16px;
+}
+
+input[type=checkbox]:checked + label {
+  background-image: url('./icons/check-square.svg');
 }

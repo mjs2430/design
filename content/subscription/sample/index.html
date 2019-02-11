@@ -4,4 +4,42 @@ description: A sampling of all subscription elements for testing.
 layout: sample
 ---
 
-<div class="contact h6"><span>800-555-5555</span> | <a href="#">CONTACT US</a></h6>
+<h6 class="contact"><span>800-555-5555</span> | <a href="#">CONTACT US</a></h6>
+
+<div class="paper">
+  <div class="package roomy">
+    <h1>Create an account</h1>
+    <h3 class="sans">Use your email address or a social account</h3>
+    <div class="columns">
+      <div>
+        <label for="firstname">First name</label>
+        <input name="firstname" type="text">
+      </div>
+      <div>
+        <label for="lastname">Last name</label>
+        <input name="lastname" type="text">
+      </div>
+    </div>
+    <div>
+      <label for="email">Email address</label>
+      <input name="email" type="text">
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input name="password" type="password">
+      <p class="small">Must be at least 7 characters long</p>
+    </div>
+    <div>
+      <input id="rewards" name="rewards" type="checkbox" checked>
+      <label for="rewards" class="summary">Sign me up for <a href="#">Miami Herald Rewards</a></label>
+      <input id="terms" name="terms" type="checkbox">
+      <label for="terms" class="summary">I agree to the <a href="#">Terms of Service</a></label>
+      <p class="small error">Please agree to the terms of service</p>
+    </div>
+  </div>
+  <div class="package">
+    <button class="impact">Sign up with your email</button>
+    <a class="button ghost">Sign up with Facebook</a>
+    <a class="button ghost">Sign up with Google</a>
+  </div>
+</div>

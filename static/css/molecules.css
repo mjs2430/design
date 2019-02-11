@@ -59,6 +59,10 @@
   margin: 10px 0 0 0;
 }
 
+.package.roomy > * {
+  margin: 30px 0 0 0;
+}
+
 .package > :first-child {
   margin-top: 0;
 }
@@ -75,12 +79,8 @@
 
 /** Reverse impact */
 
-.impact {
+.impact, a.impact {
   background-color: #373737;
-  color: white;
-}
-
-a.impact {
   color: white;
 }
 
@@ -98,6 +98,19 @@ a.impact {
   background-color: white;
   color: #222;
 }
+
+/** Reverse promo */
+
+.promo, a.promo {
+  background-color: #0066b3;
+  color: white;
+}
+
+.promo * {
+  color: white;
+  border-color: white;
+}
+
 
 /** Ad */
 
