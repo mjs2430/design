@@ -39,12 +39,6 @@ td:first-child {
  * Style guide main rules.
  */
 
-.example {
-	--headerFamily: "McClatchy Serif", serif;
-	--headerWeight: 400;
-	--headerTransform: none;
-}
-
 .underline {
   padding: 15px 0 .2em;
   margin: 0 15px 0;
