@@ -92,11 +92,13 @@ figcaption, .caption {
 button, .button {
   display: inline-block;
   font: 600 14px "McClatchy Sans";
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
   padding: .6em 1em .3em;
   border: 1px solid transparent;
+  box-sizing: border-box;
   border-radius: 2px;
-  text-transform: uppercase;
-  cursor: pointer;
   align-self: flex-start;
 }
 
@@ -185,6 +187,18 @@ hr {
 
 /** Utility classes */
 
+.summary {
+  font: 400 14px/1.5em "McClatchy Sans", sans-serif;
+}
+
+.small {
+  font: 400 11px/1.5em "McClatchy Sans", sans-serif;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
 .sans {
   font-family: "McClatchy Sans", sans-serif;
 }
@@ -201,12 +215,8 @@ hr {
   font-weight: 600;
 }
 
-.summary {
-  font: 400 14px/1.5em "McClatchy Sans", sans-serif;
-}
-
-.small {
-  font: 400 11px/1.5em "McClatchy Sans", sans-serif;
+.gray {
+  color: #707070;
 }
 
 .error {

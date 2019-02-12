@@ -4,13 +4,32 @@ description: A sampling of all subscription elements for testing.
 layout: sample
 ---
 
+<style>
+  body { padding-bottom: 30px }
+  .paper { margin-top: 30px; }
+</style>
+
 <h6 class="contact"><span>800-555-5555</span> | <a href="#">CONTACT US</a></h6>
 
 <div class="paper">
-  <div class="package roomy">
+  <div class="package">
+    <h3>Sports Pass</h3>
+    <input id="monthly" name="rate" type="radio" checked>
+    <label for="monthly">Monthly - $1 for 1 Month <span class="disclaimer">
+        $5.99/month after, cancel anytime.</span></label>
+    <input id="yearly" name="rate" type="radio">
+    <label for="yearly">Yearly - $30 per year <span class="disclaimer">
+        Save 50% compared to monthly</span></label>
+  </div>
+</div>
+
+<div class="paper">
+  <div class="package">
     <h1>Create an account</h1>
-    <h3 class="sans">Use your email address or a social account</h3>
-    <div class="columns">
+  </div>
+  <div class="package">
+    <h4 class="sans bold">Use your email address or a social account</h4>
+    <div class="two columns">
       <div>
         <label for="firstname">First name</label>
         <input name="firstname" type="text">
@@ -29,17 +48,126 @@ layout: sample
       <input name="password" type="password">
       <p class="small">Must be at least 7 characters long</p>
     </div>
+  </div>
+  <div class="package">
     <div>
       <input id="rewards" name="rewards" type="checkbox" checked>
-      <label for="rewards" class="summary">Sign me up for <a href="#">Miami Herald Rewards</a></label>
-      <input id="terms" name="terms" type="checkbox">
-      <label for="terms" class="summary">I agree to the <a href="#">Terms of Service</a></label>
-      <p class="small error">Please agree to the terms of service</p>
+      <label for="rewards">Sign me up for <a href="#">Miami Herald Rewards</a></label>
     </div>
+    <div>
+      <input id="terms" name="terms" type="checkbox">
+      <label for="terms">I agree to the <a href="#">Terms of Service</a></label>
+    </div>
+    <p class="small error">Please agree to the terms of service</p>
   </div>
   <div class="package">
     <button class="impact">Sign up with your email</button>
-    <a class="button ghost">Sign up with Facebook</a>
-    <a class="button ghost">Sign up with Google</a>
+    <a class="button ghost icon facebook">Sign up with Facebook</a>
+    <a class="button ghost icon google">Sign up with Google</a>
+  </div>
+</div>
+<a class="more-link blue">Already a subscriber? Sign in</a>
+
+<div class="paper">
+  <div class="package">
+    <h1>Welcome, Jane!</h1>
+  </div>
+  <div class="package">
+    <h4 class="sans bold">Choose your payment method</h4>
+    <button class="ghost icon paypal">Use Paypal</button>
+    <button class="ghost icon apple">Use Apple Pay</button>
+  </div>
+  <div class="package">
+    <h4 class="sans bold">Or use a debit/credit card</h4>
+    <div>
+      <label>Name on card</label>
+      <input type="text" name="fullname">
+    </div>
+    <div>
+      <label>Card number</label>
+      <input type="text" name="card">
+    </div>
+    <div class="four columns">
+      <div class="span-2">
+        <label>Phone number</label>
+        <input type="text" name="phone">
+      </div>
+      <div>
+        <label>Exp. date</label>
+        <input type="text" name="expiration">
+      </div>
+      <div>
+        <label>CVV/CVC</label>
+        <input type="text" name="cvv">
+      </div>
+    </div>
+  </div>
+  <div class="package">
+    <h4 class="sans bold">Or use your saved card</h4>
+    <div>
+      <input type="radio" id="visa-1234" name="card">
+      <label for="visa-1234" class="saved-card">
+        <span class="icon visa">1234</span>
+        <span class="expiration"><b>exp.</b> 12/22</span>
+      </label>
+    </div>
+    <div>
+      <input type="radio" id="visa-4321" name="card">
+      <label for="visa-4321" class="saved-card">
+        <span class="icon visa">1234</span>
+        <span class="expiration"><b>exp.</b> 1/11</span>
+      </label>
+    </div>
+  </div>
+  <div class="package">
+    <button class="impact">Review order</button>
+  </div>
+</div>
+
+<div class="paper">
+  <div class="package">
+    <h1>Sign in</h1>
+  </div>
+  <div class="package">
+    <h4 class="sans bold">Use your email or social account</h4>
+    <div>
+      <label>Email address</label>
+      <input name="email" type="text">
+    </div>
+    <div>
+      <label>Password</label>
+      <input name="pass" type="password">
+    </div>
+  </div>
+  <div class="package">
+    <button class="impact">Sign in with your email</button>
+    <a class="button ghost icon facebook">Sign in with Facebook</a>
+    <a class="button ghost icon google">Sign in with Google</a>
+  </div>
+</div>
+<a class="more-link blue">Not a subscriber? Sign up</a>
+
+<div class="paper">
+  <div class="package">
+    <h1>Review your order</h1>
+  </div>
+  <div class="package">
+    <h3 class="sans bold">Sports Pass</h3>
+    <p class="bold">Monthly - $1 for 1 Month</p>
+    <p class="gray">$5.99/month after, cancel anytime</p>
+  </div>
+  <div class="package">
+    <h3 class="sans bold">Profile</h3>
+    <p>Jane Smith</p>
+    <p>jane.smith@email.com</p>
+  </div>
+  <div class="package">
+    <h3 class="sans bold">Payment Information</h3>
+    <p>Jane Smith</p>
+    <p class="icon visa">**** **** **** 1234</p>
+  </div>
+  <div class="package">
+    <button class="promo">Place order</button>
+    <p class="gray">Your chosen payment will charge $1 for the first month, then $5.99/month after.</p>
   </div>
 </div>

@@ -59,10 +59,6 @@
   margin: 10px 0 0 0;
 }
 
-.package.roomy > * {
-  margin: 30px 0 0 0;
-}
-
 .package > :first-child {
   margin-top: 0;
 }
@@ -87,6 +83,7 @@
 .impact * {
   color: white;
   border-color: white;
+  fill: white;
 }
 
 .impact .card {
@@ -109,6 +106,7 @@
 .promo * {
   color: white;
   border-color: white;
+  fill: white;
 }
 
 
