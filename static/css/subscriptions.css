@@ -167,4 +167,5 @@ input[type=radio] + .saved-card {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
+  background-position: 0px 3px;
 }
