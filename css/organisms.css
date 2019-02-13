@@ -179,6 +179,9 @@
 .timeline-event {
 	border-left: 1px solid #707070;
 	max-width: 500px;
+  --headerFamily: "McClatchy Sans", sans-serif;
+  --headerWeight: 600;
+  --headerTransform: uppercase;
 }
 
 .timeline-event:before {

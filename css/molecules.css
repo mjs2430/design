@@ -75,18 +75,15 @@
 
 /** Reverse impact */
 
-.impact {
+.impact, a.impact {
   background-color: #373737;
-  color: white;
-}
-
-a.impact {
   color: white;
 }
 
 .impact * {
   color: white;
   border-color: white;
+  fill: white;
 }
 
 .impact .card {
@@ -98,6 +95,20 @@ a.impact {
   background-color: white;
   color: #222;
 }
+
+/** Reverse promo */
+
+.promo, a.promo {
+  background-color: #0066b3;
+  color: white;
+}
+
+.promo * {
+  color: white;
+  border-color: white;
+  fill: white;
+}
+
 
 /** Ad */
 

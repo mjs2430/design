@@ -92,11 +92,14 @@ figcaption, .caption {
 button, .button {
   display: inline-block;
   font: 600 14px "McClatchy Sans";
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
   padding: .6em 1em .3em;
   border: 1px solid transparent;
+  box-sizing: border-box;
   border-radius: 2px;
-  text-transform: uppercase;
-  cursor: pointer;
+  align-self: flex-start;
 }
 
 .button:hover {
@@ -112,10 +115,6 @@ hr {
 }
 
 /** Typography */
-
-.summary {
-  font: 400 14px/1.5em "McClatchy Sans";
-}
 
 .kicker {
   display: inline-block;
@@ -146,24 +145,6 @@ hr {
   font: italic 400 11px/1.5em "McClatchy Sans";
 }
 
-.sans {
-  font-family: "McClatchy Sans", sans-serif;
-}
-
-.serif {
-  font-family: "McClatchy Serif", serif;
-}
-
-.soft {
-  font-weight: 400;
-}
-
-.bold {
-  font-weight: 600;
-}
-
-/** Section labels */
-
 .label {
   margin: 0;
   display: flex;
@@ -185,8 +166,6 @@ hr {
   z-index: 2;
 }
 
-/** More link */
-
 .more-link {
   display: flex;
   align-items: center;
@@ -204,4 +183,42 @@ hr {
 
 .more-link:hover {
   text-decoration: none;
+}
+
+/** Utility classes */
+
+.summary {
+  font: 400 14px/1.5em "McClatchy Sans", sans-serif;
+}
+
+.small {
+  font: 400 11px/1.5em "McClatchy Sans", sans-serif;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.sans {
+  font-family: "McClatchy Sans", sans-serif;
+}
+
+.serif {
+  font-family: "McClatchy Serif", serif;
+}
+
+.soft {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.gray {
+  color: #707070;
+}
+
+.error {
+  color: #D63031;
 }
