@@ -7,7 +7,7 @@ level: atom
 Timestamps are always displayed on their own line, so `<time>` is converted to a block level element by default.
 
 #### EXAMPLE
-<div class="example">
+<div>
   <time>DECEMBER 27, 2018 01:27 PM</time>
 </div>
 

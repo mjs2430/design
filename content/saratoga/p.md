@@ -7,7 +7,7 @@ level: atom
 The default values for `<p>` are designed for the normal body text of the story page in order to keep our primary CSS as small as possible. 
 
 #### EXAMPLE
-<div class="example">
+<div>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut arcu consequat, pretium libero non, consectetur risus. Aenean sed turpis ac sem iaculis egestas sit.</p>
 </div>
 

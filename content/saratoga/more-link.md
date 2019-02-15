@@ -7,7 +7,7 @@ level: atom
 The more-link atom signifies that clicking it will take the reader to another web page. It is only used at the bottom of digests and isn't a headline, so typography and spacing is built in.
 
 #### Example
-<div class="example grid">
+<div class="grid">
   {{< digest >}}
 </div>
 

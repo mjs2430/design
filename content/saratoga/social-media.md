@@ -7,9 +7,7 @@ level: "molecule"
 A very small molecule, the icons are simply a center-justified flex row with optimal padding for all devices.
 
 #### Example
-<div class="example">
- {{< social-media >}}
-</div>
+{{< social-media >}}
 
 #### HTML 
 {{< highlight html >}}{{< social-media >}}{{< /highlight >}}

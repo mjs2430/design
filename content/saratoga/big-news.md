@@ -8,7 +8,7 @@ The big news organism is a series of independent areas designed to give newsroom
 
 #### EXAMPLE
 
-<div class="example" style="max-width: 100%; padding: 15px 0; background-color: #f4f4f4; border-top: 2px solid #ddd; border-bottom: 2px solid #ddd;">{{< big-news >}}</div>
+<div class="example" style="padding: 15px 0;">{{< big-news >}}</div>
 
 #### HTML
 

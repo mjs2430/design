@@ -7,7 +7,7 @@ level: atom
 Buttons are designed to be placed in a center-aligned row using browser defaults and to have different levels of impact. There are three different types of button, but they all use the same base code.
 
 #### EXAMPLE
-<div class="example">
+<div>
   <button class="impact">Impact button</button>
   <button class="ghost">Ghost button</button>
   <button>Text button</button>

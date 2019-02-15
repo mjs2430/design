@@ -35,7 +35,7 @@ This is the smallest method of creating a grid following the design rules, which
 ```css
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 30px;
 }
 ```
