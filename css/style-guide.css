@@ -39,6 +39,18 @@ td:first-child {
  * Style guide main rules.
  */
 
+.example {
+  max-width: 1140px;
+  padding: 15px;
+  background-color: #f4f4f4;
+}
+
+.example .card {
+  box-shadow: 
+    0 1px 2px 0 rgba(0, 0, 0, .2), 
+    0 1px 5px 0 rgba(0, 0, 0, .13);
+}
+
 .underline {
   padding: 15px 0 .2em;
   margin: 0 15px 0;

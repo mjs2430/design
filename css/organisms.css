@@ -12,37 +12,37 @@
  * Story body
  */
 
-.story {
+.story-body {
 	padding-bottom: 30px;
   --headerFamily: "McClatchy Sans", sans-serif;
   --headerWeight: 600;
   --headerTransform: uppercase;
 }
 
-.story > * {
+.story-body > * {
   max-width: 720px;
 	padding: 0 15px;
 	margin-right: auto;
   margin-left: auto;
 }
 
-.story > figure {
+.story-body > figure {
 	max-width: 100%;
 	margin: 30px 0;
 	padding: 0;
 }
 
-.story img, .story figcaption {
+.story-body img, .story figcaption {
 	max-width: 1140px;
 	margin: 0 auto;
 }
 
-.story .story-module {
+.story-body .story-module {
   padding: 0 15px;
   margin: 30px auto;
 }
 
-.story .ad {
+.story-body .ad {
   margin: 50px auto;
 }
 
@@ -158,8 +158,23 @@
   margin: 0;
 }
 
+.author-card .social-media {
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	padding-left: 5px;
+}
+
 .author-card .social-media a {
-  padding: 0 15px;
+  padding: 0 10px;
+}
+
+.author-card .social-media svg {
+	width: 16px;
+	height: 16px;
+}
+
+.author-card .social-media .phone_num {
+	display: inline-block;
 }
 
 .author-subscription {
@@ -289,4 +304,53 @@
 	.big-news .featured .package {
 		padding: 15px 0 0;
 	}
+}
+
+/**
+ * In Depth card
+ */
+
+.card.in-depth figure {
+  flex-grow: 4;
+}
+
+.card.in-depth .package {
+  flex-grow: 1;
+}
+
+@media (min-width: 630px) {
+  .in-depth {
+    min-height: 400px;
+  }
+
+	.in-depth figure {
+		min-height: 300px;
+	}
+
+  .in-depth figure img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 20%;
+  }
+}
+
+/**
+ * Promo card
+ */
+
+.card.horizontal .promo {
+  flex-grow: 4;
+	min-height: 150px;
+}
+
+.card.horizontal .promo + .package {
+	flex-grow: 1;
+}
+
+.card.horizontal .promo .title {
+	font: 600 48px "McClatchy Sans", sans-serif;
 }

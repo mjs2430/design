@@ -106,6 +106,10 @@
   </url>
   
   <url>
+    <loc>https://mcclatchy.github.io/design/saratoga/in-depth/</loc>
+  </url>
+  
+  <url>
     <loc>https://mcclatchy.github.io/design/saratoga/inline-cta/</loc>
   </url>
   
@@ -134,6 +138,10 @@
   </url>
   
   <url>
+    <loc>https://mcclatchy.github.io/design/saratoga/promo/</loc>
+  </url>
+  
+  <url>
     <loc>https://mcclatchy.github.io/design/saratoga/related-stories/</loc>
   </url>
   
@@ -150,10 +158,6 @@
   </url>
   
   <url>
-    <loc>https://mcclatchy.github.io/design/saratoga/summary/</loc>
-  </url>
-  
-  <url>
     <loc>https://mcclatchy.github.io/design/saratoga/time/</loc>
   </url>
   
@@ -163,6 +167,10 @@
   
   <url>
     <loc>https://mcclatchy.github.io/design/saratoga/transparency/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mcclatchy.github.io/design/saratoga/utilities/</loc>
   </url>
   
 </urlset>

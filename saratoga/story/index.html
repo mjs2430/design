@@ -36,7 +36,7 @@
       </nav>
     </div>
 <div class="panels">
-  <div class="paper story details">
+  <div class="paper story-body details">
     <h2 class="page-header">
       <span class="updated">RECENTLY UPDATED</span>story</h2>
     
@@ -63,41 +63,37 @@
 <p>This site is made with these rules, so this panel is one example. There is also a <a href="../../saratoga/sample/story/">sample story</a> that has content more representative of our articles.</p>
 
 <h4 id="css">CSS</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.story {
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.story-body {
 	<span style="color:#000080;font-weight:bold">padding-bottom</span>: <span style="color:#00f">30</span><span style="color:#000080;font-weight:bold">px</span>;
   --headerFamily: <span style="color:#00f">&#34;McClatchy Sans&#34;</span>, <span style="color:#000080;font-weight:bold">sans-serif</span>;
   --headerWeight: <span style="color:#00f">600</span>;
   --headerTransform: <span style="color:#000080;font-weight:bold">uppercase</span>;
 }
 
-.story &gt; * {
+.story-body &gt; * {
   <span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#00f">720</span><span style="color:#000080;font-weight:bold">px</span>;
-  <span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">0</span> <span style="color:#00f">15</span><span style="color:#000080;font-weight:bold">px</span>;
-  <span style="color:#000080;font-weight:bold">margin-right</span>: <span style="color:#000080;font-weight:bold">auto</span>;
+	<span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">0</span> <span style="color:#00f">15</span><span style="color:#000080;font-weight:bold">px</span>;
+	<span style="color:#000080;font-weight:bold">margin-right</span>: <span style="color:#000080;font-weight:bold">auto</span>;
   <span style="color:#000080;font-weight:bold">margin-left</span>: <span style="color:#000080;font-weight:bold">auto</span>;
 }
 
-.story &gt; <span style="color:#000080;font-weight:bold">header</span> {
-	<span style="color:#000080;font-weight:bold">padding-top</span>: <span style="color:#00f">30</span><span style="color:#000080;font-weight:bold">px</span>;
-}
-
-.story &gt; <span style="color:#000080;font-weight:bold">figure</span> {
+.story-body &gt; <span style="color:#000080;font-weight:bold">figure</span> {
 	<span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#00f">100</span><span style="color:#000080;font-weight:bold">%</span>;
 	<span style="color:#000080;font-weight:bold">margin</span>: <span style="color:#00f">30</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#00f">0</span>;
 	<span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">0</span>;
 }
 
-.story <span style="color:#000080;font-weight:bold">img</span>, .story <span style="color:#000080;font-weight:bold">figcaption</span> {
+.story-body <span style="color:#000080;font-weight:bold">img</span>, .story <span style="color:#000080;font-weight:bold">figcaption</span> {
 	<span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#00f">1140</span><span style="color:#000080;font-weight:bold">px</span>;
 	<span style="color:#000080;font-weight:bold">margin</span>: <span style="color:#00f">0</span> <span style="color:#000080;font-weight:bold">auto</span>;
 }
 
-.story .story-module {
+.story-body .story-module {
   <span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">0</span> <span style="color:#00f">15</span><span style="color:#000080;font-weight:bold">px</span>;
   <span style="color:#000080;font-weight:bold">margin</span>: <span style="color:#00f">30</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#000080;font-weight:bold">auto</span>;
 }
 
-.story .ad {
+.story-body .ad {
   <span style="color:#000080;font-weight:bold">margin</span>: <span style="color:#00f">50</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#000080;font-weight:bold">auto</span>;
 }</code></pre></div>
   </div>
@@ -190,12 +186,6 @@
 
   
   <div class="package">
-  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/summary/">summary</a></h4>
-  <p class="summary">Summary text used in cards and headline stacks.</p>
-</div>
-
-  
-  <div class="package">
   <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/time/">time</a></h4>
   <p class="summary">Used for publish and modified times.</p>
 </div>
@@ -240,6 +230,12 @@
 </div>
 
   
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/utilities/">utilities</a></h4>
+  <p class="summary">Utility typography classes.</p>
+</div>
+
+  
 
   <h3 class="underline">Organisms <small><a href="../../css/organisms.css">Download</a></small></h3>
   
@@ -274,8 +270,20 @@
 
   
   <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/in-depth/">in-depth</a></h4>
+  <p class="summary">In depth module for section pages</p>
+</div>
+
+  
+  <div class="package">
   <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/inline-cta/">inline-cta</a></h4>
   <p class="summary">Inline call to action for story display.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/promo/">promo</a></h4>
+  <p class="summary">Promo card for story and section pages</p>
 </div>
 
   

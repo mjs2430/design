@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>h5</title>
+    <title>in-depth</title>
     
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -37,102 +37,66 @@
     </div>
 <div class="panels">
   <div class="paper story-body details">
-    <h2 class="page-header">h5</h2>
+    <h2 class="page-header">in-depth</h2>
     
 
-<p>Default browser spacing for the <code>&lt;h5&gt;</code> atom should be used unless specifically set at the molecule or organism level. Doing so reduces bloat, given that this atom is used in a couple different scenarios, and allows for cascading to apply properly at that level.</p>
+<p>The In Depth module is a version of the horizontal card that changes the flex-grow weight from the right side to the left.</p>
 
 <h4 id="example">Example</h4>
 
-<div class="example">
-  <h5>Jayhawks back in town, start practicing for Saturday’s Eastern Michigan game</h5>
+<div class="example"><div class="card horizontal in-depth">
+  <figure>
+    <div class="label sticky"><h5 class="impact">IN DEPTH</h5></div>
+    <img src="https://www.kansas.com/latest-news/6aw7pv/picture225984215/alternates/LANDSCAPE_768/tax-forms.jpg">
+  </figure>
+  <div class="package impact">
+    <h1>After meeting Brownback’s circle, firm was on ‘right path’ to $61M no-bid contract</h1>
+    <summary>Thousands of emails reveal how CGI Technologies landed a $61 million contract to overhaul Kansas tax systems. New Gov. Laura Kelly has promised to crack down on no-bid contracts.</summary>
+  </div>
+</div>
 </div>
 
+<h4 id="html">HTML</h4>
+
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card horizontal in-depth&#34;</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">figure</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;label sticky&#34;</span>&gt;&lt;<span style="color:#000080;font-weight:bold">h5</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;impact&#34;</span>&gt;IN DEPTH&lt;/<span style="color:#000080;font-weight:bold">h5</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;https://www.kansas.com/latest-news/6aw7pv/picture225984215/alternates/LANDSCAPE_768/tax-forms.jpg&#34;</span>&gt;
+  &lt;/<span style="color:#000080;font-weight:bold">figure</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package impact&#34;</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">h1</span>&gt;After meeting Brownback’s circle, firm was on ‘right path’ to $61M no-bid contract&lt;/<span style="color:#000080;font-weight:bold">h1</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">summary</span>&gt;Thousands of emails reveal how CGI Technologies landed a $61 million contract to overhaul Kansas tax systems. New Gov. Laura Kelly has promised to crack down on no-bid contracts.&lt;/<span style="color:#000080;font-weight:bold">summary</span>&gt;
+  &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
+
 <h4 id="css">CSS</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#000080;font-weight:bold">h5</span>, .h5 {
-  <span style="color:#000080;font-weight:bold">font</span>: <span style="color:#00f">600</span> <span style="color:#00f">14</span><span style="color:#000080;font-weight:bold">px</span>/<span style="color:#00f">1.2</span><span style="color:#000080;font-weight:bold">em</span> <span style="color:#00f">&#34;McClatchy Serif&#34;</span>, <span style="color:#000080;font-weight:bold">serif</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.card.in-depth <span style="color:#000080;font-weight:bold">figure</span> {
+  <span style="color:#000080;font-weight:bold">flex-grow</span>: <span style="color:#00f">4</span>;
+}
+
+.card.in-depth .package {
+  <span style="color:#000080;font-weight:bold">flex-grow</span>: <span style="color:#00f">1</span>;
+}
+
+@<span style="color:#000080;font-weight:bold">media</span> (<span style="color:#000080;font-weight:bold">min-width</span>: <span style="color:#000080;font-weight:bold">630px</span>) {
+  .in-depth {
+    <span style="color:#000080;font-weight:bold">min-height</span>: <span style="color:#00f">400</span><span style="color:#000080;font-weight:bold">px</span>;
+  }
+
+	.in-depth <span style="color:#000080;font-weight:bold">figure</span> {
+		<span style="color:#000080;font-weight:bold">min-height</span>: <span style="color:#00f">300</span><span style="color:#000080;font-weight:bold">px</span>;
+	}
+
+  .in-depth <span style="color:#000080;font-weight:bold">figure</span> <span style="color:#000080;font-weight:bold">img</span> {
+    <span style="color:#000080;font-weight:bold">position</span>: <span style="color:#000080;font-weight:bold">absolute</span>;
+    <span style="color:#000080;font-weight:bold">top</span>: <span style="color:#00f">0</span>;
+    <span style="color:#000080;font-weight:bold">left</span>: <span style="color:#00f">0</span>;
+    <span style="color:#000080;font-weight:bold">width</span>: <span style="color:#00f">100</span><span style="color:#000080;font-weight:bold">%</span>;
+    <span style="color:#000080;font-weight:bold">height</span>: <span style="color:#00f">100</span><span style="color:#000080;font-weight:bold">%</span>;
+    <span style="color:#000080;font-weight:bold">object-fit</span>: <span style="color:#000080;font-weight:bold">cover</span>;
+    <span style="color:#000080;font-weight:bold">object-position</span>: <span style="color:#00f">50</span><span style="color:#000080;font-weight:bold">%</span> <span style="color:#00f">20</span><span style="color:#000080;font-weight:bold">%</span>;
+  }
 }</code></pre></div>
-<h4 id="rules">RULES</h4>
-
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Value</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>Typeface</td>
-<td>McClatchy Serif</td>
-</tr>
-
-<tr>
-<td>Weight</td>
-<td>600</td>
-</tr>
-
-<tr>
-<td>Size</td>
-<td>14px</td>
-</tr>
-
-<tr>
-<td>Line height</td>
-<td>1.2em</td>
-</tr>
-
-<tr>
-<td>Case</td>
-<td>Sentence</td>
-</tr>
-
-<tr>
-<td>Letter spacing</td>
-<td>Default</td>
-</tr>
-</tbody>
-</table>
-
-<hr />
-
-<h2 id="story-body-rules">Story body rules</h2>
-
-<p>In the story body, when added through the CMS system, subheads have an alternative appearance.</p>
-
-<h4 id="example-1">EXAMPLE</h4>
-
-<h5 id="jayhawks-back-in-town">Jayhawks back in town</h5>
-
-<h4 id="rules-1">RULES</h4>
-
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Value</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>Typeface</td>
-<td>McClatchy Sans</td>
-</tr>
-
-<tr>
-<td>Weight</td>
-<td>600</td>
-</tr>
-
-<tr>
-<td>Case</td>
-<td>Uppercase</td>
-</tr>
-</tbody>
-</table>
-
   </div>
 
   <div class="paper digest list">
