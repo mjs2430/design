@@ -9,7 +9,15 @@ The author card should appear directly underneath the related stories organism, 
 As the organism compresses to fit smaller screens, the icons should wrap under the author's name and still right of the thumbnail. The biography uses the `summary` molecule and shoudn't deviate from the defaults. Also, the author's name should be made a link and shown in the standard `byline` style.
 
 #### EXAMPLE
-{{< author-card >}}
+<div class="story-module">
+  {{< author-card >}}
+</div>
+
+#### TWO-AUTHOR EXAMPLE
+<div class="grid story-module">
+  {{< author-card >}}
+  {{< author-card >}}
+</div>
 
 
 #### HTML

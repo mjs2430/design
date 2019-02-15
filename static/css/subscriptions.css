@@ -254,3 +254,21 @@ input[type=checkbox]:checked + .saved-card .icon:before {
     order: 1;
   }
 }
+
+/**
+ * Subscription progress
+ */
+
+.sub-progress {
+  display: block;
+  margin: 15px auto;
+}
+
+.sub-progress .check {
+  display: none;
+}
+
+.sub-progress.signup .signup .circle {
+  fill: #222;
+  stroke: none;
+}

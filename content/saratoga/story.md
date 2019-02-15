@@ -26,41 +26,37 @@ This site is made with these rules, so this panel is one example. There is also 
 
 #### CSS
 ```css
-.story {
+.story-body {
 	padding-bottom: 30px;
   --headerFamily: "McClatchy Sans", sans-serif;
   --headerWeight: 600;
   --headerTransform: uppercase;
 }
 
-.story > * {
+.story-body > * {
   max-width: 720px;
-  padding: 0 15px;
-  margin-right: auto;
+	padding: 0 15px;
+	margin-right: auto;
   margin-left: auto;
 }
 
-.story > header {
-	padding-top: 30px;
-}
-
-.story > figure {
+.story-body > figure {
 	max-width: 100%;
 	margin: 30px 0;
 	padding: 0;
 }
 
-.story img, .story figcaption {
+.story-body img, .story figcaption {
 	max-width: 1140px;
 	margin: 0 auto;
 }
 
-.story .story-module {
+.story-body .story-module {
   padding: 0 15px;
   margin: 30px auto;
 }
 
-.story .ad {
+.story-body .ad {
   margin: 50px auto;
 }
 ```

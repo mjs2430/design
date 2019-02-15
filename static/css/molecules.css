@@ -160,3 +160,46 @@
 .expander.open ~ * {
   display: block;
 }
+
+/** Utilities */
+
+summary, .summary {
+  font: 400 14px/1.5em "McClatchy Sans", sans-serif;
+}
+
+.small {
+  font: 400 11px/1.5em "McClatchy Sans", sans-serif;
+}
+
+.caps {
+  text-transform: uppercase;
+  --headerTransform: uppercase;
+}
+
+.sans {
+  font-family: "McClatchy Sans", sans-serif;
+  --headerFamily: "McClatchy Sans", sans-serif;
+}
+
+.serif {
+  font-family: "McClatchy Serif", serif;
+  --headerFamily: "McClatchy Serif", serif;
+}
+
+.soft {
+  font-weight: 400;
+  --headerWeight: 400;
+}
+
+.bold {
+  font-weight: 600;
+  --headerWeight: 600;
+}
+
+.gray {
+  color: #707070;
+}
+
+.error {
+  color: #D63031;
+}

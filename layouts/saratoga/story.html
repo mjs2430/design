@@ -1,9 +1,17 @@
 {{ define "content" }}
-<article class="story paper">
+<article class="story-body paper">
   {{ .Content }}
 </article>
 
-<div class="spill" style="padding: 30px 0; background-color: #f4f4f4;">
+<section>
+  {{ readFile "layouts/shortcodes/in-depth.html" | safeHTML }}
+</section>
+
+<section>
+  {{ readFile "layouts/shortcodes/promo.html" | safeHTML }}
+</section>
+
+<section class="full-bleed">
  {{ readFile "layouts/shortcodes/big-news.html" | safeHTML }}
-</div>
+</section>
 {{ end }}
