@@ -34,7 +34,6 @@ fields:
 pages:
 - content/saratoga/paper.md
 - content/saratoga/digest.md
-- content/saratoga/figure.md
 - content/saratoga/h4.md
 - content/saratoga/p.md
 - content/saratoga/h3.md
@@ -51,4 +50,5 @@ pages:
 - content/saratoga/card.md
 - content/saratoga/story.md
 - content/saratoga/li.md
+- content/saratoga/figure.md
 - content/saratoga/button.md
