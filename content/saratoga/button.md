@@ -1,7 +1,9 @@
 ---
 title: button
-description: Button styles to ensure proper row alignment.
+description: Button styles to ensure proper row alignment
 level: atom
+function: ''
+updated: false
 
 ---
 Buttons are designed to be placed in a center-aligned row using browser defaults and to have different levels of impact. There are three different types of button, but they all use the same base code.
