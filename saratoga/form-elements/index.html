@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>form elements</title>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="../../favicon.ico">
+
+    <link rel="stylesheet" href="../../css/fonts.css">
+    <link rel="stylesheet" href="../../css/atoms.css">
+    <link rel="stylesheet" href="../../css/molecules.css">
+    <link rel="stylesheet" href="../../css/organisms.css">
+    <link rel="stylesheet" href="../../css/site.css">
+<link rel="stylesheet" href="../../css/style-guide.css">
+<link rel="stylesheet" href="../../css/subscriptions.css">
+
+  </head>
+
+  <body class="saratoga">
+    <div class="banner paper">
+      <a href="../../" style="padding: 0;"><img class="logo" src="../../img/banner-logo.2.svg"></a>
+      <nav>
+        <a href="https://mcclatchy.github.io/design/about/" class="">
+          <span>about us</span>
+        </a>
+        <a href="https://medium.com/mcclatchy-design" class="">
+          <span>blog</span>
+        </a>
+        <a href="https://mcclatchy.github.io/design/saratoga/" class="active">
+          <span>style guide</span>
+        </a>
+      </nav>
+    </div>
+<div class="panels">
+  <div class="paper story-body details">
+    <h2 class="page-header">form elements</h2>
+    
+
+<p>Text inputs, text areas and select boxes are stackable and should always have label, input area, and a disclaimer or error message underneath. These elements should be included for spacing rules even when they are not used so that form elements don&rsquo;t jump around on validation.</p>
+
+<h4 id="example">EXAMPLE</h4>
+
+<div class="package">
+  <h4 class="sans bold">Use your email address or a social account</h4>
+  <div class="grid">
+    <div class="two columns">
+      <div class="input">
+        <label for="firstname">First name</label>
+        <input name="firstname" type="text">
+        <p class="small"></p>
+      </div>
+      <div class="input">
+        <label for="lastname">Last name</label>
+        <input name="lastname" type="text">
+        <p class="small error show">Error text replaces help.</p>
+      </div>
+    </div>
+    <div class="input">
+      <label for="email">Email address</label>
+      <input name="email" type="text">
+      <p class="small"></p>
+    </div>
+    <div class="input">
+      <label for="password">Password</label>
+      <input name="password" type="password">
+      <p class="small show">Must be at least 7 characters long</p>
+    </div>
+  </div>
+</div>
+
+
+<h4 id="css">CSS</h4>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.input .small {
+  <span style="color:#000080;font-weight:bold">visibility</span>: <span style="color:#000080;font-weight:bold">hidden</span>;
+  <span style="color:#000080;font-weight:bold">min-height</span>: <span style="color:#00f">1</span><span style="color:#000080;font-weight:bold">em</span>;
+  <span style="color:#000080;font-weight:bold">margin-bottom</span>: <span style="color:#00f">0</span>;
+}
+
+.input .small.show {
+  <span style="color:#000080;font-weight:bold">visibility</span>: <span style="color:#000080;font-weight:bold">visible</span>;
+}
+
+<span style="color:#000080;font-weight:bold">label</span> {
+  <span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">block</span>;
+  <span style="color:#000080;font-weight:bold">font</span>: <span style="color:#00f">400</span> <span style="color:#00f">14</span><span style="color:#000080;font-weight:bold">px</span>/<span style="color:#00f">1.5</span><span style="color:#000080;font-weight:bold">em</span> <span style="color:#00f">&#34;McClatchy Sans&#34;</span>, <span style="color:#000080;font-weight:bold">sans-serif</span>;
+}
+
+<span style="color:#000080;font-weight:bold">input</span> {
+  <span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">block</span>;
+  <span style="color:#000080;font-weight:bold">box-sizing</span>: <span style="color:#000080;font-weight:bold">border-box</span>;
+  <span style="color:#000080;font-weight:bold">width</span>: <span style="color:#00f">100</span><span style="color:#000080;font-weight:bold">%</span>;
+  <span style="color:#000080;font-weight:bold">border</span>: <span style="color:#00f">1</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#000080;font-weight:bold">solid</span> <span style="color:#00f">#707070</span>;
+  <span style="color:#000080;font-weight:bold">border-radius</span>: <span style="color:#00f">2</span><span style="color:#000080;font-weight:bold">px</span>;
+  <span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">10</span><span style="color:#000080;font-weight:bold">px</span>;
+  <span style="color:#000080;font-weight:bold">font-size</span>: <span style="color:#00f">18</span><span style="color:#000080;font-weight:bold">px</span>;
+}</code></pre></div>
+<h2 id="radio-buttons-and-checkboxes">RADIO BUTTONS AND CHECKBOXES</h2>
+
+<p>These elements have additional rules. The icons used are from the fontawesome set and have been pulled out from the full set for this guide to optimimze delivery.</p>
+
+<h4 id="example-1">EXAMPLE</h4>
+
+<div class="package">
+  <div>
+    <input id="rewards" name="rewards" type="checkbox" checked>
+    <label for="rewards"><span>Sign me up for <a class="blue" href="#">Miami Herald Rewards</a></span></label>
+  </div>
+  <div>
+    <input id="terms" name="terms" type="checkbox">
+    <label for="terms"><span>I agree to the <a class="blue" href="#">Terms of Service</a></span></label>
+  </div>
+  <p class="small error">Please agree to the terms of service</p>
+</div>
+
+<h4 id="css-1">CSS</h4>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#000080;font-weight:bold">input</span>[<span style="color:#000080;font-weight:bold">type</span>=<span style="color:#000080;font-weight:bold">checkbox</span>], <span style="color:#000080;font-weight:bold">input</span>[<span style="color:#000080;font-weight:bold">type</span>=<span style="color:#000080;font-weight:bold">radio</span>] {
+  <span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">none</span>;
+}
+
+<span style="color:#000080;font-weight:bold">input</span>[<span style="color:#000080;font-weight:bold">type</span>=<span style="color:#000080;font-weight:bold">checkbox</span>] + <span style="color:#000080;font-weight:bold">label</span>, <span style="color:#000080;font-weight:bold">input</span>[<span style="color:#000080;font-weight:bold">type</span>=<span style="color:#000080;font-weight:bold">radio</span>] + <span style="color:#000080;font-weight:bold">label</span> {
+  <span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">flex</span>;
+  <span style="color:#000080;font-weight:bold">align-items</span>: <span style="color:#000080;font-weight:bold">center</span>;
+  <span style="color:#000080;font-weight:bold">cursor</span>: <span style="color:#000080;font-weight:bold">pointer</span>;
+}
+
+<span style="color:#000080;font-weight:bold">input</span>[<span style="color:#000080;font-weight:bold">type</span>=<span style="color:#000080;font-weight:bold">checkbox</span>] + <span style="color:#000080;font-weight:bold">label</span>:before {
+  <span style="color:#000080;font-weight:bold">content</span>: url(<span style="color:#00f">&#39;./icons/square.svg&#39;</span>);
+  <span style="color:#000080;font-weight:bold">width</span>: <span style="color:#00f">16</span><span style="color:#000080;font-weight:bold">px</span>;
+  <span style="color:#000080;font-weight:bold">margin-right</span>: <span style="color:#00f">10</span><span style="color:#000080;font-weight:bold">px</span>;
+}
+
+<span style="color:#000080;font-weight:bold">input</span>[<span style="color:#000080;font-weight:bold">type</span>=<span style="color:#000080;font-weight:bold">checkbox</span>]:checked + <span style="color:#000080;font-weight:bold">label</span>:before {
+  <span style="color:#000080;font-weight:bold">content</span>: url(<span style="color:#00f">&#39;./icons/check-square.svg&#39;</span>);
+}
+
+<span style="color:#000080;font-weight:bold">input</span>[<span style="color:#000080;font-weight:bold">type</span>=<span style="color:#000080;font-weight:bold">radio</span>] + <span style="color:#000080;font-weight:bold">label</span>:before {
+  <span style="color:#000080;font-weight:bold">content</span>: url(<span style="color:#00f">&#39;./icons/outline-circle.svg&#39;</span>);
+  <span style="color:#000080;font-weight:bold">width</span>: <span style="color:#00f">16</span><span style="color:#000080;font-weight:bold">px</span>;
+  <span style="color:#000080;font-weight:bold">margin-right</span>: <span style="color:#00f">10</span><span style="color:#000080;font-weight:bold">px</span>;
+}
+
+<span style="color:#000080;font-weight:bold">input</span>[<span style="color:#000080;font-weight:bold">type</span>=<span style="color:#000080;font-weight:bold">radio</span>]:checked + <span style="color:#000080;font-weight:bold">label</span>:before {
+  <span style="color:#000080;font-weight:bold">content</span>: url(<span style="color:#00f">&#39;./icons/dot-circle.svg&#39;</span>);
+}</code></pre></div>
+<h2 id="saved-cards">SAVED CARDS</h2>
+
+<p>The saved card is a checkbox with a custom display.</p>
+
+<h4 id="example-2">EXAMPLE</h4>
+
+<div class="package">
+  <div>
+    <input type="checkbox" id="visa-1234" name="card">
+    <label for="visa-1234" class="button ghost saved-card">
+      <span class="icon visa">1234</span>
+      <span class="expiration">12/22</span>
+    </label>
+  </div>
+</div>
+
+<h4 id="html">HTML</h4>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package&#34;</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">input</span> <span style="color:#f00">type</span>=<span style="color:#00f">&#34;checkbox&#34;</span> <span style="color:#f00">id</span>=<span style="color:#00f">&#34;visa-1234&#34;</span> <span style="color:#f00">name</span>=<span style="color:#00f">&#34;card&#34;</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">label</span> <span style="color:#f00">for</span>=<span style="color:#00f">&#34;visa-1234&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button ghost saved-card&#34;</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;icon visa&#34;</span>&gt;1234&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;expiration&#34;</span>&gt;12/22&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
+    &lt;/<span style="color:#000080;font-weight:bold">label</span>&gt;
+  &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
+<h4 id="css-2">CSS</h4>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#000080;font-weight:bold">input</span>[<span style="color:#000080;font-weight:bold">type</span>=<span style="color:#000080;font-weight:bold">checkbox</span>] + .saved-card {
+  <span style="color:#000080;font-weight:bold">justify-content</span>: <span style="color:#000080;font-weight:bold">space</span>-between;
+  <span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#00f">250</span><span style="color:#000080;font-weight:bold">px</span>;
+}
+
+<span style="color:#000080;font-weight:bold">input</span>[<span style="color:#000080;font-weight:bold">type</span>=<span style="color:#000080;font-weight:bold">checkbox</span>] + .saved-card:before {
+  <span style="color:#000080;font-weight:bold">order</span>: <span style="color:#00f">3</span>;
+  <span style="color:#000080;font-weight:bold">content</span>: <span style="color:#00f">&#39;&#39;</span>;
+  <span style="color:#000080;font-weight:bold">margin-right</span>: <span style="color:#00f">0</span>;
+}
+
+<span style="color:#000080;font-weight:bold">input</span>[<span style="color:#000080;font-weight:bold">type</span>=<span style="color:#000080;font-weight:bold">checkbox</span>]:checked + .saved-card {
+  <span style="color:#000080;font-weight:bold">background-color</span>: <span style="color:#00f">#0066b3</span>;
+  <span style="color:#000080;font-weight:bold">color</span>: <span style="color:#000080;font-weight:bold">white</span>;
+}
+
+<span style="color:#000080;font-weight:bold">input</span>[<span style="color:#000080;font-weight:bold">type</span>=<span style="color:#000080;font-weight:bold">checkbox</span>]:checked + .saved-card:before {
+  <span style="color:#000080;font-weight:bold">content</span>: url(<span style="color:#00f">&#39;./icons/check-circle.svg&#39;</span>);
+  <span style="color:#000080;font-weight:bold">filter</span>: invert(<span style="color:#00f">1</span>);
+}
+
+<span style="color:#000080;font-weight:bold">input</span>[<span style="color:#000080;font-weight:bold">type</span>=<span style="color:#000080;font-weight:bold">checkbox</span>]:checked + .saved-card .icon:before {
+  <span style="color:#000080;font-weight:bold">filter</span>: invert(<span style="color:#00f">1</span>);
+}</code></pre></div>
+  </div>
+
+  <div class="paper digest list">
+  <h3 class="underline">Atoms <small><a href="../../css/atoms.css">Download</a></small></h3>
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/button/">button</a></h4>
+  <p class="summary">Button styles to ensure proper row alignment.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/byline/">byline</a></h4>
+  <p class="summary">Standard byline and credit styles</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/figcaption/">figcaption</a></h4>
+  <p class="summary">Default styles for all media captions.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/figure/">figure</a></h4>
+  <p class="summary">Semantic wrapper for media in stories and cards.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/h1/">h1</a></h4>
+  <p class="summary">Primary headline on story pages, video pages and video playlists. Lead headline on homepage and section pages.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/h2/">h2</a></h4>
+  <p class="summary">Secondary headlines in the lead group on the homepage and section pages.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/h3/">h3</a></h4>
+  <p class="summary">Used in headline stacks and cards on the homepage and section pages; primary subhead in articles.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/h4/">h4</a></h4>
+  <p class="summary">Used as footer labels.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/h5/">h5</a></h4>
+  <p class="summary">Used as labels for headline stacks.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/h6/">h6</a></h4>
+  <p class="summary">Used primarily for kickers.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/label/">label</a></h4>
+  <p class="summary">Labels for the tops of cards and headline stacks on section pages.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/li/">lists</a></h4>
+  <p class="summary">Default styles for lists in story bodies.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/more-link/">more-link</a></h4>
+  <p class="summary">Used below grid digests.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/p/">p</a></h4>
+  <p class="summary">Default text on story pages.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/time/">time</a></h4>
+  <p class="summary">Used for publish and modified times.</p>
+</div>
+
+  
+
+  <h3 class="underline">Molecules <small><a href="../../css/molecules.css">Download</a></small></h3>
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/card/">card</a></h4>
+  <p class="summary">Enhanced paper molecule with flex display.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/expander/">expander</a></h4>
+  <p class="summary">A collapsible box with a caret.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/impact/">impact</a></h4>
+  <p class="summary">Reverse impact on any element.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/package/">package</a></h4>
+  <p class="summary">Provides spacing for text in cards and digests.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/paper/">paper</a></h4>
+  <p class="summary">Default paper molecule with a block display.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/social-media/">social-media</a></h4>
+  <p class="summary">Social media icon row for story pages.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/utilities/">utilities</a></h4>
+  <p class="summary">Utility typography classes.</p>
+</div>
+
+  
+
+  <h3 class="underline">Organisms <small><a href="../../css/organisms.css">Download</a></small></h3>
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/author-card/">author-card</a></h4>
+  <p class="summary">Author information at the bottom of articles</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/big-news/">big-news</a></h4>
+  <p class="summary">Goes on the top of the homepage during large news events.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/digest/">digest</a></h4>
+  <p class="summary">Headline stacks for section content.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/grid/">grid</a></h4>
+  <p class="summary">A very basic starter grid</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/header/">header</a></h4>
+  <p class="summary">An expanded package for article headers.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/in-depth/">in-depth</a></h4>
+  <p class="summary">In depth module for section pages</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/inline-cta/">inline-cta</a></h4>
+  <p class="summary">Inline call to action for story display.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/promo/">promo</a></h4>
+  <p class="summary">Promo card for story and section pages</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/related-stories/">related-stories</a></h4>
+  <p class="summary">Display for stories related in CUE.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/series-nav/">series-nav</a></h4>
+  <p class="summary">Series nav for article pages.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/story/">story</a></h4>
+  <p class="summary">The main article body</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/timeline/">timeline</a></h4>
+  <p class="summary">Used in live updates and for static timelines.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/transparency/">transparency</a></h4>
+  <p class="summary">Provides story background information.</p>
+</div>
+
+  
+
+  <h3 class="underline">Subscription flow <small><a href="../../css/subscription.css">Download</a></small></h3>
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/subscription-overview/">overview</a></h4>
+  <p class="summary">Atom overloads and the subscription template</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/form-elements/">form elements</a></h4>
+  <p class="summary">Native form element styles</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/subscription-grid/">grid</a></h4>
+  <p class="summary">Custom grid and columns for subscription pages</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/icons/">icons</a></h4>
+  <p class="summary">Optimized icon set from fontawesome</p>
+</div>
+
+  
+
+  <script src="../../js/style-guide.js"></script>
+</div>
+
+</div>
+
+  </body>
+</html>

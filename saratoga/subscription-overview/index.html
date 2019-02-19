@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>in-depth</title>
+    <title>overview</title>
     
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../../css/organisms.css">
     <link rel="stylesheet" href="../../css/site.css">
 <link rel="stylesheet" href="../../css/style-guide.css">
-
+<link rel="stylesheet" href="../../css/subscriptions.css">
 
   </head>
 
@@ -38,64 +38,37 @@
     </div>
 <div class="panels">
   <div class="paper story-body details">
-    <h2 class="page-header">in-depth</h2>
+    <h2 class="page-header">overview</h2>
     
 
-<p>The In Depth module is a version of the horizontal card that changes the flex-grow weight from the right side to the left.</p>
+<p>Being a marketing page, the subscription flow alters the default behavior of several atoms and molecules. Those changes are placed at the top of the <a href="../../css/subscriptions.css">subscriptions.css</a> file.</p>
 
-<h4 id="example">Example</h4>
-
-<div class="example"><div class="card horizontal in-depth">
-  <figure>
-    <div class="label sticky"><h5 class="impact">IN DEPTH</h5></div>
-    <img src="https://www.kansas.com/latest-news/6aw7pv/picture225984215/alternates/LANDSCAPE_768/tax-forms.jpg">
-  </figure>
-  <div class="package impact">
-    <h1>After meeting Brownback’s circle, firm was on ‘right path’ to $61M no-bid contract</h1>
-    <summary>Thousands of emails reveal how CGI Technologies landed a $61 million contract to overhaul Kansas tax systems. New Gov. Laura Kelly has promised to crack down on no-bid contracts.</summary>
-  </div>
-</div>
-</div>
-
-<h4 id="html">HTML</h4>
-
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card horizontal in-depth&#34;</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">figure</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;label sticky&#34;</span>&gt;&lt;<span style="color:#000080;font-weight:bold">h5</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;impact&#34;</span>&gt;IN DEPTH&lt;/<span style="color:#000080;font-weight:bold">h5</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;https://www.kansas.com/latest-news/6aw7pv/picture225984215/alternates/LANDSCAPE_768/tax-forms.jpg&#34;</span>&gt;
-  &lt;/<span style="color:#000080;font-weight:bold">figure</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package impact&#34;</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">h1</span>&gt;After meeting Brownback’s circle, firm was on ‘right path’ to $61M no-bid contract&lt;/<span style="color:#000080;font-weight:bold">h1</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">summary</span>&gt;Thousands of emails reveal how CGI Technologies landed a $61 million contract to overhaul Kansas tax systems. New Gov. Laura Kelly has promised to crack down on no-bid contracts.&lt;/<span style="color:#000080;font-weight:bold">summary</span>&gt;
-  &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-&lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
+<p>The file also includes a template layer that only applies to these pages. To see how these styles work with a full page, please visit the subscription <a href="../../saratoga/sample/subscription/">sample page</a>.</p>
 
 <h4 id="css">CSS</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.card.in-depth <span style="color:#000080;font-weight:bold">figure</span> {
-  <span style="color:#000080;font-weight:bold">flex-grow</span>: <span style="color:#00f">4</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.subscriptions {
+  <span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#00f">1140</span><span style="color:#000080;font-weight:bold">px</span>;
+  <span style="color:#000080;font-weight:bold">margin</span>: <span style="color:#00f">0</span> <span style="color:#000080;font-weight:bold">auto</span>;
 }
 
-.card.in-depth .package {
-  <span style="color:#000080;font-weight:bold">flex-grow</span>: <span style="color:#00f">1</span>;
+.offer {
+  <span style="color:#000080;font-weight:bold">margin-bottom</span>: <span style="color:#00f">30</span><span style="color:#000080;font-weight:bold">px</span>;
 }
 
-@<span style="color:#000080;font-weight:bold">media</span> (<span style="color:#000080;font-weight:bold">min-width</span>: <span style="color:#000080;font-weight:bold">630px</span>) {
-  .in-depth {
-    <span style="color:#000080;font-weight:bold">min-height</span>: <span style="color:#00f">400</span><span style="color:#000080;font-weight:bold">px</span>;
+@<span style="color:#000080;font-weight:bold">media</span> (<span style="color:#000080;font-weight:bold">min-width</span>: <span style="color:#000080;font-weight:bold">890px</span>) {
+  .subscriptions {
+    <span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">grid</span>;
+    <span style="color:#000080;font-weight:bold">grid-template-columns</span>: <span style="color:#00f">2</span>fr <span style="color:#00f">1</span>fr;
+    <span style="color:#000080;font-weight:bold">grid-gap</span>: <span style="color:#00f">30</span><span style="color:#000080;font-weight:bold">px</span>;
+    <span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">0</span> <span style="color:#00f">15</span><span style="color:#000080;font-weight:bold">px</span>;
   }
 
-	.in-depth <span style="color:#000080;font-weight:bold">figure</span> {
-		<span style="color:#000080;font-weight:bold">min-height</span>: <span style="color:#00f">300</span><span style="color:#000080;font-weight:bold">px</span>;
-	}
+  .offer {
+    <span style="color:#000080;font-weight:bold">order</span>: <span style="color:#00f">2</span>;
+  }
 
-  .in-depth <span style="color:#000080;font-weight:bold">figure</span> <span style="color:#000080;font-weight:bold">img</span> {
-    <span style="color:#000080;font-weight:bold">position</span>: <span style="color:#000080;font-weight:bold">absolute</span>;
-    <span style="color:#000080;font-weight:bold">top</span>: <span style="color:#00f">0</span>;
-    <span style="color:#000080;font-weight:bold">left</span>: <span style="color:#00f">0</span>;
-    <span style="color:#000080;font-weight:bold">width</span>: <span style="color:#00f">100</span><span style="color:#000080;font-weight:bold">%</span>;
-    <span style="color:#000080;font-weight:bold">height</span>: <span style="color:#00f">100</span><span style="color:#000080;font-weight:bold">%</span>;
-    <span style="color:#000080;font-weight:bold">object-fit</span>: <span style="color:#000080;font-weight:bold">cover</span>;
-    <span style="color:#000080;font-weight:bold">object-position</span>: <span style="color:#00f">50</span><span style="color:#000080;font-weight:bold">%</span> <span style="color:#00f">20</span><span style="color:#000080;font-weight:bold">%</span>;
+  .forms {
+    <span style="color:#000080;font-weight:bold">order</span>: <span style="color:#00f">1</span>;
   }
 }</code></pre></div>
   </div>

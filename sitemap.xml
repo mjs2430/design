@@ -3,6 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mcclatchy.github.io/design/saratoga/subscription-overview/</loc>
+  </url>
+  
+  <url>
     <loc>https://mcclatchy.github.io/design/saratoga/about/</loc>
   </url>
   
@@ -25,12 +29,7 @@
   </url>
   
   <url>
-    <loc>https://mcclatchy.github.io/design/subscription/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mcclatchy.github.io/design/subscription/sample/</loc>
+    <loc>https://mcclatchy.github.io/design/saratoga/sample/subscription/</loc>
   </url>
   
   <url>
@@ -70,7 +69,15 @@
   </url>
   
   <url>
+    <loc>https://mcclatchy.github.io/design/saratoga/form-elements/</loc>
+  </url>
+  
+  <url>
     <loc>https://mcclatchy.github.io/design/saratoga/grid/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mcclatchy.github.io/design/saratoga/subscription-grid/</loc>
   </url>
   
   <url>
@@ -99,6 +106,10 @@
   
   <url>
     <loc>https://mcclatchy.github.io/design/saratoga/header/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mcclatchy.github.io/design/saratoga/icons/</loc>
   </url>
   
   <url>
