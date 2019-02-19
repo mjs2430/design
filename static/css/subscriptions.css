@@ -2,12 +2,20 @@
  * Atom enhancments
  */
 
-p, li {
+.subscriptions p, .subscriptions li {
   font: 400 14px/1.5em "McClatchy Sans", sans-serif;
 }
 
-ul {
+.subscriptions ul {
   padding-left: 0;
+}
+
+.subscriptions button, .subscriptions .button {
+  min-width: 250px;
+}
+
+.subscriptions .more-link {
+  padding: 0 15px;
 }
 
 .disclaimer {
@@ -20,19 +28,11 @@ ul {
   color: #0066b3;
 }
 
-button, .button {
-  min-width: 250px;
-}
-
-.more-link {
-  padding: 0 15px;
-}
-
 /**
  * Molecule enhancements
  */
 
-.package li:first-child {
+.subscriptions .package li:first-child {
   margin-top: 0;
 }
 
@@ -202,7 +202,7 @@ input[type=radio]:checked + label:before {
 
 input[type=checkbox] + .saved-card {
   justify-content: space-between;
-  max-width: 250px;
+  width: 250px;
 }
 
 input[type=checkbox] + .saved-card:before {
