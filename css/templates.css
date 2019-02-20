@@ -1,0 +1,41 @@
+/**
+ * Story template
+ */
+
+.story-template {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 0;
+}
+
+.story-body {
+  flex: 1 1 400px;
+}
+
+.story-rail {
+  flex: 1 1 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.story-rail > * {
+  margin: 15px 0;
+}
+
+.story-rail .ad {
+  margin: 35px 0;
+}
+
+@media (min-width: 730px) {
+  .story-body > figure img {
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
+
+  .story-rail {
+    flex-grow: 0;
+  }
+}
