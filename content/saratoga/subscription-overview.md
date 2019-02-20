@@ -1,10 +1,10 @@
 ---
-title: "overview"
-description: "Atom overloads and the subscription template"
-level: "subscription"
+title: subscription overview
+description: Atom overloads and the subscription template
+level: subscription
 weight: 1
----
 
+---
 Being a marketing page, the subscription flow alters the default behavior of several atoms and molecules. Those changes are placed at the top of the [subscriptions.css](/css/subscriptions.css) file.
 
 The file also includes a template layer that only applies to these pages. To see how these styles work with a full page, please visit the subscription [sample page](/saratoga/sample/subscription/).
