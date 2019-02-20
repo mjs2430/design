@@ -4,28 +4,28 @@
 
 {{ define "content" }}
 <figure class="hero">
-  {{ readFile "/static/img/logo.svg" | safeHTML }}
+  {{ readFile "/static/img/logo.min.svg" | safeHTML }}
 </figure>
 
-<section>
-  <h5 class="grid-label">THE LATEST FROM {{ .Site.Data.blog.title | upper }}</h5>
-  <div class="grid">
-    {{- range first 9 .Site.Data.blog.items }}
-    <article class="card medium">
-      <figure class="medium-art">
-        {{- $content := default .description .content }}
-        {{- $leadArt := findRE "<img .*?>" $content 1 }}
-        <a href="{{ .link }}">
-          {{ range first 1 $leadArt }}{{ . | replaceRE " src" " decoding=\"async\" src" | safeHTML }}{{ end }}
-        </a>
-      </figure>
-      <div class="package">
-        <p class="byline">{{ .author.name }}</p>
-        <h3><a href="{{ .link }}">{{ .title }}</a></h3>
-        <time>{{ .published }}</time>
-      </div>
-    </article>
-    {{- end }}
-  </div>
-</section>
+<!-- <section> -->
+<!--   <h5 class="grid-label">THE LATEST FROM {{ .Site.Data.blog.title | upper }}</h5> -->
+<!--   <div class="grid"> -->
+<!--     {{- range first 9 .Site.Data.blog.items }} -->
+<!--     <article class="card medium"> -->
+<!--       <figure class="medium-art"> -->
+<!--         {{- $content := default .description .content }} -->
+<!--         {{- $leadArt := findRE "<img .*?>" $content 1 }} -->
+<!--         <a href="{{ .link }}"> -->
+<!--           {{ range first 1 $leadArt }}{{ . | replaceRE " src" " decoding=\"async\" src" | safeHTML }}{{ end }} -->
+<!--         </a> -->
+<!--       </figure> -->
+<!--       <div class="package"> -->
+<!--         <p class="byline">{{ .author.name }}</p> -->
+<!--         <h3><a href="{{ .link }}">{{ .title }}</a></h3> -->
+<!--         <time>{{ .published }}</time> -->
+<!--       </div> -->
+<!--     </article> -->
+<!--     {{- end }} -->
+<!--   </div> -->
+<!-- </section> -->
 {{ end }}

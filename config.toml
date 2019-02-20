@@ -14,10 +14,10 @@ disableKinds = ["taxonomy", "taxonomyTerm", "RSS"]
     name = "about us"
     url = "/about/"
     weight = 1
-  [[menu.main]]
-    name = "blog"
-    url = "https://medium.com/mcclatchy-design"
-    weight = 2
+  # [[menu.main]]
+  #   name = "blog"
+  #   url = "https://medium.com/mcclatchy-design"
+  #   weight = 2
   [[menu.main]]
     name = "style guide"
     url = "/saratoga/"
