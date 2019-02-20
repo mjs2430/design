@@ -1,7 +1,50 @@
+{{ define "head" }}
+<link rel="stylesheet" href="/css/templates.css">
+{{ end }}
+
 {{ define "content" }}
-<article class="story-body paper">
-  {{ .Content }}
-</article>
+<div class="paper">
+  <div class="story-template">
+    <article class="story-body">
+      {{ .Content }}
+    </article>
+
+    <aside class="story-rail">
+      <div class="ad" style="height: 600px; width: 300px; background-color: #ddd;"></div>
+      <div class="digest">
+        <div class="label"><h5 class="impact">TRENDING STORIES</h5></div>
+        <div class="package">
+          <h4><a href="#">More snow and ice on the way to Kansas City Tuesday: Here’s how much and when</a></h4>
+          <time>FEBRUARY 18, 2019 10:22 AM</time>
+        </div>
+        <div class="package">
+          <h4><a href="#">More snow and ice on the way to Kansas City Tuesday: Here’s how much and when</a></h4>
+          <time>FEBRUARY 18, 2019 10:22 AM</time>
+        </div>
+        <div class="package">
+          <h4><a href="#">More snow and ice on the way to Kansas City Tuesday: Here’s how much and when</a></h4>
+          <time>FEBRUARY 18, 2019 10:22 AM</time>
+        </div>
+        <div class="package">
+          <h4><a href="#">More snow and ice on the way to Kansas City Tuesday: Here’s how much and when</a></h4>
+          <time>FEBRUARY 18, 2019 10:22 AM</time>
+        </div>
+      </div>
+      <div class="ad" style="height: 250px; width: 300px; background-color: #ddd;"></div>
+      <div class="digest">
+        <div class="label"><h5 class="impact">OTHER STORIES</h5></div>
+        <div class="package">
+          <h4><a href="#">More snow and ice on the way to Kansas City Tuesday: Here’s how much and when</a></h4>
+          <time>FEBRUARY 18, 2019 10:22 AM</time>
+        </div>
+        <div class="package">
+          <h4><a href="#">More snow and ice on the way to Kansas City Tuesday: Here’s how much and when</a></h4>
+          <time>FEBRUARY 18, 2019 10:22 AM</time>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
 
 <section>
   {{ readFile "layouts/shortcodes/in-depth.html" | safeHTML }}

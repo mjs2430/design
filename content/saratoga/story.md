@@ -27,7 +27,6 @@ This site is made with these rules, so this panel is one example. There is also 
 #### CSS
 ```css
 .story-body {
-	padding-bottom: 30px;
   --headerFamily: "McClatchy Sans", sans-serif;
   --headerWeight: 600;
   --headerTransform: uppercase;
@@ -46,7 +45,7 @@ This site is made with these rules, so this panel is one example. There is also 
 	padding: 0;
 }
 
-.story-body img, .story figcaption {
+.story-body img, .story-body figcaption {
 	max-width: 1140px;
 	margin: 0 auto;
 }
