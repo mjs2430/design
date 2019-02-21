@@ -16,6 +16,10 @@ body {
   font-family: "McClatchy Serif", serif;
 }
 
+body.freeze {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
   color: #0066b3;
