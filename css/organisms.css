@@ -65,29 +65,25 @@
 	padding: 15px;
 }
 
-.header a {
-	color: inherit;
-}
-
 .header > * {
 	margin: 15px 0 0;
 }
 
-.header .bio {
-  display: flex;
-	flex-direction: column;
-	width: 100%;
+.header .byline {
+	display: block;
+	margin: 0 0 10px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
 	.header .bio {
 		display: flex;
-		flex-direction: row;
 		justify-content: space-between;
+		width: 100%;
+		text-align: left;
 	}
 
-	.header .bio > * {
-		text-align: left;
+	.header .social-media a {
+		padding-top: 0;
 	}
 }
 
@@ -360,4 +356,104 @@
 
 .card.horizontal .promo .title {
 	font: 600 48px "McClatchy Sans", sans-serif;
+}
+
+/**
+ * Read Next
+ */
+
+.read-next .package {
+	max-width: 710px;
+	margin: 0 auto;
+}
+
+.read-next .header {
+	align-items: flex-start;
+	text-align: left;
+	padding: 0;
+}
+
+.read-next .header > :first-child {
+	margin-top: 0;
+}
+
+.read-next .social-media {
+	justify-content: flex-start;
+}
+
+.read-next .social-media > a:first-child {
+	padding-left: 0;
+}
+
+/**
+ * Modals
+ */
+
+.freeze {
+	overflow: hidden;
+}
+
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	padding: 100px 15px 0;
+	overflow: scroll;
+	z-index: 9999;
+	transform: translateZ(0);
+}
+
+.modal > * {
+	position: relative;
+	width: 100%;
+	max-width: 710px;
+	margin: 15px auto;
+}
+
+.modal .package {
+	padding: 30px 50px 30px 15px;
+}
+
+.modal .close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 15px;
+	cursor: pointer;
+}
+
+/** Bottom version */
+
+.modal.bottom {
+	display: flex;
+	align-items: flex-end;
+}
+
+.modal.bottom > * {
+	max-width: 1110px;
+	position: relative;
+}
+
+.modal.bottom .package {
+	max-width: 710px;
+	margin: 0 auto;
+}
+
+/** Toggles and kids */
+
+.modal.screen {
+	background-color: rgba(255,255,255,0.8);
+}
+
+.modal[hidden] {
+	display: none;
+	pointer-events: none;
+}
+
+.modal input {
+	padding: 1em 1em .7em;
+	border-radius: 2px;
+	border: none;
 }

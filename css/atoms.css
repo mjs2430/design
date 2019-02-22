@@ -16,6 +16,10 @@ body {
   font-family: "McClatchy Serif", serif;
 }
 
+body.freeze {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
   color: #0066b3;
@@ -68,7 +72,7 @@ ul li {
 }
 
 time {
-  display: block;
+  display: inline-block;
   font: 300 11px/1.2em "McClatchy Sans", sans-serif;
   text-transform: uppercase;
   color: #707070;
@@ -107,6 +111,12 @@ button, .button {
   text-decoration: none;
 }
 
+.button.stretch {
+  display: block;
+  align-self: stretch;
+  padding: 1em 1em .7em;
+}
+
 .ghost {
   border-color: #4a4a4a;
 }
@@ -118,16 +128,22 @@ hr {
 /** Typography */
 
 .kicker {
+  color: inherit;
   display: inline-block;
   padding: .4em .6em .2em;
   border: 1px solid #4a4a4a;
   border-radius: 2px;
+  align-self: flex-start;
   text-transform: uppercase;
 }
 
 .kicker:hover {
   text-decoration: none;
 }
+
+/* .kicker a { */
+/*   color: inherit; */
+/* } */
 
 .byline {
   display: inline-block;
@@ -143,6 +159,7 @@ hr {
 }
 
 .credit {
+  display: inline-block;
   font: italic 400 11px/1.5em "McClatchy Sans";
 }
 

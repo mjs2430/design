@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>read-next</title>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="../../favicon.ico">
+
+    <link rel="stylesheet" href="../../css/fonts.css">
+    <link rel="stylesheet" href="../../css/atoms.css">
+    <link rel="stylesheet" href="../../css/molecules.css">
+    <link rel="stylesheet" href="../../css/organisms.css">
+    <link rel="stylesheet" href="../../css/site.css">
+<link rel="stylesheet" href="../../css/style-guide.css">
+
+
+  </head>
+
+  <body class="saratoga">
+    <div class="banner paper">
+      <a href="../../" style="padding: 0;"><img class="logo" src="../../img/banner-logo.2.svg"></a>
+      <nav>
+        <a href="https://mcclatchy.github.io/design/about/" class="">
+          <span>about us</span>
+        </a>
+        <a href="https://mcclatchy.github.io/design/saratoga/" class="active">
+          <span>style guide</span>
+        </a>
+      </nav>
+    </div>
+<div class="panels">
+  <div class="paper story-body details">
+    <h2 class="page-header">read-next</h2>
+    
+
+<p>The read next card mimics the top of a story body in card form. Mostly, it&rsquo;s a combination of different molecules in the package, with minimal CSS overloads.</p>
+
+<h4 id="example">EXAMPLE</h4>
+
+<div class="example">
+  <div class="card read-next">
+  <div class="label sticky"><h5 class="impact">READ NEXT</h5></div>
+  <figure>
+    <img src="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_1140/0321%20cimk%20kuwata%2003022018%20s%20%284%29">
+  </figure>
+  <div class="package">
+    <header class="header">
+      <a class="kicker h6" href="#">SECTION</a>
+      <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus lorem a</h1>
+      <div class="bio">
+        <div>
+          <p class="byline">By <a href="#">John Doe</a> <span class="credit">SAMPLE NEWSPAPER</span></p>
+          <time>AUG 13, 2018, UPDATED 4 MONTHS AGO</time>
+        </div>
+        <div class="social-media">
+          <a href="#">
+            <svg data-name="twitter" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+          </a>
+          <a href="#">
+            <svg data-name="facebook" viewBox="0 0 264 512"><path d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path></svg>
+          </a>
+          <a href="#">
+            <svg data-name="envelope" viewBox="0 0 512 512"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>
+          </a>
+        </div>
+      </div>
+    </header>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate enim dolor, sit amet lacinia ex lacinia ac. Sed facilisis nulla felis, eget ultricies dolor cursus nec. Cras sodales ligula elementum ipsum elementum gravida.</p>
+    <a class="more-link">KEEP READING</a>
+  </div>
+</div>
+
+</div>
+
+<h4 id="html">HTML</h4>
+
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card read-next&#34;</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;label sticky&#34;</span>&gt;&lt;<span style="color:#000080;font-weight:bold">h5</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;impact&#34;</span>&gt;READ NEXT&lt;/<span style="color:#000080;font-weight:bold">h5</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">figure</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_1140/0321%20cimk%20kuwata%2003022018%20s%20%284%29&#34;</span>&gt;
+  &lt;/<span style="color:#000080;font-weight:bold">figure</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package&#34;</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">header</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;header&#34;</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;kicker h6&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;SECTION&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">h1</span>&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus lorem a&lt;/<span style="color:#000080;font-weight:bold">h1</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;bio&#34;</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
+          &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;byline&#34;</span>&gt;By &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;John Doe&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt; &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;credit&#34;</span>&gt;SAMPLE NEWSPAPER&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
+          &lt;<span style="color:#000080;font-weight:bold">time</span>&gt;AUG 13, 2018, UPDATED 4 MONTHS AGO&lt;/<span style="color:#000080;font-weight:bold">time</span>&gt;
+        &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;social-media&#34;</span>&gt;
+          &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;
+            &lt;<span style="color:#000080;font-weight:bold">svg</span> <span style="color:#f00">data-name</span>=<span style="color:#00f">&#34;twitter&#34;</span> <span style="color:#f00">viewBox</span>=<span style="color:#00f">&#34;0 0 512 512&#34;</span>&gt;&lt;<span style="color:#000080;font-weight:bold">path</span> <span style="color:#f00">d</span>=<span style="color:#00f">&#34;M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">path</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">svg</span>&gt;
+          &lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+          &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;
+            &lt;<span style="color:#000080;font-weight:bold">svg</span> <span style="color:#f00">data-name</span>=<span style="color:#00f">&#34;facebook&#34;</span> <span style="color:#f00">viewBox</span>=<span style="color:#00f">&#34;0 0 264 512&#34;</span>&gt;&lt;<span style="color:#000080;font-weight:bold">path</span> <span style="color:#f00">d</span>=<span style="color:#00f">&#34;M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">path</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">svg</span>&gt;
+          &lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+          &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;
+            &lt;<span style="color:#000080;font-weight:bold">svg</span> <span style="color:#f00">data-name</span>=<span style="color:#00f">&#34;envelope&#34;</span> <span style="color:#f00">viewBox</span>=<span style="color:#00f">&#34;0 0 512 512&#34;</span>&gt;&lt;<span style="color:#000080;font-weight:bold">path</span> <span style="color:#f00">d</span>=<span style="color:#00f">&#34;M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">path</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">svg</span>&gt;
+          &lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+        &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+      &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+    &lt;/<span style="color:#000080;font-weight:bold">header</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">p</span>&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate enim dolor, sit amet lacinia ex lacinia ac. Sed facilisis nulla felis, eget ultricies dolor cursus nec. Cras sodales ligula elementum ipsum elementum gravida.&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;more-link&#34;</span>&gt;KEEP READING&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+  &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
+
+<h4 id="css">CSS</h4>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.read-next .package {
+	<span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#00f">710</span><span style="color:#000080;font-weight:bold">px</span>;
+	<span style="color:#000080;font-weight:bold">margin</span>: <span style="color:#00f">0</span> <span style="color:#000080;font-weight:bold">auto</span>;
+}
+
+.read-next .header {
+	<span style="color:#000080;font-weight:bold">align-items</span>: <span style="color:#000080;font-weight:bold">flex</span>-<span style="color:#000080;font-weight:bold">start</span>;
+	<span style="color:#000080;font-weight:bold">text-align</span>: <span style="color:#000080;font-weight:bold">left</span>;
+	<span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">0</span>;
+}
+
+.read-next .header &gt; :first-child {
+	<span style="color:#000080;font-weight:bold">margin-top</span>: <span style="color:#00f">0</span>;
+}
+
+.read-next .social-media {
+	<span style="color:#000080;font-weight:bold">justify-content</span>: <span style="color:#000080;font-weight:bold">flex</span>-<span style="color:#000080;font-weight:bold">start</span>;
+}
+
+.read-next .social-media &gt; <span style="color:#000080;font-weight:bold">a</span>:first-child {
+	<span style="color:#000080;font-weight:bold">padding-left</span>: <span style="color:#00f">0</span>;
+}</code></pre></div>
+  </div>
+
+  <div class="paper digest list">
+  <h3 class="underline">Atoms <small><a href="../../css/atoms.css">Download</a></small></h3>
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/button/">button</a></h4>
+  <p class="summary">Button styles to ensure proper row alignment</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/byline/">byline</a></h4>
+  <p class="summary">Standard byline and credit styles</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/figcaption/">figcaption</a></h4>
+  <p class="summary">Default styles for all media captions</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/figure/">figure</a></h4>
+  <p class="summary">Semantic wrapper for media in stories and cards</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/h1/">h1</a></h4>
+  <p class="summary">Primary headline on story pages, video pages and video playlists. Lead headline on homepage and section pages.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/h2/">h2</a></h4>
+  <p class="summary">Secondary headlines in the lead group on the homepage and section pages.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/h3/">h3</a></h4>
+  <p class="summary">Used in headline stacks and cards on the homepage and section pages; primary subhead in articles.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/h4/">h4</a></h4>
+  <p class="summary">Used as footer labels.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/h5/">h5</a></h4>
+  <p class="summary">Used as labels for headline stacks.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/h6/">h6</a></h4>
+  <p class="summary">Used primarily for kickers.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/label/">label</a></h4>
+  <p class="summary">Labels for the tops of cards and headline stacks on section pages.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/li/">lists</a></h4>
+  <p class="summary">Default styles for lists in story bodies.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/more-link/">more-link</a></h4>
+  <p class="summary">Used below grid digests.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/p/">p</a></h4>
+  <p class="summary">Default text on story pages.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/time/">time</a></h4>
+  <p class="summary">Used for publish and modified times.</p>
+</div>
+
+  
+
+  <h3 class="underline">Molecules <small><a href="../../css/molecules.css">Download</a></small></h3>
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/card/">card</a></h4>
+  <p class="summary">Enhanced paper molecule with flex display.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/expander/">expander</a></h4>
+  <p class="summary">A collapsible box with a caret.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/impact/">impact</a></h4>
+  <p class="summary">Reverse impact on any element.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/package/">package</a></h4>
+  <p class="summary">Provides spacing for text in cards and digests.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/paper/">paper</a></h4>
+  <p class="summary">Default paper molecule with a block display.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/social-media/">social-media</a></h4>
+  <p class="summary">Social media icon row for story pages.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/utilities/">utilities</a></h4>
+  <p class="summary">Utility typography classes.</p>
+</div>
+
+  
+
+  <h3 class="underline">Organisms <small><a href="../../css/organisms.css">Download</a></small></h3>
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/author-card/">author-card</a></h4>
+  <p class="summary">Author information at the bottom of articles</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/big-news/">big-news</a></h4>
+  <p class="summary">Goes on the top of the homepage during large news events.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/digest/">digest</a></h4>
+  <p class="summary">Headline stacks for section content.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/grid/">grid</a></h4>
+  <p class="summary">A very basic starter grid</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/header/">header</a></h4>
+  <p class="summary">An expanded package for article headers.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/in-depth/">in-depth</a></h4>
+  <p class="summary">In depth module for section pages</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/inline-cta/">inline-cta</a></h4>
+  <p class="summary">Inline call to action for story display.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/promo/">promo</a></h4>
+  <p class="summary">Promo card for story and section pages</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/read-next/">read-next</a></h4>
+  <p class="summary">The custom read next card under story bodies.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/related-stories/">related-stories</a></h4>
+  <p class="summary">Display for stories related in CUE.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/series-nav/">series-nav</a></h4>
+  <p class="summary">Series nav for article pages.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/story/">story</a></h4>
+  <p class="summary">The main article body</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/timeline/">timeline</a></h4>
+  <p class="summary">Used in live updates and for static timelines.</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/transparency/">transparency</a></h4>
+  <p class="summary">Provides story background information.</p>
+</div>
+
+  
+
+  <h3 class="underline">Subscription flow <small><a href="../../css/subscription.css">Download</a></small></h3>
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/subscription-overview/">subscription overview</a></h4>
+  <p class="summary">Atom overloads and the subscription template</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/form-elements/">form elements</a></h4>
+  <p class="summary">Native form element styles</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/icons/">icons</a></h4>
+  <p class="summary">Optimized icon set from fontawesome</p>
+</div>
+
+  
+  <div class="package">
+  <h4 class="sans bold"><a href="https://mcclatchy.github.io/design/saratoga/subscription-grid/">subscription grid</a></h4>
+  <p class="summary">Custom grid and columns for subscription pages</p>
+</div>
+
+  
+
+  <script src="../../js/style-guide.js"></script>
+</div>
+
+</div>
+
+  </body>
+</html>
