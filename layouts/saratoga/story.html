@@ -1,5 +1,6 @@
 {{ define "head" }}
 <link rel="stylesheet" href="/css/templates.css">
+<script src="/js/modal.js"></script>
 {{ end }}
 
 {{ define "content" }}
@@ -47,6 +48,10 @@
 </div>
 
 <section>
+  {{ readFile "layouts/shortcodes/read-next.html" | safeHTML }}
+</section>
+
+<section>
   {{ readFile "layouts/shortcodes/in-depth.html" | safeHTML }}
 </section>
 
@@ -58,7 +63,34 @@
  {{ readFile "layouts/shortcodes/big-news.html" | safeHTML }}
 </section>
 
-<div class="modal">
-  <div class="impact" style="height: 200px;"></div>
+<div class="modal screen" hidden>
+  <div class="card horizontal wrap impact">
+    <figure>
+      <img src="https://www.kansascity.com/latest-news/wuji4q/picture225576030/alternates/LANDSCAPE_768/inspections%202.jpg">
+    </figure>
+    <div class="package marketing">
+      <h1>Local news that matters to you</h1>
+      <p class="summary">Get all the important news and updates in your community for just <b>$2 a week</b>.</p>
+      <a href="#" class="button stretch">Subscribe Now</a>
+      <div class="space-between">
+        <a href="#" class="summary underline">Already a subscriber? Sign in</a>
+        <a href="#" class="summary underline">No thanks</a>
+      </div>
+      <a href="#" class="small">Terms and conditions apply</a>
+    </div>
+    <svg class="close" width="20" height="20" viewBox="0 0 352 512"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" fill="white"/></svg>
+  </div>
+</div>
+
+<div class="modal bottom" hidden>
+  <div class="impact">
+    <div class="package">
+      <h1>Get the afternoon update</h1>
+      <p class="summary">The afternoon's latest local news</p>
+      <input class="summary" type="email" placeholder="Email Address">
+      <a href="#" class="small">Terms and conditions apply</a>
+      <svg class="close" width="20" height="20" viewBox="0 0 352 512"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" fill="white"/></svg>
+    </div>
+  </div>
 </div>
 {{ end }}
