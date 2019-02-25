@@ -72,6 +72,7 @@ ul li {
 }
 
 time {
+	max-width: unset;
   display: inline-block;
   font: 300 11px/1.2em "McClatchy Sans", sans-serif;
   text-transform: uppercase;
@@ -100,6 +101,7 @@ button, .button {
   text-align: center;
   cursor: pointer;
   padding: .6em 1em .3em;
+  margin: 4px 0;
   border: 1px solid transparent;
   box-sizing: border-box;
   border-radius: 2px;
