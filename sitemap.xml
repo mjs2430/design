@@ -149,10 +149,6 @@
   </url>
   
   <url>
-    <loc>https://mcclatchy.github.io/design/saratoga/promo/</loc>
-  </url>
-  
-  <url>
     <loc>https://mcclatchy.github.io/design/saratoga/read-next/</loc>
   </url>
   
@@ -174,6 +170,10 @@
   
   <url>
     <loc>https://mcclatchy.github.io/design/saratoga/subscription-grid/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mcclatchy.github.io/design/saratoga/promo/</loc>
   </url>
   
   <url>
