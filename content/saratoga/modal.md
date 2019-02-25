@@ -18,13 +18,13 @@ Modals should be consistent across products and vendors to benefit our readers. 
 .modal {
 	position: fixed;
 	top: 0;
-	left: 0;
-	bottom: 0;
 	right: 0;
+	bottom: 0;
+	left: 0;
 	margin: 0;
 	padding: 100px 15px 0;
 	max-width: unset;
-	overflow: scroll;
+	overflow: auto;
 	z-index: 9999;
 	transform: translateZ(0);
 	pointer-events: none;
@@ -50,16 +50,6 @@ Modals should be consistent across products and vendors to benefit our readers. 
 	cursor: pointer;
 }
 
-/** Toggles and kids */
-
-.modal input, .modal .button {
-	padding: 1em 1em .7em;
-	border-radius: 2px;
-	border: none;
-	color: #222;
-	align-self: unset;
-}
-
 .modal.screen {
 	background-color: rgba(255,255,255,0.8);
 	pointer-events: auto;
@@ -67,6 +57,32 @@ Modals should be consistent across products and vendors to benefit our readers. 
 
 .modal[hidden] {
 	display: none;
+}
+```
+
+#### JavaScript
+```js
+function toggleModal(id, force) {
+  let m = document.getElementById(id);
+
+  if(m) {
+    if(force === true || force === false) {
+      m.hidden = !force;
+    } else {
+      m.hidden = !m.hidden;
+    }
+
+    if(m.classList.contains("screen")) {
+      document.body.classList.toggle("freeze", !m.hidden);
+    }
+  }
+}
+```
+
+###### Subscription example CSS
+```css
+.modal-subscription {
+	flex-wrap: wrap;
 }
 ```
 
@@ -80,9 +96,7 @@ Modals should be consistent across products and vendors to benefit our readers. 
 
 #### CSS
 ```css
-/** Bottom version */
-
-.modal.bottom {
+.modal.bottom:not([hidden]) {
 	display: flex;
 	align-items: flex-end;
 }
@@ -96,16 +110,26 @@ Modals should be consistent across products and vendors to benefit our readers. 
 	max-width: 710px;
 	margin: 0 auto;
 }
+```
 
-.newsletter-signup .grid {
+###### Newsletter signup CSS
+```css
+.modal-newsletter .grid {
 	grid-template-columns: 1fr;
 	grid-row-gap: 10px;
 }
 
+.modal-newsletter input, .modal-newsletter .button {
+	padding: 1em 1em .7em;
+	border-radius: 2px;
+	border: none;
+	color: #222;
+	align-self: unset;
+}
+
 @media (min-width: 600px) {
-	.newsletter-signup .grid {
+	.modal-newsletter .grid {
 		grid-template-columns: 3fr 1fr;
 	}
 }
 ```
-

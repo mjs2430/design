@@ -36,6 +36,7 @@ In our digests, the design dictates that there be 15px of space between the labe
 .paper, .card {
   position: relative;
   background-color: white;
+  color: #222;
   box-shadow: 
     0 1px 2px 0 rgba(0, 0, 0, .2), 
     0 1px 5px 0 rgba(0, 0, 0, .13);

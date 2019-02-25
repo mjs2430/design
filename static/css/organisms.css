@@ -317,48 +317,33 @@
  * In Depth card
  */
 
+.card.in-depth {
+	flex-wrap: wrap;
+}
+
 .card.in-depth figure {
   flex-grow: 4;
+	min-height: 400px;
 }
 
 .card.in-depth .package {
   flex-grow: 1;
 }
 
-@media (min-width: 630px) {
-  .in-depth {
-    min-height: 400px;
-  }
-
-	.in-depth figure {
-		min-height: 300px;
-	}
-
-  .in-depth figure img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 50% 20%;
-  }
-}
-
 /**
  * Promo card
  */
 
-.card.horizontal .promo {
-  flex-grow: 4;
+.card.promo {
+	flex-wrap: wrap;
+}
+
+.card.promo > :first-child {
+	flex-grow: 4;
 	min-height: 150px;
 }
 
-.card.horizontal .promo + .package {
-	flex-grow: 1;
-}
-
-.card.horizontal .promo .title {
+.card.promo .title {
 	font: 600 48px "McClatchy Sans", sans-serif;
 }
 
@@ -428,9 +413,18 @@
 	cursor: pointer;
 }
 
+.modal.screen {
+	background-color: rgba(255,255,255,0.8);
+	pointer-events: auto;
+}
+
+.modal[hidden] {
+	display: none;
+}
+
 /** Bottom version */
 
-.modal.bottom {
+.modal.bottom:not([hidden]) {
 	display: flex;
 	align-items: flex-end;
 }
@@ -445,33 +439,30 @@
 	margin: 0 auto;
 }
 
-.newsletter-signup .grid {
+/** Local news subscription (modal version) */
+
+.modal-subscription {
+	flex-wrap: wrap;
+}
+
+/** Newsletter signup (modal version) */
+
+.modal-newsletter .grid {
 	grid-template-columns: 1fr;
 	grid-row-gap: 10px;
 }
 
-@media (min-width: 600px) {
-	.newsletter-signup .grid {
-		grid-template-columns: 3fr 1fr;
-	}
-}
-
-/** Toggles and kids */
-
-.modal.screen {
-	background-color: rgba(255,255,255,0.8);
-	pointer-events: auto;
-}
-
-.modal[hidden] {
-	display: none;
-}
-
-.modal input, .modal .button {
+.modal-newsletter input, .modal-newsletter .button {
 	padding: 1em 1em .7em;
 	border-radius: 2px;
 	border: none;
 	color: #222;
 	align-self: unset;
+}
+
+@media (min-width: 600px) {
+	.modal-newsletter .grid {
+		grid-template-columns: 3fr 1fr;
+	}
 }
 

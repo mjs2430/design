@@ -14,16 +14,16 @@ The promo card is a revenue component that, like the In Depth card, extends the 
 
 #### CSS
 ```css
-.card.horizontal .promo {
-  flex-grow: 4;
+.card.promo {
+	flex-wrap: wrap;
+}
+
+.card.promo > :first-child {
+	flex-grow: 4;
 	min-height: 150px;
 }
 
-.card.horizontal .promo + .package {
-	flex-grow: 1;
-}
-
-.card.horizontal .promo .title {
+.card.promo .title {
 	font: 600 48px "McClatchy Sans", sans-serif;
 }
 ```

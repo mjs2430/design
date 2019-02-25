@@ -57,16 +57,29 @@ The card can also be made horizontal by adding a class with the same name.
 ```css
 .card.horizontal {
   flex-direction: row;
-  flex-wrap: wrap;
+}
+
+.card.horizontal > * {
+  flex: 1 1 300px;
 }
 
 .card.horizontal figure {
-  flex: 1 1 300px;
+  position: relative;
+}
+
+.card.horizontal figure img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 20%;
 }
 
 .card.horizontal .package {
   justify-content: center;
-  flex: 4 1 300px;
+  box-sizing: border-box;
 }
 
 .card.horizontal .package time {

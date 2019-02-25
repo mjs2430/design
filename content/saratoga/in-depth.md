@@ -14,31 +14,16 @@ The In Depth module is a version of the horizontal card that changes the flex-gr
 
 #### CSS
 ```css
+.card.in-depth {
+	flex-wrap: wrap;
+}
+
 .card.in-depth figure {
   flex-grow: 4;
+	min-height: 400px;
 }
 
 .card.in-depth .package {
   flex-grow: 1;
-}
-
-@media (min-width: 630px) {
-  .in-depth {
-    min-height: 400px;
-  }
-
-	.in-depth figure {
-		min-height: 300px;
-	}
-
-  .in-depth figure img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 50% 20%;
-  }
 }
 ```
