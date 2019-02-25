@@ -42,12 +42,12 @@
 
 <h4 id="example">EXAMPLE</h4>
 
-<div class="example"><div class="card horizontal">
-  <div class="promo package sans">
+<div class="example"><div class="card horizontal promo">
+  <div class="package sans">
     <h1 class="title">SIGN UP AND SAVE</h1>
     <h3>#READLOCAL</h3>
   </div>
-  <div class="package">
+  <div class="package paper">
     <p class="summary">Get six months of free digital access to The Kansas City Star</p>
     <a class="button impact">Subscribe with Google</a>
   </div>
@@ -57,28 +57,28 @@
 
 <h4 id="html">HTML</h4>
 
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card horizontal&#34;</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;promo package sans&#34;</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card horizontal promo&#34;</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package sans&#34;</span>&gt;
     &lt;<span style="color:#000080;font-weight:bold">h1</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;title&#34;</span>&gt;SIGN UP AND SAVE&lt;/<span style="color:#000080;font-weight:bold">h1</span>&gt;
     &lt;<span style="color:#000080;font-weight:bold">h3</span>&gt;#READLOCAL&lt;/<span style="color:#000080;font-weight:bold">h3</span>&gt;
   &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package&#34;</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package paper&#34;</span>&gt;
     &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;Get six months of free digital access to The Kansas City Star&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
     &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button impact&#34;</span>&gt;Subscribe with Google&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
   &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
 &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
 
 <h4 id="css">CSS</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.card.horizontal .promo {
-  <span style="color:#000080;font-weight:bold">flex-grow</span>: <span style="color:#00f">4</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.card.promo {
+	<span style="color:#000080;font-weight:bold">flex-wrap</span>: <span style="color:#000080;font-weight:bold">wrap</span>;
+}
+
+.card.promo &gt; :first-child {
+	<span style="color:#000080;font-weight:bold">flex-grow</span>: <span style="color:#00f">4</span>;
 	<span style="color:#000080;font-weight:bold">min-height</span>: <span style="color:#00f">150</span><span style="color:#000080;font-weight:bold">px</span>;
 }
 
-.card.horizontal .promo + .package {
-	<span style="color:#000080;font-weight:bold">flex-grow</span>: <span style="color:#00f">1</span>;
-}
-
-.card.horizontal .promo .title {
+.card.promo .title {
 	<span style="color:#000080;font-weight:bold">font</span>: <span style="color:#00f">600</span> <span style="color:#00f">48</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#00f">&#34;McClatchy Sans&#34;</span>, <span style="color:#000080;font-weight:bold">sans-serif</span>;
 }</code></pre></div>
   </div>
