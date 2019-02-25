@@ -1,20 +1,20 @@
 <div class="paper digest list">
-  <h3 class="underline">Atoms <small><a href="/css/atoms.css">Download</a></small></h3>
+  <h3 class="list-category">Atoms <small><a href="/css/atoms.css">Download</a></small></h3>
   {{ range where .Pages "Params.level" "atom" }}
   {{ .Render "link" }}
   {{ end }}
 
-  <h3 class="underline">Molecules <small><a href="/css/molecules.css">Download</a></small></h3>
+  <h3 class="list-category">Molecules <small><a href="/css/molecules.css">Download</a></small></h3>
   {{ range where .Pages "Params.level" "molecule" }}
   {{ .Render "link" }}
   {{ end }}
 
-  <h3 class="underline">Organisms <small><a href="/css/organisms.css">Download</a></small></h3>
+  <h3 class="list-category">Organisms <small><a href="/css/organisms.css">Download</a></small></h3>
   {{ range where .Pages "Params.level" "organism" }}
   {{ .Render "link" }}
   {{ end }}
 
-  <h3 class="underline">Subscription flow <small><a href="/css/subscription.css">Download</a></small></h3>
+  <h3 class="list-category">Subscription flow <small><a href="/css/subscription.css">Download</a></small></h3>
   {{ range where .Pages.ByWeight "Params.level" "subscription" }}
   {{ .Render "link" }}
   {{ end }}

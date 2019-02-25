@@ -69,6 +69,10 @@
 	margin: 15px 0 0;
 }
 
+.header .kicker {
+	align-self: unset;
+}
+
 .header .byline {
 	display: block;
 	margin: 0 0 10px;
@@ -389,20 +393,19 @@
  * Modals
  */
 
-.freeze {
-	overflow: hidden;
-}
-
 .modal {
 	position: fixed;
 	top: 0;
-	left: 0;
-	bottom: 0;
 	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0;
 	padding: 100px 15px 0;
-	overflow: scroll;
+	max-width: unset;
+	overflow: auto;
 	z-index: 9999;
 	transform: translateZ(0);
+	pointer-events: none;
 }
 
 .modal > * {
@@ -410,6 +413,7 @@
 	width: 100%;
 	max-width: 710px;
 	margin: 15px auto;
+	pointer-events: auto;
 }
 
 .modal .package {
@@ -441,19 +445,33 @@
 	margin: 0 auto;
 }
 
+.newsletter-signup .grid {
+	grid-template-columns: 1fr;
+	grid-row-gap: 10px;
+}
+
+@media (min-width: 600px) {
+	.newsletter-signup .grid {
+		grid-template-columns: 3fr 1fr;
+	}
+}
+
 /** Toggles and kids */
 
 .modal.screen {
 	background-color: rgba(255,255,255,0.8);
+	pointer-events: auto;
 }
 
 .modal[hidden] {
 	display: none;
-	pointer-events: none;
 }
 
-.modal input {
+.modal input, .modal .button {
 	padding: 1em 1em .7em;
 	border-radius: 2px;
 	border: none;
+	color: #222;
+	align-self: unset;
 }
+

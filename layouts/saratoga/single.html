@@ -22,5 +22,11 @@
   </div>
 
   {{ partial "atomic-list.html" .Site }}
+  
+  {{ if eq .Params.modal true }}
+  <script src="/js/modal.js"></script>
+  {{ partial "saratoga/modal.html" (dict "type" "main") }}
+  {{ partial "saratoga/modal.html" (dict "type" "bottom") }}
+  {{ end }}
 </div>
 {{ end }}
