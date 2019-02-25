@@ -13,10 +13,6 @@
     0 1px 5px 0 rgba(0, 0, 0, .13);
 }
 
-.paper .card {
-  box-shadow: none;
-}
-
 /** Cards */
 
 .card {
@@ -222,4 +218,8 @@ summary, .summary {
 .space-between {
   display: flex;
   justify-content: space-between;
+}
+
+.no-shadow {
+  box-shadow: none;
 }

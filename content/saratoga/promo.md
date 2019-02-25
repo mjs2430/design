@@ -1,5 +1,5 @@
 ---
-title: "promo"
+title: "swg-promo"
 description: "Promo card for story and section pages"
 level: "organism"
 ---
