@@ -38,4 +38,8 @@ The read next card mimics the top of a story body in card form. Mostly, it's a c
 .read-next .social-media > a:first-child {
 	padding-left: 0;
 }
+
+.read-next .more-link {
+	color: #707070;
+}
 ```
