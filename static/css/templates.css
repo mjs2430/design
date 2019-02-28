@@ -80,7 +80,9 @@ section .more-link {
 }
 
 @media (min-width: 730px) {
-  .story-template figure img {
+  .story-template figure img, 
+  .story-body .lead-item .video,
+  .story-rail .media-wrap {
     padding: 0 15px;
     box-sizing: border-box;
   }
