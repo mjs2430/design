@@ -53,41 +53,59 @@ section.full-bleed {
   padding: 0;
 }
 
-@media (min-width: 660px) {
+@media (min-width: 600px) {
   section {
     padding: 0 15px;
     /** this has to be the section element or content-box must be applied */
   }
 }
 
-.flex-columns {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
-  align-items: flex-start;
+.more-link {
+  padding: 0 15px;
 }
 
-.flex-columns.reverse {
-  flex-direction: row-reverse;
-}
+/**
+ * Flex style grid
+ */
 
 .flex-columns > * {
-  flex: 1 1 300px;
-  margin: 15px;
+  margin: 30px 0;
 }
 
-.flex-columns > .flex-columns {
-  margin: 0;
-}
+@media (min-width: 690px) {
+  .more-link {
+    padding: 0;
+  }
 
-.flex-columns .main-stage {
-  flex: 2 1 660px;
-}
+  .flex-columns {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    align-items: flex-start;
+  }
 
-.flex-columns .rail {
-  flex-basis: 330px;
-}
+  .flex-columns.reverse {
+    flex-direction: row-reverse;
+  }
 
-.flex-columns .lead-item {
-  flex-basis: 100%;
+  .flex-columns > * {
+    flex: 1 1 300px;
+    margin: 15px;
+  }
+
+  .flex-columns > .flex-columns {
+    margin: 0;
+  }
+
+  .flex-columns .main-stage {
+    flex: 2 1 660px;
+  }
+
+  .flex-columns .rail {
+    flex-basis: 330px;
+  }
+
+  .flex-columns .lead-item {
+    flex-basis: 100%;
+  }
 }
