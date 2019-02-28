@@ -7,6 +7,10 @@
   justify-content: center;
 }
 
+.ad-widget.center-ad {
+  align-items: center;
+}
+
 .ad-widget > div {
   width: 300px;
   background-color: #ddd;
@@ -105,7 +109,6 @@ section .more-link {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
-    align-items: flex-start;
   }
 
   .flex-columns.reverse {
@@ -127,6 +130,7 @@ section .more-link {
 
   .flex-columns .rail {
     flex-basis: 330px;
+    align-self: flex-start;
   }
 
   .flex-columns .lead-item {
