@@ -336,7 +336,7 @@
 
 .card.swg-promo > :first-child {
 	flex-grow: 4;
-	min-height: 150px;
+	min-height: 200px;
 }
 
 .card.swg-promo .title {

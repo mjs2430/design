@@ -1,4 +1,48 @@
 /**
+ * Ads for both
+ */
+
+.ad-widget {
+  display: flex;
+  justify-content: center;
+}
+
+.ad-widget > div {
+  width: 300px;
+  background-color: #ddd;
+}
+
+/**
+ * Sections
+ * This needs to be the section element to get the default content-box
+ * layout. If we use a <div> that needs to be set here.
+ */
+
+section {
+  max-width: 1140px;
+  margin: 30px auto;
+}
+
+section.full-bleed {
+  max-width: 100%;
+  padding: 0;
+}
+
+section .more-link {
+  padding: 0 15px;
+}
+
+@media (min-width: 600px) {
+  section {
+    padding: 0 15px;
+  }
+
+  section .more-link {
+    padding: 0;
+  }
+}
+
+/**
  * Story template
  */
 
@@ -16,21 +60,28 @@
 
 .story-rail {
   flex: 1 1 330px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .story-rail > * {
-  margin: 15px 0;
+  margin: 30px 0;
 }
 
-.story-rail .ad {
-  margin: 35px 0;
+.story-rail .paper, .story-rail .card {
+  box-shadow: none;
+}
+
+.story-rail .card .package {
+  padding-bottom: 0;
+}
+
+.story-rail .more-link {
+  padding: 0 15px;
+  margin-top: 0;
 }
 
 @media (min-width: 730px) {
-  .story-body > figure img {
+  .story-template figure img {
+    padding: 0 15px;
     box-sizing: border-box;
   }
 
@@ -43,40 +94,11 @@
  * Homepage template
  */
 
-section {
-  max-width: 1140px;
-  margin: 30px auto;
-}
-
-section.full-bleed {
-  max-width: 100%;
-  padding: 0;
-}
-
-@media (min-width: 600px) {
-  section {
-    padding: 0 15px;
-    /** this has to be the section element or content-box must be applied */
-  }
-}
-
-.more-link {
-  padding: 0 15px;
-}
-
-/**
- * Flex style grid
- */
-
 .flex-columns > * {
   margin: 30px 0;
 }
 
 @media (min-width: 690px) {
-  .more-link {
-    padding: 0;
-  }
-
   .flex-columns {
     display: flex;
     flex-wrap: wrap;
