@@ -32,10 +32,62 @@
 @media (min-width: 730px) {
   .story-body > figure img {
     box-sizing: border-box;
-    padding: 0 15px;
   }
 
   .story-rail {
     flex-grow: 0;
   }
+}
+
+/**
+ * Homepage template
+ */
+
+section {
+  max-width: 1140px;
+  margin: 30px auto;
+}
+
+section.full-bleed {
+  max-width: 100%;
+  padding: 0;
+}
+
+@media (min-width: 660px) {
+  section {
+    padding: 0 15px;
+    /** this has to be the section element or content-box must be applied */
+  }
+}
+
+.flex-columns {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+  align-items: flex-start;
+}
+
+.flex-columns.reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-columns > * {
+  flex: 1 1 300px;
+  margin: 15px;
+}
+
+.flex-columns > .flex-columns {
+  margin: 0;
+}
+
+.flex-columns .main-stage {
+  flex: 2 1 660px;
+}
+
+.flex-columns .rail {
+  flex-basis: 330px;
+}
+
+.flex-columns .lead-item {
+  flex-basis: 100%;
 }
