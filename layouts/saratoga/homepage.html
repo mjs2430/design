@@ -52,11 +52,15 @@
 
 <section>
   <div class="flex-columns">
-    <div class="flex-columns main-stage">
-      {{ partial "saratoga/digest.html" (dict "label" "sticky") }}
-      {{ partial "saratoga/digest.html" (dict "label" "sticky") }}
-      {{ partial "saratoga/digest.html" (dict "label" "sticky") }}
-      {{ partial "saratoga/digest.html" (dict "label" "sticky") }}
+    <div class="main-stage">
+      <div class="flex-columns">
+        {{ partial "saratoga/digest.html" (dict "label" "sticky") }}
+        {{ partial "saratoga/digest.html" (dict "label" "sticky") }}
+      </div>
+      <div class="flex-columns">
+        {{ partial "saratoga/digest.html" (dict "label" "sticky") }}
+        {{ partial "saratoga/digest.html" (dict "label" "sticky") }}
+      </div>
     </div>
     <div class="rail">
       <div class="ad-widget">
