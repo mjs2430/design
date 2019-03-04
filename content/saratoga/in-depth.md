@@ -16,6 +16,7 @@ The In Depth module is a version of the horizontal card that changes the flex-gr
 ```css
 .card.in-depth {
 	flex-wrap: wrap;
+	background-color: #373737;
 }
 
 .card.in-depth figure {
@@ -24,6 +25,16 @@ The In Depth module is a version of the horizontal card that changes the flex-gr
 }
 
 .card.in-depth .package {
-  flex-grow: 1;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin: 0 auto;
+	max-width: 660px;
 }
 ```
+
+## No Image version
+
+When there is missing lead art for the story, the text should fall in the middle of the box on desktop.
+
+#### EXAMPLE
+<div class="example">{{< in-depth image="hide" >}}</div>
