@@ -325,6 +325,13 @@
 
 .card.in-depth .package {
   flex-grow: 1;
+	align-items: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.card.in-depth .package > * {
+	max-width: 660px;
 }
 
 /**
