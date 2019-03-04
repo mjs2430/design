@@ -38,3 +38,6 @@ When there is missing lead art for the story, the text should fall in the middle
 
 #### EXAMPLE
 <div class="example">{{< in-depth image="hide" >}}</div>
+
+#### HTML
+{{< highlight html >}}{{< in-depth image="hide" >}}{{< /highlight >}}
