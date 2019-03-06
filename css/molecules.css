@@ -223,3 +223,7 @@ summary, .summary {
 .no-shadow {
   box-shadow: none;
 }
+
+.relative {
+  position: relative;
+}

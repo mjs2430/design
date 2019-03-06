@@ -11,11 +11,6 @@
   align-items: center;
 }
 
-.ad-widget > div {
-  width: 300px;
-  background-color: #ddd;
-}
-
 /**
  * Sections
  * This needs to be the section element to get the default content-box
@@ -74,10 +69,6 @@ section .more-link {
   box-shadow: none;
 }
 
-.story-rail .card .package {
-  padding-bottom: 0;
-}
-
 .story-rail .more-link {
   padding: 0 15px;
   margin-top: 0;
@@ -86,6 +77,8 @@ section .more-link {
 @media (min-width: 730px) {
   .story-template figure img, 
   .story-body .lead-item .video,
+  .story-body .lead-item .picture,
+  .story-body .ng_digital img,
   .story-rail .media-wrap {
     padding: 0 15px;
     box-sizing: border-box;
