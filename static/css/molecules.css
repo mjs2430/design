@@ -88,6 +88,14 @@
   color: inherit;
 }
 
+.package .more-link {
+  color: #707070;
+}
+
+.package.no-img .h3 {
+  font-size: 28px;
+}
+
 .package.marketing > :not(:first-child) {
   margin-top: 20px;
 }
