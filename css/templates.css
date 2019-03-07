@@ -74,10 +74,13 @@ section .more-link {
   margin-top: 0;
 }
 
+/** Several variants of inline assets could be cleaned */
+
 @media (min-width: 730px) {
   .story-template figure img, 
   .story-body .lead-item .video,
   .story-body .lead-item .picture,
+  .story-body .media-wrap,
   .story-body .ng_digital img,
   .story-rail .media-wrap {
     padding: 0 15px;
@@ -88,6 +91,27 @@ section .more-link {
     flex-grow: 0;
   }
 }
+
+/** Inline Video code that doesn't match the pattern */
+
+.story-body .embed-media-details {
+  padding: 10px 15px 0;
+}
+
+.story-body .media-leadtext, .story-body .mi-video-bylines {
+  font: 14px/1.5em "McClatchy Sans", sans-serif;
+  color: #707070;
+  margin: 0;
+  display: inline-block;
+  padding-right: 0.5em;
+}
+
+.story-body .dateline {
+  display: block;
+  font-style: italic;
+  font-size: 14px;
+}
+
 
 /**
  * Homepage template
@@ -119,6 +143,7 @@ section .more-link {
 
   .flex-columns .main-stage {
     flex: 2 1 660px;
+    align-self: flex-start;
   }
 
   .flex-columns .rail {
@@ -126,7 +151,20 @@ section .more-link {
     align-self: flex-start;
   }
 
-  .flex-columns .lead-item {
+  .flex-columns .lead-item,
+  .main-stage > .package:first-child {
     flex-basis: 100%;
+  }
+}
+
+/** 
+ * Overloads for older elements 
+ * Unclean repeat of media breakpoint, but these are separate
+ * from the core base template code.
+ */
+
+@media (min-width: 690px) {
+  .breaking-news-macro {
+    margin: 0 15px;
   }
 }
