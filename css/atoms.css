@@ -14,11 +14,16 @@ body {
   background-color: #f4f4f4;
   color: #222;
   font-family: "McClatchy Serif", serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 body.freeze {
   overflow: hidden;
 }
+
+/**
+ * Text elements
+ */
 
 a {
   text-decoration: none;
@@ -79,6 +84,38 @@ time {
   color: #707070;
 }
 
+/**
+ * Sections
+ */
+
+section {
+  max-width: 1140px;
+  margin: 30px auto;
+}
+
+section.full-bleed {
+  max-width: 100%;
+  padding: 0;
+}
+
+section .more-link {
+  padding: 0 15px;
+}
+
+@media (min-width: 600px) {
+  section {
+    padding: 0 15px;
+  }
+
+  section .more-link {
+    padding: 0;
+  }
+}
+
+/**
+ * Media
+ */
+
 figure {
   margin: 0;
 }
@@ -93,6 +130,10 @@ figcaption, .caption {
   color: #707070;
   padding: 10px 15px 0;
 }
+
+/**
+ * Form elements
+ */
 
 button, .button {
   display: inline-block;
@@ -127,7 +168,9 @@ hr {
   border: .5px solid #707070;
 }
 
-/** Typography */
+/**
+ * Typography 
+ */
 
 .kicker {
   color: inherit;
@@ -142,10 +185,6 @@ hr {
 .kicker:hover {
   text-decoration: none;
 }
-
-/* .kicker a { */
-/*   color: inherit; */
-/* } */
 
 .byline {
   display: inline-block;
@@ -203,4 +242,22 @@ hr {
 
 .more-link:hover {
   text-decoration: none;
+}
+
+.dateline {
+  display: block;
+  font-style: italic;
+  font-size: 14px;
+}
+
+/**
+ * Icons
+ */
+
+.i-play-circle {
+	background: transparent url('icons/play-circle.svg') no-repeat;
+}
+
+.invert {
+  filter: invert(1);
 }

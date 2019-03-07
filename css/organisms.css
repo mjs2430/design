@@ -1,5 +1,5 @@
 /**
- * Generic grid
+ * Generic CSS grid
  */
 
 .grid {
@@ -7,6 +7,104 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 30px;
 }
+
+/**
+ * Flexbox grid
+ */
+
+.flex-columns > * {
+  margin: 30px 0;
+}
+
+@media (min-width: 690px) {
+  .flex-columns {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  .flex-columns.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .flex-columns > * {
+    flex: 1 1 300px;
+    margin: 15px;
+  }
+
+  .flex-columns > .flex-columns {
+    margin: 0;
+  }
+
+  .flex-columns .main-stage {
+    flex: 2 1 660px;
+    align-self: flex-start;
+  }
+
+  .flex-columns .rail {
+    flex-basis: 330px;
+    align-self: flex-start;
+  }
+
+  .flex-columns .lead-item,
+  .main-stage > .package:first-child {
+    flex-basis: 100%;
+  }
+}
+
+/**
+ * Immersive media card
+ */
+
+.immersive {
+  margin-top: 0;
+}
+
+.immersive .media {
+	display: flex;
+  background-position: center;
+  background-size: cover;
+  height: 85vh;
+}
+
+.immersive .content {
+  background: rgba(0,0,0,.5);
+	flex: 1;
+	display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+	padding-bottom: 30px;
+}
+
+.immersive .content > * {
+  max-width: 920px;
+  margin: 15px auto;
+	padding: 0 15px;
+}
+
+.immersive button {
+	border: none;
+	height: 60px;
+	width: 60px;
+  padding: 0;
+}
+
+.immersive .title {
+	font: 600 40px/1.2em "McClatchy Serif", serif;
+	text-transform: none;
+}
+
+.immersive-summary {
+  font-size: 20px;
+}
+
+@media (min-width: 760px) {
+	.immersive .title {
+		font-size: 64px;
+	}
+}
+
 
 /**
  * Story body
@@ -26,10 +124,7 @@
 	box-sizing: content-box;
 }
 
-.story-body > figure,
-.story-body > .lead-item,
-.story-body > .ng_digital,
-.story-body > .inline-video {
+.story-body > figure {
 	max-width: 100%;
 	margin: 30px 0;
 	padding: 0;

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>story</title>
+    <title>immersive</title>
     
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -35,64 +35,49 @@
     </div>
 <div class="panels">
   <div class="paper story-body details">
-    <h2 class="page-header">
-      <span class="updated">RECENTLY UPDATED</span>story</h2>
+    <h2 class="page-header">immersive</h2>
     
 
-<p>The primary challenge with the story body is the design rule that media should bleed all the way to the edge of the screen on mobile and tablet devices, but be restricted to a maximum width as the screen gets larger. Additionally, different media or embeddable content will have different widths.</p>
+<p>The immersive card can be used to increase the impact of a story. It should go the full width of the screen and use a majority of the height.</p>
 
-<p>A container-based approach to these rules requires multiple breakpoints and creates a couple of pressure points as the number of organisms increases. Code grows quickly with each addition, as all breakpoints for each change must be considered or written. Re-use suffers as elements get more and more isolated with deeply nested CSS rules.</p>
+<h4 id="example">Example</h4>
 
-<p>To combat these issues, we looked at the story body itself instead of each possible element to determine the design rules. We came up with a small list of general ideas.</p>
+<div class="example"><figure class="immersive">
+  <div class="media impact video" style="background-image:url(https://cf-images.us-east-1.prod.boltdns.net/v1/static/5502557046001/0ae7c577-98c6-4740-be40-476282561b76/3a881153-146d-4439-93a1-6159833783e5/480x270/match/image.jpg);" data-toggle="modal" data-target="#immersiveModal-12818709">
+    <div class="content">
+      <button
+        class="i-play-circle invert video-modal__trigger"
+        data-toggle="modal"
+        data-target="#immersiveModal-12818709">
+      </button>
+      <h2 class="caps h6"><a class="kicker" href="#">Crime</a></h2>
+      <h3 class="title">More than 50 children killed in 3 years: Guns take a heavy toll</h3>
+    </div>
+  </div>
+  <figcaption>TAMMY LJUNGBLAD</figcaption>
+</figure>
 
-<ul>
-<li>Text should be centered in the middle and no wider than 720px.</li>
-<li>Everything except media should have 15px of space on the left and right.</li>
-<li>Media should be allowed to go to 1140px wide to elevate value.</li>
-<li>Media and story modules should have 30px of vertical space.</li>
-<li>Advertising should have 50px of vertical space.</li>
-<li>Subheads should be 600 weight and Sans Serif.</li>
-</ul>
+</div>
 
-<p>The last challenge was to tackle the idea that as dynamic content becomes more important to our designs, the structure would need to be able to adopt it without increasing the code base more than necessary. We needed a basic default setup that could be easily overloaded. We settled on a direct child approach, which could provide what we needed in the fewest lines of code.</p>
+<h4 id="html">HTML</h4>
 
-<h4 id="example">EXAMPLE</h4>
-
-<p>This site is made with these rules, so this panel is one example. There is also a <a href="../../saratoga/sample/story/">sample story</a> that has content more representative of our articles.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">figure</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;immersive&#34;</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;media impact video&#34;</span> <span style="color:#f00">style</span>=<span style="color:#00f">&#34;background-image:url(https://cf-images.us-east-1.prod.boltdns.net/v1/static/5502557046001/0ae7c577-98c6-4740-be40-476282561b76/3a881153-146d-4439-93a1-6159833783e5/480x270/match/image.jpg);&#34;</span> <span style="color:#f00">data-toggle</span>=<span style="color:#00f">&#34;modal&#34;</span> <span style="color:#f00">data-target</span>=<span style="color:#00f">&#34;#immersiveModal-12818709&#34;</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;content&#34;</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">button</span>
+        <span style="color:#f00">class</span>=<span style="color:#00f">&#34;i-play-circle invert video-modal__trigger&#34;</span>
+        <span style="color:#f00">data-toggle</span>=<span style="color:#00f">&#34;modal&#34;</span>
+        <span style="color:#f00">data-target</span>=<span style="color:#00f">&#34;#immersiveModal-12818709&#34;</span>&gt;
+      &lt;/<span style="color:#000080;font-weight:bold">button</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">h2</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;caps h6&#34;</span>&gt;&lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;kicker&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;Crime&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">h2</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">h3</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;title&#34;</span>&gt;More than 50 children killed in 3 years: Guns take a heavy toll&lt;/<span style="color:#000080;font-weight:bold">h3</span>&gt;
+    &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+  &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">figcaption</span>&gt;TAMMY LJUNGBLAD&lt;/<span style="color:#000080;font-weight:bold">figcaption</span>&gt;
+&lt;/<span style="color:#000080;font-weight:bold">figure</span>&gt;</code></pre></div>
 
 <h4 id="css">CSS</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.story-body {
-  --headerFamily: <span style="color:#00f">&#34;McClatchy Sans&#34;</span>, <span style="color:#000080;font-weight:bold">sans-serif</span>;
-  --headerWeight: <span style="color:#00f">600</span>;
-  --headerTransform: <span style="color:#000080;font-weight:bold">uppercase</span>;
-}
-
-.story-body &gt; * {
-  <span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#00f">720</span><span style="color:#000080;font-weight:bold">px</span>;
-	<span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">0</span> <span style="color:#00f">15</span><span style="color:#000080;font-weight:bold">px</span>;
-	<span style="color:#000080;font-weight:bold">margin-right</span>: <span style="color:#000080;font-weight:bold">auto</span>;
-  <span style="color:#000080;font-weight:bold">margin-left</span>: <span style="color:#000080;font-weight:bold">auto</span>;
-}
-
-.story-body &gt; <span style="color:#000080;font-weight:bold">figure</span> {
-	<span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#00f">100</span><span style="color:#000080;font-weight:bold">%</span>;
-	<span style="color:#000080;font-weight:bold">margin</span>: <span style="color:#00f">30</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#00f">0</span>;
-	<span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">0</span>;
-}
-
-.story-body <span style="color:#000080;font-weight:bold">img</span>, .story-body <span style="color:#000080;font-weight:bold">figcaption</span> {
-	<span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#00f">1140</span><span style="color:#000080;font-weight:bold">px</span>;
-	<span style="color:#000080;font-weight:bold">margin</span>: <span style="color:#00f">0</span> <span style="color:#000080;font-weight:bold">auto</span>;
-}
-
-.story-body .story-module {
-  <span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">0</span> <span style="color:#00f">15</span><span style="color:#000080;font-weight:bold">px</span>;
-  <span style="color:#000080;font-weight:bold">margin</span>: <span style="color:#00f">30</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#000080;font-weight:bold">auto</span>;
-}
-
-.story-body .ad {
-  <span style="color:#000080;font-weight:bold">margin</span>: <span style="color:#00f">50</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#000080;font-weight:bold">auto</span>;
-}</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"></code></pre></div>
   </div>
 
   <div class="paper digest list">
