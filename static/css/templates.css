@@ -12,36 +12,6 @@
 }
 
 /**
- * Sections
- * This needs to be the section element to get the default content-box
- * layout. If we use a <div> that needs to be set here.
- */
-
-section {
-  max-width: 1140px;
-  margin: 30px auto;
-}
-
-section.full-bleed {
-  max-width: 100%;
-  padding: 0;
-}
-
-section .more-link {
-  padding: 0 15px;
-}
-
-@media (min-width: 600px) {
-  section {
-    padding: 0 15px;
-  }
-
-  section .more-link {
-    padding: 0;
-  }
-}
-
-/**
  * Story template
  */
 
@@ -53,9 +23,35 @@ section .more-link {
   padding: 15px 0;
 }
 
+/* Body */
+
 .story-body {
   flex: 1 1 400px;
 }
+
+.story-body > .lead-item,
+.story-body > .ng_digital,
+.story-body > .inline-video {
+	max-width: 100%;
+	margin: 30px 0;
+	padding: 0;
+}
+
+/** Inline Video code that doesn't match the pattern */
+.story-body .embed-media-details {
+  padding: 10px 15px 0;
+}
+
+.story-body .media-leadtext,
+.story-body .mi-video-bylines {
+  font: 14px/1.5em "McClatchy Sans", sans-serif;
+  color: #707070;
+  margin: 0;
+  display: inline-block;
+  padding-right: 0.5em;
+}
+
+/* Rail */
 
 .story-rail {
   flex: 1 1 330px;
@@ -75,12 +71,10 @@ section .more-link {
 }
 
 /** Several variants of inline assets could be cleaned */
-
 @media (min-width: 730px) {
   .story-template figure img, 
   .story-body .lead-item .video,
   .story-body .lead-item .picture,
-  .story-body .media-wrap,
   .story-body .ng_digital img,
   .story-rail .media-wrap {
     padding: 0 15px;
@@ -89,71 +83,6 @@ section .more-link {
 
   .story-rail {
     flex-grow: 0;
-  }
-}
-
-/** Inline Video code that doesn't match the pattern */
-
-.story-body .embed-media-details {
-  padding: 10px 15px 0;
-}
-
-.story-body .media-leadtext, .story-body .mi-video-bylines {
-  font: 14px/1.5em "McClatchy Sans", sans-serif;
-  color: #707070;
-  margin: 0;
-  display: inline-block;
-  padding-right: 0.5em;
-}
-
-.story-body .dateline {
-  display: block;
-  font-style: italic;
-  font-size: 14px;
-}
-
-
-/**
- * Homepage template
- */
-
-.flex-columns > * {
-  margin: 30px 0;
-}
-
-@media (min-width: 690px) {
-  .flex-columns {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-  }
-
-  .flex-columns.reverse {
-    flex-direction: row-reverse;
-  }
-
-  .flex-columns > * {
-    flex: 1 1 300px;
-    margin: 15px;
-  }
-
-  .flex-columns > .flex-columns {
-    margin: 0;
-  }
-
-  .flex-columns .main-stage {
-    flex: 2 1 660px;
-    align-self: flex-start;
-  }
-
-  .flex-columns .rail {
-    flex-basis: 330px;
-    align-self: flex-start;
-  }
-
-  .flex-columns .lead-item,
-  .main-stage > .package:first-child {
-    flex-basis: 100%;
   }
 }
 
