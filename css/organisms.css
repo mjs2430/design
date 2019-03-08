@@ -46,10 +46,9 @@
     align-self: flex-start;
   }
 
-  .flex-columns .lead-item,
-  .main-stage > .package:first-child {
-    flex-basis: 100%;
-  }
+	.flex-columns .main-stage > :first-child {
+		flex-basis: 100%;
+	}
 }
 
 /**
