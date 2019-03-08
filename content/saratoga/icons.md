@@ -1,62 +1,42 @@
 ---
 title: "icons"
-description: "Optimized icon set from fontawesome"
-level: "subscription"
+description: "Optimized fontawesome icon set"
+level: "atom"
 ---
 
-These are pulled from fontawesome to minimize the payload to only what is absolutely necessary and optimized for cleaner HTML.
+This is a reduced and optimized set of Fontawesome free icons we use on the site.
 
 #### EXAMPLE
-<div class="package">
-  <button class="ghost icon facebook">Sign up with Facebook</button>
-</div>
+{{< partial src="saratoga/social-media.html" >}}
 
 #### HTML
-```html
-<div class="package">
-  <button class="ghost icon facebook">Sign up with Facebook</button>
-</div>
-```
+{{< highlight html >}}
+{{< partial src="saratoga/social-media.html" >}}
+{{< /highlight >}}
 
 #### CSS
 ```css
-.icon {
-  display: flex;
-  align-items: center;
+.i-play-circle {
+	background: transparent url('icons/play-circle.svg') no-repeat;
 }
 
-button.icon, .button.icon {
-  justify-content: center;
+.i-twitter {
+  background: transparent url('icons/twitter.svg') no-repeat;
 }
 
-.icon:before {
-  padding-right: 10px;
+.i-facebook-f {
+  background: transparent url('icons/facebook-f.svg') no-repeat center;
 }
 
-.icon.facebook:before {
-  content: url(./icons/facebook-f.svg);
-  width: .515625em;
+.i-envelope {
+  background: transparent url('icons/envelope.svg') no-repeat;
 }
 
-.icon.google:before {
-  content: url(./icons/google.svg);
-  width: .953125em;
+.i-phone {
+  background: transparent url('icons/phone.svg') no-repeat;
 }
 
-.icon.paypal:before {
-  content: url(./icons/paypal.svg);
-  width: .75em;
-}
-
-.icon.apple:before {
-  content: url(./icons/apple-pay.svg);
-  width: 1.25em;
-  transform: scale(1.7);
-  transform-origin: 50% 30%;
-}
-
-.icon.visa:before {
-  content: url(./icons/cc-visa.svg);
-  width: 1.75em;
+.invert {
+  filter: invert(1);
 }
 ```

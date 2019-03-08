@@ -1,18 +1,24 @@
 <div class="paper digest list">
-  <h3 class="list-category">Atoms <small><a href="/css/atoms.css">Download</a></small></h3>
-  {{ range where .Pages "Params.level" "atom" }}
-  {{ .Render "link" }}
-  {{ end }}
+  <div class="atoms">
+    <h3 class="list-category">Atoms <small><a href="/css/atoms.css">Download</a></small></h3>
+    {{ range where .Pages "Params.level" "atom" }}
+    {{ .Render "link" }}
+    {{ end }}
+  </div>
 
-  <h3 class="list-category">Molecules <small><a href="/css/molecules.css">Download</a></small></h3>
-  {{ range where .Pages "Params.level" "molecule" }}
-  {{ .Render "link" }}
-  {{ end }}
+  <div class="molecules">
+    <h3 class="list-category">Molecules <small><a href="/css/molecules.css">Download</a></small></h3>
+    {{ range where .Pages "Params.level" "molecule" }}
+    {{ .Render "link" }}
+    {{ end }}
+  </div>
 
-  <h3 class="list-category">Organisms <small><a href="/css/organisms.css">Download</a></small></h3>
-  {{ range where .Pages "Params.level" "organism" }}
-  {{ .Render "link" }}
-  {{ end }}
+  <div class="organisms">
+    <h3 class="list-category">Organisms <small><a href="/css/organisms.css">Download</a></small></h3>
+    {{ range where .Pages "Params.level" "organism" }}
+    {{ .Render "link" }}
+    {{ end }}
+  </div>
 
   <h3 class="list-category">Templates <small><a href="/css/templates.css">Download</a></small></h3>
   <div class="package">

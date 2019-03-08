@@ -67,6 +67,18 @@ td:first-child {
   z-index: 1;
 }
 
+.list .atoms {
+  background-color: #FDFDF6;
+}
+
+.list .molecules {
+  background-color: #D2EFF2;
+}
+
+.list .organisms {
+  background-color: #A5C3E9;
+}
+
 .details {
   position: relative;
   z-index: 2;
