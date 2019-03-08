@@ -35,6 +35,6 @@ A very small molecule, the icons are simply a center-justified flex row with opt
 
 Properties | Value
 --- | ---
-Padding | 15px placed on the `<a>`
+Margin | 15px placed on the `<a>`
 Icon Width | 20px
 Icon Height | 20px
