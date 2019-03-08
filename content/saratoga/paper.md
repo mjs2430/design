@@ -11,8 +11,8 @@ In our digests, the design dictates that there be 15px of space between the labe
 #### Example
 
 <div class="example grid">
-{{< digest label="sticky" >}}
-{{< digest >}}
+{{< partial src="saratoga/digest.html" label="sticky" >}}
+{{< partial src="saratoga/digest.html" >}}
 </div>
 
 #### HTML
