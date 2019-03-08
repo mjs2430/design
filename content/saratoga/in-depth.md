@@ -7,10 +7,14 @@ level: "organism"
 The In Depth module is a version of the horizontal card that changes the flex-grow weight from the right side to the left.
 
 #### Example
-<div class="example">{{< in-depth >}}</div>
+<div class="example">
+{{< partial src="saratoga/in-depth.html" >}}
+</div>
 
 #### HTML
-{{< highlight html >}}{{< in-depth >}}{{< /highlight >}}
+{{< highlight html >}}
+{{< partial src="saratoga/in-depth.html" >}}
+{{< /highlight >}}
 
 #### CSS
 ```css
@@ -37,7 +41,11 @@ The In Depth module is a version of the horizontal card that changes the flex-gr
 When there is missing lead art for the story, the text should fall in the middle of the box on desktop.
 
 #### EXAMPLE
-<div class="example">{{< in-depth image="hide" >}}</div>
+<div class="example">
+{{< partial src="saratoga/in-depth.html" image="hide" >}}
+</div>
 
 #### HTML
-{{< highlight html >}}{{< in-depth image="hide" >}}{{< /highlight >}}
+{{< highlight html >}}
+{{< partial src="saratoga/in-depth.html" image="hide" >}}
+{{< /highlight >}}

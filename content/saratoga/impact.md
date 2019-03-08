@@ -8,12 +8,16 @@ The impact molecule simply reverses the color scheme of any element, and has a c
 
 #### Example
 <div class="example grid">
-  {{< digest >}}
-  <div>{{< card class="impact" >}}</div>
+  {{< partial src="saratoga/digest.html" >}}
+  <div>
+  {{< partial src="saratoga/card.html" class="impact" >}}
+  </div>
 </div>
 
 #### HTML
-{{< highlight html >}}{{< card class="impact" >}}{{< /highlight >}}
+{{< highlight html >}}
+{{< partial src="saratoga/card.html" class="impact" >}}
+{{< /highlight >}}
 
 #### CSS
 ```css

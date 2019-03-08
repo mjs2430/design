@@ -8,11 +8,15 @@ The big news organism is a series of independent areas designed to give newsroom
 
 #### EXAMPLE
 
-<div class="example" style="padding: 15px 0;">{{< big-news >}}</div>
+<div class="example" style="padding: 15px 0;">
+{{< partial src="saratoga/big-news.html" >}}
+</div>
 
 #### HTML
 
-{{< highlight html >}}{{< big-news >}}{{< /highlight >}}
+{{< highlight html >}}
+{{< partial src="saratoga/big-news.html" >}}
+{{< /highlight >}}
 
 #### CSS
 

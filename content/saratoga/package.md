@@ -10,7 +10,7 @@ The package molecule is the backbone of the design system. Spacing for  most mol
 #### Example
 
 <div class="example grid">
-{{< card >}}
+{{< partial src="saratoga/card.html" >}}
 </div>
 
 #### HTML
@@ -69,13 +69,15 @@ These differences are important. For example, rules for the digest state that th
 
 ###### Example
 
-<div class="example grid">{{< digest >}}</div>
+<div class="example grid">
+{{< partial src="saratoga/digest.html" >}}
+</div>
 
 In a grid of cards, on the other hand, timestamps should line up. We can do this with the `package` molecule as well, needing no additional CSS.  This approach also provides the desired behavior on mobile. When there are no adjacent cards, the space collapses as desired.
 
 ###### Example
 
 <div class="example grid">
-{{< card >}}
-{{< card long >}}
+{{< partial src="saratoga/card.html" >}}
+{{< partial src="saratoga/card.html" >}}
 </div>

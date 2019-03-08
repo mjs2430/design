@@ -11,7 +11,9 @@ Modals should be consistent across products and vendors to benefit our readers. 
 <button class="ghost" onclick="toggleModal('main-modal')">Show modal</button>
 
 #### HTML
-{{< highlight html >}}{{< modal >}}{{< /highlight >}}
+{{< highlight html >}}
+{{< partial src="saratoga/modal.html" >}}
+{{< /highlight >}}
 
 #### CSS
 ```css
@@ -92,7 +94,9 @@ function toggleModal(id, force) {
 <button class="ghost" onclick="toggleModal('bottom-modal')">Show modal</button>
 
 #### HTML
-{{< highlight html >}}{{< modal type="bottom" >}}{{< /highlight >}}
+{{< highlight html >}}
+{{< partial src="saratoga/modal.html" type="bottom" >}}
+{{< /highlight >}}
 
 #### CSS
 ```css

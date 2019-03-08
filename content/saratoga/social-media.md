@@ -7,10 +7,12 @@ level: "molecule"
 A very small molecule, the icons are simply a center-justified flex row with optimal padding for all devices.
 
 #### Example
-{{< social-media >}}
+{{< partial src="saratoga/social-media.html" >}}
 
 #### HTML 
-{{< highlight html >}}{{< social-media >}}{{< /highlight >}}
+{{< highlight html >}}
+{{< partial src="saratoga/social-media.html" >}}
+{{< /highlight >}}
 
 #### CSS
 ```CSS

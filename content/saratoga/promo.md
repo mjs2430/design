@@ -7,10 +7,14 @@ level: "organism"
 The promo card is a revenue component that, like the In Depth card, extends the horizontal card molecule but adjusts the flex-grow weights.
 
 #### EXAMPLE
-<div class="example">{{< promo >}}</div>
+<div class="example">
+{{< partial src="saratoga/promo.html" >}}
+</div>
 
 #### HTML
-{{< highlight html >}}{{< promo >}}{{< /highlight >}}
+{{< highlight html >}}
+{{< partial src="saratoga/promo.html" >}}
+{{< /highlight >}}
 
 #### CSS
 ```css
