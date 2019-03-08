@@ -226,22 +226,29 @@ hr {
 }
 
 .more-link {
-  display: flex;
-  align-items: center;
+  display: block;
   font: 600 14px/1.5em "McClatchy Sans";
   color: #707070;
   text-transform: uppercase;
   margin-top: 15px;
 }
 
-.more-link:after, .arrow:after {
-  content: "\2192";
-  font-size: 20px;
+.more-link:after {
+  content: '';
+  background: transparent url('icons/arrow-right.svg') no-repeat center;
+  display: inline-block;
+  width: 1em;
+  height: .8em;
   margin-left: 4px;
+  transition: transform .6s ease;
 }
 
 .more-link:hover {
   text-decoration: none;
+}
+
+.more-link:hover:after {
+  transform: translateX(4px);
 }
 
 .dateline {
@@ -263,11 +270,15 @@ hr {
 }
 
 .i-facebook-f {
-  background: transparent url('icons/facebook-f.svg') no-repeat;
+  background: transparent url('icons/facebook-f.svg') no-repeat center;
 }
 
 .i-envelope {
   background: transparent url('icons/envelope.svg') no-repeat;
+}
+
+.i-phone {
+  background: transparent url('icons/phone.svg') no-repeat;
 }
 
 .invert {

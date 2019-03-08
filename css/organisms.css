@@ -272,21 +272,19 @@
 
 .author-card .social-media {
 	flex-wrap: wrap;
-	justify-content: flex-start;
+	justify-content: center;
 	padding-left: 5px;
 }
 
 .author-card .social-media a {
-  padding: 0 10px;
-}
-
-.author-card .social-media svg {
-	width: 16px;
 	height: 16px;
+	width: 16px;
+	margin: 10px;
 }
 
-.author-card .social-media .phone_num {
-	display: inline-block;
+.author-card .social-media .i-phone {
+	padding-left: 24px;
+	width: auto;
 }
 
 .author-subscription {
