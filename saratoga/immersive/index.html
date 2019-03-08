@@ -79,7 +79,54 @@
 &lt;/<span style="color:#000080;font-weight:bold">figure</span>&gt;</code></pre></div>
 
 <h4 id="css">CSS</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.immersive {
+  <span style="color:#000080;font-weight:bold">margin-top</span>: <span style="color:#00f">0</span>;
+}
+
+.immersive .media {
+	<span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">flex</span>;
+  <span style="color:#000080;font-weight:bold">background-position</span>: <span style="color:#000080;font-weight:bold">center</span>;
+  <span style="color:#000080;font-weight:bold">background-size</span>: <span style="color:#000080;font-weight:bold">cover</span>;
+  <span style="color:#000080;font-weight:bold">height</span>: <span style="color:#00f">85</span><span style="color:#000080;font-weight:bold">vh</span>;
+}
+
+.immersive .content {
+  <span style="color:#000080;font-weight:bold">background</span>: rgba(<span style="color:#00f">0</span>,<span style="color:#00f">0</span>,<span style="color:#00f">0</span>,<span style="color:#00f">.5</span>);
+	<span style="color:#000080;font-weight:bold">flex</span>: <span style="color:#00f">1</span>;
+	<span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">flex</span>;
+  <span style="color:#000080;font-weight:bold">flex-direction</span>: <span style="color:#000080;font-weight:bold">column</span>;
+  <span style="color:#000080;font-weight:bold">justify-content</span>: <span style="color:#000080;font-weight:bold">flex</span>-<span style="color:#000080;font-weight:bold">end</span>;
+  <span style="color:#000080;font-weight:bold">text-align</span>: <span style="color:#000080;font-weight:bold">center</span>;
+	<span style="color:#000080;font-weight:bold">padding-bottom</span>: <span style="color:#00f">30</span><span style="color:#000080;font-weight:bold">px</span>;
+}
+
+.immersive .content &gt; * {
+  <span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#00f">920</span><span style="color:#000080;font-weight:bold">px</span>;
+  <span style="color:#000080;font-weight:bold">margin</span>: <span style="color:#00f">15</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#000080;font-weight:bold">auto</span>;
+	<span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">0</span> <span style="color:#00f">15</span><span style="color:#000080;font-weight:bold">px</span>;
+}
+
+.immersive <span style="color:#000080;font-weight:bold">button</span> {
+	<span style="color:#000080;font-weight:bold">border</span>: <span style="color:#000080;font-weight:bold">none</span>;
+	<span style="color:#000080;font-weight:bold">height</span>: <span style="color:#00f">60</span><span style="color:#000080;font-weight:bold">px</span>;
+	<span style="color:#000080;font-weight:bold">width</span>: <span style="color:#00f">60</span><span style="color:#000080;font-weight:bold">px</span>;
+  <span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">0</span>;
+}
+
+.immersive .title {
+	<span style="color:#000080;font-weight:bold">font</span>: <span style="color:#00f">600</span> <span style="color:#00f">40</span><span style="color:#000080;font-weight:bold">px</span>/<span style="color:#00f">1.2</span><span style="color:#000080;font-weight:bold">em</span> <span style="color:#00f">&#34;McClatchy Serif&#34;</span>, <span style="color:#000080;font-weight:bold">serif</span>;
+	<span style="color:#000080;font-weight:bold">text-transform</span>: <span style="color:#000080;font-weight:bold">none</span>;
+}
+
+.immersive-summary {
+  <span style="color:#000080;font-weight:bold">font-size</span>: <span style="color:#00f">20</span><span style="color:#000080;font-weight:bold">px</span>;
+}
+
+@<span style="color:#000080;font-weight:bold">media</span> (<span style="color:#000080;font-weight:bold">min-width</span>: <span style="color:#000080;font-weight:bold">760px</span>) {
+	.immersive .title {
+		<span style="color:#000080;font-weight:bold">font-size</span>: <span style="color:#00f">64</span><span style="color:#000080;font-weight:bold">px</span>;
+	}
+}</code></pre></div>
   </div>
 
   <div class="paper digest list">
