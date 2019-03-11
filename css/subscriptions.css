@@ -111,29 +111,29 @@ button.icon, .button.icon {
 }
 
 .icon.facebook:before {
-  content: url(./icons/facebook-f.svg);
+  content: url(../icons/facebook-f.svg);
   width: .515625em;
 }
 
 .icon.google:before {
-  content: url(./icons/google.svg);
+  content: url(../icons/google.svg);
   width: .953125em;
 }
 
 .icon.paypal:before {
-  content: url(./icons/paypal.svg);
+  content: url(../icons/paypal.svg);
   width: .75em;
 }
 
 .icon.apple:before {
-  content: url(./icons/apple-pay.svg);
+  content: url(../icons/apple-pay.svg);
   width: 1.25em;
   transform: scale(1.7);
   transform-origin: 50% 30%;
 }
 
 .icon.visa:before {
-  content: url(./icons/cc-visa.svg);
+  content: url(../icons/cc-visa.svg);
   width: 1.75em;
 }
 
@@ -177,23 +177,23 @@ input[type=checkbox] + label, input[type=radio] + label {
 }
 
 input[type=checkbox] + label:before {
-  content: url('./icons/square.svg');
+  content: url('../icons/square.svg');
   width: 16px;
   margin-right: 10px;
 }
 
 input[type=checkbox]:checked + label:before {
-  content: url('./icons/check-square.svg');
+  content: url('../icons/check-square.svg');
 }
 
 input[type=radio] + label:before {
-  content: url('./icons/outline-circle.svg');
+  content: url('../icons/outline-circle.svg');
   width: 16px;
   margin-right: 10px;
 }
 
 input[type=radio]:checked + label:before {
-  content: url('./icons/dot-circle.svg');
+  content: url('../icons/dot-circle.svg');
 }
 
 /** 
@@ -217,7 +217,7 @@ input[type=checkbox]:checked + .saved-card {
 }
 
 input[type=checkbox]:checked + .saved-card:before {
-  content: url('./icons/check-circle.svg');
+  content: url('../icons/check-circle.svg');
   filter: invert(1);
 }
 

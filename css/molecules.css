@@ -158,7 +158,7 @@
 }
 
 .expander:after {
-  content: url(./icons/caret-expander.svg);
+  content: url(../icons/caret-expander.svg);
   width: 14px;
   margin-left: 5px;
   transition: transform .5s ease;
