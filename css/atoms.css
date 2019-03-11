@@ -180,6 +180,7 @@ hr {
   border-radius: 2px;
   align-self: flex-start;
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 .kicker:hover {
