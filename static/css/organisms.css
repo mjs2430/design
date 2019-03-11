@@ -46,7 +46,8 @@
     align-self: flex-start;
   }
 
-	.flex-columns .main-stage > :first-child {
+	/** Special case for lead section **/
+	.lead-section .main-stage > :first-child {
 		flex-basis: 100%;
 	}
 }
