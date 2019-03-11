@@ -23,7 +23,7 @@ The generic rules make for a very flexible setup, where we can force each child 
 }
 
 .expander:after {
-  content: url(./icons/caret-expander.svg);
+  content: url(../icons/caret-expander.svg);
   width: 14px;
   margin-left: 5px;
   transition: transform .5s ease;
