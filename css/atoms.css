@@ -27,7 +27,7 @@ body.freeze {
 
 a {
   text-decoration: none;
-  color: #0066b3;
+  color: #31409F;
 }
 
 a:hover {
@@ -98,7 +98,7 @@ section.full-bleed {
   padding: 0;
 }
 
-section .more-link {
+section .more-link, section > h5 {
   padding: 0 15px;
 }
 
@@ -107,7 +107,7 @@ section .more-link {
     padding: 0 15px;
   }
 
-  section .more-link {
+  section .more-link, section > h5 {
     padding: 0;
   }
 }
@@ -175,7 +175,7 @@ hr {
 .kicker {
   color: inherit;
   display: inline-block;
-  padding: .4em .6em;
+  padding: 5px 8px 3px;
   border: 1px solid #4a4a4a;
   border-radius: 2px;
   align-self: flex-start;

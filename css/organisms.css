@@ -294,7 +294,7 @@
 
 .author-card .callout {
   font: 14px/20px "McClatchy Sans",sans-serif;
-  color: #0066b3;
+  color: #31409F;
 }
 
 /**
@@ -459,6 +459,7 @@
  */
 
 .read-next .package {
+	width: 100%;
 	max-width: 710px;
 	margin: 0 auto;
 }
@@ -483,6 +484,7 @@
 
 .read-next .more-link {
 	color: #707070;
+	padding: 0;
 }
 
 /**
