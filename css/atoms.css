@@ -203,6 +203,7 @@ hr {
 .credit {
   display: inline-block;
   font: italic 400 11px/1.5em "McClatchy Sans";
+  text-transform: uppercase;
 }
 
 .label {
@@ -227,7 +228,7 @@ hr {
 }
 
 .more-link {
-  display: block;
+  display: flex;
   font: 600 14px/1.5em "McClatchy Sans";
   color: #707070;
   text-transform: uppercase;
@@ -235,12 +236,10 @@ hr {
 }
 
 .more-link:after {
-  content: '';
-  background: transparent url('../icons/arrow-right.svg') no-repeat center;
-  display: inline-block;
-  width: 1em;
-  height: .8em;
-  margin-left: 4px;
+  content: "\2192";
+  padding-left: 4px;
+  font: 20px monospace;
+  line-height: 16px;
   transition: transform .6s ease;
 }
 
