@@ -2,13 +2,9 @@
  * Ads for both
  */
 
-.ad-widget {
-  display: flex;
-  justify-content: center;
-}
-
-.ad-widget.center-ad {
-  align-items: center;
+.ad-widget iframe, .ad-widget .iframe {
+  display: block;
+  margin: 0 auto;
 }
 
 /**
@@ -91,6 +87,10 @@
  * Unclean repeat of media breakpoint, but these are separate
  * from the core base template code.
  */
+
+.breaking-news-macro .breaking-title {
+  font-weight: 700;
+}
 
 @media (min-width: 690px) {
   .breaking-news-macro {
