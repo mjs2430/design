@@ -2,7 +2,12 @@
  * Ads for both
  */
 
-.ad-widget iframe, .ad-widget .iframe {
+.ad-widget {
+  text-align: center;
+}
+
+.ad-widget iframe, 
+.ad-widget .iframe {
   display: block;
   margin: 0 auto;
 }
