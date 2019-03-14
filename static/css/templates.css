@@ -116,3 +116,16 @@ section > h5:first-child {
 .wps-footer2018 .panels h6 {
   font-size: 16px;
 }
+
+.newsletter-inline-macro {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#newletter-inline-title {
+  padding-top: 0;
+}
+
+.inline-cta {
+  text-align: left;
+}
