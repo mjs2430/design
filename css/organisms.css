@@ -495,7 +495,7 @@
  * Modals
  */
 
-.modal {
+.s-modal {
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -510,7 +510,7 @@
 	pointer-events: none;
 }
 
-.modal > * {
+.s-modal > * {
 	position: relative;
 	width: 100%;
 	max-width: 710px;
@@ -518,11 +518,11 @@
 	pointer-events: auto;
 }
 
-.modal .package {
+.s-modal .package {
 	padding: 30px 50px 30px 15px;
 }
 
-.modal .close {
+.s-modal .close {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -530,28 +530,28 @@
 	cursor: pointer;
 }
 
-.modal.screen {
+.s-modal.screen {
 	background-color: rgba(255,255,255,0.8);
 	pointer-events: auto;
 }
 
-.modal[hidden] {
+.s-modal[hidden] {
 	display: none;
 }
 
 /** Bottom version */
 
-.modal.bottom:not([hidden]) {
+.s-modal.bottom:not([hidden]) {
 	display: flex;
 	align-items: flex-end;
 }
 
-.modal.bottom > * {
+.s-modal.bottom > * {
 	max-width: 1110px;
 	position: relative;
 }
 
-.modal.bottom .package {
+.s-modal.bottom .package {
 	max-width: 710px;
 	margin: 0 auto;
 }

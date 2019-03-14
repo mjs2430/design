@@ -46,7 +46,7 @@
 
 <h4 id="html">HTML</h4>
 
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">id</span>=<span style="color:#00f">&#34;main-modal&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;modal screen&#34;</span> <span style="color:#f00">hidden</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">id</span>=<span style="color:#00f">&#34;main-modal&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;s-modal screen&#34;</span> <span style="color:#f00">hidden</span>&gt;
   &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card horizontal impact modal-subscription&#34;</span>&gt;
     &lt;<span style="color:#000080;font-weight:bold">figure</span>&gt;
       &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;https://www.kansascity.com/latest-news/wuji4q/picture225576030/alternates/LANDSCAPE_768/inspections%202.jpg&#34;</span>&gt;
@@ -66,7 +66,7 @@
 &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
 
 <h4 id="css">CSS</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.modal {
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.s-modal {
 	<span style="color:#000080;font-weight:bold">position</span>: <span style="color:#000080;font-weight:bold">fixed</span>;
 	<span style="color:#000080;font-weight:bold">top</span>: <span style="color:#00f">0</span>;
 	<span style="color:#000080;font-weight:bold">right</span>: <span style="color:#00f">0</span>;
@@ -81,7 +81,7 @@
 	pointer-events: <span style="color:#000080;font-weight:bold">none</span>;
 }
 
-.modal &gt; * {
+.s-modal &gt; * {
 	<span style="color:#000080;font-weight:bold">position</span>: <span style="color:#000080;font-weight:bold">relative</span>;
 	<span style="color:#000080;font-weight:bold">width</span>: <span style="color:#00f">100</span><span style="color:#000080;font-weight:bold">%</span>;
 	<span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#00f">710</span><span style="color:#000080;font-weight:bold">px</span>;
@@ -89,11 +89,11 @@
 	pointer-events: <span style="color:#000080;font-weight:bold">auto</span>;
 }
 
-.modal .package {
+.s-modal .package {
 	<span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">30</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#00f">50</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#00f">30</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#00f">15</span><span style="color:#000080;font-weight:bold">px</span>;
 }
 
-.modal .close {
+.s-modal .close {
 	<span style="color:#000080;font-weight:bold">position</span>: <span style="color:#000080;font-weight:bold">absolute</span>;
 	<span style="color:#000080;font-weight:bold">top</span>: <span style="color:#00f">0</span>;
 	<span style="color:#000080;font-weight:bold">right</span>: <span style="color:#00f">0</span>;
@@ -101,12 +101,12 @@
 	<span style="color:#000080;font-weight:bold">cursor</span>: <span style="color:#000080;font-weight:bold">pointer</span>;
 }
 
-.modal.screen {
+.s-modal.screen {
 	<span style="color:#000080;font-weight:bold">background-color</span>: rgba(<span style="color:#00f">255</span>,<span style="color:#00f">255</span>,<span style="color:#00f">255</span>,<span style="color:#00f">0.8</span>);
 	pointer-events: <span style="color:#000080;font-weight:bold">auto</span>;
 }
 
-.modal[<span style="color:#000080;font-weight:bold">hidden</span>] {
+.s-modal[<span style="color:#000080;font-weight:bold">hidden</span>] {
 	<span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">none</span>;
 }</code></pre></div>
 <h4 id="javascript">JavaScript</h4>
@@ -138,7 +138,7 @@
 
 <h4 id="html-1">HTML</h4>
 
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">id</span>=<span style="color:#00f">&#34;bottom-modal&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;modal bottom modal-newsletter&#34;</span> <span style="color:#f00">hidden</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">id</span>=<span style="color:#00f">&#34;bottom-modal&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;s-modal bottom modal-newsletter&#34;</span> <span style="color:#f00">hidden</span>&gt;
   &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;impact&#34;</span>&gt;
     &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package&#34;</span>&gt;
       &lt;<span style="color:#000080;font-weight:bold">h1</span>&gt;Get the afternoon update&lt;/<span style="color:#000080;font-weight:bold">h1</span>&gt;
@@ -157,17 +157,17 @@
 &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
 
 <h4 id="css-1">CSS</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.modal.bottom:not([<span style="color:#000080;font-weight:bold">hidden</span>]) {
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.s-modal.bottom:not([<span style="color:#000080;font-weight:bold">hidden</span>]) {
 	<span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">flex</span>;
 	<span style="color:#000080;font-weight:bold">align-items</span>: <span style="color:#000080;font-weight:bold">flex</span>-<span style="color:#000080;font-weight:bold">end</span>;
 }
 
-.modal.bottom &gt; * {
+.s-modal.bottom &gt; * {
 	<span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#00f">1110</span><span style="color:#000080;font-weight:bold">px</span>;
 	<span style="color:#000080;font-weight:bold">position</span>: <span style="color:#000080;font-weight:bold">relative</span>;
 }
 
-.modal.bottom .package {
+.s-modal.bottom .package {
 	<span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#00f">710</span><span style="color:#000080;font-weight:bold">px</span>;
 	<span style="color:#000080;font-weight:bold">margin</span>: <span style="color:#00f">0</span> <span style="color:#000080;font-weight:bold">auto</span>;
 }</code></pre></div>
@@ -493,7 +493,7 @@
   
   <script src="../../js/modal.js"></script>
   
-<div id="main-modal" class="modal screen" hidden>
+<div id="main-modal" class="s-modal screen" hidden>
   <div class="card horizontal impact modal-subscription">
     <figure>
       <img src="https://www.kansascity.com/latest-news/wuji4q/picture225576030/alternates/LANDSCAPE_768/inspections%202.jpg">
@@ -514,7 +514,7 @@
 
 
   
-<div id="bottom-modal" class="modal bottom modal-newsletter" hidden>
+<div id="bottom-modal" class="s-modal bottom modal-newsletter" hidden>
   <div class="impact">
     <div class="package">
       <h1>Get the afternoon update</h1>
