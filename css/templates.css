@@ -27,6 +27,7 @@
 /* Body */
 
 .story-body {
+  position: relative;
   flex: 1 1 400px;
 }
 
@@ -55,6 +56,7 @@
 /* Rail */
 
 .story-rail {
+  position: relative;
   flex: 1 1 330px;
 }
 
