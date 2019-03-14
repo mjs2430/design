@@ -82,6 +82,14 @@
   }
 }
 
+/**
+ * Purple Tuesdays
+ */
+
+section > h5:first-child {
+  margin-bottom: 10px;
+}
+
 /** 
  * Overloads for older elements 
  * Unclean repeat of media breakpoint, but these are separate
@@ -96,4 +104,8 @@
   .breaking-news-macro {
     margin: 0 15px;
   }
+}
+
+.wps-footer2018 .panels h6 {
+  font-size: 16px;
 }

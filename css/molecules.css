@@ -123,6 +123,10 @@
   color: #222;
 }
 
+.impact .more-link {
+  color: white;
+}
+
 /** Reverse promo */
 
 .promo, a.promo {
