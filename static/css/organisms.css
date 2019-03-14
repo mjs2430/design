@@ -46,9 +46,13 @@
     align-self: flex-start;
   }
 
-	/** Special case for lead section **/
+	/** Special cases **/
 	.lead-section .main-stage > :first-child {
 		flex-basis: 100%;
+	}
+
+	.main-stage > .flex-columns + .flex-columns {
+		padding-top: 15px;
 	}
 }
 
