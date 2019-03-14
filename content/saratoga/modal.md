@@ -17,7 +17,7 @@ Modals should be consistent across products and vendors to benefit our readers. 
 
 #### CSS
 ```css
-.modal {
+.s-modal {
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -32,7 +32,7 @@ Modals should be consistent across products and vendors to benefit our readers. 
 	pointer-events: none;
 }
 
-.modal > * {
+.s-modal > * {
 	position: relative;
 	width: 100%;
 	max-width: 710px;
@@ -40,11 +40,11 @@ Modals should be consistent across products and vendors to benefit our readers. 
 	pointer-events: auto;
 }
 
-.modal .package {
+.s-modal .package {
 	padding: 30px 50px 30px 15px;
 }
 
-.modal .close {
+.s-modal .close {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -52,12 +52,12 @@ Modals should be consistent across products and vendors to benefit our readers. 
 	cursor: pointer;
 }
 
-.modal.screen {
+.s-modal.screen {
 	background-color: rgba(255,255,255,0.8);
 	pointer-events: auto;
 }
 
-.modal[hidden] {
+.s-modal[hidden] {
 	display: none;
 }
 ```
@@ -100,17 +100,17 @@ function toggleModal(id, force) {
 
 #### CSS
 ```css
-.modal.bottom:not([hidden]) {
+.s-modal.bottom:not([hidden]) {
 	display: flex;
 	align-items: flex-end;
 }
 
-.modal.bottom > * {
+.s-modal.bottom > * {
 	max-width: 1110px;
 	position: relative;
 }
 
-.modal.bottom .package {
+.s-modal.bottom .package {
 	max-width: 710px;
 	margin: 0 auto;
 }
