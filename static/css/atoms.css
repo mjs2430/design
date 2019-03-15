@@ -3,7 +3,7 @@
  */
 
 :root {
-  --headerFamily: "McClatchy Serif", serif;
+  --headerFamily: "McClatchy Serif", Georgia, serif;
   --headerWeight: 400;
   --headerTransform: none;
 }
