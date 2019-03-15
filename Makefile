@@ -15,3 +15,6 @@ public:
 
 dist/saratoga.min.css:
 	minify static/css/atoms.css static/css/molecules.css static/css/organisms.css static/css/templates.css > $@
+
+test:
+	echo "test"
