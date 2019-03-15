@@ -431,6 +431,7 @@
 .card.in-depth figure {
   flex-grow: 4;
 	min-height: 400px;
+	display: flex;
 }
 
 .card.in-depth .package {
