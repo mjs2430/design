@@ -183,8 +183,7 @@
 }
 
 .header .byline {
-	display: block;
-	margin: 0 0 10px;
+	margin: 0;
 }
 
 @media (min-width: 600px) {
