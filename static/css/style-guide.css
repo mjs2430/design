@@ -82,13 +82,13 @@ td:first-child {
   background-color: #FDFDF6;
 }
 
-.list .atoms {
+.list .decks {
   background-color: #D2EFF2;
 }
 
-.list .molecules {
-  background-color: #A5C3E9;
-}
+/* .list .molecules { */
+/*   background-color: #A5C3E9; */
+/* } */
 
 .details {
   position: relative;

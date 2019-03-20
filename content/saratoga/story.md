@@ -1,8 +1,7 @@
 ---
 title: story
 description: The main article body
-level: card
-updated: true
+level: deck
 
 ---
 The primary challenge with the story body is the design rule that media should bleed all the way to the edge of the screen on mobile and tablet devices, but be restricted to a maximum width as the screen gets larger. Additionally, different media or embeddable content will have different widths. 

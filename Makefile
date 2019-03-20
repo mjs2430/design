@@ -14,5 +14,5 @@ public:
 	git worktree add -B gh-pages public origin/gh-pages
 
 dist/saratoga.min.css:
-	minify static/css/atoms.css static/css/molecules.css static/css/organisms.css static/css/templates.css > $@
+	minify static/css/atoms.css static/css/molecules.css static/css/cards.css static/css/decks.css > $@
 	git add $@
