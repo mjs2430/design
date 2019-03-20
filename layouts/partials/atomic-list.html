@@ -13,6 +13,14 @@
     {{ end }}
   </div>
 
+  <div class="subscriptions">
+    <h3 class="list-category">Subscription flow <small><a href="/css/subscriptions.css">Download</a></small></h3>
+    {{ range where .Pages.ByWeight "Params.level" "subscription" }}
+    {{ .Render "link-package" }}
+    {{ end }}
+  </div>
+
+
   <div class="atoms">
     <h3 class="list-category">Atoms</h3>
     <div class="package">
@@ -35,11 +43,6 @@
   <!-- <div class="package"> -->
   <!--   <p class="summary">This file is the final tip of the iceberg for our current version, which will change over time. It doesn't have any direct children, but is necessary.</p> -->
   <!-- </div> -->
-
-  <h3 class="list-category">Subscription flow <small><a href="/css/subscriptions.css">Download</a></small></h3>
-  {{ range where .Pages.ByWeight "Params.level" "subscription" }}
-  {{ .Render "link-package" }}
-  {{ end }}
 
   <script src="/js/style-guide.js"></script>
 </div>

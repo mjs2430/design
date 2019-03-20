@@ -19,7 +19,7 @@ pre code {
 }
 
 small {
-  font-size: 14px;
+  font-size: .8em;
 }
 
 table {
@@ -86,9 +86,9 @@ td:first-child {
   background-color: #D2EFF2;
 }
 
-/* .list .molecules { */
-/*   background-color: #A5C3E9; */
-/* } */
+.list .subscriptions {
+  background-color: #A5C3E9;
+}
 
 .details {
   position: relative;
