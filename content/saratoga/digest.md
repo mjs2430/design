@@ -1,7 +1,7 @@
 ---
 title: digest
 description: Headline stacks for section content.
-level: organism
+level: card
 
 ---
 The digest is simple stack of modules using the block layout.

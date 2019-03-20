@@ -1,7 +1,7 @@
 ---
 title: "in-depth"
 description: "In depth module for section pages"
-level: "organism"
+level: "card"
 ---
 
 The In Depth module is a version of the horizontal card that changes the flex-grow weight from the right side to the left.

@@ -1,7 +1,7 @@
 ---
 title: story
 description: The main article body
-level: organism
+level: card
 updated: true
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: "author-card"
 description: "Author information at the bottom of articles"
-level: "organism"
+level: "card"
 ---
 
 The author card should appear directly underneath the related stories organism, if it is rendered, or directly under the story body if it is not.

@@ -1,7 +1,7 @@
 ---
 title: "modal"
 description: "Simple overlay containers to maintain consistency."
-level: "organism"
+level: "card"
 modal: true
 ---
 

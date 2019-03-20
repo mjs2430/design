@@ -78,15 +78,15 @@ td:first-child {
   z-index: 1;
 }
 
-.list .atoms {
+.list .cards {
   background-color: #FDFDF6;
 }
 
-.list .molecules {
+.list .atoms {
   background-color: #D2EFF2;
 }
 
-.list .organisms {
+.list .molecules {
   background-color: #A5C3E9;
 }
 
