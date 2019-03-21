@@ -1,7 +1,7 @@
 ---
 title: digest
 description: Headline stacks for section content.
-level: card
+menu: cards
 
 ---
 The digest is simple stack of modules using the block layout.

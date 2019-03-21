@@ -1,7 +1,7 @@
 ---
 title: "form elements"
 description: "Native form element styles"
-level: "subscription"
+menu: "subscriptions"
 ---
 
 Text inputs, text areas and select boxes are stackable and should always have label, input area, and a disclaimer or error message underneath. These elements should be included for spacing rules even when they are not used so that form elements don't jump around on validation.

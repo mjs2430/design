@@ -1,9 +1,16 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>saratoga</title>
-    {{- $page := .GetPage "/saratoga/button" }}
-    <meta http-equiv="refresh" content="0; {{ $page.Permalink }}">
-  </head>
-  <body></body>
-</html>
+{{ define "head" }}
+<link rel="stylesheet" href="/css/style-guide.css">
+{{ end }}
+
+{{ define "content" }}
+<div class="panels">
+  <div class="paper story-body details">
+    <h2 class="page-header">
+      {{- .Title }}
+    </h2>
+    {{ .Content }}
+  </div>
+
+  {{ partial "atomic-list.html" . }}
+</div>
+{{ end }}

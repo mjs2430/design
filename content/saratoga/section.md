@@ -1,7 +1,7 @@
 ---
 title: "section"
 description: "Stackable building block of pages"
-level: "atom"
+menu: "atom"
 ---
 
 The section is a simple and stackable building block to get our standard 1140px wide zone. It also includes 30px of vertical margin to allow easy stacking that follows the design.

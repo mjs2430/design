@@ -1,7 +1,7 @@
 ---
 title: "icons"
 description: "Optimized fontawesome icon set"
-level: "atom"
+menu: "atom"
 ---
 
 This is a reduced and optimized set of Fontawesome free icons we use on the site.

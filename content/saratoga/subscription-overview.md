@@ -1,7 +1,7 @@
 ---
 title: subscription overview
 description: Atom overloads and the subscription template
-level: subscription
+menu: subscriptions
 weight: 1
 
 ---

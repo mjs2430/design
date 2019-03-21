@@ -1,7 +1,7 @@
 ---
 title: "form icons"
 description: "Optimized fontawesome icon set for form and button elements."
-level: "subscription"
+menu: "subscriptions"
 ---
 
 This icon set is optimized for button and form elements, reducing the number of inline elements required.

@@ -1,7 +1,7 @@
 ---
 title: p
 description: Default text on story pages.
-level: atom
+menu: atom
 
 ---
 The default values for `<p>` are designed for the normal body text of the story page in order to keep our primary CSS as small as possible. 

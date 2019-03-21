@@ -1,7 +1,7 @@
 ---
 title: utilities
 description: Utility typography classes.
-level: molecule
+menu: molecule
 ---
 
 In most occasions, we tried to keep all styles localized to their atom, molecule or organism. There are, however, slight variations that do not require an additional molecule or organism. For those occasions, these utlity classes are available.

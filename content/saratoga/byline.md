@@ -1,7 +1,7 @@
 ---
 title: "byline"
 description: "Standard byline and credit styles"
-level: "atom"
+menu: "atom"
 ---
 
 The byline and credit rules should have this standard anywhere attribution applies. This includes articles and all media. The byline should display inline with a caption, when applicable, unless there is not enough room to display the byline in full. If that occurs the whole byline should wrap to a new line.

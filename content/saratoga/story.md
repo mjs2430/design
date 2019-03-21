@@ -1,7 +1,7 @@
 ---
 title: story
 description: The main article body
-level: deck
+menu: decks
 sample: /saratoga/sample/story/
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: time
 description: Used for publish and modified times.
-level: atom
+menu: atom
 
 ---
 Timestamps are always displayed on their own line, so `<time>` is converted to a block level element by default.

@@ -1,7 +1,7 @@
 ---
 title: lists
 description: Default styles for lists in story bodies.
-level: atom
+menu: atom
 ---
 
 List items should be indented an additional 15px left from the normal text, and have 10 px of space between them. Unordered lists should use the circle icon from fontawesome.com in order to increase the bullet size.

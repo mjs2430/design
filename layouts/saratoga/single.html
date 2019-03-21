@@ -9,19 +9,12 @@
 <div class="panels">
   <div class="paper story-body details">
     <h2 class="page-header">
-      {{- if .Param "updated" }}
-      <span class="updated">RECENTLY UPDATED</span>
-      {{- end }}
-      {{- if .Param "function" }}
-      {{- .Param "function" }} <small>({{ .Title }})</small>
-      {{- else }}
       {{- .Title }}
-      {{- end -}}
     </h2>
     {{ .Content }}
   </div>
 
-  {{ partial "atomic-list.html" .Site }}
+  {{ partial "atomic-list.html" . }}
   
   {{ if eq .Params.modal true }}
   <script src="/js/modal.js"></script>
