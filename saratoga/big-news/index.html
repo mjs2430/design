@@ -38,7 +38,7 @@
     <h2 class="page-header">big-news</h2>
     
 
-<p>The big news organism is a series of independent areas designed to give newsrooms control of the volume depending on what they have. Each zone is managed separately and nothing is required.</p>
+<p>The big news card is a series of independent areas designed to give newsrooms control of the volume depending on what they have. Each zone is managed separately and nothing is required. Because the card needs to be so flexible, yet stable, it&rsquo;s set up with the CSS Grid instead of Flexbox. By also including the number of children for each grid item in a <code>data-children=X</code> attribute, we can use the Grid to iterate the design more easily as we see how newsrooms use it.</p>
 
 <h4 id="example">EXAMPLE</h4>
 
@@ -46,7 +46,7 @@
 <div class="big-news paper">
   <a href="#" class="label"><h5 class="impact">HURRICANE FLORENCE</h5></a>
   <h5 class="latest">LATEST NEWS</h5>
-  <div class="grid">
+  <div class="grid" data-children="3">
     <article class="package">
       <h3><a href="#">Looking for water or gas? Here are some places that have them </a></h3>
       <time>February 23, 2018 2PM</time>
@@ -65,10 +65,10 @@
   </div>
   <figure>
     <a href="#"><img src="https://www.mcclatchydc.com/latest-news/2dp7ij/picture218293685/alternates/LANDSCAPE_1140/Flood_td_103_LEDE.JPG"></a>
-    <figcaption>Officers carry June Loch to dry land after she was rescued from her home in the Pine Glen subdivision of Columbia, S.C. on Oct. 5, 2015. Record rainfall that October triggered floods that killed at least 19 people in South Carolina and caused extensive damage to neighborhoods that had never flooded before. Despite that disaster, only 9 percent of South Carolina households had purchased flood insurance by May of last year. <span class="byline"><a href="#">Tim Dominick</a></span>
+    <figcaption>Officers carry June Loch to dry land after she was rescued from her home in the Pine Glen subdivision of Columbia, S.C. on Oct. 5, 2015. Record rainfall that October triggered floods that killed at least 19 people in South Carolina and caused extensive damage to neighborhoods that had never flooded before. Despite that disaster, only 9 percent of South Carolina households had purchased flood insurance by May of last year. <span class="byline"><a href="#">Tim Dominick</a></span></figcaption>
   </figure>
-  <div class="grid featured">
-    <article class="card no-shadow">
+  <div class="grid featured" data-children="3">
+    <article class="card">
       <figure>
         <a href="#"><img src="https://www.mcclatchydc.com/news/nation-world/national/7g1ahc/picture174166396/alternates/LANDSCAPE_640/Hurricane%20Irma%202"></a>
       </figure>
@@ -77,7 +77,7 @@
         <time>February 23, 2018 2PM</time>
       </div>
     </article>
-    <article class="card no-shadow">
+    <article class="card">
       <figure>
         <a href="#"><img src="https://www.miamiherald.com/news/weather/hurricane/c3x8sb/picture172257337/alternates/LANDSCAPE_640/Coconut%20Grove%20Irma%2004%20EKM%20(1)"></a>
       </figure>
@@ -86,7 +86,7 @@
         <time>February 23, 2018 2PM</time>
       </div>
     </article>
-    <article class="card no-shadow">
+    <article class="card">
       <figure>
         <a href="#"><img src="https://www.mcclatchydc.com/news/nation-world/national/w763tv/picture172700996/alternates/LANDSCAPE_640/AP_17254522905028"></a>
       </figure>
@@ -106,7 +106,7 @@
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;big-news paper&#34;</span>&gt;
   &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;label&#34;</span>&gt;&lt;<span style="color:#000080;font-weight:bold">h5</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;impact&#34;</span>&gt;HURRICANE FLORENCE&lt;/<span style="color:#000080;font-weight:bold">h5</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
   &lt;<span style="color:#000080;font-weight:bold">h5</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;latest&#34;</span>&gt;LATEST NEWS&lt;/<span style="color:#000080;font-weight:bold">h5</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;grid&#34;</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;grid&#34;</span> <span style="color:#f00">data-children</span>=<span style="color:#00f">&#34;3&#34;</span>&gt;
     &lt;<span style="color:#000080;font-weight:bold">article</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package&#34;</span>&gt;
       &lt;<span style="color:#000080;font-weight:bold">h3</span>&gt;&lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;Looking for water or gas? Here are some places that have them &lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">h3</span>&gt;
       &lt;<span style="color:#000080;font-weight:bold">time</span>&gt;February 23, 2018 2PM&lt;/<span style="color:#000080;font-weight:bold">time</span>&gt;
@@ -125,10 +125,10 @@
   &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
   &lt;<span style="color:#000080;font-weight:bold">figure</span>&gt;
     &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;&lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;https://www.mcclatchydc.com/latest-news/2dp7ij/picture218293685/alternates/LANDSCAPE_1140/Flood_td_103_LEDE.JPG&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">figcaption</span>&gt;Officers carry June Loch to dry land after she was rescued from her home in the Pine Glen subdivision of Columbia, S.C. on Oct. 5, 2015. Record rainfall that October triggered floods that killed at least 19 people in South Carolina and caused extensive damage to neighborhoods that had never flooded before. Despite that disaster, only 9 percent of South Carolina households had purchased flood insurance by May of last year. &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;byline&#34;</span>&gt;&lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;Tim Dominick&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">figcaption</span>&gt;Officers carry June Loch to dry land after she was rescued from her home in the Pine Glen subdivision of Columbia, S.C. on Oct. 5, 2015. Record rainfall that October triggered floods that killed at least 19 people in South Carolina and caused extensive damage to neighborhoods that had never flooded before. Despite that disaster, only 9 percent of South Carolina households had purchased flood insurance by May of last year. &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;byline&#34;</span>&gt;&lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;Tim Dominick&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">figcaption</span>&gt;
   &lt;/<span style="color:#000080;font-weight:bold">figure</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;grid featured&#34;</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">article</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card no-shadow&#34;</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;grid featured&#34;</span> <span style="color:#f00">data-children</span>=<span style="color:#00f">&#34;3&#34;</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">article</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card&#34;</span>&gt;
       &lt;<span style="color:#000080;font-weight:bold">figure</span>&gt;
         &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;&lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;https://www.mcclatchydc.com/news/nation-world/national/7g1ahc/picture174166396/alternates/LANDSCAPE_640/Hurricane%20Irma%202&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
       &lt;/<span style="color:#000080;font-weight:bold">figure</span>&gt;
@@ -137,7 +137,7 @@
         &lt;<span style="color:#000080;font-weight:bold">time</span>&gt;February 23, 2018 2PM&lt;/<span style="color:#000080;font-weight:bold">time</span>&gt;
       &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
     &lt;/<span style="color:#000080;font-weight:bold">article</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">article</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card no-shadow&#34;</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">article</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card&#34;</span>&gt;
       &lt;<span style="color:#000080;font-weight:bold">figure</span>&gt;
         &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;&lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;https://www.miamiherald.com/news/weather/hurricane/c3x8sb/picture172257337/alternates/LANDSCAPE_640/Coconut%20Grove%20Irma%2004%20EKM%20(1)&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
       &lt;/<span style="color:#000080;font-weight:bold">figure</span>&gt;
@@ -146,7 +146,7 @@
         &lt;<span style="color:#000080;font-weight:bold">time</span>&gt;February 23, 2018 2PM&lt;/<span style="color:#000080;font-weight:bold">time</span>&gt;
       &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
     &lt;/<span style="color:#000080;font-weight:bold">article</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">article</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card no-shadow&#34;</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">article</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card&#34;</span>&gt;
       &lt;<span style="color:#000080;font-weight:bold">figure</span>&gt;
         &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;&lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;https://www.mcclatchydc.com/news/nation-world/national/w763tv/picture172700996/alternates/LANDSCAPE_640/AP_17254522905028&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
       &lt;/<span style="color:#000080;font-weight:bold">figure</span>&gt;
@@ -158,68 +158,6 @@
   &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
 &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
 
-<h4 id="css">CSS</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.big-news <span style="color:#000080;font-weight:bold">a</span> {
-	<span style="color:#000080;font-weight:bold">color</span>: <span style="color:#000080;font-weight:bold">inherit</span>;
-}
-
-.big-news &gt; * {
-	<span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#00f">1140</span><span style="color:#000080;font-weight:bold">px</span>;
-	<span style="color:#000080;font-weight:bold">margin</span>: <span style="color:#00f">0</span> <span style="color:#000080;font-weight:bold">auto</span>;
-}
-
-.big-news .latest {
-	<span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">15</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#00f">15</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#00f">0</span>;
-}
-
-.big-news .grid {
-	<span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#00f">1170</span><span style="color:#000080;font-weight:bold">px</span>;
-	<span style="color:#000080;font-weight:bold">grid-gap</span>: <span style="color:#00f">0</span>;
-	<span style="color:#000080;font-weight:bold">grid-template-columns</span>: repeat(<span style="color:#00f">3</span>, <span style="color:#00f">1</span>fr);
-	<span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">block</span>;
-}
-
-.big-news <span style="color:#000080;font-weight:bold">h1</span> {
-	<span style="color:#000080;font-weight:bold">font-size</span>: <span style="color:#00f">40</span><span style="color:#000080;font-weight:bold">px</span>;
-	<span style="color:#000080;font-weight:bold">text-align</span>: <span style="color:#000080;font-weight:bold">center</span>;
-}
-
-.big-news &gt; <span style="color:#000080;font-weight:bold">figure</span> {
-	<span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#00f">100</span><span style="color:#000080;font-weight:bold">%</span>;
-}
-
-.big-news <span style="color:#000080;font-weight:bold">img</span> {
-	<span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#00f">1600</span><span style="color:#000080;font-weight:bold">px</span>;
-	<span style="color:#000080;font-weight:bold">margin</span>: <span style="color:#00f">0</span> <span style="color:#000080;font-weight:bold">auto</span>;
-}
-
-.big-news <span style="color:#000080;font-weight:bold">figcaption</span> {
-	<span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#00f">1140</span><span style="color:#000080;font-weight:bold">px</span>;
-	<span style="color:#000080;font-weight:bold">margin</span>: <span style="color:#00f">0</span> <span style="color:#000080;font-weight:bold">auto</span>;
-	<span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">10</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#00f">15</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#00f">15</span><span style="color:#000080;font-weight:bold">px</span>;
-}
-
-.big-news .featured {
-	<span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">block</span>;
-}
-
-@<span style="color:#000080;font-weight:bold">media</span> (<span style="color:#000080;font-weight:bold">min-width</span>: <span style="color:#000080;font-weight:bold">680px</span>) {
-	.big-news .grid {
-		<span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">grid</span>;
-	}
-
-	.big-news <span style="color:#000080;font-weight:bold">h1</span> {
-		<span style="color:#000080;font-weight:bold">font-size</span>: <span style="color:#00f">52</span><span style="color:#000080;font-weight:bold">px</span>;
-	}
-
-	.big-news .featured .card {
-		<span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">15</span><span style="color:#000080;font-weight:bold">px</span>;
-	}
-
-	.big-news .featured .package {
-		<span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">15</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#00f">0</span> <span style="color:#00f">0</span>;
-	}
-}</code></pre></div>
   </div>
 
   <div class="paper digest list">
