@@ -28,7 +28,7 @@
 
 .story-body {
   position: relative;
-  flex: 1 1 400px;
+  flex: 1 1 438px;
 }
 
 .story-body > .lead-item,
@@ -74,7 +74,7 @@
 }
 
 /** Several variants of inline assets could be cleaned */
-@media (min-width: 730px) {
+@media (min-width: 768px) {
   .story-template figure img, 
   .story-body .lead-item .video,
   .story-body .lead-item .picture,
