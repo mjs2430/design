@@ -367,6 +367,7 @@
 }
 
 .big-news .latest {
+  box-sizing: content-box;
 	padding: 15px 15px 0;
 }
 
