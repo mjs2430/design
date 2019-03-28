@@ -102,6 +102,15 @@ section > h5:first-child {
   margin-bottom: 10px;
 }
 
+/* Because the main section body is still wrapped by Bootstrap */
+.big-news > * {
+  max-width: 1110px;
+}
+
+.big-news .grid {
+  max-width: 1140px;
+}
+
 /** 
  * Overloads for older elements 
  * Unclean repeat of media breakpoint, but these are separate
