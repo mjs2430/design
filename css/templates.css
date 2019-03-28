@@ -75,6 +75,11 @@
 
 /** Several variants of inline assets could be cleaned */
 @media (min-width: 768px) {
+  /* Test to fix Google partnered content iframe */
+  /* .story-body { */
+  /*   max-width: calc(100vw - 330px); */
+  /* } */
+
   .story-template figure img, 
   .story-body .lead-item .video,
   .story-body .lead-item .picture,
