@@ -9,18 +9,6 @@ The `<figure>` atom is used as a semantic method of targeting media in different
 #### EXAMPLE
 {{< figure >}}
 
-#### CSS
-```css
-figure {
-  margin: 0;
-}
-
-figure img {
-  display: block;
-  width: 100%;
-}
-```
-
 #### Rules
 
 Property | Value

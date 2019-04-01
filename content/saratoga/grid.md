@@ -30,15 +30,6 @@ This is the smallest method of creating a grid following the design rules, which
 </section>
 ```
 
-#### CSS
-```css
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 30px;
-}
-```
-
 #### RULES
 
 Property | Value

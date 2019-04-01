@@ -8,32 +8,16 @@ The byline and credit rules should have this standard anywhere attribution appli
 
 #### EXAMPLE
 <div>
-  <p class="byline">By <a href="#">John Doe</a> <span class="credit">SAMPLE NEWSPAPER</span></p>
+  <p class="byline">By <a href="#">John Doe</a> 
+    <span class="credit">SAMPLE NEWSPAPER</span>
+  </p>
 </div>
 
 #### HTML
 ```html
-<p class="byline">By <a href="#">John Doe</a> <span class="credit">SAMPLE NEWSPAPER</span></p>
-```
-
-#### CSS
-```css
-.byline {
-  display: inline-block;
-  font: 400 11px/1.5em "McClatchy Sans";
-  color: #707070;
-  text-transform: uppercase;
-}
-
-.byline a {
-  font-weight: 700;
-  color: inherit;
-  text-decoration: underline;
-}
-
-.credit {
-  font: italic 400 11px/1.5em "McClatchy Sans";
-}
+<p class="byline">By <a href="#">John Doe</a> 
+  <span class="credit">SAMPLE NEWSPAPER</span>
+</p>
 ```
 
 #### BYLINE RULES

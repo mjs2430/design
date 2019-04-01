@@ -50,4 +50,25 @@ summary, .summary {
 .error {
   color: #D63031;
 }
+
+.underline {
+  text-decoration: underline;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.no-shadow {
+  box-shadow: none;
+}
+
+.relative {
+  position: relative;
+}
+
+.hidden, [hidden] {
+  display: none;
+}
 ```

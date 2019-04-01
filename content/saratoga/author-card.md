@@ -13,48 +13,23 @@ As the organism compresses to fit smaller screens, the icons should wrap under t
   {{< author-card >}}
 </div>
 
+#### HTML
+{{< highlight html >}}
+{{< author-card >}}
+{{< /highlight >}}
+
+---
+
 #### TWO-AUTHOR EXAMPLE
 <div class="grid story-module">
   {{< author-card >}}
   {{< author-card >}}
 </div>
 
-
 #### HTML
-{{< highlight html >}}{{< author-card >}}{{< /highlight >}}
-
-#### CSS
-```css
-.author-card .row {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  flex: 1;
-}
-
-.author-thumb {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-}
-
-.author-card .byline {
-  flex: 1 1 15em;
-  padding: 10px 15px;
-  margin: 0;
-}
-
-.author-card .social-media a {
-  padding: 0 15px;
-}
-
-.author-subscription {
-  padding: 10px 0;
-  color: #707070;
-}
-
-.author-card .callout {
-  font: 14px/20px "McClatchy Sans",sans-serif;
-  color: #0066b3;
-}
-```
+{{< highlight html >}}
+<div class="grid story-module">
+{{< author-card >}}
+{{< author-card >}}
+</div>
+{{< /highlight >}}

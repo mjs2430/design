@@ -22,38 +22,6 @@ Buttons are designed to be placed in a center-aligned row using browser defaults
 </div>
 ```
 
-#### CSS
-```css
-button, .button {
-  display: inline-block;
-  font: 600 14px "McClatchy Sans";
-  text-transform: uppercase;
-  text-align: center;
-  cursor: pointer;
-  padding: .6em 1em .3em;
-  margin: 4px 0;
-  border: 1px solid transparent;
-  box-sizing: border-box;
-  border-radius: 2px;
-  align-self: flex-start;
-  background-color: white;
-}
-
-.button:hover {
-  text-decoration: none;
-}
-
-.button.stretch {
-  display: block;
-  align-self: stretch;
-  padding: 1em 1em .7em;
-}
-
-.ghost {
-  border-color: #4a4a4a;
-}
-```
-
 #### RULES
 
 Property | Value

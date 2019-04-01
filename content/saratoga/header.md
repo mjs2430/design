@@ -11,38 +11,6 @@ The `header` organism is based on the standard `package` molecule but increases 
 
 
 #### HTML
-{{< highlight html >}}{{< header >}}{{< /highlight >}}
-
-#### CSS 
-```css
-.header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 15px;
-}
-
-.header > * {
-  margin: 15px 0 0;
-  align-self: center;
-}
-
-.header .byline {
-  display: block;
-  margin: 0 0 10px;
-}
-
-@media (min-width: 600px) {
-	.header .bio {
-		display: flex;
-		justify-content: space-between;
-		width: 100%;
-		text-align: left;
-	}
-
-	.header .social-media a {
-		padding-top: 0;
-	}
-}
-```
+{{< highlight html >}}
+{{< header >}}
+{{< /highlight >}}

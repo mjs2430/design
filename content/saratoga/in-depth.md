@@ -16,25 +16,7 @@ The In Depth module is a version of the horizontal card that changes the flex-gr
 {{< partial src="saratoga/in-depth.html" >}}
 {{< /highlight >}}
 
-#### CSS
-```css
-.card.in-depth {
-	flex-wrap: wrap;
-	background-color: #373737;
-}
-
-.card.in-depth figure {
-  flex-grow: 4;
-	min-height: 400px;
-}
-
-.card.in-depth .package {
-	padding-top: 30px;
-	padding-bottom: 30px;
-	margin: 0 auto;
-	max-width: 660px;
-}
-```
+---
 
 ## No Image version
 

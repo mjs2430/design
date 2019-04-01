@@ -9,15 +9,6 @@ All captions have the same style. The figcaption is used as a semantic wrapper a
 #### example
 {{< figure >}}
 
-#### CSS
-```css
-figcaption, .caption {
-  font: 14px/1.5em "McClatchy Sans", sans-serif;
-  color: #707070;
-  padding: 10px 15px 0;
-}
-```
-
 #### RULES 
 
 Property | Value
@@ -28,3 +19,4 @@ Size | 14px
 Line height | 1.5em
 Case | Sentence
 Letter Spacing | Default
+Padding | 10px 15px 0;

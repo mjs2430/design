@@ -13,33 +13,3 @@ The generic rules make for a very flexible setup, where we can force each child 
 
 #### HTML
 {{< highlight html >}}{{< series-nav >}}{{< /highlight >}}
-
-#### CSS
-```css
-.expander {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-}
-
-.expander:after {
-  content: url(../icons/caret-expander.svg);
-  width: 14px;
-  margin-left: 5px;
-  transition: transform .5s ease;
-  transform: translateY(-.1em) rotateX(180deg);
-  transform-origin: 50% 50%;
-}
-
-.expander ~ * {
-  display: none;
-}
-
-.expander.open:after {
-  transform: translateY(-.1em) rotateX(0);
-}
-
-.expander.open ~ * {
-  display: block;
-}
-```

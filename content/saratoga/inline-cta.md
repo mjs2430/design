@@ -16,7 +16,3 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis ex e
 
 #### HTML
 {{< highlight html >}}{{< inline-cta >}}{{< /highlight >}}
-
-#### CSS
-
-This organism requires no additional CSS.

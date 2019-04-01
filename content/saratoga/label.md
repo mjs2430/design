@@ -14,25 +14,10 @@ The label atom is just used for spacing and can accept any element. Currently, w
   {{< partial src="saratoga/digest.html" >}}
 </div>
 
-#### CSS
-```css
-.label {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  color: inherit;
-}
+#### HTML
 
-.label > * {
-  margin: 0;
-  padding: 5px 10px 3px;
-}
-
-.label.sticky {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 2;
-}
+```HTML
+<a href="#" class="label">
+  <h5 class="impact">OPINION</h5>
+</a>
 ```

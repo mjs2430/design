@@ -11,12 +11,6 @@ The default values for `<p>` are designed for the normal body text of the story 
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut arcu consequat, pretium libero non, consectetur risus. Aenean sed turpis ac sem iaculis egestas sit.</p>
 </div>
 
-#### CSS
-```css
-p {
-  font: 17px/1.5em "Lyon", serif;
-}
-```
 #### RULES
 
 Property | Value

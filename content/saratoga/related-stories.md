@@ -11,10 +11,3 @@ This organism is mostly a combination of the grid and package molecules, with a 
 
 #### HTML
 {{< highlight html >}}{{< related-stories >}}{{< /highlight >}}
-
-#### CSS
-```css
-.related-stories .package {
-  padding: 0;
-}
-```

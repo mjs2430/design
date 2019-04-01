@@ -11,31 +11,6 @@ The more-link atom signifies that clicking it will take the reader to another we
   {{< partial src="saratoga/digest.html" >}}
 </div>
 
-#### CSS
-```css
-.more-link {
-  display: block;
-  font: 600 14px/1.5em "McClatchy Sans";
-  color: #707070;
-  text-transform: uppercase;
-  margin-top: 15px;
-}
-
-.more-link:after {
-  content: '';
-  background: transparent url('../icons/arrow-right.svg') no-repeat center;
-  display: inline-block;
-  width: 1em;
-  height: .8em;
-  margin-left: 4px;
-  transition: transform .6s ease;
-}
-
-.more-link:hover {
-  text-decoration: none;
-}
-```
-
 #### RULES
 
 Property | Value

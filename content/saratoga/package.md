@@ -22,36 +22,6 @@ The package molecule is the backbone of the design system. Spacing for  most mol
 </div>
 ```
 
-#### CSS
-
-```css
-.package {
-  position: relative;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-.package > * {
-  margin: 10px 0 0 0;
-}
-
-.package > :first-child {
-  margin-top: 0;
-}
-
-.package > time {
-  flex: 1;
-  display: flex;
-  align-items: flex-end;
-}
-
-.package a {
-  color: inherit;
-}
-```
-
 #### Rules
 
 The basic rules are simple:

@@ -2,6 +2,8 @@
 title: lists
 description: Default styles for lists in story bodies.
 menu: atom
+aliases:
+  - /saratoga/li/
 ---
 
 List items should be indented an additional 15px left from the normal text, and have 10 px of space between them. Unordered lists should use the circle icon from fontawesome.com in order to increase the bullet size.
@@ -19,18 +21,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra venenatis
 
 Suspendisse potenti. Cras sagittis neque at aliquam facilisis. Duis nibh orci, aliquam a elit sed, luctus vulputate dui. Ut ex mauris, pulvinar ut tellus efficitur, ornare luctus mi. Sed nec ligula eros. Vestibulum at rutrum neque, et malesuada ex.
 
-#### CSS
-```css
-li {
-  font: 17px/1.5em "Lyon", serif;
-  margin: 10px 0 10px calc(1em + 15px);
-}
-
-ul li {
-  list-style-image: url("icons/circle.svg");
-}
-```
-
 #### RULES
 
 Property | Value
@@ -41,3 +31,4 @@ Size | 17px
 Line height | 1.5em
 Case | From text
 Letter Spacing | Default
+Unorder List image | <img src="/icons/circle.svg" style="width: 8px;">

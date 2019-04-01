@@ -13,33 +13,3 @@ The series nav is a visual tool to link stories together than may or may not be 
 {{< highlight html >}}
 {{< series-nav >}}
 {{< /highlight >}}
-
-#### CSS
-```css
-.series-nav .package {
-  padding: 0;
-}
-
-.series-nav hr {
-  border-color: #dfdfdf;
-}
-
-.series-nav .summary {
-  color: #707070;
-}
-
-.series-nav .article {
-  display: flex;
-}
-
-.series-nav .article figure {
-  width: 80px;
-}
-
-.series-nav .article h4 {
-  flex: 1;
-  padding: 0 15px;
-  margin: 0;
-  max-width: 375px;
-}
-```

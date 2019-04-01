@@ -11,16 +11,6 @@ Timestamps are always displayed on their own line, so `<time>` is converted to a
   <time>DECEMBER 27, 2018 01:27 PM</time>
 </div>
 
-#### CSS
-```css
-time {
-  display: block;
-  font: 300 11px/1.5em "McClatchy Sans", sans-serif;
-  text-transform: uppercase;
-  color: #707070;
-}
-```
-
 #### RULES
 
 Property | Value

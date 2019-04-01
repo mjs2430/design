@@ -15,19 +15,3 @@ The promo card is a revenue component that, like the In Depth card, extends the 
 {{< highlight html >}}
 {{< partial src="saratoga/promo.html" >}}
 {{< /highlight >}}
-
-#### CSS
-```css
-.card.swg-promo {
-	flex-wrap: wrap;
-}
-
-.card.swg-promo > :first-child {
-	flex-grow: 4;
-	min-height: 150px;
-}
-
-.card.swg-promo .title {
-	font: 600 48px "McClatchy Sans", sans-serif;
-}
-```
