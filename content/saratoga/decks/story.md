@@ -1,7 +1,10 @@
 ---
-title: Sample story
-description: A sample story for development.
+title: story
+description: A sample story page.
+menu: decks
 layout: story
+aliases:
+  - /saratoga/sample/story/
 ---
 
 {{< header >}}
@@ -13,32 +16,39 @@ layout: story
 
 {{< series-nav >}}
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate enim dolor, sit amet lacinia ex lacinia ac. Sed facilisis nulla felis, eget ultricies dolor cursus nec. Cras sodales ligula elementum ipsum elementum gravida. Aenean vel sapien vitae dolor maximus ornare. Maecenas molestie nulla massa, vitae iaculis elit porttitor nec. Maecenas ut libero luctus, euismod ipsum in, vulputate massa. Sed quis placerat ante. Cras dignissim purus sit amet ex commodo, sit amet tempor metus feugiat. Maecenas in ipsum id tellus commodo rutrum vitae ac velit. Quisque et varius urna.</p>
+The primary challenge with the story body is the design rule that media should bleed all the way to the edge of the screen on mobile and tablet devices, but be restricted to a maximum width as the screen gets larger. Additionally, different media or embeddable content will have different widths. 
 
-<p>Nullam ultricies hendrerit est a bibendum. Suspendisse scelerisque vitae nisi et consequat. Vivamus cursus vitae ante eu tristique. Sed nec velit maximus diam laoreet venenatis. Maecenas dapibus nibh sit amet gravida suscipit. <a href="https://lipsum.com">Suspendisse vulputate felis eu neque rutrum</a>, at tempor lectus fringilla. Integer et urna at metus feugiat ornare. Morbi vulputate commodo turpis. Suspendisse sed elementum ex, vel rutrum ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet elit nisi, vitae lacinia lectus lobortis ornare.</p>
+A container-based approach to these rules requires multiple breakpoints and creates a couple of pressure points as the number of organisms increases. Code grows quickly with each addition, as all breakpoints for each change must be considered or written. Re-use suffers as elements get more and more isolated with deeply nested CSS rules.
 
+<!--
 <div class="ad-widget">
   <div class="iframe" class="iframe" style="width: 300px; height: 250px; background-color: #ddd;"></div>
 </div>
+-->
 
-<p>Vivamus facilisis quam non enim semper lacinia. Donec id fringilla dui. Proin scelerisque elit risus, non lacinia metus ultricies in. Donec pulvinar aliquam felis, in euismod sem. Vestibulum risus velit, tristique non porttitor ut, tincidunt non nunc. Aenean sed orci quam. Cras elit eros, tincidunt finibus massa non, condimentum tempus est. Fusce egestas dapibus justo id malesuada. Ut sit amet accumsan mauris. Aliquam lacinia fringilla tellus eget posuere. Praesent condimentum quam in lobortis hendrerit. Quisque semper, mi ac sodales bibendum, felis ipsum blandit lectus, non maximus justo nulla in ex. Suspendisse varius maximus purus non dictum. Nullam pretium metus commodo dignissim efficitur.</p>
+To combat these issues, we looked at the story body itself instead of each possible element to determine the design rules. We came up with a small list of general ideas.
 
-<p>Morbi ac orci urna. Suspendisse massa neque, fermentum ac sem eu, vehicula commodo quam. Maecenas eu laoreet mi, eu consectetur turpis. Nullam ac mauris bibendum, scelerisque orci in, tristique sapien. Nulla condimentum nec leo id facilisis. Nullam sodales lacus ut egestas laoreet. Donec tempus ornare magna, ut consectetur nibh maximus vel. Ut hendrerit quam mattis urna dignissim convallis sed eu magna. Fusce mi lorem, mattis at sapien vitae, vestibulum viverra turpis. Nulla nec arcu sit amet nibh pharetra posuere sed ac arcu. Integer aliquet molestie fermentum. Sed sit amet malesuada ex. Sed quis porttitor sapien, quis ullamcorper ante. Pellentesque scelerisque lacus magna, vitae luctus nunc tempor nec.</p>
++ Text should be centered in the middle and no wider than 720px.
++ Everything except media should have 15px of space on the left and right.
++ Media should be allowed to go to 1140px wide to elevate value.
++ Media and story modules should have 30px of vertical space.
++ Advertising should have 50px of vertical space.
++ Subheads should be 600 weight and Sans Serif.
+
+The last challenge was to tackle the idea that as dynamic content becomes more important to our designs, the structure would need to be able to adopt it without increasing the code base more than necessary. We needed a basic default setup that could be easily overloaded. We settled on a direct child approach, which could provide what we needed in the fewest lines of code.
 
 <figure>
   <img src="https://www.kansascity.com/latest-news/b5ozny/picture205673364/alternates/LANDSCAPE_1140/Baby%20Jack%20al%20030918%200240f">
   <figcaption>Dr. Pirooz Eghtesady, cardiothoracic surgeon-in-chief at St. Louis Children’s Hospital, had performed more than 200 heart transplants and 20 lung transplants by the time Jack Palmer came under his care. <span class="byline">BY <a href="#">ALLISON LONG</a> <span class="credit">THE KANSAS CITY STAR</span></span></figcaption>
 </figure>
 
-<h3>SUBHEAD EXAMPLE</h3>
-
-<p>Mauris congue elit at felis finibus, eu egestas ligula tempor. Quisque fringilla sed erat vel suscipit. Donec viverra ullamcorper diam vitae faucibus. Nunc blandit nibh id mi luctus volutpat. Nunc eu malesuada velit. Suspendisse fringilla dignissim facilisis. Aenean sagittis, elit et gravida euismod, dui dui ultrices nunc, vel suscipit lorem leo vitae eros.</p>
-
-<p>Suspendisse tempus ipsum sed pharetra gravida. Proin elit orci, fringilla vel magna non, gravida pulvinar tellus. Phasellus viverra, ex et vestibulum efficitur, lectus felis blandit nisi, in imperdiet eros quam et ante. Etiam venenatis ligula ut arcu posuere, vitae condimentum tortor bibendum. Nullam malesuada rhoncus nibh non volutpat. Donec vitae odio pellentesque, lobortis est eu, tristique metus. Maecenas eget magna a libero convallis lobortis. Phasellus tristique, sapien ac posuere pellentesque, neque purus faucibus mauris, et dapibus eros purus at neque.</p>
-
+<!--
 <div class="ad-widget">
   <div class="iframe" class="iframe" style="width: 300px; height: 250px; background-color: #ddd;"></div>
 </div>
+-->
+
+### Filler content
 
 <p>Donec varius laoreet venenatis. Nullam eu malesuada justo. Sed condimentum, leo ut imperdiet finibus, arcu massa interdum nisi, sed ornare ipsum lacus id lorem. Phasellus sed egestas odio. Duis id feugiat sapien. Pellentesque tempus, urna eget convallis bibendum, quam risus convallis purus, non ornare lectus mi a ipsum. Nam euismod felis ex, vitae molestie nibh volutpat a. Suspendisse dapibus tellus vitae augue viverra ultrices.</p>
 
@@ -50,9 +60,11 @@ layout: story
 
 <p>Mauris tempor neque justo, et commodo dolor tristique non. Suspendisse tristique tincidunt turpis, vitae tincidunt nibh sollicitudin ut. Ut vitae vulputate tortor. Aliquam elit leo, luctus eget elementum in, malesuada at purus. Suspendisse sed placerat ligula, a lacinia dui. Donec ullamcorper venenatis mauris, ut lacinia ex auctor non. Cras commodo ac orci et tempus. Donec auctor dui in leo pharetra scelerisque. Fusce blandit tellus orci, vel pharetra nunc consectetur eget. In a tellus pulvinar, placerat odio non, dapibus velit. Pellentesque posuere maximus quam, non semper nisi tempor a. In iaculis, nibh quis egestas bibendum, metus leo luctus nibh, ac eleifend ipsum velit nec erat. Phasellus lacinia fringilla pulvinar.</p>
 
+<!--
 <div class="ad-widget">
   <div class="iframe" class="iframe" style="width: 300px; height: 250px; background-color: #ddd;"></div>
 </div>
+-->
 
 <p>Etiam porttitor at tellus vel scelerisque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sollicitudin imperdiet justo vitae egestas. Vestibulum suscipit augue a libero euismod faucibus. Mauris consequat nisl vel suscipit tristique. In tincidunt risus laoreet quam porttitor, vel finibus libero convallis. Nunc suscipit feugiat erat, eget imperdiet ante facilisis quis. Sed leo augue, euismod ac efficitur quis, condimentum at magna. Ut mauris urna, gravida id rhoncus vel, tempor quis dolor. Nullam euismod odio ligula, aliquam ornare dui commodo cursus. Curabitur et vestibulum sapien. Fusce non leo neque.</p>
 
@@ -61,3 +73,4 @@ layout: story
 <div class="story-module">
   {{< author-card >}}
 </div>
+

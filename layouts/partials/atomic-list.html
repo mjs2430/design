@@ -26,9 +26,6 @@
         <a href="{{ .Page.Permalink }}">{{ .Name }}</a>
       </h4>
       <p class="summary">{{ .Page.Description }}</p>
-      {{- with .Page.Params.sample }}
-      <h5><a href="{{ . }}">VIEW SAMPLE</a></h5>
-      {{ end -}}
     </div>
     {{ end }}
   </div>
