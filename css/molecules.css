@@ -129,7 +129,7 @@
 
 /** Reverse promo */
 
-.promo, a.promo {
+.promo, a.promo, .impact .promo {
   background-color: #31409F;
   color: white;
 }

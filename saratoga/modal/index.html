@@ -66,50 +66,6 @@
   &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
 &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
 
-<h4 id="css">CSS</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.s-modal {
-	<span style="color:#000080;font-weight:bold">position</span>: <span style="color:#000080;font-weight:bold">fixed</span>;
-	<span style="color:#000080;font-weight:bold">top</span>: <span style="color:#00f">0</span>;
-	<span style="color:#000080;font-weight:bold">right</span>: <span style="color:#00f">0</span>;
-	<span style="color:#000080;font-weight:bold">bottom</span>: <span style="color:#00f">0</span>;
-	<span style="color:#000080;font-weight:bold">left</span>: <span style="color:#00f">0</span>;
-	<span style="color:#000080;font-weight:bold">margin</span>: <span style="color:#00f">0</span>;
-	<span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">100</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#00f">15</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#00f">0</span>;
-	<span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#000080;font-weight:bold">unset</span>;
-	<span style="color:#000080;font-weight:bold">overflow</span>: <span style="color:#000080;font-weight:bold">auto</span>;
-	<span style="color:#000080;font-weight:bold">z-index</span>: <span style="color:#00f">9999</span>;
-	<span style="color:#000080;font-weight:bold">transform</span>: translateZ(<span style="color:#00f">0</span>);
-	pointer-events: <span style="color:#000080;font-weight:bold">none</span>;
-}
-
-.s-modal &gt; * {
-	<span style="color:#000080;font-weight:bold">position</span>: <span style="color:#000080;font-weight:bold">relative</span>;
-	<span style="color:#000080;font-weight:bold">width</span>: <span style="color:#00f">100</span><span style="color:#000080;font-weight:bold">%</span>;
-	<span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#00f">710</span><span style="color:#000080;font-weight:bold">px</span>;
-	<span style="color:#000080;font-weight:bold">margin</span>: <span style="color:#00f">15</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#000080;font-weight:bold">auto</span>;
-	pointer-events: <span style="color:#000080;font-weight:bold">auto</span>;
-}
-
-.s-modal .package {
-	<span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">30</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#00f">50</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#00f">30</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#00f">15</span><span style="color:#000080;font-weight:bold">px</span>;
-}
-
-.s-modal .close {
-	<span style="color:#000080;font-weight:bold">position</span>: <span style="color:#000080;font-weight:bold">absolute</span>;
-	<span style="color:#000080;font-weight:bold">top</span>: <span style="color:#00f">0</span>;
-	<span style="color:#000080;font-weight:bold">right</span>: <span style="color:#00f">0</span>;
-	<span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">15</span><span style="color:#000080;font-weight:bold">px</span>;
-	<span style="color:#000080;font-weight:bold">cursor</span>: <span style="color:#000080;font-weight:bold">pointer</span>;
-}
-
-.s-modal.screen {
-	<span style="color:#000080;font-weight:bold">background-color</span>: rgba(<span style="color:#00f">255</span>,<span style="color:#00f">255</span>,<span style="color:#00f">255</span>,<span style="color:#00f">0.8</span>);
-	pointer-events: <span style="color:#000080;font-weight:bold">auto</span>;
-}
-
-.s-modal[<span style="color:#000080;font-weight:bold">hidden</span>] {
-	<span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">none</span>;
-}</code></pre></div>
 <h4 id="javascript">JavaScript</h4>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#000080;font-weight:bold">function</span> toggleModal(id, force) {
   <span style="color:#000080;font-weight:bold">let</span> m = document.getElementById(id);
@@ -127,10 +83,8 @@
   }
 }
 </code></pre></div>
-<h6 id="subscription-example-css">Subscription example CSS</h6>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.modal-subscription {
-	<span style="color:#000080;font-weight:bold">flex-wrap</span>: <span style="color:#000080;font-weight:bold">wrap</span>;
-}</code></pre></div>
+<hr />
+
 <h2 id="bottom-version">Bottom version</h2>
 
 <h4 id="example-1">EXAMPLE</h4>
@@ -157,40 +111,6 @@
   &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
 &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
 
-<h4 id="css-1">CSS</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.s-modal.bottom:not([<span style="color:#000080;font-weight:bold">hidden</span>]) {
-	<span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">flex</span>;
-	<span style="color:#000080;font-weight:bold">align-items</span>: <span style="color:#000080;font-weight:bold">flex</span>-<span style="color:#000080;font-weight:bold">end</span>;
-}
-
-.s-modal.bottom &gt; * {
-	<span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#00f">1110</span><span style="color:#000080;font-weight:bold">px</span>;
-	<span style="color:#000080;font-weight:bold">position</span>: <span style="color:#000080;font-weight:bold">relative</span>;
-}
-
-.s-modal.bottom .package {
-	<span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#00f">710</span><span style="color:#000080;font-weight:bold">px</span>;
-	<span style="color:#000080;font-weight:bold">margin</span>: <span style="color:#00f">0</span> <span style="color:#000080;font-weight:bold">auto</span>;
-}</code></pre></div>
-<h6 id="newsletter-signup-css">Newsletter signup CSS</h6>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.modal-newsletter .grid {
-	<span style="color:#000080;font-weight:bold">grid-template-columns</span>: <span style="color:#00f">1</span>fr;
-	<span style="color:#000080;font-weight:bold">grid-row-gap</span>: <span style="color:#00f">10</span><span style="color:#000080;font-weight:bold">px</span>;
-}
-
-.modal-newsletter <span style="color:#000080;font-weight:bold">input</span>, .modal-newsletter .button {
-	<span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">1</span><span style="color:#000080;font-weight:bold">em</span> <span style="color:#00f">1</span><span style="color:#000080;font-weight:bold">em</span> <span style="color:#00f">.7</span><span style="color:#000080;font-weight:bold">em</span>;
-	<span style="color:#000080;font-weight:bold">border-radius</span>: <span style="color:#00f">2</span><span style="color:#000080;font-weight:bold">px</span>;
-	<span style="color:#000080;font-weight:bold">border</span>: <span style="color:#000080;font-weight:bold">none</span>;
-	<span style="color:#000080;font-weight:bold">color</span>: <span style="color:#00f">#222</span>;
-	<span style="color:#000080;font-weight:bold">align-self</span>: <span style="color:#000080;font-weight:bold">unset</span>;
-}
-
-@<span style="color:#000080;font-weight:bold">media</span> (<span style="color:#000080;font-weight:bold">min-width</span>: <span style="color:#000080;font-weight:bold">600px</span>) {
-	.modal-newsletter .grid {
-		<span style="color:#000080;font-weight:bold">grid-template-columns</span>: <span style="color:#00f">3</span>fr <span style="color:#00f">1</span>fr;
-	}
-}</code></pre></div>
   </div>
 
   

@@ -46,6 +46,11 @@ td:first-child {
   width: 150px;
 }
 
+.story-body > hr {
+  margin: 50px auto;
+  box-sizing: border-box;
+}
+
 /*
  * Style guide main rules.
  */

@@ -110,33 +110,6 @@
   &lt;<span style="color:#000080;font-weight:bold">hr</span>&gt;
 &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
 
-<h4 id="css">CSS</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.expander {
-  <span style="color:#000080;font-weight:bold">cursor</span>: <span style="color:#000080;font-weight:bold">pointer</span>;
-  <span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">flex</span>;
-  <span style="color:#000080;font-weight:bold">align-items</span>: <span style="color:#000080;font-weight:bold">center</span>;
-}
-
-.expander:after {
-  <span style="color:#000080;font-weight:bold">content</span>: url(<span style="color:#00f">../icons/caret-expander.svg</span>);
-  <span style="color:#000080;font-weight:bold">width</span>: <span style="color:#00f">14</span><span style="color:#000080;font-weight:bold">px</span>;
-  <span style="color:#000080;font-weight:bold">margin-left</span>: <span style="color:#00f">5</span><span style="color:#000080;font-weight:bold">px</span>;
-  <span style="color:#000080;font-weight:bold">transition</span>: <span style="color:#000080;font-weight:bold">transform</span> <span style="color:#00f">.5</span><span style="color:#000080;font-weight:bold">s</span> <span style="color:#000080;font-weight:bold">ease</span>;
-  <span style="color:#000080;font-weight:bold">transform</span>: translateY(<span style="color:#00f">-.1</span><span style="color:#000080;font-weight:bold">em</span>) rotateX(<span style="color:#00f">180</span><span style="color:#000080;font-weight:bold">deg</span>);
-  <span style="color:#000080;font-weight:bold">transform-origin</span>: <span style="color:#00f">50</span><span style="color:#000080;font-weight:bold">%</span> <span style="color:#00f">50</span><span style="color:#000080;font-weight:bold">%</span>;
-}
-
-.expander ~ * {
-  <span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">none</span>;
-}
-
-.expander.open:after {
-  <span style="color:#000080;font-weight:bold">transform</span>: translateY(<span style="color:#00f">-.1</span><span style="color:#000080;font-weight:bold">em</span>) rotateX(<span style="color:#00f">0</span>);
-}
-
-.expander.open ~ * {
-  <span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">block</span>;
-}</code></pre></div>
   </div>
 
   
