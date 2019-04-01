@@ -24,12 +24,14 @@
   padding: 15px 0;
 }
 
-/* Body */
+/* Body (rail version) */
 
 .story-body {
   position: relative;
   flex: 1 1 438px;
 }
+
+/* HTML needs to be scrubbed for the next three declarations */
 
 .story-body > .lead-item,
 .story-body > .ng_digital,
@@ -39,7 +41,6 @@
 	padding: 0;
 }
 
-/** Inline Video code that doesn't match the pattern */
 .story-body .embed-media-details {
   padding: 10px 15px 0;
 }

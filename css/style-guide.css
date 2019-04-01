@@ -19,7 +19,7 @@ pre code {
 }
 
 small {
-  font-size: 14px;
+  font-size: .8em;
 }
 
 table {
@@ -56,16 +56,6 @@ td:first-child {
   background-color: #f4f4f4;
 }
 
-.list-category {
-  padding: 15px 0 .2em;
-  margin: 0 15px 0;
-  border-bottom: 1px solid #707070;
-  font-family: "McClatchy Sans";
-  font-weight: 600;
-  text-transform: uppercase;
-  text-decoration: none !important;
-}
-
 .updated {
   display: block;
   font-size: 11px;
@@ -78,16 +68,29 @@ td:first-child {
   z-index: 1;
 }
 
-.list .atoms {
+.list .cards {
   background-color: #FDFDF6;
 }
 
-.list .molecules {
+.list .decks {
   background-color: #D2EFF2;
 }
 
-.list .organisms {
+.list .subscriptions {
   background-color: #A5C3E9;
+}
+
+.list .atoms {
+  border-top: 1px solid #ddd;
+}
+
+.list .package.active {
+  background-color: #377f6a;
+  color: white;
+}
+
+.list a.active {
+  color: #377f6a;
 }
 
 .details {

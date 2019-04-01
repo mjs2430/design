@@ -20,20 +20,7 @@
   </url>
   
   <url>
-    <loc>https://mcclatchy.github.io/design/saratoga/sample/homepage/</loc>
-  </url>
-  
-  <url>
-    <loc>https://mcclatchy.github.io/design/saratoga/sample/story/</loc>
-  </url>
-  
-  <url>
     <loc>https://mcclatchy.github.io/design/saratoga/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mcclatchy.github.io/design/saratoga/sample/subscription/</loc>
   </url>
   
   <url>
@@ -117,6 +104,10 @@
   </url>
   
   <url>
+    <loc>https://mcclatchy.github.io/design/saratoga/decks/homepage/</loc>
+  </url>
+  
+  <url>
     <loc>https://mcclatchy.github.io/design/saratoga/icons/</loc>
   </url>
   
@@ -185,11 +176,15 @@
   </url>
   
   <url>
-    <loc>https://mcclatchy.github.io/design/saratoga/story/</loc>
+    <loc>https://mcclatchy.github.io/design/saratoga/decks/story/</loc>
   </url>
   
   <url>
     <loc>https://mcclatchy.github.io/design/saratoga/subscription-grid/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mcclatchy.github.io/design/saratoga/decks/subscription/</loc>
   </url>
   
   <url>
