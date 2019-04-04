@@ -33,3 +33,7 @@ As the organism compresses to fit smaller screens, the icons should wrap under t
 {{< author-card >}}
 </div>
 {{< /highlight >}}
+
+## Author Page Version
+
+The new author page has a slightly alternative look to accomodate the additional space and give more prominence to the journalist.
