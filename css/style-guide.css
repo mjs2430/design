@@ -98,6 +98,16 @@ td:first-child {
   color: #377f6a;
 }
 
+.list a.new:after {
+  content: url(../icons/certificate.svg);
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  position: relative;
+  left: 5px;
+  top: 2px
+}
+
 .details {
   position: relative;
   z-index: 2;
@@ -129,6 +139,20 @@ td:first-child {
 .page-header {
   margin-top: 0;
   padding-top: 30px;
+}
+
+.note {
+  background-color: #377f6a;
+  color: white;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 15px;
+  --headerFamily: "McClatchy Sans", sans-serif;
+  --headerWeight: 600;
+}
+
+.note p {
+  font: 500 14px/1.5em "McClatchy Sans", sans-serif;
 }
 
 /**

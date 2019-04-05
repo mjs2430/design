@@ -43,57 +43,59 @@
 
 <p>As the organism compresses to fit smaller screens, the icons should wrap under the author&rsquo;s name and still right of the thumbnail. The biography uses the <code>summary</code> molecule and shoudn&rsquo;t deviate from the defaults. Also, the author&rsquo;s name should be made a link and shown in the standard <code>byline</code> style.</p>
 
+<div class="package note">
+  <h4 id="update-1-11-0">Update (1.11.0)</h4>
+
+<p>The HTML for this element has been adjusted in 1.11.0 to optimize CSS size for the new author bio page.</p>
+
+</div>
+
+
 <h4 id="example">EXAMPLE</h4>
 
 <div class="story-module">
-  <div class="author-card">
-  <div class="row">
-    <img class="author-thumb" src="../../img/aaron_moody.jpg"></img>
-    <div class="row">
-      <h6 class="byline"><a href="mailto:amoody@newsobserver.com">AARON MOODY</a></h6>
-      <div class="social-media">
-        <a class="i-envelope" href="mailto:amoody@newsobserver.com"></a>
-        <a class="i-twitter" href="https://twitter.com/aaron_moody1"></a>
-        <a class="i-facebook-f" href="#"></a>
-        <a class="i-phone" href="#">
-          <span class="small gray phone_num">816-123-4567</span>
-        </a>
-      </div>
+  <div class="author-card package">
+  <div class="thumb">
+    <img src="../../img/aaron_moody.jpg">
+  </div>
+  <div class="package row">
+    <h6 class="byline">
+      <a href="mailto:amoody@newsobserver.com">Aaron Moody</a>
+    </h6>
+    <div class="social-media">
+      <a class="i-envelope" href="mailto:amoody@newsobserver.com"></a>
+      <a class="i-twitter" href="https://twitter.com/aaron_moody1"></a>
+      <a class="i-facebook-f" href="#"></a>
+      <a class="i-phone" href="#">
+        <span class="small gray phone_num">816-123-4567</span>
+      </a>
     </div>
   </div>
   <p class="summary">Aaron Moody is a sports and general reporter for the News &amp; Observer. Here is a second sentence for the bio because it will probably be longer than this. Maybe even longer I don't know.</p>
-  <hr>
-  <div class="package author-subscription">
-    <h4 class="callout">Support our work with a digital subscription</h4>
-    <a href="#" class="more-link">SUBSCRIBE TODAY</a>
-  </div>
 </div>
 
 </div>
 
 <h4 id="html">HTML</h4>
 
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;author-card&#34;</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;row&#34;</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;author-thumb&#34;</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;/img/aaron_moody.jpg&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">img</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;row&#34;</span>&gt;
-      &lt;<span style="color:#000080;font-weight:bold">h6</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;byline&#34;</span>&gt;&lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;mailto:amoody@newsobserver.com&#34;</span>&gt;AARON MOODY&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">h6</span>&gt;
-      &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;social-media&#34;</span>&gt;
-        &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;i-envelope&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;mailto:amoody@newsobserver.com&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-        &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;i-twitter&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;https://twitter.com/aaron_moody1&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-        &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;i-facebook-f&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-        &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;i-phone&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;
-          &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;small gray phone_num&#34;</span>&gt;816-123-4567&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
-        &lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-      &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;author-card package&#34;</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;thumb&#34;</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;/img/aaron_moody.jpg&#34;</span>&gt;
+  &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package row&#34;</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">h6</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;byline&#34;</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;mailto:amoody@newsobserver.com&#34;</span>&gt;Aaron Moody&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+    &lt;/<span style="color:#000080;font-weight:bold">h6</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;social-media&#34;</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;i-envelope&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;mailto:amoody@newsobserver.com&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;i-twitter&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;https://twitter.com/aaron_moody1&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;i-facebook-f&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;i-phone&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;small gray phone_num&#34;</span>&gt;816-123-4567&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
+      &lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
     &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
   &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
   &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;Aaron Moody is a sports and general reporter for the News &amp;amp; Observer. Here is a second sentence for the bio because it will probably be longer than this. Maybe even longer I don&#39;t know.&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">hr</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package author-subscription&#34;</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">h4</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;callout&#34;</span>&gt;Support our work with a digital subscription&lt;/<span style="color:#000080;font-weight:bold">h4</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;more-link&#34;</span>&gt;SUBSCRIBE TODAY&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-  &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
 &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
 
 <hr />
@@ -101,50 +103,44 @@
 <h4 id="two-author-example">TWO-AUTHOR EXAMPLE</h4>
 
 <div class="grid story-module">
-  <div class="author-card">
-  <div class="row">
-    <img class="author-thumb" src="../../img/aaron_moody.jpg"></img>
-    <div class="row">
-      <h6 class="byline"><a href="mailto:amoody@newsobserver.com">AARON MOODY</a></h6>
-      <div class="social-media">
-        <a class="i-envelope" href="mailto:amoody@newsobserver.com"></a>
-        <a class="i-twitter" href="https://twitter.com/aaron_moody1"></a>
-        <a class="i-facebook-f" href="#"></a>
-        <a class="i-phone" href="#">
-          <span class="small gray phone_num">816-123-4567</span>
-        </a>
-      </div>
+  <div class="author-card package">
+  <div class="thumb">
+    <img src="../../img/aaron_moody.jpg">
+  </div>
+  <div class="package row">
+    <h6 class="byline">
+      <a href="mailto:amoody@newsobserver.com">Aaron Moody</a>
+    </h6>
+    <div class="social-media">
+      <a class="i-envelope" href="mailto:amoody@newsobserver.com"></a>
+      <a class="i-twitter" href="https://twitter.com/aaron_moody1"></a>
+      <a class="i-facebook-f" href="#"></a>
+      <a class="i-phone" href="#">
+        <span class="small gray phone_num">816-123-4567</span>
+      </a>
     </div>
   </div>
   <p class="summary">Aaron Moody is a sports and general reporter for the News &amp; Observer. Here is a second sentence for the bio because it will probably be longer than this. Maybe even longer I don't know.</p>
-  <hr>
-  <div class="package author-subscription">
-    <h4 class="callout">Support our work with a digital subscription</h4>
-    <a href="#" class="more-link">SUBSCRIBE TODAY</a>
-  </div>
 </div>
 
-  <div class="author-card">
-  <div class="row">
-    <img class="author-thumb" src="../../img/aaron_moody.jpg"></img>
-    <div class="row">
-      <h6 class="byline"><a href="mailto:amoody@newsobserver.com">AARON MOODY</a></h6>
-      <div class="social-media">
-        <a class="i-envelope" href="mailto:amoody@newsobserver.com"></a>
-        <a class="i-twitter" href="https://twitter.com/aaron_moody1"></a>
-        <a class="i-facebook-f" href="#"></a>
-        <a class="i-phone" href="#">
-          <span class="small gray phone_num">816-123-4567</span>
-        </a>
-      </div>
+  <div class="author-card package">
+  <div class="thumb">
+    <img src="../../img/aaron_moody.jpg">
+  </div>
+  <div class="package row">
+    <h6 class="byline">
+      <a href="mailto:amoody@newsobserver.com">Aaron Moody</a>
+    </h6>
+    <div class="social-media">
+      <a class="i-envelope" href="mailto:amoody@newsobserver.com"></a>
+      <a class="i-twitter" href="https://twitter.com/aaron_moody1"></a>
+      <a class="i-facebook-f" href="#"></a>
+      <a class="i-phone" href="#">
+        <span class="small gray phone_num">816-123-4567</span>
+      </a>
     </div>
   </div>
   <p class="summary">Aaron Moody is a sports and general reporter for the News &amp; Observer. Here is a second sentence for the bio because it will probably be longer than this. Maybe even longer I don't know.</p>
-  <hr>
-  <div class="package author-subscription">
-    <h4 class="callout">Support our work with a digital subscription</h4>
-    <a href="#" class="more-link">SUBSCRIBE TODAY</a>
-  </div>
 </div>
 
 </div>
@@ -152,52 +148,105 @@
 <h4 id="html-1">HTML</h4>
 
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;grid story-module&#34;</span>&gt;
-&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;author-card&#34;</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;row&#34;</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;author-thumb&#34;</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;/img/aaron_moody.jpg&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">img</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;row&#34;</span>&gt;
-      &lt;<span style="color:#000080;font-weight:bold">h6</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;byline&#34;</span>&gt;&lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;mailto:amoody@newsobserver.com&#34;</span>&gt;AARON MOODY&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">h6</span>&gt;
-      &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;social-media&#34;</span>&gt;
-        &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;i-envelope&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;mailto:amoody@newsobserver.com&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-        &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;i-twitter&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;https://twitter.com/aaron_moody1&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-        &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;i-facebook-f&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-        &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;i-phone&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;
-          &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;small gray phone_num&#34;</span>&gt;816-123-4567&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
-        &lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-      &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;author-card package&#34;</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;thumb&#34;</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;/img/aaron_moody.jpg&#34;</span>&gt;
+  &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package row&#34;</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">h6</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;byline&#34;</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;mailto:amoody@newsobserver.com&#34;</span>&gt;Aaron Moody&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+    &lt;/<span style="color:#000080;font-weight:bold">h6</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;social-media&#34;</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;i-envelope&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;mailto:amoody@newsobserver.com&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;i-twitter&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;https://twitter.com/aaron_moody1&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;i-facebook-f&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;i-phone&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;small gray phone_num&#34;</span>&gt;816-123-4567&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
+      &lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
     &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
   &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
   &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;Aaron Moody is a sports and general reporter for the News &amp;amp; Observer. Here is a second sentence for the bio because it will probably be longer than this. Maybe even longer I don&#39;t know.&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">hr</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package author-subscription&#34;</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">h4</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;callout&#34;</span>&gt;Support our work with a digital subscription&lt;/<span style="color:#000080;font-weight:bold">h4</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;more-link&#34;</span>&gt;SUBSCRIBE TODAY&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-  &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
 &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
 
-&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;author-card&#34;</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;row&#34;</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;author-thumb&#34;</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;/img/aaron_moody.jpg&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">img</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;row&#34;</span>&gt;
-      &lt;<span style="color:#000080;font-weight:bold">h6</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;byline&#34;</span>&gt;&lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;mailto:amoody@newsobserver.com&#34;</span>&gt;AARON MOODY&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">h6</span>&gt;
-      &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;social-media&#34;</span>&gt;
-        &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;i-envelope&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;mailto:amoody@newsobserver.com&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-        &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;i-twitter&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;https://twitter.com/aaron_moody1&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-        &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;i-facebook-f&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-        &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;i-phone&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;
-          &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;small gray phone_num&#34;</span>&gt;816-123-4567&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
-        &lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-      &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;author-card package&#34;</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;thumb&#34;</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;/img/aaron_moody.jpg&#34;</span>&gt;
+  &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package row&#34;</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">h6</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;byline&#34;</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;mailto:amoody@newsobserver.com&#34;</span>&gt;Aaron Moody&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+    &lt;/<span style="color:#000080;font-weight:bold">h6</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;social-media&#34;</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;i-envelope&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;mailto:amoody@newsobserver.com&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;i-twitter&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;https://twitter.com/aaron_moody1&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;i-facebook-f&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;i-phone&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;small gray phone_num&#34;</span>&gt;816-123-4567&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
+      &lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
     &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
   &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
   &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;Aaron Moody is a sports and general reporter for the News &amp;amp; Observer. Here is a second sentence for the bio because it will probably be longer than this. Maybe even longer I don&#39;t know.&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">hr</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package author-subscription&#34;</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">h4</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;callout&#34;</span>&gt;Support our work with a digital subscription&lt;/<span style="color:#000080;font-weight:bold">h4</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;more-link&#34;</span>&gt;SUBSCRIBE TODAY&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-  &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
 &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
 
+&lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
+
+<h2 id="author-bio-page-version">Author Bio Page Version</h2>
+
+<p>The new author page has a slightly alternative look to accomodate the additional space and give more prominence to the journalist.</p>
+
+<h4 id="example-1">Example</h4>
+
+<div class="example">
+<div class="author-card author-bio package">
+  <div class="thumb">
+    <img src="../../img/aaron_moody.jpg">
+  </div>
+  <div class="a-details package">
+    <h6 class="gray">SPORTS REPORTER</h6>
+    <h3 class="name">Aaron Moody</h3>
+  </div>
+  <p class="summary">Aaron Moody is a sports and general reporter for the News &amp; Observer. Here is a second sentence for the bio because it will probably be longer than this. Maybe even longer I don't know.</p>
+  <div class="a-social package">
+    <h6 class="connect">CONNECT WITH AARON:</h6>
+    <div class="social-media">
+      <a class="i-envelope" href="mailto:amoody@newsobserver.com"></a>
+      <a class="i-twitter" href="https://twitter.com/aaron_moody1"></a>
+      <a class="i-facebook-f" href="#"></a>
+      <a class="i-phone" href="#">
+        <span class="small gray phone_num">816-123-4567</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<h4 id="html-2">HTML</h4>
+
+<p>The structure for this element is using many of the same classes and concepts from the inline author-card, but it is slightly different. Despite many attempts to keep the structure the same, it either didn&rsquo;t work or the CSS became overly complex.</p>
+
+<p>This version does utilize a media breakpoint, since it is only used in one way on the author bio page. That causes issues in this guide. To see how the element responds to browser resizing, use the <a href="../decks/author-bio/">author bio deck</a>.</p>
+
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;author-card author-bio package&#34;</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;thumb&#34;</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;/img/aaron_moody.jpg&#34;</span>&gt;
+  &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;a-details package&#34;</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">h6</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;gray&#34;</span>&gt;SPORTS REPORTER&lt;/<span style="color:#000080;font-weight:bold">h6</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">h3</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;name&#34;</span>&gt;Aaron Moody&lt;/<span style="color:#000080;font-weight:bold">h3</span>&gt;
+  &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;Aaron Moody is a sports and general reporter for the News &amp;amp; Observer. Here is a second sentence for the bio because it will probably be longer than this. Maybe even longer I don&#39;t know.&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;a-social package&#34;</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">h6</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;connect&#34;</span>&gt;CONNECT WITH AARON:&lt;/<span style="color:#000080;font-weight:bold">h6</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;social-media&#34;</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;i-envelope&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;mailto:amoody@newsobserver.com&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;i-twitter&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;https://twitter.com/aaron_moody1&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;i-facebook-f&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;i-phone&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;small gray phone_num&#34;</span>&gt;816-123-4567&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
+      &lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+    &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+  &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
 &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
 
   </div>
@@ -212,7 +261,7 @@
     
     <div class="package active">
       <h4 class="sans bold">
-        <a href="https://mcclatchy.github.io/design/saratoga/author-card/">author-card</a>
+        <a class="new" href="https://mcclatchy.github.io/design/saratoga/author-card/">author-card</a>
       </h4>
       <p class="summary">Author information at the bottom of articles</p>
     </div>
@@ -220,7 +269,7 @@
     
     <div class="package">
       <h4 class="sans bold">
-        <a href="https://mcclatchy.github.io/design/saratoga/big-news/">big-news</a>
+        <a class="" href="https://mcclatchy.github.io/design/saratoga/big-news/">big-news</a>
       </h4>
       <p class="summary">Goes on the top of the homepage during large news events.</p>
     </div>
@@ -228,7 +277,7 @@
     
     <div class="package">
       <h4 class="sans bold">
-        <a href="https://mcclatchy.github.io/design/saratoga/digest/">digest</a>
+        <a class="" href="https://mcclatchy.github.io/design/saratoga/digest/">digest</a>
       </h4>
       <p class="summary">Headline stacks for section content.</p>
     </div>
@@ -236,7 +285,7 @@
     
     <div class="package">
       <h4 class="sans bold">
-        <a href="https://mcclatchy.github.io/design/saratoga/flex-columns/">flex-columns</a>
+        <a class="" href="https://mcclatchy.github.io/design/saratoga/flex-columns/">flex-columns</a>
       </h4>
       <p class="summary">A flexbox version of the grid using the same rules.</p>
     </div>
@@ -244,7 +293,7 @@
     
     <div class="package">
       <h4 class="sans bold">
-        <a href="https://mcclatchy.github.io/design/saratoga/grid/">grid</a>
+        <a class="" href="https://mcclatchy.github.io/design/saratoga/grid/">grid</a>
       </h4>
       <p class="summary">A very basic starter grid</p>
     </div>
@@ -252,7 +301,7 @@
     
     <div class="package">
       <h4 class="sans bold">
-        <a href="https://mcclatchy.github.io/design/saratoga/header/">header</a>
+        <a class="" href="https://mcclatchy.github.io/design/saratoga/header/">header</a>
       </h4>
       <p class="summary">An expanded package for article headers.</p>
     </div>
@@ -260,7 +309,7 @@
     
     <div class="package">
       <h4 class="sans bold">
-        <a href="https://mcclatchy.github.io/design/saratoga/immersive/">immersive</a>
+        <a class="" href="https://mcclatchy.github.io/design/saratoga/immersive/">immersive</a>
       </h4>
       <p class="summary">Immersive card to match the layout option.</p>
     </div>
@@ -268,7 +317,7 @@
     
     <div class="package">
       <h4 class="sans bold">
-        <a href="https://mcclatchy.github.io/design/saratoga/in-depth/">in-depth</a>
+        <a class="" href="https://mcclatchy.github.io/design/saratoga/in-depth/">in-depth</a>
       </h4>
       <p class="summary">In depth module for section pages</p>
     </div>
@@ -276,7 +325,7 @@
     
     <div class="package">
       <h4 class="sans bold">
-        <a href="https://mcclatchy.github.io/design/saratoga/inline-cta/">inline-cta</a>
+        <a class="" href="https://mcclatchy.github.io/design/saratoga/inline-cta/">inline-cta</a>
       </h4>
       <p class="summary">Inline call to action for story display.</p>
     </div>
@@ -284,7 +333,7 @@
     
     <div class="package">
       <h4 class="sans bold">
-        <a href="https://mcclatchy.github.io/design/saratoga/modal/">modal</a>
+        <a class="" href="https://mcclatchy.github.io/design/saratoga/modal/">modal</a>
       </h4>
       <p class="summary">Simple overlay containers to maintain consistency.</p>
     </div>
@@ -292,7 +341,7 @@
     
     <div class="package">
       <h4 class="sans bold">
-        <a href="https://mcclatchy.github.io/design/saratoga/read-next/">read-next</a>
+        <a class="" href="https://mcclatchy.github.io/design/saratoga/read-next/">read-next</a>
       </h4>
       <p class="summary">The custom read next card under story bodies.</p>
     </div>
@@ -300,7 +349,7 @@
     
     <div class="package">
       <h4 class="sans bold">
-        <a href="https://mcclatchy.github.io/design/saratoga/related-stories/">related-stories</a>
+        <a class="" href="https://mcclatchy.github.io/design/saratoga/related-stories/">related-stories</a>
       </h4>
       <p class="summary">Display for stories related in CUE.</p>
     </div>
@@ -308,7 +357,7 @@
     
     <div class="package">
       <h4 class="sans bold">
-        <a href="https://mcclatchy.github.io/design/saratoga/series-nav/">series-nav</a>
+        <a class="" href="https://mcclatchy.github.io/design/saratoga/series-nav/">series-nav</a>
       </h4>
       <p class="summary">Series nav for article pages.</p>
     </div>
@@ -316,7 +365,7 @@
     
     <div class="package">
       <h4 class="sans bold">
-        <a href="https://mcclatchy.github.io/design/saratoga/promo/">swg-promo</a>
+        <a class="" href="https://mcclatchy.github.io/design/saratoga/promo/">swg-promo</a>
       </h4>
       <p class="summary">Promo card for story and section pages</p>
     </div>
@@ -324,7 +373,7 @@
     
     <div class="package">
       <h4 class="sans bold">
-        <a href="https://mcclatchy.github.io/design/saratoga/timeline/">timeline</a>
+        <a class="" href="https://mcclatchy.github.io/design/saratoga/timeline/">timeline</a>
       </h4>
       <p class="summary">Used in live updates and for static timelines.</p>
     </div>
@@ -332,7 +381,7 @@
     
     <div class="package">
       <h4 class="sans bold">
-        <a href="https://mcclatchy.github.io/design/saratoga/transparency/">transparency</a>
+        <a class="" href="https://mcclatchy.github.io/design/saratoga/transparency/">transparency</a>
       </h4>
       <p class="summary">Provides story background information.</p>
     </div>
@@ -347,7 +396,15 @@
     
     <div class="package">
       <h4 class="sans bold">
-        <a href="https://mcclatchy.github.io/design/saratoga/decks/homepage/">homepage</a>
+        <a class="new" href="https://mcclatchy.github.io/design/saratoga/decks/author-bio/">author bio</a>
+      </h4>
+      <p class="summary">A sample of the author bio page.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mcclatchy.github.io/design/saratoga/decks/homepage/">homepage</a>
       </h4>
       <p class="summary">A sample homepage.</p>
     </div>
@@ -355,7 +412,7 @@
     
     <div class="package">
       <h4 class="sans bold">
-        <a href="https://mcclatchy.github.io/design/saratoga/decks/story/">story</a>
+        <a class="" href="https://mcclatchy.github.io/design/saratoga/decks/story/">story</a>
       </h4>
       <p class="summary">A sample story page.</p>
     </div>
@@ -363,7 +420,7 @@
     
     <div class="package">
       <h4 class="sans bold">
-        <a href="https://mcclatchy.github.io/design/saratoga/decks/subscription/">subscriptions</a>
+        <a class="" href="https://mcclatchy.github.io/design/saratoga/decks/subscription/">subscriptions</a>
       </h4>
       <p class="summary">A sampling of all subscription elements.</p>
     </div>
