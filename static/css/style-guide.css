@@ -131,6 +131,20 @@ td:first-child {
   padding-top: 30px;
 }
 
+.note {
+  background-color: #377f6a;
+  color: white;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 15px;
+  --headerFamily: "McClatchy Sans", sans-serif;
+  --headerWeight: 700;
+}
+
+.note p {
+  font: 600 14px/1.5em "McClatchy Sans", sans-serif;
+}
+
 /**
  * Phone view
  */

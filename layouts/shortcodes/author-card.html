@@ -1,15 +1,15 @@
-{{ if eq ($.Get "version") "bio" }}
+{{ if eq ($.Get "version") "bio" -}}
 
 <div class="author-card author-bio package">
   <div class="thumb">
     <img src="/img/aaron_moody.jpg">
   </div>
-  <div class="details package">
+  <div class="a-details package">
     <h6 class="gray">SPORTS REPORTER</h6>
     <h3 class="name">Aaron Moody</h3>
   </div>
   <p class="summary">Aaron Moody is a sports and general reporter for the News &amp; Observer. Here is a second sentence for the bio because it will probably be longer than this. Maybe even longer I don't know.</p>
-  <div class="social package">
+  <div class="a-social package">
     <h6 class="connect">CONNECT WITH AARON:</h6>
     <div class="social-media">
       <a class="i-envelope" href="mailto:amoody@newsobserver.com"></a>
@@ -22,7 +22,7 @@
   </div>
 </div>
 
-{{ else }}
+{{- else -}}
 
 <div class="author-card package">
   <div class="thumb">
@@ -44,4 +44,4 @@
   <p class="summary">Aaron Moody is a sports and general reporter for the News &amp; Observer. Here is a second sentence for the bio because it will probably be longer than this. Maybe even longer I don't know.</p>
 </div>
 
-{{ end }}
+{{- end }}

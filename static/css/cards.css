@@ -254,10 +254,7 @@
  * Author card
  */
 
-.author-card {
-  padding: 0;
-}
-
+.author-card,
 .author-card .package {
   padding: 0;
 }
@@ -294,23 +291,6 @@
   .author-bio {
     padding: 0;
   }
-}
-
-/* Subscription callout */
-
-.author-sub {
-  padding: 15px 0;
-  margin: 15px 0;
-  border-top: 1px solid #707070;
-}
-
-.author-sub .callout {
-  font: 14px/20px "McClatchy Sans",sans-serif;
-  color: #31409F;
-}
-
-.author-sub .more-link {
-  padding: 0;
 }
 
 /* Grid takeover */
@@ -365,7 +345,7 @@
   }
 
   .author-bio .summary,
-  .author-bio .social {
+  .author-bio .a-social {
     grid-column: start/end;
   }
 
@@ -378,11 +358,11 @@
       grid-row: span 2;
     }
 
-    .author-bio .details {
+    .author-bio .a-details {
       align-self: flex-end;
     }
 
-    .author-bio .social {
+    .author-bio .a-social {
       grid-column: 3;
       grid-row: 2;
       align-self: flex-start;
@@ -395,6 +375,24 @@
     }
   }
 }
+
+/* Subscription callout */
+
+.author-sub {
+  padding: 15px 0;
+  margin: 15px 0;
+  border-top: 1px solid #707070;
+}
+
+.author-sub .callout {
+  font: 14px/20px "McClatchy Sans",sans-serif;
+  color: #31409F;
+}
+
+.author-sub .more-link {
+  padding: 0;
+}
+
 
 /**
  * Timeline
