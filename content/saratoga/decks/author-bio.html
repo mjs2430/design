@@ -3,6 +3,7 @@ title: author bio
 description: A sample of the author bio page.
 menu: decks
 layout: deck
+class: new
 ---
 
 <section>
@@ -10,38 +11,26 @@ layout: deck
 </section>
 
 <section class="grid">
+  {{< partial src="saratoga/card.html" class="impact" hide="figure kicker" >}}
+  {{< partial src="saratoga/card.html" class="impact" hide="figure kicker" >}}
+  {{< partial src="saratoga/card.html" class="impact" hide="figure kicker" >}}
+</section>
+
+<section class="grid">
+  {{< partial src="saratoga/card.html" >}}
+  {{< partial src="saratoga/card.html" >}}
+  {{< partial src="saratoga/card.html" >}}
+  {{< partial src="saratoga/card.html" >}}
+  {{< partial src="saratoga/card.html" >}}
+  {{< partial src="saratoga/card.html" >}}
+  {{< partial src="saratoga/card.html" >}}
+  {{< partial src="saratoga/card.html" >}}
+  {{< partial src="saratoga/card.html" >}}
   {{< partial src="saratoga/card.html" >}}
   {{< partial src="saratoga/card.html" >}}
   {{< partial src="saratoga/card.html" >}}
 </section>
 
-<section class="full-bleed paper">
-  <article class="story-body" style="padding-bottom: 15px;">
-    {{< figure >}}
-
-    <p><em>imagine all the story is here</em></p>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et elit non libero maximus viverra. Sed erat tortor, ultrices vitae neque sed, pretium laoreet tellus. Aliquam arcu ipsum, euismod in est mollis, placerat finibus metus. Fusce vel urna purus. Nullam ultrices accumsan venenatis. Nullam viverra sollicitudin dapibus. Aenean semper sapien diam, consequat ultricies risus tristique nec. Mauris ut sem vitae nibh blandit tempus placerat quis nulla.</p>
-
-    <div class="story-module">
-      <h3>1 author example</h3>
-      {{< author-card >}}
-      <div class="author-sub package">
-        <h4 class="callout">Support our work with a digital subscription</h4>
-        <a href="#" class="more-link">SUBSCRIBE TODAY</a>
-      </div>
-    </div>
-    
-    <div class="story-module">
-      <h3>2 author example</h3>
-      <div class="grid">
-        {{< author-card >}}
-        {{< author-card >}}
-      </div>
-      <div class="author-sub package">
-        <h4 class="callout">Support our work with a digital subscription</h4>
-        <a href="#" class="more-link">SUBSCRIBE TODAY</a>
-      </div>
-    </div>
-  </article>
+<section style="text-align: center;">
+  <a class="button big impact">LOAD MORE</a>
 </section>

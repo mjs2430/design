@@ -2,6 +2,7 @@
 title: "author-card"
 description: "Author information at the bottom of articles"
 menu: "cards"
+class: new
 ---
 
 

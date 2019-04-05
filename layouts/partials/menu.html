@@ -8,7 +8,7 @@
     {{ $active := $cp.IsMenuCurrent "cards" . }}
     <div class="package {{- if $active }} active{{ end }}">
       <h4 class="sans bold">
-        <a href="{{ .Page.Permalink }}">{{ .Name }}</a>
+        <a class="{{ .Page.Param "class" }}" href="{{ .Page.Permalink }}">{{ .Name }}</a>
       </h4>
       <p class="summary">{{ .Page.Description }}</p>
     </div>
@@ -23,7 +23,7 @@
     {{ $active := $cp.IsMenuCurrent "decks" . }}
     <div class="package {{- if $active }} active{{ end }}">
       <h4 class="sans bold">
-        <a href="{{ .Page.Permalink }}">{{ .Name }}</a>
+        <a class="{{ .Page.Param "class" }}" href="{{ .Page.Permalink }}">{{ .Name }}</a>
       </h4>
       <p class="summary">{{ .Page.Description }}</p>
     </div>
