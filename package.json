@@ -1,0 +1,7 @@
+{
+  "name": "saratoga-design-system",
+  "version": "1.11.0",
+  "files": [ 
+    "dist/saratoga.min.css" 
+  ]
+}
