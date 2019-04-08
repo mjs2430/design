@@ -97,8 +97,14 @@ section.full-bleed {
   padding: 0;
 }
 
-section .more-link, section > h5 {
+section .more-link, 
+section > h5,
+.section-label {
   padding: 0 15px;
+}
+
+.section-label {
+  margin: 0 0 15px;
 }
 
 @media (min-width: 600px) {
@@ -106,7 +112,9 @@ section .more-link, section > h5 {
     padding: 0 15px;
   }
 
-  section .more-link, section > h5 {
+  section .more-link, 
+  section > h5,
+  .section-label {
     padding: 0;
   }
 }
@@ -258,6 +266,7 @@ hr {
   display: block;
   font-style: italic;
   font-size: 14px;
+  text-transform: uppercase;
 }
 
 /**

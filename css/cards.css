@@ -451,6 +451,10 @@
  * Big News
  */
 
+.big-news {
+  margin-top: 0;
+}
+
 .big-news a {
 	color: inherit;
 }

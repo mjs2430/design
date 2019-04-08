@@ -100,7 +100,7 @@
  */
 
 section > h5:first-child {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 /* Because the main section body is still wrapped by Bootstrap */
@@ -149,4 +149,8 @@ section > h5:first-child {
   text-transform: none;
   font-size: 22px;
   font-weight: 400;
+}
+
+section[role="main"] {
+  overflow: hidden;
 }
