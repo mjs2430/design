@@ -150,3 +150,7 @@ section > h5:first-child {
   font-size: 22px;
   font-weight: 400;
 }
+
+section[role="main"] {
+  overflow: hidden;
+}
