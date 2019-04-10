@@ -3,9 +3,6 @@
 saratoga.min.css:
 	minify static/css/atoms.css static/css/molecules.css static/css/cards.css static/css/decks.css > $@
 
-release: saratoga.min.css
-	git add $<
-
 live: public
 	cd public && git pull
 	rm -rf public/*
