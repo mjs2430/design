@@ -1,4 +1,6 @@
-{{ if eq .type "bottom" }}
+{{ $type := .Get "type" }}
+
+{{ if eq $type "bottom" }}
 <div id="bottom-modal" class="s-modal bottom modal-newsletter" hidden>
   <div class="impact">
     <div class="package">

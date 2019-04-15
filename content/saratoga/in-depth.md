@@ -8,12 +8,12 @@ The In Depth module is a version of the horizontal card that changes the flex-gr
 
 #### Example
 <div class="example">
-{{< partial src="saratoga/in-depth.html" >}}
+{{< in-depth >}}
 </div>
 
 #### HTML
 {{< highlight html >}}
-{{< partial src="saratoga/in-depth.html" >}}
+{{< in-depth >}}
 {{< /highlight >}}
 
 ---
@@ -24,10 +24,10 @@ When there is missing lead art for the story, the text should fall in the middle
 
 #### EXAMPLE
 <div class="example">
-{{< partial src="saratoga/in-depth.html" image="hide" >}}
+{{< in-depth hide="image" >}}
 </div>
 
 #### HTML
 {{< highlight html >}}
-{{< partial src="saratoga/in-depth.html" image="hide" >}}
+{{< in-depth hide="image" >}}
 {{< /highlight >}}
