@@ -8,10 +8,10 @@ The immersive card can be used to increase the impact of a story. It should go t
 
 #### Example
 <div class="example">
-  {{< partial src="saratoga/immersive.html" >}}
+  {{< immersive >}}
 </div>
 
 #### HTML
 {{< highlight html >}}
-{{< partial src="saratoga/immersive.html" >}}
+{{< immersive >}}
 {{< /highlight >}}

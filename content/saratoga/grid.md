@@ -10,9 +10,9 @@ This is the smallest method of creating a grid following the design rules, which
 
 #### Example
 <div class="example grid">
-  {{< partial src="saratoga/card.html" >}}
-  {{< partial src="saratoga/card.html" >}}
-  {{< partial src="saratoga/card.html" >}}
+  {{< card >}}
+  {{< card >}}
+  {{< card >}}
 </div>
 
 #### HTML

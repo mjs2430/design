@@ -1,4 +1,4 @@
-{{ if eq ($.Get "version") "bio" -}}
+{{ if eq ($.Get "version") "bio" }}
 
 <div class="author-card author-bio package">
   <div class="thumb">
@@ -11,7 +11,7 @@
   <p class="summary">Aaron Moody is a sports and general reporter for the News &amp; Observer. Here is a second sentence for the bio because it will probably be longer than this. Maybe even longer I don't know.</p>
   <div class="a-social package">
     <h6 class="connect">CONNECT WITH AARON:</h6>
-    {{ partial "saratoga/social-media.html" . }}
+    {{ template "shortcodes/social-media" }}
   </div>
 </div>
 
@@ -25,7 +25,7 @@
     <h6 class="byline">
       <a href="mailto:amoody@newsobserver.com">Aaron Moody</a>
     </h6>
-    {{ partial "saratoga/social-media.html" . }}
+    {{ template "shortcodes/social-media-author" }}
   </div>
   <p class="summary">Aaron Moody is a sports and general reporter for the News &amp; Observer. Here is a second sentence for the bio because it will probably be longer than this. Maybe even longer I don't know.</p>
 </div>

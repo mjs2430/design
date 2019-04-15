@@ -7,11 +7,11 @@ menu: "molecule"
 A very small molecule, the icons are simply a center-justified flex row with optimal padding for all devices.
 
 #### Example
-{{< partial "saratoga/social-media.html" "tester" >}}
+{{< social-media >}}
 
 #### HTML 
 {{< highlight html >}}
-{{< partial "saratoga/social-media.html" >}}
+{{< social-media >}}
 {{< /highlight >}}
 
 #### RULES

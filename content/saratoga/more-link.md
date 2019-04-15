@@ -8,7 +8,7 @@ The more-link atom signifies that clicking it will take the reader to another we
 
 #### Example
 <div class="example">
-  {{< partial src="saratoga/digest.html" >}}
+  {{< digest >}}
 </div>
 
 #### RULES

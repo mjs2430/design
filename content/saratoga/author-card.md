@@ -11,11 +11,9 @@ The author card should appear directly underneath the related stories organism, 
 As the organism compresses to fit smaller screens, the icons should wrap under the author's name and still right of the thumbnail. The biography uses the `summary` molecule and shoudn't deviate from the defaults. Also, the author's name should be made a link and shown in the standard `byline` style.
 
 {{% note %}}
-
 #### Update (1.11.0)
 
 The HTML for this element has been adjusted in 1.11.0 to optimize CSS size for the new author bio page.
-
 {{% /note %}}
 
 #### EXAMPLE
@@ -39,8 +37,8 @@ The HTML for this element has been adjusted in 1.11.0 to optimize CSS size for t
 #### HTML
 {{< highlight html >}}
 <div class="grid story-module">
-{{< author-card >}}
-{{< author-card >}}
+  {{< author-card >}}
+  {{< author-card >}}
 </div>
 {{< /highlight >}}
 

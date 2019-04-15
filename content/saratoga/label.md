@@ -10,8 +10,8 @@ The label atom is just used for spacing and can accept any element. Currently, w
 
 #### EXAMPLE
 <div class="example grid">
-  {{< partial src="saratoga/digest.html" label="sticky" >}}
-  {{< partial src="saratoga/digest.html" >}}
+  {{< digest label="sticky" >}}
+  {{< digest >}}
 </div>
 
 #### HTML

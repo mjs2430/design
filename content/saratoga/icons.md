@@ -7,11 +7,11 @@ menu: "atom"
 This is a reduced and optimized set of Fontawesome free icons we use on the site.
 
 #### EXAMPLE
-{{< partial src="saratoga/social-media.html" >}}
+{{< social-media >}}
 
 #### HTML
 {{< highlight html >}}
-{{< partial src="saratoga/social-media.html" >}}
+{{< social-media >}}
 {{< /highlight >}}
 
 #### CSS

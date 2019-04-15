@@ -271,28 +271,29 @@ hr {
 
 /**
  * Icons
+ * NOTE: Will be deprecated in 1.12
  */
 
-/* .i-play-circle { */
-/* 	background: transparent url('../icons/play-circle.svg') no-repeat; */
-/* } */
+.i-play-circle {
+	background: transparent url('../icons/play-circle.svg') no-repeat;
+}
 
-/* .i-twitter { */
-/*   background: transparent url('../icons/twitter.svg') no-repeat; */
-/* } */
+.i-twitter {
+  background: transparent url('../icons/twitter.svg') no-repeat;
+}
 
-/* .i-facebook-f { */
-/*   background: transparent url('../icons/facebook-f.svg') no-repeat center; */
-/* } */
+.i-facebook-f {
+  background: transparent url('../icons/facebook-f.svg') no-repeat center;
+}
 
-/* .i-envelope { */
-/*   background: transparent url('../icons/envelope.svg') no-repeat; */
-/* } */
+.i-envelope {
+  background: transparent url('../icons/envelope.svg') no-repeat;
+}
 
-/* .i-phone { */
-/*   background: transparent url('../icons/phone.svg') no-repeat; */
-/* } */
+.i-phone {
+  background: transparent url('../icons/phone.svg') no-repeat;
+}
 
-/* .invert { */
-/*   filter: invert(1); */
-/* } */
+.invert {
+  filter: invert(1);
+}

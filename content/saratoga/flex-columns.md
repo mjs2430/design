@@ -16,9 +16,9 @@ This is a standard grid.
 
 <section class="example">
   <div class="flex-columns">
-    {{< partial src="saratoga/card.html" >}}
-    {{< partial src="saratoga/card.html" >}}
-    {{< partial src="saratoga/card.html" >}}
+    {{< card >}}
+    {{< card >}}
+    {{< card >}}
   </div>
 </section>
 
@@ -27,10 +27,10 @@ This is using the `.main-stage`, `.rail` and `.reverse` concepts.
 <section class="example">
   <div class="flex-columns reverse">
     <div class="main-stage">
-      {{< partial src="saratoga/card.html" >}}
+      {{< card >}}
     </div>
     <div class="rail">
-      {{< partial src="saratoga/digest.html" >}}
+      {{< card >}}
     </div>
   </div>
 </section>

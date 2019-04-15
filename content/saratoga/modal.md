@@ -12,7 +12,7 @@ Modals should be consistent across products and vendors to benefit our readers. 
 
 #### HTML
 {{< highlight html >}}
-{{< partial src="saratoga/modal.html" >}}
+{{< modal >}}
 {{< /highlight >}}
 
 #### JavaScript
@@ -43,5 +43,5 @@ function toggleModal(id, force) {
 
 #### HTML
 {{< highlight html >}}
-{{< partial src="saratoga/modal.html" type="bottom" >}}
+{{< modal type="bottom" >}}
 {{< /highlight >}}

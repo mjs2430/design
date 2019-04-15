@@ -8,8 +8,8 @@ The digest is simple stack of modules using the block layout.
 
 #### Example
 <div class="example grid">
-  {{< partial src="saratoga/digest.html" label="sticky" >}}
-  {{< partial src="saratoga/digest.html" >}}
+  {{< digest label="sticky" >}}
+  {{< digest >}}
 </div>
 
 #### HTML
@@ -17,13 +17,13 @@ The digest is simple stack of modules using the block layout.
 This HTML snippet is a digest that doesn't have lead art.
 
 {{< highlight html >}}
-{{< partial src="saratoga/digest.html" >}}
+{{< digest >}}
 {{< /highlight >}}
 
 This snippet is a digest that does have lead art.
 
 {{< highlight html >}}
-{{< partial src="saratoga/digest.html" label="sticky" >}}
+{{< digest >}}
 {{< /highlight >}}
 
 The `card` and `package` molecules can be used in any combination here. The first snippet above shows a different HTML structure for the first article to illustrate a simple loop, but if the structure from the second snippet is used and the `figure` is ommitted the result is the same.

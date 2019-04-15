@@ -1,5 +1,0 @@
-{{ if .IsNamedParams }}
-{{ partial (.Get "src") .Params }}
-{{ else }}
-{{ partial (.Get 0) .Params }}
-{{ end }}

@@ -9,11 +9,11 @@ The big news card is a series of independent areas designed to give newsrooms co
 #### EXAMPLE
 
 <div class="example" style="padding: 15px 0;">
-{{< partial src="saratoga/big-news.html" >}}
+{{< big-news >}}
 </div>
 
 #### HTML
 
 {{< highlight html >}}
-{{< partial src="saratoga/big-news.html" >}}
+{{< big-news >}}
 {{< /highlight >}}

@@ -8,13 +8,13 @@ The card molecule extends the paper base molecule and adds Flexbox. By doing so 
 
 #### Example
 <div class="example grid">
-  {{< partial src="saratoga/card.html" >}}
-  {{< partial src="saratoga/card.html" >}}
+  {{< card >}}
+  {{< card >}}
 </div>
 
 #### HTML
 {{< highlight html >}}
-{{< partial src="saratoga/card.html" >}}
+{{< card >}}
 {{< /highlight >}}
 
 ---
@@ -24,9 +24,9 @@ The card molecule extends the paper base molecule and adds Flexbox. By doing so 
 The card can also be made horizontal by adding a class with the same name.
 
 #### Example
-{{< partial src="saratoga/card.html" class="horizontal" >}}
+{{< card class="horizontal" >}}
 
 #### HTML
 {{< highlight html >}}
-{{< partial src="saratoga/card.html" class="horizontal" >}}
+{{< card class="horizontal" >}}
 {{< /highlight >}}
