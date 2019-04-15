@@ -52,7 +52,7 @@
     <div class="package">
       {{ range .Site.Menus.molecule }}
       {{ $active := $cp.IsMenuCurrent "molecule" . }}
-      <h5 class="sans bold">
+      <h5 class="sans bold {{ .Page.Param "class" }}">
         <a href="{{ .Page.Permalink }}" class="{{ if $active }}active{{ end }}">{{ .Name }}</a>
       </h5>
       {{ end }}
@@ -66,7 +66,7 @@
     <div class="package">
       {{ range .Site.Menus.atom }}
       {{ $active := $cp.IsMenuCurrent "atom" . }}
-      <h5 class="sans bold">
+      <h5 class="sans bold {{ .Page.Param "class" }}">
         <a href="{{ .Page.Permalink }}" class="{{ if $active }}active{{ end }}">{{ .Name }}</a>
       </h5>
       {{ end }}
