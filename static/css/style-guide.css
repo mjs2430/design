@@ -108,6 +108,11 @@ td:first-child {
   top: 2px
 }
 
+.list .dep {
+  text-decoration: line-through;
+  color: #999;
+}
+
 .details {
   position: relative;
   z-index: 2;
@@ -142,8 +147,7 @@ td:first-child {
 }
 
 .note {
-  background-color: #377f6a;
-  color: white;
+  background-color: #e9ead8;
   box-sizing: border-box;
   border-radius: 4px;
   padding: 15px;
@@ -156,7 +160,13 @@ td:first-child {
 }
 
 .note code {
-  background-color: #3d4e5c;
+  background-color: #6bb1b9;
+  padding: 5px;
+}
+
+.note.dep {
+  background-color: #6bb1b9;
+  color: white;
 }
 
 /**

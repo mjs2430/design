@@ -2,17 +2,19 @@
 title: "icons"
 description: "Optimized fontawesome icon set"
 menu: "atom"
+class: dep
 ---
 
 This is a reduced and optimized set of Fontawesome free icons we use on the site.
 
+{{% note type="dep" %}}
+#### Deprecation notice
+
+The CSS classes will be removed in 1.12.0 in favor of using SVG code directly in the markup. This is a result of these relative icons not working in AMP pages and the number of required template changes is minimal. See the [social-media](/saratoga/social-media) page for an example of the HTML.
+{{% /note %}}
+
 #### EXAMPLE
 {{< social-media >}}
-
-#### HTML
-{{< highlight html >}}
-{{< social-media >}}
-{{< /highlight >}}
 
 #### CSS
 ```css
