@@ -165,7 +165,7 @@
 }
 
 .expander:after {
-  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 501.5 284.4"><path d="M467.7,284.4H33.7c-30,0-45-36.3-23.7-57.5L226.9,9.9a33.8,33.8,0,0,1,47.8,0l217,217c21,21.2,6,57.5-24,57.5Z"/></svg>');
+  content: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MDEuNSAyODQuNCI+PHBhdGggZD0iTTQ2Ny43LDI4NC40SDMzLjdjLTMwLDAtNDUtMzYuMy0yMy43LTU3LjVMMjI2LjksOS45YTMzLjgsMzMuOCwwLDAsMSw0Ny44LDBsMjE3LDIxN2MyMSwyMS4yLDYsNTcuNS0yNCw1Ny41WiIvPjwvc3ZnPgo=');
   width: 14px;
   margin-left: 5px;
   transition: transform .5s ease;
