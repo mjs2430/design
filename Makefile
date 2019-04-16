@@ -6,7 +6,10 @@ saratoga.min.css:
 release: 
 	@[ $(v) ] || ( echo ">> v is not set"; exit 1 )
 	sed -E -i .bak 's/([0-9]+\.){2}([0-9]+)/$(v)/' package.json
+	git add package.json
+	git commit -m "tagging $(v)"
 	git tag $(v)
+	git push --tags
 
 live: public
 	cd public && git pull

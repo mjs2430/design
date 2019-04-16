@@ -1,6 +1,6 @@
 {
   "name": "saratoga-design-system",
-  "version": "1.11.2",
+  "version": "1.11.3",
   "files": [ 
     "static/css/atoms.css",
     "static/css/molecules.css",
