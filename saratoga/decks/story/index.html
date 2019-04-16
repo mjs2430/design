@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="../../../css/cards.css">
     <link rel="stylesheet" href="../../../css/site.css">
 <link rel="stylesheet" href="../../../css/decks.css">
-<script src="../../../js/modal.js"></script>
 
   </head>
 
@@ -33,8 +32,25 @@
         </a>
       </nav>
     </div>
+    
+<script src="../../../js/modal.js"></script>
 <div class="paper">
-  
+  <figure class="immersive">
+  <div class="media impact video" style="background-image:url(https://cf-images.us-east-1.prod.boltdns.net/v1/static/5502557046001/0ae7c577-98c6-4740-be40-476282561b76/3a881153-146d-4439-93a1-6159833783e5/480x270/match/image.jpg);" data-toggle="modal" data-target="#immersiveModal-12818709">
+    <div class="content">
+      <button
+        class="video-modal__trigger"
+        data-toggle="modal"
+        data-target="#immersiveModal-12818709">
+        <svg class="video-play" viewBox="0 0 512 512"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z" fill="white" /></svg>
+      </button>
+      <h2 class="caps h6"><a class="kicker" href="#">Crime</a></h2>
+      <h3 class="title">More than 50 children killed in 3 years: Guns take a heavy toll</h3>
+    </div>
+  </div>
+  <figcaption>TAMMY LJUNGBLAD</figcaption>
+</figure>
+
 
   <div class="story-template">
     <article class="story-body">
@@ -47,23 +63,17 @@
       <time>AUG 13, 2018, UPDATED 4 MONTHS AGO</time>
     </div>
 
-    <div class="social-media">
-  <a href="#" class="i-twitter"></a>
-  <a href="#" class="i-facebook-f"></a>
-  <a href="#" class="i-envelope"></a>
-</div>
-
   </div>
 </header>
 
 
-<figure>
-  <img src="https://www.kansascity.com/latest-news/b59z53/picture216630505/alternates/LANDSCAPE_1140/Colyer%20and%20Kobach%20primary.jpg">
-  <figcaption>Secretary of State Kris Kobach (right) has pulled ahead of Gov. Jeff Colyer as counties count provisional votes. <span class="byline"><span class="credit">FILE PHOTO</span></span></figcaption>
-</figure>
+      <figure>
+        <img src="https://www.kansascity.com/latest-news/b59z53/picture216630505/alternates/LANDSCAPE_1140/Colyer%20and%20Kobach%20primary.jpg">
+        <figcaption>Secretary of State Kris Kobach (right) has pulled ahead of Gov. Jeff Colyer as counties count provisional votes. <span class="byline"><span class="credit">FILE PHOTO</span></span></figcaption>
+      </figure>
 
-<!--
-<div class="series-nav package story-module">
+      <!--
+      <div class="series-nav package story-module">
   <h5>MORE FROM THIS SERIES</h5>
   <hr>
   <h3>Series headline goes here</h3>
@@ -94,32 +104,29 @@
   <hr>
 </div>
 
--->
+      -->
 
-<p><span class="dateline">Jefferson City</span></p>
+      <span class="dateline">Jefferson City</span>
+      <p>The primary challenge with the story body is the design rule that media should bleed all the way to the edge of the screen on mobile and tablet devices, but be restricted to a maximum width as the screen gets larger. Additionally, different media or embeddable content will have different widths. </p>
+      <p>A container-based approach to these rules requires multiple breakpoints and creates a couple of pressure points as the number of organisms increases. Code grows quickly with each addition, as all breakpoints for each change must be considered or written. Re-use suffers as elements get more and more isolated with deeply nested CSS rules.</p>
 
-<p>The primary challenge with the story body is the design rule that media should bleed all the way to the edge of the screen on mobile and tablet devices, but be restricted to a maximum width as the screen gets larger. Additionally, different media or embeddable content will have different widths.</p>
+      <!--
+      <div class="ad-widget">
+        <div class="iframe" class="iframe" style="width: 300px; height: 250px; background-color: #ddd;"></div>
+      </div>
+      -->
 
-<p>A container-based approach to these rules requires multiple breakpoints and creates a couple of pressure points as the number of organisms increases. Code grows quickly with each addition, as all breakpoints for each change must be considered or written. Re-use suffers as elements get more and more isolated with deeply nested CSS rules.</p>
+      <p>To combat these issues, we looked at the story body itself instead of each possible element to determine the design rules. We came up with a small list of general ideas.</p>
+      <ul>
+        <li>Text should be centered in the middle and no wider than 720px.</li>
+        <li>Everything except media should have 15px of space on the left and right.</li>
+        <li>Media should be allowed to go to 1140px wide to elevate value.</li>
+        <li>Media and story modules should have 30px of vertical space.</li>
+        <li>Advertising should have 50px of vertical space.</li>
+        <li>Subheads should be 600 weight and Sans Serif.</li>
+      </ul>
 
-<!--
-<div class="ad-widget">
-  <div class="iframe" class="iframe" style="width: 300px; height: 250px; background-color: #ddd;"></div>
-</div>
--->
-
-<p>To combat these issues, we looked at the story body itself instead of each possible element to determine the design rules. We came up with a small list of general ideas.</p>
-
-<ul>
-<li>Text should be centered in the middle and no wider than 720px.</li>
-<li>Everything except media should have 15px of space on the left and right.</li>
-<li>Media should be allowed to go to 1140px wide to elevate value.</li>
-<li>Media and story modules should have 30px of vertical space.</li>
-<li>Advertising should have 50px of vertical space.</li>
-<li>Subheads should be 600 weight and Sans Serif.</li>
-</ul>
-
-<div class="inline-cta ad-widget package">
+      <div class="inline-cta ad-widget package">
   <h1>Digital access for only $0.99</h1>
   <p class="summary">For the most comprehensive local coverage, subscribe today.</p>
   <div>
@@ -129,9 +136,9 @@
 </div>
 
 
-<p>The last challenge was to tackle the idea that as dynamic content becomes more important to our designs, the structure would need to be able to adopt it without increasing the code base more than necessary. We needed a basic default setup that could be easily overloaded. We settled on a direct child approach, which could provide what we needed in the fewest lines of code.</p>
+      <p>The last challenge was to tackle the idea that as dynamic content becomes more important to our designs, the structure would need to be able to adopt it without increasing the code base more than necessary. We needed a basic default setup that could be easily overloaded. We settled on a direct child approach, which could provide what we needed in the fewest lines of code.</p>
 
-<div class="transparency">
+      <div class="transparency">
   <h3 class="expander" onclick="this.classList.toggle('open');">BEHIND OUR REPORTING</h3>
   <div class="question" style="display: block;">
     <h3>Why did we report this story?</h3>
@@ -152,36 +159,36 @@
 </div>
 
 
-<!--
-<figure>
-  <img src="https://www.kansascity.com/latest-news/b5ozny/picture205673364/alternates/LANDSCAPE_1140/Baby%20Jack%20al%20030918%200240f">
-  <figcaption>Dr. Pirooz Eghtesady, cardiothoracic surgeon-in-chief at St. Louis Children’s Hospital, had performed more than 200 heart transplants and 20 lung transplants by the time Jack Palmer came under his care. <span class="byline">BY <a href="#">ALLISON LONG</a> <span class="credit">THE KANSAS CITY STAR</span></span></figcaption>
-</figure>
--->
+      <!--
+      <figure>
+        <img src="https://www.kansascity.com/latest-news/b5ozny/picture205673364/alternates/LANDSCAPE_1140/Baby%20Jack%20al%20030918%200240f">
+        <figcaption>Dr. Pirooz Eghtesady, cardiothoracic surgeon-in-chief at St. Louis Children’s Hospital, had performed more than 200 heart transplants and 20 lung transplants by the time Jack Palmer came under his care. <span class="byline">BY <a href="#">ALLISON LONG</a> <span class="credit">THE KANSAS CITY STAR</span></span></figcaption>
+      </figure>
+      -->
 
-<!--
-<div class="ad-widget">
-  <div class="iframe" class="iframe" style="width: 300px; height: 250px; background-color: #ddd;"></div>
-</div>
--->
+      <!--
+      <div class="ad-widget">
+        <div class="iframe" class="iframe" style="width: 300px; height: 250px; background-color: #ddd;"></div>
+      </div>
+      -->
 
-<!--
-<p>Donec varius laoreet venenatis. Nullam eu malesuada justo. Sed condimentum, leo ut imperdiet finibus, arcu massa interdum nisi, sed ornare ipsum lacus id lorem. Phasellus sed egestas odio. Duis id feugiat sapien. Pellentesque tempus, urna eget convallis bibendum, quam risus convallis purus, non ornare lectus mi a ipsum. Nam euismod felis ex, vitae molestie nibh volutpat a. Suspendisse dapibus tellus vitae augue viverra ultrices.</p>
+      <!--
+      <p>Donec varius laoreet venenatis. Nullam eu malesuada justo. Sed condimentum, leo ut imperdiet finibus, arcu massa interdum nisi, sed ornare ipsum lacus id lorem. Phasellus sed egestas odio. Duis id feugiat sapien. Pellentesque tempus, urna eget convallis bibendum, quam risus convallis purus, non ornare lectus mi a ipsum. Nam euismod felis ex, vitae molestie nibh volutpat a. Suspendisse dapibus tellus vitae augue viverra ultrices.</p>
 
-<p>Donec efficitur hendrerit urna in iaculis. Pellentesque sodales ante ut neque iaculis hendrerit. Mauris at ullamcorper velit. Mauris malesuada dignissim fringilla. Etiam maximus egestas accumsan. Aliquam pharetra urna quis tincidunt finibus. Maecenas vel iaculis justo. Aenean scelerisque posuere ligula. Morbi sagittis tempus metus, ac sagittis velit vulputate vel. Pellentesque iaculis porta sapien. Curabitur imperdiet nibh eget vestibulum consequat. Suspendisse placerat pretium libero, id faucibus nunc. Nullam vel augue lectus. Sed et pulvinar ipsum.</p>
+      <p>Donec efficitur hendrerit urna in iaculis. Pellentesque sodales ante ut neque iaculis hendrerit. Mauris at ullamcorper velit. Mauris malesuada dignissim fringilla. Etiam maximus egestas accumsan. Aliquam pharetra urna quis tincidunt finibus. Maecenas vel iaculis justo. Aenean scelerisque posuere ligula. Morbi sagittis tempus metus, ac sagittis velit vulputate vel. Pellentesque iaculis porta sapien. Curabitur imperdiet nibh eget vestibulum consequat. Suspendisse placerat pretium libero, id faucibus nunc. Nullam vel augue lectus. Sed et pulvinar ipsum.</p>
 
-<p>Mauris tempor neque justo, et commodo dolor tristique non. Suspendisse tristique tincidunt turpis, vitae tincidunt nibh sollicitudin ut. Ut vitae vulputate tortor. Aliquam elit leo, luctus eget elementum in, malesuada at purus. Suspendisse sed placerat ligula, a lacinia dui. Donec ullamcorper venenatis mauris, ut lacinia ex auctor non. Cras commodo ac orci et tempus. Donec auctor dui in leo pharetra scelerisque. Fusce blandit tellus orci, vel pharetra nunc consectetur eget. In a tellus pulvinar, placerat odio non, dapibus velit. Pellentesque posuere maximus quam, non semper nisi tempor a. In iaculis, nibh quis egestas bibendum, metus leo luctus nibh, ac eleifend ipsum velit nec erat. Phasellus lacinia fringilla pulvinar.</p>
--->
+      <p>Mauris tempor neque justo, et commodo dolor tristique non. Suspendisse tristique tincidunt turpis, vitae tincidunt nibh sollicitudin ut. Ut vitae vulputate tortor. Aliquam elit leo, luctus eget elementum in, malesuada at purus. Suspendisse sed placerat ligula, a lacinia dui. Donec ullamcorper venenatis mauris, ut lacinia ex auctor non. Cras commodo ac orci et tempus. Donec auctor dui in leo pharetra scelerisque. Fusce blandit tellus orci, vel pharetra nunc consectetur eget. In a tellus pulvinar, placerat odio non, dapibus velit. Pellentesque posuere maximus quam, non semper nisi tempor a. In iaculis, nibh quis egestas bibendum, metus leo luctus nibh, ac eleifend ipsum velit nec erat. Phasellus lacinia fringilla pulvinar.</p>
+      -->
 
-<!--
-<div class="ad-widget">
-  <div class="iframe" class="iframe" style="width: 300px; height: 250px; background-color: #ddd;"></div>
-</div>
--->
+      <!--
+      <div class="ad-widget">
+        <div class="iframe" class="iframe" style="width: 300px; height: 250px; background-color: #ddd;"></div>
+      </div>
+      -->
 
-<p>Etiam porttitor at tellus vel scelerisque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sollicitudin imperdiet justo vitae egestas. Vestibulum suscipit augue a libero euismod faucibus. Mauris consequat nisl vel suscipit tristique. In tincidunt risus laoreet quam porttitor, vel finibus libero convallis. Nunc suscipit feugiat erat, eget imperdiet ante facilisis quis. Sed leo augue, euismod ac efficitur quis, condimentum at magna. Ut mauris urna, gravida id rhoncus vel, tempor quis dolor. Nullam euismod odio ligula, aliquam ornare dui commodo cursus. Curabitur et vestibulum sapien. Fusce non leo neque.</p>
+      <p>Etiam porttitor at tellus vel scelerisque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sollicitudin imperdiet justo vitae egestas. Vestibulum suscipit augue a libero euismod faucibus. Mauris consequat nisl vel suscipit tristique. In tincidunt risus laoreet quam porttitor, vel finibus libero convallis. Nunc suscipit feugiat erat, eget imperdiet ante facilisis quis. Sed leo augue, euismod ac efficitur quis, condimentum at magna. Ut mauris urna, gravida id rhoncus vel, tempor quis dolor. Nullam euismod odio ligula, aliquam ornare dui commodo cursus. Curabitur et vestibulum sapien. Fusce non leo neque.</p>
 
-<div class="related-stories package story-module">
+      <div class="related-stories package story-module">
   <h5>RELATED STORIES</h5>
   <div class="grid">
     <article class="package">
@@ -209,8 +216,8 @@
 </div>
 
 
-<div class="story-module">
-  <div class="author-card package">
+      <div class="story-module">
+        <div class="author-card package">
   <div class="thumb">
     <img src="../../../img/aaron_moody.jpg">
   </div>
@@ -219,19 +226,26 @@
       <a href="mailto:amoody@newsobserver.com">Aaron Moody</a>
     </h6>
     <div class="social-media">
-      <a class="i-envelope" href="mailto:amoody@newsobserver.com"></a>
-      <a class="i-twitter" href="https://twitter.com/aaron_moody1"></a>
-      <a class="i-facebook-f" href="#"></a>
-      <a class="i-phone" href="#">
-        <span class="small gray phone_num">816-123-4567</span>
-      </a>
-    </div>
+  <a href="#">
+    <svg class="twitter" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+  </a>
+  <a href="#">
+    <svg class="facebook" viewBox="0 0 264 512"><path d="M215.8 85H264V3.6C255.7 2.5 227.1 0 193.8 0 124.3 0 76.7 42.4 76.7 120.3V192H0v91h76.7v229h94V283h73.6l11.7-91h-85.3v-62.7c0-26.3 7.3-44.3 45.1-44.3z"/></svg>
+  </a>
+  <a href="#">
+    <svg class="envelope" viewBox="0 0 512 512"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg>
+  </a>
+  <a href="#" class="telephone">
+    <svg class="phone" viewBox="0 0 512 512"><path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"/></svg>
+    <span class="small gray">816-123-4567</span>
+  </a>
+</div>
+
   </div>
   <p class="summary">Aaron Moody is a sports and general reporter for the News &amp; Observer. Here is a second sentence for the bio because it will probably be longer than this. Maybe even longer I don't know.</p>
 </div>
 
-</div>
-
+      </div>
     </article>
 
     <aside class="story-rail">
@@ -379,6 +393,8 @@
 </section>
 
 
+
+
 <div id="main-modal" class="s-modal screen" hidden>
   <div class="card horizontal impact modal-subscription">
     <figure>
@@ -397,6 +413,8 @@
     <svg class="close" onclick="toggleModal('main-modal')" width="20" height="20" viewBox="0 0 352 512"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" fill="white"/></svg>
   </div>
 </div>
+
+
 
 
 
@@ -420,5 +438,6 @@
 
 
 
+    
   </body>
 </html>

@@ -98,7 +98,7 @@ td:first-child {
   color: #377f6a;
 }
 
-.list a.new:after {
+.list .new:after {
   content: url(../icons/certificate.svg);
   display: inline-block;
   height: 1em;
@@ -153,6 +153,10 @@ td:first-child {
 
 .note p {
   font: 500 14px/1.5em "McClatchy Sans", sans-serif;
+}
+
+.note code {
+  background-color: #3d4e5c;
 }
 
 /**

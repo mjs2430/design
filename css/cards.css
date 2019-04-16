@@ -87,8 +87,9 @@
 	padding: 0 15px;
 }
 
-.immersive button {
+.immersive .content button {
 	border: none;
+  background-color: transparent;
 	height: 60px;
 	width: 60px;
   padding: 0;
@@ -274,8 +275,20 @@
 
 .author-card .social-media a {
   margin: 0 15px 0 0;
+  display: flex;
+  align-items: center;
+  width: auto;
 }
 
+.author-card .social-media a:last-child {
+  margin-right: 0;
+}
+
+.author-card .social-media span {
+  padding-left: 5px;
+}
+
+/* This rule will be deprecated in 1.12 */
 .author-card .social-media .i-phone {
 	padding-left: 24px;
 	width: auto;
