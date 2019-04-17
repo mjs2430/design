@@ -4,7 +4,7 @@
 
 code {
   background-color: #ddd;
-  padding: 0 5px;
+  padding: 5px;
 }
 
 pre {
@@ -157,11 +157,6 @@ td:first-child {
 
 .note p {
   font: 500 14px/1.5em "McClatchy Sans", sans-serif;
-}
-
-.note code {
-  background-color: #6bb1b9;
-  padding: 5px;
 }
 
 .note.dep {
