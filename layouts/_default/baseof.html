@@ -25,7 +25,7 @@
       <nav>
         {{- $currentPage := . }}
         {{- range .Site.Menus.main }}
-        {{- $matches := findRE .URL $currentPage.URL }}
+        {{- $matches := findRE .URL $currentPage.Permalink }}
         <a href="{{ .URL | absURL }}" class="{{ if gt (len $matches) 0 }}active{{ end }}">
           <span>{{ .Name }}</span>
         </a>
