@@ -93,6 +93,10 @@
   .story-rail {
     flex-grow: 0;
   }
+
+  .story-body .transparency {
+    margin: 0 15px;
+  }
 }
 
 /**

@@ -3,9 +3,14 @@
  */
 
 :root {
+  --v: 1.11.4
   --headerFamily: "McClatchy Serif", serif;
   --headerWeight: 400;
   --headerTransform: none;
+  --link-decoration: none;
+  --link-color: #5169B8;
+  /* --shasta: #5169B8; */
+  /* --dumbledore: #31409F; */
 }
 
 body {
@@ -25,12 +30,13 @@ body.freeze {
  */
 
 a {
-  text-decoration: none;
-  color: #31409F;
+  text-decoration: var(--link-decoration);
+  color: var(--link-color);
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: var(--link-hover-decoration);
+  color: var(--link-hover-color);
 }
 
 h1, .h1 {
@@ -155,11 +161,12 @@ button, .button {
   border-radius: 2px;
   align-self: flex-start;
   background-color: white;
+  --link-hover-decoration: none;
 }
 
-.button:hover {
-  text-decoration: none;
-}
+/* .button:hover { */
+/*   text-decoration: none; */
+/* } */
 
 .button.stretch {
   display: block;
@@ -192,23 +199,29 @@ hr {
   align-self: flex-start;
   text-transform: uppercase;
   font-weight: 400;
+  --link-decoration: none;
+  --link-hover-decoration: none;
 }
 
-.kicker:hover {
-  text-decoration: none;
-}
+/* .kicker:hover { */
+/*   text-decoration: none; */
+/* } */
 
 .byline {
   display: inline-block;
   font: 400 11px/1.5em "McClatchy Sans";
   color: #707070;
   text-transform: uppercase;
+  --link-decoration: underline;
+  --link-hover-decoration: underline;
+  /* --link-hover-decoration: underline; */
 }
 
 .byline a {
   font-weight: 700;
   color: inherit;
-  text-decoration: underline;
+  /* --link-decoration: underline; */
+  /* text-decoration: underline; */
 }
 
 .credit {
@@ -244,6 +257,7 @@ hr {
   color: #707070;
   text-transform: uppercase;
   margin-top: 15px;
+  --link-hover-decoration: none;
 }
 
 .more-link:after {
@@ -254,9 +268,9 @@ hr {
   transition: transform .6s ease;
 }
 
-.more-link:hover {
-  text-decoration: none;
-}
+/* .more-link:hover { */
+/*   text-decoration: none; */
+/* } */
 
 .more-link:hover:after {
   transform: translateX(4px);

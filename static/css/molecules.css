@@ -60,15 +60,23 @@
 /** Package */
 
 .package {
-	--headerFamily: "McClatchy Serif", serif;
-	--headerWeight: 400;
-	--headerTransform: none;
   position: relative;
   padding: 15px;
   display: flex;
   flex-direction: column;
   flex: 1;
+	--headerFamily: "McClatchy Serif", serif;
+	--headerWeight: 400;
+	--headerTransform: none;
+  --link-color: #222;
+  --link-hover-color: #222;
+  --link-decoration: none;
+  --link-hover-decoration: underline;
 }
+
+/* .package a { */
+/*   color: inherit; */
+/* } */
 
 .package > * {
   margin: 10px 0 0 0;
@@ -82,10 +90,6 @@
   flex: 1;
   display: flex;
   align-items: flex-end;
-}
-
-.package a {
-  color: inherit;
 }
 
 .package .more-link {
@@ -102,16 +106,28 @@
 
 /** Reverse impact */
 
-.impact, a.impact {
+/* .impact, a.impact { */
+/*   background-color: #373737; */
+/*   color: white; */
+/* } */
+
+.impact {
   background-color: #373737;
-  color: white;
 }
 
-.impact * {
-  color: white;
+.impact, .impact * {
   border-color: white;
+  color: white;
   fill: white;
+  --link-color: white;
+  --link-hover-color: white;
 }
+
+/* .impact * { */
+/*   color: white; */
+/*   border-color: white; */
+/*   fill: white; */
+/* } */
 
 .impact .card {
   background-color: transparent;
@@ -143,7 +159,7 @@
 
 .social-media > a {
   margin: 15px;
-  text-decoration: none;
+  /* text-decoration: none; */
 
   /* following 2 lines will be deprecated in 1.12 */
   height: 20px;

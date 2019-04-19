@@ -110,7 +110,6 @@
 	}
 }
 
-
 /**
  * Story body
  */
@@ -119,6 +118,9 @@
   --headerFamily: "McClatchy Sans", sans-serif;
   --headerWeight: 600;
   --headerTransform: uppercase;
+  --link-decoration: underline;
+  --link-hover-color: #31409F;
+  --link-hover-decoration: underline;
 }
 
 .story-body > * {
@@ -128,6 +130,14 @@
   margin-left: auto;
 	box-sizing: content-box;
 }
+
+/* .story-body > p a { */
+/*   text-decoration: underline; */
+/* } */
+
+/* .story-body > p a:hover { */
+/*   color: #31409F; */
+/* } */
 
 .story-body > figure {
 	max-width: 100%;
@@ -190,13 +200,10 @@
 @media (min-width: 600px) {
 	.header .bio {
 		display: flex;
+    align-items: center;
 		justify-content: space-between;
 		width: 100%;
 		text-align: left;
-	}
-
-	.header .social-media a {
-		padding-top: 0;
 	}
 }
 
@@ -578,6 +585,7 @@
 	width: 100%;
 	max-width: 710px;
 	margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .read-next .header {

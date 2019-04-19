@@ -17,7 +17,7 @@
     {{- if not (in $hide "kicker") }}
     <a class="kicker h6" href="https://mcclatchy.github.io/saratoga/food/">FOOD</a>
     {{- end }}
-    {{ printf "<%s>Hatch chiles bring heat and hearty flavor to New Mexican cuisine</%s>" $size $size | safeHTML }}
+    {{ printf `<%s><a href="#">Hatch chiles bring heat and hearty flavor to New Mexican cuisine</a></%s>` $size $size | safeHTML }}
     <time>March 16, 2018 11:33 am</time>
   </div>
 </article>
