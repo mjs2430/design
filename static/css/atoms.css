@@ -253,6 +253,7 @@ hr {
   text-transform: uppercase;
   margin-top: 15px;
   --lhd: none;
+  --lhc: #707070;
 }
 
 .more-link:after {
