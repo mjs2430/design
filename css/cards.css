@@ -173,6 +173,7 @@
   text-align: center;
 	padding: 15px;
   --ht: none;
+  --lhc: #222;
 }
 
 .header > * {
