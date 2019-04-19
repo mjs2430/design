@@ -58,6 +58,7 @@
 
 /**
  * Immersive media card
+ * Note: this could be made smaller with custom properties later
  */
 
 .immersive {
@@ -115,12 +116,12 @@
  */
 
 .story-body {
-  --headerFamily: "McClatchy Sans", sans-serif;
-  --headerWeight: 600;
-  --headerTransform: uppercase;
-  --link-decoration: underline;
-  --link-hover-color: #31409F;
-  --link-hover-decoration: underline;
+  --hf: "McClatchy Sans", sans-serif;
+  --hw: 600;
+  --ht: uppercase;
+  --ld: underline;
+  --lhc: #31409F;
+  --lhd: underline;
 }
 
 .story-body > * {
@@ -130,14 +131,6 @@
   margin-left: auto;
 	box-sizing: content-box;
 }
-
-/* .story-body > p a { */
-/*   text-decoration: underline; */
-/* } */
-
-/* .story-body > p a:hover { */
-/*   color: #31409F; */
-/* } */
 
 .story-body > figure {
 	max-width: 100%;
@@ -179,6 +172,7 @@
   align-items: center;
   text-align: center;
 	padding: 15px;
+  --ht: none;
 }
 
 .header > * {
@@ -187,10 +181,6 @@
 
 .header .kicker {
 	align-self: unset;
-}
-
-.header .h1 {
-	text-transform: none;
 }
 
 .header .byline {
@@ -212,9 +202,9 @@
  */
 
 .series-nav {
-	--headerFamily: "McClatchy Serif", serif;
-	--headerWeight: 400;
-	--headerTransform: none;
+	--hf: "McClatchy Serif", serif;
+	--hw: 400;
+	--ht: none;
 }
 
 .series-nav .package {
@@ -237,6 +227,10 @@
   width: 80px;
 }
 
+.series-nav .article img {
+  padding: 0;
+}
+
 .series-nav .article h4 {
   flex: 1;
   padding: 0 15px;
@@ -249,9 +243,9 @@
  */
 
 .related-stories {
-	--headerFamily: "McClatchy Serif", serif;
-	--headerWeight: 400;
-	--headerTransform: none;
+	--hf: "McClatchy Serif", serif;
+	--hw: 400;
+	--ht: none;
 }
 
 .related-stories .package {
@@ -303,6 +297,8 @@
   margin-right: 0;
 }
 
+/* Author Bio version */
+
 .author-bio {
   padding: 0 15px;
 }
@@ -317,9 +313,7 @@
 
 @supports(display: grid) {
 
-  /**
-   * Inline version
-   */
+  /** Inline version */
 
   .author-card {
     display: grid;
@@ -352,9 +346,7 @@
     grid-column: span 2;
   }
 
-  /**
-   * Bio version
-   */
+  /** Bio version */
 
   .author-bio .package {
     margin-top: 0;
@@ -421,9 +413,9 @@
 .timeline-event {
 	border-left: 1px solid #707070;
 	max-width: 500px;
-  --headerFamily: "McClatchy Sans", sans-serif;
-  --headerWeight: 600;
-  --headerTransform: uppercase;
+  --hf: "McClatchy Sans", sans-serif;
+  --hw: 600;
+  --ht: uppercase;
 }
 
 .timeline-event:before {
@@ -462,13 +454,15 @@
 
 .question {
 	padding-top: 15px;
-	--headerFamily: "McClatchy Serif", serif;
-	--headerWeight: 400;
-	--headerTransform: none;
+	--hf: "McClatchy Serif", serif;
+	--hw: 400;
+	--ht: none;
 }
 
 /**
  * Big News
+ * Note: we need something for labels "outside the grid" but
+ * need to "line up with the grid".
  */
 
 .big-news {
@@ -607,7 +601,6 @@
 }
 
 .read-next .more-link {
-	color: #707070;
 	padding: 0;
 }
 

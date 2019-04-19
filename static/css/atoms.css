@@ -3,12 +3,17 @@
  */
 
 :root {
-  --v: 1.11.4
-  --headerFamily: "McClatchy Serif", serif;
-  --headerWeight: 400;
-  --headerTransform: none;
-  --link-decoration: none;
-  --link-color: #5169B8;
+  --v: 1.11.4;
+  /* Header family, weight, and text-transform */
+  --hf: "McClatchy Serif", serif;
+  --hw: 400;
+  --ht: none;
+  
+  /* Link decoration and color */
+  --ld: none;
+  --lc: #5169B8;
+
+  /* Colors */
   /* --shasta: #5169B8; */
   /* --dumbledore: #31409F; */
 }
@@ -30,13 +35,14 @@ body.freeze {
  */
 
 a {
-  text-decoration: var(--link-decoration);
-  color: var(--link-color);
+  text-decoration: var(--ld);
+  color: var(--lc);
 }
 
 a:hover {
-  text-decoration: var(--link-hover-decoration);
-  color: var(--link-hover-color);
+  /* Link hover decoration and color */
+  text-decoration: var(--lhd);
+  color: var(--lhc);
 }
 
 h1, .h1 {
@@ -44,28 +50,28 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font: var(--headerWeight) 22px/1.2em var(--headerFamily);
-  text-transform: var(--headerTransform);
+  font: var(--hw) 22px/1.2em var(--hf);
+  text-transform: var(--ht);
 }
 
 h3, .h3 {
-  font: var(--headerWeight) 18px/1.2em var(--headerFamily);
-  text-transform: var(--headerTransform);
+  font: var(--hw) 18px/1.2em var(--hf);
+  text-transform: var(--ht);
 }
 
 h4, .h4 {
-  font: var(--headerWeight) 16px/1.2em var(--headerFamily);
-  text-transform: var(--headerTransform);
+  font: var(--hw) 16px/1.2em var(--hf);
+  text-transform: var(--ht);
 }
 
 h5, .h5 {
   font: 600 14px/1.2em "McClatchy Sans", sans-serif;
-  text-transform: var(--headerTransform);
+  text-transform: var(--ht);
 }
 
 h6, .h6 {
-  font: var(--headerWeight) 12px/1.2em "McClatchy Sans", sans-serif;
-  text-transform: var(--headerTransform);
+  font: var(--hw) 12px/1.2em "McClatchy Sans", sans-serif;
+  text-transform: var(--ht);
 }
 
 p {
@@ -78,7 +84,7 @@ li {
 }
 
 ul li {
-  list-style-image: url("../icons/circle.svg");
+  list-style-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBkPSJNMjU2IDhDMTE5IDggOCAxMTkgOCAyNTZzMTExIDI0OCAyNDggMjQ4IDI0OC0xMTEgMjQ4LTI0OFMzOTMgOCAyNTYgOHoiLz48L3N2Zz4=");
 }
 
 time {
@@ -161,12 +167,8 @@ button, .button {
   border-radius: 2px;
   align-self: flex-start;
   background-color: white;
-  --link-hover-decoration: none;
+  --lhd: none;
 }
-
-/* .button:hover { */
-/*   text-decoration: none; */
-/* } */
 
 .button.stretch {
   display: block;
@@ -199,29 +201,22 @@ hr {
   align-self: flex-start;
   text-transform: uppercase;
   font-weight: 400;
-  --link-decoration: none;
-  --link-hover-decoration: none;
+  --ld: none;
+  --lhd: none;
 }
-
-/* .kicker:hover { */
-/*   text-decoration: none; */
-/* } */
 
 .byline {
   display: inline-block;
   font: 400 11px/1.5em "McClatchy Sans";
   color: #707070;
   text-transform: uppercase;
-  --link-decoration: underline;
-  --link-hover-decoration: underline;
-  /* --link-hover-decoration: underline; */
+  --ld: underline;
+  --lhd: underline;
 }
 
 .byline a {
   font-weight: 700;
   color: inherit;
-  /* --link-decoration: underline; */
-  /* text-decoration: underline; */
 }
 
 .credit {
@@ -257,7 +252,7 @@ hr {
   color: #707070;
   text-transform: uppercase;
   margin-top: 15px;
-  --link-hover-decoration: none;
+  --lhd: none;
 }
 
 .more-link:after {
@@ -267,10 +262,6 @@ hr {
   line-height: 16px;
   transition: transform .6s ease;
 }
-
-/* .more-link:hover { */
-/*   text-decoration: none; */
-/* } */
 
 .more-link:hover:after {
   transform: translateX(4px);
