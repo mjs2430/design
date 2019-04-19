@@ -4,7 +4,7 @@
 
 code {
   background-color: #ddd;
-  padding: 5px;
+  padding: 2px 5px;
 }
 
 pre {
@@ -92,6 +92,8 @@ td:first-child {
 .list .package.active {
   background-color: #377f6a;
   color: white;
+  --lc: white;
+  --lhc: white;
 }
 
 .list a.active {
