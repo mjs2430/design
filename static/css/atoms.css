@@ -208,13 +208,15 @@ hr {
   font: 400 11px/1.5em "McClatchy Sans";
   color: #707070;
   text-transform: uppercase;
+  --lc: #707070;
+  --lhc: #707070;
   --ld: underline;
   --lhd: underline;
 }
 
 .byline a {
   font-weight: 700;
-  color: inherit;
+  /* color: inherit; */
 }
 
 .credit {

@@ -164,3 +164,9 @@ section[role="main"] {
 .content-footer {
   --lhc: white;
 }
+
+.comments-toggle {
+  --lhc: #222;
+  --ld: none;
+  --lhd: none;
+}
