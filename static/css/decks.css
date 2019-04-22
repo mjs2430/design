@@ -158,3 +158,9 @@ section > h5:first-child {
 section[role="main"] {
   overflow: hidden;
 }
+
+/** Remove when footer work */
+
+.content-footer {
+  --lhc: white;
+}

@@ -119,8 +119,9 @@
   --hf: "McClatchy Sans", sans-serif;
   --hw: 600;
   --ht: uppercase;
-  --ld: underline;
+  --lc: #5169B8;
   --lhc: #31409F;
+  --ld: underline;
   --lhd: underline;
 }
 
@@ -173,6 +174,7 @@
   text-align: center;
 	padding: 15px;
   --ht: none;
+  --lc: #222;
   --lhc: #222;
 }
 
