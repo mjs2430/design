@@ -119,8 +119,9 @@
   --hf: "McClatchy Sans", sans-serif;
   --hw: 600;
   --ht: uppercase;
-  --ld: underline;
+  --lc: #5169B8;
   --lhc: #31409F;
+  --ld: underline;
   --lhd: underline;
 }
 
@@ -173,6 +174,7 @@
   text-align: center;
 	padding: 15px;
   --ht: none;
+  --lc: #222;
   --lhc: #222;
 }
 
@@ -695,5 +697,86 @@
 	.modal-newsletter .grid {
 		grid-template-columns: 3fr 1fr;
 	}
+}
+
+/**
+ * Footer
+ */
+
+.footer {
+  margin: 0 auto;
+  padding: 15px 0;
+  max-width: 1170px; /* wider for .package kids */
+}
+
+.footer-connect {
+  --hf: "McClatchy Sans", sans-serif;
+  --hw: 500;
+}
+
+.footer-connect > * {
+  margin-top: 20px;
+}
+
+.footer-connect .summary {
+  max-width: 340px;
+}
+
+.footer-row {
+  display: flex;
+  align-items: center;
+}
+
+.footer svg {
+  height: 25px;
+  margin-right: 10px;
+}
+
+.footer .social svg {
+  height: 35px;
+  margin-right: 20px;
+}
+
+.footer .more-link {
+  margin: 0;
+  position: relative;
+  top: .2em;
+}
+
+.footer-links a {
+  font: 14px "McClatchy Sans";
+}
+
+.bottom-nav {
+  margin: 22.5px auto;
+}
+
+.bottom-nav a {
+  display: block;
+  padding: 7.5px 15px;
+}
+
+@media (min-width: 600px) {
+  .footer-links {
+    display: flex;
+    flex: 1;
+  }
+
+  .bottom-nav {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .bottom-nav a {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    display: flex;
+    padding: 30px 0;
+  }
 }
 

@@ -3,7 +3,6 @@
  */
 
 :root {
-  --v: 1.11.4;
   /* Header family, weight, and text-transform */
   --hf: "McClatchy Serif", serif;
   --hw: 400;
@@ -11,7 +10,7 @@
   
   /* Link decoration and color */
   --ld: none;
-  --lc: #5169B8;
+  --lc: #222;
 
   /* Colors */
   /* --shasta: #5169B8; */
@@ -193,7 +192,6 @@ hr {
  */
 
 .kicker {
-  color: inherit;
   display: inline-block;
   padding: 5px 8px 3px;
   border: 1px solid #4a4a4a;
@@ -210,13 +208,15 @@ hr {
   font: 400 11px/1.5em "McClatchy Sans";
   color: #707070;
   text-transform: uppercase;
+  --lc: #707070;
+  --lhc: #707070;
   --ld: underline;
   --lhd: underline;
 }
 
 .byline a {
   font-weight: 700;
-  color: inherit;
+  /* color: inherit; */
 }
 
 .credit {
@@ -249,10 +249,10 @@ hr {
 .more-link {
   display: flex;
   font: 600 14px/1.5em "McClatchy Sans";
-  color: #707070;
   text-transform: uppercase;
   margin-top: 15px;
   --lhd: none;
+  --lc: #707070;
   --lhc: #707070;
 }
 
