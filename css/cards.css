@@ -706,7 +706,6 @@
 .footer {
   margin: 0 auto;
   padding: 15px 0;
-  max-width: 1170px; /* wider for .package kids */
 }
 
 .footer-connect {
@@ -727,9 +726,26 @@
   align-items: center;
 }
 
-.footer svg {
-  height: 25px;
+.footer svg,
+.footer-icon-wrapper {
+  height: 30px;
   margin-right: 10px;
+}
+
+.footer-icon-wrapper {
+  width: 30px;
+  background-color: white;
+  border-radius: 20%;
+}
+
+.footer-icon-wrapper img {
+  display: block;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  position: relative;
+  top: 2px;
+  left: 2px;
 }
 
 .footer .social svg {
@@ -777,6 +793,7 @@
   .footer {
     display: flex;
     padding: 30px 0;
+    max-width: 1170px; /* wider for .package kids */
   }
 }
 
