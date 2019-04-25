@@ -100,9 +100,9 @@
 
 .impact {
   background-color: #373737;
+  color: white;
 }
 
-.impact, 
 .impact *,
 .promo * {
   border-color: white;
