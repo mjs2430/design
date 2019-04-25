@@ -57,6 +57,23 @@
 }
 
 /**
+ * Simple Flexbox row
+ *
+ * We use this combo so many times it makes sense to 
+ * pull them out into their own reusables.
+ */
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.icons > * {
+  padding: 15px;
+}
+
+
+/**
  * Immersive media card
  * Note: this could be made smaller with custom properties later
  */
@@ -797,3 +814,68 @@
   }
 }
 
+/**
+ * Flag
+ */
+
+section.flag {
+  margin: 0;
+  z-index: 10;
+}
+
+.flag > * {
+  flex: 1;
+}
+
+.flag svg {
+  display: block;
+  height: 20px;
+}
+
+.flag-toggle {
+  margin: 0;
+}
+
+.flag-toggle span {
+  margin-left: 10px;
+  position: relative;
+  top: 0.15em;
+}
+
+.market-logo {
+  padding: 15px;
+  flex: 4;
+}
+
+.market-logo img {
+  display: block;
+  height: 30px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.flag-signin {
+  justify-content: flex-end;
+  padding-right: 15px;
+}
+
+@media (min-width: 769px) {
+  .flag .eReader,
+  .flag .weather {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .flag .hidden {
+    display: block;
+  }
+
+  .flag .mobile-signin {
+    display: none;
+  }
+
+  .market-logo {
+    flex: 2;
+  }
+}
