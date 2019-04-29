@@ -1,3 +1,4 @@
+{{ $name := .title }}
 <div class="bio {{ if .manager }}manager{{ end }}">
   <div class="row">
     {{- if .avatar }}
@@ -34,5 +35,16 @@
     {{- with .anagram }}
     <p><b>Anagram:</b> {{ . }}</p>
     {{ end }}
+
+
+    {{- with .walkup }}
+    {{ if eq $name "Jay Pilgreen" }}
+    <script src="/js/jay-walkups.js" async></script>
+    <p><b>Walkup music:</b> <jay-walkups>{{ . }}</jay-walkups></p>
+    {{ else }}
+    <p><b>Walkup music:</b> {{ . }}</p>
+    {{ end }}
+    {{ end }}
+
   </div>
 </div>
