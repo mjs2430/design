@@ -8,8 +8,9 @@ section.flag {
   z-index: 10;
 }
 
-.flag > * {
-  flex: 1;
+.flag .top {
+  position: relative;
+  z-index: 2;
 }
 
 .flag svg {
@@ -78,16 +79,17 @@ section.flag {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 50vw;
+  width: 100vw;
+  box-sizing: border-box;
   padding: 15px;
-  border-top: 1px solid #ddd;
-  transform: translateX(-100%);
+  transform: translateY(-100%);
   opacity: 0;
-  transition: all .4s ease;
+  transition: transform .6s ease, opacity .4s ease;
+  z-index: 1;
 }
 
 .flag .search.open {
-  transform: translateX(0);
+  transform: translateY(0);
   opacity: 1;
 }
 
