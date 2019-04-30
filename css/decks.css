@@ -3,6 +3,7 @@
  */
 
 section.flag {
+  position: relative;
   margin: 0;
   z-index: 10;
 }
@@ -13,6 +14,7 @@ section.flag {
 
 .flag svg {
   height: 20px;
+  cursor: pointer;
 }
 
 .flag-toggle {
@@ -72,34 +74,28 @@ section.flag {
  */
 
 .flag .search {
-  position: relative;
-  cursor: pointer;
-}
-
-.flag .search form {
-  display: none;
-  position: absolute;
-  top: 60px;
-  left: 0;
-  width: 450px;
-  background-color: white;
-  padding: 10px 0 10px 10px;
-}
-
-.flag .search.open form {
   display: flex;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 50vw;
+  padding: 15px;
+  border-top: 1px solid #ddd;
+  transform: translateX(-100%);
+  transition: transform .4s ease;
+}
+
+.flag .search.open {
+  transform: translateX(0);
 }
 
 .flag .search input {
   flex: 1;
   padding: 5px;
   font-size: 18px;
-  margin-right: 5px;
+  margin-right: 15px;
 }
 
-.flag .search button {
-  font-size: 18px;
-}
 
 /**
  * Footer
