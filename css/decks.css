@@ -11,6 +11,11 @@ section.flag {
 .flag .top {
   position: relative;
   z-index: 2;
+  background-color: white;
+}
+
+.flag .top > * {
+  flex: 1;
 }
 
 .flag svg {
@@ -28,9 +33,9 @@ section.flag {
   top: 0.15em;
 }
 
-.market-logo {
+.flag .market-logo {
   padding: 15px;
-  flex: 4;
+  flex: 2;
 }
 
 .market-logo img {
@@ -64,10 +69,6 @@ section.flag {
   .flag .d-desktop-none {
     display: none;
   }
-
-  .market-logo {
-    flex: 2;
-  }
 }
 
 /**
@@ -81,23 +82,30 @@ section.flag {
   left: 0;
   width: 100vw;
   box-sizing: border-box;
-  padding: 15px;
+  padding: 5px 15px 15px;
   transform: translateY(-100%);
-  opacity: 0;
-  transition: transform .6s ease, opacity .4s ease;
+  transition: transform .6s ease;
+  box-shadow: 
+    0 1px 2px 0 rgba(0, 0, 0, .2), 
+    0 1px 5px 0 rgba(0, 0, 0, .13);
   z-index: 1;
 }
 
-.flag .search.open {
+.flag.open .search {
   transform: translateY(0);
-  opacity: 1;
 }
 
 .flag .search input {
   flex: 1;
-  padding: 5px;
-  font-size: 18px;
+  font-size: 14px;
   margin-right: 15px;
+  padding: 5px;
+  border: 1px solid #707070;
+  border-radius: 2px;
+}
+
+.flag .search button {
+  margin: 0;
 }
 
 

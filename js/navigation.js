@@ -7,5 +7,5 @@ function showNavigation() {
 }
 
 function toggleSearchForm() {
-  document.querySelector(".flag .search").classList.toggle("open");
+  document.querySelector(".flag").classList.toggle("open");
 }
