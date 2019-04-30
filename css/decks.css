@@ -1,4 +1,205 @@
 /**
+ * Flag
+ */
+
+section.flag {
+  margin: 0;
+  z-index: 10;
+}
+
+.flag > * {
+  flex: 1;
+}
+
+.flag svg {
+  height: 20px;
+}
+
+.flag-toggle {
+  margin: 0;
+}
+
+.flag-toggle span {
+  margin-left: 10px;
+  position: relative;
+  top: 0.15em;
+}
+
+.market-logo {
+  padding: 15px;
+  flex: 4;
+}
+
+.market-logo img {
+  display: block;
+  height: 30px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.flag-signin {
+  justify-content: flex-end;
+  padding-right: 15px;
+}
+
+.flag .d-tablet,
+.flag .d-desktop {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .flag .d-tablet {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .flag .d-desktop {
+    display: block;
+  }
+
+  .flag .d-desktop-none {
+    display: none;
+  }
+
+  .market-logo {
+    flex: 2;
+  }
+}
+
+/**
+ * Search form
+ */
+
+.flag .search {
+  position: relative;
+  cursor: pointer;
+}
+
+.flag .search form {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 450px;
+  background-color: white;
+  padding: 10px 0 10px 10px;
+}
+
+.flag .search.open form {
+  display: flex;
+}
+
+.flag .search input {
+  flex: 1;
+  padding: 5px;
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.flag .search button {
+  font-size: 18px;
+}
+
+/**
+ * Footer
+ */
+
+.footer {
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.footer-connect {
+  --hf: "McClatchy Sans", sans-serif;
+  --hw: 500;
+}
+
+.footer-connect > * {
+  margin-top: 20px;
+}
+
+.footer-connect .summary {
+  max-width: 340px;
+}
+
+.footer-row {
+  display: flex;
+  align-items: center;
+}
+
+.footer svg,
+.footer-icon-wrapper {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.footer-icon-wrapper {
+  width: 30px;
+  background-color: white;
+  border-radius: 20%;
+}
+
+.footer-icon-wrapper img {
+  display: block;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
+.footer .social svg {
+  height: 35px;
+  margin-right: 20px;
+}
+
+.footer .more-link {
+  margin: 0;
+  position: relative;
+  top: .2em;
+}
+
+.footer-links a {
+  font: 14px "McClatchy Sans";
+}
+
+.bottom-nav {
+  margin: 22.5px auto;
+}
+
+.bottom-nav a {
+  display: block;
+  padding: 7.5px 15px;
+}
+
+@media (min-width: 600px) {
+  .footer-links {
+    display: flex;
+    flex: 1;
+  }
+
+  .bottom-nav {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .bottom-nav a {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    display: flex;
+    padding: 30px 0;
+    max-width: 1170px; /* wider for .package kids */
+  }
+}
+
+/**
  * Ads for both
  */
 

@@ -60,7 +60,9 @@
  * Simple Flexbox row
  *
  * We use this combo so many times it makes sense to 
- * pull them out into their own reusables.
+ * pull them out into their own reusables. I will 
+ * incorporate into the rest of the elements as we
+ * re-work them.
  */
 
 .flex {
@@ -71,7 +73,6 @@
 .icons > * {
   padding: 15px;
 }
-
 
 /**
  * Immersive media card
@@ -295,14 +296,14 @@
 }
 
 .author-card .social-media a {
-  margin: 0 15px 0 0;
+  padding: 0 15px 0 0;
   display: flex;
   align-items: center;
   width: auto;
 }
 
 .author-card .social-media a:last-child {
-  margin-right: 0;
+  padding-right: 0;
 }
 
 .author-card .social-media span {
@@ -368,13 +369,13 @@
 
   /** Bio version */
 
-  .author-bio .package {
-    margin-top: 0;
-  }
+  /* .author-bio .package { */
+  /*   margin-top: 0; */
+  /* } */
 
-  .author-bio .thumb {
-    grid-row: 1;
-  }
+  /* .author-bio .thumb { */
+  /*   grid-row: 1; */
+  /* } */
 
   .author-bio .summary,
   .author-bio .a-social {
@@ -714,168 +715,4 @@
 	.modal-newsletter .grid {
 		grid-template-columns: 3fr 1fr;
 	}
-}
-
-/**
- * Footer
- */
-
-.footer {
-  margin: 0 auto;
-  padding: 15px 0;
-}
-
-.footer-connect {
-  --hf: "McClatchy Sans", sans-serif;
-  --hw: 500;
-}
-
-.footer-connect > * {
-  margin-top: 20px;
-}
-
-.footer-connect .summary {
-  max-width: 340px;
-}
-
-.footer-row {
-  display: flex;
-  align-items: center;
-}
-
-.footer svg,
-.footer-icon-wrapper {
-  height: 30px;
-  margin-right: 10px;
-}
-
-.footer-icon-wrapper {
-  width: 30px;
-  background-color: white;
-  border-radius: 20%;
-}
-
-.footer-icon-wrapper img {
-  display: block;
-  border-radius: 50%;
-  width: 26px;
-  height: 26px;
-  position: relative;
-  top: 2px;
-  left: 2px;
-}
-
-.footer .social svg {
-  height: 35px;
-  margin-right: 20px;
-}
-
-.footer .more-link {
-  margin: 0;
-  position: relative;
-  top: .2em;
-}
-
-.footer-links a {
-  font: 14px "McClatchy Sans";
-}
-
-.bottom-nav {
-  margin: 22.5px auto;
-}
-
-.bottom-nav a {
-  display: block;
-  padding: 7.5px 15px;
-}
-
-@media (min-width: 600px) {
-  .footer-links {
-    display: flex;
-    flex: 1;
-  }
-
-  .bottom-nav {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-  }
-
-  .bottom-nav a {
-    padding: 15px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .footer {
-    display: flex;
-    padding: 30px 0;
-    max-width: 1170px; /* wider for .package kids */
-  }
-}
-
-/**
- * Flag
- */
-
-section.flag {
-  margin: 0;
-  z-index: 10;
-}
-
-.flag > * {
-  flex: 1;
-}
-
-.flag svg {
-  display: block;
-  height: 20px;
-}
-
-.flag-toggle {
-  margin: 0;
-}
-
-.flag-toggle span {
-  margin-left: 10px;
-  position: relative;
-  top: 0.15em;
-}
-
-.market-logo {
-  padding: 15px;
-  flex: 4;
-}
-
-.market-logo img {
-  display: block;
-  height: 30px;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.flag-signin {
-  justify-content: flex-end;
-  padding-right: 15px;
-}
-
-@media (min-width: 769px) {
-  .flag .eReader,
-  .flag .weather {
-    display: block;
-  }
-}
-
-@media (min-width: 1024px) {
-  .flag .hidden {
-    display: block;
-  }
-
-  .flag .mobile-signin {
-    display: none;
-  }
-
-  .market-logo {
-    flex: 2;
-  }
 }
