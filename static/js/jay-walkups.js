@@ -22,9 +22,9 @@ class JayWalkups extends HTMLElement {
 
   swap(entries) {
     let e = entries[0];
-    let r = Math.floor(Math.random() * this.songs.length);
 
     if(e.isIntersecting) {
+      let r = Math.floor(Math.random() * this.songs.length);
       this.textContent = this.songs[r];
     }
   }
