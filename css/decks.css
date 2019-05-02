@@ -9,9 +9,7 @@ section.flag {
 }
 
 .flag .top {
-  position: relative;
   z-index: 2;
-  background-color: white;
 }
 
 .flag .top > * {
@@ -23,19 +21,14 @@ section.flag {
   cursor: pointer;
 }
 
-.flag-toggle {
-  margin: 0;
-}
-
-.flag-toggle span {
+.flag .menu-label {
   margin-left: 10px;
   position: relative;
   top: 0.15em;
 }
 
 .flag .market-logo {
-  padding: 15px;
-  flex: 2;
+  /* flex: 3; */
 }
 
 .market-logo img {
@@ -45,9 +38,9 @@ section.flag {
   margin: 0 auto;
 }
 
-.flag-signin {
+.flag .signin {
   justify-content: flex-end;
-  padding-right: 15px;
+  margin-right: 15px;
 }
 
 .flag .d-tablet,
@@ -76,38 +69,35 @@ section.flag {
  */
 
 .flag .search {
-  display: flex;
   position: absolute;
   top: 100%;
   left: 0;
   width: 100vw;
   box-sizing: border-box;
-  padding: 5px 15px 15px;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  opacity: 0;
   transform: translateY(-100%);
-  transition: transform .6s ease;
-  box-shadow: 
-    0 1px 2px 0 rgba(0, 0, 0, .2), 
-    0 1px 5px 0 rgba(0, 0, 0, .13);
+  transition: opacity .6s, transform .6s ease;
   z-index: 1;
 }
 
+.flag.open .top {
+  box-shadow: none;
+}
+
 .flag.open .search {
+  opacity: 1;
   transform: translateY(0);
 }
 
 .flag .search input {
   flex: 1;
+  max-width: 660px;
   font-size: 14px;
   margin-right: 15px;
-  padding: 5px;
-  border: 1px solid #707070;
-  border-radius: 2px;
 }
-
-.flag .search button {
-  margin: 0;
-}
-
 
 /**
  * Footer
