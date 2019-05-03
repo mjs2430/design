@@ -16,3 +16,44 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis ex e
 
 #### HTML
 {{< highlight html >}}{{< inline-cta >}}{{< /highlight >}}
+
+---
+
+## Newsletter signup
+
+The newsletter signup uses the same basic structure placing the classes on the form itself.
+
+#### Example
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis ex ex, at blandit sapien suscipit eget. Maecenas gravida, erat vitae commodo semper, lorem sem molestie metus, quis faucibus tellus.
+
+{{< inline-cta type="newsletter" >}}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis ex ex, at blandit sapien suscipit eget. Maecenas gravida, erat vitae commodo semper, lorem sem molestie metus, quis faucibus tellus.
+
+#### HTML
+{{< highlight html >}}
+{{< inline-cta type="newsletter" >}}
+{{< /highlight >}}
+
+---
+
+## CTA on section pages
+
+The same structure can also be used on the section pages with some wrapping.  
+*This example does not match our decks and should be used as a guide only.*
+
+#### EXAMPLE
+
+<div class="example grid">
+  {{< card >}}
+  <div>
+    <div class="impact">
+      {{< inline-cta >}}
+    </div>
+    <div style="height: 30px;"></div>
+    <div class="impact">
+      {{< inline-cta type="newsletter" >}}
+    </div>
+  </div>
+</div>

@@ -1,8 +1,19 @@
-<div class="inline-cta ad-widget package">
+{{ $type := default "cta" (.Get "type" ) }}
+
+{{ if eq $type "cta" }}
+<div class="inline-cta package">
   <h1>Digital access for only $0.99</h1>
   <p class="summary">For the most comprehensive local coverage, subscribe today.</p>
-  <div>
-    <a class="button impact" href="#">SUBSCRIBE NOW</a>
-    <span class="button" style="cursor: initial;">#READLOCAL</span>
-  </div>
+  <a class="button impact" href="#">SUBSCRIBE NOW</a>
 </div>
+{{ end }}
+
+{{ if eq $type "newsletter" }}
+<form class="inline-cta package">
+  <h1>Breaking news</h1>
+  <p class="summary">Be the first to know when big news breaks</p>
+  <input type="hidden" value="breaking newsletter" id="newsletterType">
+  <input type="email" placeholder="Email">
+  <button class="button impact">Sign Up</button>
+</form>
+{{ end }}

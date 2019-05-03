@@ -153,6 +153,13 @@ figcaption, .caption {
  * Form elements
  */
 
+input, select {
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: 5px;
+  font-size: 14px;
+}
+
 button, .button {
   display: inline-block;
   font: 600 14px "McClatchy Sans";
