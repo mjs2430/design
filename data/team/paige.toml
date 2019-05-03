@@ -5,4 +5,14 @@ bio = "I use empathy to create thoughtful and engaging visuals and designs for c
 job = "Product Designer"
 patronus = "St. Bernard"
 title = "Paige Barefoot"
-walkup = "\"Thunderstruck\" by AC/DC"
+walkups = [
+  "\"Thunderstruck\" by AC/DC",
+  "\"Magic Carpet Ride\" by Steppenwolf",
+  "\"Sir Duke \" by Stevie Wonder",
+  "\"Basket Case\" by Green Day",
+  "\"The Distance\" by Cake",
+  "\"Inside Out\" by Eve 6",
+  "\"Epic\" by Faith no More",
+  "\"End of the World as We Know It\" by REM",
+  "\"Should I stay or should I go\" by The Clash",
+]

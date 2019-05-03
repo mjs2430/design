@@ -38,12 +38,11 @@
 
 
     {{- with .walkup }}
-    {{ if eq $name "Jay Pilgreen" }}
-    <script src="/js/jay-walkups.js" async></script>
-    <p><b>Walkup music:</b> <jay-walkups>{{ . }}</jay-walkups></p>
-    {{ else }}
     <p><b>Walkup music:</b> {{ . }}</p>
     {{ end }}
+
+    {{- with .walkups }}
+    <p><b>Walkup music:</b> <jay-walkups songs="{{ jsonify . }}">{{ index . 0 }}</jay-walkups></p>
     {{ end }}
 
   </div>

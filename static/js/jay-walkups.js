@@ -4,15 +4,7 @@ class JayWalkups extends HTMLElement {
   }
 
   get songs() {
-    return [
-      `"This is a Game" by Nick Waterhouse`,
-      `"Unsquare Dance" by Dave Brubeck`,
-      `"This is America" by Childish Gambino`,
-      `"Calabria 2008" by Enur`,
-      `"Boom Boom" by John Lee Hooker`,
-      `"Sinnerman" by Nina Simone`,
-      `"Bamboleo" by the Gipsy Kings`
-    ]
+    return JSON.parse(this.getAttribute("songs"));
   }
 
   connectedCallback() {
@@ -23,7 +15,7 @@ class JayWalkups extends HTMLElement {
   swap(entries) {
     let e = entries[0];
 
-    if(e.isIntersecting) {
+    if(!e.isIntersecting) {
       let r = Math.floor(Math.random() * this.songs.length);
       this.textContent = this.songs[r];
     }
