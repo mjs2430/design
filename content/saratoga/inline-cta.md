@@ -51,7 +51,6 @@ The same structure can also be used on the section pages with some wrapping.
     <div class="impact">
       {{< inline-cta >}}
     </div>
-    <div style="height: 30px;"></div>
     <div class="impact">
       {{< inline-cta type="newsletter" >}}
     </div>

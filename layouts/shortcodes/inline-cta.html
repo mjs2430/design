@@ -1,7 +1,7 @@
 {{ $type := default "cta" (.Get "type" ) }}
 
 {{ if eq $type "cta" }}
-<div class="inline-cta package">
+<div class="inline-cta ad-widget package">
   <h1>Digital access for only $0.99</h1>
   <p class="summary">For the most comprehensive local coverage, subscribe today.</p>
   <a class="button impact" href="#">SUBSCRIBE NOW</a>
@@ -9,7 +9,7 @@
 {{ end }}
 
 {{ if eq $type "newsletter" }}
-<form class="inline-cta package">
+<form class="inline-cta ad-widget package">
   <h1>Breaking news</h1>
   <p class="summary">Be the first to know when big news breaks</p>
   <input type="hidden" value="breaking newsletter" id="newsletterType">
