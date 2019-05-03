@@ -101,6 +101,7 @@
 .impact {
   background-color: #373737;
   color: white;
+  --lhc: white;
 }
 
 .impact *,
