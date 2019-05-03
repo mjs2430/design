@@ -118,25 +118,26 @@ section.flag {
   justify-content: flex-end;
 }
 
-.account .expander {
+.flag .expander {
   padding: 15px;
 }
 
-.account .popout {
+.flag .popout {
   position: absolute;
   top: 100%;
+  right: 0;
   box-shadow: 
     0 1px 2px 0 rgba(0, 0, 0, .2), 
     0 1px 5px 0 rgba(0, 0, 0, .13);
 }
 
-.account .popout a {
+.flag .popout a {
   display: block;
   padding: 15px;
   font-weight: 400;
 }
 
-.account .popout a:hover {
+.flag .popout a:hover {
   background-color: #ddd;
 }
 
