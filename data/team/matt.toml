@@ -5,4 +5,12 @@ bio = "I’m a multitasker who splits my time between product UX/UI design, edit
 job = "Product Designer"
 patronus = ""
 title = "Matt Sasso"
-walkup = "\"Exhibit C\" by Jay Elctronica as a closer or \"Public Service Announcement\" by Jay-Z. as a batter"
+walkups = [
+  "“Exhibit C” by Jay Electronica",
+  "“Public Service Announcement” by Jay-z",
+  "“Can’t C Me” by Tupac",
+  "“New God Flow” by Pusha T & Kanye",
+  "“Monster Mash” by Whomstever sang the Monster Mash",
+  "“Old Town Road” by Lil Nas X",
+  "“September” by Earth, Wind & Fire"
+]

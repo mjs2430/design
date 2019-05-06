@@ -1,32 +1,31 @@
 class JayWalkups extends HTMLElement {
+  static get observer() {
+    return new IntersectionObserver(this.swap);
+  }
+
+  static swap(entries) {
+    let e = entries[0];
+    let t = e.target;
+
+    if(!e.isIntersecting && t.hasShown) {
+      let r = Math.floor(Math.random() * t.songs.length);
+      t.textContent = t.songs[r];
+    } else {
+      t.hasShown = true;
+    }
+  }
+
   constructor() {
     super();
+    this.hasShown = false;
   }
 
   get songs() {
-    return [
-      `"This is a Game" by Nick Waterhouse`,
-      `"Unsquare Dance" by Dave Brubeck`,
-      `"This is America" by Childish Gambino`,
-      `"Calabria 2008" by Enur`,
-      `"Boom Boom" by John Lee Hooker`,
-      `"Sinnerman" by Nina Simone`,
-      `"Bamboleo" by the Gipsy Kings`
-    ]
+    return JSON.parse(this.getAttribute("songs"));
   }
 
   connectedCallback() {
-    let observer = new IntersectionObserver(this.swap.bind(this));
-    observer.observe(this);
-  }
-
-  swap(entries) {
-    let e = entries[0];
-
-    if(e.isIntersecting) {
-      let r = Math.floor(Math.random() * this.songs.length);
-      this.textContent = this.songs[r];
-    }
+    this.constructor.observer.observe(this)
   }
 }
 
