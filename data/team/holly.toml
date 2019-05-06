@@ -5,4 +5,10 @@ bio = "Storytelling is my focus. I include it in illustrations and gifs for emai
 job = "Product Designer"
 patronus = "Bloodhound"
 title = "Holly Braford"
-walkup = "“Immigrant Song” by Led Zepplin"
+walkups = [
+  "“Cut Out Witch” by Guided by Voices",
+  "“Cannonball” by Breeders",
+  "“Immigrant Song” by Led Zepplin",
+  "“The Cutter” by Echo & the Bunnymen",
+  "“Game of Pricks” by Guided by Voices"
+]
