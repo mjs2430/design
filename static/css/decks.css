@@ -13,7 +13,7 @@
   }
 
   .d-tablet {
-    display: block;
+    display: var(--display, block);
   }
 }
 
@@ -23,7 +23,7 @@
   }
 
   .d-desktop {
-    display: block;
+    display: var(--display, block);
   }
 }
 
@@ -37,7 +37,7 @@ section.flag {
   z-index: 10;
 }
 
-.flag .top {
+.flag .front {
   z-index: 2;
 }
 
@@ -68,9 +68,30 @@ section.flag {
   margin: 0 auto;
 }
 
+.flag.homepage .market-logo img {
+  height: 38px;
+}
+
 .flag .signin {
   justify-content: flex-end;
   padding: 0 15px;
+}
+
+.flag .bottom {
+  --display: flex;
+  justify-content: center;
+}
+
+.flag .bottom a {
+  font-weight: 400;
+  color: #707070;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 12px;
+}
+
+.flag .bottom a.active {
+  color: #222;
+  border-color: #222;
 }
 
 /**
@@ -92,7 +113,7 @@ section.flag {
   z-index: 1;
 }
 
-.flag.open .top {
+.flag.open .front {
   box-shadow: none;
 }
 

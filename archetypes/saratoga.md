@@ -1,5 +1,5 @@
 ---
 title: "{{ .Name | lower }}"
 description: ""
-level: ""
+menu: cards
 ---
