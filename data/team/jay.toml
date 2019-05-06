@@ -6,11 +6,11 @@ job = "Design Ops"
 patronus = "Basset Hound"
 title = "Jay Pilgreen"
 walkups = [
-  "\"This is a Game\" by Nick Waterhouse",
-  "\"Unsquare Dance\" by Dave Brubeck",
-  "\"This is America\" by Childish Gambino",
-  "\"Calabria 2008\" by Enur",
-  "\"Boom Boom\" by John Lee Hooker",
-  "\"Sinnerman\" by Nina Simone",
-  "\"Bamboleo\" by the Gipsy Kings"
+  "“This is a Game” by Nick Waterhouse",
+  "“Unsquare Dance” by Dave Brubeck",
+  "“This is America” by Childish Gambino",
+  "“Calabria 2008” by Enur",
+  "“Boom Boom” by John Lee Hooker",
+  "“Sinnerman” by Nina Simone",
+  "“Bamboleo” by the Gipsy Kings"
 ]
