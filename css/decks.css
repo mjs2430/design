@@ -84,7 +84,7 @@ section.flag {
 
 .flag .bottom a {
   font-weight: 400;
-  color: #707070;
+  color: #757575;
   border-bottom: 3px solid transparent;
   padding-bottom: 12px;
 }
@@ -297,7 +297,7 @@ section.flag {
 .story-body .media-leadtext,
 .story-body .mi-video-bylines {
   font: 14px/1.5em "McClatchy Sans", sans-serif;
-  color: #757575;
+  color: #707070;
   margin: 0;
   display: inline-block;
   padding-right: 0.5em;
