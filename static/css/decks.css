@@ -403,6 +403,10 @@ section[role="main"] {
   overflow: hidden;
 }
 
+.mi-sticky-player-info {
+  --ht: none;
+}
+
 /** Remove when footer work */
 
 .content-footer {
