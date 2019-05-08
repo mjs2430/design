@@ -179,7 +179,7 @@ button, .button {
   box-sizing: border-box;
   border-radius: 2px;
   align-self: flex-start;
-  background-color: white;
+  /* background-color: white; */
   --lhd: none;
 }
 

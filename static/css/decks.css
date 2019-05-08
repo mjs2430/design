@@ -32,9 +32,9 @@
  */
 
 section.flag {
+  z-index: 10;
   position: relative;
   margin: 0;
-  z-index: 10;
 }
 
 .flag .front {
@@ -245,6 +245,95 @@ section.flag {
     padding: 30px 0;
     max-width: 1170px; /* wider for .package kids */
   }
+}
+
+/**
+ * Menu
+ */
+
+.main-nav {
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 260px;
+  background-color: #373737;
+  padding-bottom: 30px;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  --lc: white;
+  transform: translateX(-150%);
+  transition: transform .4s ease;
+}
+
+.main-nav.open {
+  transform: translateX(0);
+}
+
+.main-nav svg {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.main-nav svg + span {
+  position: relative;
+  top: .15em;
+}
+
+.main-nav button,
+.main-nav a {
+  padding: 15px 30px 15px 25px;
+  border: none;
+  border-left: 5px solid transparent;
+  border-radius: 0;
+  outline: none;
+}
+
+.main-nav button {
+  align-self: stretch;
+  text-transform: none;
+  background-color: transparent;
+  color: white;
+  font-weight: 400;
+}
+
+.main-nav a {
+  display: block;
+  --lhc: white;
+}
+
+.main-nav .expander {
+  justify-content: space-between;
+}
+
+.main-nav .expander:after {
+  filter: invert(1);
+}
+
+.main-nav .subsection {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav .subsection a {
+  padding: 10px 30px 10px 45px;
+  --lc: #989898;
+  --lhc: white;
+}
+
+.main-nav .expander.open,
+.main-nav .expander.open + div a {
+  background-color: #222;
+  border-color: #fff;
+}
+
+.main-nav hr {
+  border: none;
+  border-top: 1px solid white;
+  margin: 30px 0;
 }
 
 /**
