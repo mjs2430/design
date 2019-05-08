@@ -1,7 +1,6 @@
 ---
 label: Saratoga
 hide_body: false
-is_partial: false
 fields:
 - name: title
   label: Title
@@ -32,23 +31,22 @@ fields:
   name: updated
   label: Recently Updated
 pages:
+- content/saratoga/button.md
 - content/saratoga/paper.md
-- content/saratoga/digest.md
-- content/saratoga/h4.md
-- content/saratoga/p.md
 - content/saratoga/h3.md
-- content/saratoga/h5.md
+- content/saratoga/figcaption.md
+- content/saratoga/figure.md
+- content/saratoga/li.md
+- content/saratoga/digest.md
+- content/saratoga/h6.md
 - content/saratoga/h2.md
 - content/saratoga/h1.md
-- content/saratoga/label.md
-- content/saratoga/h6.md
 - content/saratoga/package.md
-- content/saratoga/figcaption.md
-- content/saratoga/more-link.md
-- content/saratoga/time.md
-- content/saratoga/impact.md
+- content/saratoga/label.md
+- content/saratoga/h5.md
+- content/saratoga/h4.md
+- content/saratoga/p.md
 - content/saratoga/card.md
-- content/saratoga/story.md
-- content/saratoga/li.md
-- content/saratoga/figure.md
-- content/saratoga/button.md
+- content/saratoga/impact.md
+- content/saratoga/time.md
+- content/saratoga/more-link.md

@@ -1,7 +1,6 @@
 ---
 label: Staff member
-hide_body: 
-is_partial: 
+hide_body: false
 fields:
 - name: title
   label: Title
@@ -39,15 +38,15 @@ fields:
   hidden: false
   default: ''
 pages:
-- data/team/matt.toml
-- data/team/farhin.toml
-- data/team/chelsea.toml
-- data/team/eric.toml
-- data/team/holly.toml
-- data/team/jessica.toml
-- data/team/jay.toml
 - data/team/paige.toml
-- data/team/alexandra.toml
-- data/team/eddie.toml
-- data/team/charnae.toml
+- data/team/farhin.toml
+- data/team/holly.toml
+- data/team/jay.toml
+- data/team/chelsea.toml
 - data/team/aaron.toml
+- data/team/charnae.toml
+- data/team/jessica.toml
+- data/team/alexandra.toml
+- data/team/eric.toml
+- data/team/eddie.toml
+- data/team/matt.toml
