@@ -149,14 +149,6 @@ figcaption, .caption {
   padding: 10px 15px 0;
 }
 
-svg {
-  display: block;
-}
-
-hr {
-  border: .5px solid #707070;
-}
-
 /**
  * Form elements
  */
@@ -175,11 +167,12 @@ button, .button {
   text-align: center;
   cursor: pointer;
   padding: .6em 1em .3em;
+  margin: 4px 0;
   border: 1px solid transparent;
   box-sizing: border-box;
   border-radius: 2px;
   align-self: flex-start;
-  /* background-color: white; */
+  background-color: white;
   --lhd: none;
 }
 
@@ -195,6 +188,10 @@ button, .button {
 
 .ghost {
   border-color: #4a4a4a;
+}
+
+hr {
+  border: .5px solid #707070;
 }
 
 /**
@@ -226,6 +223,7 @@ button, .button {
 
 .byline a {
   font-weight: 700;
+  /* color: inherit; */
 }
 
 .credit {
