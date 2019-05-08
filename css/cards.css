@@ -57,24 +57,6 @@
 }
 
 /**
- * Simple Flexbox row
- *
- * We are using this combo more and it makes sense to 
- * pull them out into their own reusables. I will 
- * incorporate into the rest of the elements as we
- * re-work them.
- */
-
-.flex {
-  display: flex;
-  align-items: center;
-}
-
-.icons > * {
-  padding: 15px;
-}
-
-/**
  * Immersive media card
  * Note: this could be made smaller with custom properties later
  */
@@ -296,14 +278,14 @@
 }
 
 .author-card .social-media a {
-  padding: 0 15px 0 0;
+  margin: 0 15px 0 0;
   display: flex;
   align-items: center;
   width: auto;
 }
 
 .author-card .social-media a:last-child {
-  padding-right: 0;
+  margin-right: 0;
 }
 
 .author-card .social-media span {
@@ -368,6 +350,14 @@
   }
 
   /** Bio version */
+
+  .author-bio .package {
+    margin-top: 0;
+  }
+
+  .author-bio .thumb {
+    grid-row: 1;
+  }
 
   .author-bio .summary,
   .author-bio .a-social {
@@ -708,3 +698,4 @@
 		grid-template-columns: 3fr 1fr;
 	}
 }
+
