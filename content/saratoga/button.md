@@ -8,7 +8,7 @@ menu:
   atom: {}
 
 ---
-Buttons are designed to be placed in a center-aligned row using browser defaults and to have different levels of impact. There are three different types of button, but they all use the same base code.
+Buttons are designed to be placed in a center-aligned row using browser defaults and to have different levels of impact. There are four different types of button, but they all use the same base code.
 
 #### EXAMPLE
 
