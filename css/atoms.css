@@ -175,11 +175,12 @@ button, .button {
   text-align: center;
   cursor: pointer;
   padding: .6em 1em .3em;
+  margin: 0;
   border: 1px solid transparent;
   box-sizing: border-box;
   border-radius: 2px;
   align-self: flex-start;
-  /* background-color: white; */
+  background-color: inherit;
   --lhd: none;
 }
 
