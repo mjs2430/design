@@ -13,7 +13,6 @@ release:
 	git push origin $(v)
 
 live: public
-	cd public && git pull
 	rm -rf public/*
 	hugo
 	cd public && git add --all && git commit -m "Publishing to gh-pages" && git push
