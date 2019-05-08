@@ -290,6 +290,11 @@ section.flag {
   outline: none;
 }
 
+.main-nav button:hover,
+.main-nav a:hover {
+  background-color: #222;
+}
+
 .main-nav button {
   align-self: stretch;
   text-transform: none;
