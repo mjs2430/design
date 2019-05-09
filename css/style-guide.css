@@ -131,7 +131,6 @@ td:first-child {
   .panels > * {
     flex: 1;
     overflow: scroll;
-    -webkit-overflow-scrolling: touch;
   }
 
   .list {
