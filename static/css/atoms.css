@@ -7,10 +7,14 @@
   --hf: "McClatchy Serif", serif;
   --hw: 400;
   --ht: none;
-  
+
   /* Link decoration and color */
-  --ld: none;
   --lc: #222;
+  --ld: none;
+
+  /* Button color and background color */
+  --bc: #222;
+  --bbc: transparent;
 
   /* Colors */
   /* --shasta: #5169B8; */
@@ -20,9 +24,8 @@
 body {
   position: relative;
   margin: 0;
-  background-color: #f4f4f4;
   color: #222;
-  font-family: "McClatchy Serif", serif;
+  background-color: #f4f4f4;
 }
 
 body.freeze {
@@ -91,7 +94,7 @@ time {
   display: inline-block;
   font: 300 11px/1.2em "McClatchy Sans", sans-serif;
   text-transform: uppercase;
-  color: #707070;
+  color: var(--fc, #707070);
 }
 
 /**
@@ -146,16 +149,17 @@ figure img {
 
 figcaption, .caption {
   font: 14px/1.5em "McClatchy Sans", sans-serif;
-  color: #707070;
+  color: var(--tc, #707070);
   padding: 10px 15px 0;
 }
 
 svg {
-  display: block;
+  display: inline-block;
 }
 
 hr {
   border: .5px solid #707070;
+  align-self: stretch;
 }
 
 /**
@@ -167,21 +171,29 @@ input, select {
   border-radius: 2px;
   padding: 5px;
   font-size: 14px;
+  color: var(--tc);
 }
 
-button, .button {
+button {
+  color: var(--bc);
+  background-color: var(--bbc);
+  border: none;
+}
+
+.button {
   display: inline-block;
+  align-self: flex-start;
   font: 600 14px "McClatchy Sans";
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
   padding: .6em 1em .3em;
-  margin: 0;
   border: 1px solid transparent;
   box-sizing: border-box;
   border-radius: 2px;
-  align-self: flex-start;
-  background-color: inherit;
+  color: var(--bc);
+  background-color: var(--bbc);
+  --ld: none;
   --lhd: none;
 }
 
@@ -208,26 +220,29 @@ button, .button {
   padding: 5px 8px 3px;
   border: 1px solid #4a4a4a;
   border-radius: 2px;
-  align-self: flex-start;
   text-transform: uppercase;
   font-weight: 400;
+  color: var(--fc);
   --ld: none;
   --lhd: none;
+}
+
+.kicker:hover {
+  color: inherit;
 }
 
 .byline {
   display: inline-block;
   font: 400 11px/1.5em "McClatchy Sans";
-  color: #707070;
   text-transform: uppercase;
-  --lc: #707070;
-  --lhc: #707070;
-  --ld: underline;
-  --lhd: underline;
+  color: var(--fc, #707070);
 }
 
 .byline a {
   font-weight: 700;
+  color: inherit;
+  --ld: underline;
+  --lhd: underline;
 }
 
 .credit {
@@ -240,13 +255,14 @@ button, .button {
   margin: 0;
   display: flex;
   justify-content: center;
-  color: inherit;
 }
 
 .label > * {
   border-radius: 0;
   margin: 0;
   padding: 5px 10px 3px;
+  color: var(--bc);
+  background-color: var(--bbc);
 }
 
 .label.sticky {
@@ -262,6 +278,7 @@ button, .button {
   font: 600 14px/1.5em "McClatchy Sans";
   text-transform: uppercase;
   margin-top: 15px;
+  --ld: none;
   --lhd: none;
   --lc: #707070;
   --lhc: #707070;

@@ -65,11 +65,10 @@
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
+  align-items: flex-start;
 	--hf: "McClatchy Serif", serif;
 	--hw: 400;
 	--ht: none;
-  --lc: #222;
-  --lhc: #222;
   --ld: none;
   --lhd: underline;
 }
@@ -96,40 +95,28 @@
   margin-top: 20px;
 }
 
-/** Reverse impact */
+/** Reverse impact and promo */
 
-.impact {
+.impact,
+.promo {
   background-color: #373737;
   color: white;
+  --fc: white;
+  --lc: white;
   --lhc: white;
+  --bc: #222;
+  --bbc: white;
+}
+
+.promo {
+  background-color: #31409F;
+  --bc: #31409F;
 }
 
 .impact *,
 .promo * {
   border-color: white;
-  color: white;
   fill: white;
-  --lc: white;
-  --lhc: white;
-}
-
-.impact .card {
-  background-color: transparent;
-  box-shadow: none;
-}
-
-.impact .label > *,
-.impact .button {
-  background-color: white;
-  color: #222;
-}
-
-/** Reverse promo */
-
-.promo, 
-.impact .promo {
-  background-color: #31409F;
-  color: white;
 }
 
 /** Social media */

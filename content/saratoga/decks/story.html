@@ -12,6 +12,7 @@ aliases:
 {{< flag type="subscriber" page="homepage" >}}
 
 <div class="paper">
+  {{< immersive >}}
   <div class="story-template">
     <article class="story-body">
       {{< header >}}
@@ -108,8 +109,8 @@ aliases:
       <div class="package">
         <h3 class="bold sans">MODAL TEST BUTTONS</h3>
         <p class="summary">This module is not part of the design, and is only here to test modal functionality.</p>
-        <button class="ghost" onclick="toggleModal('main-modal')">show main modal</button>
-        <button class="ghost" onclick="toggleModal('bottom-modal')">show bottom modal</button>
+        <button class="button ghost" onclick="toggleModal('main-modal')">show main modal</button>
+        <button class="button ghost" onclick="toggleModal('bottom-modal')">show bottom modal</button>
       </div>
     </aside>
   </div>
@@ -128,92 +129,7 @@ aliases:
 </section>
 
 {{< footer >}}
-
-<!-- menu -->
-<div id="main-nav" class="main-nav sans summary">
-  <button class="flex" onclick="closeNavigation()">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" fill="white"/></svg>
-    <span class="h5">SECTIONS</span>
-  </button>
-  <a href="#">
-    <img src="https://www.kansascity.com/wps/build/images/widgets/navigation/eedition-logo-white.svg">
-  </a>
-  <a href="#">Home</a>
-  <div class="subsection">
-    <button class="expander" onclick="this.classList.toggle('open')">News</button>
-    <div>
-      <a href="#">Subsection 1</a>
-      <a href="#">Subsection 2</a>
-      <a href="#">Subsection 3</a>
-      <a href="#">Subsection 4</a>
-      <a href="#">Subsection 5</a>
-    </div>
-  </div>
-  <div class="subsection">
-    <button class="expander" onclick="this.classList.toggle('open')">Sports</button>
-    <div>
-      <a href="#">Subsection 1</a>
-      <a href="#">Subsection 2</a>
-      <a href="#">Subsection 3</a>
-      <a href="#">Subsection 4</a>
-      <a href="#">Subsection 5</a>
-    </div>
-  </div>
-  <div class="subsection">
-    <button class="expander" onclick="this.classList.toggle('open')">Politics</button>
-    <div>
-      <a href="#">Subsection 1</a>
-      <a href="#">Subsection 2</a>
-      <a href="#">Subsection 3</a>
-      <a href="#">Subsection 4</a>
-      <a href="#">Subsection 5</a>
-    </div>
-  </div>
-  <div class="subsection">
-    <button class="expander" onclick="this.classList.toggle('open')">Business</button>
-    <div>
-      <a href="#">Subsection 1</a>
-      <a href="#">Subsection 2</a>
-      <a href="#">Subsection 3</a>
-      <a href="#">Subsection 4</a>
-      <a href="#">Subsection 5</a>
-    </div>
-  </div>
-  <div class="subsection">
-    <button class="expander" onclick="this.classList.toggle('open')">Living</button>
-    <div>
-      <a href="#">Subsection 1</a>
-      <a href="#">Subsection 2</a>
-      <a href="#">Subsection 3</a>
-      <a href="#">Subsection 4</a>
-      <a href="#">Subsection 5</a>
-    </div>
-  </div>
-  <div class="subsection">
-    <button class="expander" onclick="this.classList.toggle('open')">Entertainment</button>
-    <div>
-      <a href="#">Subsection 1</a>
-      <a href="#">Subsection 2</a>
-      <a href="#">Subsection 3</a>
-      <a href="#">Subsection 4</a>
-      <a href="#">Subsection 5</a>
-    </div>
-  </div>
-  <div class="subsection">
-    <button class="expander" onclick="this.classList.toggle('open')">Opinion</button>
-    <div>
-      <a href="#">Subsection 1</a>
-      <a href="#">Subsection 2</a>
-      <a href="#">Subsection 3</a>
-      <a href="#">Subsection 4</a>
-      <a href="#">Subsection 5</a>
-    </div>
-  </div>
-  <hr>
-  <a href="#">Mobile &amp; Apps</a>
-  <a href="#">Niche pub</a>
-  <a href="#">Niche pub</a>
-</div>
+{{< menu >}}
 
 {{< modal >}}
 {{< modal type="bottom" >}}

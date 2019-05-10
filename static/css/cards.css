@@ -74,6 +74,13 @@
   padding: 15px;
 }
 
+/* To fix our strange line heights */
+.icon-label {
+  position: relative;
+  top: .15em;
+  margin-left: 10px;
+}
+
 /**
  * Immersive media card
  * Note: this could be made smaller with custom properties later
@@ -98,6 +105,7 @@
   justify-content: flex-end;
   text-align: center;
 	padding-bottom: 30px;
+  --bbc: transparent;
 }
 
 .immersive .content > * {
@@ -107,11 +115,9 @@
 }
 
 .immersive .content button {
-	border: none;
-  background-color: transparent;
+  padding: 0;
 	height: 60px;
 	width: 60px;
-  padding: 0;
 }
 
 .immersive .title {
@@ -191,21 +197,10 @@
   align-items: center;
   text-align: center;
 	padding: 15px;
-  --ht: none;
-  --lc: #222;
-  --lhc: #222;
 }
 
 .header > * {
 	margin: 15px 0 0;
-}
-
-.header .kicker {
-	align-self: unset;
-}
-
-.header .byline {
-	margin: 0;
 }
 
 @media (min-width: 600px) {
@@ -226,6 +221,8 @@
 	--hf: "McClatchy Serif", serif;
 	--hw: 400;
 	--ht: none;
+  --lc: #222;
+  --lhc: #222;
 }
 
 .series-nav .package {
@@ -248,6 +245,7 @@
   width: 80px;
 }
 
+/** Unnecessary in 1.12 */
 .series-nav .article img {
   padding: 0;
 }
@@ -264,9 +262,8 @@
  */
 
 .related-stories {
-	--hf: "McClatchy Serif", serif;
-	--hw: 400;
-	--ht: none;
+  --lc: #222;
+  --lhc: #222;
 }
 
 .related-stories .package {
@@ -551,7 +548,6 @@
 
 .card.in-depth {
 	flex-wrap: wrap;
-	background-color: #373737;
 }
 
 .card.in-depth figure {

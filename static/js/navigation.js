@@ -14,6 +14,6 @@ function closeNavigation() {
 
 function toggleSearchForm() {
   document.querySelectorAll(".flag").forEach(d => {
-    d.classList.toggle("open");
+    d.classList.toggle("searching");
   });
 }
