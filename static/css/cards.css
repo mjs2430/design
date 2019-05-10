@@ -273,31 +273,24 @@
   border-radius: 50%;
 }
 
-.author-card .social-media {
-  justify-content: flex-start;
-}
-
 .author-card .social-media a {
   margin: 0 15px 0 0;
+}
+
+/**
+ * Following 2 can be removed with flag release
+ */
+
+.author-card .flex {
   display: flex;
   align-items: center;
   width: auto;
 }
 
-.author-card .social-media a:last-child {
-  margin-right: 0;
-}
-
-.author-card .social-media span {
-  padding-left: 5px;
-}
-
-/* This rule will be deprecated in 1.12 */
-.author-card .social-media .i-phone {
-	padding-left: 24px;
-	width: auto;
-  white-space: nowrap;
-  margin-right: 0;
+.author-card .icon-label {
+  position: relative;
+  top: .15em;
+  margin-left: 10px;
 }
 
 /* Author Bio version */
@@ -312,6 +305,10 @@
   }
 }
 
+.author-bio .thumb {
+  max-width: 160px;
+}
+
 /* Grid takeover */
 
 @supports(display: grid) {
@@ -322,22 +319,15 @@
     display: grid;
     align-items: center;
     grid-gap: 10px 15px;
-    grid-template-columns: [start] 80px 1fr;
+    grid-template-columns: 80px 1fr;
   }
 
   .author-card > * {
     margin-top: 0;
   }
 
-  .author-card .thumb {
-    max-width: unset;
-    align-self: flex-start;
-  }
-
-  .author-card .row {
-    flex-direction: row;
+  .author-card .flex {
     flex-wrap: wrap;
-    align-items: center;
   }
 
   .author-card .byline {
@@ -345,7 +335,8 @@
     margin-right: 30px;
   }
 
-  .author-card .summary {
+  .author-card .summary,
+  .author-bio .a-social {
     grid-column: span 2;
   }
 
@@ -357,11 +348,6 @@
 
   .author-bio .thumb {
     grid-row: 1;
-  }
-
-  .author-bio .summary,
-  .author-bio .a-social {
-    grid-column: start/end;
   }
 
   @media (min-width: 769px) {
