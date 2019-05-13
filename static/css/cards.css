@@ -572,6 +572,7 @@
 }
 
 .read-next .header {
+  align-self: stretch;
 	align-items: flex-start;
 	text-align: left;
 	padding: 0;
