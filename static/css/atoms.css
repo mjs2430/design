@@ -158,7 +158,7 @@ svg {
 }
 
 hr {
-  border: .5px solid #707070;
+  border: .5px solid var(--tc, #707070);
   align-self: stretch;
 }
 
@@ -174,10 +174,10 @@ input, select {
   color: var(--tc);
 }
 
-button {
+button, .button {
   color: var(--bc);
   background-color: var(--bbc);
-  border: none;
+  border: 1px solid transparent;
 }
 
 .button {
@@ -188,11 +188,8 @@ button {
   text-align: center;
   cursor: pointer;
   padding: .6em 1em .3em;
-  border: 1px solid transparent;
   box-sizing: border-box;
   border-radius: 2px;
-  color: var(--bc);
-  background-color: var(--bbc);
   --ld: none;
   --lhd: none;
 }
@@ -219,12 +216,16 @@ button {
   display: inline-block;
   padding: 5px 8px 3px;
   color: var(--tc);
+  font-weight: 400;
   border: 1px solid var(--tc, #4a4a4a);
   border-radius: 2px;
   text-transform: uppercase;
-  font-weight: 400;
-  --ld: none;
-  --lhd: none;
+  text-decoration: none;
+}
+
+.kicker:hover {
+  color: var(--tc);
+  text-decoration: none;
 }
 
 .byline {
@@ -254,7 +255,6 @@ button {
 }
 
 .label > * {
-  border-radius: 0;
   margin: 0;
   padding: 5px 10px 3px;
   color: var(--bc);
@@ -276,10 +276,8 @@ button {
   font: 600 14px/1.5em "McClatchy Sans";
   text-transform: uppercase;
   margin-top: 15px;
-  --ld: none;
-  --lhd: none;
-  --lc: #707070;
-  --lhc: #707070;
+  color: var(--tc, #707070);
+  text-decoration: none;
 }
 
 .more-link:after {
@@ -288,6 +286,11 @@ button {
   font: 20px monospace;
   line-height: 16px;
   transition: transform .6s ease;
+}
+
+.more-link:hover {
+  color: var(--tc, #707070);
+  text-decoration: none;
 }
 
 .more-link:hover:after {
