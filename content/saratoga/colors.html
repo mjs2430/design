@@ -1,7 +1,8 @@
 ---
-title: "Colors"
+title: color themes
 date: 2019-05-13T10:03:00-05:00
 layout: deck
+menu: molecule
 ---
 
 <style>
@@ -12,9 +13,9 @@ layout: deck
 
 <div class="story-body paper">
   <h1>Colors and custom properties</h1>
-  <p>I've adjusted and expanded the CSS custom properties at tad to make the system more optimized in general and also allow for the new color ranges coming out of the marketing side. After talking with Chelsea, we determined that the areas that should be adjustable are the background color, the text, links and any buttons. These properties can always be changed with targeted CSS, but the more specific we make the atoms the more code we have to add at the molecule and card level to overload our previous rules.</p>
-  <p>Starting with just impact a normal approach wasn't too bad. It's ok to declare, as an example, in an impact molecule or card the label should be black text on a white background. That's not a lot of code. It got a little more repetetive when we added the promo concept and then got really ugly when we started putting these into a story body with its own rules.</p>
-  <p>What I have done here instead, using CSS custom properties, is set some sane defaults for our current cards to eliminate boilerplate code while also giving us a clean place to add new ones without increasing the payload by all that much. Here is the new set of standards for our regular card, impact card, and promo card.</p>
+  <p>We've adjusted and expanded the CSS custom properties at tad to make the system more optimized in general and also allow for the new color ranges coming out of the marketing side. After discussion, we determined the areas that should be adjustable are the background, text, links and any buttons. These properties can always be changed with targeted CSS, but the more specific we make the atoms the more code we have to add at the molecule and card level to overload previous rules.</p>
+  <p>Starting with just impact, a normal approach wasn't too bad. It's ok to declare, as an example, in an impact molecule or card that the label should be black text on a white background. That's not a lot of code. It got a little more repetitive when we added the promo concept and then it got really ugly when we started putting these into a story body with its own rules.</p>
+  <p>What we have done here instead, using CSS custom properties, is set some defaults for our current cards to eliminate boilerplate code while also giving us a clean place to add new themes without increasing the payload by all that much. Here is the new set of standards for our regular card, impact card, and promo card.</p>
 </div>
 
 <section class="grid">
@@ -24,13 +25,12 @@ layout: deck
 </section>
 
 <div class="story-body paper">
-  <p>In the new setup, some atoms like links, buttons and labels are listening for these properties. Here is a sampling of the CSS for the impact and promo molecules.</p>
+  <p>In the new setup, atoms like links, buttons and labels are listening for these properties. Here is a sampling of the CSS for the impact and promo molecules.</p>
 
   {{< highlight css >}}
 .impact,
 .promo {
   background-color: #373737;
-  color: white;
   --tc: white;
   --lc: white;
   --lhc: white;
@@ -44,7 +44,7 @@ layout: deck
 }
   {{< /highlight >}}
 
-  <p>We can expand this in the future for different ad campaigns. Here is a quick sample, and if after looking at it are judging me on my questionable color palletes then we've succeeded.</p>
+  <p>This setup allows us to expand in the future for different ad campaigns. Here is a quick sample.</p>
 </div>
 
 <style>
@@ -115,7 +115,7 @@ layout: deck
 }
   {{< /highlight >}}
 
-  <p>The same CSS also works for cards, along any other element that uses our atoms.
+  <p>The same CSS also works for cards, along with any other element that uses our system.</p>
 </div>
 
 <section class="grid">
