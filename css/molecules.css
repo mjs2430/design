@@ -101,6 +101,7 @@
 .impact,
 .promo {
   background-color: #373737;
+  color: white;
   --tc: white;
   --lc: white;
   --lhc: white;
