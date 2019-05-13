@@ -94,7 +94,7 @@ time {
   display: inline-block;
   font: 300 11px/1.2em "McClatchy Sans", sans-serif;
   text-transform: uppercase;
-  color: var(--fc, #707070);
+  color: var(--tc, #707070);
 }
 
 /**
@@ -218,24 +218,20 @@ button {
 .kicker {
   display: inline-block;
   padding: 5px 8px 3px;
-  border: 1px solid #4a4a4a;
+  color: var(--tc);
+  border: 1px solid var(--tc, #4a4a4a);
   border-radius: 2px;
   text-transform: uppercase;
   font-weight: 400;
-  color: var(--fc);
   --ld: none;
   --lhd: none;
-}
-
-.kicker:hover {
-  color: inherit;
 }
 
 .byline {
   display: inline-block;
   font: 400 11px/1.5em "McClatchy Sans";
   text-transform: uppercase;
-  color: var(--fc, #707070);
+  color: var(--tc, #707070);
 }
 
 .byline a {
@@ -263,6 +259,8 @@ button {
   padding: 5px 10px 3px;
   color: var(--bc);
   background-color: var(--bbc);
+  --ld: none;
+  --lhd: none;
 }
 
 .label.sticky {

@@ -1,12 +1,13 @@
 {{- $label := .Get "label" -}}
+{{- $class := .Get "class" -}}
 
 <div class="digest">
-  <div class="paper">
+  <div class="paper {{ $class }}">
     <a href="https://mcclatchy.github.io/saratoga/opinion/" class="label {{ $label }}">
-      <h5 class="impact">OPINION</h5>
+      <h5>OPINION</h5>
     </a>
     {{- if eq $label "sticky" }}
-    <article class="card no-shadow">
+    <article class="card">
       <figure>
         <a href="https://mcclatchy.github.io/saratoga/opinion/205928724/">
           <img src="https://pics.mcclatchyinteractive.com/opinion/gi1163/picture205928719/ALTERNATES/LANDSCAPE_640/AP_18073734498485" srcset="https://pics.mcclatchyinteractive.com/opinion/gi1163/picture205928719/ALTERNATES/LANDSCAPE_1140/AP_18073734498485 1140w"> 

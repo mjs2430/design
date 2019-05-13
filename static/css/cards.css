@@ -82,6 +82,17 @@
 }
 
 /**
+ * Digests
+ */
+
+.digest {
+  --lc: #222;
+  --lhc: #222;
+  --bc: white;
+  --bbc: #222;
+}
+
+/**
  * Immersive media card
  * Note: this could be made smaller with custom properties later
  */
@@ -197,6 +208,7 @@
   align-items: center;
   text-align: center;
 	padding: 15px;
+  --lhc: none;
 }
 
 .header > * {
