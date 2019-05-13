@@ -39,7 +39,7 @@
     </h2>
     
 
-<p>In most occasions, we tried to keep all styles localized to their atom, molecule or organism. There are, however, slight variations that do not require an additional molecule or organism. For those occasions, these utlity classes are available.</p>
+<p>In most occasions, we tried to keep all styles localized to their atom, molecule or card. There are, however, slight variations that do not require an additional molecule or card. For those occasions, these utlity classes are available.</p>
 
 <p><em>Note: This code should stay at the bottom of the molecules file so that packages can be cleanly overloaded.</em></p>
 
@@ -54,27 +54,27 @@
 
 .caps {
   <span style="color:#000080;font-weight:bold">text-transform</span>: <span style="color:#000080;font-weight:bold">uppercase</span>;
-  --headerTransform: <span style="color:#000080;font-weight:bold">uppercase</span>;
+  --ht: <span style="color:#000080;font-weight:bold">uppercase</span>;
 }
 
 .sans {
   <span style="color:#000080;font-weight:bold">font-family</span>: <span style="color:#00f">&#34;McClatchy Sans&#34;</span>, <span style="color:#000080;font-weight:bold">sans-serif</span>;
-  --headerFamily: <span style="color:#00f">&#34;McClatchy Sans&#34;</span>, <span style="color:#000080;font-weight:bold">sans-serif</span>;
+  --hf: <span style="color:#00f">&#34;McClatchy Sans&#34;</span>, <span style="color:#000080;font-weight:bold">sans-serif</span>;
 }
 
 .serif {
   <span style="color:#000080;font-weight:bold">font-family</span>: <span style="color:#00f">&#34;McClatchy Serif&#34;</span>, <span style="color:#000080;font-weight:bold">serif</span>;
-  --headerFamily: <span style="color:#00f">&#34;McClatchy Serif&#34;</span>, <span style="color:#000080;font-weight:bold">serif</span>;
+  --hf: <span style="color:#00f">&#34;McClatchy Serif&#34;</span>, <span style="color:#000080;font-weight:bold">serif</span>;
 }
 
 .soft {
   <span style="color:#000080;font-weight:bold">font-weight</span>: <span style="color:#00f">400</span>;
-  --headerWeight: <span style="color:#00f">400</span>;
+  --hw: <span style="color:#00f">400</span>;
 }
 
 .bold {
   <span style="color:#000080;font-weight:bold">font-weight</span>: <span style="color:#00f">600</span>;
-  --headerWeight: <span style="color:#00f">600</span>;
+  --hw: <span style="color:#00f">600</span>;
 }
 
 .gray {
@@ -87,11 +87,6 @@
 
 .underline {
   <span style="color:#000080;font-weight:bold">text-decoration</span>: <span style="color:#000080;font-weight:bold">underline</span>;
-}
-
-.space-between {
-  <span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">flex</span>;
-  <span style="color:#000080;font-weight:bold">justify-content</span>: <span style="color:#000080;font-weight:bold">space</span>-between;
 }
 
 .no-shadow {
@@ -141,9 +136,25 @@
     
     <div class="package">
       <h4 class="sans bold">
+        <a class="new" href="https://mcclatchy.github.io/design/saratoga/flag/">flag</a>
+      </h4>
+      <p class="summary">The top banner of the sites including the search panel and account popout</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
         <a class="" href="https://mcclatchy.github.io/design/saratoga/flex-columns/">flex-columns</a>
       </h4>
       <p class="summary">A flexbox version of the grid using the same rules.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="new" href="https://mcclatchy.github.io/design/saratoga/footer/">footer</a>
+      </h4>
+      <p class="summary">Standard footer for the bottom of all pages</p>
     </div>
     
     
