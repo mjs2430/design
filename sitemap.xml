@@ -7,11 +7,6 @@
   </url>
   
   <url>
-    <loc>https://mcclatchy.github.io/design/saratoga/qa/colors/</loc>
-    <lastmod>2019-05-13T10:03:00-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mcclatchy.github.io/design/</loc>
     <lastmod>2019-05-13T10:03:00-05:00</lastmod>
     <priority>0</priority>
@@ -19,6 +14,11 @@
   
   <url>
     <loc>https://mcclatchy.github.io/design/saratoga/</loc>
+    <lastmod>2019-05-13T10:03:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mcclatchy.github.io/design/saratoga/colors/</loc>
     <lastmod>2019-05-13T10:03:00-05:00</lastmod>
   </url>
   

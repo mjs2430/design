@@ -208,7 +208,8 @@
   align-items: center;
   text-align: center;
 	padding: 15px;
-  --lhc: none;
+  color: var(--tc);
+  /* --lhc: none; */
 }
 
 .header > * {

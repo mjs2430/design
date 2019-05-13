@@ -66,6 +66,7 @@
   flex-direction: column;
   flex: 1 1 auto;
   align-items: flex-start;
+  color: var(--tc);
 	--hf: "McClatchy Serif", serif;
 	--hw: 400;
 	--ht: none;
@@ -100,7 +101,6 @@
 .impact,
 .promo {
   background-color: #373737;
-  color: white;
   --tc: white;
   --lc: white;
   --lhc: white;
