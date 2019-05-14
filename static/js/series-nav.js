@@ -82,17 +82,17 @@ class SeriesNav extends HTMLElement {
     let t = document.createElement("template");
     t.innerHTML = `
     <style>
-      #sn2 .grid {
+      #series .grid {
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         margin-top: 30px;
       }
 
-      #sn2 .package {
+      #series .package {
         align-items: center;
         text-align: center;
       }
       
-      #sn2 .overlay {
+      #series .overlay {
         position: absolute;
         bottom: 0;
         width: 100%;
@@ -103,12 +103,12 @@ class SeriesNav extends HTMLElement {
         --tc: white;
       }
 
-      #sn2 .summary {
+      #series .summary {
         max-width: 720px;
       }
     </style>
 
-    <section id="sn2">
+    <section id="series">
       <div class="package">
         <h5>MORE IN THIS SERIES</h5>
         <h1 class="soft">${this.title}</h1>
