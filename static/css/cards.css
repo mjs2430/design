@@ -126,6 +126,7 @@
 }
 
 .immersive .content button {
+  border: none;
   padding: 0;
 	height: 60px;
 	width: 60px;
