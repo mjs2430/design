@@ -40,6 +40,18 @@ class SeriesNav extends HTMLElement {
       let insertPoint = document.querySelector(".story-body p:nth-of-type(8)");
       insertPoint.after(this.readNext.content.cloneNode(true));
     }
+
+    // Slide on load or hash change
+    if(window.location.hash == "#series") {
+      window.addEventListener('DOMContentLoaded', () => {
+        alert("boom");
+        this.slideToLandingPage();
+      });
+    }
+
+    window.addEventListener("hashchange", e => {
+      this.slideToLandingPage();
+    });
   }
 
   /**
@@ -161,7 +173,7 @@ class SeriesNav extends HTMLElement {
 
     <div class="flex promo sn2-jump">
       <span class="h5">PART ${this.part} OF ${this.stories.length} in ${this.title.toUpperCase()}</span>
-      <a href="#sn2" class="h6">View all stories</a>
+      <a href="#series" class="h6">View all stories</a>
     </div>
     `;
     return t;
@@ -198,6 +210,16 @@ class SeriesNav extends HTMLElement {
       </div>
     `;
     return t;
+  }
+
+  /**
+   * Smooth scrolling
+   */
+
+  slideToLandingPage() {
+    document.querySelector("#sn2").scrollIntoView({
+      behavior: "smooth"
+    });
   }
 }
 
