@@ -13,11 +13,11 @@ Buttons are designed to be placed in a center-aligned row using browser defaults
 #### EXAMPLE
 
 <div>
-<button class="impact">Impact button</button>
-<button class="ghost">Ghost button</button>
+<button class="impact button">Impact button</button>
+<button class="ghost button">Ghost button</button>
 
-<button class="promo">Promo button</button>
-<button>Text button</button>
+<button class="promo button">Promo button</button>
+<button class="button">Text button</button>
 </div>
 
 #### HTML
