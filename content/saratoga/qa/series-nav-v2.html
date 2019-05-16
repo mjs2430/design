@@ -4,7 +4,7 @@ date: 2019-05-13T15:52:16-05:00
 layout: deck
 ---
 
-<article class="story-body paper" role="main">
+<article class="story-body paper" role="main" style="padding-bottom: 30px;">
   <!-- {{< immersive >}} -->
 
   <!-- <p style="font-family: monospace; margin: 0 auto; padding-top: 15px;">None of this at the top visually lines up because I'm using my SDS sample code to build the article and actual live stories on The Charlotte Observer to build the series nav. Please pretend you are on the first part of the series right now.</p> -->
@@ -45,7 +45,7 @@ layout: deck
           </a>
         </h2>
         <h3>
-          <a href="//www.kansascity.com/news/local/crime/article230440884.html#storylink=related_inline">
+          <a href="https://www.kansascity.com/news/local/crime/article230440884.html#storylink=related_inline">
             Guilty on 8 counts: Suspected KC serial killer convicted of stalking, gun crimes
           </a>
         </h3>
@@ -60,7 +60,7 @@ layout: deck
           </a>
         </h2>
         <h3>
-          <a href="//www.kansascity.com/news/local/crime/article216750900.html#storylink=related_inline">
+          <a href="https://www.kansascity.com/news/local/crime/article216750900.html#storylink=related_inline">
             This serial killer stalked for decades and never got caught.
           </a>
         </h3>
@@ -75,7 +75,7 @@ layout: deck
           </a>
         </h2>
         <h3>
-          <a href="//www.kansascity.com/news/local/crime/article216751090.html#storylink=related_inline">
+          <a href="https://www.kansascity.com/news/local/crime/article216751090.html#storylink=related_inline">
             The first killings: Happy honeymooners. And a deadly love triangle.
           </a>
         </h3>
@@ -90,7 +90,7 @@ layout: deck
           </a>
         </h2>
         <h3>
-          <a href="//www.kansascity.com/news/local/crime/article220625710.html#storylink=related_inline">
+          <a href="https://www.kansascity.com/news/local/crime/article220625710.html#storylink=related_inline">
             ‘We only get one chance to try someone for murder,’ says prosecutor Eric Zahnd
           </a>
         </h3>
@@ -104,10 +104,15 @@ layout: deck
 
   <script src="/js/series-nav-rs.js" async></script>
   <series-nav 
-    title="#TeamPregnantDad"
-    summary="Follow the intimate journey, from pregnancy to fatherhood, in this five-part series about a transgender man in Charlotte challenging one of society’s most-ingrained assumptions: that only women give birth."></series-nav>
+    hidden
+    part="1"
+    next-card-location=".story-body p:nth-of-type(2)"
+    title="Stalk. Murder. Repeat."
+    summary="A serial killer in Kansas City, never caught for a murder, attacked women over a period of five decades. Robert J. Gross is the subject of a six-part true crime series by the Kansas City Star."></series-nav>
 
-  {{< author-card >}}
+  <div class="story-module">
+    {{< author-card >}}
+  </div>
 </article>
 
 <section>
