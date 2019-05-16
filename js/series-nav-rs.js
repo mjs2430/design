@@ -11,6 +11,10 @@ class SeriesNav extends HTMLElement {
     return parseInt(this.getAttribute("part"));
   }
 
+  get kicker() {
+    return this.getAttribute("kicker");
+  }
+
   get nextCardLocation() {
     return this.getAttribute("next-card-location");
   }
@@ -188,10 +192,17 @@ class SeriesNav extends HTMLElement {
     rs.attachShadow({ mode: "open" });
     rs.shadowRoot.appendChild(this.template.content.cloneNode(true));
 
+    if(this.kicker) {
+      let header = document.querySelector(".story-body .header");
+      if(header) {
+        header.after(this.kickerTemplate.content.cloneNode(true));
+      }
+    }
+
     if(this.nextCardLocation) {
       let ip = document.querySelector(this.nextCardLocation);
       if(ip) {
-        ip.after(this.readNext.content.cloneNode(true));
+        ip.after(this.readNextTemplate.content.cloneNode(true));
       }
     }
   }
@@ -254,7 +265,7 @@ class SeriesNav extends HTMLElement {
    * Next horizontal card
    */
 
-  get readNext() {
+  get readNextTemplate() {
     let t = document.createElement("template");
     t.innerHTML = `
       <style>
@@ -266,6 +277,12 @@ class SeriesNav extends HTMLElement {
 
         .sn-readnext .package {
           flex-grow: 3;
+        }
+
+        @media (max-width: 600px) {
+          .sn-readnext figure {
+            height: calc(100vw * .5625);
+          }
         }
       </style>
 
@@ -280,6 +297,27 @@ class SeriesNav extends HTMLElement {
           <h6>${this.nextStory.author.toUpperCase()}</h6>
         </div>
       </div>
+    `;
+    return t;
+  }
+
+  /**
+   * kicker enhancement
+   */
+
+  get kickerTemplate() {
+    let t = document.createElement("template");
+    t.innerHTML = `
+    <style>
+      .sn-kicker {
+        padding: 15px !important;
+        box-sizing: border-box;
+      }
+    </style>
+
+    <div class="package impact sn-kicker">
+      <span class="h5">PART ${this.part} OF ${this.feed.length} in ${this.title.toUpperCase()}</span>
+    </div>
     `;
     return t;
   }
