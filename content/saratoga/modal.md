@@ -8,7 +8,7 @@ modal: true
 Modals should be consistent across products and vendors to benefit our readers. The modal organism is setup as a wrapper that provides consistent behavior but can accept any HTML. To allow for flexibility in function, we have created CSS classes like `.screen` that act as toggles for different behavior.
 
 #### EXAMPLE
-<button class="ghost" onclick="toggleModal('main-modal')">Show modal</button>
+<button class="button ghost" onclick="toggleModal('main-modal')">Show modal</button>
 
 #### HTML
 {{< highlight html >}}
@@ -39,9 +39,14 @@ function toggleModal(id, force) {
 ## Bottom version
 
 #### EXAMPLE
-<button class="ghost" onclick="toggleModal('bottom-modal')">Show modal</button>
+<button class="button ghost" onclick="toggleModal('bottom-modal')">Show modal</button>
 
 #### HTML
 {{< highlight html >}}
 {{< modal type="bottom" >}}
 {{< /highlight >}}
+
+{{< modal >}}
+{{< modal type="bottom" >}}
+
+<script src="/js/modal.js"></script>
