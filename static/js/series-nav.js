@@ -234,7 +234,10 @@ class SeriesNav extends HTMLElement {
   async fetchAll([...articles]) {
     return Promise.all(
       articles.map(article => { 
-        return this.fetch(article) 
+        return this.fetch(article, {
+          credentials: "omit",
+          cache: "force-cache"
+        }) 
       })
     );
   }
