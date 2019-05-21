@@ -14,9 +14,6 @@
 
 .footer-connect > * {
   margin-top: 20px;
-}
-
-.footer-connect .summary {
   max-width: 340px;
 }
 
@@ -51,10 +48,6 @@
 
 .footer-links a {
   font: 14px "McClatchy Sans";
-}
-
-.bottom-nav {
-  margin: 30px auto;
 }
 
 .bottom-nav a {
@@ -212,10 +205,6 @@ section > h5:first-child {
   }
 }
 
-.wps-footer2018 .panels h6 {
-  font-size: 16px;
-}
-
 .newsletter-inline-macro {
   padding-top: 0;
   padding-bottom: 0;
@@ -230,7 +219,6 @@ section > h5:first-child {
 }
 
 .header .blog-branding .teaser .title {
-  text-transform: none;
   font-size: 22px;
   font-weight: 400;
 }
@@ -241,16 +229,4 @@ section[role="main"] {
 
 .mi-sticky-player-info {
   --ht: none;
-}
-
-/** Remove when footer work */
-
-.content-footer {
-  --lhc: white;
-}
-
-.comments-toggle {
-  --lhc: #222;
-  --ld: none;
-  --lhd: none;
 }
