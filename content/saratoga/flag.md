@@ -3,6 +3,7 @@ title: "flag"
 description: "The top banner of the sites including the search panel and account popout"
 menu: cards 
 class: new
+draft: true
 ---
 
 The flag goes at the top of all pages. In keeping with the changes in 1.11.3 raw SVG code is used in place of CSS classes for the icons. The search panel animation is included and can be toggled with a class on the flag itself. The account popout uses our standard expander molecule with a small amount of CSS to set the positioning.

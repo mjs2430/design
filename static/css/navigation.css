@@ -1,0 +1,239 @@
+/**
+ * Temporary holding cell for staged nav code
+ */
+
+/**
+ * Display classes
+ * Goes at the top of decks.css
+ */
+
+.d-tablet,
+.d-desktop {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .h-tablet {
+    display: none;
+  }
+
+  .d-tablet {
+    display: var(--display, block);
+  }
+}
+
+@media (min-width: 1024px) {
+  .h-desktop {
+    display: none;
+  }
+
+  .d-desktop {
+    display: var(--display, block);
+  }
+}
+
+/**
+ * Flag
+ * Goes right underneath the display classes in decks.css
+ */
+
+section.flag {
+  z-index: 10;
+  position: relative;
+  margin: 0;
+}
+
+.flag .front {
+  z-index: 2;
+}
+
+.flag .top > * {
+  flex: 1;
+}
+
+.flag svg {
+  height: 20px;
+  cursor: pointer;
+}
+
+.flag .market-logo {
+  flex: 2;
+  padding: 0 15px;
+}
+
+.flag .market-logo img {
+  display: block;
+  height: 30px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.flag.homepage .market-logo img {
+  height: 38px;
+}
+
+.flag .signin {
+  justify-content: flex-end;
+  padding: 0 15px;
+}
+
+.flag .bottom {
+  --display: flex;
+  justify-content: center;
+}
+
+.flag .bottom a {
+  font-weight: 400;
+  color: #757575;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 12px;
+}
+
+.flag .bottom a.active {
+  color: #222;
+  border-color: #222;
+}
+
+/**
+ * Search form
+ */
+
+.flag .search {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100vw;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity .6s, transform .6s ease;
+  z-index: 1;
+}
+
+.flag.searching .front {
+  box-shadow: none;
+}
+
+.flag.searching .search {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.search input {
+  flex: 1;
+  max-width: 660px;
+  margin-right: 15px;
+}
+
+/**
+ * Account popout
+ */
+
+.flag .account {
+  align-self: stretch;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+
+.flag .expander {
+  padding: 15px;
+}
+
+.flag .popout {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  box-shadow: 
+    0 1px 2px 0 rgba(0, 0, 0, .2), 
+    0 1px 5px 0 rgba(0, 0, 0, .13);
+}
+
+.flag .popout a {
+  display: block;
+  padding: 15px;
+  font-weight: 400;
+}
+
+.flag .popout a:hover {
+  background-color: #ddd;
+}
+
+/**
+ * Menu
+ * Goes underneath the footer code in decks.css
+ */
+
+.main-nav {
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 260px;
+  padding-bottom: 30px;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  transform: translateX(-150%);
+  transition: transform .4s ease;
+  --bc: white;
+  --bbc: transparent;
+}
+
+.main-nav.open {
+  transform: translateX(0);
+}
+
+.main-nav svg {
+  height: 20px;
+}
+
+.main-nav button,
+.main-nav a {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 30px 15px 25px;
+  border: none;
+  border-left: 5px solid transparent;
+  border-radius: 0;
+  outline: none;
+}
+
+.main-nav button:hover,
+.main-nav a:hover {
+  background-color: #222;
+}
+
+.main-nav a {
+  display: block;
+}
+
+.main-nav .expander {
+  align-self: stretch;
+  justify-content: space-between;
+}
+
+.main-nav .expander:after {
+  filter: invert(1);
+}
+
+.main-nav .subsection a {
+  padding: 10px 30px 10px 45px;
+  --lc: #989898;
+  --lhc: white;
+}
+
+.main-nav .expander.open,
+.main-nav .expander.open + div a {
+  background-color: #222;
+  border-color: #fff;
+}
+
+.main-nav hr {
+  border: .5px solid white;
+  margin: 30px 0;
+}
+
