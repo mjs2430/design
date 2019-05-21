@@ -8,7 +8,19 @@ class Dynamics {
    */
 
   constructor(typology) {
+    this.slots = [];
+
     googletag.cmd.push(() => {
+      this.mapping = {
+        "banner": googletag.sizeMapping()
+                  .addSize([1024, 600], [970, 250])
+                  .addSize([750, 400], [728, 90])
+                  .addSize([0, 0], [320, 50]).build(),
+        "spill": googletag.sizeMapping()
+                  .addSize([750, 400], [728, 90])
+                  .addSize([0, 0], [320, 50]).build()
+      }
+
       googletag.pubads().enableSingleRequest();
       googletag.enableServices();
     });
@@ -22,6 +34,7 @@ class Dynamics {
     });
   }
 
+
   /**
    * Inserts ad
    */
@@ -29,18 +42,22 @@ class Dynamics {
   inject(config) {
     let c = Object.assign({
       id: this.guid(),
-      width: 300,
-      height: 250
+      size: [300, 250]
     }, config);
 
     let t = document.createElement('template');
 
     t.innerHTML = `<div class="ad-widget" id="${c.id}"></div>`;
     googletag.cmd.push(() => {
-      googletag
-        .defineSlot(c.path, [c.width, c.height], c.id)
-        .addService(googletag.pubads());
+      let slot = googletag.defineSlot(c.path, c.size, c.id);
+
+      if(c.mapping) {
+        slot.defineSizeMapping(this.mapping[c.mapping])
+      }
+
+      slot.addService(googletag.pubads());
       googletag.display(c.id);
+      this.slots.push(slot);
     });
 
     let ip = document.querySelector(c.location);
@@ -110,8 +127,7 @@ var Typology = {
       {
         "path": "/7675/KCM.site_kansascity/News/Local",
         "location": ".story-body",
-        "width": 728,
-        "height": 90
+        "mapping": "banner"
       },
       {
         "path": "/7675/KCM.site_kansascity/News/Local",
@@ -119,7 +135,8 @@ var Typology = {
       },
       {
         "path": "/7675/KCM.site_kansascity/News/Local",
-        "location": ".story-body p:nth-of-type(6)"
+        "location": ".story-body p:nth-of-type(6)",
+        "size": [300, 600]
       },
       {
         "path": "/7675/KCM.site_kansascity/News/Local",
@@ -132,8 +149,7 @@ var Typology = {
       {
         "path": "/7675/KCM.site_kansascity/News/Local",
         "location": ".story-body + section",
-        "width": 728,
-        "height": 90
+        "mapping": "spill"
       }
     ],
     "modules": [
@@ -157,7 +173,7 @@ var Typology = {
 if(location.hash) {
   let json = Typology[location.hash.substring(1)];
   if(json) {
-    new Dynamics(json);
+    var d = new Dynamics(json);
   }
 }
 
