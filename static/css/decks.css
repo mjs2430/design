@@ -173,7 +173,7 @@
 }
 
 /**
- * eEdition
+ * eEdition portal page
  */
 
 .e-edition .card {
@@ -200,8 +200,6 @@
 .e-edition .package .button {
   margin: 0 5px;
 }
-
-/* First card in loop */
 
 .e-edition .card:first-child {
   flex-basis: 100%;
