@@ -1,0 +1,492 @@
+/**
+ * Display classes
+ */
+.d-tablet,
+.d-desktop {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .h-tablet {
+    display: none;
+  }
+
+  .d-tablet {
+    display: var(--display, block);
+  }
+}
+@media (min-width: 1024px) {
+  .h-desktop {
+    display: none;
+  }
+
+  .d-desktop {
+    display: var(--display, block);
+  }
+}
+/**
+ * Flag
+ */
+section.flag {
+  z-index: 10;
+  position: relative;
+  margin: 0;
+}
+
+.flag .front {
+  z-index: 2;
+}
+
+.flag .top > * {
+  flex: 1;
+}
+
+.flag svg {
+  height: 20px;
+  cursor: pointer;
+}
+
+.flag .market-logo {
+  flex: 2;
+  padding: 0 15px;
+}
+
+.flag .market-logo img {
+  display: block;
+  height: 30px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.flag.homepage .market-logo img {
+  height: 38px;
+}
+
+.flag .signin {
+  justify-content: flex-end;
+  padding: 0 15px;
+}
+
+.flag .bottom {
+  --display:flex;
+  justify-content: center;
+}
+
+.flag .bottom a {
+  font-weight: 400;
+  color: #757575;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 12px;
+}
+
+.flag .bottom a.active {
+  color: #222;
+  border-color: #222;
+}
+
+/**
+ * Search form
+ */
+.flag .search {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100vw;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.6s, transform 0.6s ease;
+  z-index: 1;
+}
+
+.flag.searching .front {
+  box-shadow: none;
+}
+
+.flag.searching .search {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.search input {
+  flex: 1;
+  max-width: 660px;
+  margin-right: 15px;
+}
+
+/**
+ * Account popout
+ */
+.flag .account {
+  align-self: stretch;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+
+.flag .expander {
+  padding: 15px;
+}
+
+.flag .popout {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.13);
+}
+
+.flag .popout a {
+  display: block;
+  padding: 15px;
+  font-weight: 400;
+}
+
+.flag .popout a:hover {
+  background-color: #ddd;
+}
+
+/**
+ * Footer
+ */
+.footer {
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.footer-connect {
+  --hf: "McClatchy Sans", sans-serif;
+  --hw: 500;
+}
+
+.footer-connect > * {
+  margin-top: 20px;
+  max-width: 340px;
+}
+
+.footer svg,
+.footer .icon {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.footer .icon {
+  width: 30px;
+  background-color: white;
+  border-radius: 20%;
+}
+
+.footer .icon img {
+  display: block;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  margin: 2px 0 0 2px;
+}
+
+.footer .social svg {
+  height: 35px;
+  margin-right: 20px;
+}
+
+.footer .more-link {
+  margin-top: 0.2em;
+}
+
+.footer-links a {
+  font: 14px "McClatchy Sans";
+}
+
+.bottom-nav a {
+  display: block;
+  margin: 15px;
+}
+
+@media (min-width: 600px) {
+  .footer-links {
+    display: flex;
+    flex: 1 1 auto;
+  }
+
+  .bottom-nav {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1024px) {
+  .footer {
+    display: flex;
+    padding: 30px 0;
+    max-width: 1170px;
+    /* wider for .package kids */
+  }
+}
+/**
+ * Menu
+ * Goes underneath the footer code in decks.css
+ */
+.main-nav {
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 260px;
+  padding-bottom: 30px;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  transform: translateX(-150%);
+  transition: transform 0.4s ease;
+  --bc:white;
+  --bbc:transparent;
+}
+
+.main-nav.open {
+  transform: translateX(0);
+}
+
+.main-nav svg {
+  height: 20px;
+}
+
+.main-nav button,
+.main-nav a {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 30px 15px 25px;
+  border: none;
+  border-left: 5px solid transparent;
+  border-radius: 0;
+  outline: none;
+}
+
+.main-nav button:hover,
+.main-nav a:hover {
+  background-color: #222;
+}
+
+.main-nav a {
+  display: block;
+}
+
+.main-nav .expander {
+  align-self: stretch;
+  justify-content: space-between;
+}
+
+.main-nav .expander:after {
+  filter: invert(1);
+}
+
+.main-nav .subsection a {
+  padding: 10px 30px 10px 45px;
+  --lc: #989898;
+  --lhc:white;
+}
+
+.main-nav .expander.open,
+.main-nav .expander.open + div a {
+  background-color: #222;
+  border-color: #fff;
+}
+
+.main-nav hr {
+  border: 0.5px solid white;
+  margin: 30px 0;
+}
+
+/**
+ * Ads for both
+ */
+.ad-widget {
+  text-align: center;
+}
+
+.ad-widget iframe,
+.ad-widget .iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+/**
+ * Story template
+ */
+.story-template {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 0;
+}
+
+/* Body (rail version) */
+.story-body {
+  position: relative;
+  flex: 1 1 438px;
+}
+
+/* HTML needs to be scrubbed for the next three declarations */
+.story-body > .lead-item,
+.story-body > .ng_digital,
+.story-body > .inline-video {
+  max-width: 100%;
+  margin: 30px 0;
+  padding: 0;
+}
+
+.story-body .embed-media-details {
+  padding: 10px 15px 0;
+}
+
+.story-body .media-leadtext,
+.story-body .mi-video-bylines {
+  font: 14px/1.5em "McClatchy Sans", sans-serif;
+  color: #707070;
+  margin: 0;
+  display: inline-block;
+  padding-right: 0.5em;
+}
+
+/* Rail */
+.story-rail {
+  position: relative;
+  flex: 1 1 330px;
+}
+
+.story-rail > * {
+  margin: 30px 0;
+}
+
+.story-rail .paper, .story-rail .card {
+  box-shadow: none;
+}
+
+.story-rail .more-link {
+  padding: 0 15px;
+  margin-top: 0;
+}
+
+/** Several variants of inline assets could be cleaned */
+@media (min-width: 768px) {
+  .story-template figure img,
+.story-body .lead-item .video,
+.story-body .lead-item .picture,
+.story-body .ng_digital img,
+.story-rail .media-wrap {
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .story-rail {
+    flex-grow: 0;
+  }
+
+  .story-body .transparency {
+    margin: 0 15px;
+  }
+}
+/**
+ * eEdition portal page
+ */
+.e-edition .card {
+  overflow: hidden;
+}
+
+.e-edition .card figure {
+  padding-top: 56.25%;
+}
+
+.e-edition .card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.e-edition .package {
+  align-items: center;
+  --lhc: #222;
+  --hf: "McClatchy Sans";
+  --hw: 500;
+}
+
+.e-edition .package .button {
+  margin: 0 5px;
+}
+
+.e-edition .card:first-child {
+  flex-basis: 100%;
+}
+
+.e-edition .card:first-child h3 {
+  font-size: 22px;
+}
+
+@media (min-width: 600px) {
+  .e-edition .card:first-child .package {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .e-edition .card:first-child .buttons {
+    margin-top: 0;
+  }
+}
+/**
+ * Purple Tuesdays
+ */
+section > h5:first-child {
+  margin-bottom: 15px;
+}
+
+/* Because the main section body is still wrapped by Bootstrap */
+.big-news > * {
+  max-width: 1110px;
+}
+
+.big-news .grid {
+  max-width: 1140px;
+}
+
+/** 
+ * Overloads for older elements 
+ * Unclean repeat of media breakpoint, but these are separate
+ * from the core base template code.
+ */
+.breaking-news-macro .breaking-title {
+  font-weight: 700;
+}
+
+@media (min-width: 690px) {
+  .breaking-news-macro {
+    margin: 0 15px;
+  }
+}
+.newsletter-inline-macro {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#newletter-inline-title {
+  padding-top: 0;
+}
+
+.inline-cta {
+  text-align: left;
+}
+
+.header .blog-branding .teaser .title {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+section[role=main] {
+  overflow: hidden;
+}
+
+.mi-sticky-player-info {
+  --ht:none;
+}
