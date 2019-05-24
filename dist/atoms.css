@@ -1,21 +1,18 @@
+@charset "UTF-8";
 /**
- * Atoms: Saratoga design system
+ * Typography
  */
-
 :root {
   /* Header family, weight, and text-transform */
   --hf: "McClatchy Serif", serif;
   --hw: 400;
-  --ht: none;
-
+  --ht:none;
   /* Link decoration and color */
   --lc: #222;
-  --ld: none;
-
+  --ld:none;
   /* Button color and background color */
   --bc: #222;
-  --bbc: transparent;
-
+  --bbc:transparent;
   /* Colors */
   /* --shasta: #5169B8; */
   /* --dumbledore: #31409F; */
@@ -35,7 +32,6 @@ body.freeze {
 /**
  * Text elements
  */
-
 a {
   text-decoration: var(--ld);
   color: var(--lc);
@@ -90,7 +86,7 @@ ul li {
 }
 
 time {
-	max-width: unset;
+  max-width: unset;
   display: inline-block;
   font: 300 11px/1.2em "McClatchy Sans", sans-serif;
   text-transform: uppercase;
@@ -98,120 +94,8 @@ time {
 }
 
 /**
- * Sections
+ * Custom elements
  */
-
-section {
-  max-width: 1140px;
-  margin: 30px auto;
-}
-
-section.full-bleed {
-  max-width: 100%;
-  padding: 0;
-}
-
-section .more-link, 
-section > h5,
-.section-label {
-  padding: 0 15px;
-}
-
-.section-label {
-  margin: 0 0 15px;
-}
-
-@media (min-width: 600px) {
-  section {
-    padding: 0 15px;
-  }
-
-  section .more-link, 
-  section > h5,
-  .section-label {
-    padding: 0;
-  }
-}
-
-/**
- * Media
- */
-
-figure {
-  margin: 0;
-  flex: none;
-}
-
-figure img {
-  display: block;
-  width: 100%;
-}
-
-figcaption, .caption {
-  font: 14px/1.5em "McClatchy Sans", sans-serif;
-  color: var(--tc, #707070);
-  padding: 10px 15px 0;
-}
-
-svg {
-  display: inline-block;
-}
-
-hr {
-  border: .5px solid var(--tc, #707070);
-  align-self: stretch;
-}
-
-/**
- * Form elements
- */
-
-input, select {
-  border: 1px solid #ddd;
-  border-radius: 2px;
-  padding: 5px;
-  font-size: 14px;
-  color: var(--tc);
-}
-
-button, .button {
-  color: var(--bc);
-  background-color: var(--bbc);
-  border: 1px solid transparent;
-}
-
-.button {
-  display: inline-block;
-  align-self: flex-start;
-  font: 600 14px "McClatchy Sans";
-  text-transform: uppercase;
-  text-align: center;
-  cursor: pointer;
-  padding: .6em 1em .3em;
-  box-sizing: border-box;
-  border-radius: 2px;
-  --ld: none;
-  --lhd: none;
-}
-
-.button.stretch {
-  display: block;
-  align-self: stretch;
-  padding: 1em 1em .7em;
-}
-
-.button.big {
-  padding: 11px 35px 7px;
-}
-
-.ghost {
-  border-color: #4a4a4a;
-}
-
-/**
- * Typography 
- */
-
 .kicker {
   display: inline-block;
   padding: 5px 8px 3px;
@@ -238,8 +122,8 @@ button, .button {
 .byline a {
   font-weight: 700;
   color: inherit;
-  --ld: underline;
-  --lhd: underline;
+  --ld:underline;
+  --lhd:underline;
 }
 
 .credit {
@@ -259,8 +143,8 @@ button, .button {
   padding: 5px 10px 3px;
   color: var(--bc);
   background-color: var(--bbc);
-  --ld: none;
-  --lhd: none;
+  --ld:none;
+  --lhd:none;
 }
 
 .label.sticky {
@@ -281,11 +165,11 @@ button, .button {
 }
 
 .more-link:after {
-  content: "\2192";
+  content: "→";
   padding-left: 4px;
   font: 20px monospace;
   line-height: 16px;
-  transition: transform .6s ease;
+  transition: transform 0.6s ease;
 }
 
 .more-link:hover {
@@ -305,30 +189,110 @@ button, .button {
 }
 
 /**
- * Icons
- * NOTE: Will be deprecated in 1.12
+ * Media
  */
-
-.i-play-circle {
-	background: transparent url('../icons/play-circle.svg') no-repeat;
+figure {
+  margin: 0;
+  flex: none;
 }
 
-.i-twitter {
-  background: transparent url('../icons/twitter.svg') no-repeat;
+figure img {
+  display: block;
+  width: 100%;
 }
 
-.i-facebook-f {
-  background: transparent url('../icons/facebook-f.svg') no-repeat center;
+figcaption, .caption {
+  font: 14px/1.5em "McClatchy Sans", sans-serif;
+  color: var(--tc, #707070);
+  padding: 10px 15px 0;
 }
 
-.i-envelope {
-  background: transparent url('../icons/envelope.svg') no-repeat;
+svg {
+  display: inline-block;
 }
 
-.i-phone {
-  background: transparent url('../icons/phone.svg') no-repeat;
+hr {
+  border: 0.5px solid var(--tc, #707070);
+  align-self: stretch;
 }
 
-.invert {
-  filter: invert(1);
+/**
+ * Sections
+ */
+section {
+  max-width: 1140px;
+  margin: 30px auto;
 }
+
+section.full-bleed {
+  max-width: 100%;
+  padding: 0;
+}
+
+section .more-link,
+section > h5,
+.section-label {
+  padding: 0 15px;
+}
+
+.section-label {
+  margin: 0 0 15px;
+}
+
+@media (min-width: 600px) {
+  section {
+    padding: 0 15px;
+  }
+
+  section .more-link,
+section > h5,
+.section-label {
+    padding: 0;
+  }
+}
+/**
+ * Form elements
+ */
+input, select {
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: 5px;
+  font-size: 14px;
+  color: var(--tc);
+}
+
+button, .button {
+  color: var(--bc);
+  background-color: var(--bbc);
+  border: 1px solid transparent;
+}
+
+.button {
+  display: inline-block;
+  align-self: flex-start;
+  font: 600 14px "McClatchy Sans";
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  padding: 0.6em 1em 0.3em;
+  box-sizing: border-box;
+  border-radius: 2px;
+  --ld:none;
+  --lhd:none;
+}
+
+.button.stretch {
+  display: block;
+  align-self: stretch;
+  padding: 1em 1em 0.7em;
+}
+
+.button.big {
+  padding: 11px 35px 7px;
+}
+
+.ghost {
+  border-color: #4a4a4a;
+}
+
+/*# sourceMappingURL=atoms.css.map */
