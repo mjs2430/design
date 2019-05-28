@@ -1,10 +1,11 @@
-.PHONY: saratoga.min.css
+.PHONY: dist
+
 style ?= expanded
 
-sds:
+dist:
 	sass --style $(style) --no-source-map builds:dist
 
-release: sds
+release: dist
 	@[ $(v) ] || ( echo ">> v is not set"; exit 1 )
 	git add dist
 	sed -E -i .bak 's/([0-9]+\.){2}([0-9]+)/$(v)/' package.json
