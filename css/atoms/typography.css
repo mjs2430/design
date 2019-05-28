@@ -1,5 +1,5 @@
 /**
- * Atoms: Saratoga design system
+ * Typography
  */
 
 :root {
@@ -98,118 +98,7 @@ time {
 }
 
 /**
- * Sections
- */
-
-section {
-  max-width: 1140px;
-  margin: 30px auto;
-}
-
-section.full-bleed {
-  max-width: 100%;
-  padding: 0;
-}
-
-section .more-link, 
-section > h5,
-.section-label {
-  padding: 0 15px;
-}
-
-.section-label {
-  margin: 0 0 15px;
-}
-
-@media (min-width: 600px) {
-  section {
-    padding: 0 15px;
-  }
-
-  section .more-link, 
-  section > h5,
-  .section-label {
-    padding: 0;
-  }
-}
-
-/**
- * Media
- */
-
-figure {
-  margin: 0;
-  flex: none;
-}
-
-figure img {
-  display: block;
-  width: 100%;
-}
-
-figcaption, .caption {
-  font: 14px/1.5em "McClatchy Sans", sans-serif;
-  color: var(--tc, #707070);
-  padding: 10px 15px 0;
-}
-
-svg {
-  display: inline-block;
-}
-
-hr {
-  border: .5px solid var(--tc, #707070);
-  align-self: stretch;
-}
-
-/**
- * Form elements
- */
-
-input, select {
-  border: 1px solid #ddd;
-  border-radius: 2px;
-  padding: 5px;
-  font-size: 14px;
-  color: var(--tc);
-}
-
-button, .button {
-  color: var(--bc);
-  background-color: var(--bbc);
-  border: 1px solid transparent;
-}
-
-.button {
-  display: inline-block;
-  align-self: flex-start;
-  font: 600 14px "McClatchy Sans";
-  text-transform: uppercase;
-  text-align: center;
-  cursor: pointer;
-  padding: .6em 1em .3em;
-  box-sizing: border-box;
-  border-radius: 2px;
-  --ld: none;
-  --lhd: none;
-}
-
-.button.stretch {
-  display: block;
-  align-self: stretch;
-  padding: 1em 1em .7em;
-}
-
-.button.big {
-  padding: 11px 35px 7px;
-}
-
-.ghost {
-  border-color: #4a4a4a;
-}
-
-/**
- * Typography 
+ * Custom elements
  */
 
 .kicker {
@@ -302,33 +191,4 @@ button, .button {
   font-style: italic;
   font-size: 14px;
   text-transform: uppercase;
-}
-
-/**
- * Icons
- * NOTE: Will be deprecated in 1.12
- */
-
-.i-play-circle {
-	background: transparent url('../icons/play-circle.svg') no-repeat;
-}
-
-.i-twitter {
-  background: transparent url('../icons/twitter.svg') no-repeat;
-}
-
-.i-facebook-f {
-  background: transparent url('../icons/facebook-f.svg') no-repeat center;
-}
-
-.i-envelope {
-  background: transparent url('../icons/envelope.svg') no-repeat;
-}
-
-.i-phone {
-  background: transparent url('../icons/phone.svg') no-repeat;
-}
-
-.invert {
-  filter: invert(1);
 }

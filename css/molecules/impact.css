@@ -1,0 +1,26 @@
+/**
+ * Reverse impact and promo 
+ */
+
+.impact,
+.promo {
+  background-color: #373737;
+  color: white;
+  --tc: white;
+  --lc: white;
+  --lhc: white;
+  --bc: #222;
+  --bbc: white;
+}
+
+.promo {
+  background-color: #31409F;
+  --bc: #31409F;
+}
+
+.impact *,
+.promo * {
+  border-color: white;
+  fill: white;
+}
+
