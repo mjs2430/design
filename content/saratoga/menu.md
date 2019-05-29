@@ -17,7 +17,7 @@ A large portion of the menu is a simple stack of expander elements and will requ
 #### EXAMPLE
 
 *The menu is included in the [story deck](../decks/story/) and is better represented there.  
-Click the hamburger menu in the navigation to open it.*
+Click the hamburger menu in the flag to open it.*
 
 #### HTML
 
