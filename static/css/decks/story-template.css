@@ -1,0 +1,81 @@
+/**
+ * Story template
+ */
+
+.story-template {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 0;
+}
+
+/* Body (rail version) */
+
+.story-body {
+  position: relative;
+  flex: 1 1 438px;
+}
+
+/* HTML needs to be scrubbed for the next three declarations */
+
+.story-body > .lead-item,
+.story-body > .ng_digital,
+.story-body > .inline-video {
+	max-width: 100%;
+	margin: 30px 0;
+	padding: 0;
+}
+
+.story-body .embed-media-details {
+  padding: 10px 15px 0;
+}
+
+.story-body .media-leadtext,
+.story-body .mi-video-bylines {
+  font: 14px/1.5em "McClatchy Sans", sans-serif;
+  color: #707070;
+  margin: 0;
+  display: inline-block;
+  padding-right: 0.5em;
+}
+
+/* Rail */
+
+.story-rail {
+  position: relative;
+  flex: 1 1 330px;
+}
+
+.story-rail > * {
+  margin: 30px 0;
+}
+
+.story-rail .paper, .story-rail .card {
+  box-shadow: none;
+}
+
+.story-rail .more-link {
+  padding: 0 15px;
+  margin-top: 0;
+}
+
+/** Several variants of inline assets could be cleaned */
+@media (min-width: 768px) {
+  .story-template figure img, 
+  .story-body .lead-item .video,
+  .story-body .lead-item .picture,
+  .story-body .ng_digital img,
+  .story-rail .media-wrap {
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .story-rail {
+    flex-grow: 0;
+  }
+
+  .story-body .transparency {
+    margin: 0 15px;
+  }
+}

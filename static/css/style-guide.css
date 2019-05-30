@@ -59,6 +59,7 @@ td:first-child {
   max-width: 1140px;
   padding: 15px;
   background-color: #f4f4f4;
+  --lc: #222;
 }
 
 .updated {

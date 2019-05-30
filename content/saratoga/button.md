@@ -24,10 +24,10 @@ Buttons are designed to be placed in a center-aligned row using browser defaults
 
 ```html
 <div>
-  <button class="impact">Impact button</button>
-  <button class="ghost">Ghost button</button>
-  <button class="promo">Promo button</button>
-  <button>Text button</button>
+  <button class="button impact">Impact button</button>
+  <button class="button ghost">Ghost button</button>
+  <button class="button promo">Promo button</button>
+  <button class="button">Text button</button>
 </div>
 ```
 

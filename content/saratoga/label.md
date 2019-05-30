@@ -13,11 +13,3 @@ The label atom is just used for spacing and can accept any element. Currently, w
   {{< digest label="sticky" >}}
   {{< digest >}}
 </div>
-
-#### HTML
-
-```HTML
-<a href="#" class="label">
-  <h5 class="impact">OPINION</h5>
-</a>
-```

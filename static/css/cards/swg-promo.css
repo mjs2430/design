@@ -1,0 +1,17 @@
+/**
+ * SWG Promo card
+ */
+
+.card.swg-promo {
+	flex-wrap: wrap;
+}
+
+.card.swg-promo > :first-child {
+	flex-grow: 4;
+	min-height: 200px;
+}
+
+.card.swg-promo .title {
+	font: 600 48px "McClatchy Sans", sans-serif;
+}
+

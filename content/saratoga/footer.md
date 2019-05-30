@@ -9,9 +9,7 @@ The footer should go on at the bottom of all pages. In keeping with the changes 
 
 #### EXAMPLE
 
-*The footer is included in all of our decks, and is better represented there.* 
-
-*For an example, go to our [story deck](../decks/story/).*
+*The footer is included in the [story deck](../decks/story/), and is better represented there.* 
 
 #### HTML
 {{< highlight html >}}
