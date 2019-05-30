@@ -1,10 +1,11 @@
 {
   "name": "saratoga-design-system",
-  "version": "1.11.7",
+  "version": "1.11.11",
   "files": [ 
-    "static/css/atoms.css",
-    "static/css/molecules.css",
-    "static/css/cards.css",
-    "static/css/decks.css"
+    "dist/atoms.css",
+    "dist/molecules.css",
+    "dist/cards.css",
+    "dist/decks.css",
+    "dist/amp.css"
   ]
 }

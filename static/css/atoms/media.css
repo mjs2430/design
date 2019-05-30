@@ -1,0 +1,29 @@
+/**
+ * Media
+ */
+
+figure {
+  margin: 0;
+  flex: none;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+}
+
+figcaption, .caption {
+  font: 14px/1.5em "McClatchy Sans", sans-serif;
+  color: var(--tc, #707070);
+  padding: 10px 15px 0;
+}
+
+svg {
+  display: inline-block;
+}
+
+hr {
+  border: .5px solid var(--tc, #707070);
+  align-self: stretch;
+}
+

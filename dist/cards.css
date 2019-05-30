@@ -1,7 +1,6 @@
 /**
  * Generic CSS grid
  */
-
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -11,7 +10,6 @@
 /**
  * Flexbox grid
  */
-
 .flex-columns > * {
   margin: 30px 0;
 }
@@ -46,16 +44,15 @@
     align-self: flex-start;
   }
 
-	/** Special cases **/
-	.lead-section .main-stage > :first-child {
-		flex-basis: 100%;
-	}
+  /** Special cases **/
+  .lead-section .main-stage > :first-child {
+    flex-basis: 100%;
+  }
 
-	.main-stage > .flex-columns + .flex-columns {
-		padding-top: 15px;
-	}
+  .main-stage > .flex-columns + .flex-columns {
+    padding-top: 15px;
+  }
 }
-
 /**
  * Simple Flexbox row
  *
@@ -64,7 +61,6 @@
  * incorporate into the rest of the elements as we
  * re-work them.
  */
-
 .flex {
   display: flex;
   align-items: center;
@@ -77,18 +73,17 @@
 /* To fix our strange line heights */
 .icon-label {
   position: relative;
-  top: .15em;
+  top: 0.15em;
   margin-left: 10px;
 }
 
 /**
  * Digests
  */
-
 .digest {
   --lc: #222;
   --lhc: #222;
-  --bc: white;
+  --bc:white;
   --bbc: #222;
 }
 
@@ -96,45 +91,44 @@
  * Immersive media card
  * Note: this could be made smaller with custom properties later
  */
-
 .immersive {
   margin-top: 0;
 }
 
 .immersive .media {
-	display: flex;
+  display: flex;
   background-position: center;
   background-size: cover;
   height: 85vh;
 }
 
 .immersive .content {
-  background: rgba(0,0,0,.5);
-	flex: 1;
-	display: flex;
+  background: rgba(0, 0, 0, 0.5);
+  flex: 1;
+  display: flex;
   flex-direction: column;
   justify-content: flex-end;
   text-align: center;
-	padding-bottom: 30px;
-  --bbc: transparent;
+  padding-bottom: 30px;
+  --bbc:transparent;
 }
 
 .immersive .content > * {
   max-width: 920px;
   margin: 15px auto;
-	padding: 0 15px;
+  padding: 0 15px;
 }
 
 .immersive .content button {
   border: none;
   padding: 0;
-	height: 60px;
-	width: 60px;
+  height: 60px;
+  width: 60px;
 }
 
 .immersive .title {
-	font: 600 40px/1.2em "McClatchy Serif", serif;
-	text-transform: none;
+  font: 600 40px/1.2em "McClatchy Serif", serif;
+  text-transform: none;
 }
 
 .immersive-summary {
@@ -142,43 +136,41 @@
 }
 
 @media (min-width: 760px) {
-	.immersive .title {
-		font-size: 64px;
-	}
+  .immersive .title {
+    font-size: 64px;
+  }
 }
-
 /**
  * Story body
  */
-
 .story-body {
   --hf: "McClatchy Sans", sans-serif;
   --hw: 600;
-  --ht: uppercase;
+  --ht:uppercase;
   --lc: #5169B8;
   --lhc: #31409F;
-  --ld: underline;
-  --lhd: underline;
+  --ld:underline;
+  --lhd:underline;
 }
 
 .story-body > * {
   max-width: 720px;
-	padding: 0 15px;
-	margin-right: auto;
+  padding: 0 15px;
+  margin-right: auto;
   margin-left: auto;
-	box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 .story-body > figure {
-	max-width: 100%;
-	margin: 30px 0;
-	padding: 0;
+  max-width: 100%;
+  margin: 30px 0;
+  padding: 0;
 }
 
-.story-body img, 
+.story-body img,
 .story-body figcaption {
-	max-width: 1140px;
-	margin: 0 auto;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 .story-body .story-module,
@@ -192,11 +184,11 @@
 }
 
 .story-body > :last-child {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .story-body .dateline {
-	display: block;
+  display: block;
 }
 
 .story-body .immersive {
@@ -206,39 +198,36 @@
 /**
  * Header package
  */
-
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-	padding: 15px;
+  padding: 15px;
   color: var(--tc);
-  /* --lhc: none; */
+  --ht:none;
 }
 
 .header > * {
-	margin: 15px 0 0;
+  margin: 15px 0 0;
 }
 
 @media (min-width: 600px) {
-	.header .bio {
-		display: flex;
+  .header .bio {
+    display: flex;
     align-items: center;
-		justify-content: space-between;
-		width: 100%;
-		text-align: left;
-	}
+    justify-content: space-between;
+    width: 100%;
+    text-align: left;
+  }
 }
-
 /**
  * Series nav
  */
-
 .series-nav {
-	--hf: "McClatchy Serif", serif;
-	--hw: 400;
-	--ht: none;
+  --hf: "McClatchy Serif", serif;
+  --hw: 400;
+  --ht:none;
   --lc: #222;
   --lhc: #222;
 }
@@ -278,7 +267,6 @@
 /**
  * Related stories
  */
-
 .related-stories {
   --lc: #222;
   --lhc: #222;
@@ -291,7 +279,6 @@
 /**
  * Author card
  */
-
 .author-card,
 .author-card .package {
   padding: 0;
@@ -313,7 +300,6 @@
 /**
  * Following 2 can be removed with flag release
  */
-
 .author-card .flex {
   display: flex;
   align-items: center;
@@ -322,32 +308,14 @@
 
 .author-card .icon-label {
   position: relative;
-  top: .15em;
+  top: 0.15em;
   margin-left: 10px;
 }
 
-/* Author Bio version */
-
-.author-bio {
-  padding: 0 15px;
-}
-
-@media (min-width: 600px) {
-  .author-bio {
-    padding: 0;
-  }
-}
-
-.author-bio .thumb {
-  max-width: 160px;
-}
-
-/* Grid takeover */
-
-@supports(display: grid) {
-
-  /** Inline version */
-
+/** 
+ * Grid takeover
+ */
+@supports (display: grid) {
   .author-card {
     display: grid;
     align-items: center;
@@ -368,12 +336,32 @@
     margin: 0 30px 0 0;
   }
 
-  .author-card .summary,
+  .author-card .summary {
+    grid-column: span 2;
+  }
+}
+/** 
+ * Author Bio 
+ * Note: requires the author-card class as well to reuse
+ * some of those styles.
+ */
+.author-bio {
+  padding: 0 15px;
+}
+
+@media (min-width: 600px) {
+  .author-bio {
+    padding: 0;
+  }
+}
+.author-bio .thumb {
+  max-width: 160px;
+}
+
+@supports (display: grid) {
   .author-bio .a-social {
     grid-column: span 2;
   }
-
-  /** Bio version */
 
   .author-bio .package {
     margin-top: 0;
@@ -409,9 +397,9 @@
     }
   }
 }
-
-/* Subscription callout */
-
+/**
+ * Subscription callout 
+ */
 .author-sub {
   padding: 15px 0;
   margin: 15px 0;
@@ -419,7 +407,7 @@
 }
 
 .author-sub .callout {
-  font: 14px/20px "McClatchy Sans",sans-serif;
+  font: 14px/20px "McClatchy Sans", sans-serif;
   color: #31409F;
 }
 
@@ -427,58 +415,55 @@
   padding: 0;
 }
 
-
 /**
  * Timeline
  */
-
 .timeline-event {
-	border-left: 1px solid #707070;
-	max-width: 500px;
+  border-left: 1px solid #707070;
+  max-width: 500px;
   --hf: "McClatchy Sans", sans-serif;
   --hw: 600;
-  --ht: uppercase;
+  --ht:uppercase;
 }
 
 .timeline-event:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 18px;
-	height: 18px;
-	box-sizing: border-box;
-	background-color: #707070;
-	border: 4px solid white;
-	border-radius: 50%;
-	transform: translate(-9.5px, 12px);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  background-color: #707070;
+  border: 4px solid white;
+  border-radius: 50%;
+  transform: translate(-9.5px, 12px);
 }
 
 /**
  * Transparency
  */
-
 .transparency {
-	max-width: 100%;
-	padding: 15px;
-	background-color: #f4f4f4;
+  max-width: 100%;
+  padding: 15px;
+  background-color: #f4f4f4;
 }
 
 .transparency > * {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px;
 }
 
 .transparency .expander {
-	justify-content: space-between;
+  justify-content: space-between;
 }
 
 .question {
-	padding-top: 15px;
-	--hf: "McClatchy Serif", serif;
-	--hw: 400;
-	--ht: none;
+  padding-top: 15px;
+  --hf: "McClatchy Serif", serif;
+  --hw: 400;
+  --ht:none;
 }
 
 /**
@@ -486,235 +471,137 @@
  * Note: we need something for labels "outside the grid" but
  * need to "line up with the grid".
  */
-
 .big-news {
   margin-top: 0;
 }
 
 .big-news a {
-	color: inherit;
+  color: inherit;
 }
 
 .big-news > * {
-	max-width: 1140px;
-	margin: 0 auto;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 .big-news .latest {
   box-sizing: content-box;
-	padding: 15px 15px 0;
+  padding: 15px 15px 0;
 }
 
 .big-news .grid {
-	max-width: 1170px;
-	grid-gap: 0;
-	grid-template-columns: repeat(3, 1fr);
-	display: block;
+  max-width: 1170px;
+  grid-gap: 0;
+  grid-template-columns: repeat(3, 1fr);
+  display: block;
 }
 
 .big-news .h1 {
-	font-size: 40px;
-	text-align: center;
+  font-size: 40px;
+  text-align: center;
 }
 
 .big-news > figure {
-	max-width: 1280px;
+  max-width: 1280px;
 }
 
 .big-news img {
-	max-width: 1140px;
-	margin: 0 auto;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 .big-news figcaption {
-	max-width: 1140px;
-	margin: 0 auto;
-	padding: 10px 15px 15px;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 10px 15px 15px;
 }
 
 .big-news .featured {
-	display: block;
+  display: block;
 }
 
 @media (min-width: 680px) {
-	.big-news .grid {
-		display: grid;
-	}
+  .big-news .grid {
+    display: grid;
+  }
 
-	.big-news h1 {
-		font-size: 52px;
-	}
+  .big-news h1 {
+    font-size: 52px;
+  }
 
-	.big-news .featured .card {
-		padding: 15px;
-	}
+  .big-news .featured .card {
+    padding: 15px;
+  }
 
-	.big-news .featured .package {
-		padding: 15px 0 0;
-	}
+  .big-news .featured .package {
+    padding: 15px 0 0;
+  }
 }
-
 /**
  * In Depth card
  */
-
 .card.in-depth {
-	flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .card.in-depth figure {
   flex-grow: 4;
-	min-height: 400px;
-	display: flex;
+  min-height: 400px;
+  display: flex;
 }
 
 .card.in-depth .package {
-	padding-top: 30px;
-	padding-bottom: 30px;
-	margin: 0 auto;
-	max-width: 660px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  max-width: 660px;
 }
 
 /**
  * SWG Promo card
  */
-
 .card.swg-promo {
-	flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .card.swg-promo > :first-child {
-	flex-grow: 4;
-	min-height: 200px;
+  flex-grow: 4;
+  min-height: 200px;
 }
 
 .card.swg-promo .title {
-	font: 600 48px "McClatchy Sans", sans-serif;
+  font: 600 48px "McClatchy Sans", sans-serif;
 }
 
 /**
  * Read Next
  */
-
 .read-next .package {
-	width: 100%;
-	max-width: 710px;
-	margin: 0 auto;
+  width: 100%;
+  max-width: 710px;
+  margin: 0 auto;
   box-sizing: border-box;
 }
 
 .read-next .header {
   align-self: stretch;
-	align-items: flex-start;
-	text-align: left;
-	padding: 0;
+  align-items: flex-start;
+  text-align: left;
+  padding: 0;
 }
 
 .read-next .header > :first-child {
-	margin-top: 0;
+  margin-top: 0;
 }
 
 .read-next .social-media {
-	justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .read-next .social-media > a:first-child {
-	padding-left: 0;
+  padding-left: 0;
 }
 
 .read-next .more-link {
-	padding: 0;
-}
-
-/**
- * Modals
- */
-
-.s-modal {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	margin: 0;
-	padding: 100px 15px 0;
-	max-width: unset;
-	overflow: auto;
-	z-index: 9999;
-	transform: translateZ(0);
-	pointer-events: none;
-}
-
-.s-modal > * {
-	position: relative;
-	width: 100%;
-	max-width: 710px;
-	margin: 15px auto;
-	pointer-events: auto;
-}
-
-.s-modal .package {
-	padding: 30px 50px 30px 15px;
-}
-
-.s-modal .close {
-	position: absolute;
-	top: 0;
-	right: 0;
-	padding: 15px;
-	cursor: pointer;
-}
-
-.s-modal.screen {
-	background-color: rgba(255,255,255,0.8);
-	pointer-events: auto;
-}
-
-.s-modal[hidden] {
-	display: none;
-}
-
-/** Bottom version */
-
-.s-modal.bottom:not([hidden]) {
-	display: flex;
-	align-items: flex-end;
-}
-
-.s-modal.bottom > * {
-	max-width: 1110px;
-	position: relative;
-}
-
-.s-modal.bottom .package {
-	max-width: 710px;
-	margin: 0 auto;
-}
-
-/** Local news subscription (modal version) */
-
-.modal-subscription {
-	flex-wrap: wrap;
-}
-
-/** Newsletter signup (modal version) */
-
-.modal-newsletter .grid {
-	grid-template-columns: 1fr;
-	grid-row-gap: 10px;
-  align-self: stretch;
-}
-
-.modal-newsletter input, .modal-newsletter .button {
-	padding: 1em 1em .7em;
-	border-radius: 2px;
-	border: none;
-	color: #222;
-	align-self: unset;
-}
-
-@media (min-width: 600px) {
-	.modal-newsletter .grid {
-		grid-template-columns: 3fr 1fr;
-	}
+  padding: 0;
 }

@@ -1,0 +1,13 @@
+/**
+ * Related stories
+ */
+
+.related-stories {
+  --lc: #222;
+  --lhc: #222;
+}
+
+.related-stories .package {
+  padding: 0;
+}
+

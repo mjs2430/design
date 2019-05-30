@@ -1,0 +1,194 @@
+/**
+ * Typography
+ */
+
+:root {
+  /* Header family, weight, and text-transform */
+  --hf: "McClatchy Serif", serif;
+  --hw: 400;
+  --ht: none;
+
+  /* Link decoration and color */
+  --lc: #222;
+  --ld: none;
+
+  /* Button color and background color */
+  --bc: #222;
+  --bbc: transparent;
+
+  /* Colors */
+  /* --shasta: #5169B8; */
+  /* --dumbledore: #31409F; */
+}
+
+body {
+  position: relative;
+  margin: 0;
+  color: #222;
+  background-color: #f4f4f4;
+}
+
+body.freeze {
+  overflow: hidden;
+}
+
+/**
+ * Text elements
+ */
+
+a {
+  text-decoration: var(--ld);
+  color: var(--lc);
+}
+
+a:hover {
+  /* Link hover decoration and color */
+  text-decoration: var(--lhd);
+  color: var(--lhc);
+}
+
+h1, .h1 {
+  font: 600 30px/1.2em "McClatchy Serif", serif;
+}
+
+h2, .h2 {
+  font: var(--hw) 22px/1.2em var(--hf);
+  text-transform: var(--ht);
+}
+
+h3, .h3 {
+  font: var(--hw) 18px/1.2em var(--hf);
+  text-transform: var(--ht);
+}
+
+h4, .h4 {
+  font: var(--hw) 16px/1.2em var(--hf);
+  text-transform: var(--ht);
+}
+
+h5, .h5 {
+  font: 600 14px/1.2em "McClatchy Sans", sans-serif;
+  text-transform: var(--ht);
+}
+
+h6, .h6 {
+  font: var(--hw) 12px/1.2em "McClatchy Sans", sans-serif;
+  text-transform: var(--ht);
+}
+
+p {
+  font: 17px/1.5em "Lyon", serif;
+}
+
+li {
+  font: 17px/1.5em "Lyon", serif;
+  margin: 10px 0 10px calc(1em + 15px);
+}
+
+ul li {
+  list-style-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBkPSJNMjU2IDhDMTE5IDggOCAxMTkgOCAyNTZzMTExIDI0OCAyNDggMjQ4IDI0OC0xMTEgMjQ4LTI0OFMzOTMgOCAyNTYgOHoiLz48L3N2Zz4=");
+}
+
+time {
+	max-width: unset;
+  display: inline-block;
+  font: 300 11px/1.2em "McClatchy Sans", sans-serif;
+  text-transform: uppercase;
+  color: var(--tc, #707070);
+}
+
+/**
+ * Custom elements
+ */
+
+.kicker {
+  display: inline-block;
+  padding: 5px 8px 3px;
+  color: var(--tc);
+  font-weight: 400;
+  border: 1px solid var(--tc, #4a4a4a);
+  border-radius: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.kicker:hover {
+  color: var(--tc);
+  text-decoration: none;
+}
+
+.byline {
+  display: inline-block;
+  font: 400 11px/1.5em "McClatchy Sans";
+  text-transform: uppercase;
+  color: var(--tc, #707070);
+}
+
+.byline a {
+  font-weight: 700;
+  color: inherit;
+  --ld: underline;
+  --lhd: underline;
+}
+
+.credit {
+  display: inline-block;
+  font: italic 400 11px/1.5em "McClatchy Sans";
+  text-transform: uppercase;
+}
+
+.label {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.label > * {
+  margin: 0;
+  padding: 5px 10px 3px;
+  color: var(--bc);
+  background-color: var(--bbc);
+  --ld: none;
+  --lhd: none;
+}
+
+.label.sticky {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.more-link {
+  display: flex;
+  font: 600 14px/1.5em "McClatchy Sans";
+  text-transform: uppercase;
+  margin-top: 15px;
+  color: var(--tc, #707070);
+  text-decoration: none;
+}
+
+.more-link:after {
+  content: "\2192";
+  padding-left: 4px;
+  font: 20px monospace;
+  line-height: 16px;
+  transition: transform .6s ease;
+}
+
+.more-link:hover {
+  color: var(--tc, #707070);
+  text-decoration: none;
+}
+
+.more-link:hover:after {
+  transform: translateX(4px);
+}
+
+.dateline {
+  display: block;
+  font-style: italic;
+  font-size: 14px;
+  text-transform: uppercase;
+}

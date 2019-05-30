@@ -1,0 +1,4 @@
+{{ $code := .Inner }}
+{{ range (seq (.Get 0)) }}
+  {{ $code }}
+{{ end }}
