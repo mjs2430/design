@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Server side maps test</title>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="../../../favicon.ico">
+
+    <link rel="stylesheet" href="../../../css/fonts.css">
+
+    
+    <link rel="stylesheet" href="../../../css/atoms/typography.css">
+    <link rel="stylesheet" href="../../../css/atoms/media.css">
+    <link rel="stylesheet" href="../../../css/atoms/section.css">
+    <link rel="stylesheet" href="../../../css/atoms/button.css">
+
+    
+    <link rel="stylesheet" href="../../../css/molecules/paper.css">
+    <link rel="stylesheet" href="../../../css/molecules/package.css">
+    <link rel="stylesheet" href="../../../css/molecules/impact.css">
+    <link rel="stylesheet" href="../../../css/molecules/social-media.css">
+    <link rel="stylesheet" href="../../../css/molecules/expander.css">
+    <link rel="stylesheet" href="../../../css/molecules/utilities.css">
+
+    
+    <link rel="stylesheet" href="../../../css/cards/grid.css">
+    <link rel="stylesheet" href="../../../css/cards/flex-columns.css">
+    <link rel="stylesheet" href="../../../css/cards/flex-row.css">
+    <link rel="stylesheet" href="../../../css/cards/digest.css">
+    <link rel="stylesheet" href="../../../css/cards/immersive.css">
+    <link rel="stylesheet" href="../../../css/cards/story-body.css">
+    <link rel="stylesheet" href="../../../css/cards/header.css">
+    <link rel="stylesheet" href="../../../css/cards/series-nav.css">
+    <link rel="stylesheet" href="../../../css/cards/related-stories.css">
+    <link rel="stylesheet" href="../../../css/cards/author-card.css">
+    <link rel="stylesheet" href="../../../css/cards/author-bio.css">
+    <link rel="stylesheet" href="../../../css/cards/timeline.css">
+    <link rel="stylesheet" href="../../../css/cards/transparency.css">
+    <link rel="stylesheet" href="../../../css/cards/big-news.css">
+    <link rel="stylesheet" href="../../../css/cards/in-depth.css">
+    <link rel="stylesheet" href="../../../css/cards/swg-promo.css">
+    <link rel="stylesheet" href="../../../css/cards/read-next.css">
+
+    
+    <link rel="stylesheet" href="../../../css/site.css">
+<link rel="stylesheet" href="../../../css/decks/display-classes.css">
+<link rel="stylesheet" href="../../../css/decks/flag.css">
+<link rel="stylesheet" href="../../../css/decks/footer.css">
+<link rel="stylesheet" href="../../../css/decks/menu.css">
+<link rel="stylesheet" href="../../../css/decks/ad-widget.css">
+<link rel="stylesheet" href="../../../css/decks/story-template.css">
+<link rel="stylesheet" href="../../../css/decks/eedition-portal.css">
+<link rel="stylesheet" href="../../../css/decks/purple-tuesdays.css">
+
+<script async src="../../../js/navigation.js"></script>
+
+  </head>
+
+  <body class="saratoga">
+    <div class="banner paper">
+      <a href="../../../" style="padding: 0;"><img class="logo" src="../../../img/banner-logo.2.svg"></a>
+      <nav>
+        <a href="https://mcclatchy.github.io/design/about/" class="">
+          <span>about us</span>
+        </a>
+        <a href="https://mcclatchy.github.io/design/saratoga/" class="active">
+          <span>style guide</span>
+        </a>
+      </nav>
+    </div>
+    
+<style>
+.story-body {
+  padding-bottom: 30px;
+}
+
+figure {
+  max-width: 920px;
+  text-align: center;
+}
+
+figure h5 {
+  margin: 1em 0;
+}
+
+.legend {
+  justify-content: center;
+}
+
+.legend h6 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.legend h6:before {
+  content: "";
+  display: block;
+  height: 15px;
+  width: 15px;
+  border: 1px solid black;
+  margin-right: 5px;
+}
+
+.legend h6.ten:before {
+  background-color: #B1B9EA;
+}
+
+.legend h6.fifty:before {
+  background-color: #31409F;
+}
+</style>
+
+<article class="paper story-body">
+  <header class="header">
+    <h1>Server side map making</h1>
+    <h4>A interpretation of @mbostock's <a href="https://medium.com/@mbostock/command-line-cartography-part-1-897aa8f8ca2c">Command Line Cartography</a></h4> 
+  </header>
+
+  <p>I got a little sidetracked today thinking about the Star project. I know it's way early, but I thought showing this technique might help us before that. I also, as usual, am a little freaked out by the possibility of election coverage and this is the technique I last used.</p>
+
+  <p>What I'm showing here is an example of how to make SVG maps on a local workstation, or server if you have one set up for it, instead of rendering them in the client. This has the advantage of being nothing more than a standard image tag in CUE.</p>
+
+  <p>These maps show data downloaded from the U.S. Department of Education. The specific data I'm showing is the percentage of 8th-grade students who scored below Basic in NAEP reading by race. To keep this simple I used the first sheet which included white, black and hispanic. Using D3 directly from the command line, I was able to merge this data with a shapefile from <a href="https://naturalearthdata.com">naturalearthdata.com</a>. I picked the smallest, least detailed, version because this is a test.</p>
+
+  <figure class="story-module">
+    <h5>Percentage of white students below the Basic NAEP treshold</h5>
+    <img src="white.svg">
+    <div class="flex icons legend">
+      <h6>No Data</h6>
+      <h6 class="ten">10%</h6>
+      <h6 class="fifty">50%</h6>
+    </div>
+  </figure>
+
+  <p>For a one-off, the advantage here is that a developer can do this completely on the side without worrying at all what happens if JS breaks, or ads do something odd, or ads take forever to load, or the client doesn't support fetch(), or whatever. The coolness gets even better when you want to show a second or third map of basically the same thing, but with a different column of data.</p>
+
+  <figure class="story-module">
+    <h5>Percentage of hispanic students below the Basic NAEP treshold</h5>
+    <img src="hispanic.svg">
+    <div class="flex icons legend">
+      <h6>No Data</h6>
+      <h6 class="ten">10%</h6>
+      <h6 class="fifty">50%</h6>
+    </div>
+  </figure>
+
+  <p>You can make a whole bunch of them by only changing the last step. Another advantage here is the reader isn't required to do anything other than passively scroll down and we get responsiveness for free.</p>
+
+  <figure class="story-module">
+    <h5>Percentage of black students below the Basic NAEP treshold</h5>
+    <img src="black.svg">
+    <div class="flex icons legend">
+      <h6>No Data</h6>
+      <h6 class="ten">10%</h6>
+      <h6 class="fifty">50%</h6>
+    </div>
+  </figure>
+
+  <p>When I do these I use a Makefile because it keeps a log of what I did and lets me recreate it in the future. I <a href="command-line-maps.tar.gz">tarballed this one</a> to show how I set them up. I kept most all of them as individual files so you can see the progression, but the d3 commands work with pipes too. Here is a list of the npm packages, all written by Mike Bostock, you would need to have globally to run the file:</p>
+  
+  <ul>
+    <li>d3</li>
+    <li>d3-dsv</li>
+    <li>d3-geo-projection</li>
+    <li>ndjson-cli</li>
+    <li>shapefile</li>
+    <li>topojson</li>
+  </ul>
+
+  <p>This sort of thing is great for standalone projects, but it's not day-to-day fast. I had to go through the tutorial again, because I always do, and I was able to do this in less than a day. It's intense though and I didn't have to clean any data. If we wanted to set up a server with Node on it you could define some rules and make a mini-app or something. We never took it that far at the paper. For election maps, this technique really shines. Once you do the hard work of merging AP data with Tiger Census files, making a map for every race in every state by county is very easy to do.</p>
+
+  <p>Happy weekend everyone!</p>
+</article>
+
+    
+  </body>
+</html>
