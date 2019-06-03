@@ -11,10 +11,11 @@
 .expander:after {
   content: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MDEuNSAyODQuNCI+PHBhdGggZD0iTTQ2Ny43LDI4NC40SDMzLjdjLTMwLDAtNDUtMzYuMy0yMy43LTU3LjVMMjI2LjksOS45YTMzLjgsMzMuOCwwLDAsMSw0Ny44LDBsMjE3LDIxN2MyMSwyMS4yLDYsNTcuNS0yNCw1Ny41WiIvPjwvc3ZnPgo=');
   width: 14px;
+  height: 8px;
+  line-height: 0;
   margin-left: 5px;
   transition: transform .5s ease;
-  transform: translateY(-.1em) rotateX(180deg);
-  transform-origin: 50% 50%;
+  transform: rotateX(180deg);
 }
 
 .expander ~ * {
@@ -22,7 +23,7 @@
 }
 
 .expander.open:after {
-  transform: translateY(-.1em) rotateX(0);
+  transform: rotateX(0);
 }
 
 .expander.open ~ * {
