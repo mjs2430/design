@@ -1,0 +1,68 @@
+---
+title: section
+description: A sample section page.
+menu: decks
+layout: deck
+---
+
+<style>
+  svg {
+    display: block !important;
+    width: 14px;
+    height: 1em;
+    transition: transform .5s ease;
+    transform: rotateX(180deg);
+  }
+</style>
+
+{{< section-nav >}}
+
+<section>
+  <div class="flex-columns reverse">
+    <div class="main-stage flex-columns">
+      {{< card class="lede" size="h1" >}}
+      {{< card >}}
+      {{< card >}}
+      {{< card >}}
+      {{< card >}}
+      {{< card >}}
+      {{< card >}}
+    </div>
+    <div class="rail flex-columns">
+      {{< digest >}}
+      <div class="ad-widget">
+        <div class="iframe" style="width: 300px; height: 600px; background-color: #ddd;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="grid">
+  {{< card >}}
+  {{< card >}}
+  {{< card >}}
+  {{< card >}}
+  {{< card >}}
+  {{< card >}}
+</section>
+
+<section>
+  <div class="flex-columns">
+    <div class="rail flex-columns">
+      <div class="ad-widget">
+        <div class="iframe" style="width: 300px; height: 250px; background-color: #ddd;"></div>
+      </div>
+      <div class="ad-widget">
+        <div class="iframe" style="width: 300px; height: 250px; background-color: #ddd;"></div>
+      </div>
+    </div>
+    <div class="main-stage flex-columns">
+      {{< card >}}
+      {{< card >}}
+      {{< card >}}
+      {{< card >}}
+      {{< card >}}
+      {{< card >}}
+    </div>
+  </div>
+</section>
