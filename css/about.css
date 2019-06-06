@@ -27,12 +27,29 @@ p {
  * Bios
  */
 
-.bios {
-  max-width: 1130px;
+section {
   margin: 0 auto;
-  padding: 50px 15px;
-  display: grid;
-  grid-gap: 30px;
+  padding-top: 15px;
+}
+
+.grid {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 700px) {
+  .grid:not(.director) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 800px) {
+  .director {
+    grid-template-columns: 1fr 4fr 1fr;
+  }
+
+  .director .bio {
+    grid-column: 2;
+  }
 }
 
 .bio * {
@@ -45,12 +62,6 @@ p {
 
 .bio p {
   font-size: 14px;
-}
-
-@media (min-width: 700px) {
-  .bios {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 .row {
@@ -81,9 +92,13 @@ p {
 
 /* Manager specials */
 
-.bio.manager {
+.director, .managers {
   border-bottom: 1px solid #d8d8d8;
 }
+
+/* .bio.manager { */
+/*   border-bottom: 1px solid #d8d8d8; */
+/* } */
 
 .bio.manager .avatar {
   width: 125px;
