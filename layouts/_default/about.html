@@ -9,13 +9,19 @@
     {{ .Content }}
   </header>
 
-  <div class="bios">
+  <section class="director grid">
     {{ partial "member.html" $.Site.Data.team.jessica }}
-    {{ partial "member.html" $.Site.Data.team.eddie }}
+  </section>
 
+  <section class="managers grid">
+    {{ partial "member.html" $.Site.Data.team.eddie }}
+    {{ partial "member.html" $.Site.Data.team.holly }}
+  </section>
+
+  <section class="bios grid">
     {{- range $.Site.Data.team }}
     {{ if not .manager }}{{ partial "member.html" . }}{{ end }}
     {{- end }}
-  </div>
+  </section>
 </article>
 {{ end }}
