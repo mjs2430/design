@@ -16,6 +16,7 @@ section .more-link,
 section > h5,
 .section-label {
   padding: 0 15px;
+  margin: 15px 0;
 }
 
 .section-label {

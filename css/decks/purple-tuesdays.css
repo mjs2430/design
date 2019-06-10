@@ -2,10 +2,6 @@
  * Purple Tuesdays
  */
 
-section > h5:first-child {
-  margin-bottom: 15px;
-}
-
 /* Because the main section body is still wrapped by Bootstrap */
 .big-news > * {
   max-width: 1110px;

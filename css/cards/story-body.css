@@ -10,6 +10,8 @@
   --lhc: #31409F;
   --ld: underline;
   --lhd: underline;
+  /* Prevents margin collapse */
+  border-bottom: 1px solid transparent;
 }
 
 .story-body > * {
@@ -40,10 +42,6 @@
 
 .story-body .ad-widget {
   margin: 50px auto;
-}
-
-.story-body > :last-child {
-	margin-bottom: 0;
 }
 
 .story-body .dateline {
