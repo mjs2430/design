@@ -372,6 +372,7 @@ button, .button {
 
 .package > * {
   margin: 10px 0 0 0;
+  max-width: 100%;
 }
 
 .package > :first-child {
