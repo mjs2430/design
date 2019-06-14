@@ -54,6 +54,7 @@
 <link rel="stylesheet" href="../../../css/decks/footer.css">
 <link rel="stylesheet" href="../../../css/decks/menu.css">
 <link rel="stylesheet" href="../../../css/decks/ad-widget.css">
+<link rel="stylesheet" href="../../../css/decks/story-template.css">
 <link rel="stylesheet" href="../../../css/decks/eedition-portal.css">
 <link rel="stylesheet" href="../../../css/decks/purple-tuesdays.css">
 
@@ -142,9 +143,9 @@
   <figcaption>TAMMY LJUNGBLAD</figcaption>
 </figure>
  -->
-
-  <article class="story-body">
-    
+  <div class="story-template">
+    <article class="story-body">
+      
 
 <header class="header ">
   <a class="kicker h6" href="#">SECTION</a>
@@ -172,12 +173,12 @@
 </header>
 
 
-    <figure>
-      <img src="https://www.kansascity.com/latest-news/b59z53/picture216630505/alternates/LANDSCAPE_1140/Colyer%20and%20Kobach%20primary.jpg">
-      <figcaption>Secretary of State Kris Kobach (right) has pulled ahead of Gov. Jeff Colyer as counties count provisional votes. <span class="byline"><span class="credit">FILE PHOTO</span></span></figcaption>
-    </figure>
+      <figure>
+        <img src="https://www.kansascity.com/latest-news/b59z53/picture216630505/alternates/LANDSCAPE_1140/Colyer%20and%20Kobach%20primary.jpg">
+        <figcaption>Secretary of State Kris Kobach (right) has pulled ahead of Gov. Jeff Colyer as counties count provisional votes. <span class="byline"><span class="credit">FILE PHOTO</span></span></figcaption>
+      </figure>
 
-    <div class="series-nav package story-module">
+      <div class="series-nav package story-module">
   <h5>MORE FROM THIS SERIES</h5>
   <hr>
   <h3>Series headline goes here</h3>
@@ -209,41 +210,36 @@
 </div>
 
 
-    <span class="dateline">Jefferson City</span>
-    <p>The <a href="#">primary challenge with the story body</a> is the design rule that media should bleed all the way to the edge of the screen on mobile and tablet devices, but be restricted to a maximum width as the screen gets larger. Additionally, different media or embeddable content will have different widths. </p>
+      <span class="dateline">Jefferson City</span>
+      <p>The <a href="#">primary challenge with the story body</a> is the design rule that media should bleed all the way to the edge of the screen on mobile and tablet devices, but be restricted to a maximum width as the screen gets larger. Additionally, different media or embeddable content will have different widths. </p>
+      <p>A container-based approach to these rules requires multiple breakpoints and creates a couple of pressure points as the number of organisms increases. Code grows quickly with each addition, as all breakpoints for each change must be considered or written. Re-use suffers as elements get more and more isolated with deeply nested CSS rules.</p>
 
-    <div class="ad-widget">
-      <div class="iframe" style="width: 300px; height: 250px; background-color: #ddd;"></div>
-    </div>
+      <p>To combat these issues, we looked at the story body itself instead of each possible element to determine the design rules. We came up with a small list of general ideas.</p>
+      <ul>
+        <li>Text should be centered in the middle and no wider than 720px.</li>
+        <li>Everything except media should have 15px of space on the left and right.</li>
+        <li>Media should be allowed to go to 1140px wide to elevate value.</li>
+        <li>Media and story modules should have 30px of vertical space.</li>
+        <li>Advertising should have 50px of vertical space.</li>
+        <li>Subheads should be 600 weight and Sans Serif.</li>
+      </ul>
 
-    <p>A container-based approach to these rules requires multiple breakpoints and creates a couple of pressure points as the number of organisms increases. Code grows quickly with each addition, as all breakpoints for each change must be considered or written. Re-use suffers as elements get more and more isolated with deeply nested CSS rules.</p>
-
-    <p>To combat these issues, we looked at the story body itself instead of each possible element to determine the design rules. We came up with a small list of general ideas.</p>
-    <ul>
-      <li>Text should be centered in the middle and no wider than 720px.</li>
-      <li>Everything except media should have 15px of space on the left and right.</li>
-      <li>Media should be allowed to go to 1140px wide to elevate value.</li>
-      <li>Media and story modules should have 30px of vertical space.</li>
-      <li>Advertising should have 50px of vertical space.</li>
-      <li>Subheads should be 600 weight and Sans Serif.</li>
-    </ul>
-
-    
+      
 
 
 <div class="inline-cta ad-widget package">
   <h1>Digital access for only $0.99</h1>
   <p class="summary">For the most comprehensive local coverage, subscribe today.</p>
-  <a class="button impact" href="#">SUBSCRIBE NOW</a>
+  <a class="button" href="#">SUBSCRIBE NOW</a>
 </div>
 
 
 
 
 
-    <p>The last challenge was to tackle the idea that as dynamic content becomes more important to our designs, the structure would need to be able to adopt it without increasing the code base more than necessary. We needed a basic default setup that could be easily overloaded. We settled on a direct child approach, which could provide what we needed in the fewest lines of code.</p>
+      <p>The last challenge was to tackle the idea that as dynamic content becomes more important to our designs, the structure would need to be able to adopt it without increasing the code base more than necessary. We needed a basic default setup that could be easily overloaded. We settled on a direct child approach, which could provide what we needed in the fewest lines of code.</p>
 
-    <div class="transparency">
+      <div class="transparency">
   <h3 class="expander" onclick="this.classList.toggle('open');">BEHIND OUR REPORTING</h3>
   <div class="question" style="display: block;">
     <h3>Why did we report this story?</h3>
@@ -264,7 +260,9 @@
 </div>
 
 
-    <div class="related-stories package story-module">
+      <p>Etiam porttitor at tellus vel scelerisque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sollicitudin imperdiet justo vitae egestas. Vestibulum suscipit augue a libero euismod faucibus. Mauris consequat nisl vel suscipit tristique. In tincidunt risus laoreet quam porttitor, vel finibus libero convallis. Nunc suscipit feugiat erat, eget imperdiet ante facilisis quis. Sed leo augue, euismod ac efficitur quis, condimentum at magna. Ut mauris urna, gravida id rhoncus vel, tempor quis dolor. Nullam euismod odio ligula, aliquam ornare dui commodo cursus. Curabitur et vestibulum sapien. Fusce non leo neque.</p>
+
+      <div class="related-stories package story-module">
   <h5>RELATED STORIES</h5>
   <div class="grid">
     <article class="package">
@@ -292,8 +290,8 @@
 </div>
 
 
-    <div class="story-module">
-      <div class="author-card package">
+      <div class="story-module">
+        <div class="author-card package">
   <div class="thumb">
     <img src="../../../img/aaron_moody.jpg">
   </div>
@@ -321,8 +319,85 @@
   <p class="summary">Aaron Moody is a sports and general reporter for the News &amp; Observer. Here is a second sentence for the bio because it will probably be longer than this. Maybe even longer I don't know.</p>
 </div>
 
-    </div>
-  </article>
+      </div>
+    </article>
+
+    <aside class="story-rail">
+      <div class="ad-widget">
+        <div class="iframe" style="width: 300px; height: 600px; background-color: #ddd;"></div>
+      </div>
+
+      <div class="video-right-rail-organism">
+        <article class="card ">
+  <figure>
+    <a href="https://mcclatchy.github.io/saratoga/food/205504249/">
+      <img src="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_640/0321%20cimk%20kuwata%2003022018%20s%20%284%29" srcset="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_1140/0321%20cimk%20kuwata%2003022018%20s%20%284%29 1140w"> 
+    </a>
+  </figure>
+  <div class="package">
+    <a class="kicker h6" href="https://mcclatchy.github.io/saratoga/food/">FOOD</a>
+    <h3><a href="#">Hatch chiles bring heat and hearty flavor to New Mexican cuisine</a></h3>
+    <time>March 16, 2018 11:33 am</time>
+  </div>
+</article>
+
+        <article class="card ">
+  <figure>
+    <a href="https://mcclatchy.github.io/saratoga/food/205504249/">
+      <img src="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_640/0321%20cimk%20kuwata%2003022018%20s%20%284%29" srcset="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_1140/0321%20cimk%20kuwata%2003022018%20s%20%284%29 1140w"> 
+    </a>
+  </figure>
+  <div class="package">
+    <a class="kicker h6" href="https://mcclatchy.github.io/saratoga/food/">FOOD</a>
+    <h3><a href="#">Hatch chiles bring heat and hearty flavor to New Mexican cuisine</a></h3>
+    <time>March 16, 2018 11:33 am</time>
+  </div>
+</article>
+
+      </div>
+
+      <div class="ad-widget">
+        <div class="iframe" style="width: 300px; height: 250px; background-color: #ddd;"></div>
+      </div>
+
+      <div class="digest">
+  <div class="paper ">
+    <a href="https://mcclatchy.github.io/saratoga/opinion/" class="label ">
+      <h5>OPINION</h5>
+    </a>
+    <article class="package">
+      <h3><a href="https://mcclatchy.github.io/saratoga/opinion/205928724/">Kudlow joins White House that sorely needs cooler heads to prevail</a></h3>
+      <time>March 19, 2018 5:34 pm</time>
+    </article>
+    <article class="package">
+      <h3><a href="https://mcclatchy.github.io/saratoga/opinion/205579084/">The Episcopal Church changed course for our LGBT members</a></h3>
+      <time>March 16, 2018 3:42 pm</time>
+    </article>
+    <article class="package">
+      <h3><a href="https://mcclatchy.github.io/saratoga/opinion/205581414/">The Kansas Republican Party is taking a stance on transgender identity</a></h3>
+      <time>March 16, 2018 3:58 pm</time>
+    </article>
+    <article class="package">
+      <h3><a href="https://mcclatchy.github.io/saratoga/opinion/205583064/">Letters: Readers discuss teen drinking, tax-cut benefits in Missouri and student protests</a></h3>
+      <time>March 16, 2018 4:08 pm</time>
+    </article>
+  </div>
+  <a href="https://mcclatchy.github.io/saratoga/opinion/" class="more-link">MORE OPINION</a>
+</div>
+
+
+      <div class="ad-widget">
+        <div class="iframe" style="width: 300px; height: 250px; background-color: #ddd;"></div>
+      </div>
+
+      <div class="package">
+        <h3 class="bold sans">MODAL TEST BUTTONS</h3>
+        <p class="summary">This module is not part of the design, and is only here to test modal functionality.</p>
+        <button class="button ghost" onclick="toggleModal('main-modal')">show main modal</button>
+        <button class="button ghost" onclick="toggleModal('bottom-modal')">show bottom modal</button>
+      </div>
+    </aside>
+  </div>
 </div>
 
 <section>
@@ -365,6 +440,23 @@
 </section>
 
 <section>
+  <div class="card horizontal in-depth">
+  <figure>
+    <div class="label sticky"><h5 class="impact">IN DEPTH</h5></div>
+    <a href="https://www.kansascity.com/news/politics-government/article225926790.html">
+      <img src="https://www.kansas.com/latest-news/6aw7pv/picture225984215/alternates/LANDSCAPE_768/tax-forms.jpg">
+    </a>
+  </figure>
+  <div class="package impact">
+    <a class="kicker h6" href="https://www.kansascity.com/news/politics-government/article225926790.html">Government &amp; Politics</a>
+    <h1><a href="https://www.kansascity.com/news/politics-government/">After meeting Brownback’s circle, firm was on ‘right path’ to $61M no-bid contract</a></h1>
+    <summary>Thousands of emails reveal how CGI Technologies landed a $61 million contract to overhaul Kansas tax systems. New Gov. Laura Kelly has promised to crack down on no-bid contracts.</summary>
+  </div>
+</div>
+
+</section>
+
+<section>
   <div class="card horizontal swg-promo">
   <div class="package sans promo">
     <h1 class="title">SIGN UP AND SAVE</h1>
@@ -376,90 +468,6 @@
   </div>
 </div>
 
-</section>
-
-<section>
-  <h5>MORE FROM THIS SECTION</h5>
-  <div class="grid">
-    <article class="card ">
-  <figure>
-    <a href="https://mcclatchy.github.io/saratoga/food/205504249/">
-      <img src="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_640/0321%20cimk%20kuwata%2003022018%20s%20%284%29" srcset="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_1140/0321%20cimk%20kuwata%2003022018%20s%20%284%29 1140w"> 
-    </a>
-  </figure>
-  <div class="package">
-    <a class="kicker h6" href="https://mcclatchy.github.io/saratoga/food/">FOOD</a>
-    <h3><a href="#">Hatch chiles bring heat and hearty flavor to New Mexican cuisine</a></h3>
-    <time>March 16, 2018 11:33 am</time>
-  </div>
-</article>
-
-    <article class="card ">
-  <figure>
-    <a href="https://mcclatchy.github.io/saratoga/food/205504249/">
-      <img src="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_640/0321%20cimk%20kuwata%2003022018%20s%20%284%29" srcset="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_1140/0321%20cimk%20kuwata%2003022018%20s%20%284%29 1140w"> 
-    </a>
-  </figure>
-  <div class="package">
-    <a class="kicker h6" href="https://mcclatchy.github.io/saratoga/food/">FOOD</a>
-    <h3><a href="#">Hatch chiles bring heat and hearty flavor to New Mexican cuisine</a></h3>
-    <time>March 16, 2018 11:33 am</time>
-  </div>
-</article>
-
-    <article class="card ">
-  <figure>
-    <a href="https://mcclatchy.github.io/saratoga/food/205504249/">
-      <img src="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_640/0321%20cimk%20kuwata%2003022018%20s%20%284%29" srcset="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_1140/0321%20cimk%20kuwata%2003022018%20s%20%284%29 1140w"> 
-    </a>
-  </figure>
-  <div class="package">
-    <a class="kicker h6" href="https://mcclatchy.github.io/saratoga/food/">FOOD</a>
-    <h3><a href="#">Hatch chiles bring heat and hearty flavor to New Mexican cuisine</a></h3>
-    <time>March 16, 2018 11:33 am</time>
-  </div>
-</article>
-
-    <article class="card ">
-  <figure>
-    <a href="https://mcclatchy.github.io/saratoga/food/205504249/">
-      <img src="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_640/0321%20cimk%20kuwata%2003022018%20s%20%284%29" srcset="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_1140/0321%20cimk%20kuwata%2003022018%20s%20%284%29 1140w"> 
-    </a>
-  </figure>
-  <div class="package">
-    <a class="kicker h6" href="https://mcclatchy.github.io/saratoga/food/">FOOD</a>
-    <h3><a href="#">Hatch chiles bring heat and hearty flavor to New Mexican cuisine</a></h3>
-    <time>March 16, 2018 11:33 am</time>
-  </div>
-</article>
-
-    <article class="card ">
-  <figure>
-    <a href="https://mcclatchy.github.io/saratoga/food/205504249/">
-      <img src="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_640/0321%20cimk%20kuwata%2003022018%20s%20%284%29" srcset="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_1140/0321%20cimk%20kuwata%2003022018%20s%20%284%29 1140w"> 
-    </a>
-  </figure>
-  <div class="package">
-    <a class="kicker h6" href="https://mcclatchy.github.io/saratoga/food/">FOOD</a>
-    <h3><a href="#">Hatch chiles bring heat and hearty flavor to New Mexican cuisine</a></h3>
-    <time>March 16, 2018 11:33 am</time>
-  </div>
-</article>
-
-    <article class="card ">
-  <figure>
-    <a href="https://mcclatchy.github.io/saratoga/food/205504249/">
-      <img src="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_640/0321%20cimk%20kuwata%2003022018%20s%20%284%29" srcset="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_1140/0321%20cimk%20kuwata%2003022018%20s%20%284%29 1140w"> 
-    </a>
-  </figure>
-  <div class="package">
-    <a class="kicker h6" href="https://mcclatchy.github.io/saratoga/food/">FOOD</a>
-    <h3><a href="#">Hatch chiles bring heat and hearty flavor to New Mexican cuisine</a></h3>
-    <time>March 16, 2018 11:33 am</time>
-  </div>
-</article>
-
-  </div>
 </section>
 
 <footer class="impact">

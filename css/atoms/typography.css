@@ -19,7 +19,6 @@
   /* Colors */
   /* --shasta: #5169B8; */
   /* --dumbledore: #31409F; */
-  /* --gray: #707070; */
 }
 
 body {
@@ -78,22 +77,16 @@ h6, .h6 {
 }
 
 p {
-  font: 19px/1.5em "Lyon", serif;
+  font: 17px/1.5em "Lyon", serif;
 }
 
 li {
-  font: 19px/1.5em "Lyon", serif;
-  margin: 10px 0;
+  font: 17px/1.5em "Lyon", serif;
+  margin: 10px 0 10px calc(1em + 15px);
 }
 
 ul li {
-  padding-left: 1em;
-  list-style-type: none;
-  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBoZWlnaHQ9IjgiIHdpZHRoPSI4Ij48cGF0aCBkPSJNMjU2IDhDMTE5IDggOCAxMTkgOCAyNTZzMTExIDI0OCAyNDggMjQ4IDI0OC0xMTEgMjQ4LTI0OFMzOTMgOCAyNTYgOHoiLz48L3N2Zz4K") left .4em no-repeat;
-}
-
-ol li {
-  list-style-position: inside;
+  list-style-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBkPSJNMjU2IDhDMTE5IDggOCAxMTkgOCAyNTZzMTExIDI0OCAyNDggMjQ4IDI0OC0xMTEgMjQ4LTI0OFMzOTMgOCAyNTYgOHoiLz48L3N2Zz4=");
 }
 
 time {
