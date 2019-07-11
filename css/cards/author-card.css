@@ -12,22 +12,8 @@
 }
 
 .author-card .thumb img {
-  width: 100%;
-}
-
-@supports(object-fit: cover) {
-  .author-card .thumb {
-    position: relative;
-    padding-top: 100%;
-  }
-
-  .author-card .thumb img {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-  }
+  max-width: 100%;
+  border-radius: 50%;
 }
 
 .author-card .social-media a {
