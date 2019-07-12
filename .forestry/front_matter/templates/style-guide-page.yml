@@ -31,6 +31,7 @@ fields:
   name: updated
   label: Recently Updated
 pages:
+- content/saratoga/label.md
 - content/saratoga/button.md
 - content/saratoga/h3.md
 - content/saratoga/figcaption.md
@@ -42,7 +43,6 @@ pages:
 - content/saratoga/h1.md
 - content/saratoga/package.md
 - content/saratoga/h5.md
-- content/saratoga/label.md
 - content/saratoga/paper.md
 - content/saratoga/impact.md
 - content/saratoga/card.md
