@@ -16,11 +16,11 @@ class Ads {
 
     googletag.cmd.push(() => {
       this.sizeMaps = {
-        "leaderboard": googletag.sizeMapping().addSize([1024, 600], [970, 250]).addSize([750, 400], [728, 90]).addSize([0, 0], [320, 50]).build()
+        "leaderboard": googletag.sizeMapping().addSize([1024, 600], [[970, 250],[728, 90]]).addSize([750, 400], [728, 90]).addSize([0, 0], [320, 50]).build()
       }
 
       googletag.pubads().enableSingleRequest();
-      // googletag.pubads().collapseEmptyDivs();
+      googletag.pubads().collapseEmptyDivs();
       googletag.enableServices();
     });
 
