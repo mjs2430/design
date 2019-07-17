@@ -8,17 +8,6 @@ googletag.cmd = googletag.cmd || [];
 class Ads {
 
   /**
-   * Size Maps
-   */
-
-  get leaderboard() {
-    return googletag.sizeMapping()
-      .addSize([1024, 600], [970, 90])
-      .addSize([750, 400], [728, 90])
-      .addSize([0, 0], [320, 50]).build()
-  }
-
-  /**
    * Init
    */
 
@@ -26,7 +15,12 @@ class Ads {
     this.slots = [];
 
     googletag.cmd.push(() => {
+      this.sizeMaps = {
+        "leaderboard": googletag.sizeMapping().addSize([1024, 600], [970, 250]).addSize([750, 400], [728, 90]).addSize([0, 0], [320, 50]).build()
+      }
+
       googletag.pubads().enableSingleRequest();
+      // googletag.pubads().collapseEmptyDivs();
       googletag.enableServices();
     });
 
@@ -45,8 +39,8 @@ class Ads {
       googletag.cmd.push(() => {
         let slot = googletag.defineSlot(c.path, c.size, c.id);
 
-        if(c.map && this[c.map]) {
-          slot.defineSizeMapping(this[c.map])
+        if(c.sizeMap && this.sizeMaps[c.sizeMap]) {
+          slot.defineSizeMapping(this.sizeMaps[c.sizeMap])
         }
 
         slot.addService(googletag.pubads());
@@ -82,9 +76,9 @@ class Ads {
     let path = e.dataset.path || "/7675/KCM.site_kansascity/News/Local"
 
     // Size Map
-    let map = e.dataset.map || false
+    let sizeMap = e.dataset.sizeMap || false
 
-    return { id, size, path, map }
+    return { id, size, path, sizeMap }
   }
 
   /**
