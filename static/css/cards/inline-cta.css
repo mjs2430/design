@@ -1,4 +1,9 @@
 .inline-cta {
   --bc: white;
-  --bbc: #31409F;
+  --bbc: #222;
+}
+
+.impact .inline-cta {
+  --bc: #222;
+  --bbc: white;
 }
