@@ -7,8 +7,8 @@
 }
 
 .ad-widget iframe, 
-.ad-widget .iframe {
+.ad-widget .iframe,
+.ad-widget > div {
   display: block;
   margin: 0 auto;
 }
-
