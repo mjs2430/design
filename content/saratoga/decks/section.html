@@ -5,6 +5,8 @@ menu: decks
 layout: deck
 ---
 
+{{< flag >}}
+
 <style>
   svg {
     display: block !important;
@@ -14,6 +16,8 @@ layout: deck
     transform: rotateX(180deg);
   }
 </style>
+
+<section class="ad-widget" data-type="gpt" data-size-map="leaderboard"></section>
 
 {{< section-nav >}}
 
@@ -30,9 +34,7 @@ layout: deck
     </div>
     <div class="rail flex-columns">
       {{< digest >}}
-      <div class="ad-widget">
-        <div class="iframe" style="width: 300px; height: 600px; background-color: #ddd;"></div>
-      </div>
+      <div class="ad-widget" data-type="gpt" data-size="[300,600]"></div>
     </div>
   </div>
 </section>
@@ -49,12 +51,8 @@ layout: deck
 <section>
   <div class="flex-columns">
     <div class="rail flex-columns">
-      <div class="ad-widget">
-        <div class="iframe" style="width: 300px; height: 250px; background-color: #ddd;"></div>
-      </div>
-      <div class="ad-widget">
-        <div class="iframe" style="width: 300px; height: 250px; background-color: #ddd;"></div>
-      </div>
+      <div class="ad-widget" data-type="gpt"></div>
+      <div class="ad-widget" data-type="gpt"></div>
     </div>
     <div class="main-stage flex-columns">
       {{< card >}}
