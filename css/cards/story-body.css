@@ -26,6 +26,10 @@
 	padding: 0;
 }
 
+.story-body > .header + figure {
+  margin-top: 15px;
+}
+
 .story-body img, 
 .story-body figcaption {
 	max-width: 1140px;
@@ -40,10 +44,7 @@
 
 .story-body .ad-widget {
   margin: 50px auto;
-}
-
-.story-body > :last-child {
-	margin-bottom: 0;
+  padding: 0;
 }
 
 .story-body .dateline {
@@ -54,3 +55,6 @@
   margin-top: 0;
 }
 
+.story-body .inline-cta {
+  padding: 0 15px;
+}

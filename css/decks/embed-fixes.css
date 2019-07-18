@@ -1,0 +1,10 @@
+/**
+ * This file contains !important rules for embeds.
+ * It will invalidate AMP so do not include it in that build.
+ */
+
+.story-body twitter-widget {
+  width: auto !important;
+  max-width: 500px !important;
+  margin: 0 auto !important;
+}
