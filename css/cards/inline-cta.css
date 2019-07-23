@@ -7,3 +7,13 @@
   --bc: #222;
   --bbc: white;
 }
+
+.inline-cta > * {
+  margin: 10px 0 0 0;
+  max-width: 100%;
+}
+
+.inline-cta > :first-child {
+  margin-top: 0;
+}
+

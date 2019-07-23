@@ -38,7 +38,7 @@ class Ads {
    */
 
   redraw() {
-    let gptAds = document.querySelectorAll(".ad-widget[data-type=gpt]");
+    let gptAds = document.querySelectorAll("[data-ad-type=gpt]");
     gptAds.forEach(e => {
       let c = this.setup(e);
 

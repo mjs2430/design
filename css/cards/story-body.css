@@ -68,7 +68,8 @@
   }
 
   .story-body > .float > * {
-    margin: 0 15px 30px 30px;
+    margin: 30px;
     float: right;
+    max-width: 300px;
   }
 }
