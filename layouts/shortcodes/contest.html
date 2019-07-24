@@ -1,0 +1,16 @@
+{{ $summary := .Get "summary" }}
+
+<div class="card">
+  <figure>
+    <img src="/img/contest-logo.png">
+  </figure>
+  <div class="package">
+    <h6 class="kicker">CONTEST</h6>
+    <h3>The State's Best</h3>
+    <p class="summary">Our readers pick their favourite businesses in categories of Entertainment, Food &amp; Drink, Service and Shopping! 
+      {{- if eq $summary "long" }} Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed nibh libero. Aliquam convallis, nisl a interdum tincidunt, erat libero dapibus tellus, at fermentum lectus.
+      {{- end }}</p>
+    <time>Deadline May 31</time>
+    <a href="#" class="button impact">Enter Now</a>
+  </div>
+</div>
