@@ -1,5 +1,5 @@
 /**
- * Ads
+ * Ads for both
  */
 
 .ad-widget {
@@ -10,8 +10,4 @@
 .ad-widget > div {
   display: block;
   margin: 0 auto;
-}
-
-.ad-widget .package {
-  text-align: left;
 }

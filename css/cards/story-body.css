@@ -3,8 +3,6 @@
  */
 
 .story-body {
-  position: relative;
-  border-bottom: 1px solid #fafafa;
   --hf: "McClatchy Sans", sans-serif;
   --hw: 600;
   --ht: uppercase;
@@ -45,7 +43,7 @@
 }
 
 .story-body .ad-widget {
-  margin: 30px auto;
+  margin: 50px auto;
   padding: 0;
 }
 
@@ -59,17 +57,4 @@
 
 .story-body .inline-cta {
   padding: 0 15px;
-}
-
-@media(min-width: 768px) {
-  .story-body > .float {
-    max-width: 1170px;
-    margin: 0 auto;
-  }
-
-  .story-body > .float > * {
-    margin: 30px;
-    float: right;
-    max-width: 300px;
-  }
 }

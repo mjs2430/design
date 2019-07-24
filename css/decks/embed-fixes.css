@@ -6,4 +6,5 @@
 .story-body twitter-widget {
   width: auto !important;
   max-width: 500px !important;
+  margin: 0 auto !important;
 }

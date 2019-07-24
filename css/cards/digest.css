@@ -8,12 +8,3 @@
   --bc: white;
   --bbc: #222;
 }
-
-.digest.flush .package {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.digest.flush + .more-link {
-  margin-top: 0;
-}
