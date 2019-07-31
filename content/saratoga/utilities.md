@@ -1,14 +1,16 @@
 ---
 title: utilities
 description: Utility typography classes.
-menu: molecule
----
+menu:
+  molecule: {}
 
+---
 In most occasions, we tried to keep all styles localized to their atom, molecule or card. There are, however, slight variations that do not require an additional molecule or card. For those occasions, these utlity classes are available.
 
-*Note: This code should stay at the bottom of the molecules file so that packages can be cleanly overloaded.*
+_Note: This code should stay at the bottom of the molecules file so that packages can be cleanly overloaded._
 
 #### CSS
+
 ```css
 summary, .summary {
   font: 400 14px/1.5em "McClatchy Sans", sans-serif;
@@ -16,6 +18,10 @@ summary, .summary {
 
 .small {
   font: 400 11px/1.5em "McClatchy Sans", sans-serif;
+}
+
+.niche {
+  font: 400 13px/1.3em;
 }
 
 .caps {
