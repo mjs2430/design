@@ -1,0 +1,32 @@
+{{ define "head" }}
+<link rel="stylesheet" href="/css/style-guide.css">
+{{ end }}
+
+{{ define "content" }}
+<div class="panels">
+  <div class="paper details" style="padding: 30px;">
+    <h2 class="page-header">
+      {{- .Title }}
+    </h2>
+    {{ .Content }}
+  </div>
+
+  {{ $cp := . }}
+  <div class="paper digest list">
+    <div class="email">
+      <div class="label">
+        <h5>EMAIL</h5>
+      </div>
+      {{ range .Site.Menus.email }}
+      {{ $active := $cp.IsMenuCurrent "cards" . }}
+      <div class="package {{- if $active }} active{{ end }}">
+        <h4 class="sans bold">
+          <a class="{{ .Page.Param "class" }}" href="{{ .Page.Permalink }}">{{ .Name }}</a>
+        </h4>
+        <p class="summary">{{ .Page.Description }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}
