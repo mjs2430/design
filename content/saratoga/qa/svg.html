@@ -1,0 +1,192 @@
+---
+title: "SVG filters"
+layout: deck
+---
+
+<style>
+
+.bw-css {filter: grayscale(1); }
+.bwr {filter: url("#bwr")}
+.bwg {filter: url("#bwg")}
+.bwb {filter: url("#bwb")}
+.bwmix {filter: url("#bwmix")}
+.green {filter: url("#green")}
+.poster {filter: url("#poster")}
+.duotone {filter: url("#duotone")}
+.dilate {filter: url("#dilate")}
+.erode {filter: url("#erode")}
+
+article {
+  margin-top: 0;
+}
+
+article:before,
+article:after {
+  content: "";
+  display: table;
+}
+
+h2 {
+  --ht: none;
+  font-family: monospace;
+}
+
+.grid {
+  max-width: 100%;
+  margin: 30px auto;
+}
+
+.grid img,
+.grid figcaption {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+</style>
+
+<div class="paper">
+  <article class="story-body">
+    <h1>SVG Filters</h1>
+    <p>Sara Soueidan spoke about these in the An Event Apart conference and I wanted to showcase some of what she was talking about and how we might use these ideas. What SVG filters can do, is provide Photoshop-like techniques to any element in HTML. They are very weird and it's probably overkill for a single image. On the other hand, if we want to apply these effects to all images for a project, we can do so programmatically without changing the newsroom workflow at all. We might not want to do this ever, but the possibility is cool.</p>
+
+    <h2>&lt;feColorMatrix&gt;</h2>
+    <p>As a simple example, let's pretend that we want to make all images for a project black and white. Sure, we could do this with the CSS grayscale() filter like so.</p>
+
+    <div class="grid">
+      <figure>
+        <img src="/img/lanterns.jpg">
+        <figcaption>Cool picture of lanterns.</figcaption>
+      </figure>
+      <figure>
+        <img class="bw-css" src="/img/lanterns.jpg">
+        <figcaption>This is using the CSS filter technique.</figcaption>
+      </figure>
+    </div>
+
+    <p>But, with SVG we have control over each RGB and alpha channel and can apply the same technique of a colored filter over the lens.</p>
+
+    <div class="grid">
+      <figure>
+        <img class="bwr" src="/img/lanterns.jpg">
+        <figcaption>This places all the alpha on the red channel.</figcaption>
+      </figure>
+      <figure>
+        <img class="bwg" src="/img/lanterns.jpg">
+        <figcaption>This places all the alpha on the green channel.</figcaption>
+      </figure>
+      <figure>
+        <img class="bwb" src="/img/lanterns.jpg">
+        <figcaption>This places all the alpha on the blue channel.</figcaption>
+      </figure>
+    </div>
+
+    <p>You can also mix and match or create duotone effects.</p>
+
+    <div class="grid">
+      <figure>
+        <img class="bwmix" src="/img/lanterns.jpg">
+        <figcaption>This has 100% of the red channel and 50% of the blue channel bringing back in the sky.</figcaption>
+      </figure>
+      <figure>
+        <img class="green" src="/img/lanterns.jpg">
+        <figcaption>This is using 100% of the green channel and 50% of the blue channel.</figcaption>
+      </figure>
+    </div>
+
+    <h2>&lt;feMorphology&gt;</h2>
+    <p>This lets us dilate or erode pixels based on a configurable radius, creating a painting effect.</p>
+
+    <div class="grid">
+      <figure>
+        <img class="dilate" src="/img/lanterns.jpg">
+        <figcaption>Dilating sets each pixel to its lightest least transparent neighbor.</figcaption>
+      </figure>
+      <figure>
+        <img class="erode" src="/img/lanterns.jpg">
+        <figcaption>Eroding sets each pixel to its darkest most transparent neighbor.</figcaption>
+      </figure>
+    </div>
+
+    <h2>&lt;feComponentTransfer&gt;</h2>
+    <p>This primitive manipulates each pixel in a few ways. The sample she provided was remapping colors to ranges, so each pixel gets assigned a new value according to where it falls in the range. This creates a poster effect. If you combine this filter with feColorMatrix, you can remap black to one color and white to another making a duotone effect.</p>
+
+    <div class="grid">
+      <figure>
+        <img class="poster" src="/img/lanterns.jpg">
+        <figcaption>Each pixel is being remapped to it's closest match.</figcaption>
+      </figure>
+      <figure>
+        <img class="duotone" src="/img/lanterns.jpg">
+        <figcaption>This is using a combination of filters that first turns the image black and white, then remaps the grays to a pink or yellow color.</figcaption>
+      </figure>
+    </div>
+  </article>
+</div>
+
+<svg>
+  <filter id="bwr">
+    <feColorMatrix 
+      type="matrix" 
+      values="1 0 0 0 0
+              1 0 0 0 0
+              1 0 0 0 0
+              1 0 0 1 0"/>
+  </filter>
+  <filter id="bwg">
+    <feColorMatrix 
+      type="matrix" 
+      values="0 1 0 0 0
+              0 1 0 0 0
+              0 1 0 0 0
+              0 1 0 1 0"/>
+  </filter>
+  <filter id="bwb">
+    <feColorMatrix 
+      type="matrix" 
+      values="0 0 1 0 0
+              0 0 1 0 0
+              0 0 1 0 0
+              0 0 1 1 0"/>
+  </filter>
+  <filter id="bwmix">
+    <feColorMatrix 
+      type="matrix" 
+      values="1 0 0.5 0 0
+              1 0 0.5 0 0
+              1 0 0.5 0 0
+              1 0 1 1 0"/>
+  </filter>
+  <filter id="green">
+    <feColorMatrix 
+      type="matrix" 
+      values="0 0 0 0 0
+              0 1 0 0 0
+              0 0 .5 0 0
+              0 0 0 1 0"/>
+  </filter>
+  <filter id="poster">
+    <feComponentTransfer>
+      <feFuncR type="discrete" tableValues="0 .5 1"/>
+      <feFuncG type="discrete" tableValues="0 .5 1"/>
+      <feFuncB type="discrete" tableValues="0 1 1"/>
+    </feComponentTransfer>
+  </filter>
+  <filter id="duotone">
+    <feColorMatrix type="matrix" values="
+      1 0 0 0 0
+      1 0 0 0 0
+      1 0 0 0 0
+      0 0 0 1 0" />
+    <feComponentTransfer>
+      <feFuncR type="table" tableValues=".996078431 .984313725" />
+      <feFuncG type="table" tableValues=".125490196 .941176471" />
+      <feFuncB type="table" tableValues=".552941176 .478431373" />
+    </feComponentTransfer>
+  </filter>
+  <filter id="dilate">
+    <feMorphology operator="dilate" radius="2" />
+  </filter>
+  <filter id="erode">
+    <feMorphology operator="erode" radius="2" />
+  </filter>
+</svg>
