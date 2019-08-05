@@ -8,7 +8,7 @@ fields:
   hidden: false
   default: ''
   config:
-    required: true
+    required: false
 - name: description
   label: Description
   type: textarea
@@ -16,13 +16,13 @@ fields:
   default: ''
   description: Used for the list page.
   config:
-    required: true
+    required: false
 - type: text
   name: menu
   label: Sub Menu
   description: Should be atom, molecule, cards or decks
   config:
-    required: true
+    required: false
 pages:
 - content/saratoga/label.md
 - content/saratoga/h1.md
