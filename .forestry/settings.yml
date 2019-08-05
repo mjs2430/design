@@ -30,7 +30,7 @@ build:
   - HUGO_VERSION=0.55.6
   publish_env:
   - HUGO_ENV=production
-  - HUGO_VERSION=0.53
+  - HUGO_VERSION=0.55.6
   preview_output_directory: public
   output_directory: public
   instant_preview_command: hugo server --baseURL $DEPLOY_URL -D -E -F --port 8080
