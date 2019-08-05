@@ -9,10 +9,6 @@ fields:
   default: ''
   config:
     required: true
-- type: text
-  name: function
-  label: Function Title
-  description: Term used for designers.
 - name: description
   label: Description
   type: textarea
@@ -22,14 +18,11 @@ fields:
   config:
     required: true
 - type: text
-  name: level
-  label: Level
-  description: Should be atom, molecule or organism
+  name: menu
+  label: Sub Menu
+  description: Should be atom, molecule, cards or decks
   config:
     required: true
-- type: boolean
-  name: updated
-  label: Recently Updated
 pages:
 - content/saratoga/label.md
 - content/saratoga/h1.md
