@@ -23,11 +23,6 @@
   </url>
   
   <url>
-    <loc>https://mcclatchy.github.io/design/saratoga/qa/maps/</loc>
-    <lastmod>2019-05-31T10:29:39-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mcclatchy.github.io/design/saratoga/decks/e-edition/</loc>
     <lastmod>2019-05-22T10:07:15-05:00</lastmod>
   </url>
@@ -67,7 +62,16 @@
   </url>
   
   <url>
+    <loc>https://mcclatchy.github.io/design/email/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mcclatchy.github.io/design/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mcclatchy.github.io/design/saratoga/editor/</loc>
   </url>
   
   <url>
@@ -100,6 +104,10 @@
   
   <url>
     <loc>https://mcclatchy.github.io/design/saratoga/digest/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mcclatchy.github.io/design/email/sample/</loc>
   </url>
   
   <url>
