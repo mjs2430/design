@@ -5,17 +5,6 @@ layout: deck
 
 <style>
 
-.bw-css {filter: grayscale(1); }
-.bwr {filter: url("#bwr")}
-.bwg {filter: url("#bwg")}
-.bwb {filter: url("#bwb")}
-.bwmix {filter: url("#bwmix")}
-.green {filter: url("#green")}
-.poster {filter: url("#poster")}
-.duotone {filter: url("#duotone")}
-.dilate {filter: url("#dilate")}
-.erode {filter: url("#erode")}
-
 article {
   margin-top: 0;
 }
@@ -40,6 +29,44 @@ h2 {
 .grid figcaption {
   padding-left: 0 !important;
   padding-right: 0 !important;
+  max-width: unset;
+}
+
+.big {
+  font: 900 60px/1em "McClatchy Sans";
+  margin: 0;
+  padding: 15px 0 5px;
+}
+
+
+.bw-css {filter: grayscale(1); }
+.bwr {filter: url("#bwr")}
+.bwg {filter: url("#bwg")}
+.bwb {filter: url("#bwb")}
+.bwmix {filter: url("#bwmix")}
+.green {filter: url("#green")}
+.poster {filter: url("#poster")}
+.duotone {filter: url("#duotone")}
+.old {filter: url("#old")}
+.dilate {filter: url("#dilate")}
+.erode {filter: url("#erode")}
+.cutout {
+  filter: url("#cutout");
+  font-style: italic;
+  letter-spacing: 6px;
+}
+.speed { filter: url("#speed"); }
+.spotlight { filter: url("#spotlight"); }
+.texture {
+  filter: url("#texture");
+  font-size: 12vw;
+  font-weight: 900;
+  font-style: italic;
+  font-family: "McClatchy Sans";
+  text-align: center;
+  padding: 45px 0;
+  margin: 20px auto;
+  max-width: 1020px;
 }
 
 </style>
@@ -48,6 +75,8 @@ h2 {
   <article class="story-body">
     <h1>SVG Filters</h1>
     <p>Sara Soueidan spoke about these in the An Event Apart conference and I wanted to showcase some of what she was talking about and how we might use these ideas. What SVG filters can do, is provide Photoshop-like techniques to any element in HTML. They are very weird and it's probably overkill for a single image. On the other hand, if we want to apply these effects to all images for a project, we can do so programmatically without changing the newsroom workflow at all. We might not want to do this ever, but the possibility is cool.</p>
+
+    <h3>Images</h3>
 
     <h2>&lt;feColorMatrix&gt;</h2>
     <p>As a simple example, let's pretend that we want to make all images for a project black and white. Sure, we could do this with the CSS grayscale() filter like so.</p>
@@ -63,7 +92,7 @@ h2 {
       </figure>
     </div>
 
-    <p>But, with SVG we have control over each RGB and alpha channel and can apply the same technique of a colored filter over the lens.</p>
+    <p>But, with SVG we have control over each RGB and alpha channel and can apply a similar technique as a colored filter over the lens.</p>
 
     <div class="grid">
       <figure>
@@ -80,7 +109,7 @@ h2 {
       </figure>
     </div>
 
-    <p>You can also mix and match or create duotone effects.</p>
+    <p>You can also mix and match or create a mix color effect.</p>
 
     <div class="grid">
       <figure>
@@ -108,7 +137,7 @@ h2 {
     </div>
 
     <h2>&lt;feComponentTransfer&gt;</h2>
-    <p>This primitive manipulates each pixel in a few ways. The sample she provided was remapping colors to ranges, so each pixel gets assigned a new value according to where it falls in the range. This creates a poster effect. If you combine this filter with feColorMatrix, you can remap black to one color and white to another making a duotone effect.</p>
+    <p>This primitive manipulates each pixel in a few ways. The sample she provided was remapping colors to ranges, so each pixel gets assigned a new value according to where it falls in the range. This creates a poster effect. If you combine this filter with feColorMatrix, you can remap black to one color and white to another making a duotone effect. If you studied this one quite a bit, this is the same type of functionality that Instagram uses for it's filters.</p>
 
     <div class="grid">
       <figure>
@@ -117,13 +146,44 @@ h2 {
       </figure>
       <figure>
         <img class="duotone" src="/img/lanterns.jpg">
-        <figcaption>This is using a combination of filters that first turns the image black and white, then remaps the grays to a pink or yellow color.</figcaption>
+        <figcaption>This is using a combination of filters that first turns the image into a funky blue-yellow, then remaps the grays to a pink or yellow color.</figcaption>
+      </figure>
+      <figure>
+        <img class="old" src="/img/lanterns.jpg">
+        <figcaption>This is an Instagram-like photo filter.</figcaption>
+    </div>
+
+    <h3>Text</h3>
+    <p>The above filters would work on text too, but they wouldn't do anything. Color manipulation is only the tip of the iceberg. There are primitives for blur effects, displacement maps, and a slew of others.</p>
+
+    <div class="grid">
+      <figure>
+        <h1 class="big">Standard</h1>
+        <figcaption>A normal headline using McClatchy Sans at full weight.</figcaption>
+      </figure>
+      <figure>
+        <div>
+          <h1 class="big cutout">SLICED</h1>
+        </div>
+        <figcaption>A headline in McClatchy Sans with a stroke applied using dilate.</figcaption>
+      </figure>
+      <figure>
+        <h1 class="big speed">SPEED</h1>
+        <figcaption>A headline with a blur on the x-axis only.</figcaption>
+      </figure>
+      <figure>
+        <h1 class="big spotlight">Spotlight</h1>
+        <figcaption>A headline with a lighting effect applied.</figcaption>
       </figure>
     </div>
+
+    <p>A displacement map takes texture from a background image and adjusts the text to match. Then you can composite both to create the effect of the text being painted on the texture, much like blend modes in Photoshop.</p>
+
+    <h1 class="texture">Displace</h1>
   </article>
 </div>
 
-<svg>
+<svg xmlns="http://www.w3.org/2000/svg" height="0" width="0" style="display: block">
   <filter id="bwr">
     <feColorMatrix 
       type="matrix" 
@@ -173,9 +233,9 @@ h2 {
   </filter>
   <filter id="duotone">
     <feColorMatrix type="matrix" values="
-      1 0 0 0 0
-      1 0 0 0 0
-      1 0 0 0 0
+      1.5 0 0 0 0
+      1.5 0 0 0 0
+      0 0 0 .5 0
       0 0 0 1 0" />
     <feComponentTransfer>
       <feFuncR type="table" tableValues=".996078431 .984313725" />
@@ -183,10 +243,47 @@ h2 {
       <feFuncB type="table" tableValues=".552941176 .478431373" />
     </feComponentTransfer>
   </filter>
+  <filter id="old">
+    <feColorMatrix type="matrix" values="
+      1 0 0 0 0
+      0 2 0 0 0
+      0 0 0 .5 0
+      0 0 0 1 0" />
+  </filter>
   <filter id="dilate">
     <feMorphology operator="dilate" radius="2" />
   </filter>
   <filter id="erode">
     <feMorphology operator="erode" radius="2" />
+  </filter>
+  <filter id="cutout">
+    <feMorphology operator="dilate" radius="4" result="stroke" />
+    <feComposite operator="out" in="stroke" in2="SourceGraphic" />
+  </filter>
+  <filter id="speed">
+    <feGaussianBlur stdDeviation="6 0" />
+  </filter>
+  <filter id="spotlight" filterUnits="userSpaceOnUse">
+    <feSpecularLighting lighting-color="blue" specularExponent="10" specularConstant="2" result="light">
+      <feSpotLight z="60" pointsAtX="10" pointsAtY="10" limitingConeAngle="60"/>
+    </feSpecularLighting>
+    <feComposite in="SourceGraphic" in2="light" operator="out"/>
+  </filter>
+  <filter id="texture" filterUnits="objectBoundingBox" x="0" y="0" height="100%" width="100%">
+    <feImage xlink:href="../towel.jpg" preserveAspectRatio="none" result="bg" />
+    <feColorMatrix type="saturate" values="0" result="bwtowel" />
+    <feGaussianBlur in="bwtowel" stdDeviation=".5" result="map" />
+    <feDisplacementMap in="SourceGraphic" in2="map" scale="15" xChannelSelector="R" yChannelSelector="R" result="texturedText" />
+    <feColorMatrix in="texturedText" out="texturedText2" type="matrix" values="
+      1 0 0 1 0
+      0 0 0 0 0
+      0 0 0 0 0
+      0 0 0 .8 0" />
+    <feBlend in="bg" in2="texturedText2" mode="multiply" result="blend" />
+    <feMerge>
+      <feMergeNode in="bg" />
+      <feMergeNode in="blend" />
+    </feMerge>
+
   </filter>
 </svg>
