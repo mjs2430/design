@@ -1,0 +1,18 @@
+.upper-nav {
+  display: flex;
+  position: relative;
+  z-index: 11;
+}
+
+.upper-nav .tab {
+  padding: 10px 30px;
+}
+
+.upper-nav .tab img {
+  display: block;
+  height: 15px;
+}
+
+.upper-nav .subpub {
+  background-color: white;
+}
