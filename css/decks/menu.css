@@ -28,7 +28,9 @@
 }
 
 .main-nav button,
-.main-nav a {
+.main-nav a,
+.main-nav .search,
+.main-nav .option-label {
   width: 100%;
   box-sizing: border-box;
   padding: 15px 30px 15px 25px;
@@ -44,7 +46,8 @@
   background-color: #222;
 }
 
-.main-nav a {
+.main-nav a,
+.main-nav .option-label {
   display: block;
 }
 
@@ -64,7 +67,8 @@
 }
 
 .main-nav .expander.open,
-.main-nav .expander.open + div a {
+.main-nav .expander.open + div a,
+.main-nav .option-label {
   background-color: #222;
   border-color: #fff;
 }
@@ -73,3 +77,50 @@
   border: .5px solid white;
   margin: 30px 0;
 }
+
+.main-nav .search {
+  background-color: #5f5f5f;
+  height: 58px;
+}
+
+.main-nav .search form {
+  border-bottom: 1px solid white;
+  width: 100%;
+  display: none;
+}
+
+.main-nav .search.open form {
+  display: flex;
+}
+
+.main-nav .search.open > :not(form) {
+  display: none;
+}
+
+.main-nav .search input {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding-left: 0px;
+  margin: 0;
+  flex: 1;
+  outline: none;
+}
+
+.main-nav .search ::placeholder {
+  color: white;
+}
+
+.main-nav .search button {
+  padding: 0;
+  width: auto;
+}
+
+.main-nav .search form svg {
+  height: 12px;
+}
+
+.main-nav .search button:hover {
+  background-color: unset;
+}
+

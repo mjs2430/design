@@ -49,6 +49,7 @@
     <link rel="stylesheet" href="../../css/cards/section-nav.css">
     <link rel="stylesheet" href="../../css/cards/modals.css">
     <link rel="stylesheet" href="../../css/cards/inline-cta.css">
+    <link rel="stylesheet" href="../../css/cards/upper-nav.css">
 
     
     <link rel="stylesheet" href="../../css/site.css">
@@ -107,7 +108,7 @@ Click the hamburger menu in the flag to open it.</em></p>
 
 <h4 id="html">HTML</h4>
 
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">id</span>=<span style="color:#00f">&#34;main-nav&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;main-nav sans summary impact&#34;</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">id</span>=<span style="color:#00f">&#34;main-nav&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;main-nav sans summary impact open&#34;</span>&gt;
   &lt;<span style="color:#000080;font-weight:bold">button</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary flex&#34;</span> <span style="color:#f00">onclick</span>=<span style="color:#00f">&#34;closeNavigation()&#34;</span>&gt;
     &lt;<span style="color:#000080;font-weight:bold">svg</span> <span style="color:#f00">xmlns</span>=<span style="color:#00f">&#34;http://www.w3.org/2000/svg&#34;</span> <span style="color:#f00">viewBox</span>=<span style="color:#00f">&#34;0 0 352 512&#34;</span>&gt;&lt;<span style="color:#000080;font-weight:bold">path</span> <span style="color:#f00">d</span>=<span style="color:#00f">&#34;M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z&#34;</span> <span style="color:#f00">fill</span>=<span style="color:#00f">&#34;white&#34;</span>/&gt;&lt;/<span style="color:#000080;font-weight:bold">svg</span>&gt;
     &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;h5 icon-label&#34;</span>&gt;SECTIONS&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
@@ -115,16 +116,26 @@ Click the hamburger menu in the flag to open it.</em></p>
   &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;
     &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;https://www.kansascity.com/wps/build/images/widgets/navigation/eedition-logo-white.svg&#34;</span>&gt;
   &lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;search flex&#34;</span> <span style="color:#f00">onclick</span>=<span style="color:#00f">&#34;this.classList.add(&#39;open&#39;)&#34;</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">svg</span> <span style="color:#f00">xmlns</span>=<span style="color:#00f">&#34;http://www.w3.org/2000/svg&#34;</span> <span style="color:#f00">viewBox</span>=<span style="color:#00f">&#34;0 0 512 512&#34;</span>&gt;&lt;<span style="color:#000080;font-weight:bold">path</span> <span style="color:#f00">d</span>=<span style="color:#00f">&#34;M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z&#34;</span>/&gt;&lt;/<span style="color:#000080;font-weight:bold">svg</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;h5 icon-label soft&#34;</span>&gt;Search&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">form</span> <span style="color:#f00">action</span>=<span style="color:#00f">&#34;#&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;flex&#34;</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">input</span> <span style="color:#f00">type</span>=<span style="color:#00f">&#34;text&#34;</span> <span style="color:#f00">name</span>=<span style="color:#00f">&#34;q&#34;</span> <span style="color:#f00">placeholder</span>=<span style="color:#00f">&#34;Search&#34;</span> <span style="color:#f00">aria-label</span>=<span style="color:#00f">&#34;&#34;</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">button</span> <span style="color:#f00">type</span>=<span style="color:#00f">&#34;submit&#34;</span> <span style="color:#f00">aria-label</span>=<span style="color:#00f">&#34;Search&#34;</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">svg</span> <span style="color:#f00">xmlns</span>=<span style="color:#00f">&#34;http://www.w3.org/2000/svg&#34;</span> <span style="color:#f00">viewBox</span>=<span style="color:#00f">&#34;0 0 448 512&#34;</span>&gt;&lt;<span style="color:#000080;font-weight:bold">path</span> <span style="color:#f00">d</span>=<span style="color:#00f">&#34;M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z&#34;</span>/&gt;&lt;/<span style="color:#000080;font-weight:bold">svg</span>&gt;
+      &lt;/<span style="color:#000080;font-weight:bold">button</span>&gt;
+    &lt;/<span style="color:#000080;font-weight:bold">form</span>&gt;
+  &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
   &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;Home&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
   &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;subsection&#34;</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">button</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary expander&#34;</span> <span style="color:#f00">onclick</span>=<span style="color:#00f">&#34;this.classList.toggle(&#39;open&#39;)&#34;</span>&gt;News&lt;/<span style="color:#000080;font-weight:bold">button</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">button</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary expander open&#34;</span> <span style="color:#f00">onclick</span>=<span style="color:#00f">&#34;this.classList.toggle(&#39;open&#39;)&#34;</span>&gt;News&lt;/<span style="color:#000080;font-weight:bold">button</span>&gt;
     &lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
       &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;Subsection 1&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
       &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;Subsection 2&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
       &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;Subsection 3&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
       &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;Subsection 4&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
       &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;Subsection 5&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-      &lt;<span style="color:#000080;font-weight:bold">span</span>&gt;Blogs &amp;amp; columns&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;option-label&#34;</span>&gt;Blogs &amp;amp; columns&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
       &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;Subsection 1&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
       &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;Subsection 2&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
       &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;Subsection 3&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
@@ -365,6 +376,14 @@ Click the hamburger menu in the flag to open it.</em></p>
         <a class="" href="https://mcclatchy.github.io/design/saratoga/transparency/">transparency</a>
       </h4>
       <p class="summary">Provides story background information.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mcclatchy.github.io/design/saratoga/upper-nav/">upper-nav</a>
+      </h4>
+      <p class="summary">Top tab navigation used in niche verticals.</p>
     </div>
     
   </div>
