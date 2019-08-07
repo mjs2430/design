@@ -9,7 +9,7 @@ section.flag {
 }
 
 .flag .front {
-  z-index: 3;
+  z-index: 2;
 }
 
 .flag .top > * {
@@ -82,7 +82,7 @@ section.flag {
   opacity: 0;
   transform: translateY(-100%);
   transition: opacity .6s, transform .6s ease;
-  z-index: 2;
+  z-index: 1;
 }
 
 .flag.searching .front,
@@ -143,5 +143,4 @@ section.flag {
 .flag .submenu {
   padding: 0;
   justify-content: center;
-  z-index: 1;
 }
