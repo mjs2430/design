@@ -9,7 +9,7 @@ section.flag {
 }
 
 .flag .front {
-  z-index: 2;
+  z-index: 3;
 }
 
 .flag .top > * {
@@ -47,11 +47,17 @@ section.flag {
   justify-content: center;
 }
 
-.flag .bottom a {
+.flag .bottom a,
+.flag .submenu a {
   font-weight: 400;
   color: #757575;
   border-bottom: 3px solid transparent;
   padding-bottom: 12px;
+}
+
+.flag .bottom a:hover,
+.flag .submenu a:hover {
+  color: #222;
 }
 
 .flag .bottom a.active {
@@ -63,7 +69,8 @@ section.flag {
  * Search form
  */
 
-.flag .search {
+.flag .search,
+.flag .submenu {
   position: absolute;
   top: 100%;
   left: 0;
@@ -75,14 +82,16 @@ section.flag {
   opacity: 0;
   transform: translateY(-100%);
   transition: opacity .6s, transform .6s ease;
-  z-index: 1;
+  z-index: 2;
 }
 
-.flag.searching .front {
+.flag.searching .front,
+.flag.submenu-out .front {
   box-shadow: none;
 }
 
-.flag.searching .search {
+.flag.searching .search,
+.flag.submenu-out .submenu {
   opacity: 1;
   transform: translateY(0);
 }
@@ -125,4 +134,14 @@ section.flag {
 
 .flag .popout a:hover {
   background-color: #ddd;
+}
+
+/**
+ * Submenu for Sub Pubs
+ */
+
+.flag .submenu {
+  padding: 0;
+  justify-content: center;
+  z-index: 1;
 }
