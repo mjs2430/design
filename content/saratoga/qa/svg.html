@@ -48,7 +48,7 @@ h2 {
   font-style: italic;
   font-family: "McClatchy Sans";
   text-align: center;
-  padding: 45px 0;
+  padding: 0;
   margin: 20px auto;
   max-width: 1020px;
 }
@@ -206,9 +206,15 @@ h2 {
     <h1 class="huge splash">Splash</h1>
 
     <h3>Put a few things together</h3>
+
     <p>The last demo Sara showed was a combination of &lt;feTurbulence&gt; and &lt;feSpecularLighting&gt; to create a paper background. If we add this to the previous examples and a slab font, we can take any element and make it look like it was typed on paper.</p>
 
     <h1 class="huge typed">Typed</h1>
+
+    <h3>Conclusion</h3>
+
+    <p>This was a really fun part of the conference, and I saw some potential use cases for our company. Yeah, a lot of these are a bit on the cheesy side, but I want to keep studying to get better and find very subtle ways to use them. We can apply these to any story, they are very portable, and manipulate HTML and images that newsrooms could control. It's also possible to use them on CSS-generated content using ::before and ::after, which might come in handy for branded sections and stories like Influencers.</p>
+    </div>
 
   </article>
 </div>
@@ -351,12 +357,11 @@ h2 {
       <feDistantLight azimuth="50" elevation="58" />
     </feDiffuseLighting>
     <!-- make a map for the text -->
-    <feDisplacementMap in="SourceGraphic" in2="paper" scale="15" xChannelSelector="R" yChannelSelector="R" result="typed" />
-    <!-- Let's try to give the ink some reflection -->
+    <feDisplacementMap in="SourceGraphic" in2="paper" scale="15" xChannelSelector="R" yChannelSelector="R" result="ink" />
     <!-- put them together -->
     <feMerge>
       <feMergeNode in="paper" />
-      <feMergeNode in="typed" />
+      <feMergeNode in="ink" />
     </feMerge>
   </filter>
 </svg>
