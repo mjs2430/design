@@ -17,3 +17,9 @@ function toggleSearchForm() {
     d.classList.toggle("searching");
   });
 }
+
+function toggleSubMenu() {
+  document.querySelectorAll(".flag").forEach(d => {
+    d.classList.toggle("submenu-out");
+  });
+}
