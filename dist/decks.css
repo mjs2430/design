@@ -72,11 +72,17 @@ section.flag {
   justify-content: center;
 }
 
-.flag .bottom a {
+.flag .bottom a,
+.flag .submenu a {
   font-weight: 400;
   color: #757575;
   border-bottom: 3px solid transparent;
   padding-bottom: 12px;
+}
+
+.flag .bottom a:hover,
+.flag .submenu a:hover {
+  color: #222;
 }
 
 .flag .bottom a.active {
@@ -87,7 +93,8 @@ section.flag {
 /**
  * Search form
  */
-.flag .search {
+.flag .search,
+.flag .submenu {
   position: absolute;
   top: 100%;
   left: 0;
@@ -102,11 +109,13 @@ section.flag {
   z-index: 1;
 }
 
-.flag.searching .front {
+.flag.searching .front,
+.flag.submenu-out .front {
   box-shadow: none;
 }
 
-.flag.searching .search {
+.flag.searching .search,
+.flag.submenu-out .submenu {
   opacity: 1;
   transform: translateY(0);
 }
@@ -146,6 +155,14 @@ section.flag {
 
 .flag .popout a:hover {
   background-color: #ddd;
+}
+
+/**
+ * Submenu for Sub Pubs
+ */
+.flag .submenu {
+  padding: 0;
+  justify-content: center;
 }
 
 /**
@@ -253,7 +270,9 @@ section.flag {
 }
 
 .main-nav button,
-.main-nav a {
+.main-nav a,
+.main-nav .search,
+.main-nav .option-label {
   width: 100%;
   box-sizing: border-box;
   padding: 15px 30px 15px 25px;
@@ -269,7 +288,8 @@ section.flag {
   background-color: #222;
 }
 
-.main-nav a {
+.main-nav a,
+.main-nav .option-label {
   display: block;
 }
 
@@ -289,7 +309,8 @@ section.flag {
 }
 
 .main-nav .expander.open,
-.main-nav .expander.open + div a {
+.main-nav .expander.open + div a,
+.main-nav .option-label {
   background-color: #222;
   border-color: #fff;
 }
@@ -299,64 +320,56 @@ section.flag {
   margin: 30px 0;
 }
 
-/**
- * Ads for both
- */
-.ad-widget {
-  text-align: center;
+.main-nav .search {
+  background-color: #5f5f5f;
+  height: 58px;
 }
 
-.ad-widget iframe,
-.ad-widget .iframe {
-  display: block;
-  margin: 0 auto;
+.main-nav .search form {
+  border-bottom: 1px solid white;
+  width: 100%;
+  display: none;
+}
+
+.main-nav .search.open form {
+  display: flex;
+}
+
+.main-nav .search.open > :not(form) {
+  display: none;
+}
+
+.main-nav .search input {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding-left: 0px;
+  margin: 0;
+  flex: 1;
+  outline: none;
+}
+
+.main-nav .search ::placeholder {
+  color: white;
+}
+
+.main-nav .search button {
+  padding: 0;
+  width: auto;
+}
+
+.main-nav .search form svg {
+  height: 12px;
+}
+
+.main-nav .search button:hover {
+  background-color: unset;
 }
 
 /**
  * Story template
  */
-.story-template {
-  max-width: 1140px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 15px 0;
-}
-
-/* Body (rail version) */
-.story-body {
-  position: relative;
-  flex: 1 1 438px;
-}
-
-/* HTML needs to be scrubbed for the next three declarations */
-.story-body > .lead-item,
-.story-body > .ng_digital,
-.story-body > .inline-video {
-  max-width: 100%;
-  margin: 30px 0;
-  padding: 0;
-}
-
-.story-body .embed-media-details {
-  padding: 10px 15px 0;
-}
-
-.story-body .media-leadtext,
-.story-body .mi-video-bylines {
-  font: 14px/1.5em "McClatchy Sans", sans-serif;
-  color: #707070;
-  margin: 0;
-  display: inline-block;
-  padding-right: 0.5em;
-}
-
-/* Rail */
-.story-rail {
-  position: relative;
-  flex: 1 1 330px;
-}
-
+/* Mobile */
 .story-rail > * {
   margin: 30px 0;
 }
@@ -370,9 +383,46 @@ section.flag {
   margin-top: 0;
 }
 
-/** Several variants of inline assets could be cleaned */
+/* iPad and up */
 @media (min-width: 768px) {
-  .story-template figure img,
+  .story-template {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-column-gap: 15px;
+    padding-right: 15px;
+  }
+
+  /* Body (rail version) */
+  .story-body {
+    position: relative;
+  }
+
+  /* HTML needs to be scrubbed for the next three declarations */
+  .story-body > .lead-item,
+.story-body > .ng_digital,
+.story-body > .inline-video {
+    max-width: 100%;
+    margin: 30px 0;
+    padding: 0;
+  }
+
+  .story-body .embed-media-details {
+    padding: 10px 15px 0;
+  }
+
+  .story-body .media-leadtext,
+.story-body .mi-video-bylines {
+    font: 14px/1.5em "McClatchy Sans", sans-serif;
+    color: #707070;
+    margin: 0;
+    display: inline-block;
+    padding-right: 0.5em;
+  }
+
+  /** Several variants of inline assets could be cleaned */
+  .story-body figure img,
 .story-body .lead-item .video,
 .story-body .lead-item .picture,
 .story-body .ng_digital img,
@@ -381,12 +431,20 @@ section.flag {
     box-sizing: border-box;
   }
 
-  .story-rail {
-    flex-grow: 0;
-  }
-
   .story-body .transparency {
     margin: 0 15px;
+  }
+
+  /* Rail */
+  .story-rail > *,
+.story-rail .package,
+.story-rail figure img {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .story-rail .more-link {
+    padding: 0;
   }
 }
 /**
@@ -490,4 +548,14 @@ section[role=main] {
 
 .mi-sticky-player-info {
   --ht:none;
+}
+
+/**
+ * This file contains !important rules for embeds.
+ * It will invalidate AMP so do not include it in that build.
+ */
+.story-body twitter-widget {
+  width: auto !important;
+  max-width: 500px !important;
+  margin: 0 auto !important;
 }

@@ -14,9 +14,6 @@
   /* Button color and background color */
   --bc: #222;
   --bbc:transparent;
-  /* Colors */
-  /* --shasta: #5169B8; */
-  /* --dumbledore: #31409F; */
 }
 
 body {
@@ -510,6 +507,10 @@ summary, .summary {
   color: #707070;
 }
 
+.blue {
+  color: #31409F;
+}
+
 .error {
   color: #D63031;
 }
@@ -562,6 +563,19 @@ summary, .summary {
   position: relative;
   top: 0.15em;
   margin-left: 10px;
+}
+
+/**
+ * Ads for both
+ */
+.ad-widget {
+  text-align: center;
+}
+
+.ad-widget iframe,
+.ad-widget > div {
+  display: block;
+  margin: 0 auto;
 }
 
 /**
@@ -644,6 +658,10 @@ summary, .summary {
   padding: 0;
 }
 
+.story-body > .header + figure {
+  margin-top: 15px;
+}
+
 .story-body img,
 .story-body figcaption {
   max-width: 1140px;
@@ -658,10 +676,7 @@ summary, .summary {
 
 .story-body .ad-widget {
   margin: 50px auto;
-}
-
-.story-body > :last-child {
-  margin-bottom: 0;
+  padding: 0;
 }
 
 .story-body .dateline {
@@ -670,6 +685,10 @@ summary, .summary {
 
 .story-body .immersive {
   margin-top: 0;
+}
+
+.story-body .inline-cta {
+  padding: 0 15px;
 }
 
 /**
@@ -766,10 +785,23 @@ summary, .summary {
 }
 
 .author-card .thumb img {
-  max-width: 100%;
-  border-radius: 50%;
+  width: 100%;
 }
 
+@supports (object-fit: cover) {
+  .author-card .thumb {
+    position: relative;
+    padding-top: 100%;
+  }
+
+  .author-card .thumb img {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
 .author-card .social-media a {
   padding: 10px 15px 10px 0;
 }
@@ -892,6 +924,25 @@ summary, .summary {
   font: 600 48px "McClatchy Sans", sans-serif;
 }
 
+.upper-nav {
+  display: flex;
+  position: relative;
+  z-index: 11;
+}
+
+.upper-nav .tab {
+  padding: 10px 30px;
+}
+
+.upper-nav .tab img {
+  display: block;
+  height: 15px;
+}
+
+.upper-nav .subpub {
+  background-color: white;
+}
+
 /* Decks */
 /**
  * Display classes
@@ -967,11 +1018,17 @@ section.flag {
   justify-content: center;
 }
 
-.flag .bottom a {
+.flag .bottom a,
+.flag .submenu a {
   font-weight: 400;
   color: #757575;
   border-bottom: 3px solid transparent;
   padding-bottom: 12px;
+}
+
+.flag .bottom a:hover,
+.flag .submenu a:hover {
+  color: #222;
 }
 
 .flag .bottom a.active {
@@ -982,7 +1039,8 @@ section.flag {
 /**
  * Search form
  */
-.flag .search {
+.flag .search,
+.flag .submenu {
   position: absolute;
   top: 100%;
   left: 0;
@@ -997,11 +1055,13 @@ section.flag {
   z-index: 1;
 }
 
-.flag.searching .front {
+.flag.searching .front,
+.flag.submenu-out .front {
   box-shadow: none;
 }
 
-.flag.searching .search {
+.flag.searching .search,
+.flag.submenu-out .submenu {
   opacity: 1;
   transform: translateY(0);
 }
@@ -1041,6 +1101,14 @@ section.flag {
 
 .flag .popout a:hover {
   background-color: #ddd;
+}
+
+/**
+ * Submenu for Sub Pubs
+ */
+.flag .submenu {
+  padding: 0;
+  justify-content: center;
 }
 
 /**
@@ -1148,7 +1216,9 @@ section.flag {
 }
 
 .main-nav button,
-.main-nav a {
+.main-nav a,
+.main-nav .search,
+.main-nav .option-label {
   width: 100%;
   box-sizing: border-box;
   padding: 15px 30px 15px 25px;
@@ -1164,7 +1234,8 @@ section.flag {
   background-color: #222;
 }
 
-.main-nav a {
+.main-nav a,
+.main-nav .option-label {
   display: block;
 }
 
@@ -1184,7 +1255,8 @@ section.flag {
 }
 
 .main-nav .expander.open,
-.main-nav .expander.open + div a {
+.main-nav .expander.open + div a,
+.main-nav .option-label {
   background-color: #222;
   border-color: #fff;
 }
@@ -1192,4 +1264,50 @@ section.flag {
 .main-nav hr {
   border: 0.5px solid white;
   margin: 30px 0;
+}
+
+.main-nav .search {
+  background-color: #5f5f5f;
+  height: 58px;
+}
+
+.main-nav .search form {
+  border-bottom: 1px solid white;
+  width: 100%;
+  display: none;
+}
+
+.main-nav .search.open form {
+  display: flex;
+}
+
+.main-nav .search.open > :not(form) {
+  display: none;
+}
+
+.main-nav .search input {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding-left: 0px;
+  margin: 0;
+  flex: 1;
+  outline: none;
+}
+
+.main-nav .search ::placeholder {
+  color: white;
+}
+
+.main-nav .search button {
+  padding: 0;
+  width: auto;
+}
+
+.main-nav .search form svg {
+  height: 12px;
+}
+
+.main-nav .search button:hover {
+  background-color: unset;
 }
