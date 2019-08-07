@@ -74,6 +74,12 @@ h2 {
 .texture { filter: url("#texture")}
 .noise { filter: url("#noise")}
 .splash { filter: url("#splash")}
+.typed {
+  filter: url("#typed");
+  font-style: normal;
+  font-family: "McClatchy Slab";
+  font-weight: 500;
+}
 
 </style>
 
@@ -198,6 +204,11 @@ h2 {
     <p>You can apply this on text with a displacement map. The below example is making two different displacement maps for the same text on two different noise patterns.</p>
 
     <h1 class="huge splash">Splash</h1>
+
+    <h3>Put a few things together</h3>
+    <p>The last demo Sara showed was a combination of &lt;feTurbulence&gt; and &lt;feSpecularLighting&gt; to create a paper background. If we add this to the previous examples and a slab font, we can take any element and make it look like it was typed on paper.</p>
+
+    <h1 class="huge typed">Typed</h1>
 
   </article>
 </div>
@@ -330,6 +341,22 @@ h2 {
     <feMerge result="both">
       <feMergeNode in="map"/>
       <feMergeNode in="top2"/>
+    </feMerge>
+  </filter>
+
+  <filter id="typed" x="0" y="0" width="100%" height="100%">
+    <!-- makes the paper -->
+    <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="5" />
+    <feDiffuseLighting lighting-color="white" surfaceScale="2" result="paper">
+      <feDistantLight azimuth="50" elevation="58" />
+    </feDiffuseLighting>
+    <!-- make a map for the text -->
+    <feDisplacementMap in="SourceGraphic" in2="paper" scale="15" xChannelSelector="R" yChannelSelector="R" result="typed" />
+    <!-- Let's try to give the ink some reflection -->
+    <!-- put them together -->
+    <feMerge>
+      <feMergeNode in="paper" />
+      <feMergeNode in="typed" />
     </feMerge>
   </filter>
 </svg>
