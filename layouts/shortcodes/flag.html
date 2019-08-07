@@ -59,10 +59,6 @@
     </div>
     {{ end }}
   </div>
-  <form class="search paper">
-    <input type="text" name="q" placeholder="Search">
-    <button class="impact" type="submit">SUBMIT</button>
-  </form>
 
   {{- if eq $page "homepage" }}
   <div class="submenu icons paper">
@@ -70,5 +66,11 @@
     <a class="h5" href="#">LOL</a>
     <a class="h5" href="#">EN ESPAÑOL</a>
   </div>
-  {{ end }}
+  {{ end -}}
+
+  <form class="search paper">
+    <input type="text" name="q" placeholder="Search">
+    <button class="impact" type="submit">SUBMIT</button>
+  </form>
+
 </section>
