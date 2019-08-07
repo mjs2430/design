@@ -15,6 +15,10 @@ article:after {
   display: table;
 }
 
+article > div {
+  margin: 30px auto;
+}
+
 h2 {
   --ht: none;
   font-family: monospace;
@@ -38,6 +42,16 @@ h2 {
   padding: 15px 0 5px;
 }
 
+.huge {
+  font-size: 12vw;
+  font-weight: 900;
+  font-style: italic;
+  font-family: "McClatchy Sans";
+  text-align: center;
+  padding: 45px 0;
+  margin: 20px auto;
+  max-width: 1020px;
+}
 
 .bw-css {filter: grayscale(1); }
 .bwr {filter: url("#bwr")}
@@ -55,19 +69,11 @@ h2 {
   font-style: italic;
   letter-spacing: 6px;
 }
-.speed { filter: url("#speed"); }
-.spotlight { filter: url("#spotlight"); }
-.texture {
-  filter: url("#texture");
-  font-size: 12vw;
-  font-weight: 900;
-  font-style: italic;
-  font-family: "McClatchy Sans";
-  text-align: center;
-  padding: 45px 0;
-  margin: 20px auto;
-  max-width: 1020px;
-}
+.speed { filter: url("#speed")}
+.spotlight { filter: url("#spotlight")}
+.texture { filter: url("#texture")}
+.noise { filter: url("#noise")}
+.splash { filter: url("#splash")}
 
 </style>
 
@@ -177,9 +183,22 @@ h2 {
       </figure>
     </div>
 
+    <h2>&lt;feDisplacementMap&gt;</h2>
+
     <p>A displacement map takes texture from a background image and adjusts the text to match. Then you can composite both to create the effect of the text being painted on the texture, much like blend modes in Photoshop.</p>
 
-    <h1 class="texture">Displace</h1>
+    <h1 class="huge texture">Displace</h1>
+
+    <h2>&lt;feTurbulence&gt;</h2>
+
+    <p>Perlin noise is an algorithm that makes generated noise look more natural. On it's own it doesn't look like much, but when you combine it with the other primitives available you can do some fun stuff.</p>
+
+    <div class="noise" style="height: 150px;"></div>
+
+    <p>You can apply this on text with a displacement map. The below example is making two different displacement maps for the same text on two different noise patterns.</p>
+
+    <h1 class="huge splash">Splash</h1>
+
   </article>
 </div>
 
@@ -192,6 +211,7 @@ h2 {
               1 0 0 0 0
               1 0 0 1 0"/>
   </filter>
+
   <filter id="bwg">
     <feColorMatrix 
       type="matrix" 
@@ -200,6 +220,7 @@ h2 {
               0 1 0 0 0
               0 1 0 1 0"/>
   </filter>
+
   <filter id="bwb">
     <feColorMatrix 
       type="matrix" 
@@ -208,6 +229,7 @@ h2 {
               0 0 1 0 0
               0 0 1 1 0"/>
   </filter>
+
   <filter id="bwmix">
     <feColorMatrix 
       type="matrix" 
@@ -216,6 +238,7 @@ h2 {
               1 0 0.5 0 0
               1 0 1 1 0"/>
   </filter>
+
   <filter id="green">
     <feColorMatrix 
       type="matrix" 
@@ -224,6 +247,7 @@ h2 {
               0 0 .5 0 0
               0 0 0 1 0"/>
   </filter>
+
   <filter id="poster">
     <feComponentTransfer>
       <feFuncR type="discrete" tableValues="0 .5 1"/>
@@ -231,6 +255,7 @@ h2 {
       <feFuncB type="discrete" tableValues="0 1 1"/>
     </feComponentTransfer>
   </filter>
+  
   <filter id="duotone">
     <feColorMatrix type="matrix" values="
       1.5 0 0 0 0
@@ -243,6 +268,7 @@ h2 {
       <feFuncB type="table" tableValues=".552941176 .478431373" />
     </feComponentTransfer>
   </filter>
+
   <filter id="old">
     <feColorMatrix type="matrix" values="
       1 0 0 0 0
@@ -250,25 +276,31 @@ h2 {
       0 0 0 .5 0
       0 0 0 1 0" />
   </filter>
+
   <filter id="dilate">
     <feMorphology operator="dilate" radius="2" />
   </filter>
+
   <filter id="erode">
     <feMorphology operator="erode" radius="2" />
   </filter>
+
   <filter id="cutout">
     <feMorphology operator="dilate" radius="4" result="stroke" />
     <feComposite operator="out" in="stroke" in2="SourceGraphic" />
   </filter>
+
   <filter id="speed">
     <feGaussianBlur stdDeviation="6 0" />
   </filter>
+
   <filter id="spotlight" filterUnits="userSpaceOnUse">
     <feSpecularLighting lighting-color="blue" specularExponent="10" specularConstant="2" result="light">
       <feSpotLight z="60" pointsAtX="10" pointsAtY="10" limitingConeAngle="60"/>
     </feSpecularLighting>
     <feComposite in="SourceGraphic" in2="light" operator="out"/>
   </filter>
+  
   <filter id="texture" filterUnits="objectBoundingBox" x="0" y="0" height="100%" width="100%">
     <feImage xlink:href="../towel.jpg" preserveAspectRatio="none" result="bg" />
     <feColorMatrix type="saturate" values="0" result="bwtowel" />
@@ -284,6 +316,20 @@ h2 {
       <feMergeNode in="bg" />
       <feMergeNode in="blend" />
     </feMerge>
+  </filter>
 
+  <filter id="noise">
+    <feTurbulence type="fractalNoise" baseFrequency=".01" numOctaves="3"/>
+  </filter>
+
+  <filter id="splash">
+    <feTurbulence type="fractalNoise" baseFrequency=".1" numOctaves="1" seed="1" result="middle" />
+    <feDisplacementMap  in="SourceGraphic" in2="middle" scale="35" result="map"/>
+    <feTurbulence type="fractalNoise" baseFrequency=".3" numOctaves="1" seed="1" result="top"/>
+    <feDisplacementMap in="SourceGraphic" in2="top" scale="120" result="top2"/>
+    <feMerge result="both">
+      <feMergeNode in="map"/>
+      <feMergeNode in="top2"/>
+    </feMerge>
   </filter>
 </svg>
