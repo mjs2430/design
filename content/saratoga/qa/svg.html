@@ -86,7 +86,7 @@ h2 {
 <div class="paper">
   <article class="story-body">
     <h1>SVG Filters</h1>
-    <p>Sara Soueidan spoke about these in the An Event Apart conference and I wanted to showcase some of what she was talking about and how we might use these ideas. What SVG filters can do, is provide Photoshop-like techniques to any element in HTML. They are very weird and it's probably overkill for a single image. On the other hand, if we want to apply these effects to all images for a project, we can do so programmatically without changing the newsroom workflow at all. We might not want to do this ever, but the possibility is cool.</p>
+    <p>Sara Soueidan spoke about these in the An Event Apart conference and I wanted to showcase some of what she was talking about and how we might use these ideas. What SVG filters can do is provide Photoshop-like techniques to any element in HTML. They are very weird and it's probably overkill for a single image. On the other hand, if we want to apply these effects to all images for a project, we can do so programmatically without changing the newsroom workflow at all. We might not want to do this ever, but the possibility is cool.</p>
 
     <h3>Images</h3>
 
@@ -104,7 +104,7 @@ h2 {
       </figure>
     </div>
 
-    <p>But, with SVG we have control over each RGB and alpha channel and can apply a similar technique as a colored filter over the lens.</p>
+    <p>But, with SVG we have control over each RGB and alpha channel applying a similar technique as a colored filter over the lens.</p>
 
     <div class="grid">
       <figure>
@@ -121,16 +121,20 @@ h2 {
       </figure>
     </div>
 
-    <p>You can also mix and match or create a mix color effect.</p>
+    <p>You can also mix and match or create a mix color effect. If you studied this one quite a bit, this is the same type of functionality that Instagram uses for it's filters.</p>
 
     <div class="grid">
       <figure>
         <img class="bwmix" src="/img/lanterns.jpg">
-        <figcaption>This has 100% of the red channel and 50% of the blue channel bringing back in the sky.</figcaption>
+        <figcaption>This has 100% of the red channel and 50% of the blue channel bringing back in the sky and water a tad.</figcaption>
       </figure>
       <figure>
         <img class="green" src="/img/lanterns.jpg">
         <figcaption>This is using 100% of the green channel and 50% of the blue channel.</figcaption>
+      </figure>
+      <figure>
+        <img class="old" src="/img/lanterns.jpg">
+        <figcaption>This is an Instagram-like photo filter.</figcaption>
       </figure>
     </div>
 
@@ -149,7 +153,7 @@ h2 {
     </div>
 
     <h2>&lt;feComponentTransfer&gt;</h2>
-    <p>This primitive manipulates each pixel in a few ways. The sample she provided was remapping colors to ranges, so each pixel gets assigned a new value according to where it falls in the range. This creates a poster effect. If you combine this filter with feColorMatrix, you can remap black to one color and white to another making a duotone effect. If you studied this one quite a bit, this is the same type of functionality that Instagram uses for it's filters.</p>
+    <p>This primitive manipulates each pixel in a few ways. The sample she provided was remapping colors to ranges, so each pixel gets assigned a new value according to where it falls in the range. This creates a poster effect. If you combine this filter with feColorMatrix, you can remap black to one color and white to another making a duotone effect.</p>
 
     <div class="grid">
       <figure>
@@ -160,15 +164,12 @@ h2 {
         <img class="duotone" src="/img/lanterns.jpg">
         <figcaption>This is using a combination of filters that first turns the image into a funky blue-yellow, then remaps the grays to a pink or yellow color.</figcaption>
       </figure>
-      <figure>
-        <img class="old" src="/img/lanterns.jpg">
-        <figcaption>This is an Instagram-like photo filter.</figcaption>
     </div>
 
     <h3>Text</h3>
     <p>The above filters would work on text too, but they wouldn't do anything. Color manipulation is only the tip of the iceberg. There are primitives for blur effects, displacement maps, and a slew of others.</p>
 
-    <div class="grid">
+    <div class="grid" style="max-width: 800px">
       <figure>
         <h1 class="big">Standard</h1>
         <figcaption>A normal headline using McClatchy Sans at full weight.</figcaption>
@@ -319,20 +320,18 @@ h2 {
   </filter>
   
   <filter id="texture" filterUnits="objectBoundingBox" x="0" y="0" height="100%" width="100%">
+    <!-- load the towel --> 
     <feImage xlink:href="../towel.jpg" preserveAspectRatio="none" result="bg" />
-    <feColorMatrix type="saturate" values="0" result="bwtowel" />
-    <feGaussianBlur in="bwtowel" stdDeviation=".5" result="map" />
-    <feDisplacementMap in="SourceGraphic" in2="map" scale="15" xChannelSelector="R" yChannelSelector="R" result="texturedText" />
-    <feColorMatrix in="texturedText" out="texturedText2" type="matrix" values="
-      1 0 0 1 0
-      0 0 0 0 0
-      0 0 0 0 0
-      0 0 0 .8 0" />
-    <feBlend in="bg" in2="texturedText2" mode="multiply" result="blend" />
-    <feMerge>
-      <feMergeNode in="bg" />
-      <feMergeNode in="blend" />
-    </feMerge>
+    <!-- conver the towel to bw for displacement -->
+    <feColorMatrix type="saturate" values="0" />
+    <feGaussianBlur stdDeviation=".5" />
+    <feDisplacementMap in="SourceGraphic" scale="15" xChannelSelector="R" yChannelSelector="R" />
+    <feColorMatrix type="matrix" values="
+      1 0 0 0 0
+      0 1 0 0 0
+      0 0 1 0 0
+      0 0 0 .5 0" />
+    <feBlend in="bg" mode="multiply" />
   </filter>
 
   <filter id="noise">
