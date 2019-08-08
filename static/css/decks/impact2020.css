@@ -1,0 +1,16 @@
+.kicker {
+  color: white;
+  background-color: #373737;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: 500;
+}
+
+.impact .kicker {
+  color: #222;
+  background-color: white;
+}
+
+.immersive .title {
+  font-family: "McClatchy Sans";
+}
