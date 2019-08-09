@@ -1,6 +1,7 @@
 {{- $hide := .Get "hide" -}}
 {{- $class := .Get "class" -}}
-{{- $size := default "h3" (.Get "size") -}}
+{{- $headlineSize := default "h3" (.Get "headline-size") -}}
+{{- $kickerSize := default "h6" (.Get "kicker-size") -}}
 
 <article class="card {{ .Get "class" }}">
   {{- if not (in $hide "figure") }}
@@ -9,15 +10,15 @@
     <div class="label sticky"><h5 class="impact">READ NEXT</h5></div>
     {{- end }}
     <a href="https://mcclatchy.github.io/saratoga/food/205504249/">
-      <img src="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_640/0321%20cimk%20kuwata%2003022018%20s%20%284%29" srcset="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_1140/0321%20cimk%20kuwata%2003022018%20s%20%284%29 1140w"> 
+      <img src="https://www.kansascity.com/living/food-drink/come-into-my-kitchen/tl1ycf/picture205504244/ALTERNATES/LANDSCAPE_640/0321%20cimk%20kuwata%2003022018%20s%20%284%29" alt="Food on a table">
     </a>
   </figure>
   {{- end }}
   <div class="package">
     {{- if not (in $hide "kicker") }}
-    <a class="kicker h6" href="https://mcclatchy.github.io/saratoga/food/">FOOD</a>
+    <a class="kicker {{ $kickerSize }}" href="https://mcclatchy.github.io/saratoga/food/">FOOD</a>
     {{- end }}
-    {{ printf `<%s><a href="#">Hatch chiles bring heat and hearty flavor to New Mexican cuisine</a></%s>` $size $size | safeHTML }}
+    <h3 class="{{ $headlineSize }}"><a href="#">Hatch chiles bring heat and hearty flavor to New Mexican cuisine</a></h3>
     <time>March 16, 2018 11:33 am</time>
   </div>
 </article>

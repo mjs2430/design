@@ -1,0 +1,19 @@
+{{- $layout := default "no-img" (.Get "layout") -}}
+
+{{- if eq $layout "no-img" -}}
+
+<div class="package impact no-img">
+  <a class="kicker h5" href="#">ELECTIONS</a>
+  <h3 class="h2">Touting record fundraising haul, SC democrat's establishment endorsements pay off</h3>
+  <time>MARCH 16, 2018 11:33 AM</time>
+</div>
+
+{{- else if eq $layout "opinion" -}}
+
+<div class="package paper opinion">
+  <a class="kicker h5" href="#">OPINION</a>
+  <h3 class="h2">In a world of populist tyrants, this was still a good week for democracy</h3>
+  <p class="byline">By Markos Kounalakis</p>
+</div>
+
+{{- end }}
