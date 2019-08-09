@@ -47,10 +47,11 @@
 .no-img, 
 .opinion {
   padding-top: 30px;
+  min-height: 315px;
 }
 
 .card.fill .package {
-  background-image: linear-gradient(rgba(0,0,0,0.1) 50%, black 95%);
+  background-image: linear-gradient(rgba(0,0,0,0.1) 50%, black 90%);
 }
 
 .card.fill h3,
@@ -75,7 +76,7 @@
 .opinion {
   background-size: 100%;
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(0,0,0,0.1), black 65%),url(../../img/arrows-white.svg);
+  background-image: linear-gradient(rgba(0,0,0,0.1), black 75%),url(../../img/arrows-white.svg);
   background-position: top, top
 }
 
