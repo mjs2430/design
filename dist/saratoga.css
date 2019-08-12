@@ -1522,8 +1522,11 @@ section.flag {
   border: none;
   border-left: 5px solid transparent;
   border-radius: 0;
-  outline: none;
   cursor: pointer;
+}
+
+.main-nav:hover :focus {
+  outline: none;
 }
 
 .main-nav button:hover,
@@ -1589,7 +1592,6 @@ section.flag {
   padding-left: 0px;
   margin: 0;
   flex: 1;
-  outline: none;
 }
 
 .main-nav .search ::placeholder {
