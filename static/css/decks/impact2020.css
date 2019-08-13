@@ -6,6 +6,10 @@
   font-family: "McClatchy Sans", sans-serif;
 }
 
+.kicker:hover {
+  color: white;
+}
+
 .impact .kicker {
   color: #222;
   background-color: white;
