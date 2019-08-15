@@ -1,0 +1,41 @@
+---
+title: "Search"
+description: Search results page.
+menu: decks
+layout: deck
+---
+
+{{< flag page="homepage" >}}
+
+<section>
+  <form class="section-label flex search-form" action="#" role="search">
+    <input type="text" name="q" value="food">
+    <button class="button big impact" type="submit">SEARCH</button>
+  </form>
+</section>
+
+<section>
+  <h3 class="section-label sans soft">Showing <b>1-10</b> of <b>19918</b> results for <b>food</b>.</h3>
+  <div class="grid search-results">
+    {{< card >}}
+    {{< card >}}
+    <div class="ad-widget" data-type="gpt"></div>
+    {{< card >}}
+    {{< card >}}
+    {{< card >}}
+    {{< card >}}
+    {{< card >}}
+    <div class="ad-widget" data-type="gpt"></div>
+    {{< card >}}
+    {{< card >}}
+    {{< card >}}
+  </div>
+</section>
+
+<section class="mr-button">
+  <a class="button big impact" href="#page2">Load More</a>
+</section>
+
+<section class="ad-widget" data-type="gpt" data-size-map="leaderboard"></section>
+
+{{< footer >}}
