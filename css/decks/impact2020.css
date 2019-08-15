@@ -1,0 +1,101 @@
+.kicker {
+  color: white;
+  background-color: #373737;
+  font-weight: 500;
+  border-radius: unset;
+  font-family: "McClatchy Sans", sans-serif;
+}
+
+.kicker:hover {
+  color: white;
+}
+
+.impact .kicker {
+  color: #222;
+  background-color: white;
+}
+
+.immersive .kicker {
+  padding: 10px 30px 7px 30px;
+}
+
+.immersive .title {
+  font-family: "McClatchy Sans";
+}
+
+.immersive time {
+  font-size: 14px;
+}
+
+.package .kicker {
+  position: relative;
+  right: 15px;
+  padding: 5px 15px 2px 15px;
+}
+
+/**
+ * Fill option
+ */
+
+.card.fill img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
+.card.fill .package,
+.no-img, 
+.opinion {
+  padding-top: 30px;
+  min-height: 315px;
+}
+
+.card.fill .package {
+  background-image: linear-gradient(rgba(0,0,0,0.1) 50%, black 90%);
+}
+
+.card.fill h3,
+.package.no-img h3,
+.package.opinion h3 {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: flex-end;
+  font-size: 24px;
+}
+
+.card.fill time,
+.no-img time {
+  flex: none;
+}
+
+/**
+ * No Art option
+ */
+
+.no-img,
+.opinion {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0,0,0,0.1), black 75%),url(../../img/arrows-white.svg);
+  background-position: top, top
+}
+
+/**
+ * Opinion option
+ */
+
+.opinion {
+  background-image: linear-gradient(rgba(255,255,255,0.1), white 75%),url(../../img/arrows-dark.svg);
+}
+
+/**
+ * Inline Immersive option
+ */
+
+.inline-immersive .title {
+  font-size: 48px;
+}
