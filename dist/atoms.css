@@ -221,6 +221,10 @@ section {
   margin: 30px auto;
 }
 
+section.always-pad {
+  padding: 0 15px;
+}
+
 section.full-bleed {
   max-width: 100%;
   padding: 0;
