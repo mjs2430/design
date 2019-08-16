@@ -41,6 +41,7 @@
 .immersive .title {
 	font: 600 40px/1.2em "McClatchy Serif", serif;
 	text-transform: none;
+  --lhd: underline;
 }
 
 .immersive-summary {
