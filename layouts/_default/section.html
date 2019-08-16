@@ -1,0 +1,10 @@
+{{ define "content" }}
+<section class="grid">
+  {{ range .Pages }}
+  <a href="{{.Permalink}}" class="paper package">
+    <h3>{{.Title}}</h3>
+    <p class="summary">{{.Description}}</p>
+  </a>
+  {{ end }}
+</section>
+{{ end }}
