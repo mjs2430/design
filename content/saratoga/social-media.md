@@ -2,7 +2,6 @@
 title: "social-media"
 description: "Social media icon row for story pages."
 menu: "molecule"
-class: new
 ---
 
 A very small molecule, the icons are simply a center-justified flex row with optimal padding for all devices.

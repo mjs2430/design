@@ -2,7 +2,6 @@
 title: "menu"
 description: "Side menu panel tied to the hamburger."
 menu: cards
-class: new
 ---
 
 The slide-out menu is a fixed panel with internal scrolling. We used button elements to keep the DOM similar and have added a couple new custom properties to optimize this structure. 
