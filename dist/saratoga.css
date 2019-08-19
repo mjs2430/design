@@ -1252,8 +1252,13 @@ summary, .summary {
   }
 }
 .inline-cta {
+  text-align: left;
   --bc:white;
   --bbc: #222;
+}
+
+.inline-cta .h1 {
+  --hf: "McClatchy Serif", serif;
 }
 
 .impact .inline-cta {
@@ -1800,10 +1805,6 @@ section.flag {
 /**
  * Purple Tuesdays
  */
-section > h5:first-child {
-  margin-bottom: 15px;
-}
-
 /* Because the main section body is still wrapped by Bootstrap */
 .big-news > * {
   max-width: 1110px;
@@ -1818,35 +1819,14 @@ section > h5:first-child {
  * Unclean repeat of media breakpoint, but these are separate
  * from the core base template code.
  */
-.breaking-news-macro .breaking-title {
-  font-weight: 700;
-}
-
 @media (min-width: 690px) {
   .breaking-news-macro {
     margin: 0 15px;
   }
 }
-.newsletter-inline-macro {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-#newletter-inline-title {
-  padding-top: 0;
-}
-
-.inline-cta {
-  text-align: left;
-}
-
 .header .blog-branding .teaser .title {
   font-size: 22px;
   font-weight: 400;
-}
-
-section[role=main] {
-  overflow: hidden;
 }
 
 .mi-sticky-player-info {
@@ -1857,8 +1837,8 @@ section[role=main] {
  * This file contains !important rules for embeds.
  * It will invalidate AMP so do not include it in that build.
  */
-.story-body twitter-widget {
-  width: auto !important;
-  max-width: 500px !important;
-  margin: 0 auto !important;
-}
+/* .story-body twitter-widget { */
+/*   width: auto !important; */
+/*   max-width: 500px !important; */
+/*   margin: 0 auto !important; */
+/* } */
