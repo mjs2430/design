@@ -36,15 +36,15 @@ summary, .summary {
 }
 
 .gray {
-  color: #707070;
+  color: var(--tc, #707070);
 }
 
 .blue {
-  color: #31409F;
+  color: var(--tc, #31409F);
 }
 
 .error {
-  color: #D63031;
+  color: var(--tc, #D63031);
 }
 
 .underline {
