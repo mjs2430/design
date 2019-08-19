@@ -146,6 +146,7 @@
 .immersive .title {
   font: 600 40px/1.2em "McClatchy Serif", serif;
   text-transform: none;
+  --lhd:underline;
 }
 
 .immersive-summary {
@@ -227,6 +228,7 @@
   text-align: center;
   padding: 15px;
   color: var(--tc);
+  --hf: "McClatchy Serif", serif;
   --ht:none;
 }
 
