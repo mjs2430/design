@@ -9,6 +9,7 @@
 
 .author-card .thumb {
   max-width: 80px;
+  box-sizing: border-box;
 }
 
 .author-card .thumb img {

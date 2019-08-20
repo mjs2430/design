@@ -708,13 +708,13 @@ summary, .summary {
 
 .story-body .story-module,
 .story-body .embed-infographic {
-  padding: 0 15px;
+  /* padding: 0 15px; */
   margin: 30px auto;
 }
 
 .story-body .ad-widget {
   margin: 50px auto;
-  padding: 0;
+  /* padding: 0; */
 }
 
 .story-body .dateline {
@@ -725,10 +725,9 @@ summary, .summary {
   margin-top: 0;
 }
 
-.story-body .inline-cta {
-  padding: 0 15px;
-}
-
+/* .story-body .inline-cta { */
+/*   padding: 0 15px; */
+/* } */
 /**
  * Header package
  */
@@ -821,6 +820,7 @@ summary, .summary {
 
 .author-card .thumb {
   max-width: 80px;
+  box-sizing: border-box;
 }
 
 .author-card .thumb img {

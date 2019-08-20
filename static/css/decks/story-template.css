@@ -46,9 +46,21 @@
       padding: 10px 0 0;
     }
 
-    .story-body .inline-cta {
+    .story-body .transparency {
+      padding: 15px;
+    }
+
+    /* fixes issue in _global.scss */
+    .story-body .lead-item,
+    .story-template .story-body > .inline-video {
+      max-width: 100%;
       padding: 0;
     }
+
+
+    /* .story-body .inline-cta { */
+    /*   padding: 0; */
+    /* } */
 
     /* HTML needs to be scrubbed for the next three declarations */
 
@@ -97,6 +109,25 @@
 
     .story-rail .more-link {
       padding: 0;
+    }
+
+    /* Temporary inline video fixes */
+    .story-body .embed-media-details .media-leadtext {
+      padding: 10px 0 0;
+    }
+
+    .story-body .embed-media-details .media-leadtext {
+      font: 14px/1.5em "McClatchy Sans", sans-serif;
+      color: var(--tc, #707070);
+      margin: 0;
+    }
+
+    .story-body .embed-media-details > * {
+      display: inline;
+    }
+
+    .story-body .embed-media-details .bylines {
+      text-transform: uppercase;
     }
   }
 }
