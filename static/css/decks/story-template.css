@@ -18,6 +18,55 @@
   margin-top: 0;
 }
 
+/* Temporary inline video fixes */
+.story-body .embed-media-details .media-leadtext {
+  padding: 10px 0 0;
+}
+
+.story-body .embed-media-details .media-leadtext {
+  font: 14px/1.5em "McClatchy Sans", sans-serif;
+  color: var(--tc, #707070);
+  margin: 0;
+}
+
+.story-body .embed-media-details > * {
+  padding: 0;
+}
+
+.story-body .embed-media-details .bylines {
+  text-transform: uppercase;
+}
+
+#vendor-stories-content .h5 {
+  margin-bottom: 10px;
+}
+
+.story-rail #video-widget .footer {
+  padding: 0;
+}
+
+.story-body #zerg-target .vendor-storiescontent-main-container {
+  border: none;
+}
+
+.commenting-container {
+  --ld: none;
+  --lhd: none;
+  --lhc: #222;
+}
+
+.commenting-container .glyphicon-comment-o {
+  display: none;
+}
+
+.commenting-container .glyphicon-chevron-down:before {
+  content: "\f0d7";
+}
+
+.byline .ng_byline_name {
+  font-weight: bold;
+}
+
 /* iPad and up */
 
 @supports(display: grid) {
@@ -109,25 +158,6 @@
 
     .story-rail .more-link {
       padding: 0;
-    }
-
-    /* Temporary inline video fixes */
-    .story-body .embed-media-details .media-leadtext {
-      padding: 10px 0 0;
-    }
-
-    .story-body .embed-media-details .media-leadtext {
-      font: 14px/1.5em "McClatchy Sans", sans-serif;
-      color: var(--tc, #707070);
-      margin: 0;
-    }
-
-    .story-body .embed-media-details > * {
-      display: inline;
-    }
-
-    .story-body .embed-media-details .bylines {
-      text-transform: uppercase;
     }
   }
 }
