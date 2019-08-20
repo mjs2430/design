@@ -117,5 +117,12 @@
     .story-rail .more-link {
       padding: 0;
     }
+
+    /* Another overload */
+    .story .story-template .story-body>.embed-infographic, 
+    .story .story-template .story-body>.image-gallery-organism, 
+    .story .story-template .story-body>[id^=inlinegallery] {
+      width: unset;
+    }
   }
 }
