@@ -38,13 +38,11 @@
 
 .story-body .story-module,
 .story-body .embed-infographic {
-  padding: 0 15px;
   margin: 30px auto;
 }
 
 .story-body .ad-widget {
   margin: 50px auto;
-  padding: 0;
 }
 
 .story-body .dateline {
@@ -53,8 +51,4 @@
 
 .story-body .immersive {
   margin-top: 0;
-}
-
-.story-body .inline-cta {
-  padding: 0 15px;
 }

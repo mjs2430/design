@@ -26,6 +26,8 @@
   flex-direction: column;
 }
 
+/* Horizontal option */
+
 .card.horizontal {
   flex-direction: row;
 }
@@ -54,5 +56,30 @@
 }
 
 .card.horizontal .package time {
+  flex: none;
+}
+
+/* Fill option */
+
+.card.fill img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
+.card.fill .package {
+  min-height: 315px;
+  justify-content: flex-end;
+}
+
+.card.fill .package {
+  background-image: linear-gradient(rgba(0,0,0,0.1) 50%, black 90%);
+}
+
+.card.fill time {
   flex: none;
 }

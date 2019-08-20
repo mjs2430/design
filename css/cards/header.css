@@ -9,6 +9,7 @@
   text-align: center;
 	padding: 15px;
   color: var(--tc);
+  --hf: "McClatchy Serif", serif;
   --ht: none;
 }
 
@@ -25,4 +26,3 @@
 		text-align: left;
 	}
 }
-

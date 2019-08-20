@@ -2,10 +2,6 @@
  * Purple Tuesdays
  */
 
-section > h5:first-child {
-  margin-bottom: 15px;
-}
-
 /* Because the main section body is still wrapped by Bootstrap */
 .big-news > * {
   max-width: 1110px;
@@ -21,36 +17,15 @@ section > h5:first-child {
  * from the core base template code.
  */
 
-.breaking-news-macro .breaking-title {
-  font-weight: 700;
-}
-
 @media (min-width: 690px) {
   .breaking-news-macro {
     margin: 0 15px;
   }
 }
 
-.newsletter-inline-macro {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-#newletter-inline-title {
-  padding-top: 0;
-}
-
-.inline-cta {
-  text-align: left;
-}
-
 .header .blog-branding .teaser .title {
   font-size: 22px;
   font-weight: 400;
-}
-
-section[role="main"] {
-  overflow: hidden;
 }
 
 .mi-sticky-player-info {

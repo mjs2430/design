@@ -1,6 +1,11 @@
 .inline-cta {
+  text-align: left;
   --bc: white;
   --bbc: #222;
+}
+
+.inline-cta .h1 {
+  --hf: "McClatchy Serif", serif;
 }
 
 .impact .inline-cta {
