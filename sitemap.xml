@@ -7,18 +7,17 @@
   </url>
   
   <url>
+    <loc>https://mcclatchy.github.io/design/saratoga/decks/contests/</loc>
+    <lastmod>2019-07-24T10:01:22-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mcclatchy.github.io/design/</loc>
     <lastmod>2019-07-24T10:01:22-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://mcclatchy.github.io/design/saratoga/</loc>
-    <lastmod>2019-07-24T10:01:22-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mcclatchy.github.io/design/saratoga/decks/contests/</loc>
     <lastmod>2019-07-24T10:01:22-05:00</lastmod>
   </url>
   
@@ -58,31 +57,6 @@
   </url>
   
   <url>
-    <loc>https://mcclatchy.github.io/design/saratoga/qa/connatix-no-html-changes/</loc>
-  </url>
-  
-  <url>
-    <loc>https://mcclatchy.github.io/design/email/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mcclatchy.github.io/design/saratoga/decks/impact2020/</loc>
-  </url>
-  
-  <url>
-    <loc>https://mcclatchy.github.io/design/about/</loc>
-  </url>
-  
-  <url>
-    <loc>https://mcclatchy.github.io/design/saratoga/qa/svg/</loc>
-  </url>
-  
-  <url>
-    <loc>https://mcclatchy.github.io/design/saratoga/decks/search/</loc>
-  </url>
-  
-  <url>
     <loc>https://mcclatchy.github.io/design/saratoga/decks/author-bio/</loc>
   </url>
   
@@ -111,7 +85,15 @@
   </url>
   
   <url>
+    <loc>https://mcclatchy.github.io/design/saratoga/qa/connatix-no-html-changes/</loc>
+  </url>
+  
+  <url>
     <loc>https://mcclatchy.github.io/design/saratoga/digest/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mcclatchy.github.io/design/email/</loc>
   </url>
   
   <url>
@@ -195,6 +177,10 @@
   </url>
   
   <url>
+    <loc>https://mcclatchy.github.io/design/saratoga/decks/impact2020/</loc>
+  </url>
+  
+  <url>
     <loc>https://mcclatchy.github.io/design/saratoga/in-depth/</loc>
   </url>
   
@@ -223,6 +209,10 @@
   </url>
   
   <url>
+    <loc>https://mcclatchy.github.io/design/about/</loc>
+  </url>
+  
+  <url>
     <loc>https://mcclatchy.github.io/design/saratoga/p/</loc>
   </url>
   
@@ -240,6 +230,10 @@
   
   <url>
     <loc>https://mcclatchy.github.io/design/saratoga/related-stories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mcclatchy.github.io/design/saratoga/decks/search/</loc>
   </url>
   
   <url>
@@ -272,6 +266,10 @@
   
   <url>
     <loc>https://mcclatchy.github.io/design/saratoga/decks/subscription/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mcclatchy.github.io/design/saratoga/qa/svg/</loc>
   </url>
   
   <url>
