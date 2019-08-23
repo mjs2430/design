@@ -6,11 +6,21 @@ layout: deck
 ---
 
 <section>
-  <form class="section-label flex search-form" action="#" role="search">
+  <form class="section-label search-form" action="#" role="search">
     <input type="text" name="q" value="food">
     <button class="button big impact" type="submit">SEARCH</button>
+    <div class="select" id="search-select">
+      <span class="button big expander" onclick="this.classList.toggle('open');">Order by</span>
+      <div class="options">
+        <a class="button big" href="#" data-name="Relevance">Relevance</a>
+        <a class="button big" href="#" data-name="Newest">Newest</a>
+        <a class="button big" href="#" data-name="Oldest">Oldest</a>
+      </div>
+    </div>
   </form>
 </section>
+
+<script src="/js/search.js"></script>
 
 <section>
   <h3 class="section-label sans soft">Showing <b>1-10</b> of <b>19918</b> results for <b>food</b>.</h3>
