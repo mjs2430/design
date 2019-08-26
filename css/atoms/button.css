@@ -10,8 +10,8 @@ input, select {
   color: var(--tc);
 }
 
-input {
-  --webkit-appearance: none;
+input[type=text] {
+  -webkit-appearance: none;
 }
 
 button, .button {
