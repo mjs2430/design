@@ -277,6 +277,14 @@
    margin: 30px -15px !important;
  }
 
+ .image-gallery-image {
+   margin: 0;
+ }
+
+ .image-gallery-caption {
+   padding: 0 15px;
+ }
+
  /**
   * Adjustments for print elements and tags
   */
