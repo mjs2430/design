@@ -133,6 +133,39 @@
 </tbody>
 </table>
 
+<hr />
+
+<h2 id="select">SELECT</h2>
+
+<p>Custom selects use a combination of the <a href="../expander">expander</a> molecule and link-based buttons instead of the native select element for forms. Because they are based on the expander, a toggle of the <code>open</code> class will show and remove the option list. Lastly, adding the class <code>selected</code> to any of options will make it bold. Different use cases will most likely require different javascript, but we have a <a href="../../js/select.js">starter script</a> for the purposes of this demo.</p>
+
+<h4 id="example-1">EXAMPLE</h4>
+
+<div class="grid" style="grid-template-columns: 300px 1fr;">
+<div class="select">
+  <span class="button big expander" onclick="this.classList.toggle('open');">Order by</span>
+  <div class="options">
+    <a class="button big" href="#" data-name="Relevance">Relevance</a>
+    <a class="button big" href="#" data-name="Newest">Newest</a>
+    <a class="button big" href="#" data-name="Oldest">Oldest</a>
+  </div>
+</div>
+
+</div>
+
+<script async src="../../js/select.js"></script>
+
+<h4 id="html-1">HTML</h4>
+
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;select&#34;</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button big expander&#34;</span> <span style="color:#f00">onclick</span>=<span style="color:#00f">&#34;this.classList.toggle(&#39;open&#39;);&#34;</span>&gt;Order by&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;options&#34;</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button big&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span> <span style="color:#f00">data-name</span>=<span style="color:#00f">&#34;Relevance&#34;</span>&gt;Relevance&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button big&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span> <span style="color:#f00">data-name</span>=<span style="color:#00f">&#34;Newest&#34;</span>&gt;Newest&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button big&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span> <span style="color:#f00">data-name</span>=<span style="color:#00f">&#34;Oldest&#34;</span>&gt;Oldest&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+  &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
+
   </div>
 
   

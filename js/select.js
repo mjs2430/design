@@ -22,12 +22,14 @@ function handleSelectChange(mutations) {
   }
 }
 
-let searchSelect = document.querySelector("#search-select");
-selectObserver.observe(searchSelect, { attributeFilter: ['selected'] });
+let customSelects = document.querySelectorAll(".select");
+customSelects.forEach(d => {
+  selectObserver.observe(d, { attributeFilter: ['selected'] });
 
-searchSelect.addEventListener("click", e => {
-  let value = e.target.dataset.name;
-  if(value) {
-    e.currentTarget.setAttribute("selected", value)
-  }
+  d.addEventListener("click", e => {
+    let value = e.target.dataset.name;
+    if(value) {
+      e.currentTarget.setAttribute("selected", value)
+    }
+  })
 });
