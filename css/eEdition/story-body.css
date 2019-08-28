@@ -278,7 +278,8 @@
  }
 
  .image-gallery-image {
-   margin: 0 !important;
+   margin-top: 0 !important;
+   margin-bottom: 0 !important;
  }
 
  .image-gallery-caption {
