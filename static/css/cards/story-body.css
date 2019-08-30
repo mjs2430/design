@@ -15,40 +15,94 @@
 .story-body > * {
   max-width: 720px;
 	padding: 0 15px;
-	margin-right: auto;
-  margin-left: auto;
-	box-sizing: content-box;
+  margin: 15px auto;
 }
 
 .story-body > figure {
-	max-width: 100%;
-	margin: 30px 0;
-	padding: 0;
+  padding: 0;
 }
 
-.story-body > .header + figure {
-  margin-top: 15px;
+@media (min-width: 750px) {
+  .story-body figcaption {
+    padding-left: 0;
+    padding-right: 0
+  }
 }
 
-.story-body img, 
-.story-body figcaption {
-	max-width: 1140px;
-	margin: 0 auto;
+@supports(display: grid) {
+  @media(min-width: 768px) {
+    .story-body {
+      display: grid;
+      grid-template-columns: 1fr minmax(0, 720px) 300px 1fr;
+      grid-gap: 15px;
+      grid-auto-flow: dense;
+    }
+
+    .story-body > * {
+      max-width: unset;
+      grid-column: 2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .story-body > .header,
+    .story-body > figure,
+    .story-body .story-module {
+      grid-column: 2 / span 2;
+    }
+
+    .story-body .transparency {
+      grid-column: 1 / span 4;
+    }
+
+    .story-body aside {
+      grid-column: 3;
+      grid-row: auto / span 4;
+    }
+
+    /* .story-body > .header, */
+    /* .story-body > figure, */
+    /* .story-body .story-module { */
+    /*   margin: 0; */
+    /* } */
+
+    /* .story-body .ad-widget { */
+    /*   margin: 15px 0; */
+    /* } */
+
+    .story-body > .header
+  }
 }
 
-.story-body .story-module,
-.story-body .embed-infographic {
-  margin: 30px auto;
-}
+/* .story-body > figure { */
+/* 	max-width: 100%; */
+/* 	margin: 30px 0; */
+/* 	padding: 0; */
+/* } */
 
-.story-body .ad-widget {
-  margin: 50px auto;
-}
+/* .story-body > .header + figure { */
+/*   margin-top: 15px; */
+/* } */
 
-.story-body .dateline {
-	display: block;
-}
+/* .story-body img, */ 
+/* .story-body figcaption { */
+/* 	max-width: 1140px; */
+/* 	margin: 0 auto; */
+/* } */
 
-.story-body .immersive {
-  margin-top: 0;
-}
+/* .story-body .story-module, */
+/* .story-body .embed-infographic { */
+/*   margin: 30px auto; */
+/* } */
+
+/* .story-body .ad-widget { */
+/*   margin: 50px auto; */
+/* } */
+
+/* .story-body .dateline { */
+/* 	display: block; */
+/* } */
+
+/* .story-body .immersive { */
+/*   margin-top: 0; */
+/* } */
