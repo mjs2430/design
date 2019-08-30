@@ -538,6 +538,7 @@ button, .button {
 
 .expander:after {
   content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MDEuNSAyODQuNCI+PHBhdGggZD0iTTQ2Ny43LDI4NC40SDMzLjdjLTMwLDAtNDUtMzYuMy0yMy43LTU3LjVMMjI2LjksOS45YTMzLjgsMzMuOCwwLDAsMSw0Ny44LDBsMjE3LDIxN2MyMSwyMS4yLDYsNTcuNS0yNCw1Ny41WiIvPjwvc3ZnPgo=");
+  display: inline-block;
   width: 14px;
   height: 8px;
   line-height: 0;
@@ -1046,7 +1047,7 @@ summary, .summary {
   }
 
   .d-tablet {
-    display: var(--display, block);
+    display: block;
   }
 }
 @media (min-width: 1024px) {
@@ -1055,7 +1056,7 @@ summary, .summary {
   }
 
   .d-desktop {
-    display: var(--display, block);
+    display: block;
   }
 }
 /**
@@ -1076,8 +1077,10 @@ section.flag {
 }
 
 .flag svg {
+  width: 20px;
   height: 20px;
   cursor: pointer;
+  vertical-align: middle;
 }
 
 .flag .market-logo {
@@ -1102,12 +1105,12 @@ section.flag {
 }
 
 .flag .bottom {
-  --display:flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .flag .bottom a,
 .flag .submenu a {
+  display: inline-block;
   font-weight: 400;
   color: #757575;
   border-bottom: 3px solid transparent;
