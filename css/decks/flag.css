@@ -17,8 +17,10 @@ section.flag {
 }
 
 .flag svg {
+  width: 20px;
   height: 20px;
   cursor: pointer;
+  vertical-align: middle;
 }
 
 .flag .market-logo {
@@ -43,12 +45,12 @@ section.flag {
 }
 
 .flag .bottom {
-  --display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .flag .bottom a,
 .flag .submenu a {
+  display: inline-block;
   font-weight: 400;
   color: #757575;
   border-bottom: 3px solid transparent;
