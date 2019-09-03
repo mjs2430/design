@@ -282,8 +282,19 @@
    margin-bottom: 0 !important;
  }
 
- .image-gallery-caption {
-   padding: 0 15px;
+ .image-gallery-caption.active {
+   padding: 10px 15px 0;
+ }
+
+ .cutline_credit p, .caption p {
+   font: 14px/1.5em "McClatchy Sans", sans-serif;
+   color: #707070;
+   margin: 0;
+ }
+
+ .cutline_credit p {
+   font-weight: bold;
+   font-size: 11px;
  }
 
  /**
@@ -301,4 +312,9 @@
 
   .leadin {
     font-weight: bold;
+  }
+
+  .head_label p {
+    font: 600 14px/1.2em "McClatchy Sans", sans-serif;
+    text-transform: uppercase;
   }
