@@ -92,19 +92,3 @@
     margin: 0 30px 30px -150px;
   }
 }
-
-/**
- * Asides
- */
-
-@media(min-width: 930px) {
-  .story-body aside > * {
-    float: right;
-    margin: 0 -150px 30px 30px;
-  }
-
-  .story-body aside.left > * {
-    float: left;
-    margin: 0 30px 30px -150px;
-  }
-}
