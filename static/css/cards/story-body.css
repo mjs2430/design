@@ -19,18 +19,65 @@
   margin: 15px auto;
 }
 
-.story-body > figure {
-  padding: 0;
+.story-body > .header {
+  margin-top: 0;
 }
 
-/* .story-body > .ad-widget { */
-/*   margin: 30px auto; */
-/* } */
+/**
+ * Media
+ */
 
-@media(min-width: 630px) {
-  .story-body figcaption {
-    padding-left: 0;
-    padding-right: 0
+.story-body > figure {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.story-body figcaption {
+  padding: 10px 0 0;
+  max-width: calc(100vw - 30px);
+}
+
+.story-body .wide {
+  max-width: 900px;
+}
+
+.story-body .full-bleed {
+  max-width: 100%;
+}
+
+.story-body .full-bleed figcaption {
+  align-self: flex-start;
+  padding-left: 15px;
+}
+
+/**
+ * Ads and circulation
+ */
+
+.story-body .inline-cta {
+  margin: 30px auto;
+}
+
+.story-body > .ad-widget,
+.story-body > .story-module {
+  margin: 30px auto;
+}
+
+/**
+ * Asides
+ */
+
+@media(min-width: 930px) {
+  .story-body aside > * {
+    float: right;
+    margin: 0 -150px 30px 30px;
+  }
+
+  .story-body aside.left > * {
+    float: left;
+    margin: 0 30px 30px -150px;
   }
 }
 
@@ -38,43 +85,48 @@
  * Grid kickin at iPad
  */
 
-@supports(display:grid) {
-  @media(min-width: 768px) {
-    .story-grid {
-      display: grid;
-      grid-template-columns: 1fr 600px 1fr;
-      grid-column-gap: 15px;
-    }
+/* @supports(display:grid) { */
+  /* @media(min-width: 768px) { */
+  /*   .story-grid { */
+  /*     display: grid; */
+  /*     grid-template-columns: 1fr 600px 1fr; */
+  /*     grid-column-gap: 15px; */
+  /*   } */
 
-    .story-body {
-      grid-column: 2;
-    }
+  /*   .story-body { */
+  /*     grid-column: 2; */
+  /*   } */
 
-    .story-body > * {
-      padding: 0;
-    }
+  /*   .story-body > * { */
+  /*     padding: 0; */
+  /*   } */
+  /* } */
 
-    /* .story-body aside { */
-    /*   float: right; */
-    /*   margin: 30px -54px 30px 30px; */
-    /* } */
-  }
+  /* @media(min-width: 930px) { */
+  /*   .story-grid { */
+  /*     grid-template-columns: 1fr 150px 600px 150px 1fr; */
+  /*   } */
 
-  @media(min-width: 930px) {
-    .story-grid {
-      grid-template-columns: 1fr 150px 600px 150px 1fr;
-    }
+  /*   .story-body { */
+  /*     grid-column: 3; */
+  /*   } */
 
-    .story-body {
-      grid-column: 3;
-    }
+  /*   .story-body > aside { */
+  /*     float: right; */
+  /*     margin: 0 -130px 15px 30px; */
+  /*   } */
+  /* } */
 
-    .story-body > aside {
-      float: right;
-      margin: 0 -145px 15px 30px;
-    }
-  }
-}
+  /* @media(min-width: 1260px) { */
+  /*   .story-grid { */
+  /*     grid-template-columns: 1fr 300px 600px 300px 1fr; */
+  /*   } */
+
+  /*   .story-body > aside { */
+  /*     margin-right: -315px; */
+  /*   } */
+  /* } */
+/* } */
 
 /* Below is just not working */
 
