@@ -48,6 +48,10 @@
   font-size: 20px;
 }
 
+.immersive figcaption {
+  padding: 10px 15px 0;
+}
+
 @media (min-width: 760px) {
 	.immersive .title {
 		font-size: 64px;
