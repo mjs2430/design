@@ -8,7 +8,7 @@
   grid-gap: 30px;
 }
 
-.grid > .package {
+.grid > .package:not(.paper) {
   padding: 0;
 }
 
