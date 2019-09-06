@@ -1,0 +1,15 @@
+{{ define "content" }}
+<article class="paper story-body" style="padding: 15px 0;">
+  <h2>{{ .Title }}</h2>
+  {{ .Content }}
+
+  <h3>Beaufort Gazette</h3>
+  {{ with .Resources.Match "beaufort/*" }}
+  {{ range . }}
+  <div class="package">
+    <h5>{{ .MediaType.SubType | upper }}</h5>
+    <img src="{{ .Permalink }}">
+  </div>
+  {{ end }}{{ end }}
+</article>
+{{ end }}
