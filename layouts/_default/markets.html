@@ -1,15 +1,61 @@
+{{ define "head" }}
+<style>
+  .download {
+    display: block;
+    width: 100%;
+  }
+
+  .swatch {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .swatch p {
+    margin: 0;
+    padding: 15px;
+  }
+
+  a[download]:hover img {
+    background-color: #f4f4f4;
+  }
+</style>
+{{ end }}
+
 {{ define "content" }}
 <article class="paper story-body" style="padding: 15px 0;">
   <h2>{{ .Title }}</h2>
   {{ .Content }}
 
   <h3>Beaufort Gazette</h3>
-  {{ with .Resources.Match "beaufort/*" }}
-  {{ range . }}
-  <div class="package">
-    <h5>{{ .MediaType.SubType | upper }}</h5>
-    <img src="{{ .Permalink }}">
+  <h5 class="gray">Colors</h5>
+  <div class="grid story-module">
+    <div class="package swatch">
+      <svg style="fill: #1E4971" width="100" viewBox="0 0 512 512"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"/></svg>
+      <p class="summary">Primary <br> #1E4971 <br> 30, 73, 113</p>
+    </div>
+    <div class="package swatch">
+      <svg style="fill: #0184C1" width="100" viewBox="0 0 512 512"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"/></svg>
+      <p class="summary">Accent <br> #0184C1 <br> 1, 132, 193</p>
+    </div>
   </div>
-  {{ end }}{{ end }}
+
+  {{ with .Resources.Match "beaufort/*" }}
+  <h5 class="gray">Files</h5>
+  <div class="grid story-module">
+    {{ range . }}
+    <div class="package">
+      <h6 class="bold">{{ .MediaType.SubType | upper }}</h6>
+
+      {{ if eq .ResourceType "image" }}
+      <a href="{{ .Permalink }}" download><img class="download" src="{{ .Permalink }}"></a>
+      {{ else }}
+      <a class="button impact" href="{{ .Permalink }}" download>Download</a>
+      {{ end }}
+
+      <p class="small">{{ .Name }}</p>
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
 </article>
 {{ end }}
