@@ -1,0 +1,13 @@
+name = "Belleville News Democrat"
+url = "https://www.bnd.com"
+slug = "bnd"
+
+[[colors]]
+name = "Primary"
+hex = "145288"
+rgb = "20, 82, 136"
+
+[[colors]]
+name = "Accent"
+hex = "0078B2"
+rgb = "0, 120, 178"

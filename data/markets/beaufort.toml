@@ -1,0 +1,13 @@
+name = "The Beaufort Gazette"
+url = "https://www.islandpacket.com/news/local/community/beaufort-news/"
+slug = "beaufort"
+
+[[colors]]
+name = "Primary"
+hex = "1E4971"
+rgb = "30, 73, 113"
+
+[[colors]]
+name = "Accent"
+hex = "0184C1"
+rgb = "1, 132, 193"
