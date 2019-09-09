@@ -1,0 +1,14 @@
+name = "The Bellingham Herald"
+city = "Bellingham"
+state = "WA"
+url = "https://www.bellinghamherald.com"
+
+[[colors]]
+name = "Primary"
+hex = "013B61"
+rgb = "1, 59, 97"
+
+[[colors]]
+name = "Accent"
+hex = "0280D3"
+rgb = "2, 128, 211"

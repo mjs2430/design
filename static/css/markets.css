@@ -1,0 +1,42 @@
+.swatch {
+  flex-direction: row;
+  align-items: center;
+}
+
+.swatch p {
+  margin: 0;
+  padding: 15px;
+}
+
+.logos > .package {
+  justify-content: space-evenly;
+}
+
+.download {
+  display: block;
+  width: 100%;
+}
+
+.market-name {
+  margin-bottom: 0;
+}
+
+.market-url {
+  display: block;
+  font-size: 12px;
+}
+
+.story-module {
+  margin: 0 auto !important;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #ddd;
+}
+
+.story-module > :first-child {
+  margin-top: 0;
+}
+
+.story-module .grid {
+  margin: 30px 0;
+}

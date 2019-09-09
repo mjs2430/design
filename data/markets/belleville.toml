@@ -1,6 +1,7 @@
 name = "Belleville News Democrat"
+city = "Belleville"
+state = "IL"
 url = "https://www.bnd.com"
-slug = "bnd"
 
 [[colors]]
 name = "Primary"
