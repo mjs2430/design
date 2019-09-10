@@ -1,0 +1,15 @@
+name = "Tri-City Herald"
+city = "Kennewick"
+state = "WA"
+url = "https://www.tri-cityherald.com/"
+slug = "tri-city"
+
+[[colors]]
+name = "Primary"
+hex = "2656A3"
+rgb = "38, 86, 163"
+
+[[colors]]
+name = "Accent"
+hex = "1991EC"
+rgb = "25, 145, 236"

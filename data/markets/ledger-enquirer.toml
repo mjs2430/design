@@ -1,0 +1,14 @@
+name = "Ledger Enquirer"
+city = "Columbus"
+state = "GA"
+url = "https://www.ledger-enquirer.com/"
+
+[[colors]]
+name = "Chathams Blue"
+hex = "174673"
+rgb = "23, 70, 115"
+
+[[colors]]
+name = "Mariner"
+hex = "2F76C1 "
+rgb = "47, 118, 193"

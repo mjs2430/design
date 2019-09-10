@@ -1,0 +1,15 @@
+name = "Lexgo"
+city = "Lexington"
+state = "KY"
+url = "https://www.kentucky.com/entertainment/video/"
+slug = "lexgo"
+
+[[colors]]
+name = "Primary"
+hex = "DB8200"
+rgb = "219, 130, 0"
+
+[[colors]]
+name = "Accent"
+hex = "FFA016"
+rgb = "255, 160, 22"

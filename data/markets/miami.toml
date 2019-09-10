@@ -1,0 +1,14 @@
+name = "Miami Herald"
+city = "Miami"
+state = "FL"
+url = "https://www.miamiherald.com"
+
+[[colors]]
+name = "Primary"
+hex = "0066B3"
+rgb = "0, 102, 179"
+
+[[colors]]
+name = "Accent"
+hex = "379AD3"
+rgb = "55, 154, 211"

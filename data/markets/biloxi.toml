@@ -3,12 +3,6 @@ city = "Biloxi"
 state = "MS"
 url = "https://www.sunherald.com"
 
-[[colors]]
-name = "Primary"
-hex = "035A84"
-rgb = "3, 90, 132"
-
-[[colors]]
-name = "Accent"
+[color]
 hex = "008FD4"
 rgb = "0, 143, 212"

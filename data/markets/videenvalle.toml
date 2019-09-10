@@ -1,0 +1,10 @@
+name = "Vide en el valle"
+city = "Fresno"
+state = "CA"
+url = "https://www.vidaenelvalle.com"
+slug = "vide-en-el-valle"
+
+[color]
+hex = "#034A78"
+rgb = "3, 74, 120"
+

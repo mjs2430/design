@@ -1,0 +1,14 @@
+name = "Merced Sun Star"
+city = "Merced"
+state = "CA"
+url = "https://www.mercedsunstar.com/"
+
+[[colors]]
+name = "Primary"
+hex = "113511"
+rgb = "17, 53, 17"
+
+[[colors]]
+name = "Accent"
+hex = "2E6D2F"
+rgb = "46, 109, 47"

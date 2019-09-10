@@ -1,0 +1,9 @@
+name = "Varsity Kansas"
+city = "Wichita"
+state = "KS"
+url = "https://www.thenewstribune.com/"
+slug = "varsity-kansas"
+
+[color]
+hex = "7C1C23"
+rgb = "124, 28, 35"

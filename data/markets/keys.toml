@@ -1,0 +1,15 @@
+name = "FLKeysNews"
+city = "Miami"
+state = "FL"
+url = "https://www.flkeysnews.com/"
+slug = "flkeys"
+
+[[colors]]
+name = "Primary"
+hex = "2E3192"
+rgb = "46, 49, 146"
+
+[[colors]]
+name = "Accent"
+hex = "D3B31B"
+rgb = "211, 179, 27"

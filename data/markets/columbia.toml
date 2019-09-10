@@ -1,0 +1,14 @@
+name = "The State"
+city = "Columbia"
+state = "SC"
+url = "https://www.thestate.com/"
+
+[[colors]]
+name = "Primary"
+hex = "3B4858"
+rgb = "59, 72, 88"
+
+[[colors]]
+name = "Accent"
+hex = "708095"
+rgb = "112, 128, 149"

@@ -1,0 +1,14 @@
+name = "The Telegraph"
+city = "Macon"
+state = "GA"
+url = "https://www.macon.com/"
+
+[[colors]]
+name = "Primary"
+hex = "1F3366"
+rgb = "31, 51, 102"
+
+[[colors]]
+name = "Accent"
+hex = "3B6CBD"
+rgb = "59, 108, 189"

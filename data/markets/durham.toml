@@ -1,0 +1,14 @@
+name = "The Herald Sun"
+city = "Durham"
+state = "NC"
+url = "https://www.heraldsun.com/"
+
+[[colors]]
+name = "Primary"
+hex = "333333"
+rgb = "51, 51, 51"
+
+[[colors]]
+name = "Accent"
+hex = "D77C12"
+rgb = "215, 124, 18"

@@ -1,0 +1,15 @@
+name = "McClatchy"
+city = "Sacramento"
+state = "CA"
+url = "https://www.mcclatchy.com/"
+slug = "mcclatchy"
+
+[[colors]]
+name = "Primary"
+hex = "FFFFFF"
+rgb = "255, 255, 255"
+
+[[colors]]
+name = "Accent"
+hex = "005CA5"
+rgb = "0, 92, 165"

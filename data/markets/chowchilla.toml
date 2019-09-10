@@ -1,0 +1,15 @@
+name = "Chowchilla News"
+city = "Merced"
+state = "CA"
+url = "https://www.mercedsunstar.com/news/local/community/chowchilla/"
+slug = "chowchilla"
+
+[[colors]]
+name = "Primary"
+hex = "07417B"
+rgb = "7, 65, 123"
+
+[[colors]]
+name = "Accent"
+hex = "2776C6"
+rgb = "39, 118, 198"
