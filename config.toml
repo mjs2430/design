@@ -7,7 +7,7 @@ pluralizeListTitles = false
 pygmentsCodeFences = true
 pygmentsStyle = "borland"
 
-disableKinds = ["taxonomy", "taxonomyTerm", "RSS"]
+disableKinds = ["taxonomy", "taxonomyTerm", "RSS", "404"]
 
 [menu]
   [[menu.main]]
