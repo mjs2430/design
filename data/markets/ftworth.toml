@@ -3,13 +3,3 @@ city = "Fort Worth"
 state = "TX"
 url = "https://www.star-telegram.com/"
 slug = "ftworth"
-
-[[colors]]
-name = "Primary"
-hex = "8394AA"
-rgb = "131, 148, 170"
-
-[[colors]]
-name = "Accent"
-hex = "5E6B7A"
-rgb = "94, 107, 122"

@@ -12,16 +12,19 @@
     <!-- Loop through the markets in the data folder -->
     {{ range sort $.Site.Data.markets "city" }}
     <div class="story-module">
-      <h1 class="market-name" id="{{.name | urlize}}">{{.name}}</h1>
-      <a class="market-url" href="{{.url}}">{{.url}}</a>
+      <div class="package market-info">
+        <h6>{{.city}}, {{.state}}</h6>
+        <h1 class="market-name" id="{{.name | urlize}}">{{.name}}</h1>
+        <a class="market-url" href="{{.url}}">{{.url}}</a>
+      </div>
       
       <!-- kick out the colors -->
       {{ with .colors }}
       <div class="grid">
         {{ range . }}
         <div class="package swatch">
-          <svg style="fill: #{{.hex}}" width="100" viewBox="0 0 512 512"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"/></svg>
-          <p class="summary">{{.name}}<br>{{.hex}}<br>{{.rgb}}</p>
+          <svg style="fill: {{.hex}}" width="55" viewBox="0 0 512 512"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"/></svg>
+          <p class="summary">{{.hex}}<br>{{.rgb}}</p>
         </div>
         {{ end }}
       </div>
@@ -29,7 +32,7 @@
 
       {{ with .color }}
       <div class="package swatch">
-        <svg style="fill: {{.hex}}" width="100" viewBox="0 0 512 512">
+        <svg style="fill: {{.hex}}" width="55" viewBox="0 0 512 512">
           <path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"/>
         </svg>
         <p class="summary">{{.hex}}<br>{{.rgb}}</p>
@@ -38,7 +41,7 @@
 
       <!-- list the files -->
       {{ $slug := default .city .slug }}
-      {{ $folder := printf "%s/*" ($slug | lower) }}
+      {{ $folder := printf "%s/*.*" ($slug | lower) }}
       {{ with $.Resources.Match $folder }}
       <div class="grid logos">
         {{ range . }}

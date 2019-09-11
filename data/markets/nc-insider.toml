@@ -5,11 +5,9 @@ url = "http://www.ncinsider.com"
 slug = "nc-insider"
 
 [[colors]]
-name = "Primary"
-hex = "165B78"
+hex = "#165B78"
 rgb = "22, 91, 120"
 
 [[colors]]
-name = "Accent"
-hex = "A72A2B"
+hex = "#A72A2B"
 rgb = "167, 42, 43"

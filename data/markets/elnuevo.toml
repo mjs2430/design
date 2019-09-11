@@ -5,11 +5,5 @@ url = "https://www.elnuevoherald.com/"
 slug = "elnuevo"
 
 [[colors]]
-name = "Primary"
-hex = "0079C1"
-rgb = "0, 121, 193"
-
-[[colors]]
-name = "Accent"
-hex = "33B6E6"
-rgb = "51, 182, 230"
+hex = "#0b79bf"
+rgb = "11, 121, 198"

@@ -3,7 +3,6 @@ city = "Charlotte"
 state = "NC"
 url = "https://www.charlotteobserver.com/"
 
-[color]
-name = "Primary"
+[[colors]]
 hex = "#006db6"
 rgb = "32, 111, 168"

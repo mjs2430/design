@@ -4,7 +4,7 @@ state = "CA"
 url = "https://www.vidaenelvalle.com"
 slug = "vide-en-el-valle"
 
-[color]
+[[colors]]
 hex = "#034A78"
 rgb = "3, 74, 120"
 

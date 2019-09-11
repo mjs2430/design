@@ -2,13 +2,3 @@ name = "The Fresno Bee"
 city = "Fresno"
 state = "CA"
 url = "https://www.fresnobee.com/"
-
-[[colors]]
-name = "Primary"
-hex = "27395A"
-rgb = "39, 57, 90"
-
-[[colors]]
-name = "Accent"
-hex = "4C699A"
-rgb = "76, 105, 154"

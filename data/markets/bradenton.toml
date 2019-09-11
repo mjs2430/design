@@ -2,13 +2,3 @@ name = "Bradenton Herald"
 city = "Bradenton"
 state = "FL"
 url = "https://www.bradenton.com"
-
-[[colors]]
-name = "Primary"
-hex = "1E4971"
-rgb = "30, 73, 113"
-
-[[colors]]
-name = "Accent"
-hex = "0184BE"
-rgb = "1, 132, 193"

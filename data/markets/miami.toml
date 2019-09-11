@@ -4,11 +4,5 @@ state = "FL"
 url = "https://www.miamiherald.com"
 
 [[colors]]
-name = "Primary"
-hex = "0066B3"
-rgb = "0, 102, 179"
-
-[[colors]]
-name = "Accent"
-hex = "379AD3"
-rgb = "55, 154, 211"
+hex = "#0b67b2"
+rgb = "11, 103, 178"

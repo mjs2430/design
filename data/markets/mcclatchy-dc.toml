@@ -5,11 +5,5 @@ url = "https://www.mcclatchydc.com/"
 slug = "mcclatchydc"
 
 [[colors]]
-name = "Primary"
-hex = "0"
-rgb = "0, 0, 0"
-
-[[colors]]
-name = "Accent"
-hex = "B20009"
-rgb = "178, 0, 9"
+hex = "#b11f24"
+rgb = "177, 31, 36"

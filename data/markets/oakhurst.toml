@@ -3,6 +3,6 @@ city = "Oakhurst"
 state = "CA"
 url = "https://www.sierrastar.com"
 
-[color]
-hex = "446896"
+[[colors]]
+hex = "#446896"
 rgb = "68, 104, 150"

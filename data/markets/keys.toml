@@ -5,11 +5,9 @@ url = "https://www.flkeysnews.com/"
 slug = "flkeys"
 
 [[colors]]
-name = "Primary"
-hex = "2E3192"
-rgb = "46, 49, 146"
+hex = "#ffde40"
+rgb = "255, 222, 64"
 
 [[colors]]
-name = "Accent"
-hex = "D3B31B"
-rgb = "211, 179, 27"
+hex = "#2e3192"
+rgb = "46, 49, 146"

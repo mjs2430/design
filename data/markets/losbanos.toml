@@ -5,11 +5,5 @@ url = "https://www.losbanosenterprise.com/"
 slug = "losbanos"
 
 [[colors]]
-name = "Primary"
-hex = "0080B7"
-rgb = "0, 128, 183"
-
-[[colors]]
-name = "Accent"
-hex = "56A9CC"
-rgb = "86, 169, 204"
+hex = "#1c94d2"
+rgb = "28, 148, 210"

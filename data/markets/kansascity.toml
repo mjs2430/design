@@ -4,7 +4,7 @@ state = "MO"
 url = "https://www.kansascity.com"
 slug = "kansascity"
 
-[color]
+[[colors]]
 hex = "#0793cf"
 rgb = "20, 82, 136"
 

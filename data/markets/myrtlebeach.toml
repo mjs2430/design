@@ -3,13 +3,3 @@ city = "Myrtle Beach"
 state = "SC"
 url = "https://www.myrtlebeachonline.com"
 slug = "myrtlebeach"
-
-[[colors]]
-name = "Primary"
-hex = "004377"
-rgb = "0, 67, 119"
-
-[[colors]]
-name = "Accent"
-hex = "0093D0"
-rgb = "0, 147, 208"
