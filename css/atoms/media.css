@@ -15,7 +15,7 @@ figure img {
 figcaption, .caption {
   font: 14px/1.5em "McClatchy Sans", sans-serif;
   color: var(--tc, #707070);
-  padding: 10px 15px 0;
+  padding-top: 10px; 
 }
 
 svg {
@@ -26,4 +26,3 @@ hr {
   border: .5px solid var(--tc, #707070);
   align-self: stretch;
 }
-
