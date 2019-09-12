@@ -46,3 +46,8 @@
   margin: 30px 0;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
+
+/* fixed in zones branch but rebased onto master to release this earlier */
+.story-module .grid .package {
+  padding: 0;
+}
