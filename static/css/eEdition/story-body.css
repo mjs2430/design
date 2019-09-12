@@ -306,7 +306,9 @@
   .jump_to,
   .jump_from,
   .z_message,
-  .infobox_label {
+  .infobox_label,
+  .statsbox,
+  .refer {
     display: none;
   }
 
@@ -316,5 +318,10 @@
 
   .head_label p {
     font: 600 14px/1.2em "McClatchy Sans", sans-serif;
+    text-transform: uppercase;
+  }
+
+  .dateline,
+  .head_kicker {
     text-transform: uppercase;
   }
