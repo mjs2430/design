@@ -298,7 +298,7 @@
  }
 
  .cutline_leadin:after {
-   content: " | ";
+   content: " ";
  }
 
  /**
