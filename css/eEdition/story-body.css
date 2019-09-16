@@ -297,6 +297,10 @@
    font-size: 11px;
  }
 
+ .cutline_leadin:after {
+   content: " | ";
+ }
+
  /**
   * Adjustments for print elements and tags
   */
