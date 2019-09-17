@@ -41,7 +41,7 @@
 
       <!-- list the files -->
       {{ $slug := default .city .slug }}
-      {{ $folder := printf "%s/*.*" ($slug | lower) }}
+      {{ $folder := printf "%s/?*.*" ($slug | lower) }}
       {{ with $.Resources.Match $folder }}
       <div class="grid logos">
         {{ range . }}
@@ -57,6 +57,20 @@
         {{ end }}
       </div>
       {{ end }}
+
+      {{ $iconFolder := printf "%s/apps/?*.*" ($slug | lower) }}
+      {{ with $.Resources.Match $iconFolder }}
+      <h6 style="margin-bottom: 10px;">App Icons</h6>
+      <div class="grid app-icons">
+        {{ range . }}
+        <div class="package">
+          <a href="{{ .Permalink }}" download><img class="download" src="{{ .Permalink }}"></a>
+          <!-- <span class="app-name">{{ path.Base .Name | replaceRE "\\..*$" "" | humanize }}</span> -->
+          <span class="app-name">{{ path.Base .Name | replaceRE "\\..*$" "" }}</span>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
     </div>
            
     <!-- end data range -->
@@ -67,6 +81,7 @@
     <div class="label">
       <h5>MARKETS</h5>
     </div>
+
 
     {{ range sort $.Site.Data.markets "city" }}
     <div class="package">

@@ -42,7 +42,7 @@
   margin-top: 0;
 }
 
-.story-module .grid {
+.grid.logos {
   margin: 30px 0;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
@@ -50,4 +50,15 @@
 /* fixed in zones branch but rebased onto master to release this earlier */
 .story-module .grid .package {
   padding: 0;
+}
+
+.grid.app-icons {
+  grid-template-columns: repeat(auto-fill, 75px);
+}
+
+.app-name {
+  /* text-transform: capitalize; */
+  font-size: 10px;
+  text-align: center;
+  align-self: center;
 }
