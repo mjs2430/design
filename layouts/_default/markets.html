@@ -13,7 +13,7 @@
     {{ range sort $.Site.Data.markets "city" }}
     <div class="story-module">
       <div class="package market-info">
-        <h3 class="sans bold caps" id="{{.name}}">{{.name}}</h3>
+        <h3 class="sans bold caps" id="{{.name | urlize}}">{{.name}}</h3>
         <h6>{{.city}}, {{.state}} | <a href="{{.url}}">{{.url}}</a></h6>
       </div>
       
