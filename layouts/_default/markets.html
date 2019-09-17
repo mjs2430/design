@@ -13,66 +13,39 @@
     {{ range sort $.Site.Data.markets "city" }}
     <div class="story-module">
       <div class="package market-info">
-        <h6>{{.city}}, {{.state}}</h6>
-        <h1 class="market-name" id="{{.name | urlize}}">{{.name}}</h1>
-        <a class="market-url" href="{{.url}}">{{.url}}</a>
+        <h3 class="sans bold caps" id="{{.name}}">{{.name}}</h3>
+        <h6>{{.city}}, {{.state}} | <a href="{{.url}}">{{.url}}</a></h6>
       </div>
       
-      <!-- kick out the colors -->
-      {{ with .colors }}
-      <div class="grid">
-        {{ range . }}
-        <div class="package swatch">
-          <svg style="fill: {{.hex}}" width="55" viewBox="0 0 512 512"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"/></svg>
-          <p class="summary">{{.hex}}<br>{{.rgb}}</p>
-        </div>
-        {{ end }}
-      </div>
-      {{ end }}
-
-      {{ with .color }}
-      <div class="package swatch">
-        <svg style="fill: {{.hex}}" width="55" viewBox="0 0 512 512">
-          <path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"/>
-        </svg>
-        <p class="summary">{{.hex}}<br>{{.rgb}}</p>
-      </div>
-      {{ end }}
-
       <!-- list the files -->
       {{ $slug := default .city .slug }}
-      {{ $folder := printf "%s/?*.*" ($slug | lower) }}
-      {{ with $.Resources.Match $folder }}
-      <div class="grid logos">
-        {{ range . }}
+
+      <div class="grid market-assets">
+        {{ $logos := printf "%s/*.svg" $slug }}
+        {{ range $.Resources.Match $logos }}
         <div class="package">
           <h6 class="bold">{{ .MediaType.SubType | upper }}</h6>
-
-          {{ if eq .ResourceType "image" }}
           <a href="{{ .Permalink }}" download><img class="download" src="{{ .Permalink }}"></a>
-          {{ else }}
-          <a class="button ghost" href="{{ .Permalink }}" download>Download all logos</a>
-          {{ end }}
         </div>
         {{ end }}
-      </div>
-      {{ end }}
 
-      {{ $iconFolder := printf "%s/apps/?*.*" ($slug | lower) }}
-      {{ with $.Resources.Match $iconFolder }}
-      <h6 style="margin-bottom: 10px;">App Icons</h6>
-      <div class="grid app-icons">
-        {{ range . }}
+        {{ $iconFolder := printf "%s/apps/*.svg" $slug }}
+        {{ with $.Resources.Match $iconFolder }}
         <div class="package">
-          <a href="{{ .Permalink }}" download><img class="download" src="{{ .Permalink }}"></a>
-          <!-- <span class="app-name">{{ path.Base .Name | replaceRE "\\..*$" "" | humanize }}</span> -->
-          <span class="app-name">{{ path.Base .Name | replaceRE "\\..*$" "" }}</span>
+          <h6 class="bold">APP ICONS</h6>
+          <div class="grid app-icons">
+            {{ range . }}
+            <div class="package">
+              <a href="{{ .Permalink }}" download><img class="download" src="{{ .Permalink }}"></a>
+              <span class="app-name">{{ path.Base .Name | replaceRE "\\..*$" "" }}</span>
+            </div>
+            {{ end }}
+          </div>
         </div>
-        {{ end }}
-      </div>
       {{ end }}
+      </div>
+
     </div>
-           
     <!-- end data range -->
     {{ end }}
   </article>
@@ -81,7 +54,6 @@
     <div class="label">
       <h5>MARKETS</h5>
     </div>
-
 
     {{ range sort $.Site.Data.markets "city" }}
     <div class="package">
