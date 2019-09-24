@@ -9,52 +9,32 @@ class Dynamics {
    */
 
   constructor(...zones) {
-    this.zones = new Zones(...zones);
-
-    zones.forEach(z => {
-      this.fillZone(z);
-    });
+    this.constructor.zones = new Zones(...zones);
+    this.constructor.render(...zones);
   }
 
   /**
    * Fills a zone with templated content on the page
    */
 
-  fillZone(zone) {
-    let slot = document.querySelector(`[data-zone=${zone.name}]`);
+  static render(...zones) {
+    zones.forEach(z => {
+      let slot = document.querySelector(`[data-zone=${z.name}]`);
 
-    zone.units.forEach(u => {
-      let t = document.querySelector(`template[data-unit=${u}]`);
-      slot.appendChild(t.content.cloneNode(true));
+      if(z.units.includes("banner")) {
+        slot.classList.add("wide");
+      }
+
+      z.units.forEach(u => {
+        let t = document.querySelector(`template[data-unit=${u}]`);
+        slot.appendChild(t.content.cloneNode(true));
+      });
     });
   }
 }
 
-var dynamcis = new Dynamics(
-  { 
-    "name": "zone1",
-    "type": "single",
-    "units": ["leaderboard"]
-  },
-  { 
-    "name": "zone2",
-    "type": "single",
-    "units": ["ad"]
-  },
-  { 
-    "name": "zone3",
-    "type": "combo",
-    "units": ["subscription", "ad"]
-  },
-  {
-    "name": "zone4",
-    "type": "single",
-    "class": "wide",
-    "units": ["banner"]
-  },
-  {
-    "name": "zone5",
-    "type": "combo",
-    "units": ["podcast", "ad"]
-  }
-);
+/**
+ * Demo code only
+ */
+
+new Dynamics(...Typologies.pay);

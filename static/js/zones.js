@@ -10,23 +10,27 @@ class Zones {
 
   constructor(...zones) {
     this.skips = 0;
-
-    this.zoneMap = {
-      "zone1": "top",
-      "zone2": 3,
-      "zone3": 6,
-      "zone4": 11,
-      "zone5": 15
-    }
+    this.current = [];
 
     zones.forEach(z => {
-      this.renderZone(z);
+      this.current.push(this.render(z));
     });
   }
 
   /**
    * Zone Getters
    */
+
+  
+  get zoneMap() {
+    return {
+      "zone1": "top",
+      "zone2": 3,
+      "zone3": 6,
+      "zone4": 11,
+      "zone5": 15
+    }
+  }
 
   get story() {
     return document.querySelector("article.story-body");
@@ -39,7 +43,7 @@ class Zones {
   template(config) {
     let t = document.createElement("template");
     t.innerHTML = `
-      <div class="zone ${config.class}" 
+      <div class="zone"
            data-zone="${config.name}"
            data-type="${config.type}"></div>
     `;
@@ -50,7 +54,8 @@ class Zones {
    * Render zones from the config onto the page
    */
 
-  renderZone(config) {
+  render(config) {
+    this.skips = 0;
     let position = this.zoneMap[config.name];
 
     if(position) {
@@ -61,11 +66,46 @@ class Zones {
           document.body.insertBefore(clone, this.story);
           break;
         default:
+          if(Number.isInteger(position)) {
+            this.adjustInsertionPoint(position);
+          }
+
           this.story.insertBefore(clone, this.paragraphs[position])
           break;
       }
+
+      return config.name;
     } else {
       console.warn("misconfigured zone: ", config);
     }
+  }
+
+  /**
+   * Checks the point of insertion for various issues and also
+   * adds the previously-skipped paragraphs
+   */
+
+  adjustInsertionPoint(position) {
+    let p = this.paragraphs[position + this.skips];
+    console.log(p.textContent.length);
+  }
+
+  /**
+   * Wipes the zones out
+   */
+
+  clear() {
+    this.current = [];
+    document.querySelectorAll("[data-zone]").forEach(ele => {
+      ele.remove();
+    });
+  }
+
+  /**
+   * Fetches a zone element
+   */
+
+  get(name) {
+    return document.querySelector(`[data-zone="${name}"]`);
   }
 }
