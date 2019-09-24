@@ -3,28 +3,25 @@ class Typologies {
     return [
       { 
         "name": "zone1",
-        "type": "single",
         "units": ["leaderboard"]
       },
       { 
         "name": "zone2",
-        "type": "single",
         "units": ["ad"]
       },
       { 
         "name": "zone3",
-        "type": "combo",
+        "class": "grid combo",
         "units": ["subscription", "ad"]
       },
       {
         "name": "zone4",
-        "type": "single",
         "class": "wide",
         "units": ["banner"]
       },
       {
         "name": "zone5",
-        "type": "combo",
+        "class": "grid combo",
         "units": ["podcast", "ad"]
       }
     ]
@@ -34,12 +31,11 @@ class Typologies {
     return [
       { 
         "name": "zone1",
-        "type": "single",
         "units": ["leaderboard"]
       },
       {
         "name": "zone3",
-        "type": "combo",
+        "class": "grid combo",
         "units": ["newsletter", "ad"]
       }
     ]

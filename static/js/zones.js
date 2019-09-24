@@ -43,9 +43,7 @@ class Zones {
   template(config) {
     let t = document.createElement("template");
     t.innerHTML = `
-      <div class="zone"
-           data-zone="${config.name}"
-           data-type="${config.type}"></div>
+      <div class="zone ${config.class}" data-zone="${config.name}"></div>
     `;
     return t;
   }

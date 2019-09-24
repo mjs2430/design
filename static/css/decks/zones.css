@@ -1,0 +1,35 @@
+/**
+ * Zones
+ */
+
+gpt-ad {
+  display: block;
+  text-align: center;
+}
+
+.zone {
+  display: grid;
+  grid-gap: 30px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+}
+
+.zone.grid.combo {
+  grid-template-columns: repeat(auto-fit, 315px);
+}
+
+.zone[data-zone="zone1"] {
+  padding: 30px 15px;
+}
+
+.zone > .package {
+  padding: 0;
+}
+
+.zone > .inline-cta {
+  justify-content: center;
+}
+
+.story-body > .zone {
+  margin: 30px auto;
+}
