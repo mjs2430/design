@@ -48,6 +48,7 @@
 
 .story-body figure {
   padding: 0;
+  margin: 30px auto;
 }
 
 .story-body .wide {
@@ -98,4 +99,8 @@
 .story-body blockquote {
   max-width: 300px;
   font: 24px/1.2em "McClatchy Sans", sans-serif;
+}
+
+.story-body > .zone {
+  margin: 30px auto;
 }
