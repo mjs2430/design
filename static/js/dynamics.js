@@ -2,29 +2,39 @@
  * Dynamic content logic
  */
 
-class Dynamics {
+class Dynamics extends Zones {
 
   /**
    * Initial setup
    */
 
-  constructor(...zones) {
-    this.constructor.zones = new Zones(...zones);
-    this.constructor.render(...zones);
+  constructor(zones) {
+    super();
+    this.fill(zones);
   }
 
   /**
    * Fills a zone with templated content on the page
    */
 
-  static render(...zones) {
+  fill(zones) {
+    this.render(zones);
     zones.forEach(z => {
       let slot = document.querySelector(`[data-zone=${z.name}]`);
 
-      z.units.forEach(u => {
-        let t = document.querySelector(`template[data-unit=${u}]`);
-        slot.appendChild(t.content.cloneNode(true));
-      });
+      if(slot) {
+        z.units.forEach(u => {
+          let t = document.querySelector(`template[data-unit=${u}]`);
+
+          if(t) {
+            slot.appendChild(t.content.cloneNode(true));
+          } else {
+            console.warn(`missing unit template: ${u}`);
+          }
+        });
+      } else {
+        console.warn(`missing zone: ${z.name}`);
+      }
     });
   }
 }
@@ -33,4 +43,5 @@ class Dynamics {
  * Demo code only
  */
 
-new Dynamics(...Typologies.pay);
+var mi = mi || {};
+mi.dynamics = new Dynamics(Typologies.pay);

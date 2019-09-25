@@ -8,13 +8,8 @@ class Zones {
    * Initial setup
    */
 
-  constructor(...zones) {
+  constructor() {
     this.skips = 0;
-    this.current = [];
-
-    zones.forEach(z => {
-      this.current.push(this.render(z));
-    });
   }
 
   /**
@@ -40,10 +35,10 @@ class Zones {
     return document.querySelectorAll("article.story-body > p");
   }
 
-  template(config) {
+  template(z) {
     let t = document.createElement("template");
     t.innerHTML = `
-      <div class="zone ${config.class}" data-zone="${config.name}"></div>
+      <div class="zone ${z.class}" data-zone="${z.name}"></div>
     `;
     return t;
   }
@@ -52,40 +47,56 @@ class Zones {
    * Render zones from the config onto the page
    */
 
-  render(config) {
-    this.skips = 0;
-    let position = this.zoneMap[config.name];
+  render(zones) {
+    zones.forEach(z => {
+      let position = this.zoneMap[z.name];
 
-    if(position) {
-      let clone = this.template(config).content.cloneNode(true);
+      if(position) {
+        let clone = this.template(z).content.cloneNode(true);
 
-      switch(position) {
-        case "top":
-          document.body.insertBefore(clone, this.story);
-          break;
-        default:
-          if(Number.isInteger(position)) {
-            this.adjustInsertionPoint(position);
-          }
+        switch(position) {
+          case "top":
+            document.body.insertBefore(clone, this.story);
+            break;
+          default:
+            let ip = this.paragraphs[position + this.skips];
 
-          this.story.insertBefore(clone, this.paragraphs[position])
-          break;
+            while(this.check(ip) !== true) {
+              this.skips++;
+              ip = ip.nextElementSibling;
+
+              if(!ip) {
+                console.warn("Out of possible zone insertion points");
+                break;
+              }
+            }
+
+            if(ip) {
+              this.story.insertBefore(clone, ip)
+            }
+        }
+
+        return z.name;
+      } else {
+        console.warn("misconfigured zone: ", z);
       }
-
-      return config.name;
-    } else {
-      console.warn("misconfigured zone: ", config);
-    }
+    });
   }
 
   /**
-   * Checks the point of insertion for various issues and also
-   * adds the previously-skipped paragraphs
+   * Design rules for a failed insertion point
    */
 
-  adjustInsertionPoint(position) {
-    let p = this.paragraphs[position + this.skips];
-    console.log(p.textContent.length);
+  check(p) {
+    if(p.previousElementSibling.nodeName != "P") {
+      return false;
+    }
+
+    if(p.textContent.length < 100) {
+      return false;
+    }
+
+    return true;
   }
 
   /**
@@ -93,7 +104,7 @@ class Zones {
    */
 
   clear() {
-    this.current = [];
+    this.skips = 0;
     document.querySelectorAll("[data-zone]").forEach(ele => {
       ele.remove();
     });
