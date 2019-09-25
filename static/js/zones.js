@@ -5,19 +5,10 @@
 class Zones {
 
   /**
-   * Initial setup
+   * Static to the class to prevent overloading.
    */
 
-  constructor() {
-    this.skips = 0;
-  }
-
-  /**
-   * Zone Getters
-   */
-
-  
-  get zoneMap() {
+  static get zoneMap() {
     return {
       "zone1": "top",
       "zone2": 3,
@@ -27,13 +18,40 @@ class Zones {
     }
   }
 
+  /**
+   * Returns the story body
+   */
+
   get story() {
     return document.querySelector("article.story-body");
   }
 
-  get paragraphs() {
-    return document.querySelectorAll("article.story-body > p");
+  /**
+   * Filter story body insertion points to prevent clashing
+   * editorial elements on the page. It's much easier to do
+   * this here than in the loop.
+   */
+
+  get validInsertionPoints() {
+    let grafs = document.querySelectorAll("article.story-body > p");
+    return grafs;
+    return [...grafs].filter(p => {
+      if(p.textContent.length < 100) {
+        return false;
+      }
+
+      if(p.previousElementSibling.nodeName != "P") {
+        return false;
+      }
+
+      return true;
+    });
   }
+
+  /**
+   * The default zone HTML with a couple areas to 
+   * target with CSS and JS.
+   */
 
   template(z) {
     let t = document.createElement("template");
@@ -49,7 +67,7 @@ class Zones {
 
   render(zones) {
     zones.forEach(z => {
-      let position = this.zoneMap[z.name];
+      let position = this.constructor.zoneMap[z.name];
 
       if(position) {
         let clone = this.template(z).content.cloneNode(true);
@@ -59,20 +77,11 @@ class Zones {
             document.body.insertBefore(clone, this.story);
             break;
           default:
-            let ip = this.paragraphs[position + this.skips];
-
-            while(this.check(ip) !== true) {
-              this.skips++;
-              ip = ip.nextElementSibling;
-
-              if(!ip) {
-                console.warn("Out of possible zone insertion points");
-                break;
-              }
-            }
-
+            let ip = this.validInsertionPoints[position];
             if(ip) {
               this.story.insertBefore(clone, ip)
+            } else {
+              console.warn(`no insertion point for ${z.name}`);
             }
         }
 
@@ -84,27 +93,10 @@ class Zones {
   }
 
   /**
-   * Design rules for a failed insertion point
-   */
-
-  check(p) {
-    if(p.previousElementSibling.nodeName != "P") {
-      return false;
-    }
-
-    if(p.textContent.length < 100) {
-      return false;
-    }
-
-    return true;
-  }
-
-  /**
    * Wipes the zones out
    */
 
   clear() {
-    this.skips = 0;
     document.querySelectorAll("[data-zone]").forEach(ele => {
       ele.remove();
     });
