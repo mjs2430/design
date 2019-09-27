@@ -23,6 +23,10 @@ class Typologies {
         "name": "zone5",
         "class": "grid combo",
         "units": ["podcast", "ad"]
+      },
+      {
+        "name": "zone6",
+        "units": ["zergnet"]
       }
     ]
   }

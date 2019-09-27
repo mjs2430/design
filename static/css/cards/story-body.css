@@ -104,3 +104,11 @@
 .story-body > .zone {
   margin: 30px auto;
 }
+
+/**
+ * Zergnet widget only applies to stories
+ */
+
+.zergnet {
+  max-width: 660px;
+}

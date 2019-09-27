@@ -10,11 +10,12 @@ class Zones {
 
   static get zoneMap() {
     return {
-      "zone1": "top",
+      "zone1": "before",
       "zone2": 3,
       "zone3": 6,
       "zone4": 11,
-      "zone5": 15
+      "zone5": 15,
+      "zone6": "after"
     }
   }
 
@@ -33,11 +34,15 @@ class Zones {
    */
 
   get validInsertionPoints() {
-    let grafs = document.querySelectorAll("article.story-body > p");
-    return grafs;
-    return [...grafs].filter(p => {
+    let grafs = [...document.querySelectorAll("article.story-body > p")];
+
+    return grafs.filter(p => {
       if(p.textContent.length < 100) {
         return false;
+      }
+
+      if(grafs.indexOf(p) == 0) {
+        return true;
       }
 
       if(p.previousElementSibling.nodeName != "P") {
@@ -55,8 +60,9 @@ class Zones {
 
   template(z) {
     let t = document.createElement("template");
+
     t.innerHTML = `
-      <div class="zone ${z.class}" data-zone="${z.name}"></div>
+      <div class="zone ${z.class || ''}" data-zone="${z.name}"></div>
     `;
     return t;
   }
@@ -66,6 +72,8 @@ class Zones {
    */
 
   render(zones) {
+    let v = this.validInsertionPoints;
+
     zones.forEach(z => {
       let position = this.constructor.zoneMap[z.name];
 
@@ -73,11 +81,14 @@ class Zones {
         let clone = this.template(z).content.cloneNode(true);
 
         switch(position) {
-          case "top":
+          case "before":
             document.body.insertBefore(clone, this.story);
             break;
+          case "after":
+            this.story.parentNode.insertBefore(clone, this.story.nextElementSibling);
+            break;
           default:
-            let ip = this.validInsertionPoints[position];
+            let ip = v[position];
             if(ip) {
               this.story.insertBefore(clone, ip)
             } else {
