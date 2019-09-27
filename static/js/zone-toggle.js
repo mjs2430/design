@@ -101,8 +101,13 @@ class ZoneToggle extends HTMLElement {
         let bucket = e.target.dataset.bucket;
         this.classList.remove("open");
         window.location.hash = bucket;
+        window.scrollTo({ top: 0 });
         window.location.reload();
       });
+
+      if(span.dataset.bucket == this.bucket) {
+        span.classList.add("active");
+      }
     });
   }
 
@@ -112,6 +117,10 @@ class ZoneToggle extends HTMLElement {
 
   get fab() {
     return this.shadowRoot.querySelector(".button");
+  }
+
+  get bucket() {
+    return location.hash.substring(1) || "active-generalist";
   }
 }
 
