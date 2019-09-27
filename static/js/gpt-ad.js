@@ -115,6 +115,10 @@ class GPT extends HTMLElement {
     });
   }
 
+  disconnectedCallback() {
+    googletag.destroySlots([this.slot]);
+  }
+
   /**
    * Generate a unique id
    */

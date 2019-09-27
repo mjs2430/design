@@ -26,3 +26,19 @@
   <button class="button">Sign Up</button>
 </form>
 {{ end }}
+
+{{ if eq $type "notifications" }}
+<div class="inline-cta ad-widget package {{$class}}">
+  <h1>Get alerts where you like to read the news.</h1>
+  <p class="summary">Sign up for breaking news notifications right on your desktop from the Sacramento Bee</p>
+  <a class="button" href="#">SIGN UP</a>
+</div>
+{{ end }}
+
+{{ if eq $type "app" }}
+<div class="inline-cta ad-widget package {{$class}}">
+  <h1>Read on-the-go with the Sac Bee app</h1>
+  <p class="summary">Access all the latest local news on our mobile app, available in the App Store and Google Play.</p>
+  <a class="button" href="#">DOWNLOAD</a>
+</div>
+{{ end }}
