@@ -76,16 +76,22 @@ aliases:
   </div>
 </article>
 
-<section>
-  {{< read-next >}}
+<section class="grid">
+  {{< read-next class="col-span-2" >}}
+  {{< digest >}}
 </section>
 
-<section>
-  {{< in-depth >}}
-</section>
+<!-- <section> -->
+<!--   {{< promo >}} -->
+<!-- </section> -->
 
 <section>
-  {{< promo >}}
+  <h5 class="sans bold section-label">MORE IN FOOD</h5>
+  <div class="grid">
+    {{< card >}}
+    {{< card >}}
+    {{< card >}}
+  </div>
 </section>
 
 {{< footer >}}
