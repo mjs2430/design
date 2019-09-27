@@ -15,3 +15,9 @@
 .grid > .ad-widget {
   align-self: center;
 }
+
+@media(min-width: 990px) {
+  .col-span-2 {
+    grid-column: span 2;
+  }
+}
