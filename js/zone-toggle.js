@@ -21,7 +21,7 @@ class ZoneToggle extends HTMLElement {
         padding: 30px 30px 85px;
         box-sizing: border-box;
         pointer-events: none;
-        transition: backgroundColor .4s;
+        transition: background-color .4s;
       }
 
       span {
@@ -56,7 +56,7 @@ class ZoneToggle extends HTMLElement {
       }
 
       :host(.open) .panel {
-        background-color: rgba(255,255,255,.9);
+        background-color: rgba(255,255,255,.97);
         pointer-events: auto;
       }
 
