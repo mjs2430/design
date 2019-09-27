@@ -3,18 +3,9 @@
  */
 
 .card.in-depth {
-	flex-wrap: wrap;
+  background-color: #373737;
 }
 
 .card.in-depth figure {
-  flex-grow: 4;
 	min-height: 400px;
-	display: flex;
-}
-
-.card.in-depth .package {
-	padding-top: 30px;
-	padding-bottom: 30px;
-	margin: 0 auto;
-	max-width: 660px;
 }
