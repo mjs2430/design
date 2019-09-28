@@ -8,29 +8,32 @@ class ZoneToggle extends HTMLElement {
     let t = document.createElement("template");
     t.innerHTML = `
     <style>
-      .panel {
+      .screen {
         position: fixed;
         top: 0;
         left: 0;
         width: 100vw;
         height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: flex-end;
-        padding: 30px 30px 85px;
-        box-sizing: border-box;
         pointer-events: none;
-        transition: backgroundColor .4s;
+        transition: background-color .4s;
       }
 
-      span {
-        color: #999;
-        margin: 10px 0;
-        cursor: pointer;
+      .package {
+        position: fixed;
+        bottom: 75px;
+        right: 15px;
+        text-align: right;
         opacity: 0;
         transform: translateY(30px);
         transition: all .4s ease;
+      }
+
+      span {
+        display: block;
+        padding: 10px 0;
+        color: #999;
+        padding: 10px 0;
+        cursor: pointer;
       }
 
       span:hover, span.active {
@@ -38,35 +41,33 @@ class ZoneToggle extends HTMLElement {
       }
 
       .button {
-        background-color: #31409F;
-        fill: white;
-        color: white;
+        background-color: rgba(255, 255, 255, .8);
         border-radius: 50%;
         width: 45px;
         height: 45px;
-        box-shadow: 4px 4px 10px #999;
+        box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        margin-top: 10px;
         position: fixed;
-        bottom: 30px;
-        right: 30px;
+        bottom: 15px;
+        right: 15px;
       }
 
-      :host(.open) .panel {
-        background-color: rgba(255,255,255,.9);
+      :host(.open) .screen {
+        background-color: rgba(255,255,255,.97);
         pointer-events: auto;
       }
 
-      :host(.open) span {
+      :host(.open) .package {
         transform: translateY(0);
         opacity: 1;
       }
     </style>
 
-    <div class="panel">
+    <div class="screen"></div>
+    <div class="package">
       <span data-bucket="active-generalist">Active Generalist - no sub</span>
       <span data-bucket="active-generalist-subscriber">Active Generalist - sub</span>
       <span data-bucket="civic-hero">Civic Hero - no sub</span>
