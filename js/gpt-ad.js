@@ -93,7 +93,6 @@ class GPT extends HTMLElement {
 
   constructor() {
     super();
-    this.slot = undefined;
   }
 
   /**
@@ -110,13 +109,7 @@ class GPT extends HTMLElement {
 
       slot.addService(googletag.pubads());
       googletag.display(this.uid);
-
-      this.slot = slot;
     });
-  }
-
-  disconnectedCallback() {
-    googletag.destroySlots([this.slot]);
   }
 
   /**
