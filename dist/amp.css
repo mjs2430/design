@@ -772,6 +772,7 @@ summary, .summary {
 
 .story-body .dateline {
   display: block;
+  margin-top: 15px;
 }
 
 .story-body .immersive {

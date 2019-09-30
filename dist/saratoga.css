@@ -829,6 +829,7 @@ summary, .summary {
 
 .story-body .dateline {
   display: block;
+  margin-top: 15px;
 }
 
 .story-body .immersive {
@@ -1874,10 +1875,6 @@ section.flag {
   }
 }
 /* Results */
-.search-results {
-  align-items: center;
-}
-
 .load-more {
   text-align: center;
 }
