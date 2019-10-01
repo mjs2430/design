@@ -1,0 +1,14 @@
+{{- $type := .Get "type" -}}
+
+<div class="flag">
+  {{ if eq $type "logo" -}}
+  <div class="vendor-logo">
+    <img src="/img/moonlighting-logo-black.png">
+  </div>
+  {{ else if eq $type "name" -}}
+  <h3 class="vendor-name">obituaries</h3>
+  {{ end -}}
+  <a class="market-logo" href="#">
+    <img src="https://www.newsobserver.com/wps/build/images/newsobserver/logo.svg">
+  </a>
+</div>
