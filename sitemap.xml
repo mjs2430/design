@@ -52,6 +52,11 @@
   </url>
   
   <url>
+    <loc>https://mcclatchy.github.io/design/saratoga/qa/vendor-flag/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mcclatchy.github.io/design/saratoga/decks/author-bio/</loc>
   </url>
   
@@ -293,6 +298,10 @@
   
   <url>
     <loc>https://mcclatchy.github.io/design/saratoga/utilities/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mcclatchy.github.io/design/saratoga/vendor-flag/</loc>
   </url>
   
 </urlset>
