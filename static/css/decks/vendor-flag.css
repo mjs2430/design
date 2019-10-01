@@ -1,0 +1,54 @@
+/**
+ * Custom vendor flag
+ *
+ * This file is independent from the rest of the
+ * design system and self-contained except for 
+ * font files.
+ */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.flag {
+  display: flex;
+  justify-content: center;
+  padding: 11px 15px;
+  max-height: 55px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.market-logo img {
+  display: block;
+  height: 30px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.vendor-name {
+  margin: 0;
+  padding: 7px 9px 3px;
+  font: 600 22px/1em "McClatchy Sans", sans-serif;;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+.market-logo {
+  flex: none;
+  padding: 0 10px;
+}
+
+.market-logo:not(:first-child) {
+  border-left: 2px solid #222;
+  max-width: 50%;
+}
+
+.vendor-logo img {
+  display: block;
+  height: 30px;
+  padding: 0 10px;
+}
+
