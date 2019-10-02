@@ -1,5 +1,5 @@
 ---
-title: "Sponsor"
+title: "sponsor"
 description: "Grant/Sponsorship card for article pages."
 menu: cards
 ---
