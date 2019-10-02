@@ -13,11 +13,13 @@ body {
 
 .flag {
   display: flex;
+  align-items: center;
   justify-content: center;
   padding: 11px 15px;
-  max-height: 55px;
   background-color: white;
   border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+  max-height: 55px;
   overflow: hidden;
 }
 
@@ -34,6 +36,12 @@ body {
   font: 600 22px/1em "McClatchy Sans", sans-serif;;
   box-sizing: border-box;
   text-transform: uppercase;
+}
+
+@media(max-width: 660px) {
+  .vendor-name {
+    font-size: 3vw;
+  }
 }
 
 .market-logo {
