@@ -14,9 +14,20 @@
     <link rel="stylesheet" href="/css/fonts.css">
     <link rel="stylesheet" href="/css/cards/vendor-cards.css">
 
+<style>
+body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+</style>
   </head>
 
   <body>
     {{< vendor-flag type="name" >}}
+
+    <div style="flex: 1; background-color: #f4f4f4;"></div>
+
+    {{< vendor-footer >}}
   </body>
 </html>
