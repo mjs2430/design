@@ -52,6 +52,29 @@
   </url>
   
   <url>
+    <loc>https://mcclatchy.github.io/design/saratoga/qa/vendor-cards/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mcclatchy.github.io/design/saratoga/qa/vendor-flag/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mcclatchy.github.io/design/saratoga/qa/vendor-footer/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mcclatchy.github.io/design/labs/fundraising-chart/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mcclatchy.github.io/design/labs/lab-panel/</loc>
+  </url>
+  
+  <url>
     <loc>https://mcclatchy.github.io/design/saratoga/decks/author-bio/</loc>
   </url>
   
@@ -188,6 +211,10 @@
   </url>
   
   <url>
+    <loc>https://mcclatchy.github.io/design/labs/</loc>
+  </url>
+  
+  <url>
     <loc>https://mcclatchy.github.io/design/saratoga/li/</loc>
   </url>
   
@@ -293,6 +320,14 @@
   
   <url>
     <loc>https://mcclatchy.github.io/design/saratoga/utilities/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mcclatchy.github.io/design/saratoga/vendor-flag/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mcclatchy.github.io/design/saratoga/vendor-footer/</loc>
   </url>
   
 </urlset>
