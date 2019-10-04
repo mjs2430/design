@@ -156,12 +156,6 @@ class ChartPhase extends HTMLElement {
 
   constructor() {
     super();
-
-    this.formatter = new Intl.NumberFormat('en-US', {
-      style: 'currency',
-      currency: 'USD',
-      minimumFractionDigits: 0
-    });
   }
 
   connectedCallback() {
