@@ -10,7 +10,7 @@ The `<lab-panel>` webcomponent was created for The Fresno Bee [Education Lab lan
 
 {{< blazers component="lab-panel.js" >}}
 
-#### Example
+##### Example
 
 <div class="full-bleed">
 <lab-panel style="background-color: #f4f4f4;">
@@ -28,7 +28,7 @@ The `<lab-panel>` webcomponent was created for The Fresno Bee [Education Lab lan
 </lab-panel>
 {{< /highlight >}}
 
-#### Example with an image
+##### Example with an image
 <div class="full-bleed">
 <lab-panel class="fill">
   <img class="grad-line" src="https://www.fresnobee.com/news/local/education/bdet9o/picture21525414/alternates/FREE_1140/graduation">

@@ -4,7 +4,7 @@
 
 class FundraisingChart extends HTMLElement {
   get collected() {
-    return this.getAttribute("collected");
+    return parseInt(this.getAttribute("collected"));
   }
 
   set collected(amount) {
@@ -12,7 +12,8 @@ class FundraisingChart extends HTMLElement {
   }
 
   get goal() {
-    return this.getAttribute("goal");
+    console.log(this.shadowRoot.querySelectorAll("chart-phase"));
+    return parseInt(this.getAttribute("goal"));
   }
 
   set goal(amount) {
@@ -62,7 +63,7 @@ class FundraisingChart extends HTMLElement {
     </style>
 
     <div class="phases">
-      <chart-phase value="${this.collected}">Received to date</chart-phase>
+      <chart-phase value="${this.collected}" class="received">Received to date</chart-phase>
       <slot></slot>
     </div>
 
@@ -71,6 +72,86 @@ class FundraisingChart extends HTMLElement {
     </div>
     `;
     return t;
+  }
+
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.attachShadow({ mode: "open" });
+    this.shadowRoot.appendChild(this.template.content.cloneNode(true));
+  }
+}
+
+customElements.define("fundraising-chart", FundraisingChart);
+
+
+/**
+ * Chart Phase helper component
+ */
+
+class ChartPhase extends HTMLElement {
+  get value() {
+    return parseInt(this.getAttribute("value"));
+  }
+
+  set value(amount) {
+    return this.setAttribute("value", amount)
+  }
+
+  get template() {
+    let t = document.createElement("template");
+    t.innerHTML = `
+    <style>
+      :host {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      :host > * {
+        margin: 0 0 5px;
+      }
+
+      :host(.received) {
+        align-items: flex-start;
+      }
+
+      :host(:last-child) {
+        align-items: flex-end;
+      }
+
+      :host(.received) .bar,
+      :host(:last-child) .bar {
+        opacity: 0;
+      }
+
+      .label {
+        font: 11px/1em "McClatchy Sans", sans-serif;
+        text-transform: uppercase;
+      }
+
+      .value {
+        font: 600 21px/1em "McClatchy Sans", sans-serif;
+      }
+    </style>
+
+    <slot class="label"></slot>
+    <span class="value">${this.formatCurrency(this.value)}</span>
+    <span class="bar">|</span>
+    `;
+    return t;
+  }
+
+  formatCurrency(amount) {
+    let formatter = new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD',
+      minimumFractionDigits: 0
+    });
+
+    return formatter.format(amount);
   }
 
   constructor() {
@@ -89,23 +170,4 @@ class FundraisingChart extends HTMLElement {
   }
 }
 
-customElements.define("fundraising-chart", FundraisingChart);
-
-
-
-
-/**
- * Chart Phase helper component
- */
-
-class ChartPhase extends HTMLElement {
-  get template() {
-    let t = document.createElement("template");
-    t.innerHTML = `
-    <style>
-      
-    </style>
-    `;
-    return t;
-  }
-}
+customElements.define("chart-phase", ChartPhase);

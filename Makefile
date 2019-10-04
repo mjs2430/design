@@ -29,3 +29,7 @@ public:
 
 clean:
 	rm dist/*
+
+labs:
+	rsync -rvzL --update --delete -e ssh static/components/ mcc.mi:McClatchy.com/static/labs/
+
