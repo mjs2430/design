@@ -16,8 +16,7 @@ The fundraising chart is an attempt to simplify the process of repeatedly editin
 <div class="story-module">
 <fundraising-chart collected="246000" goal="600000">
   <chart-phase value="300000">Phase 1 goal</chart-phase>
-  <chart-phase value="450000">Phase 2 goal</chart-phase>
-  <chart-phase value="600000">Final Goal</chart-phase>
+  <chart-phase value="600000">Phase 2 Goal</chart-phase>
 </fundraising-chart>
 </div>
 
@@ -26,7 +25,6 @@ The fundraising chart is an attempt to simplify the process of repeatedly editin
 {{< highlight html >}}
 <fundraising-chart collected="246000" goal="600000">
   <chart-phase value="300000">Phase 1 goal</chart-phase>
-  <chart-phase value="450000">Phase 2 goal</chart-phase>
-  <chart-phase value="600000">Final Goal</chart-phase>
+  <chart-phase value="600000">Phase 2 Goal</chart-phase>
 </fundraising-chart>
 {{< /highlight >}}
