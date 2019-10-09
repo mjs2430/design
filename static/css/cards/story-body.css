@@ -130,6 +130,14 @@
 }
 
 /**
+ * Tables
+ */
+
+.story-body table {
+  max-width: 690px;
+}
+
+/**
  * Zergnet widget only applies to stories
  */
 
