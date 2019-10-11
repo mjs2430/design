@@ -22,12 +22,12 @@
 
       <div class="grid market-assets">
         {{ $logos := printf "%s/*.svg" $slug }}
-        {{ range $.Resources.Match $logos }}
         <div class="package">
+        {{ range $.Resources.Match $logos }}
           <h6 class="bold">{{ .MediaType.SubType | upper }}</h6>
           <a href="{{ .Permalink }}" download><img class="download" src="{{ .Permalink }}"></a>
-        </div>
         {{ end }}
+        </div>
 
         {{ $iconFolder := printf "%s/apps/*.svg" $slug }}
         {{ with $.Resources.Match $iconFolder }}
