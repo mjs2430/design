@@ -53,3 +53,19 @@
 .story-body .immersive {
   margin-top: 0;
 }
+
+.story-body .gallery {
+  max-width: 720px;
+  margin: 30px auto
+}
+
+.story-body .gallery .package {
+  padding-bottom: 0;
+}
+
+@media(min-width: 768px) {
+  .story-body .gallery .package {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
