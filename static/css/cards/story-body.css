@@ -109,7 +109,7 @@
 
 .story-body blockquote {
   max-width: 300px;
-  font: 24px/1.2em "McClatchy Sans", sans-serif;
+  font: 24px/1.2em var(--sans);
 }
 
 .story-body > .zone {
