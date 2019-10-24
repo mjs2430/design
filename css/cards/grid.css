@@ -7,17 +7,3 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 30px;
 }
-
-.grid > .package:not(.paper) {
-  padding: 0;
-}
-
-.grid > .ad-widget {
-  align-self: center;
-}
-
-@media(min-width: 990px) {
-  .col-span-2 {
-    grid-column: span 2;
-  }
-}

@@ -2,22 +2,16 @@
  * SWG Promo card
  */
 
-@media( min-width: 660px ) {
-  .card.swg-promo {
-    grid-template-columns: 2fr 1fr;
-  }
-
-  .card.swg-promo > :first-child {
-    min-height: 200px;
-  }
+.card.swg-promo {
+	flex-wrap: wrap;
 }
 
-/* @media( min-width: 990px ) { */
-/*   .card.swg-promo { */
-/*     grid-template-columns: 2fr 1fr; */
-/*   } */
-/* } */
+.card.swg-promo > :first-child {
+	flex-grow: 4;
+	min-height: 200px;
+}
 
 .card.swg-promo .title {
-  font: 600 48px "McClatchy Sans", sans-serif;
+	font: 600 48px "McClatchy Sans", sans-serif;
 }
+

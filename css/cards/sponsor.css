@@ -10,5 +10,6 @@
 }
 
 .sponsor .package {
+  padding: 0;
   justify-content: center;
 }

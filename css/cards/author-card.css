@@ -32,12 +32,23 @@
 }
 
 .author-card .social-media a {
-  padding: 10px 10px 10px 0;
-  box-sizing: content-box;
+  padding: 10px 15px 10px 0;
 }
 
+/**
+ * Following 2 can be removed with flag release
+ */
+
 .author-card .flex {
+  display: flex;
+  align-items: center;
   width: auto;
+}
+
+.author-card .icon-label {
+  position: relative;
+  top: .15em;
+  margin-left: 10px;
 }
 
 /** 
@@ -58,10 +69,6 @@
 
   .author-card .flex {
     flex-wrap: wrap;
-  }
-
-  .author-card .flex:first-child {
-    grid-column: span 2;
   }
 
   .author-card .byline {

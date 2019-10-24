@@ -10,138 +10,46 @@
   --lhc: #31409F;
   --ld: underline;
   --lhd: underline;
-  padding-bottom: 15px;
 }
 
 .story-body > * {
-  max-width: 660px;
+  max-width: 720px;
 	padding: 0 15px;
-  margin: 15px auto;
+	margin-right: auto;
+  margin-left: auto;
+	box-sizing: content-box;
 }
 
-.story-body > .header {
-  margin-top: 0;
+.story-body > figure {
+	max-width: 100%;
+	margin: 30px 0;
+	padding: 0;
 }
 
-/**
- * Embeds
- */
+.story-body > .header + figure {
+  margin-top: 15px;
+}
 
+.story-body img, 
+.story-body figcaption {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.story-body .story-module,
 .story-body .embed-infographic {
-  max-width: 100%;
-  margin: 30px 0;
-}
-
-.embed-infographic > * {
-  max-width: 660px;
-  margin: 0 auto;
-  clear: both;
-}
-
-.story-body > .story-module {
   margin: 30px auto;
 }
 
-/**
- * Media options
- */
-
-.story-body figure {
-  margin: 30px auto;
-  padding: 0;
+.story-body .ad-widget {
+  margin: 50px auto;
 }
 
-.story-body .wide {
-  max-width: 960px;
+.story-body .dateline {
+	display: block;
+  margin-top: 15px;
 }
 
-.story-body .full-bleed {
-  max-width: 100%;
-  padding: 0;
-}
-
-@media(max-width: 690px) {
-  .story-body figcaption {
-    padding: 10px 15px 0;
-  }
-}
-
-@media(max-width: 990px) {
-  .story-body .wide figcaption {
-    padding: 10px 15px 0;
-  }
-}
-
-.story-body .full-bleed figcaption {
-  padding: 10px 15px 0;
-}
-
-/**
- * Asides
- */
-
-.story-body aside > * {
-  margin: 30px auto;
-}
-
-@media(min-width: 930px) {
-  .story-body aside > * {
-    float: right;
-    margin: 0 -150px 30px 30px;
-  }
-
-  .story-body aside.left > * {
-    float: left;
-    margin: 0 30px 30px -150px;
-  }
-}
-
-.story-body blockquote {
-  max-width: 300px;
-  font: 24px/1.2em "McClatchy Sans", sans-serif;
-}
-
-.story-body > .zone {
-  margin: 30px auto;
-}
-
-/**
- * Mugshots
- */
-
-.story-body figure.mugshot {
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.story-body figure.mugshot > * {
-  float: right;
-  width: 125px;
-  margin: 0 0 15px 15px;
-}
-
-.story-body figure.mugshot figcaption {
-  padding: 5px 0 0;
-  font-size: 12px;
-}
-
-.story-body figure.mugshot .credit {
-  font-size: 10px;
-}
-
-/**
- * Tables
- */
-
-.story-body table {
-  max-width: 690px;
-}
-
-/**
- * Zergnet widget only applies to stories
- */
-
-.zergnet {
-  max-width: 660px;
-  padding: 0 15px;
+.story-body .immersive {
+  margin-top: 0;
 }
