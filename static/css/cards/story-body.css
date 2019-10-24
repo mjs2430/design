@@ -33,7 +33,8 @@
 .story-body img, 
 .story-body figcaption {
 	max-width: 1140px;
-	margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .story-body .story-module,
