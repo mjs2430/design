@@ -168,6 +168,35 @@ section.flag {
 }
 
 /**
+ * Vendor version
+ */
+/* .flag.vendor { */
+/*   padding: 10px 15px; */
+/*   justify-content: center; */
+/* } */
+/* .flag.vendor .vendor-name { */
+/*   padding: 5px 10px; */
+/*   margin: 0; */
+/*   font-size: 22px; */
+/*   padding: 7px 9px 3px; */
+/*   line-height: 1em; */
+/*   box-sizing: border-box; */
+/*   position: relative; */
+/* } */
+/* .flag.vendor .market-logo { */
+/*   flex: none; */
+/*   padding: 0 10px; */
+/* } */
+/* .flag.vendor .vendor-logo img { */
+/*   display: block; */
+/*   height: 30px; */
+/*   padding: 0 10px; */
+/* } */
+/* .flag.vendor .market-logo:not(:first-child) { */
+/*   border-left: 2px solid #222; */
+/*   max-width: 50%; */
+/* } */
+/**
  * Footer
  */
 .footer {
