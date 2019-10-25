@@ -158,7 +158,7 @@ time {
 
 .label > * {
   margin: 0;
-  padding: 5px 10px 3px;
+  padding: 5px 10px;
   color: var(--bc, white);
   background-color: var(--bbc, #373737);
   --ld: none;
