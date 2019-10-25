@@ -19,7 +19,8 @@
 }
 
 .question {
-	--hf: "McClatchy Serif", serif;
+	padding-top: 15px;
+	--hf: var(--serif);
 	--hw: 400;
 	--ht: none;
 }

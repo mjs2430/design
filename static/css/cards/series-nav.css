@@ -3,7 +3,7 @@
  */
 
 .series-nav {
-	--hf: "McClatchy Serif", serif;
+	--hf: var(--serif);
 	--hw: 400;
 	--ht: none;
   --lc: #222;

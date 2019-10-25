@@ -3,7 +3,7 @@
  */
 
 .story-body {
-  --hf: "McClatchy Sans", sans-serif;
+  --hf: var(--sans);
   --hw: 600;
   --ht: uppercase;
   --lc: #5169B8;

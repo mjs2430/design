@@ -20,7 +20,7 @@ h1 {
 }
 
 p {
-  font: 14px/1.5em "McClatchy Sans", sans-serif;
+  font: 14px/1.5em var(--sans);
 }
 
 /**
@@ -53,7 +53,7 @@ section {
 }
 
 .bio * {
-  font-family: "McClatchy Sans", sans-serif;
+  font-family: var(--sans);
 }
 
 .bio h4 {

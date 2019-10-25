@@ -26,11 +26,11 @@ button:hover,
 .button {
   display: inline-block;
   align-self: flex-start;
-  font: 600 14px "McClatchy Sans";
+  font: 600 14px var(--sans);
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
-  padding: .6em 1em .3em;
+  padding: .5em 1em;
   box-sizing: border-box;
   border-radius: 2px;
   --ld: none;

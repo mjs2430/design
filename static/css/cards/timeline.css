@@ -5,7 +5,7 @@
 .timeline-event {
 	border-left: 1px solid #707070;
 	max-width: 500px;
-  --hf: "McClatchy Sans", sans-serif;
+  --hf: var(--sans);
   --hw: 600;
   --ht: uppercase;
 }
