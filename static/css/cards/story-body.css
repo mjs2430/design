@@ -60,19 +60,26 @@
   padding: 0;
 }
 
+.story-body figure .package {
+  padding: 10px 0 0;
+}
+
 @media(max-width: 690px) {
-  .story-body figcaption {
+  .story-body figcaption,
+  .story-body figure .package {
     padding: 10px 15px 0;
   }
 }
 
 @media(max-width: 990px) {
-  .story-body .wide figcaption {
+  .story-body .wide figcaption,
+  .story-body .wide .package {
     padding: 10px 15px 0;
   }
 }
 
-.story-body .full-bleed figcaption {
+.story-body .full-bleed figcaption,
+.story-body .full-bleed .package {
   padding: 10px 15px 0;
 }
 
@@ -144,20 +151,4 @@
 .zergnet {
   max-width: 660px;
   padding: 0 15px;
-}
-
-.story-body .gallery {
-  max-width: 720px;
-  margin: 30px auto
-}
-
-.story-body .gallery .package {
-  padding-bottom: 0;
-}
-
-@media(min-width: 768px) {
-  .story-body .gallery .package {
-    padding-left: 0;
-    padding-right: 0;
-  }
 }
