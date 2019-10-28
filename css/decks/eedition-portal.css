@@ -19,7 +19,7 @@
 .e-edition .package {
   align-items: center;
   --lhc: #222;
-  --hf: "McClatchy Sans";
+  --hf: var(--sans);
   --hw: 500;
 }
 

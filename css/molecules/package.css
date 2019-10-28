@@ -10,11 +10,15 @@
   flex: 1 1 auto;
   align-items: flex-start;
   color: var(--tc);
-	--hf: "McClatchy Serif", serif;
+	--hf: var(--serif);
 	--hw: 400;
 	--ht: none;
   --ld: none;
   --lhd: underline;
+}
+
+.package.flush {
+  padding: 0;
 }
 
 .package > * {

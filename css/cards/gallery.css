@@ -73,6 +73,6 @@
   justify-content: flex-end;
 }
 
-.gallery figcaption {
+.gallery .package figcaption {
   padding: 0;
 }

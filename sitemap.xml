@@ -32,11 +32,6 @@
   </url>
   
   <url>
-    <loc>https://mcclatchy.github.io/design/saratoga/qa/dynamics/</loc>
-    <lastmod>2019-05-13T15:52:16-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mcclatchy.github.io/design/saratoga/qa/series-nav/</loc>
     <lastmod>2019-05-13T15:52:16-05:00</lastmod>
   </url>
@@ -69,6 +64,14 @@
   <url>
     <loc>https://mcclatchy.github.io/design/saratoga/qa/vendor-footer/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mcclatchy.github.io/design/labs/fundraising-chart/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mcclatchy.github.io/design/labs/lab-panel/</loc>
   </url>
   
   <url>
@@ -209,6 +212,10 @@
   
   <url>
     <loc>https://mcclatchy.github.io/design/saratoga/label/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mcclatchy.github.io/design/labs/</loc>
   </url>
   
   <url>

@@ -20,7 +20,7 @@
 }
 
 .banner a {
-  font: 600 14px/1.2em "McClatchy Sans", sans-serif;
+  font: 600 14px/1.2em var(--sans);
   padding: 13px 15px;
   text-transform: uppercase;
   color: inherit;
@@ -51,6 +51,23 @@
 .grid-label {
   padding: 15px;
 }
+
+code {
+  background-color: #ddd;
+  padding: 2px 5px;
+}
+
+pre {
+  padding: 15px 0;
+}
+
+pre code {
+  white-space: pre-wrap;
+  word-break: break-word;
+  background-color: transparent;
+  padding: 0;
+}
+
 
 /**
  * Footer

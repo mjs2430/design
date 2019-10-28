@@ -1,0 +1,21 @@
+/**
+ * Zones
+ */
+
+gpt-ad {
+  display: block;
+  text-align: center;
+}
+
+.zone {
+  clear: both;
+}
+
+.zone.grid.combo {
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 315px);
+}
+
+.zone[data-zone="zone1"] {
+  padding: 30px 15px;
+}
