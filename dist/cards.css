@@ -192,7 +192,8 @@
 .story-body img,
 .story-body figcaption {
   max-width: 1140px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .story-body .story-module,
@@ -213,6 +214,25 @@
   margin-top: 0;
 }
 
+.story-body .gallery {
+  max-width: 720px;
+  margin: 30px auto;
+}
+
+.story-body .gallery .package {
+  padding-bottom: 0;
+}
+
+.story-body .gallery figcaption {
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .story-body .gallery .package {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 /**
  * Header package
  */
