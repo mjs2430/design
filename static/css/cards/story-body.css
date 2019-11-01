@@ -64,6 +64,10 @@
   padding-bottom: 0;
 }
 
+.story-body .gallery figcaption {
+  margin-top: 0;
+}
+
 @media(min-width: 768px) {
   .story-body .gallery .package {
     padding-left: 0;
