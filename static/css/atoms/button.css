@@ -20,6 +20,11 @@ button, .button {
   border: 1px solid transparent;
 }
 
+button:hover, 
+.button:hover {
+  color: var(--bc);
+}
+
 .button {
   display: inline-block;
   align-self: flex-start;

@@ -38,6 +38,7 @@
 
 .card.horizontal figure {
   position: relative;
+  margin: 0;
 }
 
 .card.horizontal figure img {
