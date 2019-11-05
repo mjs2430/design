@@ -28,8 +28,8 @@
  */
 
 .story-body .embed-infographic {
-  max-width: 100%;
-  margin: 30px 0;
+  /* max-width: 100%; */
+  margin: 30px auto;
 }
 
 .embed-infographic > * {
