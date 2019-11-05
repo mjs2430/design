@@ -37,5 +37,5 @@
 }
 
 .read-next .package > p {
-  font: 14px/1.5em var(--sans);
+  font: 14px/1.5em "McClatchy Sans", sans-serif;
 }

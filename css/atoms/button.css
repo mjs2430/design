@@ -20,14 +20,19 @@ button, .button {
   border: 1px solid transparent;
 }
 
+button:hover, 
+.button:hover {
+  color: var(--bc);
+}
+
 .button {
   display: inline-block;
   align-self: flex-start;
-  font: 600 14px var(--sans);
+  font: 600 14px "McClatchy Sans";
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
-  padding: .4em 1em;
+  padding: .6em 1em .3em;
   box-sizing: border-box;
   border-radius: 2px;
   --ld: none;

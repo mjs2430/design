@@ -3,11 +3,11 @@
  */
 
 summary, .summary {
-  font: 400 14px/1.5em var(--sans);
+  font: 400 14px/1.5em "McClatchy Sans", sans-serif;
 }
 
 .small {
-  font: 400 11px/1.5em var(--sans);
+  font: 400 11px/1.5em "McClatchy Sans", sans-serif;
 }
 
 .caps {
@@ -16,13 +16,13 @@ summary, .summary {
 }
 
 .sans {
-  font-family: var(--sans);
-  --hf: var(--sans);
+  font-family: "McClatchy Sans", sans-serif;
+  --hf: "McClatchy Sans", sans-serif;
 }
 
 .serif {
-  font-family: var(--serif);
-  --hf: var(--serif);
+  font-family: "McClatchy Serif", serif;
+  --hf: "McClatchy Serif", serif;
 }
 
 .soft {

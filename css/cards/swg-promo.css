@@ -19,5 +19,5 @@
 /* } */
 
 .card.swg-promo .title {
-	font: 600 48px var(--sans);
+  font: 600 48px "McClatchy Sans", sans-serif;
 }

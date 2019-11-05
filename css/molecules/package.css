@@ -10,7 +10,7 @@
   flex: 1 1 auto;
   align-items: flex-start;
   color: var(--tc);
-	--hf: var(--serif);
+	--hf: "McClatchy Serif", serif;
 	--hw: 400;
 	--ht: none;
   --ld: none;

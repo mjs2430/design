@@ -3,7 +3,7 @@
  */
 
 .story-body {
-  --hf: var(--sans);
+  --hf: "McClatchy Sans", sans-serif;
   --hw: 600;
   --ht: uppercase;
   --lc: #5169B8;
@@ -28,14 +28,13 @@
  */
 
 .story-body .embed-infographic {
-  max-width: 100%;
-  margin: 30px 0;
+  margin: 30px auto;
+  clear: both;
 }
 
 .embed-infographic > * {
-  max-width: 660px;
-  margin: 0 auto;
-  clear: both;
+  display: block;
+  max-width: 100%;
 }
 
 .story-body > .story-module {
@@ -46,7 +45,7 @@
  * Media options
  */
 
-.story-body figure {
+.story-body > figure {
   margin: 30px auto;
   padding: 0;
 }
@@ -105,7 +104,7 @@
 
 .story-body blockquote {
   max-width: 300px;
-  font: 24px/1.2em var(--sans);
+  font: 24px/1.2em "McClatchy Sans", sans-serif;
 }
 
 .story-body > .zone {
@@ -142,6 +141,14 @@
 
 .story-body table {
   max-width: 690px;
+}
+
+/**
+ * Immersive card 
+ */
+
+.story-body .immersive {
+  max-width: 100%;
 }
 
 /**

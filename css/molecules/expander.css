@@ -9,8 +9,10 @@
 }
 
 .expander:after {
-  content: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgNTEyIj48cGF0aCBkPSJNMjg4LjY2MiAzNTJIMzEuMzM4Yy0xNy44MTggMC0yNi43NDEtMjEuNTQzLTE0LjE0Mi0zNC4xNDJsMTI4LjY2Mi0xMjguNjYyYzcuODEtNy44MSAyMC40NzQtNy44MSAyOC4yODQgMGwxMjguNjYyIDEyOC42NjJjMTIuNiAxMi41OTkgMy42NzYgMzQuMTQyLTE0LjE0MiAzNC4xNDJ6Ii8+PC9zdmc+Cg==');
+  content: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MDEuNSAyODQuNCI+PHBhdGggZD0iTTQ2Ny43LDI4NC40SDMzLjdjLTMwLDAtNDUtMzYuMy0yMy43LTU3LjVMMjI2LjksOS45YTMzLjgsMzMuOCwwLDAsMSw0Ny44LDBsMjE3LDIxN2MyMSwyMS4yLDYsNTcuNS0yNCw1Ny41WiIvPjwvc3ZnPgo=');
+  display: inline-block;
   width: 14px;
+  height: 8px;
   line-height: 0;
   margin-left: 5px;
   transition: transform .5s ease;

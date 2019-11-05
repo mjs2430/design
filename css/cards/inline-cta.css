@@ -5,7 +5,7 @@
 }
 
 .inline-cta .h1 {
-  --hf: var(--serif);
+  --hf: "McClatchy Serif", serif;
 }
 
 .impact .inline-cta {

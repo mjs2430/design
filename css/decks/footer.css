@@ -8,7 +8,7 @@
 }
 
 .footer-connect {
-  --hf: var(--sans);
+  --hf: "McClatchy Sans", sans-serif;
   --hw: 500;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .footer-links a {
-  font: 14px var(--sans);
+  font: 14px "McClatchy Sans";
 }
 
 .bottom-nav a {

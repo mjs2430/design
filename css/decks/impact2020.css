@@ -3,7 +3,7 @@
   background-color: #373737;
   font-weight: 500;
   border-radius: unset;
-  font-family: var(--sans);
+  font-family: "McClatchy Sans", sans-serif;
 }
 
 .impact2020 .kicker:hover {
@@ -20,7 +20,7 @@
 }
 
 .impact2020 .immersive .title {
-  font-family: var(--sans);
+  font-family: "McClatchy Sans";
 }
 
 .impact2020 .immersive time {
