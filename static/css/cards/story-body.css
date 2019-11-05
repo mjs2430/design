@@ -28,14 +28,13 @@
  */
 
 .story-body .embed-infographic {
-  /* max-width: 100%; */
   margin: 30px auto;
+  clear: both;
 }
 
 .embed-infographic > * {
-  max-width: 660px;
-  margin: 0 auto;
-  clear: both;
+  display: block;
+  max-width: 100%;
 }
 
 .story-body > .story-module {
