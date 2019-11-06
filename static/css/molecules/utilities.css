@@ -15,6 +15,12 @@ summary, .summary {
   --ht: uppercase;
 }
 
+.no-caps,
+.button.no-caps {
+  text-transform: none;
+  --ht: none;
+}
+
 .sans {
   font-family: "McClatchy Sans", sans-serif;
   --hf: "McClatchy Sans", sans-serif;
@@ -37,6 +43,10 @@ summary, .summary {
 
 .gray {
   color: var(--tc, #707070);
+}
+
+.cutout {
+  background-color: #f4f4f4;
 }
 
 .blue {
