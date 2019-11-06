@@ -304,8 +304,12 @@ button, .button {
   padding: 11px 35px 7px;
 }
 
-.ghost {
+.button.ghost {
   border-color: #4a4a4a;
+}
+
+.button.pill {
+  border-radius: 1.5em;
 }
 
 /**
