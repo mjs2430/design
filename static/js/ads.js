@@ -28,8 +28,13 @@ class Ads {
           .addSize([0,0], [300, 250]).build()
       }
 
-      googletag.pubads().enableSingleRequest();
       googletag.pubads().collapseEmptyDivs();
+      googletag.pubads().enableLazyLoad({
+        fetchMarginPercent: 200,
+        renderMarginPercent: 100,
+        mobileScaling: 2.0
+      });
+
       googletag.enableServices();
     });
 

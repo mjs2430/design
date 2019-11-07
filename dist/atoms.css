@@ -86,11 +86,11 @@ h6, .h6 {
 }
 
 p {
-  font: 17px/1.5em "Lyon", serif;
+  font: 19px/1.5em "Lyon", serif;
 }
 
 li {
-  font: 17px/1.5em "Lyon", serif;
+  font: 19px/1.5em "Lyon", serif;
   margin: 10px 0 10px calc(1em + 15px);
 }
 
@@ -209,7 +209,7 @@ figure img {
 figcaption, .caption {
   font: 14px/1.5em "McClatchy Sans", sans-serif;
   color: var(--tc, #707070);
-  padding: 10px 15px 0;
+  padding-top: 10px;
 }
 
 svg {

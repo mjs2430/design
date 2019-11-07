@@ -1,19 +1,44 @@
 {{ $type := default "cta" (.Get "type" ) }}
+{{ $class := .Get "class" }}
 
 {{ if eq $type "cta" }}
-<div class="inline-cta ad-widget package">
-  <h1>Digital access for only $0.99</h1>
-  <p class="summary">For the most comprehensive local coverage, subscribe today.</p>
-  <a class="button" href="#">SUBSCRIBE NOW</a>
+<div class="inline-cta ad-widget package {{$class}}">
+  <h1>Make us part of your daily routine.</h1>
+  <p class="summary">Get full access to The Sacramento Bee across all your devices. Unlimited Digital Access: Only $0.99 for your first month.</p>
+  <a class="button" href="#">SAVE NOW</a>
+</div>
+{{ end }}
+
+{{ if eq $type "podcast" }}
+<div class="inline-cta ad-widget package {{$class}}">
+  <h1>Listen to the Morning Mix Podcast</h1>
+  <p class="summary">Start your day with the most important local and national stories from The Sacramento Bee.</p>
+  <a class="button" href="#">LISTEN NOW</a>
 </div>
 {{ end }}
 
 {{ if eq $type "newsletter" }}
-<form class="inline-cta ad-widget package">
+<form class="inline-cta ad-widget package {{$class}}">
   <h1>Breaking news</h1>
   <p class="summary">Be the first to know when big news breaks</p>
   <input type="hidden" value="breaking newsletter" id="newsletterType">
   <input type="email" placeholder="Email">
   <button class="button">Sign Up</button>
 </form>
+{{ end }}
+
+{{ if eq $type "notifications" }}
+<div class="inline-cta ad-widget package {{$class}}">
+  <h1>Get alerts where you like to read the news.</h1>
+  <p class="summary">Sign up for breaking news notifications right on your desktop from the Sacramento Bee</p>
+  <a class="button" href="#">SIGN UP</a>
+</div>
+{{ end }}
+
+{{ if eq $type "app" }}
+<div class="inline-cta ad-widget package {{$class}}">
+  <h1>Read on-the-go with the Sac Bee app</h1>
+  <p class="summary">Access all the latest local news on our mobile app, available in the App Store and Google Play.</p>
+  <a class="button" href="#">DOWNLOAD</a>
+</div>
 {{ end }}

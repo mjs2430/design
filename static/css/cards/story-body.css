@@ -10,67 +10,152 @@
   --lhc: #31409F;
   --ld: underline;
   --lhd: underline;
+  padding-bottom: 15px;
 }
 
 .story-body > * {
-  max-width: 720px;
+  max-width: 660px;
 	padding: 0 15px;
-	margin-right: auto;
-  margin-left: auto;
-	box-sizing: content-box;
+  margin: 15px auto;
 }
 
-.story-body > figure {
-	max-width: 100%;
-	margin: 30px 0;
-	padding: 0;
+.story-body > .header {
+  margin-top: 0;
 }
 
-.story-body > .header + figure {
-  margin-top: 15px;
-}
+/**
+ * Embeds
+ */
 
-.story-body img, 
-.story-body figcaption {
-	max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.story-body .story-module,
 .story-body .embed-infographic {
+  margin: 30px auto;
+  clear: both;
+}
+
+.embed-infographic > * {
+  display: block;
+  max-width: 100%;
+}
+
+.story-body > .story-module {
   margin: 30px auto;
 }
 
-.story-body .ad-widget {
-  margin: 50px auto;
+/**
+ * Media options
+ */
+
+.story-body > figure {
+  margin: 30px auto;
+  padding: 0;
 }
 
-.story-body .dateline {
-	display: block;
-  margin-top: 15px;
+.story-body .wide {
+  max-width: 960px;
 }
+
+.story-body .full-bleed {
+  max-width: 100%;
+  padding: 0;
+}
+
+.story-body figure .package {
+  padding: 10px 0 0;
+}
+
+@media(max-width: 690px) {
+  .story-body figcaption,
+  .story-body figure .package {
+    padding: 10px 15px 0;
+  }
+}
+
+@media(max-width: 990px) {
+  .story-body .wide figcaption,
+  .story-body .wide .package {
+    padding: 10px 15px 0;
+  }
+}
+
+.story-body .full-bleed figcaption,
+.story-body .full-bleed .package {
+  padding: 10px 15px 0;
+}
+
+/**
+ * Asides
+ */
+
+.story-body aside > * {
+  margin: 30px auto;
+}
+
+@media(min-width: 930px) {
+  .story-body aside > * {
+    float: right;
+    margin: 0 -150px 30px 30px;
+  }
+
+  .story-body aside.left > * {
+    float: left;
+    margin: 0 30px 30px -150px;
+  }
+}
+
+.story-body blockquote {
+  max-width: 300px;
+  font: 24px/1.2em "McClatchy Sans", sans-serif;
+}
+
+.story-body > .zone {
+  margin: 30px auto;
+}
+
+/**
+ * Mugshots
+ */
+
+.story-body figure.mugshot {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.story-body figure.mugshot > * {
+  float: right;
+  width: 125px;
+  margin: 0 0 15px 15px;
+}
+
+.story-body figure.mugshot figcaption {
+  padding: 5px 0 0;
+  font-size: 12px;
+}
+
+.story-body figure.mugshot .credit {
+  font-size: 10px;
+}
+
+/**
+ * Tables
+ */
+
+.story-body table {
+  max-width: 690px;
+}
+
+/**
+ * Immersive card 
+ */
 
 .story-body .immersive {
-  margin-top: 0;
+  max-width: 100%;
 }
 
-.story-body .gallery {
-  max-width: 720px;
-  margin: 30px auto
-}
+/**
+ * Zergnet widget only applies to stories
+ */
 
-.story-body .gallery .package {
-  padding-bottom: 0;
-}
-
-.story-body .gallery figcaption {
-  margin-top: 0;
-}
-
-@media(min-width: 768px) {
-  .story-body .gallery .package {
-    padding-left: 0;
-    padding-right: 0;
-  }
+.zergnet {
+  max-width: 660px;
+  padding: 0 15px;
 }

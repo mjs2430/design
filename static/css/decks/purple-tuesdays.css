@@ -2,21 +2,6 @@
  * Purple Tuesdays
  */
 
-/* Because the main section body is still wrapped by Bootstrap */
-.big-news > * {
-  max-width: 1110px;
-}
-
-.big-news .grid {
-  max-width: 1140px;
-}
-
-/** 
- * Overloads for older elements 
- * Unclean repeat of media breakpoint, but these are separate
- * from the core base template code.
- */
-
 @media (min-width: 690px) {
   .breaking-news-macro {
     margin: 0 15px;

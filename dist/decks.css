@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /**
  * Display classes
  */
@@ -7,7 +6,7 @@
   display: none;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .h-tablet {
     display: none;
   }
@@ -400,130 +399,6 @@ section.flag {
   background-color: unset;
 }
 
-/**
- * Story template
- */
-/* Mobile */
-.story-rail > * {
-  max-width: 720px;
-  margin: 30px auto;
-}
-
-.story-rail .paper, .story-rail .card {
-  box-shadow: none;
-}
-
-.story-rail .more-link {
-  padding: 0 15px;
-  margin-top: 0;
-}
-
-/* Temporary inline video fixes */
-.story-body .embed-media-details .media-leadtext {
-  padding: 10px 0 0;
-}
-
-.story-body .embed-media-details .media-leadtext {
-  font: 14px/1.5em "McClatchy Sans", sans-serif;
-  color: var(--tc, #707070);
-  margin: 0;
-}
-
-.story-body .embed-media-details > * {
-  padding: 0;
-}
-
-.story-body .embed-media-details .bylines {
-  text-transform: uppercase;
-}
-
-#vendor-stories-content .h5 {
-  margin-bottom: 10px;
-}
-
-.story-rail #video-widget .footer {
-  padding: 0;
-}
-
-.story-body #zerg-target .vendor-storiescontent-main-container {
-  border: none;
-}
-
-.commenting-container {
-  --ld:none;
-  --lhd:none;
-  --lhc: #222;
-}
-
-.commenting-container .glyphicon-comment-o {
-  display: none;
-}
-
-.commenting-container .glyphicon-chevron-down:before {
-  content: "";
-}
-
-.byline .ng_byline_name {
-  font-weight: bold;
-}
-
-/* iPad and up */
-@supports (display: grid) {
-  @media (min-width: 768px) {
-    .story-template {
-      max-width: 1140px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) 300px;
-      grid-column-gap: 30px;
-      padding: 0 15px;
-    }
-
-    /* Body (rail version) */
-    .story-body {
-      position: relative;
-    }
-
-    .story-body > * {
-      padding-left: 0px;
-      padding-right: 0px;
-    }
-
-    .story-body figcaption {
-      padding: 10px 0 0;
-    }
-
-    .story-body .transparency {
-      padding: 15px;
-    }
-
-    /* fixes issue in _global.scss */
-    .story-body .lead-item,
-.story-template .story-body > .inline-video {
-      max-width: 100%;
-      padding: 0;
-    }
-
-    /* Rail */
-    .story-rail > *,
-.story-rail .package,
-.story-rail figure img {
-      padding-left: 0;
-      padding-right: 0;
-    }
-
-    .story-rail .more-link {
-      padding: 0;
-    }
-
-    /* Another overload */
-    .story .story-template .story-body > .embed-infographic,
-.story .story-template .story-body > .image-gallery-organism,
-.story .story-template .story-body > [id^=inlinegallery] {
-      width: unset;
-    }
-  }
-}
 .search-form {
   margin: 50px 0;
   display: grid;
@@ -684,20 +559,6 @@ section.flag {
 
 /**
  * Purple Tuesdays
- */
-/* Because the main section body is still wrapped by Bootstrap */
-.big-news > * {
-  max-width: 1110px;
-}
-
-.big-news .grid {
-  max-width: 1140px;
-}
-
-/** 
- * Overloads for older elements 
- * Unclean repeat of media breakpoint, but these are separate
- * from the core base template code.
  */
 @media (min-width: 690px) {
   .breaking-news-macro {

@@ -28,16 +28,17 @@
 
 /* Horizontal option */
 
-.card.horizontal {
-  flex-direction: row;
-}
-
-.card.horizontal > * {
-  flex: 1 1 300px;
+@media( min-width: 660px ) {
+  .card.horizontal {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 15px;
+  }
 }
 
 .card.horizontal figure {
   position: relative;
+  margin: 0;
 }
 
 .card.horizontal figure img {

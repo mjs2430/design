@@ -86,11 +86,11 @@ h6, .h6 {
 }
 
 p {
-  font: 17px/1.5em "Lyon", serif;
+  font: 19px/1.5em "Lyon", serif;
 }
 
 li {
-  font: 17px/1.5em "Lyon", serif;
+  font: 19px/1.5em "Lyon", serif;
   margin: 10px 0 10px calc(1em + 15px);
 }
 
@@ -209,7 +209,7 @@ figure img {
 figcaption, .caption {
   font: 14px/1.5em "McClatchy Sans", sans-serif;
   color: var(--tc, #707070);
-  padding: 10px 15px 0;
+  padding-top: 10px;
 }
 
 svg {
@@ -644,6 +644,14 @@ summary, .summary {
   grid-gap: 30px;
 }
 
+.grid > .package:not(.paper) {
+  padding: 0;
+}
+
+.grid > .ad-widget {
+  align-self: center;
+}
+
 /**
  * Flexbox grid
  */
@@ -790,6 +798,10 @@ summary, .summary {
   font-size: 20px;
 }
 
+.immersive figcaption {
+  padding: 10px 15px 0;
+}
+
 @media (min-width: 760px) {
   .immersive .title {
     font-size: 64px;
@@ -806,68 +818,81 @@ summary, .summary {
   --lhc: #31409F;
   --ld:underline;
   --lhd:underline;
+  padding-bottom: 15px;
 }
 
 .story-body > * {
-  max-width: 720px;
+  max-width: 660px;
   padding: 0 15px;
-  margin-right: auto;
-  margin-left: auto;
-  box-sizing: content-box;
+  margin: 15px auto;
 }
 
-.story-body > figure {
+.story-body > .header {
+  margin-top: 0;
+}
+
+/**
+ * Zones and embeds
+ */
+.story-body .zone,
+.story-body .embed-infographic {
   max-width: 100%;
   margin: 30px 0;
+}
+
+.zone > *,
+.embed-infographic > * {
+  max-width: 660px;
+  margin: 0 auto;
+  clear: both;
+}
+
+.story-body > .story-module {
+  margin: 30px auto;
+}
+
+/**
+ * Media options
+ */
+.story-body figure {
   padding: 0;
 }
 
-.story-body > .header + figure {
-  margin-top: 15px;
+.story-body .wide {
+  max-width: 960px;
 }
 
-.story-body img,
-.story-body figcaption {
-  max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
+.story-body .full-bleed {
+  max-width: 100%;
+  padding: 0;
 }
 
-.story-body .story-module,
-.story-body .embed-infographic {
-  margin: 30px auto;
+@media (max-width: 690px) {
+  .story-body figcaption {
+    padding: 10px 15px 0;
+  }
+}
+@media (max-width: 990px) {
+  .story-body .wide figcaption {
+    padding: 10px 15px 0;
+  }
+}
+.story-body .full-bleed figcaption {
+  padding: 10px 15px 0;
 }
 
-.story-body .ad-widget {
-  margin: 50px auto;
-}
+/**
+ * Asides
+ */
+@media (min-width: 930px) {
+  .story-body aside > * {
+    float: right;
+    margin: 0 -150px 30px 30px;
+  }
 
-.story-body .dateline {
-  display: block;
-  margin-top: 15px;
-}
-
-.story-body .immersive {
-  margin-top: 0;
-}
-
-.story-body .gallery {
-  max-width: 720px;
-  margin: 30px auto;
-}
-
-.story-body .gallery .package {
-  padding-bottom: 0;
-}
-
-.story-body .gallery figcaption {
-  margin-top: 0;
-}
-
-@media (min-width: 768px) {
-  .story-body .gallery .package {
-    padding-left: 0;
-    padding-right: 0;
+  .story-body aside.left > * {
+    float: left;
+    margin: 0 30px 30px -150px;
   }
 }
 /**
@@ -1142,7 +1167,7 @@ summary, .summary {
 .transparency > * {
   margin-left: auto;
   margin-right: auto;
-  max-width: 720px;
+  max-width: 660px;
 }
 
 .transparency .expander {
@@ -1150,7 +1175,6 @@ summary, .summary {
 }
 
 .question {
-  padding-top: 15px;
   --hf: "McClatchy Serif", serif;
   --hw: 400;
   --ht:none;
@@ -1165,25 +1189,18 @@ summary, .summary {
   margin-top: 0;
 }
 
-.big-news a {
-  color: inherit;
-}
-
 .big-news > * {
   max-width: 1140px;
   margin: 0 auto;
 }
 
 .big-news .latest {
-  box-sizing: content-box;
   padding: 15px 15px 0;
 }
 
 .big-news .grid {
-  max-width: 1170px;
-  grid-gap: 0;
-  grid-template-columns: repeat(3, 1fr);
-  display: block;
+  padding: 15px;
+  grid-template-columns: 1fr;
 }
 
 .big-news .h1 {
@@ -1191,41 +1208,23 @@ summary, .summary {
   text-align: center;
 }
 
-.big-news > figure {
-  max-width: 1280px;
+@media (max-width: 1170px) {
+  .big-news figcaption {
+    padding: 10px 15px;
+  }
 }
-
-.big-news img {
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
-.big-news figcaption {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 10px 15px 15px;
-}
-
-.big-news .featured {
-  display: block;
+.big-news .featured .package {
+  padding: 15px 0;
 }
 
 @media (min-width: 680px) {
   .big-news .grid {
-    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  .big-news h1 {
-    font-size: 52px;
-  }
-
-  .big-news .featured .card {
-    padding: 15px;
-  }
-
-  .big-news .featured .package {
-    padding: 15px 0 0;
-  }
+  /* .big-news .h1 { */
+  /* 	font-size: 52px; */
+  /* } */
 }
 /**
  * In Depth card
@@ -1403,7 +1402,7 @@ summary, .summary {
   display: none;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .h-tablet {
     display: none;
   }
@@ -1796,130 +1795,6 @@ section.flag {
   background-color: unset;
 }
 
-/**
- * Story template
- */
-/* Mobile */
-.story-rail > * {
-  max-width: 720px;
-  margin: 30px auto;
-}
-
-.story-rail .paper, .story-rail .card {
-  box-shadow: none;
-}
-
-.story-rail .more-link {
-  padding: 0 15px;
-  margin-top: 0;
-}
-
-/* Temporary inline video fixes */
-.story-body .embed-media-details .media-leadtext {
-  padding: 10px 0 0;
-}
-
-.story-body .embed-media-details .media-leadtext {
-  font: 14px/1.5em "McClatchy Sans", sans-serif;
-  color: var(--tc, #707070);
-  margin: 0;
-}
-
-.story-body .embed-media-details > * {
-  padding: 0;
-}
-
-.story-body .embed-media-details .bylines {
-  text-transform: uppercase;
-}
-
-#vendor-stories-content .h5 {
-  margin-bottom: 10px;
-}
-
-.story-rail #video-widget .footer {
-  padding: 0;
-}
-
-.story-body #zerg-target .vendor-storiescontent-main-container {
-  border: none;
-}
-
-.commenting-container {
-  --ld:none;
-  --lhd:none;
-  --lhc: #222;
-}
-
-.commenting-container .glyphicon-comment-o {
-  display: none;
-}
-
-.commenting-container .glyphicon-chevron-down:before {
-  content: "";
-}
-
-.byline .ng_byline_name {
-  font-weight: bold;
-}
-
-/* iPad and up */
-@supports (display: grid) {
-  @media (min-width: 768px) {
-    .story-template {
-      max-width: 1140px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) 300px;
-      grid-column-gap: 30px;
-      padding: 0 15px;
-    }
-
-    /* Body (rail version) */
-    .story-body {
-      position: relative;
-    }
-
-    .story-body > * {
-      padding-left: 0px;
-      padding-right: 0px;
-    }
-
-    .story-body figcaption {
-      padding: 10px 0 0;
-    }
-
-    .story-body .transparency {
-      padding: 15px;
-    }
-
-    /* fixes issue in _global.scss */
-    .story-body .lead-item,
-.story-template .story-body > .inline-video {
-      max-width: 100%;
-      padding: 0;
-    }
-
-    /* Rail */
-    .story-rail > *,
-.story-rail .package,
-.story-rail figure img {
-      padding-left: 0;
-      padding-right: 0;
-    }
-
-    .story-rail .more-link {
-      padding: 0;
-    }
-
-    /* Another overload */
-    .story .story-template .story-body > .embed-infographic,
-.story .story-template .story-body > .image-gallery-organism,
-.story .story-template .story-body > [id^=inlinegallery] {
-      width: unset;
-    }
-  }
-}
 .search-form {
   margin: 50px 0;
   display: grid;
@@ -2080,20 +1955,6 @@ section.flag {
 
 /**
  * Purple Tuesdays
- */
-/* Because the main section body is still wrapped by Bootstrap */
-.big-news > * {
-  max-width: 1110px;
-}
-
-.big-news .grid {
-  max-width: 1140px;
-}
-
-/** 
- * Overloads for older elements 
- * Unclean repeat of media breakpoint, but these are separate
- * from the core base template code.
  */
 @media (min-width: 690px) {
   .breaking-news-macro {
