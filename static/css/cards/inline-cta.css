@@ -8,6 +8,14 @@
   --hf: "McClatchy Serif", serif;
 }
 
+.inline-cta input {
+  align-self: stretch;
+}
+
+.inline-cta .summary {
+  margin-top: 5px;
+}
+
 .impact .inline-cta {
   --bc: #222;
   --bbc: white;
