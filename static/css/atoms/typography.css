@@ -63,12 +63,12 @@ a:hover {
   font-family: var(--hf);
   font-weight: var(--hw);
   text-transform: var(--ht);
-  line-height: 1.2em;
+  line-height: 1.3em;
 }
 
 h1, .h1 {
   font-size: 30px;
-  --hw: 600;
+  --hw: 700;
 }
 
 h2, .h2 {
@@ -86,7 +86,7 @@ h4, .h4 {
 h5, .h5 {
   font-size: 14px;
   --hf: var(--sans);
-  --hw: 600;
+  --hw: 700;
 }
 
 h6, .h6 {
@@ -121,7 +121,7 @@ time {
 
 .kicker {
   display: inline-block;
-  padding: 5px 8px 3px;
+  padding: 5px 8px;
   font-weight: 400;
   color: var(--tc, #222);
   border: 1px solid var(--tc, #222);
@@ -175,7 +175,7 @@ time {
 
 .more-link {
   display: flex;
-  font: 600 14px/1.5em var(--sans);
+  font: 700 14px/1.5em var(--sans);
   text-transform: uppercase;
   margin-top: 15px;
   --lc: var(--tc, #707070);
