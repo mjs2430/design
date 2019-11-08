@@ -3,11 +3,9 @@
  */
 
 input, select {
-  border: 1px solid #ddd;
-  border-radius: 2px;
-  padding: 5px;
+  border: 1px solid #373737;
+  padding: 10px;
   font-size: 14px;
-  color: var(--tc);
 }
 
 input[type=text] {
@@ -49,8 +47,12 @@ button:hover,
   padding: 11px 35px 7px;
 }
 
-.ghost {
+.button.ghost {
   border-color: #4a4a4a;
+}
+
+.button.pill {
+  border-radius: 1.5em;
 }
 
 /**
