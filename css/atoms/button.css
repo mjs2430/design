@@ -26,11 +26,11 @@ button:hover,
 .button {
   display: inline-block;
   align-self: flex-start;
-  font: 600 14px "McClatchy Sans";
+  font: 700 14px var(--sans);
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
-  padding: .6em 1em .3em;
+  padding: .4em 1em;
   box-sizing: border-box;
   border-radius: 2px;
   --ld: none;
@@ -40,11 +40,11 @@ button:hover,
 .button.stretch {
   display: block;
   align-self: stretch;
-  padding: 1em 1em .7em;
+  padding: 1em;
 }
 
 .button.big {
-  padding: 11px 35px 7px;
+  padding: 10px 35px;
 }
 
 .button.ghost {

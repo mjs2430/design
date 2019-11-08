@@ -9,6 +9,11 @@
   padding: 0 15px;
 }
 
+.section-nav .title:after {
+  position: relative;
+  top: 3px;
+}
+
 .section-nav .expander.open + .icons {
   display: flex;
   flex-wrap: wrap;

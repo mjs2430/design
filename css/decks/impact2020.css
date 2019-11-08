@@ -1,9 +1,9 @@
 .impact2020 .kicker {
   color: white;
   background-color: #373737;
-  font-weight: 500;
+  font-weight: 700;
   border-radius: unset;
-  font-family: "McClatchy Sans", sans-serif;
+  font-family: var(--sans);
 }
 
 .impact2020 .kicker:hover {
@@ -20,7 +20,7 @@
 }
 
 .impact2020 .immersive .title {
-  font-family: "McClatchy Sans";
+  font-family: var(--sans);
 }
 
 .impact2020 .immersive time {
@@ -30,7 +30,7 @@
 .impact2020 .package .kicker {
   position: relative;
   right: 15px;
-  padding: 5px 15px 2px 15px;
+  padding: 5px 15px;
 }
 
 /**

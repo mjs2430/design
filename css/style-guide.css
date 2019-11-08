@@ -11,7 +11,7 @@ table {
   text-align: left;
   font-size: 14px;
   border-spacing: 0;
-  font-family: "McClatchy Sans", sans-serif;
+  font-family: var(--sans);
   box-sizing: content-box;
 }
 
@@ -138,12 +138,12 @@ td:first-child {
   box-sizing: border-box;
   border-radius: 4px;
   padding: 15px;
-  --headerFamily: "McClatchy Sans", sans-serif;
-  --headerWeight: 600;
+  --hf: var(--sans);
+  --hw: 600;
 }
 
 .note p {
-  font: 500 14px/1.5em "McClatchy Sans", sans-serif;
+  font: 500 14px/1.5em var(--sans);
 }
 
 .note.dep {

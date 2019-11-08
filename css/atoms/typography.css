@@ -3,8 +3,13 @@
  */
 
 :root {
+  /* Generals for use in cards */
+  --serif: "Noto Serif", serif;
+  --sans: "Noto Sans", sans-serif;
+
   /* Header family, weight, and text-transform */
-  --hf: "McClatchy Serif", serif;
+  /* --hf: "McClatchy Serif", serif; */
+  --hf: "Noto Serif", serif;
   --hw: 400;
   --ht: none;
 
@@ -28,7 +33,7 @@ body {
   margin: 0;
   color: #222;
   background-color: #f4f4f4;
-  font-family: "McClatchy Sans", sans-serif;
+  font-family: var(--sans);
 }
 
 body.freeze {
@@ -58,12 +63,12 @@ a:hover {
   font-family: var(--hf);
   font-weight: var(--hw);
   text-transform: var(--ht);
-  line-height: 1.2em;
+  line-height: 1.3em;
 }
 
 h1, .h1 {
   font-size: 30px;
-  --hw: 600;
+  --hw: 700;
 }
 
 h2, .h2 {
@@ -80,21 +85,21 @@ h4, .h4 {
 
 h5, .h5 {
   font-size: 14px;
-  --hf: "McClatchy Sans", sans-serif;
-  --hw: 600;
+  --hf: var(--sans);
+  --hw: 700;
 }
 
 h6, .h6 {
   font-size: 12px;
-  --hf: "McClatchy Sans", sans-serif;
+  --hf: var(--sans);
 }
 
 p {
-  font: 19px/1.5em "Lyon", serif;
+  font: 17px/1.6em var(--serif);
 }
 
 li {
-  font: 19px/1.5em "Lyon", serif;
+  font: 17px/1.5em var(--serif);
   margin: 10px 0 10px calc(1em + 15px);
 }
 
@@ -105,7 +110,7 @@ ul li {
 time {
 	max-width: unset;
   display: inline-block;
-  font: 300 11px/1.2em "McClatchy Sans", sans-serif;
+  font: 300 11px/1.2em var(--sans);
   text-transform: uppercase;
   color: var(--tc, #707070);
 }
@@ -116,7 +121,7 @@ time {
 
 .kicker {
   display: inline-block;
-  padding: 5px 8px 3px;
+  padding: 5px 8px;
   font-weight: 400;
   color: var(--tc, #222);
   border: 1px solid var(--tc, #222);
@@ -129,7 +134,7 @@ time {
 
 .byline {
   display: inline-block;
-  font: 400 11px/1.5em "McClatchy Sans";
+  font: 400 11px/1.5em var(--sans);
   text-transform: uppercase;
   color: var(--tc, #707070);
 }
@@ -141,7 +146,7 @@ time {
 
 .credit {
   display: inline-block;
-  font: italic 400 11px/1.5em "McClatchy Sans";
+  font: italic 400 11px/1.5em var(--sans);
   text-transform: uppercase;
 }
 
@@ -153,7 +158,7 @@ time {
 
 .label > * {
   margin: 0;
-  padding: 5px 10px 3px;
+  padding: 5px 10px;
   color: var(--bc, white);
   background-color: var(--bbc, #373737);
   --ld: none;
@@ -170,7 +175,7 @@ time {
 
 .more-link {
   display: flex;
-  font: 600 14px/1.5em "McClatchy Sans";
+  font: 700 14px/1.5em var(--sans);
   text-transform: uppercase;
   margin-top: 15px;
   --lc: var(--tc, #707070);
@@ -183,7 +188,7 @@ time {
   content: "\2192";
   padding-left: 4px;
   font: 20px monospace;
-  line-height: 16px;
+  line-height: 1em;
   transition: transform .6s ease;
 }
 
