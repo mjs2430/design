@@ -243,6 +243,7 @@ summary, .summary {
 
 .gray {
   color: var(--tc, #707070);
+  --bc:var(--tc, #707070);
 }
 
 .cutout {

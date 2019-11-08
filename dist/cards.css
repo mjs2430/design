@@ -250,12 +250,12 @@
 }
 @media (max-width: 990px) {
   .story-body .wide figcaption,
-.story-body .wide .package {
+.story-body figure.wide .package {
     padding: 10px 15px 0;
   }
 }
 .story-body .full-bleed figcaption,
-.story-body .full-bleed .package {
+.story-body figure.full-bleed .package {
   padding: 10px 15px 0;
 }
 
@@ -413,8 +413,12 @@
   --lhc: #222;
 }
 
-.related-stories .package {
-  padding: 0;
+.related-stories h5 {
+  margin-top: 0;
+}
+
+.related-stories hr {
+  margin-top: 15px;
 }
 
 /**
