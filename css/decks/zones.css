@@ -11,6 +11,10 @@ gpt-ad {
   clear: both;
 }
 
+.zone.grid {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .zone.grid.combo {
   justify-content: center;
   grid-template-columns: repeat(auto-fit, 315px);
@@ -18,4 +22,9 @@ gpt-ad {
 
 .zone[data-zone="zone1"] {
   padding: 30px 15px;
+}
+
+.zone .related-stories {
+  max-width: 660px;
+  margin: 0 auto;
 }

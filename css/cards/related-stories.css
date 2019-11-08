@@ -7,6 +7,10 @@
   --lhc: #222;
 }
 
-.related-stories .package {
-  padding: 0;
+.related-stories h5 {
+  margin-top: 0;
+}
+
+.related-stories hr {
+  margin-top: 15px;
 }
