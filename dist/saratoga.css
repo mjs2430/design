@@ -245,7 +245,7 @@ section > h5,
 }
 
 .section-label {
-  margin: 0 0 15px;
+  margin: 0 0 10px;
 }
 
 @media (min-width: 600px) {
@@ -263,11 +263,9 @@ section > h5,
  * Form elements
  */
 input, select {
-  border: 1px solid #ddd;
-  border-radius: 2px;
-  padding: 5px;
+  border: 1px solid #373737;
+  padding: 10px;
   font-size: 14px;
-  color: var(--tc);
 }
 
 input[type=text] {
@@ -278,6 +276,11 @@ button, .button {
   color: var(--bc);
   background-color: var(--bbc);
   border: 1px solid transparent;
+}
+
+button:hover,
+.button:hover {
+  color: var(--bc);
 }
 
 .button {
@@ -387,16 +390,16 @@ button, .button {
 }
 
 /* Horizontal option */
-.card.horizontal {
-  flex-direction: row;
+@media (min-width: 660px) {
+  .card.horizontal {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 15px;
+  }
 }
-
-.card.horizontal > * {
-  flex: 1 1 300px;
-}
-
 .card.horizontal figure {
   position: relative;
+  margin: 0;
 }
 
 .card.horizontal figure img {
@@ -460,6 +463,10 @@ button, .button {
   --lhd:underline;
 }
 
+.package.flush {
+  padding: 0;
+}
+
 .package > * {
   margin: 10px 0 0 0;
   max-width: 100%;
@@ -494,13 +501,11 @@ button, .button {
   --tc:white;
   --lc:white;
   --lhc:white;
-  --bc: #222;
-  --bbc:white;
+  --bc:white;
 }
 
 .promo {
   background-color: #31409F;
-  --bc: #31409F;
 }
 
 .impact *,
@@ -652,6 +657,11 @@ summary, .summary {
   align-self: center;
 }
 
+@media (min-width: 990px) {
+  .col-span-2 {
+    grid-column: span 2;
+  }
+}
 /**
  * Flexbox grid
  */
@@ -827,24 +837,26 @@ summary, .summary {
   margin: 15px auto;
 }
 
+.story-body > :first-child {
+  margin-top: 0;
+  padding-top: 30px;
+}
+
 .story-body > .header {
   margin-top: 0;
 }
 
 /**
- * Zones and embeds
+ * Embeds
  */
-.story-body .zone,
 .story-body .embed-infographic {
-  max-width: 100%;
-  margin: 30px 0;
+  margin: 30px auto;
+  clear: both;
 }
 
-.zone > *,
 .embed-infographic > * {
-  max-width: 660px;
-  margin: 0 auto;
-  clear: both;
+  display: block;
+  max-width: 100%;
 }
 
 .story-body > .story-module {
@@ -854,7 +866,8 @@ summary, .summary {
 /**
  * Media options
  */
-.story-body figure {
+.story-body > figure {
+  margin: 30px auto;
   padding: 0;
 }
 
@@ -867,23 +880,34 @@ summary, .summary {
   padding: 0;
 }
 
+.story-body figure .package {
+  padding: 10px 0 0;
+}
+
 @media (max-width: 690px) {
-  .story-body figcaption {
+  .story-body figcaption,
+.story-body figure .package {
     padding: 10px 15px 0;
   }
 }
 @media (max-width: 990px) {
-  .story-body .wide figcaption {
+  .story-body .wide figcaption,
+.story-body .wide .package {
     padding: 10px 15px 0;
   }
 }
-.story-body .full-bleed figcaption {
+.story-body .full-bleed figcaption,
+.story-body .full-bleed .package {
   padding: 10px 15px 0;
 }
 
 /**
  * Asides
  */
+.story-body aside > * {
+  margin: 30px auto;
+}
+
 @media (min-width: 930px) {
   .story-body aside > * {
     float: right;
@@ -895,6 +919,61 @@ summary, .summary {
     margin: 0 30px 30px -150px;
   }
 }
+.story-body blockquote {
+  max-width: 300px;
+  font: 24px/1.2em "McClatchy Sans", sans-serif;
+}
+
+.story-body > .zone {
+  margin: 30px auto;
+}
+
+/**
+ * Mugshots
+ */
+.story-body figure.mugshot {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.story-body figure.mugshot > * {
+  float: right;
+  width: 125px;
+  margin: 0 0 15px 15px;
+}
+
+.story-body figure.mugshot figcaption {
+  padding: 5px 0 0;
+  font-size: 12px;
+}
+
+.story-body figure.mugshot .credit {
+  font-size: 10px;
+}
+
+/**
+ * Tables
+ */
+.story-body table {
+  max-width: 690px;
+}
+
+/**
+ * Immersive card 
+ */
+.story-body .immersive {
+  max-width: 100%;
+  padding-top: 0;
+}
+
+/**
+ * Zergnet widget only applies to stories
+ */
+.zergnet {
+  max-width: 660px;
+  padding: 0 15px;
+}
+
 /**
  * Header package
  */
@@ -903,7 +982,6 @@ summary, .summary {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 15px;
   color: var(--tc);
   --hf: "McClatchy Serif", serif;
   --ht:none;
@@ -911,6 +989,10 @@ summary, .summary {
 
 .header > * {
   margin: 15px 0 0;
+}
+
+.header > :first-child {
+  margin-top: 0;
 }
 
 @media (min-width: 600px) {
@@ -1009,22 +1091,12 @@ summary, .summary {
   }
 }
 .author-card .social-media a {
-  padding: 10px 15px 10px 0;
+  padding: 10px 10px 10px 0;
+  box-sizing: content-box;
 }
 
-/**
- * Following 2 can be removed with flag release
- */
 .author-card .flex {
-  display: flex;
-  align-items: center;
   width: auto;
-}
-
-.author-card .icon-label {
-  position: relative;
-  top: 0.15em;
-  margin-left: 10px;
 }
 
 /** 
@@ -1044,6 +1116,10 @@ summary, .summary {
 
   .author-card .flex {
     flex-wrap: wrap;
+  }
+
+  .author-card .flex:first-child {
+    grid-column: span 2;
   }
 
   .author-card .byline {
@@ -1230,34 +1306,30 @@ summary, .summary {
  * In Depth card
  */
 .card.in-depth {
-  flex-wrap: wrap;
+  background-color: #373737;
 }
 
 .card.in-depth figure {
-  flex-grow: 4;
   min-height: 400px;
-  display: flex;
-}
-
-.card.in-depth .package {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin: 0 auto;
-  max-width: 660px;
 }
 
 /**
  * SWG Promo card
  */
-.card.swg-promo {
-  flex-wrap: wrap;
-}
+@media (min-width: 660px) {
+  .card.swg-promo {
+    grid-template-columns: 2fr 1fr;
+  }
 
-.card.swg-promo > :first-child {
-  flex-grow: 4;
-  min-height: 200px;
+  .card.swg-promo > :first-child {
+    min-height: 200px;
+  }
 }
-
+/* @media( min-width: 990px ) { */
+/*   .card.swg-promo { */
+/*     grid-template-columns: 2fr 1fr; */
+/*   } */
+/* } */
 .card.swg-promo .title {
   font: 600 48px "McClatchy Sans", sans-serif;
 }
@@ -1293,6 +1365,14 @@ summary, .summary {
 
 .read-next .more-link {
   padding: 0;
+}
+
+.read-next .byline {
+  margin: 0;
+}
+
+.read-next .package > p {
+  font: 14px/1.5em "McClatchy Sans", sans-serif;
 }
 
 .section-nav {
@@ -1345,6 +1425,14 @@ summary, .summary {
   --hf: "McClatchy Serif", serif;
 }
 
+.inline-cta input {
+  align-self: stretch;
+}
+
+.inline-cta .summary {
+  margin-top: 5px;
+}
+
 .impact .inline-cta {
   --bc: #222;
   --bbc:white;
@@ -1390,7 +1478,6 @@ summary, .summary {
 }
 
 .sponsor .package {
-  padding: 0;
   justify-content: center;
 }
 

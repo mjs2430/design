@@ -23,16 +23,16 @@
 }
 
 /* Horizontal option */
-.card.horizontal {
-  flex-direction: row;
+@media (min-width: 660px) {
+  .card.horizontal {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 15px;
+  }
 }
-
-.card.horizontal > * {
-  flex: 1 1 300px;
-}
-
 .card.horizontal figure {
   position: relative;
+  margin: 0;
 }
 
 .card.horizontal figure img {
@@ -96,6 +96,10 @@
   --lhd:underline;
 }
 
+.package.flush {
+  padding: 0;
+}
+
 .package > * {
   margin: 10px 0 0 0;
   max-width: 100%;
@@ -130,13 +134,11 @@
   --tc:white;
   --lc:white;
   --lhc:white;
-  --bc: #222;
-  --bbc:white;
+  --bc:white;
 }
 
 .promo {
   background-color: #31409F;
-  --bc: #31409F;
 }
 
 .impact *,

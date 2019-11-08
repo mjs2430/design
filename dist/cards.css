@@ -15,6 +15,11 @@
   align-self: center;
 }
 
+@media (min-width: 990px) {
+  .col-span-2 {
+    grid-column: span 2;
+  }
+}
 /**
  * Flexbox grid
  */
@@ -190,24 +195,26 @@
   margin: 15px auto;
 }
 
+.story-body > :first-child {
+  margin-top: 0;
+  padding-top: 30px;
+}
+
 .story-body > .header {
   margin-top: 0;
 }
 
 /**
- * Zones and embeds
+ * Embeds
  */
-.story-body .zone,
 .story-body .embed-infographic {
-  max-width: 100%;
-  margin: 30px 0;
+  margin: 30px auto;
+  clear: both;
 }
 
-.zone > *,
 .embed-infographic > * {
-  max-width: 660px;
-  margin: 0 auto;
-  clear: both;
+  display: block;
+  max-width: 100%;
 }
 
 .story-body > .story-module {
@@ -217,7 +224,8 @@
 /**
  * Media options
  */
-.story-body figure {
+.story-body > figure {
+  margin: 30px auto;
   padding: 0;
 }
 
@@ -230,42 +238,34 @@
   padding: 0;
 }
 
+.story-body figure .package {
+  padding: 10px 0 0;
+}
+
 @media (max-width: 690px) {
-  .story-body figcaption {
+  .story-body figcaption,
+.story-body figure .package {
     padding: 10px 15px 0;
   }
 }
 @media (max-width: 990px) {
-  .story-body .wide figcaption {
+  .story-body .wide figcaption,
+.story-body .wide .package {
     padding: 10px 15px 0;
   }
 }
-.story-body .full-bleed figcaption {
+.story-body .full-bleed figcaption,
+.story-body .full-bleed .package {
   padding: 10px 15px 0;
 }
 
-.story-body .gallery {
-  max-width: 720px;
-  margin: 30px auto;
-}
-
-.story-body .gallery .package {
-  padding-bottom: 0;
-}
-
-.story-body .gallery figcaption {
-  margin-top: 0;
-}
-
-@media (min-width: 768px) {
-  .story-body .gallery .package {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
 /**
  * Asides
  */
+.story-body aside > * {
+  margin: 30px auto;
+}
+
 @media (min-width: 930px) {
   .story-body aside > * {
     float: right;
@@ -277,6 +277,61 @@
     margin: 0 30px 30px -150px;
   }
 }
+.story-body blockquote {
+  max-width: 300px;
+  font: 24px/1.2em "McClatchy Sans", sans-serif;
+}
+
+.story-body > .zone {
+  margin: 30px auto;
+}
+
+/**
+ * Mugshots
+ */
+.story-body figure.mugshot {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.story-body figure.mugshot > * {
+  float: right;
+  width: 125px;
+  margin: 0 0 15px 15px;
+}
+
+.story-body figure.mugshot figcaption {
+  padding: 5px 0 0;
+  font-size: 12px;
+}
+
+.story-body figure.mugshot .credit {
+  font-size: 10px;
+}
+
+/**
+ * Tables
+ */
+.story-body table {
+  max-width: 690px;
+}
+
+/**
+ * Immersive card 
+ */
+.story-body .immersive {
+  max-width: 100%;
+  padding-top: 0;
+}
+
+/**
+ * Zergnet widget only applies to stories
+ */
+.zergnet {
+  max-width: 660px;
+  padding: 0 15px;
+}
+
 /**
  * Header package
  */
@@ -285,7 +340,6 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 15px;
   color: var(--tc);
   --hf: "McClatchy Serif", serif;
   --ht:none;
@@ -293,6 +347,10 @@
 
 .header > * {
   margin: 15px 0 0;
+}
+
+.header > :first-child {
+  margin-top: 0;
 }
 
 @media (min-width: 600px) {
@@ -391,22 +449,12 @@
   }
 }
 .author-card .social-media a {
-  padding: 10px 15px 10px 0;
+  padding: 10px 10px 10px 0;
+  box-sizing: content-box;
 }
 
-/**
- * Following 2 can be removed with flag release
- */
 .author-card .flex {
-  display: flex;
-  align-items: center;
   width: auto;
-}
-
-.author-card .icon-label {
-  position: relative;
-  top: 0.15em;
-  margin-left: 10px;
 }
 
 /** 
@@ -426,6 +474,10 @@
 
   .author-card .flex {
     flex-wrap: wrap;
+  }
+
+  .author-card .flex:first-child {
+    grid-column: span 2;
   }
 
   .author-card .byline {
@@ -612,34 +664,30 @@
  * In Depth card
  */
 .card.in-depth {
-  flex-wrap: wrap;
+  background-color: #373737;
 }
 
 .card.in-depth figure {
-  flex-grow: 4;
   min-height: 400px;
-  display: flex;
-}
-
-.card.in-depth .package {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin: 0 auto;
-  max-width: 660px;
 }
 
 /**
  * SWG Promo card
  */
-.card.swg-promo {
-  flex-wrap: wrap;
-}
+@media (min-width: 660px) {
+  .card.swg-promo {
+    grid-template-columns: 2fr 1fr;
+  }
 
-.card.swg-promo > :first-child {
-  flex-grow: 4;
-  min-height: 200px;
+  .card.swg-promo > :first-child {
+    min-height: 200px;
+  }
 }
-
+/* @media( min-width: 990px ) { */
+/*   .card.swg-promo { */
+/*     grid-template-columns: 2fr 1fr; */
+/*   } */
+/* } */
 .card.swg-promo .title {
   font: 600 48px "McClatchy Sans", sans-serif;
 }
@@ -675,6 +723,14 @@
 
 .read-next .more-link {
   padding: 0;
+}
+
+.read-next .byline {
+  margin: 0;
+}
+
+.read-next .package > p {
+  font: 14px/1.5em "McClatchy Sans", sans-serif;
 }
 
 .section-nav {
@@ -727,6 +783,14 @@
   --hf: "McClatchy Serif", serif;
 }
 
+.inline-cta input {
+  align-self: stretch;
+}
+
+.inline-cta .summary {
+  margin-top: 5px;
+}
+
 .impact .inline-cta {
   --bc: #222;
   --bbc:white;
@@ -772,6 +836,5 @@
 }
 
 .sponsor .package {
-  padding: 0;
   justify-content: center;
 }
