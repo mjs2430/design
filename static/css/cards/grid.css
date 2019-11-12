@@ -16,6 +16,10 @@
   align-self: center;
 }
 
+.grid > .rail {
+  grid-row: 1/span var(--rows, 3);
+}
+
 @media(min-width: 990px) {
   .col-span-2 {
     grid-column: span 2;
