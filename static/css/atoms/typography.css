@@ -4,13 +4,13 @@
 
 :root {
   /* Generals for use in cards */
-  --serif: "Merriweather", serif;
+  --serif: "Noto Serif", serif;
   --sans: "Noto Sans", sans-serif;
 
   /* Header family, weight, and text-transform */
   /* --hf: "McClatchy Serif", serif; */
-  --hf: "Merriweather", serif;
-  --hw: 700;
+  --hf: "Noto Serif", serif;
+  --hw: 400;
   --ht: none;
 
   /* Link decoration and color */
@@ -68,7 +68,7 @@ a:hover {
 
 h1, .h1 {
   font-size: 30px;
-  --hw: 900;
+  --hw: 700;
 }
 
 h2, .h2 {
@@ -76,7 +76,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: 18px;
+  font-size: 19px;
 }
 
 h4, .h4 {
