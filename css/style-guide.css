@@ -139,7 +139,7 @@ td:first-child {
   border-radius: 4px;
   padding: 15px;
   --hf: var(--sans);
-  --hw: 600;
+  --hw: 700;
 }
 
 .note p {
