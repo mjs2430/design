@@ -7,7 +7,7 @@ menu: "cards"
 {{< note >}}
 #### Update (11/12/2019)
 
-A blue header that appeared to be a link on top of a `more-link` molecule was confusing people. We have removed the `more-link` molcules and changed the header to be the actual link. This did not require a new release of the design system, but will require a template change and only affect the version included at the bottom of story pages.
+A blue header that appeared to be a link on top of a `more-link` molecule was confusing people. We have removed the `more-link` molecule and changed the header to be the actual link. This did not require a new release of the design system, but will require a template change and only affects the version included at the bottom of story pages.
 {{< /note >}}
 
 The author card should appear directly underneath the related stories organism, if it is rendered, or directly under the story body if it is not.
