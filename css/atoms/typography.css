@@ -63,7 +63,7 @@ a:hover {
   font-family: var(--hf);
   font-weight: var(--hw);
   text-transform: var(--ht);
-  line-height: 1.3em;
+  line-height: 1.2em;
 }
 
 h1, .h1 {
