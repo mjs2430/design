@@ -68,6 +68,7 @@ a:hover {
 
 h1, .h1 {
   font-size: 30px;
+  letter-spacing: -1px;
   --hw: 700;
 }
 
