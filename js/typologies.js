@@ -6,7 +6,7 @@ var Typologies = {
     },
     { 
       "name": "zone2",
-      "units": ["ad"]
+      "units": ["connatix"]
     },
     { 
       "name": "zone3",
