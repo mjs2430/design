@@ -17,7 +17,7 @@
 }
 
 .grid > .rail {
-  grid-row: 1/span var(--rows, 3);
+  grid-row-end: span var(--rows, 3);
 }
 
 @media(min-width: 990px) {
