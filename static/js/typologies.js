@@ -15,7 +15,7 @@ var Typologies = {
     },
     {
       "name": "zone4",
-      "class": "grid wide",
+      "class": "grid",
       "units": ["related-stories", "banner"]
     },
     {
@@ -41,7 +41,6 @@ var Typologies = {
     },
     {
       "name": "zone4",
-      "class": "wide",
       "units": ["banner"]
     },
     {
@@ -67,7 +66,6 @@ var Typologies = {
     },
     {
       "name": "zone4",
-      "class": "wide",
       "units": ["banner"]
     },
     {
@@ -93,7 +91,6 @@ var Typologies = {
     },
     {
       "name": "zone4",
-      "class": "wide",
       "units": ["banner"]
     },
     {

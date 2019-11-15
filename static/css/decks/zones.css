@@ -2,11 +2,6 @@
  * Zones
  */
 
-gpt-ad {
-  display: block;
-  text-align: center;
-}
-
 .zone {
   clear: both;
 }
@@ -17,7 +12,7 @@ gpt-ad {
 
 .zone.grid.combo {
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, 315px);
+  grid-template-columns: repeat(auto-fit, 349px);
 }
 
 .zone[data-zone="zone1"] {
@@ -25,6 +20,5 @@ gpt-ad {
 }
 
 .zone .related-stories {
-  max-width: 660px;
   margin: 0 auto;
 }
