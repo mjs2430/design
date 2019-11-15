@@ -14,7 +14,7 @@
 }
 
 .story-body > * {
-  max-width: 660px;
+  max-width: 728px;
 	padding: 0 15px;
   margin: 15px auto;
 }
@@ -68,7 +68,11 @@
   padding: 10px 0 0;
 }
 
-@media(max-width: 690px) {
+@media(max-width: 768px) {
+  .story-body > figure {
+    max-width: 100%;
+  }
+
   .story-body figcaption,
   .story-body figure .package {
     padding: 10px 15px 0;

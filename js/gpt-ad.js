@@ -110,6 +110,10 @@ class GPT extends HTMLElement {
       slot.addService(googletag.pubads());
       googletag.display(this.uid);
     });
+
+    // Custom elements are inline-block by default
+    this.style.display = "block";
+    this.style.textAlign = "center";
   }
 
   /**
