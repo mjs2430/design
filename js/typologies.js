@@ -11,7 +11,7 @@ var Typologies = {
     { 
       "name": "zone3",
       "class": "grid combo",
-      "units": ["app", "ad"]
+      "units": ["newsletter", "ad"]
     },
     {
       "name": "zone4",
@@ -21,7 +21,7 @@ var Typologies = {
     {
       "name": "zone5",
       "class": "grid combo",
-      "units": ["podcast", "ad"]
+      "units": ["subscription", "ad"]
     },
     {
       "name": "zone6",
