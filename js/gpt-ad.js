@@ -112,8 +112,7 @@ class GPT extends HTMLElement {
     });
 
     // Custom elements are inline-block by default
-    this.style.display = "block";
-    this.style.textAlign = "center";
+    this.style.cssText = "display:block;text-align:center;";
   }
 
   /**
