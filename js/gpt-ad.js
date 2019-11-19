@@ -26,6 +26,8 @@ googletag.cmd = googletag.cmd || [];
   });
 })()
 
+
+
 /**
  * Custom element class
  */
@@ -110,9 +112,6 @@ class GPT extends HTMLElement {
       slot.addService(googletag.pubads());
       googletag.display(this.uid);
     });
-
-    // Custom elements are inline-block by default
-    this.style.cssText = "display:block;text-align:center;";
   }
 
   /**
