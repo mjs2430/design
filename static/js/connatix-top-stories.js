@@ -51,6 +51,7 @@ class ConnatixTopStories extends HTMLElement {
 
     this.appendChild(this.template.content.cloneNode(true));
     this.querySelector("#ConnatixVideoAd").appendChild(script);
+    this.style.cssText = "display: block;"
   }
 
 }
