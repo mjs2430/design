@@ -30,9 +30,6 @@ class ConnatixTopStories extends HTMLElement {
 
   constructor() {
     super();
-    this.observer = new IntersectionObserver(this._intersectionHandler, {
-      rootMargin: "50% 0px"
-    });
   }
 
   /**
@@ -40,7 +37,7 @@ class ConnatixTopStories extends HTMLElement {
    */
 
   connectedCallback() {
-    this.observer.observe(this);
+    this.constructor.observer.observe(this);
   }
 
   /**
@@ -56,15 +53,21 @@ class ConnatixTopStories extends HTMLElement {
     this.querySelector("#ConnatixVideoAd").appendChild(script);
   }
 
-  /**
-   * Intersection Observer handler
-   */
-
-  _intersectionHandler(entries) {
-    entries.forEach(e => {
-      if(e.isIntersecting) e.target.stamp();
-    });
-  }
 }
+
+/**
+ * Set up the IntersectionObserver
+ */
+
+ConnatixTopStories.observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if(e.isIntersecting) {
+      e.target.stamp();
+      ConnatixTopStories.observer.unobserve(e.target);
+    }
+  });
+}, {
+  rootMargin: "50% 0px"
+});
 
 customElements.define("connatix-top-stories", ConnatixTopStories);
