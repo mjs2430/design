@@ -24,6 +24,10 @@ var Typologies = {
       "units": ["subscription", "ad"]
     },
     {
+      "name": "dynamic",
+      "units": ["ad"]
+    },
+    {
       "name": "zone6",
       "units": ["zergnet"]
     }
@@ -54,6 +58,10 @@ var Typologies = {
       "units": ["related-stories", "banner"]
     },
     {
+      "name": "dynamic",
+      "units": ["ad"]
+    },
+    {
       "name": "zone6",
       "units": ["zergnet"]
     }
@@ -63,10 +71,6 @@ var Typologies = {
     { 
       "name": "zone1",
       "units": ["leaderboard"]
-    },
-    { 
-      "name": "zone2",
-      "units": ["ad"]
     },
     { 
       "name": "zone3",
@@ -80,6 +84,10 @@ var Typologies = {
       "name": "zone5",
       "class": "grid combo",
       "units": ["notifications", "ad"]
+    },
+    {
+      "name": "dynamic",
+      "units": ["ad"]
     },
     {
       "name": "zone6",
@@ -97,10 +105,6 @@ var Typologies = {
       "name": "zone5",
       "class": "grid combo",
       "units": ["podcast"]
-    },
-    {
-      "name": "zone6",
-      "units": ["zergnet"]
     }
   ]
 }
