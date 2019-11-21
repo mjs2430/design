@@ -20,20 +20,22 @@ class Dynamics extends Zones {
   fill(zones) {
     this.render(zones);
     zones.forEach(z => {
-      let slot = document.querySelector(`[data-zone=${z.name}]`);
+      let slots = document.querySelectorAll(`[data-zone=${z.name}]`);
 
-      if(slot) {
-        z.units.forEach(u => {
-          let t = document.querySelector(`template[data-unit=${u}]`);
-
-          if(t) {
-            slot.appendChild(t.content.cloneNode(true));
-          } else {
-            console.warn(`missing unit template: ${u}`);
-          }
-        });
-      } else {
+      if(slots.length == 0) {
         console.warn(`missing zone: ${z.name}`);
+      } else {
+        slots.forEach(slot => {
+          z.units.forEach(u => {
+            let t = document.querySelector(`template[data-unit=${u}]`);
+
+            if(t) {
+              slot.appendChild(t.content.cloneNode(true));
+            } else {
+              console.warn(`missing unit template: ${u}`);
+            }
+          });
+        });
       }
     });
   }

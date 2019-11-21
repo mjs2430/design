@@ -15,6 +15,7 @@ class Zones {
       "zone3": 6,
       "zone4": 11,
       "zone5": 15,
+      "dynamic": 20,
       "zone6": "after"
     }
   }
@@ -94,6 +95,17 @@ class Zones {
             } else {
               console.warn(`no insertion point for ${z.name}`);
             }
+        }
+
+        // Additional injections for dynamic zones
+        if(z.name == "dynamic") {
+          let dz = v.slice(position);
+          for(let i = 1, l = dz.length; i < l; i++) {
+            if( i % 5 == 0) {
+              let t = this.template(z);
+              this.story.insertBefore(t.content.cloneNode(true), dz[i]);
+            }
+          }
         }
 
         return z.name;
