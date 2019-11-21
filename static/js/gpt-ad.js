@@ -84,6 +84,10 @@ class GPT extends HTMLElement {
     return this.dataset.sizeMap || false;
   }
 
+  get pl() {
+    return this.dataset.pl || false;
+  }
+
   get uid() {
     this.id = this.id || this.guid();
     return this.id;
@@ -107,6 +111,10 @@ class GPT extends HTMLElement {
 
       if(this.sizeMap) {
         slot.defineSizeMapping(this.constructor[this.sizeMap]);
+      }
+
+      if(this.pl) {
+        slot.setTargeting("pl", this.pl);
       }
 
       slot.addService(googletag.pubads());
