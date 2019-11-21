@@ -10,9 +10,11 @@
   grid-template-columns: minmax(0, 1fr);
 }
 
-.zone.grid.combo {
-  justify-content: center;
-  grid-template-columns: repeat(auto-fit, 349px);
+@media(min-width: 728px) {
+  .zone.grid.combo {
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 349px);
+  }
 }
 
 .zone[data-zone="zone1"] {

@@ -1,5 +1,5 @@
 var Typologies = {
-  "active-generalist": [
+  "default": [
     { 
       "name": "zone1",
       "units": ["leaderboard"]
@@ -29,28 +29,37 @@ var Typologies = {
     }
   ],
   
-  "active-generalist-subscriber": [
+  "configuration-a": [
     { 
       "name": "zone1",
+      "units": ["banner"]
+    },
+    {
+      "name": "zone2",
+      "class": "wide",
       "units": ["leaderboard"]
     },
     {
       "name": "zone3",
-      "class": "grid combo",
-      "units": ["app", "ad"]
+      "class": "wide",
+      "units": ["leaderboard"]
     },
     {
       "name": "zone4",
-      "units": ["banner"]
+      "units": ["connatix"]
     },
     {
       "name": "zone5",
-      "class": "grid combo",
-      "units": ["podcast", "ad"]
+      "class": "grid",
+      "units": ["related-stories", "banner"]
     },
+    {
+      "name": "zone6",
+      "units": ["zergnet"]
+    }
   ],
 
-  "civic-hero": [
+  "configuration-b": [
     { 
       "name": "zone1",
       "units": ["leaderboard"]
@@ -61,12 +70,11 @@ var Typologies = {
     },
     { 
       "name": "zone3",
-      "class": "grid combo",
-      "units": ["subscription", "ad"]
+      "units": ["banner"]
     },
     {
       "name": "zone4",
-      "units": ["banner"]
+      "units": ["connatix"]
     },
     {
       "name": "zone5",
@@ -79,24 +87,20 @@ var Typologies = {
     }
   ],
 
-  "civic-hero-subscriber": [
-    { 
-      "name": "zone1",
-      "units": ["leaderboard"]
-    },
+  "configuration-c": [
     {
       "name": "zone3",
       "class": "grid combo",
-      "units": ["app", "ad"]
-    },
-    {
-      "name": "zone4",
-      "units": ["banner"]
+      "units": ["app"]
     },
     {
       "name": "zone5",
       "class": "grid combo",
-      "units": ["podcast", "ad"]
+      "units": ["podcast"]
     },
+    {
+      "name": "zone6",
+      "units": ["zergnet"]
+    }
   ]
 }

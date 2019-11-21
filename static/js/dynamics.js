@@ -44,5 +44,5 @@ class Dynamics extends Zones {
  */
 
 var mi = mi || {};
-mi.bucket = window.location.hash.substring(1) || "active-generalist";
+mi.bucket = window.location.hash.substring(1) || "default";
 mi.dynamics = new Dynamics(Typologies[mi.bucket]);
