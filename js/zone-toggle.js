@@ -68,10 +68,10 @@ class ZoneToggle extends HTMLElement {
 
     <div class="screen"></div>
     <div class="package">
-      <span data-bucket="active-generalist">Active Generalist - no sub</span>
-      <span data-bucket="active-generalist-subscriber">Active Generalist - sub</span>
-      <span data-bucket="civic-hero">Civic Hero - no sub</span>
-      <span data-bucket="civic-hero-subscriber">Civic Hero - sub</span>
+      <span data-bucket="default">Default set</span>
+      <span data-bucket="configuration-a">Configuration A</span>
+      <span data-bucket="configuration-b">Configuration B</span>
+      <span data-bucket="configuration-c">Configuration C</span>
     </div>
 
     <div class="button primary">
@@ -121,7 +121,7 @@ class ZoneToggle extends HTMLElement {
   }
 
   get bucket() {
-    return location.hash.substring(1) || "active-generalist";
+    return location.hash.substring(1) || "default";
   }
 }
 
