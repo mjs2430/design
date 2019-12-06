@@ -1,10 +1,13 @@
-@charset "UTF-8";
 /**
  * Typography
  */
 :root {
+  /* Generals for use in cards */
+  --serif: "Noto Serif", serif;
+  --sans: "Noto Sans", sans-serif;
   /* Header family, weight, and text-transform */
-  --hf: "McClatchy Serif", serif;
+  /* --hf: "McClatchy Serif", serif; */
+  --hf: "Noto Serif", serif;
   --hw: 400;
   --ht:none;
   /* Link decoration and color */
@@ -25,7 +28,7 @@ body {
   margin: 0;
   color: #222;
   background-color: #f4f4f4;
-  font-family: "McClatchy Sans", sans-serif;
+  font-family: var(--sans);
 }
 
 body.freeze {
@@ -59,7 +62,8 @@ a:hover {
 
 h1, .h1 {
   font-size: 30px;
-  --hw: 600;
+  letter-spacing: -1px;
+  --hw: 700;
 }
 
 h2, .h2 {
@@ -76,21 +80,21 @@ h4, .h4 {
 
 h5, .h5 {
   font-size: 14px;
-  --hf: "McClatchy Sans", sans-serif;
-  --hw: 600;
+  --hf:var(--sans);
+  --hw: 700;
 }
 
 h6, .h6 {
   font-size: 12px;
-  --hf: "McClatchy Sans", sans-serif;
+  --hf:var(--sans);
 }
 
 p {
-  font: 19px/1.5em "Lyon", serif;
+  font: 18px/1.5em var(--serif);
 }
 
 li {
-  font: 19px/1.5em "Lyon", serif;
+  font: 17px/1.5em var(--serif);
   margin: 10px 0 10px calc(1em + 15px);
 }
 
@@ -101,7 +105,7 @@ ul li {
 time {
   max-width: unset;
   display: inline-block;
-  font: 300 11px/1.2em "McClatchy Sans", sans-serif;
+  font: 300 11px/1.2em var(--sans);
   text-transform: uppercase;
   color: var(--tc, #707070);
 }
@@ -111,7 +115,7 @@ time {
  */
 .kicker {
   display: inline-block;
-  padding: 5px 8px 3px;
+  padding: 5px 8px;
   font-weight: 400;
   color: var(--tc, #222);
   border: 1px solid var(--tc, #222);
@@ -124,7 +128,7 @@ time {
 
 .byline {
   display: inline-block;
-  font: 400 11px/1.5em "McClatchy Sans";
+  font: 400 11px/1.5em var(--sans);
   text-transform: uppercase;
   color: var(--tc, #707070);
 }
@@ -136,7 +140,7 @@ time {
 
 .credit {
   display: inline-block;
-  font: italic 400 11px/1.5em "McClatchy Sans";
+  font: italic 400 11px/1.5em var(--sans);
   text-transform: uppercase;
 }
 
@@ -148,7 +152,7 @@ time {
 
 .label > * {
   margin: 0;
-  padding: 5px 10px 3px;
+  padding: 5px 10px;
   color: var(--bc, white);
   background-color: var(--bbc, #373737);
   --ld:none;
@@ -164,8 +168,8 @@ time {
 }
 
 .more-link {
-  display: flex;
-  font: 600 14px/1.5em "McClatchy Sans";
+  display: block;
+  font: 700 14px/1.5em var(--sans);
   text-transform: uppercase;
   margin-top: 15px;
   --lc:var(--tc, #707070);
@@ -175,10 +179,10 @@ time {
 }
 
 .more-link:after {
-  content: "→";
+  display: inline-block;
+  content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48cGF0aCBkPSJNMTkwLjUgNjYuOWwyMi4yLTIyLjJjOS40LTkuNCAyNC42LTkuNCAzMy45IDBMNDQxIDIzOWM5LjQgOS40IDkuNCAyNC42IDAgMzMuOUwyNDYuNiA0NjcuM2MtOS40IDkuNC0yNC42IDkuNC0zMy45IDBsLTIyLjItMjIuMmMtOS41LTkuNS05LjMtMjUgLjQtMzQuM0wzMTEuNCAyOTZIMjRjLTEzLjMgMC0yNC0xMC43LTI0LTI0di0zMmMwLTEzLjMgMTAuNy0yNCAyNC0yNGgyODcuNEwxOTAuOSAxMDEuMmMtOS44LTkuMy0xMC0yNC44LS40LTM0LjN6IiBmaWxsPSIjNzA3MDcwIi8+PC9zdmc+Cg==");
+  width: 10px;
   padding-left: 4px;
-  font: 20px monospace;
-  line-height: 16px;
   transition: transform 0.6s ease;
 }
 
@@ -207,7 +211,7 @@ figure img {
 }
 
 figcaption, .caption {
-  font: 14px/1.5em "McClatchy Sans", sans-serif;
+  font: 14px/1.5em var(--sans);
   color: var(--tc, #707070);
   padding-top: 10px;
 }
@@ -286,11 +290,11 @@ button:hover,
 .button {
   display: inline-block;
   align-self: flex-start;
-  font: 600 14px "McClatchy Sans";
+  font: 700 14px var(--sans);
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
-  padding: 0.6em 1em 0.3em;
+  padding: 0.4em 1em;
   box-sizing: border-box;
   border-radius: 2px;
   --ld:none;
@@ -300,11 +304,11 @@ button:hover,
 .button.stretch {
   display: block;
   align-self: stretch;
-  padding: 1em 1em 0.7em;
+  padding: 1em;
 }
 
 .button.big {
-  padding: 11px 35px 7px;
+  padding: 10px 35px;
 }
 
 .button.ghost {

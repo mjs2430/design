@@ -15,6 +15,10 @@
   align-self: center;
 }
 
+.grid > .rail {
+  grid-row-end: span var(--rows, 3);
+}
+
 @media (min-width: 990px) {
   .col-span-2 {
     grid-column: span 2;
@@ -157,7 +161,7 @@
 }
 
 .immersive .title {
-  font: 600 40px/1.2em "McClatchy Serif", serif;
+  font: 600 40px/1.2em var(--serif);
   text-transform: none;
   --lhd:underline;
 }
@@ -179,7 +183,7 @@
  * Story body
  */
 .story-body {
-  --hf: "McClatchy Sans", sans-serif;
+  --hf:var(--sans);
   --hw: 600;
   --ht:uppercase;
   --lc: #5169B8;
@@ -190,7 +194,7 @@
 }
 
 .story-body > * {
-  max-width: 660px;
+  max-width: 728px;
   padding: 0 15px;
   margin: 15px auto;
 }
@@ -230,7 +234,7 @@
 }
 
 .story-body .wide {
-  max-width: 960px;
+  max-width: 970px;
 }
 
 .story-body .full-bleed {
@@ -242,7 +246,11 @@
   padding: 10px 0 0;
 }
 
-@media (max-width: 690px) {
+@media (max-width: 768px) {
+  .story-body > figure {
+    max-width: 100%;
+  }
+
   .story-body figcaption,
 .story-body figure .package {
     padding: 10px 15px 0;
@@ -279,7 +287,7 @@
 }
 .story-body blockquote {
   max-width: 300px;
-  font: 24px/1.2em "McClatchy Sans", sans-serif;
+  font: 24px/1.2em var(--sans);
 }
 
 .story-body > .zone {
@@ -328,7 +336,7 @@
  * Zergnet widget only applies to stories
  */
 .zergnet {
-  max-width: 660px;
+  max-width: 728px;
   padding: 0 15px;
 }
 
@@ -341,7 +349,7 @@
   align-items: center;
   text-align: center;
   color: var(--tc);
-  --hf: "McClatchy Serif", serif;
+  --hf: "Noto Serif", serif;
   --ht:none;
 }
 
@@ -366,7 +374,7 @@
  * Series nav
  */
 .series-nav {
-  --hf: "McClatchy Serif", serif;
+  --hf:var(--serif);
   --hw: 400;
   --ht:none;
   --lc: #222;
@@ -560,7 +568,7 @@
 }
 
 .author-sub .callout {
-  font: 14px/20px "McClatchy Sans", sans-serif;
+  font: 14px/20px var(--sans);
   color: #31409F;
 }
 
@@ -574,7 +582,7 @@
 .timeline-event {
   border-left: 1px solid #707070;
   max-width: 500px;
-  --hf: "McClatchy Sans", sans-serif;
+  --hf:var(--sans);
   --hw: 600;
   --ht:uppercase;
 }
@@ -605,7 +613,7 @@
 .transparency > * {
   margin-left: auto;
   margin-right: auto;
-  max-width: 660px;
+  max-width: 728px;
 }
 
 .transparency .expander {
@@ -613,7 +621,8 @@
 }
 
 .question {
-  --hf: "McClatchy Serif", serif;
+  padding-top: 15px;
+  --hf:var(--serif);
   --hw: 400;
   --ht:none;
 }
@@ -693,7 +702,7 @@
 /*   } */
 /* } */
 .card.swg-promo .title {
-  font: 600 48px "McClatchy Sans", sans-serif;
+  font: 600 48px var(--sans);
 }
 
 /**
@@ -734,7 +743,7 @@
 }
 
 .read-next .package > p {
-  font: 14px/1.5em "McClatchy Sans", sans-serif;
+  font: 14px/1.5em var(--sans);
 }
 
 .section-nav {
@@ -746,6 +755,11 @@
 .section-nav .title {
   margin: 0;
   padding: 0 15px;
+}
+
+.section-nav .title:after {
+  position: relative;
+  top: 3px;
 }
 
 .section-nav .expander.open + .icons {
@@ -784,7 +798,7 @@
 }
 
 .inline-cta .h1 {
-  --hf: "McClatchy Serif", serif;
+  --hf:var(--serif);
 }
 
 .inline-cta input {

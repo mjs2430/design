@@ -1,11 +1,14 @@
-@charset "UTF-8";
 /* Atoms */
 /**
  * Typography
  */
 :root {
+  /* Generals for use in cards */
+  --serif: "Noto Serif", serif;
+  --sans: "Noto Sans", sans-serif;
   /* Header family, weight, and text-transform */
-  --hf: "McClatchy Serif", serif;
+  /* --hf: "McClatchy Serif", serif; */
+  --hf: "Noto Serif", serif;
   --hw: 400;
   --ht:none;
   /* Link decoration and color */
@@ -26,7 +29,7 @@ body {
   margin: 0;
   color: #222;
   background-color: #f4f4f4;
-  font-family: "McClatchy Sans", sans-serif;
+  font-family: var(--sans);
 }
 
 body.freeze {
@@ -60,7 +63,8 @@ a:hover {
 
 h1, .h1 {
   font-size: 30px;
-  --hw: 600;
+  letter-spacing: -1px;
+  --hw: 700;
 }
 
 h2, .h2 {
@@ -77,21 +81,21 @@ h4, .h4 {
 
 h5, .h5 {
   font-size: 14px;
-  --hf: "McClatchy Sans", sans-serif;
-  --hw: 600;
+  --hf:var(--sans);
+  --hw: 700;
 }
 
 h6, .h6 {
   font-size: 12px;
-  --hf: "McClatchy Sans", sans-serif;
+  --hf:var(--sans);
 }
 
 p {
-  font: 19px/1.5em "Lyon", serif;
+  font: 18px/1.5em var(--serif);
 }
 
 li {
-  font: 19px/1.5em "Lyon", serif;
+  font: 17px/1.5em var(--serif);
   margin: 10px 0 10px calc(1em + 15px);
 }
 
@@ -102,7 +106,7 @@ ul li {
 time {
   max-width: unset;
   display: inline-block;
-  font: 300 11px/1.2em "McClatchy Sans", sans-serif;
+  font: 300 11px/1.2em var(--sans);
   text-transform: uppercase;
   color: var(--tc, #707070);
 }
@@ -112,7 +116,7 @@ time {
  */
 .kicker {
   display: inline-block;
-  padding: 5px 8px 3px;
+  padding: 5px 8px;
   font-weight: 400;
   color: var(--tc, #222);
   border: 1px solid var(--tc, #222);
@@ -125,7 +129,7 @@ time {
 
 .byline {
   display: inline-block;
-  font: 400 11px/1.5em "McClatchy Sans";
+  font: 400 11px/1.5em var(--sans);
   text-transform: uppercase;
   color: var(--tc, #707070);
 }
@@ -137,7 +141,7 @@ time {
 
 .credit {
   display: inline-block;
-  font: italic 400 11px/1.5em "McClatchy Sans";
+  font: italic 400 11px/1.5em var(--sans);
   text-transform: uppercase;
 }
 
@@ -149,7 +153,7 @@ time {
 
 .label > * {
   margin: 0;
-  padding: 5px 10px 3px;
+  padding: 5px 10px;
   color: var(--bc, white);
   background-color: var(--bbc, #373737);
   --ld:none;
@@ -165,8 +169,8 @@ time {
 }
 
 .more-link {
-  display: flex;
-  font: 600 14px/1.5em "McClatchy Sans";
+  display: block;
+  font: 700 14px/1.5em var(--sans);
   text-transform: uppercase;
   margin-top: 15px;
   --lc:var(--tc, #707070);
@@ -176,10 +180,10 @@ time {
 }
 
 .more-link:after {
-  content: "→";
+  display: inline-block;
+  content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48cGF0aCBkPSJNMTkwLjUgNjYuOWwyMi4yLTIyLjJjOS40LTkuNCAyNC42LTkuNCAzMy45IDBMNDQxIDIzOWM5LjQgOS40IDkuNCAyNC42IDAgMzMuOUwyNDYuNiA0NjcuM2MtOS40IDkuNC0yNC42IDkuNC0zMy45IDBsLTIyLjItMjIuMmMtOS41LTkuNS05LjMtMjUgLjQtMzQuM0wzMTEuNCAyOTZIMjRjLTEzLjMgMC0yNC0xMC43LTI0LTI0di0zMmMwLTEzLjMgMTAuNy0yNCAyNC0yNGgyODcuNEwxOTAuOSAxMDEuMmMtOS44LTkuMy0xMC0yNC44LS40LTM0LjN6IiBmaWxsPSIjNzA3MDcwIi8+PC9zdmc+Cg==");
+  width: 10px;
   padding-left: 4px;
-  font: 20px monospace;
-  line-height: 16px;
   transition: transform 0.6s ease;
 }
 
@@ -208,7 +212,7 @@ figure img {
 }
 
 figcaption, .caption {
-  font: 14px/1.5em "McClatchy Sans", sans-serif;
+  font: 14px/1.5em var(--sans);
   color: var(--tc, #707070);
   padding-top: 10px;
 }
@@ -287,11 +291,11 @@ button:hover,
 .button {
   display: inline-block;
   align-self: flex-start;
-  font: 600 14px "McClatchy Sans";
+  font: 700 14px var(--sans);
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
-  padding: 0.6em 1em 0.3em;
+  padding: 0.4em 1em;
   box-sizing: border-box;
   border-radius: 2px;
   --ld:none;
@@ -301,11 +305,11 @@ button:hover,
 .button.stretch {
   display: block;
   align-self: stretch;
-  padding: 1em 1em 0.7em;
+  padding: 1em;
 }
 
 .button.big {
-  padding: 11px 35px 7px;
+  padding: 10px 35px;
 }
 
 .button.ghost {
@@ -458,7 +462,7 @@ button:hover,
   flex: 1 1 auto;
   align-items: flex-start;
   color: var(--tc);
-  --hf: "McClatchy Serif", serif;
+  --hf:var(--serif);
   --hw: 400;
   --ht:none;
   --ld:none;
@@ -514,6 +518,12 @@ button:hover,
 .promo * {
   border-color: white;
   fill: white;
+  --bc: #222;
+  --bbc:white;
+}
+
+.promo * {
+  --bc: #31409F;
 }
 
 /**
@@ -546,10 +556,8 @@ button:hover,
 }
 
 .expander:after {
-  content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MDEuNSAyODQuNCI+PHBhdGggZD0iTTQ2Ny43LDI4NC40SDMzLjdjLTMwLDAtNDUtMzYuMy0yMy43LTU3LjVMMjI2LjksOS45YTMzLjgsMzMuOCwwLDAsMSw0Ny44LDBsMjE3LDIxN2MyMSwyMS4yLDYsNTcuNS0yNCw1Ny41WiIvPjwvc3ZnPgo=");
-  display: inline-block;
+  content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgNTEyIj48cGF0aCBkPSJNMjg4LjY2MiAzNTJIMzEuMzM4Yy0xNy44MTggMC0yNi43NDEtMjEuNTQzLTE0LjE0Mi0zNC4xNDJsMTI4LjY2Mi0xMjguNjYyYzcuODEtNy44MSAyMC40NzQtNy44MSAyOC4yODQgMGwxMjguNjYyIDEyOC42NjJjMTIuNiAxMi41OTkgMy42NzYgMzQuMTQyLTE0LjE0MiAzNC4xNDJ6Ii8+PC9zdmc+Cg==");
   width: 14px;
-  height: 8px;
   line-height: 0;
   margin-left: 5px;
   transition: transform 0.5s ease;
@@ -572,11 +580,11 @@ button:hover,
  * Utilities 
  */
 summary, .summary {
-  font: 400 14px/1.5em "McClatchy Sans", sans-serif;
+  font: 400 14px/1.5em var(--sans);
 }
 
 .small {
-  font: 400 11px/1.5em "McClatchy Sans", sans-serif;
+  font: 400 11px/1.5em var(--sans);
 }
 
 .caps {
@@ -591,13 +599,13 @@ summary, .summary {
 }
 
 .sans {
-  font-family: "McClatchy Sans", sans-serif;
-  --hf: "McClatchy Sans", sans-serif;
+  font-family: var(--sans);
+  --hf:var(--sans);
 }
 
 .serif {
-  font-family: "McClatchy Serif", serif;
-  --hf: "McClatchy Serif", serif;
+  font-family: var(--serif);
+  --hf:var(--serif);
 }
 
 .soft {
@@ -659,6 +667,10 @@ summary, .summary {
 
 .grid > .ad-widget {
   align-self: center;
+}
+
+.grid > .rail {
+  grid-row-end: span var(--rows, 3);
 }
 
 @media (min-width: 990px) {
@@ -743,7 +755,7 @@ summary, .summary {
 }
 
 .immersive .title {
-  font: 600 40px/1.2em "McClatchy Serif", serif;
+  font: 600 40px/1.2em var(--serif);
   text-transform: none;
   --lhd:underline;
 }
@@ -765,7 +777,7 @@ summary, .summary {
  * Story body
  */
 .story-body {
-  --hf: "McClatchy Sans", sans-serif;
+  --hf:var(--sans);
   --hw: 600;
   --ht:uppercase;
   --lc: #5169B8;
@@ -776,7 +788,7 @@ summary, .summary {
 }
 
 .story-body > * {
-  max-width: 660px;
+  max-width: 728px;
   padding: 0 15px;
   margin: 15px auto;
 }
@@ -816,7 +828,7 @@ summary, .summary {
 }
 
 .story-body .wide {
-  max-width: 960px;
+  max-width: 970px;
 }
 
 .story-body .full-bleed {
@@ -828,7 +840,11 @@ summary, .summary {
   padding: 10px 0 0;
 }
 
-@media (max-width: 690px) {
+@media (max-width: 768px) {
+  .story-body > figure {
+    max-width: 100%;
+  }
+
   .story-body figcaption,
 .story-body figure .package {
     padding: 10px 15px 0;
@@ -865,7 +881,7 @@ summary, .summary {
 }
 .story-body blockquote {
   max-width: 300px;
-  font: 24px/1.2em "McClatchy Sans", sans-serif;
+  font: 24px/1.2em var(--sans);
 }
 
 .story-body > .zone {
@@ -914,7 +930,7 @@ summary, .summary {
  * Zergnet widget only applies to stories
  */
 .zergnet {
-  max-width: 660px;
+  max-width: 728px;
   padding: 0 15px;
 }
 
@@ -927,7 +943,7 @@ summary, .summary {
   align-items: center;
   text-align: center;
   color: var(--tc);
-  --hf: "McClatchy Serif", serif;
+  --hf: "Noto Serif", serif;
   --ht:none;
 }
 
@@ -952,7 +968,7 @@ summary, .summary {
  * Series nav
  */
 .series-nav {
-  --hf: "McClatchy Serif", serif;
+  --hf:var(--serif);
   --hw: 400;
   --ht:none;
   --lc: #222;
@@ -1091,7 +1107,7 @@ summary, .summary {
 .transparency > * {
   margin-left: auto;
   margin-right: auto;
-  max-width: 660px;
+  max-width: 728px;
 }
 
 .transparency .expander {
@@ -1099,7 +1115,8 @@ summary, .summary {
 }
 
 .question {
-  --hf: "McClatchy Serif", serif;
+  padding-top: 15px;
+  --hf:var(--serif);
   --hw: 400;
   --ht:none;
 }
@@ -1142,7 +1159,7 @@ summary, .summary {
 }
 
 .read-next .package > p {
-  font: 14px/1.5em "McClatchy Sans", sans-serif;
+  font: 14px/1.5em var(--sans);
 }
 
 /**
@@ -1163,7 +1180,7 @@ summary, .summary {
 /*   } */
 /* } */
 .card.swg-promo .title {
-  font: 600 48px "McClatchy Sans", sans-serif;
+  font: 600 48px var(--sans);
 }
 
 .upper-nav {
@@ -1417,8 +1434,8 @@ section.flag {
 }
 
 .footer-connect {
-  --hf: "McClatchy Sans", sans-serif;
-  --hw: 500;
+  --hf:var(--sans);
+  --hw: 700;
 }
 
 .footer-connect > * {
@@ -1456,7 +1473,7 @@ section.flag {
 }
 
 .footer-links a {
-  font: 14px "McClatchy Sans";
+  font: 14px var(--sans);
 }
 
 .bottom-nav a {
