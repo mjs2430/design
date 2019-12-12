@@ -4,12 +4,11 @@
 
 :root {
   /* Generals for use in cards */
-  --serif: "Noto Serif", serif;
+  --serif: "Noto Serif SC", serif;
   --sans: "Noto Sans", sans-serif;
 
   /* Header family, weight, and text-transform */
-  /* --hf: "McClatchy Serif", serif; */
-  --hf: "Noto Serif", serif;
+  --hf: "Noto Serif SC", serif;
   --hw: 400;
   --ht: none;
 
@@ -68,7 +67,7 @@ a:hover {
 
 h1, .h1 {
   font-size: 30px;
-  letter-spacing: -1px;
+  /* letter-spacing: -1px; */
   --hw: 700;
 }
 
@@ -96,7 +95,7 @@ h6, .h6 {
 }
 
 p {
-  font: 18px/1.5em var(--serif);
+  font: 17px/1.5em var(--serif);
 }
 
 li {
