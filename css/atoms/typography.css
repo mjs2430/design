@@ -4,11 +4,11 @@
 
 :root {
   /* Generals for use in cards */
-  --serif: "Noto Serif SC", serif;
+  --serif: "Noto Serif", serif;
   --sans: "Noto Sans", sans-serif;
 
   /* Header family, weight, and text-transform */
-  --hf: "Noto Serif SC", serif;
+  --hf: "Noto Serif", serif;
   --hw: 400;
   --ht: none;
 
