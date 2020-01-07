@@ -110,6 +110,10 @@ time {
   color: var(--tc, #707070);
 }
 
+iframe {
+  border: none;
+}
+
 /**
  * Custom elements
  */
