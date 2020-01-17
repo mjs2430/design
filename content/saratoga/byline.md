@@ -24,7 +24,7 @@ The byline and credit rules should have this standard anywhere attribution appli
 
 Property | Value
 --- | ---
-Typeface | McClatchy Sans
+Typeface | Noto Sans
 Weight | 400, 700 for linked items
 Size | 11px
 Color | #707070

@@ -9,6 +9,9 @@ pygmentsStyle = "borland"
 
 disableKinds = ["taxonomy", "taxonomyTerm", "RSS", "404"]
 
+[markup.goldmark.renderer]
+  unsafe = true
+
 [menu]
   [[menu.main]]
     name = "style guide"

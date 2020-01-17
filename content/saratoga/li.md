@@ -25,7 +25,7 @@ Suspendisse potenti. Cras sagittis neque at aliquam facilisis. Duis nibh orci, a
 
 Property | Value
 --- | ---
-Typeface | Lyon
+Typeface | Noto Serif
 Weight | 400
 Size | 17px
 Line height | 1.5em

@@ -15,8 +15,8 @@ The more-link atom signifies that clicking it will take the reader to another we
 
 Property | Value
 --- | ---
-Typeface | McClatchy Sans
-Weight | 600
+Typeface | Noto Sans
+Weight | 700
 Size | 14px
 Line height | 1.5em
 Color | #707070

@@ -15,8 +15,8 @@ Timestamps are always displayed on their own line, so `<time>` is converted to a
 
 Property | Value
 --- | ---
-Typeface | McClatchy Sans
-Weight | 300
+Typeface | Noto Sans
+Weight | 400
 Size | 11px
 Line height | 1.5em
 Case | Uppercase

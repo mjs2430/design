@@ -15,7 +15,7 @@ The default values for `<p>` are designed for the normal body text of the story 
 
 Property | Value
 --- | ---
-Typeface | Lyon
+Typeface | Noto Serif
 Weight | 400
 Size | 17px
 Line Height | 1.5em

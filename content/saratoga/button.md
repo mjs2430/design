@@ -35,7 +35,7 @@ Buttons are designed to be placed in a center-aligned row using browser defaults
 
 | Property | Value |
 | --- | --- |
-| Typeface | McClatchy Sans |
+| Typeface | Noto Sans |
 | Weight | 600 |
 | Size | 14px |
 | Border | 1 pixel solid #4a4a4a with a 2-pixel radius |

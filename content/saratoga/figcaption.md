@@ -13,7 +13,7 @@ All captions have the same style. The figcaption is used as a semantic wrapper a
 
 Property | Value
 --- | ---
-Typeface | McClatchy Sans
+Typeface | Noto Sans
 Weight | 400
 Size | 14px
 Line height | 1.5em

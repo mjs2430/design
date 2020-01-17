@@ -13,15 +13,11 @@ _Note: This code should stay at the bottom of the molecules file so that package
 
 ```css
 summary, .summary {
-  font: 400 14px/1.5em "McClatchy Sans", sans-serif;
+  font: 400 14px/1.5em var(--sans);
 }
 
 .small {
-  font: 400 11px/1.5em "McClatchy Sans", sans-serif;
-}
-
-.niche {
-  font: 400 13px/1.3em;
+  font: 400 11px/1.5em var(--sans);
 }
 
 .caps {
@@ -29,14 +25,20 @@ summary, .summary {
   --ht: uppercase;
 }
 
+.no-caps,
+.button.no-caps {
+  text-transform: none;
+  --ht: none;
+}
+
 .sans {
-  font-family: "McClatchy Sans", sans-serif;
-  --hf: "McClatchy Sans", sans-serif;
+  font-family: var(--sans);
+  --hf: var(--sans);
 }
 
 .serif {
-  font-family: "McClatchy Serif", serif;
-  --hf: "McClatchy Serif", serif;
+  font-family: var(--serif);
+  --hf: var(--serif);
 }
 
 .soft {
@@ -50,11 +52,20 @@ summary, .summary {
 }
 
 .gray {
-  color: #707070;
+  color: var(--tc, #707070);
+  --bc: var(--tc, #707070);
+}
+
+.cutout {
+  background-color: #f4f4f4;
+}
+
+.blue {
+  color: var(--tc, #31409F);
 }
 
 .error {
-  color: #D63031;
+  color: var(--tc, #D63031);
 }
 
 .underline {
