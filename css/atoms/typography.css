@@ -110,7 +110,7 @@ ul li {
 time {
 	max-width: unset;
   display: inline-block;
-  font: 300 11px/1.2em var(--sans);
+  font: 400 11px/1.2em var(--sans);
   text-transform: uppercase;
   color: var(--tc, #707070);
 }

@@ -80,10 +80,7 @@
   <div class="paper story-body details">
     <h2 class="page-header">menu
     </h2>
-    
-
-<p>The slide-out menu is a fixed panel with internal scrolling. We used button elements to keep the DOM similar and have added a couple new custom properties to optimize this structure.</p>
-
+    <p>The slide-out menu is a fixed panel with internal scrolling. We used button elements to keep the DOM similar and have added a couple new custom properties to optimize this structure.</p>
 <table>
 <thead>
 <tr>
@@ -91,29 +88,22 @@
 <th></th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>--bc</td>
 <td>button text color</td>
 </tr>
-
 <tr>
 <td>--bbc</td>
 <td>button background color</td>
 </tr>
 </tbody>
 </table>
-
 <p>A large portion of the menu is a simple stack of expander elements and will require Javascript to toggle the &ldquo;open&rdquo; class. The menu will slide out on a similar class toggle of &ldquo;open&rdquo;. For this demo we created a simple <a href="../../js/navigation.js">navigation.js</a> file to hold the functions. Originally made for modals, the &ldquo;freeze&rdquo; class can be added to the body element to stop scrolling on most devices when the menu is open.</p>
-
 <h4 id="example">EXAMPLE</h4>
-
-<p><em>The menu is included in the <a href="../decks/story/">story deck</a> and is better represented there.<br />
+<p><em>The menu is included in the <a href="../decks/story/">story deck</a> and is better represented there.<br>
 Click the hamburger menu in the flag to open it.</em></p>
-
 <h4 id="html">HTML</h4>
-
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">id</span>=<span style="color:#00f">&#34;main-nav&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;main-nav sans summary impact&#34;</span>&gt;
   &lt;<span style="color:#000080;font-weight:bold">button</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary flex&#34;</span> <span style="color:#f00">onclick</span>=<span style="color:#00f">&#34;closeNavigation()&#34;</span>&gt;
     &lt;<span style="color:#000080;font-weight:bold">svg</span> <span style="color:#f00">xmlns</span>=<span style="color:#00f">&#34;http://www.w3.org/2000/svg&#34;</span> <span style="color:#f00">viewBox</span>=<span style="color:#00f">&#34;0 0 352 512&#34;</span>&gt;&lt;<span style="color:#000080;font-weight:bold">path</span> <span style="color:#f00">d</span>=<span style="color:#00f">&#34;M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z&#34;</span> <span style="color:#f00">fill</span>=<span style="color:#00f">&#34;white&#34;</span>/&gt;&lt;/<span style="color:#000080;font-weight:bold">svg</span>&gt;

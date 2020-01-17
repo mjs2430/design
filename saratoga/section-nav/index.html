@@ -80,18 +80,11 @@
   <div class="paper story-body details">
     <h2 class="page-header">section-nav
     </h2>
-    
-
-<p>The section-nav goes at the top of section pages when there is a manually-filled Nav links group in CUE. It&rsquo;s a siple stack of an expander and icon row with small adjustments. On load, the section nav should be collapsed. If there isn&rsquo;t a filled Nav links group in CUE it should render as a standard h1 with no caret by ommitting the expander class.</p>
-
+    <p>The section-nav goes at the top of section pages when there is a manually-filled Nav links group in CUE. It's a siple stack of an expander and icon row with small adjustments. On load, the section nav should be collapsed. If there isn't a filled Nav links group in CUE it should render as a standard h1 with no caret by ommitting the expander class.</p>
 <p>On mobile (600px), the section-nav headline reduces in size and the expandable list switches to a vertical stack with center alignment.</p>
-
 <h4 id="example">EXAMPLE</h4>
-
 <p><em>The section nav is included in the <a href="../decks/section/">section deck</a> and is better represented there.</em></p>
-
 <h4 id="html">HTML</h4>
-
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">section</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;section-nav&#34;</span>&gt;
   &lt;<span style="color:#000080;font-weight:bold">h1</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;expander title h1&#34;</span> <span style="color:#f00">onclick</span>=<span style="color:#00f">&#34;this.classList.toggle(&#39;open&#39;)&#34;</span>&gt;Sports&lt;/<span style="color:#000080;font-weight:bold">h1</span>&gt;
   &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;icons summary&#34;</span>&gt;

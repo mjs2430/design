@@ -80,29 +80,22 @@
   <div class="paper story-body details">
     <h2 class="page-header">button
     </h2>
-    
-
-<p>Buttons are designed to be placed in a center-aligned row using browser defaults and to have different levels of impact. There are four different types of button, but they all use the same base code.</p>
-
+    <p>Buttons are designed to be placed in a center-aligned row using browser defaults and to have different levels of impact. There are four different types of button, but they all use the same base code.</p>
 <h4 id="example">EXAMPLE</h4>
-
 <div>
 <button class="impact button">Impact button</button>
 <button class="ghost button">Ghost button</button>
-
-<button class="promo button">Promo button</button>
-<button class="button">Text button</button>
+<p><button class="promo button">Promo button</button>
+<button class="button">Text button</button></p>
 </div>
-
 <h4 id="html">HTML</h4>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
   &lt;<span style="color:#000080;font-weight:bold">button</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button impact&#34;</span>&gt;Impact button&lt;/<span style="color:#000080;font-weight:bold">button</span>&gt;
   &lt;<span style="color:#000080;font-weight:bold">button</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button ghost&#34;</span>&gt;Ghost button&lt;/<span style="color:#000080;font-weight:bold">button</span>&gt;
   &lt;<span style="color:#000080;font-weight:bold">button</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button promo&#34;</span>&gt;Promo button&lt;/<span style="color:#000080;font-weight:bold">button</span>&gt;
   &lt;<span style="color:#000080;font-weight:bold">button</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button&#34;</span>&gt;Text button&lt;/<span style="color:#000080;font-weight:bold">button</span>&gt;
-&lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
-<h4 id="rules">RULES</h4>
-
+&lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+</code></pre></div><h4 id="rules">RULES</h4>
 <table>
 <thead>
 <tr>
@@ -110,43 +103,33 @@
 <th>Value</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>Typeface</td>
-<td>McClatchy Sans</td>
+<td>Noto Sans</td>
 </tr>
-
 <tr>
 <td>Weight</td>
 <td>600</td>
 </tr>
-
 <tr>
 <td>Size</td>
 <td>14px</td>
 </tr>
-
 <tr>
 <td>Border</td>
 <td>1 pixel solid #4a4a4a with a 2-pixel radius</td>
 </tr>
-
 <tr>
 <td>Case</td>
 <td>Uppercase</td>
 </tr>
 </tbody>
 </table>
-
-<hr />
-
+<hr>
 <h2 id="select">SELECT</h2>
-
 <p>Custom selects use a combination of the <a href="../expander">expander</a> molecule and link-based buttons instead of the native select element for forms. Because they are based on the expander, a toggle of the <code>open</code> class will show and remove the option list. Lastly, adding the class <code>selected</code> to any of options will make it bold. Different use cases will most likely require different javascript, but we have a <a href="../../js/select.js">starter script</a> for the purposes of this demo.</p>
-
 <h4 id="example-1">EXAMPLE</h4>
-
 <div class="grid" style="grid-template-columns: 300px 1fr;">
 <div class="select">
   <span class="button big expander" onclick="this.classList.toggle('open');">Order by</span>
@@ -158,11 +141,8 @@
 </div>
 
 </div>
-
 <script async src="../../js/select.js"></script>
-
 <h4 id="html-1">HTML</h4>
-
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;select&#34;</span>&gt;
   &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button big expander&#34;</span> <span style="color:#f00">onclick</span>=<span style="color:#00f">&#34;this.classList.toggle(&#39;open&#39;);&#34;</span>&gt;Order by&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
   &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;options&#34;</span>&gt;

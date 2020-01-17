@@ -8,6 +8,10 @@
   grid-gap: 30px;
 }
 
+.grid[hidden], .grid.hidden {
+  display: none;
+}
+
 .grid > .package:not(.paper) {
   padding: 0;
 }
