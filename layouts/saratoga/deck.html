@@ -11,7 +11,7 @@
 
 <script defer src="/js/navigation.js"></script>
 <script defer src="/js/gpt-ad.js"></script>
-{{- if eq .Title "story" }}
+{{- if isset .Params "zones" }}
 <script defer src="/js/zones.js"></script>
 <script defer src="/js/typologies.js"></script>
 <script defer src="/js/dynamics.js"></script>
