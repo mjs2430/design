@@ -15,6 +15,7 @@
 	--ht: none;
   --ld: none;
   --lhd: underline;
+  --lhc: var(--tc); 
 }
 
 .package.flush {
