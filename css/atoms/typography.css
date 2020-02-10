@@ -30,7 +30,8 @@
 }
 
 html {
-  font: 14px/1.2em var(--sans);
+  /* font: 14px/1.2em var(--sans); */
+  font-family: var(--sans);
 }
 
 body {
