@@ -39,7 +39,7 @@
 
 .package.no-img h3,
 .package.no-img .h3 {
-  font-size: 2rem;
+  font-size: x-large;
 }
 
 .package.marketing > :not(:first-child) {

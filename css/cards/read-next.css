@@ -37,5 +37,5 @@
 }
 
 .read-next .package > p {
-  font: 1rem/1.5em var(--sans);
+  font: medium/1.5em var(--sans);
 }
