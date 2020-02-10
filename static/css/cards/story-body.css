@@ -15,7 +15,7 @@
 
 .story-body > * {
   max-width: 728px;
-	padding: 0 15px;
+  padding: 0 15px;
   margin: 15px auto;
 }
 
@@ -113,7 +113,7 @@
 
 .story-body blockquote {
   max-width: 300px;
-  font: 24px/1.2em var(--sans);
+  font: 1.7/1.2em var(--sans);
 }
 
 .story-body > .zone {
@@ -137,11 +137,6 @@
 
 .story-body figure.mugshot figcaption {
   padding: 5px 0 0;
-  font-size: 12px;
-}
-
-.story-body figure.mugshot .credit {
-  font-size: 10px;
 }
 
 /**

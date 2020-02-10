@@ -5,7 +5,6 @@
 input, select {
   border: 1px solid #373737;
   padding: 10px;
-  font-size: 14px;
 }
 
 input[type=text] {
@@ -26,7 +25,7 @@ button:hover,
 .button {
   display: inline-block;
   align-self: flex-start;
-  font: 700 14px var(--sans);
+  font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;

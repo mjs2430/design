@@ -46,10 +46,6 @@
   margin-top: .2em;
 }
 
-.footer-links a {
-  font: 14px var(--sans);
-}
-
 .bottom-nav a {
   display: block;
   margin: 15px;
