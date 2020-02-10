@@ -20,6 +20,7 @@
 }
 
 .banner a {
+  font-size: small;
   padding: 13px 15px;
   text-transform: uppercase;
   color: inherit;

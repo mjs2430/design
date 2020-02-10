@@ -3,12 +3,12 @@
  */
 
 summary, .summary {
-  font-size: 1rem;
+  font-size: small;
   font-family: var(--sans);
 }
 
 .small {
-  font-size: 0.8rem;
+  font-size: small;
 }
 
 .caps {
