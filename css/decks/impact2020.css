@@ -24,7 +24,7 @@
 }
 
 .impact2020 .immersive time {
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 .impact2020 .package .kicker {
@@ -58,7 +58,7 @@
   flex: 1 1 auto;
   display: flex;
   align-items: flex-end;
-  font-size: 24px;
+  font-size: 1.8rem;
 }
 
 .impact2020 .no-img time {
