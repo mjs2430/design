@@ -30,7 +30,6 @@
 }
 
 html {
-  /* font: 14px/1.2em var(--sans); */
   font-family: var(--sans);
 }
 
@@ -72,39 +71,39 @@ a:hover {
 }
 
 h1, .h1 {
-  font-size: 2.2rem;
+  font-size: xx-large;
   --hw: 700;
 }
 
 h2, .h2 {
-  font-size: 1.6rem;
+  font-size: x-large;
 }
 
 h3, .h3 {
-  font-size: 1.3rem;
+  font-size: large;
 }
 
 h4, .h4 {
-  font-size: 1.1rem;
+  font-size: medium;
 }
 
 h5, .h5 {
-  font-size: 1rem;
+  font-size: small;
   --hf: var(--sans);
   --hw: 700;
 }
 
 h6, .h6 {
-  font-size: 0.9rem;
+  font-size: smaller;
   --hf: var(--sans);
 }
 
 p {
-  font: 1.2rem/1.5em var(--serif);
+  font: medium/1.5em var(--serif);
 }
 
 li {
-  font: 1.2rem/1.5em var(--serif);
+  font: medium/1.5em var(--serif);
   margin: 10px 0 10px calc(1em + 15px);
 }
 
@@ -117,7 +116,7 @@ time {
   display: inline-block;
   text-transform: uppercase;
   color: var(--tc, #707070);
-  font-size: 0.8rem;
+  font-size: small;
 }
 
 /**
@@ -141,7 +140,7 @@ time {
   display: inline-block;
   text-transform: uppercase;
   color: var(--tc, #707070);
-  font-size: 0.8rem;
+  font-size: small;
 }
 
 .byline a {

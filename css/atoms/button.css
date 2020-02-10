@@ -14,7 +14,7 @@ input[type=text] {
 button, .button {
   color: var(--bc);
   background-color: var(--bbc);
-  font-family: var(--sans);
+  font: 700 medium var(--sans);
   border: 1px solid transparent;
 }
 
