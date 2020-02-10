@@ -30,7 +30,7 @@
 }
 
 html {
-  font-family: var(--sans);
+  font: 14px/1.2em var(--sans);
 }
 
 body {
