@@ -30,21 +30,6 @@
     {{ end }}
   </div>
 
-  <div class="subscriptions">
-    <div class="label">
-      <h5>SUBSCRIPTION FLOW</h5>
-    </div>
-    {{ range .Site.Menus.subscriptions }}
-    {{ $active := $cp.IsMenuCurrent "subscriptions" . }}
-    <div class="package {{- if $active }} active{{ end }}">
-      <h4 class="sans bold">
-        <a href="{{ .Page.Permalink }}">{{ .Name }}</a>
-      </h4>
-      <p class="summary">{{ .Page.Description }}</p>
-    </div>
-    {{ end }}
-  </div>
-
   <div class="molecules">
     <div class="label">
       <h5>MOLECULES</h5>
