@@ -3,7 +3,7 @@
  */
 
 summary, .summary {
-  font-size: small;
+  font-size: 0.875rem;
   font-family: var(--sans);
 }
 

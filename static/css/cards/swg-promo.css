@@ -2,6 +2,14 @@
  * SWG Promo card
  */
 
+.card.swg-promo .title {
+	font: 600 48px var(--sans);
+}
+
+.card.swg-promo .summary {
+  font-size: medium;
+}
+
 @media( min-width: 660px ) {
   .card.swg-promo {
     grid-template-columns: 2fr 1fr;
@@ -10,14 +18,4 @@
   .card.swg-promo > :first-child {
     min-height: 200px;
   }
-}
-
-/* @media( min-width: 990px ) { */
-/*   .card.swg-promo { */
-/*     grid-template-columns: 2fr 1fr; */
-/*   } */
-/* } */
-
-.card.swg-promo .title {
-	font: 600 48px var(--sans);
 }
