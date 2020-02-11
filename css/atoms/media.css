@@ -13,7 +13,7 @@ figure img {
 }
 
 figcaption, .caption {
-  font-size: small;
+  font-size: 0.875rem;
   color: var(--tc, #707070);
   padding-top: 10px; 
 }
