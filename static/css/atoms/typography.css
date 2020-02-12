@@ -71,7 +71,8 @@ a:hover {
 }
 
 h1, .h1 {
-  font-size: xx-large;
+  font-size: 1.875rem;
+  line-height: 1.1em;
   --hw: 700;
 }
 
@@ -94,7 +95,7 @@ h5, .h5 {
 }
 
 h6, .h6 {
-  font-size: smaller;
+  font-size: 0.75rem;
   --hf: var(--sans);
 }
 
@@ -116,7 +117,7 @@ time {
   display: inline-block;
   text-transform: uppercase;
   color: var(--tc, #707070);
-  font-size: small;
+  font-size: 0.75rem;
 }
 
 /**
@@ -180,6 +181,7 @@ time {
 .more-link {
   display: block;
   font-weight: 700;
+  font-size: 0.875rem;
   text-transform: uppercase;
   margin-top: 15px;
   --lc: var(--tc, #707070);
@@ -202,5 +204,6 @@ time {
 .dateline {
   display: block;
   font-style: italic;
+  font-size: 0.875rem;
   text-transform: uppercase;
 }
