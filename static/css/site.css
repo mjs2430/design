@@ -78,3 +78,11 @@ footer {
   background-color: #373737;
   min-height: 20px;
 }
+
+/**
+ * Labs page
+ */
+
+.grid.labs .package .summary {
+  flex: 1;
+}

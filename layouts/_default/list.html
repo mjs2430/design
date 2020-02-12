@@ -1,5 +1,5 @@
 {{ define "content" }}
-<section class="grid">
+<section class="grid {{ $.Section }}">
   {{ range .Pages }}
   <div href="{{.Permalink}}" class="paper package">
     <h3 class="sans"><b>{{.Title}}</b></h3>

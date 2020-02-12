@@ -1,9 +1,9 @@
-{{ with .Get "component" }}
+{{ $component := .Get "component" }}
+{{ $type := .Get "type" }}
+
 <h5>Implementation notes for the trailblazers</h5>
 <p>Web components require a Javascript class be loaded in order to function. If you want to implement this component in an isolated environment and ensure that any changes we make going forward do not get incorporated into your story, <a href="/components/{{.}}">download this component</a> and host it wherever you like. We will host the latest version of these files, which may include breaking changes as we iterate. If you would like to automatically get updates, and are comfortable with the risk, you can copy the location below into your embed.</p>
 
 <div>
-{{ highlight (printf `<script async src="https://media.mcclatchy.com/labs/%s"></script>` .) "html" "" }}
+{{ highlight (printf `<script async type="%s" src="https://media.mcclatchy.com/labs/%s"></script>` $type $component) "html" "" }}
 </div>
-
-{{- end }}

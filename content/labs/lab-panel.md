@@ -4,7 +4,7 @@ description: "Stackable panels used on the Education Lab landing pages."
 example: https://www.fresnobee.com/news/local/education/article235079937.html
 ---
 
-<script src="/components/lab-panel.js"></script>
+<script src="/labs/lab-panel.js"></script>
 
 The `<lab-panel>` webcomponent was created for The Fresno Bee [Education Lab landing page](https://www.fresnobee.com/news/local/education/article235079937.html). It leverages molecules already installed on the websites and enhances them using the Shadow DOM. The component changes the font face to McClatchy Sans, provides a full-bleed container that can be styled on the page, and an `<img>` tag included inside the element will both fill the container and be filtered to allow for text to be rendered over it.
 

@@ -4,7 +4,7 @@ description: A fundraising chart with configurable goals used on the Education L
 example: https://www.fresnobee.com/news/local/education/article235079937.html
 ---
 
-<script src="/components/fundraising-chart.js"></script>
+<script src="/labs/fundraising-chart.js"></script>
 
 The fundraising chart is an attempt to simplify the process of repeatedly editing a chart in the content management system over time by hiding most of the structure and styling in the Shadow DOM. 
 
