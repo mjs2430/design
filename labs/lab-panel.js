@@ -15,7 +15,7 @@ class LabPanel extends HTMLElement {
     }
 
     .package {
-      max-width: 660px;
+      max-width: 728px;
       padding: 45px;
     }
 
