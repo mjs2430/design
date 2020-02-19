@@ -26,7 +26,7 @@ Property | Value
 --- | ---
 Typeface | Noto Sans
 Weight | 400, 700 for linked items
-Size | 11px
+Size | 0.75rem (12px)
 Color | #707070
 Case | Uppercase
 Letter Spacing | Default

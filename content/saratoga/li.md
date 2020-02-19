@@ -27,7 +27,7 @@ Property | Value
 --- | ---
 Typeface | Noto Serif
 Weight | 400
-Size | 17px
+Size | large (18px)
 Line height | 1.5em
 Case | From text
 Letter Spacing | Default

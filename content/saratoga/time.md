@@ -17,7 +17,7 @@ Property | Value
 --- | ---
 Typeface | Noto Sans
 Weight | 400
-Size | 11px
+Size | 0.75rem (12px)
 Line height | 1.5em
 Case | Uppercase
 Letter spacing | Default

@@ -141,7 +141,8 @@ time {
   display: inline-block;
   text-transform: uppercase;
   color: var(--tc, #707070);
-  font-size: small;
+  font-family: var(--sans);
+  font-size: 0.75rem;
 }
 
 .byline a {
