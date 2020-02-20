@@ -94,6 +94,7 @@
   --ht:none;
   --ld:none;
   --lhd:underline;
+  --lhc:var(--tc);
 }
 
 .package.flush {
@@ -117,7 +118,7 @@
 
 .package.no-img h3,
 .package.no-img .h3 {
-  font-size: 28px;
+  font-size: x-large;
 }
 
 .package.marketing > :not(:first-child) {
@@ -162,10 +163,15 @@
 }
 
 .social-media > a {
-  padding: 15px;
-  /* following 2 lines will be deprecated in 1.12 */
-  height: 20px;
-  width: 20px;
+  padding: 10px 7.5px;
+}
+
+.social-media > a:first-child {
+  padding-left: 0;
+}
+
+.social-media > a:last-child {
+  padding-right: 0;
 }
 
 .social-media svg {
@@ -207,11 +213,12 @@
  * Utilities 
  */
 summary, .summary {
-  font: 400 14px/1.5em var(--sans);
+  font-size: 0.875rem;
+  font-family: var(--sans);
 }
 
 .small {
-  font: 400 11px/1.5em var(--sans);
+  font-size: small;
 }
 
 .caps {

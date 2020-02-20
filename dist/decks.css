@@ -168,35 +168,6 @@ section.flag {
 }
 
 /**
- * Vendor version
- */
-/* .flag.vendor { */
-/*   padding: 10px 15px; */
-/*   justify-content: center; */
-/* } */
-/* .flag.vendor .vendor-name { */
-/*   padding: 5px 10px; */
-/*   margin: 0; */
-/*   font-size: 22px; */
-/*   padding: 7px 9px 3px; */
-/*   line-height: 1em; */
-/*   box-sizing: border-box; */
-/*   position: relative; */
-/* } */
-/* .flag.vendor .market-logo { */
-/*   flex: none; */
-/*   padding: 0 10px; */
-/* } */
-/* .flag.vendor .vendor-logo img { */
-/*   display: block; */
-/*   height: 30px; */
-/*   padding: 0 10px; */
-/* } */
-/* .flag.vendor .market-logo:not(:first-child) { */
-/*   border-left: 2px solid #222; */
-/*   max-width: 50%; */
-/* } */
-/**
  * Footer
  */
 .footer {
@@ -241,10 +212,6 @@ section.flag {
 
 .footer .more-link {
   margin-top: 0.2em;
-}
-
-.footer-links a {
-  font: 14px var(--sans);
 }
 
 .bottom-nav a {
@@ -406,9 +373,9 @@ section.flag {
   grid-gap: 15px;
 }
 
-.search-form input {
-  align-self: stretch;
-  font-size: 16px;
+.search-form input,
+.search-form button {
+  font-size: medium;
 }
 
 .search-form .select {
@@ -463,7 +430,7 @@ section.flag {
 }
 
 .e-edition .card:first-child h3 {
-  font-size: 22px;
+  font-size: x-large;
 }
 
 @media (min-width: 600px) {
@@ -503,7 +470,7 @@ section.flag {
 }
 
 .impact2020 .immersive time {
-  font-size: 14px;
+  font-size: small;
 }
 
 .impact2020 .package .kicker {
@@ -536,7 +503,7 @@ section.flag {
   flex: 1 1 auto;
   display: flex;
   align-items: flex-end;
-  font-size: 24px;
+  font-size: x-large;
 }
 
 .impact2020 .no-img time {
@@ -566,7 +533,7 @@ section.flag {
   }
 }
 .header .blog-branding .teaser .title {
-  font-size: 22px;
+  font-size: x-large;
   font-weight: 400;
 }
 
