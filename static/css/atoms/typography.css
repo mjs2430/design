@@ -16,6 +16,9 @@
   --lc: #222;
   --ld: none;
 
+  /* Story width */
+  --story-width: 728px;
+
   /**
    * Button color and background color
    * --bc: #222;
