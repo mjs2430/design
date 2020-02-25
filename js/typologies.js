@@ -15,17 +15,12 @@ var Typologies = {
     },
     {
       "name": "zone4",
-      "class": "grid",
-      "units": ["related-stories", "banner"]
-    },
-    {
-      "name": "zone5",
       "class": "grid combo",
       "units": ["subscription", "ad"]
     },
     {
-      "name": "dynamic",
-      "units": ["ad"]
+      "name": "zone5",
+      "units": ["banner"]
     },
     {
       "name": "zone6",

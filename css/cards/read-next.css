@@ -24,10 +24,6 @@
 	justify-content: flex-start;
 }
 
-.read-next .social-media > a:first-child {
-	padding-left: 0;
-}
-
 .read-next .more-link {
 	padding: 0;
 }
@@ -38,4 +34,10 @@
 
 .read-next .package > p {
   font: medium/1.5em var(--sans);
+}
+
+@media (max-width: 989px) {
+  .read-next .header .bio {
+    display: block;
+  }
 }
