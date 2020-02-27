@@ -40,7 +40,7 @@ class GPT extends HTMLElement {
 
   static get leaderboard() {
     return googletag.sizeMapping()
-      .addSize([1024, 600], [[970, 250],[728, 90]])
+      .addSize([1024, 600], [[970, 250],[970,90],[728, 90]])
       .addSize([750, 400], [728, 90])
       .addSize([0, 0], [320, 50]).build()
   }
