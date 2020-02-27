@@ -20,7 +20,8 @@ var Typologies = {
     },
     {
       "name": "zone5",
-      "units": ["banner"]
+      "class": "wide",
+      "units": ["leaderboard"]
     },
     {
       "name": "zone6",
