@@ -22,6 +22,10 @@ disableKinds = ["taxonomy", "taxonomyTerm", "RSS", "404"]
     url = "/markets/"
     weight = 2
   [[menu.main]]
+    name = "ads"
+    url = "/ads/"
+    weight = 3
+  [[menu.main]]
     name = "labs"
     url = "/labs/"
-    weight = 3
+    weight = 4
