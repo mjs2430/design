@@ -1,0 +1,71 @@
+form {
+    position: relative;
+}
+form > * {
+    margin-bottom: 20px;
+    width: 100%; 
+}
+
+form label {
+    font: 600 14px var(--sans);
+    line-height: 1.5;
+    color: #222;
+    display: block;
+    margin-bottom: 0;
+}
+
+form small {
+    font: 400 small var(--sans);
+    color: #707070;
+    margin: 0;
+}
+
+form button {
+    box-sizing: content-box;
+    margin-top: 10px;
+}
+
+input {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #989898;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: none;
+    font-size: 1em;
+    color: #222;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+#focused-input {
+    box-shadow: 0 0 4px 2px hsla(0, 0%, 59.6%, .75);
+    outline: none;
+}
+
+input[type=text]:invalid, input[type=text].is-invalid {
+    border-color: #d63031;
+}
+
+input[type=text]:invalid, input[type=text]:focus.is-invalid {
+    box-shadow:0 0 4px 2px rgba(214,48,49,.75);
+}
+
+small[for=error-input] {
+    color: #d63031;
+}
+
+#password-label:after { 
+     content: "\f070"; 
+    font: 400 14px Font Awesome\ 5 Free;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    line-height: 1.7;
+    width: 20px;
+}
+
+#password-label.active:after{
+    content: "\f06e"
+}
