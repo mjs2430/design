@@ -1,5 +1,5 @@
 ---
-title: "forms"
+title: "inputs"
 description: "Form input styles"
 menu: "atom"
 ---
