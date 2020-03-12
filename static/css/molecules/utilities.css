@@ -2,11 +2,6 @@
  * Utilities 
  */
 
-iframe {
-  display: block;
-  border: none;
-}
-
 summary, .summary {
   font-size: 0.875rem;
   font-family: var(--sans);

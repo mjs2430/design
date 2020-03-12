@@ -24,8 +24,3 @@
 .expander.open:after {
   transform: rotateX(0);
 }
-
-/* .expander.open ~ * { */
-/*   display: block; */
-/* } */
-
