@@ -99,7 +99,6 @@ input[type="radio"] {
   width: 0;
 }
 
-
 /* When the checkbox is checked, add a black background */
 form input:checked ~ span {
   background: #222;
@@ -119,7 +118,6 @@ form input:checked ~ span:after {
   display: block; 
   transition:  all .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
 }
-
 
 /* Create a custom checkbox */
 .checkmark {
