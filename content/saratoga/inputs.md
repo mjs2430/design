@@ -6,7 +6,7 @@ menu: "atom"
 
 Inputs are designed to be placed in a center-aligned form that is 100% of the parent width (max-width of 340px on desktop) using browser defaults and to have different states based on user interaction.
 
-#### EXAMPLE
+#### Text Input Example
 
 <div>
     <form style="max-width: 340px;">
@@ -22,19 +22,49 @@ Inputs are designed to be placed in a center-aligned form that is 100% of the pa
       <input type="text" id="error-input" class="is-invalid">
       <label for="password-input" onclick="changeType()" id="password-label">Password</label>
       <small>Must be at least 7 characters long</small>    
-      <input type="password" id="password-input">   
+      <input type="password" id="password-input">
       <button type="submit" class="button promo">submit</button>   
-    </form>
-</div> 
+    </form>  
+ </div>  
  
+#### Checkboxes and Radios Example
+<div style="margin-bottom:30px;">
+     <form>
+      <label class="checkbox-container">Custom Checkbox
+          <input type="checkbox">
+          <span class="checkmark"></span>
+      </label>
+      <label class="checkbox-container">Custom Radio
+        <input type="radio" checked="checked" name="radio">
+        <span class="radio"></span>
+      </label>
+      <label class="checkbox-container">Custom Radio
+        <input type="radio" name="radio">
+        <span class="radio"></span>
+      </label>
+    </form>
+</div>
+  
 #### HTML
-
 ```html
 <div>
     <form>
-      <label for="default-input">Default</label>
+     
+      <label for="input">Default</label>
       <small>This is a hint</small>           
-      <input type="text" id="default-input">
+      <input type="text" id="input">
+      
+      <label for="password-input" onclick="changeType()" id="password-label">Password</label>
+      <small>Must be at least 7 characters long</small>    
+      <input type="password" id="password-input">
+      
+      <button type="submit" class="button promo">submit</button>  
+      
+      <label class="checkbox-container">Custom Radio
+        <input type="radio" name="radio">
+        <span class="radio"></span>
+      </label>
+      
     </form>
 </div>
 ```
