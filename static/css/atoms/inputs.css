@@ -9,13 +9,13 @@ form > * {
 }
   
 form > *:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0px; 
 } 
                  
 label { 
     font: 600 14px var(--sans);
-    line-height: 1.5;
-    color: #222;
+    line-height: 1.5;  
+    color: #222; 
     display: block; 
     margin-bottom: 0; 
 }   
