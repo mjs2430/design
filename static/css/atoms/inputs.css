@@ -1,12 +1,17 @@
 form {
     position: relative;
     font: 400 14px var(--sans);
+    width: 100%;
 }
-form > * {
+form > * { 
     margin-bottom: 20px;
     width: 100%; 
 }
-
+  
+form > *:last-child {
+    margin-bottom: 0px;
+} 
+                 
 label { 
     font: 600 14px var(--sans);
     line-height: 1.5;
@@ -171,3 +176,4 @@ form input:checked ~ span:after {
   border-radius: 50%;
   background: white;
 }
+
