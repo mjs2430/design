@@ -233,6 +233,11 @@ hr {
   align-self: stretch;
 }
 
+iframe {
+  display: block;
+  border: none;
+}
+
 /**
  * Sections
  */
@@ -308,12 +313,6 @@ button:hover,
   border-radius: 2px;
   --ld:none;
   --lhd:none;
-}
-
-.button.stretch {
-  display: block;
-  align-self: stretch;
-  padding: 1em;
 }
 
 .button.big {
