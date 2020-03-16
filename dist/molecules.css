@@ -197,16 +197,12 @@
   transform: rotateX(180deg);
 }
 
-.expander ~ * {
+.expander:not(.open) ~ * {
   display: none;
 }
 
 .expander.open:after {
   transform: rotateX(0);
-}
-
-.expander.open ~ * {
-  display: block;
 }
 
 /**
@@ -279,8 +275,4 @@ summary, .summary {
 
 .relative {
   position: relative;
-}
-
-.hidden, [hidden] {
-  display: none;
 }

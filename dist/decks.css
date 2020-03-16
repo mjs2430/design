@@ -255,8 +255,6 @@ section.flag {
   -webkit-overflow-scrolling: touch;
   transform: translateX(-150%);
   transition: transform 0.4s ease;
-  --bc:white;
-  --bbc:transparent;
 }
 
 .main-nav.open {
@@ -278,6 +276,8 @@ section.flag {
   border-left: 5px solid transparent;
   border-radius: 0;
   cursor: pointer;
+  --bc:white;
+  --bbc:transparent;
 }
 
 .main-nav:hover :focus {
