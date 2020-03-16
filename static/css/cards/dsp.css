@@ -1,0 +1,27 @@
+/** 
+DSP Overrides
+**/
+
+.dsp.example {
+    padding: 15px 0;
+}
+
+.dsp .package {   
+    padding: 30px 15px;
+}
+
+.dsp .paper {
+   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .13)
+}
+
+.dsp form .grid {
+    grid-template-columns: repeat( auto-fit, minmax(40px, 1fr) );
+    grid-gap: 15px;
+}
+
+@media (min-width: 640px) {
+    .dsp .paper {
+        max-width: 340px;
+        margin: 0 auto;
+   }
+}   
