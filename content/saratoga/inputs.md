@@ -6,27 +6,37 @@ menu: "atom"
 
 Inputs are designed to be placed in a center-aligned form that is 100% of the parent width (max-width of 340px on desktop) using browser defaults and to have different states based on user interaction.
 
-#### Text Input Example
+#### Text Inputs Example
 
 <div>
     <form style="max-width: 340px;">
-      <label for="default-input">Default</label>
-      <input type="text" id="default-input">
-      <label for="focused-input">Focused</label>
-      <input type="text" id="focused-input">
-      <label for="hint-input">Hint</label>
-      <small>This is a hint</small>     
-      <input type="text" id="hint-input">
-      <label for="error-input">Error</label>
-      <small for="error-input">This is an error message</small>     
-      <input type="text" id="error-input" class="is-invalid">
-      <label for="password-input" onclick="changeType()" id="password-label">Password</label>
-      <small>Must be at least 7 characters long</small>    
-      <input type="password" id="password-input">
-      <button type="submit" class="button promo">submit</button>   
+        <div>
+          <label for="default-input">Default</label>
+          <input type="text" id="default-input">
+        </div>
+        <div>
+          <label for="focused-input">Focused</label>
+          <input type="text" id="focused-input">
+        </div>
+        <div>
+          <label for="hint-input">Hint</label>
+          <small>This is a hint</small>     
+          <input type="text" id="hint-input">
+        </div>
+        <div>
+          <label for="error-input">Error</label>
+          <small for="error-input">This is an error message</small>     
+          <input type="text" id="error-input" class="is-invalid">
+        </div>
+        <div>
+          <label for="password-input" onclick="changeType()" id="password-label">Password</label>
+          <small>Must be at least 7 characters long</small>    
+          <input type="password" id="password-input">
+        </div>
+      <button id="button" type="submit" class="button promo">submit</button>   
     </form>  
  </div>  
- 
+  
 #### Checkboxes and Radios Example
 <div style="margin-bottom:30px;">
      <form>
@@ -42,7 +52,7 @@ Inputs are designed to be placed in a center-aligned form that is 100% of the pa
         <input type="radio" name="radio">
         <span class="radio"></span>
       </label>
-    </form>
+    </form> 
 </div>
   
 #### HTML
@@ -98,6 +108,7 @@ Custom selects use a combination of the [expander](../expander) molecule and lin
 
 
 <script>
+//toggle password hide/show
   const el = document.querySelector('#password-label');
   function changeType() {
   let x = document.getElementById("password-input");
@@ -108,4 +119,8 @@ Custom selects use a combination of the [expander](../expander) molecule and lin
   }
 el.classList.toggle('active');
 }
+//prevent form submit
+  document.getElementById("button").addEventListener("click", function(event){
+  event.preventDefault()
+});
 </script>
