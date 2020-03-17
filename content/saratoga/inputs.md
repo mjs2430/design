@@ -8,7 +8,7 @@ Inputs are designed to be placed in a center-aligned form that is 100% of the pa
 
 #### Text Inputs Example
 
-<div>
+<div class="dsp" style="margin-bottom: 30px;">
     <form style="max-width: 340px;">
         <div>
           <label for="default-input">Default</label>
@@ -97,7 +97,9 @@ Custom selects use a combination of the [expander](../expander) molecule and lin
 #### EXAMPLE
 
 <div class="grid" style="grid-template-columns: 300px 1fr;">
+<form>
 {{< select >}}
+</form>
 </div>
 
 <script async src="/js/select.js"></script>

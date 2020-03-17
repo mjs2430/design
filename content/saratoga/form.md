@@ -7,10 +7,10 @@ menu: "cards"
 The form card uses the paper molecule, the package molecule and can utilize the basic grid structure with some minor changes because the grid is within a form. As you can see, if you place a container with the class of "grid" inside the form, the children of that grid will use a grid-gap of 15px (i.e. the First name and Last name inputs in this example).
 
 #### Example
-<div class="example dsp">
+<div class="dsp" style="margin-bottom: 30px;">
     <div class="paper">
         <div class="package">
-            <form>
+            <form> 
                 <div class="grid">
                     <div>
                         <label for="first-input">First Name</label>
@@ -29,6 +29,10 @@ The form card uses the paper molecule, the package molecule and can utilize the 
                     <label for="password-input" onclick="changeType()" id="password-label">Password</label>
                     <small>Must be at least 7 characters long</small>
                     <input type="password" id="password-input">
+                </div>
+                <div>
+                    <label for="select">Choose an option</label>
+                    {{<select>}}
                 </div>
                 <button id="button" type="submit" class="button disabled">submit</button>
             </form>
@@ -40,7 +44,7 @@ The form card uses the paper molecule, the package molecule and can utilize the 
 {{< highlight html >}}
     <div class="paper">
         <div class="package">
-            <form>
+            <form> 
                 <div class="grid">
                     <div>
                         <label for="first-input">First Name</label>
@@ -60,6 +64,15 @@ The form card uses the paper molecule, the package molecule and can utilize the 
                     <small>Must be at least 7 characters long</small>
                     <input type="password" id="password-input">
                 </div>
+                <div>
+                     <label for="select">Choose an option</label>
+                     <span class="button big expander" onclick="this.classList.toggle('open');">Order by</span>
+                      <div class="options">
+                        <a class="button big" href="#" data-name="Relevance">Relevance</a>
+                        <a class="button big" href="#" data-name="Newest">Newest</a>
+                        <a class="button big" href="#" data-name="Oldest">Oldest</a>
+                      </div>
+                </div>
                 <button id="button" type="submit" class="button disabled">submit</button>
             </form>
         </div>
@@ -67,6 +80,7 @@ The form card uses the paper molecule, the package molecule and can utilize the 
 {{< /highlight >}}
 
 
+<script async src="/js/select.js"></script>
 
 <script>
 //toggle password hide/show

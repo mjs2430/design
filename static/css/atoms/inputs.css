@@ -2,36 +2,46 @@ form {
     position: relative;
     font: 400 14px var(--sans);
     width: 100%;
+    text-align: left!important;
 }
+
 form > * { 
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     width: 100%; 
 }
   
-form > *:last-child {
+form > *:last-child { 
     margin-bottom: 0px; 
 } 
                  
 label { 
-    font: 600 14px var(--sans);
-    line-height: 1.5;  
+    font: 700 14px var(--sans);
+    line-height: 1.5; 
     color: #222; 
     display: block; 
     margin-bottom: 0; 
 }   
   
-form small {
-    font: 400 small var(--sans);
-    color: #707070;
-    margin: 0;  
-}
 
 form button {
     box-sizing: content-box;
-    margin-top: 10px; 
 } 
+
+form .expander {
+    justify-content: flex-start;
+}
  
-input { 
+form .select .expander.open ~ .options  { 
+    border-left: 1px solid #989898;
+    border-right: 1px solid #989898;
+    border-bottom: 1px solid #989898;
+}
+
+form .options a:hover {
+    background-color: #f4f4f4;
+}
+input,
+form .select{ 
     box-sizing: border-box;
     width: 100%;
     margin-top: 10px;  
@@ -111,7 +121,8 @@ form input:checked ~ span {
 }  
 
 /* Create the checkmark/indicator (hidden when not checked) */
-form span:after {
+form .checkmark:after,
+for .radio:after { 
   content: "";
   position: absolute;
   display: none;
@@ -119,10 +130,11 @@ form span:after {
 }
  
 /* Show the checkmark when checked */
-form input:checked ~ span:after {
+form input:checked ~ .checkmark:after,
+form input:checked ~ .radio:after {
   display: block; 
   transition:  all .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
-}
+} 
 
 /* Create a custom checkbox */
 .checkmark {

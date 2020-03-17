@@ -10,7 +10,7 @@
   --tc: white;
   --lc: white;
   --lhc: white;
-  --bc: white;
+  --bc: white; 
 } 
     
 .promo {
@@ -19,7 +19,7 @@
 
 .disabled {
   background-color: #989898;
-} 
+}  
 
 .impact *,
 .promo * { 

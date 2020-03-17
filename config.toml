@@ -6,6 +6,7 @@ relativeURLs = true
 pluralizeListTitles = false
 pygmentsCodeFences = true
 pygmentsStyle = "borland"
+disableLiveReload = true
 
 disableKinds = ["taxonomy", "taxonomyTerm", "RSS", "404"]
 
