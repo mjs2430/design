@@ -83,6 +83,11 @@ button:hover,
   color: #00aae5;
 }
 
+.button.social.paypal:before {
+  content:'\f1ed';
+  color: #00457C;
+}
+
 .button.pill {
   border-radius: 1.5em;
 }

@@ -61,22 +61,38 @@ input:hover, input:hover ~ span {
 
 input[type="text"]:focus,
 input[type="password"]:focus,
+input[type="email"]:focus,
 #focused-input {
     box-shadow: 0 0 4px 2px hsla(0, 0%, 59.6%, .75);
     outline: none;
     border: 1px solid #989898; 
 }
 
-input[type="text"]:invalid, input[type="text"].is-invalid {
-    border-color: #d63031;
+.required {
+    color: #d63031;
+    border: 1px solid #d63031; 
 }
 
-input[type="text"]:invalid, input[type="text"]:focus.is-invalid {
+input.required:focus {
     box-shadow:0 0 4px 2px rgba(214,48,49,.75);
+    border: 1px solid #d63031; 
 }
 
-small[for=error-input] { 
-    color: #d63031; 
+input.required:valid {
+    border: 1px solid #989898; 
+    color: #222;
+}
+
+input.required:valid:focus {
+     box-shadow: 0 0 4px 2px hsla(0, 0%, 59.6%, .75);
+}
+
+form:valid > button[type="submit"] {
+    background-color: #31409f; 
+}
+
+small[for=error-input] {  
+    color: #d63031;  
 }
 
 #password-label:after { 
@@ -96,6 +112,7 @@ small[for=error-input] {
 /* Checkbox container */
 .checkbox-container {
   display: block;
+  width: calc(100% - 25px);
   position: relative;
   padding-left: 25px;
   margin-bottom: 10px;  
@@ -122,7 +139,7 @@ form input:checked ~ span {
 
 /* Create the checkmark/indicator (hidden when not checked) */
 form .checkmark:after,
-for .radio:after { 
+form .radio:after { 
   content: "";
   position: absolute;
   display: none;

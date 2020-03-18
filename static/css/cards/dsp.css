@@ -2,15 +2,16 @@
 DSP Overrides
 **/
 
+.dsp {
+    padding: 15px 0;
+}
+
 .dsp h1,
 .dsp h2,
 .dsp h3 {
     margin: 0;
 }
 
-.dsp p {
-    margin: 10px 0;
-}
 
 .dsp .more-link.inline {
     display: inline;
@@ -29,6 +30,7 @@ DSP Overrides
 
 .dsp .package.small {
     padding: 15px;
+    align-items: center;
 }
 
 .dsp .paper,
@@ -49,8 +51,13 @@ DSP Overrides
 .dsp small { 
     font: 400 small var(--sans);
     color: #707070;
-    margin: 0;  
+    margin: 0 0 0 0;  
     display: block;
+}
+
+.dsp form small {
+   font: 400 11px var(--sans); 
+   margin: 2px 0 0 0;  
 }
 
 .dsp .expander:after {
@@ -69,54 +76,50 @@ DSP Overrides
 }
 
 .dsp section {
-    max-width: 710px;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
 
-section.purchase-flow .horizontal {
+.dsp .horizontal.package.small {
     display: grid;
     text-align: left;
     grid-template-columns: 1fr 95px;
     grid-gap: 0px;
     order: 1;
+    align-items: flex-start;
 }
 
 .dsp .flex-columns > * {
     margin: 15px 0;
 }
 
-.purchase-flow .title {
-    width: calc(100% - 30px);
-    padding: 0 15px 5px;
-}
-
-
 /***** Media queries ****/
 
 @media (min-width: 640px) {
 
+.dsp section {
+    max-width: 800px;
+}
+    
 .dsp .grid {
    grid-template-columns: 1fr 1fr;     
 }
     
-.dsp .paper,
-.dsp .card {
-    max-width: 340px;
-}
-     
-section.purchase-flow .horizontal {
+
+.dsp .horizontal.package.small  {
     align-self: flex-start;
     grid-template-columns: 1fr;
     order: 2;
 }
     
-section.purchase-flow .expander {
+.dsp .horizontal small.expander {
     display: none;
 }
     
-section.purchase-flow .stretch {
+.dsp .stretch {
      display: block;
 }
+
 
 }    

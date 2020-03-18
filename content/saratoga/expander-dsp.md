@@ -12,8 +12,8 @@ This is a version of the expander used on the front-end of our sites, but specif
 
 ##### Desktop Example
 
-<section class="dsp purchase-flow" style="padding-left:0;padding-bottom: 20px;">
-        <div class="card horizontal package small" style="max-width: 400px;grid-gap:0;">
+<section class="dsp" style="padding-left:0;padding-bottom: 20px;">
+        <div class="card horizontal package small" style="max-width: 400px;">
                 <div>
                     <span class="summary bold">Unlimited Digital Access</span>
                     <small>$10.99 for 1 month, $15.99/month after.</small>
@@ -25,25 +25,26 @@ This is a version of the expander used on the front-end of our sites, but specif
 
 ##### Mobile Example
 
-<div class="dsp purchase-flow" style="padding-bottom: 20px">
-        <div class="card horizontal package small" style="max-width: 400px;grid-gap:0;">
+<div class="dsp" style="padding-bottom: 20px">
+        <div class="card horizontal package small" style="grid-gap:0;align-self: flex-start;
+    grid-template-columns: 1fr 95px;max-width: 400px;">
                 <div>
                     <span class="summary bold">Unlimited Digital Access</span>
                     <small>$10.99 for 1 month, $15.99/month after.</small>
                 </div>
-                <small class="expander" onclick="this.classList.toggle('open')">Show details</small>
-                <small class="stretch">Get access to everything on Miamiherald.com, our apps, the eEdition, and our stories platforms like Facebook Instant Articles and Google News.</small>
+                <small class="expander" onclick="this.classList.toggle('open')" style="display: flex;">Show details</small>
+                <small style="padding-top:15px;grid-column: span 2;">Get access to everything on Miamiherald.com, our apps, the eEdition, and our stories platforms like Facebook Instant Articles and Google News.</small>
         </div>
 </div>
 
 #### HTML
 {{< highlight html >}}
 <div class="card horizontal package small">
-        <div>
-            <span class="summary bold">Unlimited Digital Access</span>
-            <small>$10.99 for 1 month, $15.99/month after.</small>
-        </div>
-        <small class="expander" onclick="this.classList.toggle('open')">Show details</small>
-        <small class="stretch">Get access to everything on Miamiherald.com, our apps, the eEdition, and our stories platforms like Facebook Instant Articles and Google News.</small>
+    <div>
+        <span class="summary bold">Unlimited Digital Access</span>
+        <small>$10.99 for 1 month, $15.99/month after.</small>
+    </div>
+    <small class="expander" onclick="this.classList.toggle('open')">Show details</small>
+    <small class="stretch">Get access to everything on Miamiherald.com, our apps, the eEdition, and our stories platforms like Facebook Instant Articles and Google News.</small>
 </div>
 {{< /highlight >}}

@@ -9,7 +9,7 @@ The progress bar displays the steps needed to complete the purchase flow/checkou
 ##### Example
 
 <div class="dsp">
-        <div class="package">
+        <div class="package small">
            <div class="progress">
             <span class="active">1. Account</span>
             <span>2. Payment</span>

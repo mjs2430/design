@@ -8,7 +8,7 @@ The form card uses the paper molecule, the package molecule and can utilize the 
 
 #### Example
 <div class="dsp" style="margin-bottom: 30px;">
-    <div class="paper">
+    <div class="paper" style="max-width: 400px;">
         <div class="package">
             <form> 
                 <div class="grid">

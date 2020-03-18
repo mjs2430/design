@@ -9,7 +9,7 @@ Inputs are designed to be placed in a center-aligned form that is 100% of the pa
 #### Text Inputs Example
 
 <div class="dsp" style="margin-bottom: 30px;">
-    <form style="max-width: 340px;">
+    <form style="max-width: 400px;">
         <div>
           <label for="default-input">Default</label>
           <input type="text" id="default-input">
