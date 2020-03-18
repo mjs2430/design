@@ -1,5 +1,5 @@
 ---
-title: "purchase info (DSP)"
+title: "expander (DSP)"
 description: "A collapsible information box with a caret."
 menu: "molecule"
 ---

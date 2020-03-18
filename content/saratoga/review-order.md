@@ -1,26 +1,13 @@
 ---
-title: purchase flow review your order
-description: A sample purchase flow review order page.
-layout: deck
+title: review order (DSP)
+description: DSP review order card
+menu: "cards"
 ---
-<main class="dsp">
 
-<section>
-    <div class="package small">
-       <div class="progress">
-        <span>1. Account</span>
-        <span>2. Payment</span>
-        <span class="active">3. Review</span>
-       </div>
-    </div>
-</section>
+The review order card uses the paper molecule, the package molecule.
 
-<section>
-     <div class="package small">
-      <h2 class="sans bold">Review your order</h2>
-     </div>
-</section>
-
+#### Example
+<div class="dsp" style="margin-bottom: 30px;">
     <section>
            <div class="review-order">
                 <div class="paper">
@@ -69,5 +56,64 @@ layout: deck
             </div>
         </div>
     </section>
+</div>
 
-</main>
+#### HTML
+{{< highlight html >}}
+    <div class="paper">
+        <div class="package">
+            <form> 
+                <div class="grid">
+                    <div>
+                        <label for="first-input">First Name</label>
+                        <input type="text" id="first-input">
+                    </div>
+                    <div>
+                        <label for="last-input">Last Name</label>
+                        <input type="text" id="last-input">
+                    </div>
+                </div>
+                <div>
+                    <label for="email-input">Email address</label>
+                    <input type="text" id="email-input">
+                </div>
+                <div>
+                    <label for="password-input" onclick="changeType()" id="password-label">Password</label>
+                    <small>Must be at least 7 characters long</small>
+                    <input type="password" id="password-input">
+                </div>
+                <div>
+                     <label for="select">Choose an option</label>
+                     <span class="button big expander" onclick="this.classList.toggle('open');">Order by</span>
+                      <div class="options">
+                        <a class="button big" href="#" data-name="Relevance">Relevance</a>
+                        <a class="button big" href="#" data-name="Newest">Newest</a>
+                        <a class="button big" href="#" data-name="Oldest">Oldest</a>
+                      </div>
+                </div>
+                <button id="button" type="submit" class="button disabled">submit</button>
+            </form>
+        </div>
+    </div>
+{{< /highlight >}}
+
+
+<script async src="/js/select.js"></script>
+
+<script>
+//toggle password hide/show
+  const el = document.querySelector('#password-label');
+  function changeType() {
+  let x = document.getElementById("password-input");
+  if (x.type === "password") {
+      x.type = "text";  
+  } else {
+    x.type = "password";
+  }
+el.classList.toggle('active');
+}
+//prevent form submit
+  document.getElementById("button").addEventListener("click", function(event){
+  event.preventDefault()
+});
+</script>
