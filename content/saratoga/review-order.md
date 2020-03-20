@@ -4,7 +4,7 @@ description: DSP review-order card
 menu: "cards"
 ---
 
-The review-order card uses the paper molecule to create lift, the flex-columns card to vertically space each item inside the paper, and the package molecule.
+The review-order card uses the `paper` molecule to create lift, the `flex-columns` card to vertically space each item inside the paper, and the `package` molecule.
 
 #### Example
 <div class="dsp" style="margin-bottom: 30px;">

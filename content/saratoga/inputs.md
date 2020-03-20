@@ -4,7 +4,7 @@ description: "Form input styles"
 menu: "atom"
 ---
 
-Inputs are designed to be placed in a center-aligned form that is 100% of the parent width (max-width of 340px on desktop) using browser defaults and to have different states based on user interaction.
+Inputs are designed to be placed in a center-aligned form that is 100% of the parent width using browser defaults and to have different states based on user interaction.
 
 #### Text Inputs Example
 
