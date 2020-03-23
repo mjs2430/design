@@ -4,7 +4,7 @@ description: "A variation of this molecule is used on the paywall and subscripti
 menu: "molecule"
 ---
 
-The primary offer molecule is used with variation in the <a href="/saratoga/paywall/">paywall</a> and <a href="/saratoga/decks/subscription-offers">subscription offers page. Placing it into a subscription offers page using a `.subscription-offers` wrapper will put larger padding.</a>
+The primary offer molecule is used with variation in the <a href="/saratoga/paywall/">paywall</a> and <a href="/saratoga/decks/subscription-offers">subscription offers page.</a> Placing it into a subscription offers page using a `.subscription-offers` wrapper will put larger padding.
 
 ##### Example
 
