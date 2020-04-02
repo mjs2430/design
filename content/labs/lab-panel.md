@@ -6,7 +6,7 @@ example: https://www.fresnobee.com/news/local/education/article235079937.html
 
 <script src="/labs/lab-panel.js"></script>
 
-The `<lab-panel>` custom element was created for The Fresno Bee [Education Lab landing page](https://www.fresnobee.com/news/local/education/article235079937.html). It leverages molecules already installed on the websites and enhances them using the Shadow DOM. The component changes the font face to McClatchy Sans, provides a full-bleed container that can be styled on the page, and an `<img>` tag included inside the element will both fill the container and be filtered to allow for text to be rendered over it.
+The lab panel custom element was created for The Fresno Bee [Education Lab landing page](https://www.fresnobee.com/news/local/education/article235079937.html). It leverages molecules already installed on the websites and enhances them using the Shadow DOM. The component changes the font face to McClatchy Sans, provides a full-bleed container that can be styled on the page, and an `<img>` tag included inside the element will both fill the container and be filtered to allow for text to be rendered over it.
 
 ##### Example
 
@@ -21,8 +21,8 @@ The `<lab-panel>` custom element was created for The Fresno Bee [Education Lab l
 {{< highlight html >}}
 <script async src="https://media.mcclatchy.com/labs/lab-panel.js"></script>
 <lab-panel>
-  <h3 class="h2"></h3>
-  <p></p>
+  <h3 class="h2">The Team</h3>
+  <p>Lorem ipsum ...</p>
 </lab-panel>
 {{< /highlight >}}
 <copy-highlight class="button promo">copy starter code</copy-highlight>
@@ -41,9 +41,9 @@ The `<lab-panel>` custom element was created for The Fresno Bee [Education Lab l
 {{< highlight html >}}
 <script async src="https://media.mcclatchy.com/labs/lab-panel.js"></script>
 <lab-panel class="fill">
-  <img src="">
-  <h3 class="h2"></h3>
-  <p></p>
+  <img src="https://www.fresnobee.com/news/local/education/bdet9o/picture21525414/alternates/FREE_1140/graduation">
+  <h3 class="h2">The Team</h3>
+  <p>Lorem ipsum ...</p>
 </lab-panel>
 {{< /highlight >}}
 <copy-highlight class="button promo">copy stater code</copy-highlight>
