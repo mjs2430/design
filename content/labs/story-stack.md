@@ -21,7 +21,7 @@ To control the order of the stories, simply manage the target list-style page as
 <div class="story-module">
 {{< highlight html >}}
 <script async src="https://media.mcclatchy.com/labs/story-stack.js"></script>
-<story-stack href="https://www.miamiherald.com/" data-count="6">
+<story-stack href="https://www.miamiherald.com/">
   <h5 slot="top">From the homepage in Miami</h5>
   <p slot="top">This version ...</p>
 </story-stack>
@@ -61,7 +61,7 @@ To control the order of the stories, simply manage the target list-style page as
 
 <div class="story-module">
 {{< highlight html >}}
-<script async src="https://media.mcclatchy.com/labs/story-stack.js" data-count="8"></script>
+<script async src="https://media.mcclatchy.com/labs/story-stack.js"></script>
 <story-stack href="https://www.newsobserver.com/topics/coronavirus-north-carolina" data-count="8">
   <h5 slot="top">Coronavirus coverage in North Carolina</h5>
   <p slot="top">This version ...</p>
