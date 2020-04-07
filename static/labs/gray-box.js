@@ -13,7 +13,7 @@ class GrayBox extends HTMLElement {
         max-width: unset !important;
         padding: 15px !important;
         --tf: var(--sans);
-        --ts: medium;
+        --ts: 0.875rem;
       }
 
       .content {
@@ -36,6 +36,10 @@ class GrayBox extends HTMLElement {
 
   connectedCallback() {
     this.shadowRoot.appendChild(this.template.content.cloneNode(true));
+
+    if(this.parentElement.classList.contains("embed-infographic")) {
+      this.parentElement.classList.add("full-bleed");
+    }
   }
 }
 
