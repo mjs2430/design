@@ -1,6 +1,7 @@
 ---
 title: <story-stack>
 description: A stack of stories from a homepage, section page or topic page.
+weight: 1
 ---
 
 <script src="/labs/story-stack.js"></script>

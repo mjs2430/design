@@ -1,6 +1,7 @@
 ---
 title: <gray-box>
 description: A simple gray box to supplement an article with additional information.
+weight: 1
 ---
 
 <script src="/labs/gray-box.js"></script>

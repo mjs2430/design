@@ -2,6 +2,7 @@
 title: "<lab-panel>"
 description: "Stackable panels used on the Education Lab landing pages."
 example: https://www.fresnobee.com/news/local/education/article235079937.html
+weight: 1
 ---
 
 <script src="/labs/lab-panel.js"></script>

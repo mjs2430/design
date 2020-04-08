@@ -1,6 +1,7 @@
 ---
 title: "<dynamic-modal>"
 description: A pre-styled modal with basic interaction tracking.
+weight: 99
 ---
 
 <script async type="module" src="/labs/dynamic-modal.js"></script>

@@ -2,6 +2,7 @@
 title: "<fundraising-chart>"
 description: A fundraising chart with configurable goals used on the Education Lab pages.
 example: https://www.fresnobee.com/news/local/education/article235079937.html
+weight: 1
 ---
 
 <script src="/labs/fundraising-chart.js"></script>
