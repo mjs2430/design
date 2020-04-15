@@ -673,16 +673,21 @@ summary, .summary {
   grid-gap: 30px;
 }
 
-.grid > .package:not(.paper) {
+.grid > .package:not(.paper),
+.zone-el > .package:not(.paper) {
   padding: 0;
 }
 
-.grid > .ad-widget {
+.grid .ad-widget {
   align-self: center;
 }
 
 .grid > .rail {
   grid-row-end: span var(--rows, 3);
+}
+
+.grid > .zone-el {
+  display: flex;
 }
 
 @media (min-width: 990px) {
@@ -2081,4 +2086,8 @@ section.flag {
 
 .mi-sticky-player-info {
   --ht:none;
+}
+
+.inline-cta > div[class*=recaptcha] {
+  margin: 10px 0 0;
 }
