@@ -470,7 +470,7 @@ button:hover,
  */
 .package {
   position: relative;
-  padding: 15px;
+  padding: var(--padding, 15px);
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
@@ -1308,6 +1308,7 @@ summary, .summary {
  */
 .big-news {
   margin-top: 0;
+  padding-bottom: 15px;
 }
 
 .big-news > * {
@@ -1361,6 +1362,10 @@ summary, .summary {
 
 .in-depth .h1 {
   font-size: 1.75rem;
+}
+
+.in-depth .image-link-macro {
+  position: initial;
 }
 
 /**
@@ -1542,6 +1547,11 @@ summary, .summary {
  * in the system.
  */
 .hidden, [hidden] {
+  display: none;
+}
+
+.zone-el.hidden,
+.grid > .zone-el.hidden {
   display: none;
 }
 
@@ -2090,4 +2100,8 @@ section.flag {
 
 .inline-cta > div[class*=recaptcha] {
   margin: 10px 0 0;
+}
+
+.story-body .ng_endnote_contact {
+  margin: 15px auto;
 }

@@ -472,7 +472,7 @@ button:hover,
  */
 .package {
   position: relative;
-  padding: 15px;
+  padding: var(--padding, 15px);
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;

@@ -642,6 +642,7 @@
  */
 .big-news {
   margin-top: 0;
+  padding-bottom: 15px;
 }
 
 .big-news > * {
@@ -695,6 +696,10 @@
 
 .in-depth .h1 {
   font-size: 1.75rem;
+}
+
+.in-depth .image-link-macro {
+  position: initial;
 }
 
 /**
@@ -876,5 +881,10 @@
  * in the system.
  */
 .hidden, [hidden] {
+  display: none;
+}
+
+.zone-el.hidden,
+.grid > .zone-el.hidden {
   display: none;
 }
