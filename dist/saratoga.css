@@ -10,9 +10,13 @@
   --hf: "Noto Serif", serif;
   --hw: 400;
   --ht:none;
+  /* Text family, size and color */
+  --tf: "Noto Serif", serif;
+  --ts:large;
+  /* --tc: #222; */
   /* Link decoration and color */
-  --lc: #222;
   --ld:none;
+  --lc: #222;
   /* Story width */
   --story-width: 728px;
   /**
@@ -97,11 +101,15 @@ h6, .h6 {
 }
 
 p {
-  font: large/1.5em var(--serif);
+  font: var(--ts)/1.5em var(--tf);
+}
+
+ul, ol {
+  padding-left: 0;
 }
 
 li {
-  font: large/1.5em var(--serif);
+  font: var(--ts)/1.5em var(--tf);
   margin: 10px 0 10px calc(1em + 15px);
 }
 
@@ -115,6 +123,17 @@ time {
   text-transform: uppercase;
   color: var(--tc, #707070);
   font-size: 0.75rem;
+}
+
+blockquote {
+  font: bold larger/1.5em var(--sans);
+}
+
+blockquote .attr {
+  display: block;
+  margin-top: 5px;
+  font: 0.875rem/1.5em var(--sans);
+  color: var(--tc, #707070);
 }
 
 /**
@@ -208,12 +227,12 @@ time {
 /**
  * Media
  */
-figure {
+figure, .figure {
   margin: 0;
   flex: none;
 }
 
-figure img {
+figure img, .figure img {
   display: block;
   width: 100%;
 }
@@ -462,7 +481,7 @@ button:hover,
  */
 .package {
   position: relative;
-  padding: 15px;
+  padding: var(--padding, 15px);
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
@@ -665,16 +684,21 @@ summary, .summary {
   grid-gap: 30px;
 }
 
-.grid > .package:not(.paper) {
+.grid > .package:not(.paper),
+.zone-el > .package:not(.paper) {
   padding: 0;
 }
 
-.grid > .ad-widget {
+.grid .ad-widget {
   align-self: center;
 }
 
 .grid > .rail {
   grid-row-end: span var(--rows, 3);
+}
+
+.grid > .zone-el {
+  display: flex;
 }
 
 @media (min-width: 990px) {
@@ -816,7 +840,6 @@ summary, .summary {
 }
 
 .embed-infographic > * {
-  display: block;
   max-width: 100%;
 }
 
@@ -827,7 +850,8 @@ summary, .summary {
 /**
  * Media options
  */
-.story-body > figure {
+.story-body > figure,
+.story-body > .figure {
   margin: 30px auto;
   padding: 0;
 }
@@ -841,28 +865,33 @@ summary, .summary {
   padding: 0;
 }
 
-.story-body figure .package {
+.story-body figure .package,
+.story-body .figure .package {
   padding: 10px 0 0;
 }
 
 @media (max-width: 768px) {
-  .story-body > figure {
+  .story-body > figure,
+.story-body > .figure {
     max-width: 100%;
   }
 
   .story-body figcaption,
-.story-body figure .package {
+.story-body figure .package,
+.story-body .figure .package {
     padding: 10px 15px 0;
   }
 }
 @media (max-width: 990px) {
   .story-body .wide figcaption,
-.story-body figure.wide .package {
+.story-body figure.wide .package,
+.story-body .figure.wide .package {
     padding: 10px 15px 0;
   }
 }
 .story-body .full-bleed figcaption,
-.story-body figure.full-bleed .package {
+.story-body figure.full-bleed .package,
+.story-body .figure.full-bleed .package {
   padding: 10px 15px 0;
 }
 
@@ -884,11 +913,6 @@ summary, .summary {
     margin: 0 30px 30px -150px;
   }
 }
-.story-body blockquote {
-  max-width: 300px;
-  font: x-large/1.2em var(--sans);
-}
-
 .story-body > .zone {
   margin: 30px auto;
 }
@@ -1294,8 +1318,9 @@ summary, .summary {
  * Note: we need something for labels "outside the grid" but
  * need to "line up with the grid".
  */
-.big-news {
+section.big-news {
   margin-top: 0;
+  padding-bottom: 15px;
 }
 
 .big-news > * {
@@ -1328,7 +1353,7 @@ summary, .summary {
   }
 }
 .big-news .featured .package {
-  padding: 15px 0;
+  padding: 15px 0 0;
 }
 
 @media (min-width: 680px) {
@@ -1349,6 +1374,10 @@ summary, .summary {
 
 .in-depth .h1 {
   font-size: 1.75rem;
+}
+
+.in-depth .image-link-macro {
+  position: initial;
 }
 
 /**
@@ -1530,6 +1559,11 @@ summary, .summary {
  * in the system.
  */
 .hidden, [hidden] {
+  display: none;
+}
+
+.zone-el.hidden,
+.grid > .zone-el.hidden {
   display: none;
 }
 
@@ -2074,4 +2108,12 @@ section.flag {
 
 .mi-sticky-player-info {
   --ht:none;
+}
+
+.inline-cta > div[class*=recaptcha] {
+  margin: 10px 0 0;
+}
+
+.story-body .ng_endnote_contact {
+  margin: 15px auto;
 }

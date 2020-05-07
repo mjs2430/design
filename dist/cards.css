@@ -7,16 +7,21 @@
   grid-gap: 30px;
 }
 
-.grid > .package:not(.paper) {
+.grid > .package:not(.paper),
+.zone-el > .package:not(.paper) {
   padding: 0;
 }
 
-.grid > .ad-widget {
+.grid .ad-widget {
   align-self: center;
 }
 
 .grid > .rail {
   grid-row-end: span var(--rows, 3);
+}
+
+.grid > .zone-el {
+  display: flex;
 }
 
 @media (min-width: 990px) {
@@ -158,7 +163,6 @@
 }
 
 .embed-infographic > * {
-  display: block;
   max-width: 100%;
 }
 
@@ -169,7 +173,8 @@
 /**
  * Media options
  */
-.story-body > figure {
+.story-body > figure,
+.story-body > .figure {
   margin: 30px auto;
   padding: 0;
 }
@@ -183,28 +188,33 @@
   padding: 0;
 }
 
-.story-body figure .package {
+.story-body figure .package,
+.story-body .figure .package {
   padding: 10px 0 0;
 }
 
 @media (max-width: 768px) {
-  .story-body > figure {
+  .story-body > figure,
+.story-body > .figure {
     max-width: 100%;
   }
 
   .story-body figcaption,
-.story-body figure .package {
+.story-body figure .package,
+.story-body .figure .package {
     padding: 10px 15px 0;
   }
 }
 @media (max-width: 990px) {
   .story-body .wide figcaption,
-.story-body figure.wide .package {
+.story-body figure.wide .package,
+.story-body .figure.wide .package {
     padding: 10px 15px 0;
   }
 }
 .story-body .full-bleed figcaption,
-.story-body figure.full-bleed .package {
+.story-body figure.full-bleed .package,
+.story-body .figure.full-bleed .package {
   padding: 10px 15px 0;
 }
 
@@ -226,11 +236,6 @@
     margin: 0 30px 30px -150px;
   }
 }
-.story-body blockquote {
-  max-width: 300px;
-  font: x-large/1.2em var(--sans);
-}
-
 .story-body > .zone {
   margin: 30px auto;
 }
@@ -636,8 +641,9 @@
  * Note: we need something for labels "outside the grid" but
  * need to "line up with the grid".
  */
-.big-news {
+section.big-news {
   margin-top: 0;
+  padding-bottom: 15px;
 }
 
 .big-news > * {
@@ -670,7 +676,7 @@
   }
 }
 .big-news .featured .package {
-  padding: 15px 0;
+  padding: 15px 0 0;
 }
 
 @media (min-width: 680px) {
@@ -691,6 +697,10 @@
 
 .in-depth .h1 {
   font-size: 1.75rem;
+}
+
+.in-depth .image-link-macro {
+  position: initial;
 }
 
 /**
@@ -872,5 +882,10 @@
  * in the system.
  */
 .hidden, [hidden] {
+  display: none;
+}
+
+.zone-el.hidden,
+.grid > .zone-el.hidden {
   display: none;
 }
