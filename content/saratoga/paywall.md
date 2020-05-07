@@ -14,7 +14,7 @@ The paywall uses a `.primary-offer` card, a `.grid` for the layout, and other mo
         <div class="primary-offer card">
            <div>
                 <h2 class="h1">Unlimited Digital Access</h2>
-                <p class="h3 caps bold">$1.99 for one month</p>
+                <p class="h4">$1.99 for one month</p>
                 <p class="summary caps">$10.99/month after. Cancel anytime.</p>
                 <a class="button white">start today</a>
             </div>
@@ -74,7 +74,7 @@ The paywall uses a `.primary-offer` card, a `.grid` for the layout, and other mo
         <div class="primary-offer card">
            <div>
                 <h2 class="h1">Unlimited Digital Access</h2>
-                <p class="h3 caps bold">$1.99 for one month</p>
+                <p class="h4">$1.99 for one month</p>
                 <p class="summary caps">$10.99/month after. Cancel anytime.</p>
                 <a class="button white">start today</a>
             </div>
