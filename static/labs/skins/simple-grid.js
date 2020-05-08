@@ -20,9 +20,18 @@ class SimpleGrid extends HTMLElement {
     }
 
     :host([theme=dark]) {
+      background-color: #222;
       color: white;
       --tc: white;
       --lc: white;
+    }
+
+    :host([theme=dark]) ::slotted(.card) {
+      background-color: #373737 !important;
+    }
+
+    ::slotted(.card:nth-of-type(20)) {
+      display: none !important;
     }
 
     ::slotted(.lead-item) {
@@ -30,8 +39,10 @@ class SimpleGrid extends HTMLElement {
     }
     </style>
 
-    <slot name="top"></slot>
-    <slot class="grid"></slot>
+    <slot name="above"></slot>
+    <section>
+      <slot class="grid"></slot>
+    </section>
     <slot name="below"></slot>
     `;
     return t;
@@ -68,6 +79,16 @@ class SimpleGrid extends HTMLElement {
     // Move this element into position
     this.main.insertAdjacentElement("beforebegin", this);
     this.main.remove();
+
+    // Check for dark theme
+    if(this.theme == "dark") {
+      this.style.sheet.insertRule("body { background-color: #222 }");
+    }
+
+    // Unfade
+    window.requestAnimationFrame(() => {
+      this.classList.remove("faded");
+    });
   }
 
   /**
@@ -116,9 +137,11 @@ class SimpleGrid extends HTMLElement {
 
   /**
    * Returns the first zone to match a query selector
+   * Can take a query string or an integer to get the zone.
    */
 
-  zone(qs, size="300x250") {
+  zone(qs) {
+    if(Number.isInteger(qs)) qs = `#zone-el-${qs}`;
     return this.zones.find((z) => {
       return z.matches(qs);
     });
@@ -148,6 +171,14 @@ class SimpleGrid extends HTMLElement {
     style.dataset.element = this.localName;
     document.head.appendChild(style);
     return style;
+  }
+
+  /**
+   * Returns the theme
+   */
+
+  get theme() {
+    return this.getAttribute("theme");
   }
 }
 

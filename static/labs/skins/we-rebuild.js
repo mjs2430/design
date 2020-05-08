@@ -34,14 +34,10 @@ class WeRebuild extends SimpleGrid {
         grid-column: 1/-1;
       }
 
-      ::slotted(.digest) {
-        grid-column: 1;
-        grid-row: 2/span 2;
-      }
-
       ::slotted(.zone-el) {
         grid-column: 1;
         align-self: center;
+        justify-self: center;
       }
     }
     </style>
@@ -86,12 +82,12 @@ class WeRebuild extends SimpleGrid {
     });
 
     // Zones
-    this.insertBefore(this.zone("#zone-el-3"), this.articles[4]);
-    this.insertBefore(this.zone("#zone-el-5"), this.articles[4]);
-    this.insertBefore(this.zone("#zone-el-6"), this.articles[4]);
-    this.insertBefore(this.zone("#zone-el-7"), this.articles[8]);
+    this.insertBefore(this.zone(3), this.articles[4]);
+    this.insertBefore(this.zone(5), this.articles[4]);
+    this.insertBefore(this.zone(6), this.articles[4]);
+    this.insertBefore(this.zone(7), this.articles[8]);
 
-    let z8 = this.zone("#zone-el-8");
+    let z8 = this.zone(8);
     z8.childNodes[1].hidden = true;
     z8.classList.add("d-md");
     this.insertBefore(z8, this.articles[8]);
@@ -107,15 +103,6 @@ class WeRebuild extends SimpleGrid {
     // Remove tho old structure
     this.main.insertAdjacentElement("beforebegin", this);
     this.main.remove();
-
-
-    // Cleaning up some more global CSS
-    this.style.textContent =`
-    ${this.localName} .ad-widget {
-      margin: 0 auto;
-      align-self: center;
-      justify-self: center;
-    }`;
 
     // Unfade
     window.requestAnimationFrame(() => {
