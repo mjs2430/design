@@ -104,6 +104,9 @@ class WeRebuild extends SimpleGrid {
     this.main.insertAdjacentElement("beforebegin", this);
     this.main.remove();
 
+    // A little more style cleanup at the global level
+    this.style.sheet.insertRule(".subnav-section-name { margin-top: 0; }");
+
     // Unfade
     window.requestAnimationFrame(() => {
       this.classList.remove("faded");
