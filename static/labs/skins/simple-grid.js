@@ -220,7 +220,7 @@ class SimpleGrid extends HTMLElement {
 
       // global adjustments to the card
       this.style.sheet.insertRule(`
-      .video-lede .video { 
+      .video-lede .new-video-design { 
         display: flex;
         flex-direction: column;
         flex: 1;
