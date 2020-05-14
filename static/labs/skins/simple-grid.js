@@ -1,6 +1,6 @@
 /**
  * Base section theming file
- * A simple grid with 
+ * A simple grid with some options and slots above and below. 
  */
 
 export default class SimpleGrid extends HTMLElement {
