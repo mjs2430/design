@@ -253,7 +253,22 @@ export default class SimpleGrid extends HTMLElement {
 
     switch(theme) {
       case "dark":
-        this.style.sheet.insertRule("body { background-color: #222 }");
+        this.style.sheet.insertRule(`
+          body { 
+            background-color: #222 
+          }`);
+
+        this.style.sheet.insertRule(`
+          .subnav-section-front-organism .subnav-section-title .subnav-section-name,
+          .subnav-section-front-organism .subnav-section-container .subnav-section-list .subnav-section-list-item a { 
+            color: white !important; 
+          }`);
+
+        this.style.sheet.insertRule(`
+          .subnav-section-front-organism .subnav-section-title .subnav-section-icon {
+            filter: invert(1);
+          }
+        `);
         break;
       default:
         // Do nothing
@@ -288,12 +303,8 @@ export default class SimpleGrid extends HTMLElement {
    */
 
   handleNav() {
-    switch(this.dataset.zones) {
-      case undefined:
-        console.log("Doing nothing Jay");
-        break;
-
-      default:
+    switch(this.dataset.nav) {
+      case "standard":
         let nav = this.main.querySelector("#nav-section-front");
         if(nav) {
           nav.setAttribute("slot", "nav");
@@ -301,6 +312,9 @@ export default class SimpleGrid extends HTMLElement {
           this.appendChild(nav);
         }
         break;
+
+      default:
+        // Do nothing
     }
   }
 
