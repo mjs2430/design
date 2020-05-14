@@ -3,7 +3,7 @@
  * A simple grid with 
  */
 
-class SimpleGrid extends HTMLElement {
+export default class SimpleGrid extends HTMLElement {
 
   /**
    * Template for the Shadow DOM
@@ -112,6 +112,9 @@ class SimpleGrid extends HTMLElement {
     this.main.insertAdjacentElement("beforebegin", this);
     this.dispatchEvent(this.events.moved);
     this.main.remove();
+
+    // Check for nav 
+    this.handleNav();
 
     // Check for a set theme
     this.handleTheme();
@@ -262,19 +265,42 @@ class SimpleGrid extends HTMLElement {
    */
 
   handleZones() {
-    let zones = this.dataset.zones;
-
-    switch(zones) {
+    switch(this.dataset.zones) {
       case "simple":
-        this.insertBefore(this.zone(3), this.articles[4]);
-        this.insertBefore(this.zone(5), this.articles[4]);
+        try {
+          this.insertBefore(this.zone(3), this.articles[4]);
+          this.insertBefore(this.zone(5), this.articles[4]);
 
-        let z6 = this.zone(6);
-        z6.setAttribute("slot", "");
-        this.insertBefore(z6, this.articles[4]);
+          let z6 = this.zone(6);
+          z6.setAttribute("slot", "");
+          this.insertBefore(z6, this.articles[4]);
+        } catch(e) {
+          console.warn("Error moving zones:", e);
+        }
         break;
       default:
         // Do nothing
+    }
+  }
+
+  /**
+   * Moves section nav on request
+   */
+
+  handleNav() {
+    switch(this.dataset.zones) {
+      case undefined:
+        console.log("Doing nothing Jay");
+        break;
+
+      default:
+        let nav = this.main.querySelector("#nav-section-front");
+        if(nav) {
+          nav.setAttribute("slot", "nav");
+          nav.querySelector("h2").textContent = "More Coverage";
+          this.appendChild(nav);
+        }
+        break;
     }
   }
 
@@ -292,9 +318,3 @@ class SimpleGrid extends HTMLElement {
  */
 
 customElements.define("simple-grid", SimpleGrid);
-
-/**
- * Module export
- */
-
-export default SimpleGrid;
