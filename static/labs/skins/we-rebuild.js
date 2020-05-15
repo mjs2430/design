@@ -15,14 +15,6 @@ class WeRebuild extends SimpleGrid {
   }
 
   beforeShow() {
-    // Section nav
-    let nav = this.main.querySelector("#nav-section-front");
-    if(nav) {
-      nav.setAttribute("slot", "nav");
-      nav.querySelector("h2").textContent = "More Coverage";
-      this.appendChild(nav);
-    }
-
     // A little more style cleanup at the global level
     this.style.sheet.insertRule(`
     .subnav-section-name { 
