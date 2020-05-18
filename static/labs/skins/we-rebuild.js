@@ -26,6 +26,11 @@ class WeRebuild extends SimpleGrid {
     .subnav-section-icon { 
       align-self: center !important;
     }`);
+
+    this.style.sheet.insertRule(`
+    we-rebuild .ad-widget {
+      margin: 0 auto;
+    }`);
   }
 }
 
