@@ -16,21 +16,23 @@ class WeRebuild extends SimpleGrid {
 
   beforeShow() {
     // A little more style cleanup at the global level
-    this.style.sheet.insertRule(`
+    this.addStyles(`
     .subnav-section-name { 
       margin-top: 0; 
       line-height: 1em !important;
-    }`);
+    }
 
-    this.style.sheet.insertRule(`
     .subnav-section-icon { 
       align-self: center !important;
-    }`);
+    }
 
-    this.style.sheet.insertRule(`
     we-rebuild .ad-widget {
       margin: 0 auto;
-    }`);
+    }
+    `);
+
+    // Lots of logos going on here
+    let navHead = this.query(".subnav-section-name").textContent = "More Coverage";
   }
 }
 
