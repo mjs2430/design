@@ -3,7 +3,7 @@
  * A simple grid with some options and slots above and below. 
  */
 
-export default class SimpleGrid extends HTMLElement {
+class SimpleGrid extends HTMLElement {
 
   /**
    * Template for the Shadow DOM
@@ -117,7 +117,7 @@ export default class SimpleGrid extends HTMLElement {
     this.handleLede();
 
     // Append articles
-    this.articles.forEach((a, i) => {
+    this._articles.forEach((a, i) => {
       this.appendChild(a);
     });
 
@@ -126,13 +126,10 @@ export default class SimpleGrid extends HTMLElement {
 
     // Move this element into position and alert
     this._main.insertAdjacentElement("beforebegin", this);
-    this._main.remove();
-
-    // Entry point for extensions 
-    this.beforeShow();
+    // this._main.hidden = true;
 
     // Unfade and notify
-    this.dispatchEvent(new Event("visible"));
+    this.dispatchEvent(new Event("complete"));
     window.setTimeout(() => {
       this.classList.remove("faded");
     }, 50);
@@ -145,10 +142,10 @@ export default class SimpleGrid extends HTMLElement {
   attributeChangedCallback(name, ov, nv) {
     switch(name) {
       case "theme":
-        this.handleThemeChanged(nv);
+        this.handleThemeChanged(nv, ov);
         break;
       case "nav":
-        this.handleNavChanged();
+        this.handleNavChanged(nv, ov);
         break;
       default:
         // Do nothing;
@@ -181,7 +178,7 @@ export default class SimpleGrid extends HTMLElement {
    * Returns an array of all article cards on the page
    */
 
-  get articles() {
+  get _articles() {
     let list = this.queryAll("article.card");
     let arr = Array.from(list).filter((a) => {
       return a.querySelector(".label") == null;
@@ -194,7 +191,7 @@ export default class SimpleGrid extends HTMLElement {
    * Returns an array of all digests on the page
    */
 
-  get digests() {
+  get _digests() {
     let list = this.queryAll(".digest");
     return Array.from(list);
   }
@@ -203,7 +200,7 @@ export default class SimpleGrid extends HTMLElement {
    * Appends raw CSS text to the inline style tag
    */
 
-  addStyles(css) {
+  addCSS(css) {
     this._style.textContent += css;
   }
 
@@ -213,13 +210,13 @@ export default class SimpleGrid extends HTMLElement {
    */
 
   handleLede() {
-    let lede = this.articles[0];
+    let lede = this._articles[0];
 
     // Different changes depending on the lede content type
     if(lede.querySelector(".video") != null) {
       lede.classList.add("video-lede");
 
-      this.addStyles(`
+      this.addCSS(`
       .video-lede .new-video-design { 
         display: flex;
         flex-direction: column;
@@ -235,7 +232,7 @@ export default class SimpleGrid extends HTMLElement {
         }
       }`);
     } else {
-      this.articles[0].classList.add("photo-lede", "horizontal", "impact", "in-depth");
+      this._articles[0].classList.add("photo-lede", "horizontal", "impact", "in-depth");
     }
   }
 
@@ -256,30 +253,34 @@ export default class SimpleGrid extends HTMLElement {
   }
 
   // Alters theme if specified
-  handleThemeChanged(nv) {
-    switch(nv) {
-      case "dark":
-        this._theme.textContent = `
-        body { 
-          background-color: #222 
-        }
+  handleThemeChanged(nv, ov) {
+    let css = '';
 
-        .subnav-section-front-organism .subnav-section-title .subnav-section-name,
-        .subnav-section-front-organism .subnav-section-container .subnav-section-list .subnav-section-list-item a { 
-          color: white !important; 
-        }
+    if(nv == "dark") {
+      css = `
+      body { 
+        background-color: #222 
+      }
 
-        .subnav-section-front-organism .subnav-section-title .subnav-section-icon {
-          filter: invert(1);
-        }`;
-        break;
+      .subnav-section-front-organism .subnav-section-title .subnav-section-name,
+      .subnav-section-front-organism .subnav-section-container .subnav-section-list .subnav-section-list-item a { 
+        color: white !important; 
+      }
 
-      default:
-        this._theme.textContent = '';
+      .subnav-section-front-organism .subnav-section-title .subnav-section-icon {
+        filter: invert(1);
+      }`;
     }
 
     // Notify
-    this.dispatchEvent(new Event("themeChanged"));
+    this._theme.textContent = css
+    this.dispatchEvent(new CustomEvent("change", {
+      detail: {
+        type: "theme",
+        nv: nv, 
+        ov: ov
+      }
+    }));
   }
 
   /**
@@ -287,7 +288,7 @@ export default class SimpleGrid extends HTMLElement {
    */
 
   get nav() {
-    return this.hasAttribute("nav");
+    return this.getAttribute("nav");
   }
 
   set nav(val) {
@@ -299,17 +300,28 @@ export default class SimpleGrid extends HTMLElement {
   }
 
   // Moves section nav on request, boolean trigger
-  handleNavChanged(nv) {
+  handleNavChanged(nv, ov) {
     let ele = this.query("#nav-section-front");
 
     if(ele) {
       ele.setAttribute("slot", "nav");
-      ele.hidden = !this.nav;
+      ele.hidden = !this.hasAttribute("nav");
+
+      if(nv && nv.length > 0) {
+        ele.querySelector(".subnav-section-name").textContent = nv;
+      }
+
       this.appendChild(ele);
     }
 
     // Notify
-    this.dispatchEvent(new Event("navChanged"));
+    this.dispatchEvent(new CustomEvent("change", {
+      detail: {
+        type: "nav",
+        nv: nv,
+        ov: ov
+      }
+    }));
   }
 
   /**
@@ -347,17 +359,17 @@ export default class SimpleGrid extends HTMLElement {
 
   // Injects zones if specified
   // This only runs once in the connectedCallback
-  handleZones(nv) {
+  handleZones() {
     let map = this.zones;
     switch(map) {
       case "simple":
         try {
-          this.insertBefore(this.getZone(3), this.articles[4]);
-          this.insertBefore(this.getZone(5), this.articles[4]);
+          this.insertBefore(this.getZone(3), this._articles[4]);
+          this.insertBefore(this.getZone(5), this._articles[4]);
 
           let z6 = this.getZone(6);
           z6.setAttribute("slot", "");
-          this.insertBefore(z6, this.articles[4]);
+          this.insertBefore(z6, this._articles[4]);
         } catch(e) {
           console.warn("Error moving zones:", e);
         }
@@ -367,15 +379,13 @@ export default class SimpleGrid extends HTMLElement {
     }
 
     // Notify
-    this.dispatchEvent(new Event("zonesLoaded"));
-  }
-
-  /**
-   * Runs right before fade is removed
-   */
-
-  beforeShow() {
-    // Made for extending. Does nothing here.
+    this.dispatchEvent(new CustomEvent("change", {
+      detail: {
+        type: "zones",
+        nv: this.zones,
+        ov: null
+      }
+    }));
   }
 }
 
