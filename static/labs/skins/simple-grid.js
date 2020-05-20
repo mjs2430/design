@@ -360,22 +360,23 @@ class SimpleGrid extends HTMLElement {
   // Injects zones if specified
   // This only runs once in the connectedCallback
   handleZones() {
-    let map = this.zones;
-    switch(map) {
-      case "simple":
-        try {
-          this.insertBefore(this.getZone(3), this._articles[4]);
-          this.insertBefore(this.getZone(5), this._articles[4]);
+    if(this.zones == "simple") {
+      try {
+        this.insertBefore(this.getZone(3), this._articles[4]);
+        this.insertBefore(this.getZone(5), this._articles[4]);
 
-          let z6 = this.getZone(6);
-          z6.setAttribute("slot", "");
-          this.insertBefore(z6, this._articles[4]);
-        } catch(e) {
-          console.warn("Error moving zones:", e);
-        }
-        break;
-      default:
-        // Do Nothing
+        let z6 = this.getZone(6);
+        z6.setAttribute("slot", "");
+        this.insertBefore(z6, this._articles[4]);
+      } catch(e) {
+        console.warn("Error moving zones:", e);
+      }
+
+      this.addCSS(`
+      ${this.localName} .ad-widget { 
+        margin-top: 0; 
+        margin-bottom: 0; 
+      }`);
     }
 
     // Notify
