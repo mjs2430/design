@@ -50,7 +50,7 @@ Same as above, but returns a Set with all elements that match the query selector
 
 **`getZone(string|int)`** 
 
-Thsi utility function makes moving zones much easier. Using a CSS query selector, or the zone id as an int, it will return the first match in the list of zones.
+This utility function makes moving zones much easier. Using a CSS query selector, or the zone id as an int, it will return the first match in the list of zones.
 
 #### Other ways to enhance the deck
 
