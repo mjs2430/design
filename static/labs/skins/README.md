@@ -2,6 +2,25 @@
 
 The simple grid custom element is a layer of sugaring to enable rapid section skinning. When added to a section page, it will parse the page for different card types and move them into itself. Using a ShadowDOM template, it reshuffles those cards into a simple grid and provides full-width insertion points above and below that grid.
 
+### ShadowDOM structure
+
+```
+<slot name="above"></slot>
+<slot name="nav"></slot>
+<section>
+  <slot class="grid"></slot>
+</section>
+<slot name="below"></slot>
+```
+
+### Example
+
+```
+<simple-grid theme="dark" nav="Custom Title" zones="simple">
+  <custom-splash slot="above">...</custom-splash>
+</simple-grid>
+```
+
 ### Configurable attributes/properties
 
 **`nav`** 
