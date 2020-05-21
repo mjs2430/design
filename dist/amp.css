@@ -693,6 +693,7 @@ summary, .summary {
 }
 
 .grid .ad-widget {
+  margin: 0 auto;
   align-self: center;
 }
 
@@ -709,6 +710,18 @@ summary, .summary {
     grid-column: span 2;
   }
 }
+/**
+ * Static Zone option (with utilities)
+ */
+.grid.static-zones,
+.grid.dense {
+  grid-auto-flow: dense;
+}
+
+.grid.static-zones .zone-el .grid .full-row {
+  grid-column: 1/-1;
+}
+
 /**
  * Simple Flexbox row
  *

@@ -13,6 +13,7 @@
 }
 
 .grid .ad-widget {
+  margin: 0 auto;
   align-self: center;
 }
 
@@ -29,6 +30,18 @@
     grid-column: span 2;
   }
 }
+/**
+ * Static Zone option (with utilities)
+ */
+.grid.static-zones,
+.grid.dense {
+  grid-auto-flow: dense;
+}
+
+.grid.static-zones .zone-el .grid .full-row {
+  grid-column: 1/-1;
+}
+
 /**
  * Flexbox grid
  */
@@ -641,17 +654,20 @@
  * Note: we need something for labels "outside the grid" but
  * need to "line up with the grid".
  */
+/* section.big-news { */
+/*   margin-top: 0; */
+/*   padding-bottom: 15px; */
+/* } */
+/* .big-news > * { */
+/*   max-width: 1140px; */
+/*   margin: 0 auto; */
+/* } */
 section.big-news {
-  margin-top: 0;
-  padding-bottom: 15px;
-}
-
-.big-news > * {
-  max-width: 1140px;
-  margin: 0 auto;
+  padding: 0;
 }
 
 .big-news .latest {
+  margin: 0;
   padding: 15px 15px 0;
 }
 
@@ -670,11 +686,15 @@ section.big-news {
   font-size: large;
 }
 
-@media (max-width: 1170px) {
-  .big-news figcaption {
-    padding: 10px 15px;
-  }
+.big-news figcaption {
+  padding: 10px 15px 0;
 }
+
+/* @media(max-width: 1170px) { */
+/*   .big-news figcaption { */
+/*     padding: 10px 15px; */
+/*   } */
+/* } */
 .big-news .featured .package {
   padding: 15px 0 0;
 }
