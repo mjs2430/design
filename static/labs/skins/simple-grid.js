@@ -226,7 +226,7 @@ class SimpleGrid extends HTMLElement {
       @media(min-width: 960px) {
         .video-lede .h1 {
           font-size: 38px;
-          line-height: 1.3em;
+          line-height: 1.2em;
           font-weight: normal;
           max-width: 550px;
         }
