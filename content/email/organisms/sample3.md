@@ -1,5 +1,5 @@
 ---
-title: "email sample page"
+title: "email sample organism"
 description: "a template example"
 menu: organisms
 

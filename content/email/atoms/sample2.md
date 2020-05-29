@@ -1,9 +1,9 @@
 ---
-title: "email sample page"
+title: "email sample atom "
 description: "a template example"
 menu: atoms
 
----
+--- 
 
 To add text you can simply type it. Markdown will convert it to HTML for you. Below is some examples of headers using Markdown. 
 
