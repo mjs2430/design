@@ -1,6 +1,6 @@
 ---
 title: "email sample organism"
-description: "a template example"
+description: "an organism example"
 menu: organisms
 
 ---
