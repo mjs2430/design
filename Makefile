@@ -1,4 +1,4 @@
-.PHONY: dist
+.PHONY: dist hi
 
 style ?= expanded
 
@@ -32,3 +32,6 @@ clean:
 
 labs:
 	rsync -rvzL --update --delete -e ssh static/labs/ mcc.mi:labs/
+
+hi:
+	rsync -rzvL --update -e ssh hi/ mcc.mi:hi/
