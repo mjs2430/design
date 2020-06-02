@@ -29,12 +29,12 @@
     {{ end }}
   </div>
 
-  <div class="organisms">
+  <div class="layouts">
     <div class="label">
-      <h5>ORGANISMS</h5>
+      <h5>LAYOUTS</h5>
     </div>
-    {{ range .Site.Menus.organisms }}
-    {{ $active := $cp.IsMenuCurrent "organisms" . }}
+    {{ range .Site.Menus.layouts }}
+    {{ $active := $cp.IsMenuCurrent "layouts" . }}
     <div class="package {{- if $active }} active{{ end }}">
       <h4 class="sans bold">
         <a class="{{ .Page.Param "class" }}" href="{{ .Page.Permalink }}">{{ .Name }}</a>
