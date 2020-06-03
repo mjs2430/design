@@ -9,7 +9,7 @@ Buttons are made entirely of HTML and CSS and should never be images. The defaul
 
 #### EXAMPLE
 
-<div class="eds" style="background-color: #ececec;">
+<div style="background-color: #ececec;padding: 24px;">
     <eds-button></eds-button>
 </div>
 
@@ -39,30 +39,9 @@ class EdsButton extends HTMLElement {
     let t = document.createElement("template");
     t.innerHTML = `
 <head>
-	<style type="text/css">
-	/*typography*/
-	.p {font-family: 'McClatchy Sans Web', Tahoma, Arial, sans-serif;font-weight: 400;color: #222;font-size: 16px;line-height: 24px;}
-	.small {font-family: 'McClatchy Sans Web', Tahoma, Arial, sans-serif;font-weight: 400;color: #222;font-size: 14px;line-height: 20px;}
-	h1 {font-family: 'McClatchy Sans Web', Tahoma, Arial, sans-serif;font-weight: 600;font-size: 36px;line-height: 48px;color: #222;}
-	h2 {font-family: 'McClatchy Sans Web', Tahoma, Arial, sans-serif;font-weight: 600;font-size: 20px;line-height: 24px;text-transform: uppercase;color: #222;}
-	h3 {font-family: 'McClatchy Sans Web', Tahoma, Arial, sans-serif;font-weight: 600;font-size: 18px;line-height: 24px;text-transform: uppercase;color: #222;}
-	h4 {font-family: 'McClatchy Serif Web', Georgia, serif;font-weight: 600;font-size: 18px;line-height: 24px;color: #222;}
-	.link-blue {color: #31409f;text-decoration: none;border-bottom: 1px solid #31409f;}
-	.link-white {color: #fff;text-decoration: none;border-bottom: 1px solid #fff;}
-	/*buttons*/
-	.button {padding: 8px 16px;border-radius: 2px;background-color: #222;}
-	.button-link {display: block;font-family: 'McClatchy Sans Web', Tahoma, Arial, sans-serif;color: #fff;font-weight: 600;font-size: 16px;line-height: 24px;letter-spacing: 1px;text-transform: uppercase;text-decoration: none;}
-	/*background color modifiers for cards and buttons*/
-	.bg-dark {background-color: #222;}
-	.bg-white {background-color: #fff;}
-	.bg-blue {background-color: #31409f;}
-	/*text modifiers--be sure to keep these last*/
-	.bold {font-weight: 600;}
-	.serif {font-family: 'McClatchy Serif Web', Georgia, serif;}
-	.dark {color: #222;}
-	.white {color: #fff;}
-	.blue {color: #31409f;}
-	</style>
+     <style>
+       @import url( '/css/email/eds.css' )
+     </style>
 </head>
 <body>
         <table border="0" cellpadding="0" cellspacing="20">
@@ -70,9 +49,11 @@ class EdsButton extends HTMLElement {
               <td align="center" valign="top" class="button">
                  <a href="javascript:void(0)" target="_blank" class="button-link">Button Text</a>
               </td>
+             <td class="ps8"></td>
               <td align="center" valign="top" class="button bg-blue">
                  <a href="javascript:void(0)" target="_blank" class="button-link">Button Text</a>
               </td>
+            <td class="ps8"></td>    
               <td align="center" valign="top" class="button bg-white">
                  <a href="javascript:void(0)" target="_blank" class="button-link dark">Button Text</a>
               </td>

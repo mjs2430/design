@@ -89,8 +89,8 @@ Text Transform | None
 ---
 
 
-### P
-`<p>` is used for body copy throughout an email. It is a class that should be assigned to table cells instead of using the `<p>` tag. This avoids issues with browsers and clients treating `<p>` margins and spacing differently.
+### .p
+`.p` is used for body copy throughout an email. It is a class that should be assigned to table cells instead of using the `<p>` tag. This avoids issues with browsers and clients treating `<p>` margins and spacing differently.
 <br><br>
 #### EXAMPLE
 <span style="font-family: 'McClatchy Sans Web', Tahoma, sans-serif;font-size:16px;font-weight:400;line-height:24px;text-transform:none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span>
