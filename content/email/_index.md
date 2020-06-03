@@ -12,4 +12,4 @@ By creating a base template and utilizing various organisms in a modular fashion
 
 An 8-pixel grid was used in the development of our email design system to facilitate sizing, spacing and establish vertical rhythm. This means that the size of all elements is calculated in multiples of 8, both vertically and horizontally.
 
-<a class="button big promo" href="/email/eds-template-standard.html" download >download EDS files</a>
+<a class="button big promo" target="_blank" href="https://drive.google.com/drive/folders/1F-WvqYcw530VoMNRScPsy_5NyEWKtHFq" download >download EDS files</a>

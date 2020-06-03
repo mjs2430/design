@@ -68,13 +68,13 @@ class EdsButton extends HTMLElement {
         <table border="0" cellpadding="0" cellspacing="20">
            <tr>
               <td align="center" valign="top" class="button">
-                 <a href="#" target="_blank" class="button-link">Button Text</a>
+                 <a href="javascript:void(0)" target="_blank" class="button-link">Button Text</a>
               </td>
               <td align="center" valign="top" class="button bg-blue">
-                 <a href="#" target="_blank" class="button-link">Button Text</a>
+                 <a href="javascript:void(0)" target="_blank" class="button-link">Button Text</a>
               </td>
               <td align="center" valign="top" class="button bg-white">
-                 <a href="#" target="_blank" class="button-link dark">Button Text</a>
+                 <a href="javascript:void(0)" target="_blank" class="button-link dark">Button Text</a>
               </td>
            </tr>
         </table>
