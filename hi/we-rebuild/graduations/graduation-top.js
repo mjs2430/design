@@ -15,29 +15,50 @@ class GraduationTop extends HTMLElement {
 
       .immersive {
         position: relative;
-        padding-top: 100px;
-        min-height: calc(100vw * .4);
+        min-height: calc(100vw * 1.2);
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
-        background-image: 
-          linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.7) 70%),
-          url(${this.background});
-        background-size: cover;
-        background-position: 50% 20%;
+        background-color: #333;
       }
 
       .immersive::slotted(*) {
         position: relative;
+        margin: 15px 0;
         padding: 0 15px;
         box-sizing: content-box;
         max-width: 920px;
         text-align: center;
       }
 
+      .immersive::slotted(video),
+      .immersive::slotted(img) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        max-width: unset;
+        margin: 0;
+        padding: 0;
+        object-fit: cover;
+        object-position: 50% 20%;
+        filter: brightness(var(--brightness, 0.5));
+      }
+
+      @media(min-width: 768px) {
+        .immersive {
+          min-height: calc(100vw * .5625);
+        }
+      }
+
       @media(min-width: 920px) {
+        .immersive {
+          min-height: calc(100vw * .45)
+        }
+
         .immersive::slotted(.h1) {
           font-size: 45px !important;
         }
@@ -73,18 +94,6 @@ class GraduationTop extends HTMLElement {
   connectedCallback() {
     // Show it
     this.hidden = false;
-  }
-
-  get background() {
-    return this.getAttribute("background");
-  }
-
-  set background(val) {
-    if(val) {
-      this.setAttribute("background", val);
-    } else {
-      this.removeAttribute("background");
-    }
   }
 }
 
