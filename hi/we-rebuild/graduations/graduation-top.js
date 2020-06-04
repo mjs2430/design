@@ -45,6 +45,9 @@ class GraduationTop extends HTMLElement {
         padding: 0;
         object-fit: cover;
         object-position: 50% 20%;
+      }
+
+      .immersive::slotted(img) {
         filter: brightness(var(--brightness, 0.5));
       }
 
