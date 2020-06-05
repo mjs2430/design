@@ -15,40 +15,11 @@ class GraduationTop extends HTMLElement {
 
       .immersive {
         position: relative;
-        min-height: calc(100vw * 1.2);
-        box-sizing: border-box;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-end;
-        background-color: #333;
-      }
-
-      .immersive::slotted(*) {
-        position: relative;
-        margin: 15px 0;
-        padding: 0 15px;
-        box-sizing: content-box;
-        max-width: 920px;
-        text-align: center;
-      }
-
-      .immersive::slotted(video),
-      .immersive::slotted(img) {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        max-width: unset;
-        margin: 0;
-        padding: 0;
-        object-fit: cover;
-        object-position: 50% 20%;
-      }
-
-      .immersive::slotted(img) {
-        filter: brightness(var(--brightness, 0.5));
+        min-height: calc(100vw * 1.2);
+        background-size: cover;
+        background-position: 50% 20%;
+        background-image: var(--background, none);
       }
 
       @media(min-width: 768px) {
@@ -61,9 +32,51 @@ class GraduationTop extends HTMLElement {
         .immersive {
           min-height: calc(100vw * .45)
         }
+      }
 
-        .immersive::slotted(.h1) {
-          font-size: 45px !important;
+      .background::slotted(video),
+      .background::slotted(img) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        max-width: unset;
+        margin: 0;
+        padding: 0;
+        object-fit: cover;
+        object-position: 50% 20%;
+      }
+
+      .overlay {
+        position: relative;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.7) 70%);
+      }
+
+      .overlay::slotted(*) {
+        position: relative;
+        margin: 15px 0;
+        padding: 0 15px;
+        box-sizing: content-box;
+        max-width: var(--story-width, 720px);
+        text-align: center;
+      }
+
+      @media(min-width: 768px) {
+        .overlay::slotted(.h1) {
+          font-size: 40px !important;
+        }
+      }
+
+      @media(min-width: 920px) {
+        .overlay::slotted(.h1) {
+          max-width: 920px;
+          font-size: 48px !important;
         }
       }
 
@@ -80,7 +93,11 @@ class GraduationTop extends HTMLElement {
       }
     </style>
 
-    <slot class="immersive" name="immersive"></slot>
+    <div class="immersive">
+      <slot class="background" name="background"></slot>
+      <slot class="overlay" name="immersive"></slot>
+    </div>
+
     <slot class="main"></slot>
     `;
     return t;
@@ -95,8 +112,17 @@ class GraduationTop extends HTMLElement {
   }
 
   connectedCallback() {
+    // Check for a background attribute (original method)
+    if(this.background) {
+      this.style.setProperty("--background", `url(${this.background})`);
+    }
+
     // Show it
     this.hidden = false;
+  }
+
+  get background() {
+    return this.getAttribute("background");
   }
 }
 
