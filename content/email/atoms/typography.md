@@ -3,7 +3,7 @@ title: "typography"
 description: "the EDS typography system"
 menu: atoms
 
---- 
+---
 
 All CSS for default typography is found in the base templates. All text is given a default color of `#222222`. There are helper classes to add for `.bold`, `.serif`, `.white` and `.blue`. Note: `.serif` should only be used for editorial content, such as story headlines.
 <br><br>
@@ -20,7 +20,7 @@ McClatchy Serif Web
 ---
 
 ### H1
-`<h1>` is typically used near the beginning of an email and not more than once.
+`.h1` is typically used near the beginning of an email and not more than once.
 <br><br>
 #### EXAMPLE
 <span style="font-family: 'McClatchy Sans Web', Tahoma, sans-serif;font-size:36px;font-weight:600;line-height:40px;">This is a primary headline</span>
@@ -144,4 +144,3 @@ Color | #31409f or #ffffff
 Text Decoration | None
 Border | border-bottom: 1px solid #31409f or #ffffff;
 ---
-

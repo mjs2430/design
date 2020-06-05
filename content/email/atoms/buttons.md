@@ -3,7 +3,7 @@ title: "buttons"
 description: "the EDS button system"
 menu: atoms
 
---- 
+---
 
 Buttons are made entirely of HTML and CSS and should never be images. The default button is dark gray with white text.
 
@@ -30,7 +30,7 @@ Be sure to use the `.button` and `.button-link` classes as shown above. To chang
 
 <script>
 class EdsButton extends HTMLElement {
-  /**
+  /*
    * Element Shadow Template
    * Went with ShadowDOM on this one for a graceful failure of nothing
    * and because very little if any is customizable.
