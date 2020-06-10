@@ -44,6 +44,11 @@ section.big-news {
   padding: 10px 15px 0;
 }
 
+.big-news figure:last-child {
+  /* fix if there is no grid */
+  padding-bottom: 15px;
+}
+
 .big-news .featured .package {
   padding: 15px 0 0;
 }
