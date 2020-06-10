@@ -113,6 +113,10 @@ class LiveEventHeader extends HTMLElement {
         margin-bottom: 45px;
       }
 
+      :host(.streaming) .rsvp {
+        display: none;
+      }
+
       ::slotted(*) {
         margin-bottom: 30px;
         max-width: var(--story-width, 728px);
