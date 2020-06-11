@@ -239,6 +239,8 @@ class LiveEventGrid extends HTMLElement {
         background-color: black;
         margin: 30px auto 0 !important;
         --tc: white;
+        --lc: #A9B1E5 !important;
+        --lhc: #A9B1E5 !important;
       }
 
       .grid {
@@ -256,6 +258,8 @@ class LiveEventGrid extends HTMLElement {
         text-align: center;
         --ts: 0.875rem;
         --tf: var(--sans);
+        --lc: #A9B1E5 !important;
+        --lhc: #A9B1E5 !important;
       }
 
       .header::slotted(.package) {
@@ -329,8 +333,22 @@ class LiveEventGrid extends HTMLElement {
       padding: 0 !important;
     }
 
+    ${this.localName} figure.mugshot .picture {
+      margin-left: 0 !important;
+      height: 125px;
+      position: relative;
+    }
+
     ${this.localName} figure.mugshot img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 20%;
       border-radius: 50%;
+      filter: grayscale(1);
     }
 
     ${this.localName} figcaption {
