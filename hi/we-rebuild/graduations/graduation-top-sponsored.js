@@ -1,6 +1,8 @@
 /**
- * Topper for graduation landing pages
- * created 5.14.2020
+ * Topper for graduation landing pages (with page sponsorship) 
+ * created 6.10.2020 
+ * Appends https://media.mcclatchy.com/2020/lockheed-martin/presenting-sponsor.js to graduation-top.js
+ * created by Bconnors@mcclatchy.com
  */
 
 class GraduationTop extends HTMLElement {
@@ -127,3 +129,68 @@ class GraduationTop extends HTMLElement {
 }
 
 customElements.define("graduation-top", GraduationTop);
+
+
+class PresentingSponsorCard extends HTMLElement {
+
+  get template() {
+    let t = document.createElement("template");
+    t.innerHTML = `
+    <style>
+      :host {
+        display: grid;
+        grid-gap: 5px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 15px 0;
+      }
+
+      p {
+        margin: 0;
+        font: italic 0.875rem/1.2em var(--sans, "Noto Sans", "McClatchy Sans", sans-serif);
+        color: #757575;
+      }
+
+      slot::slotted(img) {
+        max-height: 60px;
+        margin: 0 auto !important;
+      }
+
+      @media(min-width: 600px) {
+        :host {
+          grid-template-columns: 1fr 1fr;
+          text-align: right;
+          grid-gap: 15px;
+        }
+        slot::slotted(img) {
+          max-height: 60px;
+          margin: 0 !important;
+        }
+      }
+    </style>
+      <p>${this.wording}</p>
+      <slot name="logo"></slot>
+    `;
+    return t;
+  }
+
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    if(this.shadowRoot) return false;
+
+    this.attachShadow({ mode: "open" });
+    this.shadowRoot.appendChild(this.template.content.cloneNode(true));
+
+    document.body.prepend(this);
+    this.hidden = false;
+  }
+
+  get wording() {
+    return this.getAttribute("wording") || "This story is brought to you by";
+  }
+}
+customElements.define("presenting-sponsor", PresentingSponsorCard);
