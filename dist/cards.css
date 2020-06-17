@@ -69,6 +69,11 @@
     margin: 15px;
   }
 
+  .flex-columns > zeus-ad {
+    flex: none;
+    padding: 15px;
+  }
+
   .flex-columns > .flex-columns {
     margin: 0;
   }
@@ -114,18 +119,6 @@
   position: relative;
   top: 0.15em;
   margin-left: 10px;
-}
-
-/**
- * Ads for both
- */
-.ad-widget {
-  text-align: center;
-}
-
-.ad-widget iframe,
-.ad-widget > div {
-  margin: 0 auto;
 }
 
 /**
@@ -897,6 +890,24 @@ section.big-news {
 
 .sponsor .package {
   justify-content: center;
+}
+
+/**
+ * Ad styling
+ */
+/* Pre Zeus (can be removed when merger complete) */
+.ad-widget {
+  text-align: center;
+}
+
+.ad-widget iframe,
+.ad-widget > div {
+  margin: 0 auto;
+}
+
+/* Zeus integration */
+#zeus_mn-gpt-2:not(:empty) {
+  padding: 15px;
 }
 
 /**

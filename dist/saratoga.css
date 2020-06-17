@@ -746,6 +746,11 @@ summary, .summary {
     margin: 15px;
   }
 
+  .flex-columns > zeus-ad {
+    flex: none;
+    padding: 15px;
+  }
+
   .flex-columns > .flex-columns {
     margin: 0;
   }
@@ -791,18 +796,6 @@ summary, .summary {
   position: relative;
   top: 0.15em;
   margin-left: 10px;
-}
-
-/**
- * Ads for both
- */
-.ad-widget {
-  text-align: center;
-}
-
-.ad-widget iframe,
-.ad-widget > div {
-  margin: 0 auto;
 }
 
 /**
@@ -1577,6 +1570,24 @@ section.big-news {
 }
 
 /**
+ * Ad styling
+ */
+/* Pre Zeus (can be removed when merger complete) */
+.ad-widget {
+  text-align: center;
+}
+
+.ad-widget iframe,
+.ad-widget > div {
+  margin: 0 auto;
+}
+
+/* Zeus integration */
+#zeus_mn-gpt-2:not(:empty) {
+  padding: 15px;
+}
+
+/**
  * This isn't really a card, but to ensure that it works in 
  * as many cases as possible it's placed as the last thing
  * in the system.
@@ -2159,4 +2170,8 @@ section.flag {
   section#main-content > section {
     padding: 0;
   }
+}
+/* Top of section triple up on margin fix */
+#nav-section-front, .subnav-section-name {
+  margin-top: 0;
 }

@@ -568,3 +568,7 @@ section.flag {
     padding: 0;
   }
 }
+/* Top of section triple up on margin fix */
+#nav-section-front, .subnav-section-name {
+  margin-top: 0;
+}
