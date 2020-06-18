@@ -395,3 +395,10 @@ class SimpleGrid extends HTMLElement {
  */
 
 customElements.define("simple-grid", SimpleGrid);
+
+/**
+ * Safari does not load a global classes in ES6 modules.
+ * Need to attach to the window object to be able to import and extend.
+ */
+
+window.SimpleGrid = SimpleGrid;
