@@ -20,7 +20,8 @@ class LiveEventSkin extends HTMLElement {
     .zone.grid.combo,
     #commenting-container,
     .transparency,
-    .related-stories {
+    .related-stories,
+    .gallery.card {
       display: none !important;
     }
 
