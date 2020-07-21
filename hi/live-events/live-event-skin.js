@@ -20,7 +20,9 @@ class LiveEventSkin extends HTMLElement {
     .zone.grid.combo,
     #commenting-container,
     .transparency,
-    .related-stories {
+    .related-stories,
+    .gallery.card,
+    live-event-grid .zone {
       display: none !important;
     }
 
@@ -258,8 +260,8 @@ class LiveEventGrid extends HTMLElement {
         text-align: center;
         --ts: 0.875rem;
         --tf: var(--sans);
-        --lc: #A9B1E5 !important;
-        --lhc: #A9B1E5 !important;
+        --lc: #808CD8 !important;
+        --lhc: #808CD8 !important;
       }
 
       .header::slotted(.package) {
