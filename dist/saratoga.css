@@ -746,6 +746,11 @@ summary, .summary {
     margin: 15px;
   }
 
+  .flex-columns > zeus-ad {
+    flex: none;
+    padding: 15px;
+  }
+
   .flex-columns > .flex-columns {
     margin: 0;
   }
@@ -794,8 +799,9 @@ summary, .summary {
 }
 
 /**
- * Ads for both
+ * Ad styling
  */
+/* Pre Zeus (can be removed when merger complete) */
 .ad-widget {
   text-align: center;
 }
@@ -803,6 +809,11 @@ summary, .summary {
 .ad-widget iframe,
 .ad-widget > div {
   margin: 0 auto;
+}
+
+/* Zeus integration */
+#zeus_mn-gpt-2:not(:empty) {
+  padding: 15px;
 }
 
 /**
@@ -933,21 +944,33 @@ summary, .summary {
 /**
  * Mugshots
  */
-.story-body figure.mugshot {
+.story-body .mugshot {
   padding: 0 15px;
-  margin: 0 auto;
 }
 
-.story-body figure.mugshot > * {
-  float: right;
-  width: 125px;
-  margin: 0 0 15px 15px;
+.story-body .mugshot .img-container {
+  display: grid;
+  grid-template-columns: 125px 1fr;
+  grid-gap: 15px;
 }
 
-.story-body figure.mugshot figcaption {
-  padding: 5px 0 0;
+.story-body .mugshot figcaption {
+  padding: 0;
+  align-self: end;
 }
 
+/* .story-body figure.mugshot { */
+/*   padding: 0 15px; */
+/*   margin: 0 auto; */
+/* } */
+/* .story-body figure.mugshot > * { */
+/*   float: right; */
+/*   width: 125px; */
+/*   margin: 0 0 15px 15px; */
+/* } */
+/* .story-body figure.mugshot figcaption { */
+/*   padding: 5px 0 0; */
+/* } */
 /**
  * Tables
  */
@@ -1349,6 +1372,7 @@ section.big-news {
 .big-news .h1 {
   font-size: 2rem;
   text-align: center;
+  align-self: center;
 }
 
 @media (min-width: 768px) {
@@ -2159,4 +2183,8 @@ section.flag {
   section#main-content > section {
     padding: 0;
   }
+}
+/* Top of section triple up on margin fix */
+#nav-section-front, .subnav-section-name {
+  margin-top: 0;
 }

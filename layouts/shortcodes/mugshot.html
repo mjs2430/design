@@ -11,6 +11,12 @@
       <!--Inline Style of width = 100% has been removed. Semantic approach is to add css styling -->
       <img class=" lazy responsive-image" data-original="https://www.charlotteobserver.com/latest-news/uhvju4/picture235264057/alternates/FREE_1140/Algia_clark.jpg" alt="Algia_clark.jpg" title="Algia_clark.jpg" src="https://www.charlotteobserver.com/latest-news/uhvju4/picture235264057/alternates/FREE_1140/Algia_clark.jpg" style="display: block;">
     </picture>
-      <figcaption> Algia Clark <span class="credit">Mecklenburg County Sheriff'</span></figcaption>
+    <figcaption> 
+      {{ with .Get "caption" }}
+        {{ . }}
+      {{ else }}
+        Algia Clark <span class="credit">Mecklenburg County Sheriff'</span>
+      {{ end }}
+    </figcaption>
   </div>
 </figure>
