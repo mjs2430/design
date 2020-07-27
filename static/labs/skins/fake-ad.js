@@ -16,7 +16,18 @@ class FakeAd extends HTMLElement {
         align-items: center;
         justify-content: center;
         order: var(--order);
-        grid-column: var(--columns);
+      }
+
+      @media(min-width: 660px) {
+        :host([columns="2"]), :host([columns="3"]) {
+          grid-column: span 2;
+        }
+      }
+
+      @media(min-width: 990px) {
+        :host([columns="3"]) {
+          grid-column: span 3;
+        }
       }
       
       .ad {
@@ -123,7 +134,7 @@ class FakeAd extends HTMLElement {
         this.style.setProperty("--order", nv);
         break;
       case "columns":
-        this.style.setProperty("--columns", `span ${nv}`);
+        // Handled with CSS instead
         break;
       default:
         // Do nothing
