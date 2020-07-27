@@ -36,6 +36,7 @@ class FakeAd extends HTMLElement {
 
       :host(.fill) {
         background-color: var(--color);
+        min-height: 325px;
       }
 
       :host(.fill) .ad {
