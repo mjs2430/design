@@ -133,7 +133,6 @@ class FakeAd extends HTMLElement {
 
         if(Array.isArray(p[0])) {
           let r = this.shuffle(p);
-          console.log(r);
           for(i = 0; i < r.length; i++) {
             if(this.hasRoom(...r[i])) return r[i];
           }
