@@ -2,7 +2,45 @@
  * Dummy ad component
  */
 
+var fakeAdObserver = new ResizeObserver(entries => {
+  entries.forEach(e => {
+    let ad = e.target;
+    ad.renderAd(...ad.size);
+  });
+});
+
 class FakeAd extends HTMLElement {
+
+  // Watch a couple of attributes for changes
+  static get observedAttributes() {
+    return ["order", "columns"];
+  }
+
+  // Updating the order shifts where the ad sits in the grid
+  get order() {
+    return this.getAttribute("order");
+  }
+
+  set order(val) {
+    if(val) {
+      this.setAttribute("order", val);
+    } else {
+      this.removeAttribute("order");
+    }
+  }
+
+  // Updating the columns changes how many the ad will use
+  get columns() {
+    return this.getAttribute("columns");
+  }
+
+  set columns(val) {
+    if(val) {
+      this.setAttribute("columns", val);
+    } else {
+      this.removeAttribute("columns");
+    }
+  }
 
   // Shadow DOM template
   get template() {
@@ -62,6 +100,26 @@ class FakeAd extends HTMLElement {
   // Called when added to the DOM
   connectedCallback() {
     this.renderAd(...this.size);
+    fakeAdObserver.observe(this);
+  }
+
+  // Called when removed from the DOM
+  disconnectedCallback() {
+    fakeAdObserver.unobserve(this);
+  }
+
+  // Fires when a watched attribute changes
+  attributeChangedCallback(name, ov, nv) {
+    switch(name) {
+      case "order":
+        this.style.setProperty("--order", nv);
+        break;
+      case "columns":
+        // Handled with CSS instead
+        break;
+      default:
+        // Do nothing
+    }
   }
 
   // Size can take a single array, or nested array sizes 
@@ -69,42 +127,30 @@ class FakeAd extends HTMLElement {
   get size() {
     let s = this.getAttribute("size");
 
-    try {
-      let p = JSON.parse(s);
-      if(Array.isArray(p[0])) {
-        return p[Math.floor(Math.random() * p.length)];
-      } else {
-        return p;
+    if(s) {
+      try {
+        let p = JSON.parse(s);
+
+        if(Array.isArray(p[0])) {
+          let r = this.shuffle(p);
+          console.log(r);
+          for(i = 0; i < r.length; i++) {
+            if(this.hasRoom(...r[i])) return r[i];
+          }
+        } else if(this.hasRoom(...p)) {
+          return p;
+        }
+      } catch(e) {
+        console.warn("fake-ad size could not be parsed", e);
       }
-    } catch(e) {
-      return [300, 250]
     }
+
+    return [300, 250]
   }
 
-  // Updating the order shifts where the ad sits in the grid
-  get order() {
-    return this.getAttribute("order");
-  }
-
-  set order(val) {
-    if(val) {
-      this.setAttribute("order", val);
-    } else {
-      this.removeAttribute("order");
-    }
-  }
-
-  // Updating the columns changes how many the ad will use
-  get columns() {
-    return this.getAttribute("columns");
-  }
-
-  set columns(val) {
-    if(val) {
-      this.setAttribute("columns", val);
-    } else {
-      this.removeAttribute("columns");
-    }
+  // Checks the width of the container to restrict ads
+  hasRoom(width) {
+    return width <= window.outerWidth;
   }
 
   // Render an ad
@@ -123,23 +169,16 @@ class FakeAd extends HTMLElement {
     }
   }
 
-  // Watch a couple of attributes for changes
-  static get observedAttributes() {
-    return ["order", "columns"];
-  }
-
-  // Fires when a watched attribute changes
-  attributeChangedCallback(name, ov, nv) {
-    switch(name) {
-      case "order":
-        this.style.setProperty("--order", nv);
-        break;
-      case "columns":
-        // Handled with CSS instead
-        break;
-      default:
-        // Do nothing
+  // Fisher-Yates shuffle
+  shuffle(array) {
+    var m = array.length, t, i;
+    while (m) {
+      i = Math.floor(Math.random() * m--);
+      t = array[m];
+      array[m] = array[i];
+      array[i] = t;
     }
+    return array;
   }
 }
 
