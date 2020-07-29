@@ -11,6 +11,7 @@
 
 <script defer src="/js/navigation.js"></script>
 <script defer src="/js/gpt-ad.js"></script>
+<script defer src="/labs/fake-ad.js"></script>
 {{- if isset .Params "zones" }}
 <script defer src="/js/zones.js"></script>
 <script defer src="/js/typologies.js"></script>
@@ -25,6 +26,10 @@
 gpt-ad {
   display: flex;
   justify-content: center;
+}
+
+[data-zone="zone1"] fake-ad {
+  padding: 15px 0;
 }
 </style>
 {{ end }}
