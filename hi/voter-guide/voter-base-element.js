@@ -19,14 +19,14 @@ class VoterBaseElement extends HTMLElement {
    */
 
   // Makes a request to the positions endpoint
-  async fetchPositions(address, erid = this.erid, eid = this.electionId) {
+  async fetchPositions(address, erid = this.erid, date = this.electionDate) {
     let options = {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        query: `{voterguidePositions( erid: ${erid}, parameters: "{'election_id': '${eid}', 'address': '${address}', 'include_candidates': 1}"){data}}`
+        query: `{voterguidePositions( erid: ${erid}, parameters: "{'election_date': '${date}', 'address': '${address}', 'include_candidates': 1}"){data}}`
       })
     }
 

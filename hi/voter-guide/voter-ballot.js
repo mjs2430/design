@@ -292,7 +292,9 @@ class VoterBallot extends VoterBaseElement {
 
     // Load the positions
     try {
-      let pos = positions.data.voterguidePositions.data.positions;
+      let pos = positions.data.voterguidePositions.data.positions.filter(p => {
+        return p.state != "US" && p.normalized_position.id != 11;
+      });
 
       // Check for an empty ballot
       this.classList.toggle("empty", pos.length == 0);

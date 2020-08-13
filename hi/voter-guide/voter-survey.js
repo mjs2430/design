@@ -126,7 +126,7 @@ class VoterSurvey extends VoterBaseElement {
     let feed = await this.fetchSurvey(this.sid);
 
     try {
-      this.survey = this.cleanupFeed(feed);
+      this.survey = feed.data.survey.surveyData;
 
       this.questions = new Set();
       this.survey.forEach(s => {
@@ -153,11 +153,6 @@ class VoterSurvey extends VoterBaseElement {
       let embed = this.closest(".embed-infographic");
       embed.style.cssText = `max-width: 100%; background-color: #f4f4f4;`;
     }
-  }
-
-  cleanupFeed(feed) {
-    let cleaned = feed.data.survey.surveyData.replace(/'/g, '"');
-    return JSON.parse(cleaned);
   }
 }
 
