@@ -121,11 +121,11 @@ class VoterRaceDetails extends VoterBaseElement {
         <div class="social-media">
           ${this.normalizeLinks(c).map((u, i) => `
           <a href="${u.url}" target="_blank" title="see this candidate's ${u.type} page">
-            <img src="https://media.mcclatchy.com/2020/voter_guide/icons/${u.type}.svg">
+            <img src="https://media.mcclatchy.com/hi/voter-guide/icons/${u.type}.svg">
           </a>
           `).join('')}
           <a href="/search?q=${this.normalizeName(c).trim().replace(/\s+/, " ")}" target="_blank" title="search for stories about this candidate">
-            <img src="https://media.mcclatchy.com/2020/voter_guide/icons/search.svg">
+            <img src="https://media.mcclatchy.com/hi/voter-guide/icons/search.svg">
           </a>
         </div>
       </div>
