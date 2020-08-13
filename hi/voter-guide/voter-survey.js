@@ -56,6 +56,7 @@ class VoterSurvey extends VoterBaseElement {
       .expander {
         align-self: stretch;
         justify-content: space-between;
+        align-items: flex-start;
       }
 
       .expander:after {
@@ -83,7 +84,7 @@ class VoterSurvey extends VoterBaseElement {
         --tf: var(--sans);
       }
 
-      :host([mode="story"]) > .package {
+      :host([mode="story"]) .package {
         padding: 15px 0;
       }
 
