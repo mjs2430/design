@@ -17,7 +17,9 @@ class VoterSurvey extends VoterBaseElement {
     <link rel="stylesheet" href="${this.sds}" />
     <style>
       :host {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
       }
 
       .package {
@@ -38,6 +40,28 @@ class VoterSurvey extends VoterBaseElement {
         margin-top: 5px;
       }
 
+      .intro {
+        flex: none;
+        padding-bottom: 0;
+      }
+
+      .questions {
+        flex: 1;
+      }
+
+      .question {
+        --ht: none;
+      }
+
+      .expander {
+        align-self: stretch;
+        justify-content: space-between;
+      }
+
+      .expander:after {
+        min-width: 14px;
+      }
+
       .party {
         display: inline-block;
         color: #757575;
@@ -49,6 +73,7 @@ class VoterSurvey extends VoterBaseElement {
 
       .about {
         background-color: #f4f4f4;
+        flex: none;
       }
 
       :host([mode="story"]) {
@@ -67,19 +92,21 @@ class VoterSurvey extends VoterBaseElement {
       }
     </style>
 
-    <div class="package">
+    <div class="package intro">
       <h2>Candidates on the issues</h2>
       <slot></slot>
     </div>
 
-    ${[...this.questions].map((q, i) => `
-    <div class="package question">
-      <h4 class="expander ${i == 0 && !this.storyMode ? "open" : ""}" onclick="this.classList.toggle('open')">${q}</h4>
-      ${this.survey.map(s => `
-      <p class="summary"><b>${s.name} (${s.party[0]}):</b> ${s.questions[q]}</p>
+    <div class="questions">
+      ${[...this.questions].map((q, i) => `
+      <div class="package question">
+        <h4 class="expander ${i == 0 && !this.storyMode ? "open" : ""}" onclick="this.classList.toggle('open')">${q}</h4>
+        ${this.survey.map(s => `
+        <p class="summary"><b>${s.name} (${s.party[0]}):</b> ${s.questions[q]}</p>
+        `).join('')}
+      </div>
       `).join('')}
     </div>
-    `).join('')}
 
     <div class="package about">
       <h4 class="expander" onclick="this.classList.toggle('open')">More about the candidates</h3>
