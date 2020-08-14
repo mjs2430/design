@@ -119,8 +119,13 @@ class VoterBallot extends VoterBaseElement {
       }
 
       @media print {
+        .story-body, .partial-message {
+          display: none !important;
+        }
+
         slot[name="races"].grid {
           display: block;
+          margin-top: 15px;
         }
 
         #races {
