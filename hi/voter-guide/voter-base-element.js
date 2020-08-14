@@ -8,7 +8,6 @@ class VoterBaseElement extends HTMLElement {
     super();
     this.endpoint = "https://qa1-voter-guide.misitemgr.com/api/";
     this.electionDate = "2020-11-03";
-    this.electionId = "151,134,143,165,130,122,161,131,142,128,127,135,158,156,126,118";
 
     // Toggle based on market coming soon
     this.erid = 1;
@@ -19,7 +18,7 @@ class VoterBaseElement extends HTMLElement {
    */
 
   // Makes a request to the positions endpoint
-  async fetchPositions(address, erid = this.erid, date = this.electionDate) {
+  async fetchPositions(address, date = this.electionDate, erid = this.erid) {
     let options = {
       method: "POST",
       headers: {
