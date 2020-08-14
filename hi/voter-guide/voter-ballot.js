@@ -338,7 +338,7 @@ class VoterBallot extends VoterBaseElement {
 
       // Check for missing city or local races (possible partial)
       let local = pos.filter((d) => {
-        return d.level == "city" || d.level == "local";
+        return d.level.toLowerCase() == "city" || d.level.toLowerCase() == "local";
       });
 
       this.classList.toggle("partial", pos.length > 0 && local.length == 0)
