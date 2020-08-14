@@ -9,6 +9,8 @@ import "./voter-ballot-measure.js";
 import "./voter-panel.js";
 import "./voter-ballot-save.js";
 import "./mc-toast.js";
+import { trackInteraction } from "https://media.mcclatchy.com/labs/tracking.js";
+import "https://media.mcclatchy.com/labs/dynamic-modal.js";
 
 class VoterBallot extends VoterBaseElement {
 
@@ -181,6 +183,13 @@ class VoterBallot extends VoterBaseElement {
     <voter-panel></voter-panel>
     <voter-ballot-save></voter-ballot-save>
     <mc-toast class="bottom right"></mc-toast>
+
+    <dynamic-modal>
+      <img slot="image" src="https://media.mcclatchy.com/target/assets/cc-decline-modal-laptop.png">
+      <h1>You must be a subscriber to view this content</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus eros in ornare vulputate. Integer congue orci sit amet dui euismod tempus. Phasellus ut orci imperdiet, elementum augue et, accumsan.</p>
+      <a class="button big" data-interaction="Voter Guide clicked subscribe button" href="/subscribe">Subscribe now</a>
+    </dynamic-modal>
     `;
     return t;
   }
@@ -237,6 +246,8 @@ class VoterBallot extends VoterBaseElement {
         this.panel.measure = e.detail.measure;
         this.panel.show("measure");
       }
+
+      trackInteraction("Voter Guide race details clicked");
     });
 
     this.addEventListener("details-loaded", (e) => {
@@ -245,10 +256,17 @@ class VoterBallot extends VoterBaseElement {
 
     // Listen for a survey being clicked
     this.addEventListener("survey-clicked", (e) => {
-      this.panel.race = e.detail.race;
-      this.panel.show("survey");
-      this.toast.message = "Getting survey details ...";
-      this.toast.show();
+      // Check subscriber status 
+      if(digitalData?.user?.subscription?.status == "sub_0") {
+        this.panel.race = e.detail.race;
+        this.panel.show("survey");
+        this.toast.message = "Getting survey details ...";
+        this.toast.show();
+        trackInteraction("Voter Guide subscriber clicked survey button");
+      } else {
+        this.paywall.show();
+        trackInteraction("Voter Guide non-subscriber clicked survey button");
+      }
     });
 
     this.addEventListener("survey-loaded", (e) => {
@@ -257,6 +275,9 @@ class VoterBallot extends VoterBaseElement {
 
     // Shortcut to the toast
     this.toast = this.shadowRoot.querySelector("mc-toast");
+
+    // Shortcut to the paywall
+    this.paywall = this.shadowRoot.querySelector("dynamic-modal");
   }
 
   // Runs when added to the DOM

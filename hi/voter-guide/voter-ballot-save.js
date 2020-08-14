@@ -3,6 +3,8 @@
  * 2020 Voter Guide
  */
 
+import { trackInteraction } from "https://media.mcclatchy.com/labs/tracking.js";
+
 class VoterBallotSave extends HTMLElement {
 
   get template() {
@@ -54,6 +56,7 @@ class VoterBallotSave extends HTMLElement {
     // Event listener to download
     this.addEventListener("click", () => {
       window.print();
+      trackInteraction("Voter Guide print button clicked");
     });
   }
 }
