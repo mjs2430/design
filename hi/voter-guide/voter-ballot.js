@@ -208,6 +208,7 @@ class VoterBallot extends VoterBaseElement {
     this.form.addEventListener("submit", (e) => {
       e.preventDefault();
       this.getBallot();
+      trackInteraction("Voter Guide address searched");
     });
 
     // Listen for selections and save
