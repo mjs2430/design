@@ -103,7 +103,7 @@ class VoterRaceDetails extends VoterBaseElement {
     ${this.race.candidates.map((c, i) => `
     <div class="candidate grid">
       <figure class="thumb">
-        ${c.thumb_url ? `<img src="${c.thumb_url}">` : ''}
+        ${c.thumb_url ? `<img src="${c.thumb_url}" alt="${this.normalizeName(c)} headshot">` : ''}
       </figure>
       <div class="package">
         <h3 class="name">${this.normalizeName(c)}</h3>
@@ -121,11 +121,11 @@ class VoterRaceDetails extends VoterBaseElement {
         <div class="social-media">
           ${this.normalizeLinks(c).map((u, i) => `
           <a href="${u.url}" target="_blank" title="see this candidate's ${u.type} page">
-            <img src="https://media.mcclatchy.com/hi/voter-guide/icons/${u.type}.svg">
+            <img src="https://media.mcclatchy.com/hi/voter-guide/icons/${u.type}.svg" alt="${u.type} icon">
           </a>
           `).join('')}
           <a href="/search?q=${this.normalizeName(c).trim().replace(/\s+/, " ")}" target="_blank" title="search for stories about this candidate">
-            <img src="https://media.mcclatchy.com/hi/voter-guide/icons/search.svg">
+            <img src="https://media.mcclatchy.com/hi/voter-guide/icons/search.svg" alt="search icon">
           </a>
         </div>
       </div>

@@ -146,8 +146,8 @@ class VoterBallot extends VoterBaseElement {
     </style>
 
     <form>
-      <img class="logo" src="https://media.mcclatchy.com/hi/voter-guide/icons/vg-logo.svg">
-      <input class="address" name="address" placeholder="e.g., 1452 E 53rd St, Chicago, IL">
+      <img class="logo" src="https://media.mcclatchy.com/hi/voter-guide/icons/vg-logo.svg" alt="2020 Voter Guide logo">
+      <input type="text" class="address" name="address" placeholder="e.g., 1452 E 53rd St, Chicago, IL">
       <input type="submit" class="submit button impact" value="View my ballot"></a>
     </form>
 

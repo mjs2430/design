@@ -115,7 +115,7 @@ class VoterSurvey extends VoterBaseElement {
       <div class="package c-details">
         <h3>${s.name} <span class="party">${s.party}</span></h3>
         ${Object.keys(s.details).map(k => `
-        <p class="summary"><b>${k}:</b> ${s.details[k]}</p>
+        <p class="summary"><b>${k.replace(/\:\s*$/, "")}:</b> ${s.details[k]}</p>
         `).join('')}
       </div>
       `).join('')}
