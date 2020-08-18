@@ -7,10 +7,8 @@ class VoterBaseElement extends HTMLElement {
   constructor() {
     super();
     this.endpoint = "https://qa1-voter-guide.misitemgr.com/api/";
+    // this.endpoint = "https://elections-api.mcclatchy.com/api/";
     this.electionDate = "2020-11-03";
-
-    // Toggle based on market coming soon
-    this.erid = 1;
   }
 
   /**
@@ -18,14 +16,14 @@ class VoterBaseElement extends HTMLElement {
    */
 
   // Makes a request to the positions endpoint
-  async fetchPositions(address, date = this.electionDate, erid = this.erid) {
+  async fetchPositions(address, date = this.electionDate) {
     let options = {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        query: `{voterguidePositions( erid: ${erid}, parameters: "{'election_date': '${date}', 'address': '${address}', 'include_candidates': 1}"){data}}`
+        query: `{voterguidePositions( parameters: "{'election_date': '${date}', 'address': '${address}', 'include_candidates': 1}"){data}}`
       })
     }
 
@@ -33,14 +31,14 @@ class VoterBaseElement extends HTMLElement {
   }
 
   // Makes a request to the candidate endpoint
-  async fetchCandidate(cid, erid = this.erid) {
+  async fetchCandidate(cid) {
     let options = {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        query: `{ voterguideCandidate( erid:${erid}, cid:${cid}, parameters: \"{}\"){ data }}`
+        query: `{ voterguideCandidate( cid:${cid}, parameters: \"{}\"){ data }}`
       })
     }
 
@@ -48,28 +46,14 @@ class VoterBaseElement extends HTMLElement {
   }
 
   // Makes a request to the ballot measures endpoint
-  async fetchMeasures(address, date = this.electionDate, erid = this.erid) {
+  async fetchMeasures(address, date = this.electionDate) {
     let options = {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        query: `{ voterguideMeasures( erid:${erid}, parameters: "{'election_date':'${date}','address':'${address}'}"){ data }}`
-      })
-    }
-
-    return await fetch(this.endpoint, options).then(response => response.json());
-  }
-
-  async fetchAllSurveys(erid = this.erid) {
-    let options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        query: `{ allSurveys( erid:${erid} ){ id, surveyData }}`
+        query: `{ voterguideMeasures( parameters: "{'election_date':'${date}','address':'${address}'}"){ data }}`
       })
     }
 
