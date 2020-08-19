@@ -165,7 +165,7 @@ class VoterBallot extends VoterBaseElement {
 
       <div class="how-to-use">
         <h4 class="expander" onclick="this.classList.toggle('open')">How to use this guide</h4>
-        <p>Each race and measure on your ballot will be represented in a box below. To see additional information about the candidates click the "See more candidate information" near the bottom. Some races will have a button on the bottom in gray. Click that to see candidate responses to our questions.</p>
+        <p>Each race and measure on your ballot will be represented in a box below. To see additional information about the candidates click the "See more candidate information" near the bottom. Some races will have an additional button on the bottom. Click that to see candidate responses to our questions.</p>
         <p>Once you are ready, click a candidate to make your choice. When you have finished making your selections, click the <svg class="inline-print-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M448 192V77.25c0-8.49-3.37-16.62-9.37-22.63L393.37 9.37c-6-6-14.14-9.37-22.63-9.37H96C78.33 0 64 14.33 64 32v160c-35.35 0-64 28.65-64 64v112c0 8.84 7.16 16 16 16h48v96c0 17.67 14.33 32 32 32h320c17.67 0 32-14.33 32-32v-96h48c8.84 0 16-7.16 16-16V256c0-35.35-28.65-64-64-64zm-64 256H128v-96h256v96zm0-224H128V64h192v48c0 8.84 7.16 16 16 16h48v96zm48 72c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24z"/></svg> icon at the bottom right of the screen to print your choices.</p>
         <p>If you do not wish to print your ballot, you can also bookmark this page. When you return on the same phone, tablet, or computer, we will load your previous choices. We are not storing your choices on our servers or transmitting them in any way. They are confined to your device.</p>
       </div>
@@ -258,16 +258,23 @@ class VoterBallot extends VoterBaseElement {
     // Listen for a survey being clicked
     this.addEventListener("survey-clicked", (e) => {
       // Check subscriber status 
-      if(digitalData?.user?.subscription?.status == "sub_0") {
-        this.panel.race = e.detail.race;
-        this.panel.show("survey");
-        this.toast.message = "Getting survey details ...";
-        this.toast.show();
-        trackInteraction("Voter Guide subscriber clicked survey button");
-      } else {
-        this.paywall.show();
-        trackInteraction("Voter Guide non-subscriber clicked survey button");
-      }
+      // if(digitalData?.user?.subscription?.status == "sub_0") {
+      //   this.panel.race = e.detail.race;
+      //   this.panel.show("survey");
+      //   this.toast.message = "Getting survey details ...";
+      //   this.toast.show();
+      //   trackInteraction("Voter Guide subscriber clicked survey button");
+      // } else {
+      //   this.paywall.show();
+      //   trackInteraction("Voter Guide non-subscriber clicked survey button");
+      // }
+
+      // Short circuit for testing
+      this.panel.race = e.detail.race;
+      this.panel.show("survey");
+      this.toast.message = "Getting survey details ...";
+      this.toast.show();
+      trackInteraction("Voter Guide subscriber clicked survey button");
     });
 
     this.addEventListener("survey-loaded", (e) => {
@@ -314,7 +321,8 @@ class VoterBallot extends VoterBaseElement {
     // API functions found in voter-element
     const [positions, measures] = await Promise.all([
       this.fetchPositions(this.address),
-      this.fetchMeasures(this.address)
+      fetch("https://media.mcclatchy.com/2020/voter_guide/qa/data/measures.json").then(response => response.json())
+      // this.fetchMeasures(this.address)
     ]);
 
     // Load the positions

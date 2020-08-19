@@ -84,7 +84,6 @@ class VoterBallotRace extends VoterBaseElement {
 
       .survey {
         padding: 15px;
-        background-color: #e5e5e5;
         align-self: unset;
       }
 
@@ -209,7 +208,7 @@ class VoterBallotRace extends VoterBaseElement {
     <a class="summary ballot-details">See more candidate information</a>
 
     ${this.race.candidate_survey ? `
-    <a class="survey button" href="#">Candidates on the issues</a>
+    <a class="survey button promo" href="#">Candidates on the issues</a>
     ` : ""}
     `;
     return t;
