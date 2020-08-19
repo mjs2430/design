@@ -550,8 +550,8 @@ section.flag {
   margin-top: 0;
 }
 
-.inline-cta > div[class*=recaptcha] {
-  margin: 10px 0 0;
+.grecaptcha-badge {
+  display: none;
 }
 
 .story-body .ng_endnote_contact {
