@@ -337,6 +337,7 @@ class LiveEventGrid extends HTMLElement {
 
     ${this.localName} figure.mugshot .picture {
       margin-left: 0 !important;
+      width: 125px;
       height: 125px;
       position: relative;
     }

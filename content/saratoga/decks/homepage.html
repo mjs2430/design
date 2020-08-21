@@ -9,11 +9,11 @@ aliases:
 
 {{< flag page="homepage" >}}
 
-<section>
-  <gpt-ad data-size-map="leaderboard"></gpt-ad>
-</section>
-
 {{< big-news >}}
+
+<section>
+  <fake-ad size="[[970,250],[728,90]]"></fake-ad>
+</section>
 
 <section>
   <div class="flex-columns reverse">
@@ -32,7 +32,7 @@ aliases:
     </div>
     <div class="flex-columns rail">
       {{< digest >}}
-      <gpt-ad data-size="[300,600]"></gpt-ad>
+      <fake-ad size="[300,600]"></fake-ad>
     </div>
   </div>
 </section>
@@ -54,7 +54,7 @@ aliases:
       </div>
     </div>
     <div class="rail flex-columns">
-      <gpt-ad></gpt-ad>
+      <fake-ad></fake-ad>
     </div>
   </div>
 </section>
@@ -70,21 +70,10 @@ aliases:
       {{< card >}}
     </div>
     <div class="rail">
-      <gpt-ad></gpt-ad>
+      <fake-ad></fake-ad>
     </div>
   </div>
 </section>
-
-<!-- JS to restrict Big News width -->
-<!-- <script> -->
-<!-- (function() { -->
-<!--   let style = document.createElement("style"); -->
-<!--   document.head.appendChild(style); -->
-<!--   let sheet = style.sheet; -->
-<!--   sheet.insertRule('section.big-news { max-width: 1140px; }'); -->
-<!--   sheet.insertRule('.big-news figcaption { padding: 10px 15px 0; }'); -->
-<!-- })(); -->
-<!-- </script> -->
 
 {{< footer >}}
 {{< menu >}}
