@@ -43,7 +43,13 @@ class VoterBallot extends VoterBaseElement {
 
       .logo {
         display: block;
-        width: 250px;
+        width: 350px;
+      }
+
+      @media(min-width: 600px) {
+        .logo {
+          width: 400px;
+        }
       }
 
       .address {
@@ -62,7 +68,7 @@ class VoterBallot extends VoterBaseElement {
       }
 
       .button.submit {
-        width: 250px;
+        width: auto;
       }
 
       slot[name="description"] {
