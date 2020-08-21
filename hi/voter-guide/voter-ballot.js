@@ -71,6 +71,12 @@ class VoterBallot extends VoterBaseElement {
         width: auto;
       }
 
+      .submit[disabled] {
+        background-color: #ddd;
+        color: rgba(0,0,0,0.2);
+        cursor: wait;
+      }
+
       slot[name="description"] {
         display: block;
       }
@@ -235,8 +241,12 @@ class VoterBallot extends VoterBaseElement {
       this.storage = storage;
     });
 
-    // Panel events
+
+    // Element shortcuts
+    this.toast = this.shadowRoot.querySelector("mc-toast");
+    this.paywall = this.shadowRoot.querySelector("dynamic-modal");
     this.panel = this.shadowRoot.querySelector("voter-panel");
+    this.submitButton = this.shadowRoot.querySelector(".submit");
 
     // Listen for more info clicks
     this.addEventListener("details-clicked", (e) => {
@@ -286,28 +296,14 @@ class VoterBallot extends VoterBaseElement {
     this.addEventListener("survey-loaded", (e) => {
       this.toast.hide();
     });
-
-    // Shortcut to the toast
-    this.toast = this.shadowRoot.querySelector("mc-toast");
-
-    // Shortcut to the paywall
-    this.paywall = this.shadowRoot.querySelector("dynamic-modal");
   }
 
   // Runs when added to the DOM
   async connectedCallback() {
-    // Load previous selections if any
     if(this.storage && this.ready) {
       this.address = this.storage.address;
-
       await this.getBallot();
-
-      this.storage.selections.forEach((s) => {
-        let ele = this.querySelector(`[data-id="${s.id}"]`);
-        if(ele) ele.selected = s.selection;
-      });
-
-      this.showSaveButton();
+      this.loadSelections();
     }
   }
 
@@ -315,13 +311,12 @@ class VoterBallot extends VoterBaseElement {
   async getBallot() {
     let order = 0;
     this.ready = false;
+    this.submitButton.disabled = true;
     this.toast.message = "Getting your personalized ballot ...";
     this.toast.show();
 
     // Clear out a previous ballot
-    this.querySelectorAll("voter-ballot-race, voter-ballot-measure").forEach(r => {
-      r.remove();
-    });
+    this.querySelectorAll("voter-ballot-race, voter-ballot-measure").forEach(r => { r.remove(); });
     this.classList.remove("partial");
 
     // API functions found in voter-element
@@ -341,9 +336,9 @@ class VoterBallot extends VoterBaseElement {
       this.classList.toggle("empty", pos.length == 0);
 
       // Loop through what we got
-      pos.forEach((pos, i) => {
+      pos.forEach((p, i) => {
         const br = document.createElement("voter-ballot-race");
-        br.race = pos;
+        br.race = p;
         br.setAttribute("slot", "races");
         order += 1;
         br.style.order = order;
@@ -363,10 +358,10 @@ class VoterBallot extends VoterBaseElement {
 
     // Load the measures
     try {
-      let pos = measures.data.voterguideMeasures.data.positions;
-      pos.forEach((pos, i) => {
+      let mes = measures.data.voterguideMeasures.data.positions;
+      mes.forEach((m, i) => {
         const bm = document.createElement("voter-ballot-measure");
-        bm.measure = pos;
+        bm.measure = m;
         bm.setAttribute("slot", "races");
         order += 1;
         bm.style.order = order;
@@ -376,10 +371,26 @@ class VoterBallot extends VoterBaseElement {
       console.error("Issues parsing ballot measures", err);
     }
 
+    // Load any previous selections
+    if(this.storage) {
+      this.loadSelections();
+    }
+
     // Show it and mark ready for more pulls
     this.shadowRoot.querySelector("#races").hidden = false;
     this.ready = true;
     this.toast.hide();
+    this.submitButton.disabled = false;
+  }
+
+  // Load previous selections if any
+  loadSelections() {
+    this.storage.selections.forEach((s) => {
+      let ele = this.querySelector(`[data-id="${s.id}"]`);
+      if(ele) ele.selected = s.selection;
+    });
+
+    this.showSaveButton();
   }
 
   showSaveButton(v = true) {
