@@ -208,7 +208,7 @@ class VoterBallotRace extends VoterBaseElement {
     <a class="summary ballot-details">See more candidate information</a>
 
     ${this.race.candidate_survey ? `
-    <a class="survey button promo" href="#">Candidates on the issues</a>
+    <a class="survey button promo" href="#">Compare the candidates</a>
     ` : ""}
     `;
     return t;
