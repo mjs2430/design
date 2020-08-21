@@ -22,8 +22,7 @@ class VoterBallot extends VoterBaseElement {
     <style>
       :host {
         display: block;
-        padding: 15px;
-        margin: 30px auto;
+        margin: 0 auto 30px;
         max-width: 1140px;
       }
 
@@ -31,6 +30,8 @@ class VoterBallot extends VoterBaseElement {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0 15px;
+        margin: 30px 0;
       }
 
       form > * {
@@ -46,7 +47,7 @@ class VoterBallot extends VoterBaseElement {
         width: 350px;
       }
 
-      @media(min-width: 600px) {
+      @media(min-width: 630px) {
         .logo {
           width: 400px;
         }
@@ -77,6 +78,15 @@ class VoterBallot extends VoterBaseElement {
         cursor: wait;
       }
 
+      .intro {
+        padding: 0 15px;
+        max-width: var(--story-width);
+        margin: 0 auto;
+        --hf: var(--sans);
+        --ht: uppercase;
+        --hw: bold;
+      }
+
       slot[name="description"] {
         display: block;
       }
@@ -91,8 +101,13 @@ class VoterBallot extends VoterBaseElement {
       }
 
       .grid {
-        margin-top: 30px;
         grid-auto-flow: dense;
+      }
+
+      @media(min-width: 630px) {
+        .grid {
+          padding: 0 15px;
+        }
       }
 
       .empty-message {
@@ -133,7 +148,7 @@ class VoterBallot extends VoterBaseElement {
       }
 
       @media print {
-        .story-body, .partial-message {
+        .intro, .partial-message {
           display: none !important;
         }
 
@@ -170,7 +185,7 @@ class VoterBallot extends VoterBaseElement {
       <input type="submit" class="submit button impact" value="View my ballot"></a>
     </form>
 
-    <div class="story-body">
+    <div class="intro">
       <slot name="description">
         <p>Welcome to our Voter Guide. Please enter your address above to see races that will be on your November ballot and to read in-depth surveys with candidates. Addresses are used to personalize this content; no information you provide is saved or will be used for any other purpose. Some down-ballot races may be missing because of limitations in the available data.</p>
       </slot>
