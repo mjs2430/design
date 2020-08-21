@@ -22,8 +22,9 @@ class VoterBallot extends VoterBaseElement {
     <style>
       :host {
         display: block;
-        margin: 0 auto 30px;
+        margin: 30px auto;
         max-width: 1140px;
+        box-sizing: content-box;
       }
 
       form {
@@ -45,12 +46,6 @@ class VoterBallot extends VoterBaseElement {
       .logo {
         display: block;
         width: 350px;
-      }
-
-      @media(min-width: 630px) {
-        .logo {
-          width: 400px;
-        }
       }
 
       .address {
@@ -79,12 +74,26 @@ class VoterBallot extends VoterBaseElement {
       }
 
       .intro {
-        padding: 0 15px;
         max-width: var(--story-width);
         margin: 0 auto;
+        padding: 0 15px;
         --hf: var(--sans);
         --ht: uppercase;
         --hw: bold;
+      }
+
+      @media(min-width: 630px) {
+        :host {
+          padding: 0 15px;
+        }
+
+        .logo {
+          width: 400px;
+        }
+
+        .intro {
+          padding: 0;
+        }
       }
 
       slot[name="description"] {
@@ -102,12 +111,6 @@ class VoterBallot extends VoterBaseElement {
 
       .grid {
         grid-auto-flow: dense;
-      }
-
-      @media(min-width: 630px) {
-        .grid {
-          padding: 0 15px;
-        }
       }
 
       .empty-message {
