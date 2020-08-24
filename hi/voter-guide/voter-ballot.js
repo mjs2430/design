@@ -292,23 +292,16 @@ class VoterBallot extends VoterBaseElement {
     // Listen for a survey being clicked
     this.addEventListener("survey-clicked", (e) => {
       // Check subscriber status 
-      // if(digitalData?.user?.subscription?.status == "sub_0") {
-      //   this.panel.race = e.detail.race;
-      //   this.panel.show("survey");
-      //   this.toast.message = "Getting survey details ...";
-      //   this.toast.show();
-      //   trackInteraction("Voter Guide subscriber clicked survey button");
-      // } else {
-      //   this.paywall.show();
-      //   trackInteraction("Voter Guide non-subscriber clicked survey button");
-      // }
-
-      // Short circuit for testing
-      this.panel.race = e.detail.race;
-      this.panel.show("survey");
-      this.toast.message = "Getting survey details ...";
-      this.toast.show();
-      trackInteraction("Voter Guide subscriber clicked survey button");
+      if(digitalData?.user?.subscription?.status == "sub_0") {
+        this.panel.race = e.detail.race;
+        this.panel.show("survey");
+        this.toast.message = "Getting survey details ...";
+        this.toast.show();
+        trackInteraction("Voter Guide subscriber clicked survey button");
+      } else {
+        this.paywall.show();
+        trackInteraction("Voter Guide non-subscriber clicked survey button");
+      }
     });
 
     this.addEventListener("survey-loaded", (e) => {
@@ -340,8 +333,7 @@ class VoterBallot extends VoterBaseElement {
     // API functions found in voter-element
     const [positions, measures] = await Promise.all([
       this.fetchPositions(this.address),
-      fetch("https://media.mcclatchy.com/2020/voter_guide/qa/data/measures.json").then(response => response.json())
-      // this.fetchMeasures(this.address)
+      this.fetchMeasures(this.address)
     ]);
 
     // Load the positions
