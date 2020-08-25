@@ -195,11 +195,13 @@ class VoterBallot extends VoterBaseElement {
 
       <div class="how-to-use">
         <h4 class="expander" onclick="this.classList.toggle('open')">How to use the voter guide</h4>
-        <p>Enter your home address in the search bar, then click VIEW MY BALLOT. </p>
-        <p>Scroll down to the boxes below to see each ballot item. (Please note some races might be missing due to data availability but will be updated accordingly.)</p>
-        <p>Click “See more candidate information” at the bottom of each box to learn more. Subscribers can click the COMPARE THE CANDIDATES blue box to view candidate responses to our questions. </p>
-        <p>Click the box next to each candidate you plan to vote for. When you’re finished, click the blue circle icon in the bottom right of the screen to print. Save the printout to refer to when it’s time to vote!</p>
-        <p>You can also bookmark this page if you would prefer not to print. We will load your previous choices when you return on the same device. We will not store your home address or choices on our servers or transmit them in any way; they are confined to your device.</p>
+        <slot name="how-to">
+          <p>Enter your home address in the search bar, then click VIEW MY BALLOT. </p>
+          <p>Scroll down to the boxes below to see each ballot item. (Please note some races might be missing due to data availability but will be updated accordingly.)</p>
+          <p>Click “See more candidate information” at the bottom of each box to learn more. Subscribers can click the COMPARE THE CANDIDATES blue box to view candidate responses to our questions. </p>
+          <p>Click the box next to each candidate you plan to vote for. When you’re finished, click the blue circle icon in the bottom right of the screen to print. Save the printout to refer to when it’s time to vote!</p>
+          <p>You can also bookmark this page if you would prefer not to print. We will load your previous choices when you return on the same device. We will not store your home address or choices on our servers or transmit them in any way; they are confined to your device.</p>
+        </slot>
         <slot name="contact"></slot>
       </div>
 
@@ -356,6 +358,11 @@ class VoterBallot extends VoterBaseElement {
         br.setAttribute("slot", "races");
         order += 1;
         br.style.order = order;
+
+        if(this.enh) {
+          br.classList.add("enh");
+        }
+
         this.appendChild(br);
       });
 
@@ -437,6 +444,11 @@ class VoterBallot extends VoterBaseElement {
 
   set address(val) {
     this.form.address.value = val;
+  }
+
+  // Different UI for ENH
+  get enh() {
+    return this.hasAttribute("enh");
   }
 }
 
