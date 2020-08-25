@@ -1,22 +1,21 @@
 ---
-title: "Email Base Template"
-description: "standard base template"
-menu: templates
+title: "Email Framework"
+description: "standard email framework"
+menu: frameworks
 
 ---
 
-This is the most-used base template, with a maximum table width of 600px. The default padding is 24px, which leaves a 552px-wide area for content. On screens with a width of 480px and smaller that support media queries, the template will scale to a width of 100%, with a maximum width of 480px. All of the default CSS is included in this template in addition to the basic HTML structure.
+This is the most-used framework, with a maximum table width of 600px. The default padding is 24px, which leaves a 552px-wide area for content. On screens with a width of 480px and smaller that support media queries, the framework will scale to a width of 100%, with a maximum width of 480px. All of the default CSS is included in this framework in addition to the basic HTML structure.
 
 <a class="button big promo" style="margin-bottom:32px;" target="_blank" href="https://drive.google.com/file/d/10EsPhNR_64FQqmwPqBw2ny8kwvR3B5G9/view?usp=sharing" download >download HTML</a>
 
-
-#### EXAMPLE
+### sample email using standard framework
 <div class="example">
-		<standard-template></standard-template>
+		<standard-framework></standard-framework>
 </div>
 
 <script type="text/javascript">
-class StandardTemplate extends HTMLElement {
+class StandardFramework extends HTMLElement {
 	get template() {
 		let t = document.createElement("template");
 		t.innerHTML = `
@@ -51,7 +50,7 @@ class StandardTemplate extends HTMLElement {
 										<table cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
 											<tr>
 												<td align="center" valign="top" width="100%" style="background-color: #fff;border-top: 1px solid #ccc;border-bottom: 2px solid #ccc;padding: 12px 24px;font-family: 'McClatchy Sans Web', Tahoma, Arial, sans-serif;">
-													<a href="#" target="_blank"><img src="https://media.mcclatchy.com/email-assets/global/logos-color/charlotte-color.png" alt="The Charlotte Observer logo" width="289" style="display: inline-block;border: 0;outline: none;text-decoration: none;" /></a>
+													<a href="#"><img src="https://media.mcclatchy.com/email-assets/global/logos-color/charlotte-color.png" alt="The Charlotte Observer logo" width="289" style="display: inline-block;border: 0;outline: none;text-decoration: none;" /></a>
 												</td>
 											</tr>
 										</table>
@@ -69,7 +68,7 @@ class StandardTemplate extends HTMLElement {
 													Welcome
 												</td>
 											</tr>
-									</table>
+										</table>
 									</td>
 								</tr>
 								<tr>
@@ -106,10 +105,10 @@ class StandardTemplate extends HTMLElement {
 																			Albus Dumbledore, O.M.
 																		</td>
 																		<td align="right" valign="middle" width="48">
-																			<a href="#" target="_blank"><img src="https://media.mcclatchy.com/email-assets/global/icons/envelope-alt-dark-unicon.png" width="24" alt="email"></a>
+																			<a href="#"><img src="https://media.mcclatchy.com/email-assets/global/icons/envelope-alt-dark-unicon.png" width="24" alt="email"></a>
 																		</td>
 																		<td align="right" valign="middle" width="48">
-																			<a href="#" target="_blank"><img src="https://media.mcclatchy.com/email-assets/global/icons/twitter-dark.png" width="24" alt="twitter"></a>
+																			<a href="#"><img src="https://media.mcclatchy.com/email-assets/global/icons/twitter-dark.png" width="24" alt="twitter"></a>
 																		</td>
 																	</tr>
 																</table>
@@ -133,10 +132,10 @@ class StandardTemplate extends HTMLElement {
 																			Albus Dumbledore, O.M.
 																		</td>
 																		<td align="right" valign="middle" width="48">
-																			<a href="#" target="_blank"><img src="https://media.mcclatchy.com/email-assets/global/icons/envelope-alt-dark-unicon.png" width="24" alt="email"></a>
+																			<a href="#"><img src="https://media.mcclatchy.com/email-assets/global/icons/envelope-alt-dark-unicon.png" width="24" alt="email"></a>
 																		</td>
 																		<td align="right" valign="middle" width="48">
-																			<a href="#" target="_blank"><img src="https://media.mcclatchy.com/email-assets/global/icons/twitter-dark.png" width="24" alt="twitter"></a>
+																			<a href="#"><img src="https://media.mcclatchy.com/email-assets/global/icons/twitter-dark.png" width="24" alt="twitter"></a>
 																		</td>
 																	</tr>
 																</table>
@@ -160,10 +159,10 @@ class StandardTemplate extends HTMLElement {
 																					Albus Dumbledore, O.M.
 																				</td>
 																				<td align="right" valign="middle" width="48">
-																					<a href="#" target="_blank"><img src="https://media.mcclatchy.com/email-assets/global/icons/envelope-alt-dark-unicon.png" width="24" alt="email"></a>
+																					<a href="#"><img src="https://media.mcclatchy.com/email-assets/global/icons/envelope-alt-dark-unicon.png" width="24" alt="email"></a>
 																				</td>
 																				<td align="right" valign="middle" width="48">
-																					<a href="#" target="_blank"><img src="https://media.mcclatchy.com/email-assets/global/icons/twitter-dark.png" width="24" alt="twitter"></a>
+																					<a href="#"><img src="https://media.mcclatchy.com/email-assets/global/icons/twitter-dark.png" width="24" alt="twitter"></a>
 																				</td>
 																			</tr>
 																		</table>
@@ -199,7 +198,7 @@ class StandardTemplate extends HTMLElement {
 													<table border="0" cellpadding="0" cellspacing="0">
 														 <tr>
 																<td align="center" valign="top" class="button bg-white">
-																	 <a href="https://<%= recipient.siteBrand.publicationUrl %>newsletters" target="_blank" class="button-link border-white blue">Sign Up Now</a>
+																	 <a href="#" class="button-link border-white blue">Sign Up Now</a>
 																</td>
 														 </tr>
 													</table>
@@ -217,10 +216,10 @@ class StandardTemplate extends HTMLElement {
 																<table border="0" cellpadding="0" cellspacing="0" role="presentation">
 																		<tr>
 																				<td align="center" valign="middle" style="padding-right:5px;">
-																						<a href="http://www.facebook.com/<%= recipient.siteBrand.connectFacebookUrl %>" target="_blank"><img src="http://media.mcclatchy.com/email-assets/global/icons/facebook-gray.png" alt="Facebook icon" width="10" style="display: block; border: 0px none; outline: none; text-decoration: none;" /></a>
+																						<a href="#"><img src="http://media.mcclatchy.com/email-assets/global/icons/facebook-gray.png" alt="Facebook icon" width="10" style="display: block; border: 0px none; outline: none; text-decoration: none;" /></a>
 																				</td>
 																				<td align="center" valign="middle" style="padding-left:5px;">
-																						<a href="http://www.twitter.com/<%= recipient.siteBrand.connectTwitterUrl %>" target="_blank"><img src="http://media.mcclatchy.com/email-assets/global/icons/twitter-gray.png" alt="Twitter icon" width="21" style="display: block; border: 0px none; outline: none; text-decoration: none;" /></a>
+																						<a href="#"><img src="http://media.mcclatchy.com/email-assets/global/icons/twitter-gray.png" alt="Twitter icon" width="21" style="display: block; border: 0px none; outline: none; text-decoration: none;" /></a>
 																				</td>
 																		</tr>
 																</table>
@@ -228,15 +227,15 @@ class StandardTemplate extends HTMLElement {
 												</tr>
 												<tr>
 														<td align="left" valign="top" width="100%" style="padding: 8px 24px;font-family: 'McClatchy Sans Web', Tahoma, Arial, sans-serif;font-size: 11px;color: #525252;line-height: 16px;">
-															Copyright &copy; <%= formatDate(new Date(), "%4Y") %> <%= recipient.siteBrand.paperName %>.
+															Copyright &copy; 2020 Official Property Name.
 															All Rights Reserved.
 														</td>
 												</tr>
 												<tr>
 														<td align="left" valign="top" width="100%" style="padding: 8px 24px;font-family: 'McClatchy Sans Web', Tahoma, Arial, sans-serif;font-size: 11px;color: #525252;line-height: 16px;">
-																<%= recipient.siteBrand.paperName %><br />
-																<%= recipient.siteBrand.street %><br />
-																<%= recipient.siteBrand.city %>, <%= recipient.siteBrand.state %> <%= recipient.siteBrand.zip %>
+																Official Property Name<br>
+																123 Street Name<br>
+																City, ST 000000
 														</td>
 												</tr>
 												<tr>
@@ -246,10 +245,11 @@ class StandardTemplate extends HTMLElement {
 												</tr>
 											<tr>
 												<td align="left" valign="top" width="100%" style="padding: 8px 24px 24px;font-family: 'McClatchy Sans Web', Tahoma, Arial, sans-serif;font-size: 11px;color: #525252;line-height: 16px;">
-													<a href="https://<%= recipient.siteBrand.aboutUsLink %>" target="_blank" style="font-size: 11px;color: #525252;">About Us</a>&nbsp;|&nbsp;
-													<a href="https://<%= recipient.siteBrand.termsServiceLink %>" target="_blank" style="font-size: 11px;color: #525252;">Terms of Use</a>&nbsp;|&nbsp;
-													<a href="https://t.news.<%= recipient.siteBrand.siteName %>.com/webApp/mccPrefCenter?id=<%=escapeUrl(recipient.cryptedId)%>" target="_blank" style="font-size: 11px;color: #525252;">Manage Newsletter Subscriptions</a>&nbsp;|&nbsp;
-													<a href="<%@ include view='MirrorPageUrl' %>" style="font-size: 11px;color: #525252;" target="_blank">View as webpage</a>&nbsp;|&nbsp;<a href="https://t.news.<%= recipient.siteName %>.com/webApp/mccUnsub?id=<%=escapeUrl(recipient.cryptedId)%>&servicePrefName=<%= targetData.preferenceName %>" target="_blank" style="font-size: 11px;color: #525252;">Unsubscribe</a>
+													<a href="#" style="font-size: 11px;color: #525252;">About Us</a>&nbsp;|&nbsp;
+													<a href="#" style="font-size: 11px;color: #525252;">Terms of Use</a>&nbsp;|&nbsp;
+													<a href="#" style="font-size: 11px;color: #525252;">Manage Newsletter Subscriptions</a>&nbsp;|&nbsp;
+													<a href="#" style="font-size: 11px;color: #525252;" target="_blank">View as webpage</a>&nbsp;|&nbsp;
+													<a href="#" style="font-size: 11px;color: #525252;">Unsubscribe</a>
 												</td>
 											</tr>
 										</table>
@@ -277,5 +277,5 @@ class StandardTemplate extends HTMLElement {
 		this.shadowRoot.appendChild(clone);
 	}
 } // end Class
-customElements.define("standard-template", StandardTemplate);
+customElements.define("standard-framework", StandardFramework);
 </script>

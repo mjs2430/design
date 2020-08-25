@@ -1,5 +1,5 @@
 ---
-title: "conditional formatting"
+title: "Conditional Formatting"
 description: "how to use if-else formatting to display content"
 menu: campaign
 

@@ -4,7 +4,7 @@ description: "how to work with multi-column layouts"
 menu: "layouts"
 ---
 
-All CSS for columns is included in the base templates. The 552px content space can be divided into several collapsible or fixed columns by using the class `.col` on a `td` to create the column and `.collapse` to make it collapse for mobile screens. If you want fixed columns, use the class `.col-fixed` and do not use `.collapse`.
+All CSS for columns is included in the framework. The 552px content space can be divided into several collapsible or fixed columns by using the class `.col` on a `td` to create the column and `.collapse` to make it collapse for mobile screens. If you want fixed columns, use the class `.col-fixed` and do not use `.collapse`.
 
 The first column in each row will need the `.first` class and the last one will need `.last`. If the group of columns goes onto more than 1 row, like in a 2x2 grid layout, the last column in each row should be given `.row-end` instead of `.last`, with only the final column on the final row being assigned `.last`. This ensures correct padding when collapsed.
 

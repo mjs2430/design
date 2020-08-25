@@ -5,7 +5,7 @@ menu: atoms
 
 ---
 
-All CSS for default colors is found in the base templates. The default email setup has a body background color of light gray `#f4f4f4`. The email table itself has cards or full-width rows that can have background colors of the default light gray, white `.bg-white`, dark gray `.bg-gray` or Dumbledore's Robe Blue (DR) `.bg-blue`.
+All CSS for default colors is found in the framework. The default email setup has a body background color of light gray `#f4f4f4`. The email table itself has cards or full-width rows that can have background colors of the default light gray, white `.bg-white`, dark gray `.bg-gray` or Dumbledore's Robe Blue (DR) `.bg-blue`.
 
 ### Default Colors
 
@@ -27,8 +27,8 @@ All CSS for default colors is found in the base templates. The default email set
 ### Rules
 Text is dark gray if on a white or light gray background. Text is white if on a dark gray or DR background. DR can be used sparingly for text on white or light gray backgrounds.
 
-Text links on a white or gray background should be DR. Text links on a dark gray background should be Pegacorn Mane Blue. Text links on a DR background should be white. All text links are underlined to ensure accessibility. The color helper classes in the EDS base template can be used for text links (`.blue`, `.white`, `.gray`, `.light-blue`).
+Text links on a white or gray background should be DR. Text links on a dark gray background should be Pegacorn Mane Blue. Text links on a DR background should be white. All text links are underlined to ensure accessibility. The color modifier classes in the EDS framework can be used for text links (`.blue`, `.white`, `.gray`, `.light-blue`).
 
 Any simple graphical elements, such as icons, should also be one of these colors.
 
-Shasta Blue `#5169b8` and Leslie Knope Pantsuit Blue `#1b417f` are not used in any of the default templates but are part of the larger SDS color library and may be used as needed.
+Shasta Blue `#5169b8` and Leslie Knope Pantsuit Blue `#1b417f` are not in the framework but are part of the larger SDS color library and may be added if needed.

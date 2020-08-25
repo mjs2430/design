@@ -16,10 +16,10 @@
 
 	<div class="atoms">
 		<div class="label">
-			<h5>BASE TEMPLATES</h5>
+			<h5>FRAMEWORKS</h5>
 		</div>
-		{{ range .Site.Menus.templates }}
-		{{ $active := $cp.IsMenuCurrent "templates" . }}
+		{{ range .Site.Menus.frameworks }}
+		{{ $active := $cp.IsMenuCurrent "frameworks" . }}
 		<div class="package {{- if $active }} eds-active{{ end }}">
 			<h4 class="sans bold">
 				<a class="{{ .Page.Param "class" }}" href="{{ .Page.Permalink }}">{{ .Name }}</a>
@@ -41,6 +41,21 @@
 			</h5>
 			{{ end }}
 		</div>
+	</div>
+
+	<div class="atoms">
+		<div class="label">
+			<h5>MOLECULES</h5>
+		</div>
+		{{ range .Site.Menus.molecules }}
+		{{ $active := $cp.IsMenuCurrent "molecules" . }}
+		<div class="package {{- if $active }} eds-active{{ end }}">
+			<h4 class="sans bold">
+				<a class="{{ .Page.Param "class" }}" href="{{ .Page.Permalink }}">{{ .Name }}</a>
+			</h4>
+			<p class="summary">{{ .Page.Description }}</p>
+		</div>
+		{{ end }}
 	</div>
 
 	<div class="atoms">
