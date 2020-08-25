@@ -108,7 +108,6 @@ class ZigZagLayout extends HTMLElement {
 					<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="600" id="email-table">
 					<tr>
 						<td align="center" valign="top" width="100%" class="card bg-white">
-
 							<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
 								<tr>
 									<td align="center" valign="top" class="pb16">
@@ -127,14 +126,12 @@ class ZigZagLayout extends HTMLElement {
 								</tr>
 								<tr>
 									<td align="center" valign="top" class="pb24">
-
 										<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
 											<tr>
 												<td align="left" valign="top" width="168" class="col first collapse">
 													<img src="https://media.mcclatchy.com/email-assets/global/welcome-series/ipad-extra-extra.png" width="168" alt="Extra Extra section" />
 												</td>
 												<td align="center" valign="middle" width="360" class="col row-end collapse">
-
 													<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
 														<tr>
 															<td align="left" valign="top" class="pb8">
@@ -152,23 +149,19 @@ class ZigZagLayout extends HTMLElement {
 															</td>
 														</tr>
 													</table>
-
 												</td>
 											</tr>
 										</table>
-
 									</td>
 								</tr>
 								<tr>
 									<td align="center" valign="top" class="pb24" dir="rtl">
-
 										<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
 											<tr>
 												<td align="left" valign="top" width="168" class="col row-end collapse" dir="ltr">
 													<img src="https://media.mcclatchy.com/email-assets/global/welcome-series/ipad-sportsxtra.png" width="168" alt="SportsXtra section" />
 												</td>
 												<td align="center" valign="middle" width="360" class="col first collapse" dir="ltr">
-
 													<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
 														<tr>
 															<td align="left" valign="top" class="pb8">
@@ -186,23 +179,19 @@ class ZigZagLayout extends HTMLElement {
 															</td>
 														</tr>
 													</table>
-
 												</td>
 											</tr>
 										</table>
-
 									</td>
 								</tr>
 								<tr>
 									<td align="center" valign="top" class="">
-
 										<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
 											<tr>
 												<td align="left" valign="top" width="168" class="col first collapse">
 													<img src="https://media.mcclatchy.com/email-assets/global/welcome-series/ipad-money-markets.png" width="168" alt="Money &amp; Markets section" />
 												</td>
 												<td align="center" valign="middle" width="360" class="col last collapse">
-
 													<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
 														<tr>
 															<td align="left" valign="top" class="pb8">
@@ -220,15 +209,12 @@ class ZigZagLayout extends HTMLElement {
 															</td>
 														</tr>
 													</table>
-
 												</td>
 											</tr>
 										</table>
-
 									</td>
 								</tr>
 							</table>
-
 						</td>
 					</tr>
 					</table>
@@ -252,8 +238,6 @@ class ZigZagLayout extends HTMLElement {
 	}
 } // end Class
 customElements.define("zig-zag", ZigZagLayout);
-
-
 class ZigZagMobile extends HTMLElement {
 	get template() {
 		let t = document.createElement("template");
@@ -304,7 +288,6 @@ class ZigZagMobile extends HTMLElement {
 					<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="600" id="email-table">
 					<tr>
 						<td align="center" valign="top" width="100%" class="card bg-white">
-
 							<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
 								<tr>
 									<td align="center" valign="top" class="pb16">
@@ -323,14 +306,12 @@ class ZigZagMobile extends HTMLElement {
 								</tr>
 								<tr>
 									<td align="center" valign="top" class="pb24">
-
 										<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
 											<tr>
 												<td align="left" valign="top" width="168" class="col first collapse">
 													<img src="https://media.mcclatchy.com/email-assets/global/welcome-series/ipad-extra-extra.png" width="168" alt="Extra Extra section" />
 												</td>
 												<td align="center" valign="middle" width="360" class="col row-end collapse">
-
 													<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
 														<tr>
 															<td align="left" valign="top" class="pb8">
@@ -348,23 +329,19 @@ class ZigZagMobile extends HTMLElement {
 															</td>
 														</tr>
 													</table>
-
 												</td>
 											</tr>
 										</table>
-
 									</td>
 								</tr>
 								<tr>
 									<td align="center" valign="top" class="pb24" dir="rtl">
-
 										<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
 											<tr>
 												<td align="left" valign="top" width="168" class="col row-end collapse" dir="ltr">
 													<img src="https://media.mcclatchy.com/email-assets/global/welcome-series/ipad-sportsxtra.png" width="168" alt="SportsXtra section" />
 												</td>
 												<td align="center" valign="middle" width="360" class="col first collapse" dir="ltr">
-
 													<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
 														<tr>
 															<td align="left" valign="top" class="pb8">
@@ -382,23 +359,19 @@ class ZigZagMobile extends HTMLElement {
 															</td>
 														</tr>
 													</table>
-
 												</td>
 											</tr>
 										</table>
-
 									</td>
 								</tr>
 								<tr>
 									<td align="center" valign="top" class="">
-
 										<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
 											<tr>
 												<td align="left" valign="top" width="168" class="col first collapse">
 													<img src="https://media.mcclatchy.com/email-assets/global/welcome-series/ipad-money-markets.png" width="168" alt="Money &amp; Markets section" />
 												</td>
 												<td align="center" valign="middle" width="360" class="col last collapse">
-
 													<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
 														<tr>
 															<td align="left" valign="top" class="pb8">
@@ -416,15 +389,12 @@ class ZigZagMobile extends HTMLElement {
 															</td>
 														</tr>
 													</table>
-
 												</td>
 											</tr>
 										</table>
-
 									</td>
 								</tr>
 							</table>
-
 						</td>
 					</tr>
 					</table>

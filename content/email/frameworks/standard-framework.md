@@ -13,7 +13,6 @@ This is the most-used framework, with a maximum table width of 600px. The defaul
 <div class="example">
 		<standard-framework></standard-framework>
 </div>
-
 <script type="text/javascript">
 class StandardFramework extends HTMLElement {
 	get template() {

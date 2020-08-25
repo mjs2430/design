@@ -117,7 +117,6 @@ Three columns of equal width that collapse on mobile.
 </table>
 <!-- // THREE EQUAL-WIDTH COLLAPSING COLUMNS -->
 ```
-
 <script>
 class TwoColumnModule extends HTMLElement {
 	get template() {
@@ -144,12 +143,10 @@ class TwoColumnModule extends HTMLElement {
 				<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="600" id="email-table">
 					<tr>
 						<td align="center" valign="top" width="100%" class="card bg-white">
-
 							<!-- TWO EQUAL-WIDTH COLLAPSING COLUMNS // -->
 							<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
 								<tr>
 									<td align="left" valign="top" class="col collapse first" width="264">
-
 										<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 											<tr>
 												<td align="left" valign="top" width="100%" class="pb16">
@@ -167,10 +164,8 @@ class TwoColumnModule extends HTMLElement {
 												</td>
 											</tr>
 										</table>
-
 									</td>
 									<td align="left" valign="top" class="col collapse last" width="264">
-
 										<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 											<tr>
 												<td align="left" valign="top" width="100%" class="pb16">
@@ -188,9 +183,7 @@ class TwoColumnModule extends HTMLElement {
 												</td>
 											</tr>
 										</table>
-
 									</td>
-
 								</tr>
 							</table>
 							<!-- // TWO EQUAL-WIDTH COLLAPSING COLUMNS -->
@@ -217,9 +210,6 @@ class TwoColumnModule extends HTMLElement {
 	}
 } // end Class
 customElements.define("two-column-module", TwoColumnModule);
-
-
-
 class TwoColumnThirds extends HTMLElement {
 	get template() {
 		let t = document.createElement("template");
@@ -245,7 +235,6 @@ class TwoColumnThirds extends HTMLElement {
 				<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="600" id="email-table">
 					<tr>
 						<td align="center" valign="top" width="100%" class="card bg-white">
-
 						<!-- TWO UNEQUAL-WIDTH COLLAPSING COLUMNS (THIRDS) // -->
 							<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 								<tr>
@@ -281,8 +270,6 @@ class TwoColumnThirds extends HTMLElement {
 	}
 } // end Class
 customElements.define("two-column-thirds", TwoColumnThirds);
-
-
 class TwoColumnFourths extends HTMLElement {
 	get template() {
 		let t = document.createElement("template");
@@ -308,7 +295,6 @@ class TwoColumnFourths extends HTMLElement {
 				<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="600" id="email-table">
 					<tr>
 						<td align="center" valign="top" width="100%" class="card bg-white">
-
 						<!-- TWO UNEQUAL NON-COLLAPSING COLUMNS (FOURTHS) -->
 								<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 									<tr>
@@ -344,8 +330,6 @@ class TwoColumnFourths extends HTMLElement {
 	}
 } // end Class
 customElements.define("two-column-fourths", TwoColumnFourths);
-
-
 class ThreeColumnModule extends HTMLElement {
 	get template() {
 		let t = document.createElement("template");
@@ -371,12 +355,10 @@ class ThreeColumnModule extends HTMLElement {
 				<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="600" id="email-table">
 					<tr>
 						<td align="center" valign="top" width="100%" class="card bg-white">
-
 						<!-- THREE EQUAL-WIDTH COLLAPSING COLUMNS // -->
 								<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 									<tr>
 										<td align="center" valign="top" class="col collapse first" width="168">
-
 											<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 												<tr>
 													<td align="center" valign="top" width="100%" class="pb8">
@@ -389,10 +371,8 @@ class ThreeColumnModule extends HTMLElement {
 													</td>
 												</tr>
 											</table>
-
 										</td>
 										<td align="center" valign="top" class="col collapse" width="168">
-
 											<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 												<tr>
 													<td align="center" valign="top" width="100%" class="pb8">
@@ -405,10 +385,8 @@ class ThreeColumnModule extends HTMLElement {
 													</td>
 												</tr>
 											</table>
-
 										</td>
 										<td align="center" valign="top" class="col collapse last" width="168">
-
 											<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 												<tr>
 													<td align="center" valign="top" width="100%" class="pb8">
@@ -421,9 +399,7 @@ class ThreeColumnModule extends HTMLElement {
 													</td>
 												</tr>
 											</table>
-
 										</td>
-
 									</tr>
 								</table>
 								<!-- // THREE EQUAL-WIDTH COLLAPSING COLUMNS -->
