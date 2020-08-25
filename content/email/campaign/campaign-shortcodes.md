@@ -30,7 +30,9 @@ In order for Adobe Campaign to properly track any URLs in the tables, they have 
 <%@ include view='tos_combo_2019_10' %>
 ```
 <br>
+
 ### Site Brand Table
+
 #### Property Names
 ```
 Official Property Name (what it says in the masthead)
@@ -75,6 +77,7 @@ https://www.instagram.com/<%= recipient.siteBrand.connectInstagramUrl %>
 https://<%= recipient.siteBrand.customerServicePage %>
 ```
 <br>
+
 ### Subscriber Table
 ```
 <%= recipient.firstName %>

@@ -7,9 +7,10 @@ menu: atoms
 
 All CSS for default typography is found in the base templates. All text is given a default color of `#222222`. There are helper classes to add for `.bold`, `.serif`, `.white`, `.blue` and `.light-blue`.
 
-<div class="note">
+<div class="note" style="margin-bottom:32px;">
 Note: <code>.serif</code> should only be used for editorial content, such as story headlines, and <code>.light-blue</code> should only be used for text links on a dark gray background.
 </div>
+
 ### Our fonts
 
 <span style="font-family: 'McClatchy Sans Web', Tahoma, sans-serif;font-size: 24px;line-height: 32px;">McClatchy Sans Web</span><br>

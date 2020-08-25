@@ -14,7 +14,6 @@ This is the most-used base template, with a maximum table width of 600px. The de
 <div class="example">
 		<standard-template></standard-template>
 </div>
-
 <script type="text/javascript">
 class StandardTemplate extends HTMLElement {
 	get template() {
