@@ -1,13 +1,13 @@
 ---
-title: "campaign shortcodes"
+title: "Campaign Shortcodes"
 description: "shortcodes for Adobe Campaign that import dynamic content or personalization data"
-menu: campaign
+menu: "campaign"
 
 ---
-Campaign Shortcodes pull in content blocks, user information, property information, logos, and more.
+Campaign Shortcodes pull in content blocks, user information, property information, logos, and more. This is a list of items that are used frequently, but is not a comprehensive list.
 
 <div class="note">
-In order for Adobe Campaign to properly track any URLs in the tables, they have to be inserted in the table without <code>https://</code> at the beginning and the <code>https://</code> must be added in the HTML as shown below.
+In order for Adobe Campaign to properly track any URLs in its tables, the URLs have to be inserted in the tables without <code>https://</code> at the beginning and the <code>https://</code> must be added in the HTML as shown in the list below.
 </div>
 
 ### Content blocks
@@ -55,6 +55,9 @@ https://<%= recipient.siteBrand.eeditionVanity %>
 https://<%= recipient.siteBrand.subActivation %>
 https://<%= recipient.siteBrand.gamesPage %>
 https://<%= recipient.siteBrand.nieDonationURL %>
+
+You can also add a link to a specific section of a publication or vanity link by using the structure:
+https://www.<%= recipient.siteName %>/section
 ```
 
 #### App Links

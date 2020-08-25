@@ -25,7 +25,7 @@ How to zig-zag:
 
 ### HTML
 ```html
-<!-- MODULE // -->
+<!-- ZIG-ZAG MOLECULE // -->
 <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
 	<!-- NORMAL ROW // -->
 	<tr>
@@ -82,7 +82,7 @@ How to zig-zag:
 	</tr>
 	<!-- // NORMAL ROW -->
 </table>
-<!-- // MODULE -->
+<!-- // ZIG-ZAG MOLECULE -->
 
 ```
 
