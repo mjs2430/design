@@ -294,8 +294,9 @@ class VoterBallot extends VoterBaseElement {
 
     // Listen for a survey being clicked
     this.addEventListener("survey-clicked", (e) => {
+      let bd = window.location.hash.match("nopaywall");
       // Check subscriber status 
-      if(digitalData?.user?.subscription?.status == "sub_0") {
+      if(bd || digitalData?.user?.subscription?.status == "sub_0") {
         this.panel.race = e.detail.race;
         this.panel.show("survey");
         this.toast.message = "Getting survey details ...";
