@@ -1,24 +1,13 @@
 ---
 title: "spacing"
-description: "the EDS spacing system"
+description: "EDS spacing rules"
 menu: atoms
 
---- 
+---
 
-The `.card` class adds 24px spacing on all sides and is the primary class applied to the main `<td>` for every row. To put padding before, after or beside individual elements within a card or if a custom template requires special spacing, there are 3 sets of classes to use. Padding can be added to the just the top, bottom or sides and can be 8, 16 or 24 px. Note: Outlook Desktop Windows ignores padding applied to images, so if an image needs spacing, apply the padding class to the element that the image needs spacing from instead of the image itself.
+All CSS for default spacing is found in the base templates. The `.card` class adds 24px padding on all sides of an element and is usually applied to each outermost `<td>` in the `#email-table`. To put padding before, after or beside individual elements within a card or if a custom template requires different spacing, there are 3 sets of classes in the base template that can be used. Padding can be added to the just the top, bottom or sides and can be 8, 16 or 24 px. Otherwise, new classes or ids will be need to be created. The only rules are to use only padding and never margin and to use multiples of 8.
 
-#### CSS
-
-```css
-/*spacing*/
-.card {padding: 24px;}
-.pt24 {padding-top: 24px;}
-.ps24 {padding-right: 24px;padding-left: 24px;}
-.pb24 {padding-bottom: 24px;}
-.pt16 {padding-top: 16px;}
-.ps16 {padding-right: 16px;padding-left: 16px;}
-.pb16 {padding-bottom: 16px;}
-.pt8 {padding-top: 8px;}
-.ps8 {padding-right: 8px;padding-left: 8px;}
-.pb8 {padding-bottom: 8px;}
-```
+<div class="note">
+	Note: Outlook Desktop on Windows ignores padding applied to images, so if an image needs padding, apply the padding class to the image's parent container or the other element from which you are separating the image.<br><br>
+	Outlook also ignores padding on anchor tags (unless there is a border; then it will render top and bottom padding) and heading tags.
+</div>
