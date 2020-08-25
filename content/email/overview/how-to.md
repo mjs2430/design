@@ -1,7 +1,7 @@
 ---
 title: "How to Use the EDS"
 description: "how to use the EDS guide"
-menu: overview
+menu: "overview"
 
 ---
 

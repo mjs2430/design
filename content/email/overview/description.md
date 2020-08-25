@@ -1,7 +1,7 @@
 ---
 title: "Description"
 description: "EDS description"
-menu: overview
+menu: "overview"
 
 ---
 The EDS is based upon a framework structure with modules and atoms that are inserted within the framework. Imagine the framework as the framing and walls for a house and the atoms, layouts and modules as the paint, flooring, furniture and decor.

@@ -14,10 +14,10 @@
 			{{ end }}
 		</div>
 	</div>
-  
+
 	<div class="atoms">
 		<div class="label">
-			<h5>FRAMEWORKS</h5>
+			<h5>FRAMEWORK</h5>
 		</div>
 		{{ range .Site.Menus.frameworks }}
 		{{ $active := $cp.IsMenuCurrent "frameworks" . }}
@@ -80,6 +80,21 @@
 		</div>
 		{{ range .Site.Menus.campaign }}
 		{{ $active := $cp.IsMenuCurrent "campaign" . }}
+		<div class="package {{- if $active }} eds-active{{ end }}">
+			<h4 class="sans bold">
+				<a class="{{ .Page.Param "class" }}" href="{{ .Page.Permalink }}">{{ .Name }}</a>
+			</h4>
+			<p class="summary">{{ .Page.Description }}</p>
+		</div>
+		{{ end }}
+	</div>
+
+	<div class="atoms">
+		<div class="label">
+			<h5>TEMPLATES</h5>
+		</div>
+		{{ range .Site.Menus.templates }}
+		{{ $active := $cp.IsMenuCurrent "templates" . }}
 		<div class="package {{- if $active }} eds-active{{ end }}">
 			<h4 class="sans bold">
 				<a class="{{ .Page.Param "class" }}" href="{{ .Page.Permalink }}">{{ .Name }}</a>

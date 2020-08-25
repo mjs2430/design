@@ -1,7 +1,7 @@
 ---
 title: "text modifiers"
 description: "EDS text modifier classes"
-menu: atoms
+menu: "atoms"
 
 ---
 

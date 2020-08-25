@@ -1,7 +1,7 @@
 ---
 title: "footer text/fine print"
 description: "EDS footer text/fine print"
-menu: atoms
+menu: "atoms"
 
 ---
 

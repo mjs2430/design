@@ -1,7 +1,7 @@
 ---
 title: "Conditional Formatting"
 description: "how to use if-else formatting to display content"
-menu: campaign
+menu: "campaign"
 
 ---
 Adobe Campaign allows the use of conditional formatting to display different content in the same template. This formatting can be used anywhere in the body of an email and in the subject line field.

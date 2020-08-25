@@ -1,7 +1,7 @@
 ---
 title: "small text"
 description: "EDS small text"
-menu: atoms
+menu: "atoms"
 
 ---
 

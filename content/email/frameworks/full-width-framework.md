@@ -1,7 +1,7 @@
 ---
 title: "Full-Width Email Framework"
 description: "used for full-width backgrounds"
-menu: frameworks
+menu: "frameworks"
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Campaign Shortcodes"
 description: "shortcodes for Adobe Campaign that import dynamic content or personalization data"
-menu: campaign
+menu: "campaign"
 
 ---
 Campaign Shortcodes pull in content blocks, user information, property information, logos, and more. This is a list of items that are used frequently, but is not a comprehensive list.

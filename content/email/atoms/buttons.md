@@ -1,7 +1,7 @@
 ---
 title: "buttons"
 description: "EDS buttons`"
-menu: atoms
+menu: "atoms"
 
 ---
 

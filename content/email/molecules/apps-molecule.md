@@ -1,5 +1,5 @@
 ---
-title: "Apps Module"
+title: "App Molecule"
 description: "download our app and app badges"
 menu: "molecules"
 ---
@@ -9,7 +9,7 @@ This molecule is frequently used before the footer in marketing emails.
 ### Example
 
 <div class="example">
-	<apps-module></apps-module>
+	<app-molecule></apps-molecule>
 </div>
 
 ### HTML
@@ -45,7 +45,7 @@ This molecule is frequently used before the footer in marketing emails.
 ```
 
 <script>
-class AppsModule extends HTMLElement {
+class AppMolecule extends HTMLElement {
 	get template() {
 		let t = document.createElement("template");
 		t.innerHTML = `
@@ -117,5 +117,5 @@ class AppsModule extends HTMLElement {
 		this.shadowRoot.appendChild(clone);
 	}
 } // end Class
-customElements.define("apps-module", AppsModule);
+customElements.define("app-molecule", AppMolecule);
 </script>

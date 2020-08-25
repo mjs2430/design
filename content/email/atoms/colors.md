@@ -1,7 +1,7 @@
 ---
 title: "colors"
 description: "EDS color palette"
-menu: atoms
+menu: "atoms"
 
 ---
 

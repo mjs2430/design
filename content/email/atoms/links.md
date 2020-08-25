@@ -1,7 +1,7 @@
 ---
 title: "links"
 description: "EDS text links"
-menu: atoms
+menu: "atoms"
 
 ---
 

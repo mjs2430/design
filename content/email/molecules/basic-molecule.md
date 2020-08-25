@@ -1,15 +1,15 @@
 ---
-title: "Basic Module"
+title: "Basic Molecule"
 description: "large icon, subheading, body copy and button"
 menu: "molecules"
 ---
 
-This molecule is used frequently in the email Welcome Series.
+This molecule is used frequently in the email Welcome Series and serves as a good starting point for many other use cases.
 
 ### Example
 
 <div class="example">
-	<basic-module></basic-module>
+	<basic-molecule></basic-molecule>
 </div>
 
 ### HTML
@@ -48,7 +48,7 @@ This molecule is used frequently in the email Welcome Series.
 ```
 
 <script>
-class BasicModule extends HTMLElement {
+class BasicMolecule extends HTMLElement {
 	get template() {
 		let t = document.createElement("template");
 		t.innerHTML = `
@@ -126,5 +126,5 @@ class BasicModule extends HTMLElement {
 		this.shadowRoot.appendChild(clone);
 	}
 } // end Class
-customElements.define("basic-module", BasicModule);
+customElements.define("basic-molecule", BasicMolecule);
 </script>

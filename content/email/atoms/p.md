@@ -1,7 +1,7 @@
 ---
 title: "p"
 description: "EDS p"
-menu: atoms
+menu: "atoms"
 
 ---
 
