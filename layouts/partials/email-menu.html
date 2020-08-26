@@ -5,14 +5,15 @@
 		<div class="label">
 			<h5>OVERVIEW</h5>
 		</div>
-		<div class="package">
-			{{ range .Site.Menus.overview }}
-			{{ $active := $cp.IsMenuCurrent "overview" . }}
-			<h5 class="sans bold {{ .Page.Param "class" }}">
-				<a href="{{ .Page.Permalink }}" class="{{ if $active }}eds-active{{ end }}">{{ .Name }}</a>
-			</h5>
-			{{ end }}
+		{{ range .Site.Menus.overview }}
+		{{ $active := $cp.IsMenuCurrent "overview" . }}
+		<div class="package {{- if $active }} eds-active{{ end }}">
+			<h4 class="sans bold">
+				<a class="{{ .Page.Param "class" }}" href="{{ .Page.Permalink }}">{{ .Name }}</a>
+			</h4>
+			<p class="summary">{{ .Page.Description }}</p>
 		</div>
+		{{ end }}
 	</div>
 
 	<div class="atoms">

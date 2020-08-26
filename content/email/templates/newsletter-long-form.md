@@ -1,12 +1,13 @@
 ---
-title: "Newsletter | Digest"
-description: "email template for digest newsletters"
+title: "Newsletter | Long-Form"
+description: "email template for long-form newsletters"
 menu: "templates"
 
 ---
 
-This is the most common newsletter design.
-<div class="note">The HTML for this template can be used as-is if needed, but if an update needs to be made to the live digest newsletter template, the AM team will need to be involved.</div>
+This newsletter template can be seen in the "From the Newsroom" newsletter.
+
+<div class="note">The HTML for this template can be used as-is if needed, but if an update needs to be made to the live long-form newsletter template, the AM team will need to be involved.</div>
 
 <a class="button big promo" style="margin-bottom:24px;" href="#">Get HTML</a>
 

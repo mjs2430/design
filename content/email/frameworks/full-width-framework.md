@@ -15,7 +15,7 @@ This framework can also be modified if for any reason gutters are needed in the 
 	The <code>.collapse</code> class is required on every <code>table</code> with a fixed width, which occurs on every row in the base full-width framework. Any item that does not have a percentage-based width <em>and</em> is not referenced in the media queries will keep the email from scaling properly for mobile.
 </div>
 
-<a class="button big promo" style="margin-bottom:32px;" target="_blank" href="https://drive.google.com/file/d/10EsPhNR_64FQqmwPqBw2ny8kwvR3B5G9/view?usp=sharing" download >download HTML</a>
+<a class="button big promo" style="margin-bottom:32px;" target="_blank" href="https://drive.google.com/file/d/1FEkMKAnZzl_nlLGB-iEt1TuWAdpeH96p/view?usp=sharing">Get HTML</a>
 
 
 ### Sample email using full-width framework
