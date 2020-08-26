@@ -187,7 +187,7 @@ class VoterBallot extends VoterBaseElement {
       </slot>
 
       <div class="how-to-use">
-        <h4 class="expander" onclick="this.classList.toggle('open')">How to use the voter guide</h4>
+        <h4 class="expander" onclick="this.classList.toggle('open')">${this.enh ? `CÓMO USAR LA GUÍA ELECTORAL` : `HOW TO USE THE VOTER GUIDE`}</h4>
         <slot name="how-to">
           <p>Enter your home address in the search bar, then click VIEW MY BALLOT. </p>
           <p>Scroll down to the boxes below to see each ballot item. (Please note some races might be missing due to data availability but will be updated accordingly.)</p>
@@ -199,8 +199,7 @@ class VoterBallot extends VoterBaseElement {
       </div>
 
       <div class="empty-message">
-        <h4>We're sorry</h4>
-        <p>We couldn't find any races. Please check your address and try again.</p>
+        <p>${this.enh ? `Lo lamentamos. No pudimos encontrar ninguna carrera. Por favor, verifique si dirección y pruebe otra vez.`:`We're sorry. We couldn't find any races. Please check your address and try again.`}</p>
       </div>
     </div>
 
