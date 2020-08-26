@@ -67,6 +67,12 @@ class VoterBallot extends VoterBaseElement {
         width: auto;
       }
 
+      .button.signin {
+        background-color: transparent;
+        border: none;
+        color: var(--bbc, #222);
+      }
+
       .intro {
         max-width: var(--story-width);
         margin: 0 auto;
@@ -215,7 +221,10 @@ class VoterBallot extends VoterBaseElement {
       <img slot="image" src="https://media.mcclatchy.com/target/assets/cc-decline-modal-laptop.png">
       <h1>You must be a subscriber to view this content</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus eros in ornare vulputate. Integer congue orci sit amet dui euismod tempus. Phasellus ut orci imperdiet, elementum augue et, accumsan.</p>
-      <a class="button big" data-interaction="Voter Guide clicked subscribe button" href="/subscribe">Subscribe now</a>
+      <div class="buttons">
+        <a class="button" data-interaction="Voter Guide clicked subscribe button" href="/subscribe/">Subscribe now</a>
+        <a class="button signin" href="${this.signInLink}">Sign In</a>
+      </div>
     </dynamic-modal>
     `;
     return t;
@@ -441,6 +450,10 @@ class VoterBallot extends VoterBaseElement {
   // Different UI for ENH
   get enh() {
     return this.hasAttribute("enh");
+  }
+
+  get signInLink() {
+    return `https://account.${pageInfo["marketInfo.domain"]}.com/static/signin/`;
   }
 }
 
