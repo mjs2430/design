@@ -67,12 +67,6 @@ class VoterBallot extends VoterBaseElement {
         width: auto;
       }
 
-      .submit[disabled] {
-        background-color: #ddd;
-        color: rgba(0,0,0,0.2);
-        cursor: wait;
-      }
-
       .intro {
         max-width: var(--story-width);
         margin: 0 auto;
@@ -124,10 +118,6 @@ class VoterBallot extends VoterBaseElement {
 
       :host(.empty) .empty-message {
         display: block;
-      }
-
-      :host(.empty) .how-to-use {
-        display: none;
       }
 
       .inline-print-logo {
@@ -183,7 +173,10 @@ class VoterBallot extends VoterBaseElement {
     </style>
 
     <form>
-      <img class="logo" src="https://media.mcclatchy.com/hi/voter-guide/icons/vg-logo.svg" alt="2020 Voter Guide logo">
+      ${this.enh ? `
+      <img class="logo" src="https://media.mcclatchy.com/2020/voter_guide/qa/icons/vg-logo-enh.svg" alt="2020 Voter Guide logo">`:`
+      <img class="logo" src="https://media.mcclatchy.com/hi/voter-guide/icons/vg-logo.svg" alt="Logo de Guía Electoral">`}
+
       <input type="text" class="address" name="address" placeholder="e.g., 1452 E 53rd St, Chicago, IL">
       <input type="submit" class="submit button impact" value="View my ballot"></a>
     </form>
@@ -207,7 +200,7 @@ class VoterBallot extends VoterBaseElement {
 
       <div class="empty-message">
         <h4>We're sorry</h4>
-        <p>We don't see any races. It's possible you are searching in a state we aren't covering. If you think there is an issue, please <a href="/customer-service">contact us</a>.</p>
+        <p>We couldn't find any races. Please check your address and try again.</p>
       </div>
     </div>
 
@@ -242,8 +235,12 @@ class VoterBallot extends VoterBaseElement {
     this.form = this.shadowRoot.querySelector("form");
     this.form.addEventListener("submit", (e) => {
       e.preventDefault();
-      this.getBallot();
-      trackInteraction("Voter Guide address searched");
+      if(this.ready) {
+        this.getBallot();
+        trackInteraction("Voter Guide address searched");
+      } else {
+        this.toast.message = "Still getting candidates for your previous search ..."
+      }
     });
 
     // Listen for selections and save
@@ -328,9 +325,9 @@ class VoterBallot extends VoterBaseElement {
   async getBallot() {
     let order = 0;
     this.ready = false;
-    this.submitButton.disabled = true;
     this.toast.message = "Getting your personalized ballot ...";
     this.toast.show();
+    this.classList.remove("empty");
 
     // Clear out a previous ballot
     this.querySelectorAll("voter-ballot-race, voter-ballot-measure").forEach(r => { r.remove(); });
@@ -347,9 +344,6 @@ class VoterBallot extends VoterBaseElement {
       let pos = positions.data.voterguidePositions.data.positions.filter(p => {
         return p.state != "US" && p.normalized_position.id != 11;
       });
-
-      // Check for an empty ballot
-      this.classList.toggle("empty", pos.length == 0);
 
       // Loop through what we got
       pos.forEach((p, i) => {
@@ -372,9 +366,9 @@ class VoterBallot extends VoterBaseElement {
       });
 
       this.classList.toggle("partial", pos.length > 0 && local.length == 0)
-
     } catch(err) {
       console.error("Issue parsing positions", err);
+      this.classList.add("empty");
     }
 
     // Load the measures
@@ -401,7 +395,6 @@ class VoterBallot extends VoterBaseElement {
     this.shadowRoot.querySelector("#races").hidden = false;
     this.ready = true;
     this.toast.hide();
-    this.submitButton.disabled = false;
   }
 
   // Load previous selections if any
