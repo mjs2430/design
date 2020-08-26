@@ -22,6 +22,7 @@ class StandardFramework extends HTMLElement {
 		<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 			<style>
 				@import url( '/css/email/eds.css' )
 			</style>
@@ -49,7 +50,7 @@ class StandardFramework extends HTMLElement {
 									<td align="center" valign="top" width="100%" id="header">
 										<table cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
 											<tr>
-												<td align="center" valign="top" width="100%" style="background-color: #fff;border-top: 1px solid #ccc;border-bottom: 2px solid #ccc;padding: 12px 24px;font-family: 'McClatchy Sans Web', Tahoma, Arial, sans-serif;">
+												<td align="center" valign="top" width="100%" style="background-color: #fff;border-top: 1px solid #ccc;border-bottom: 2px solid #ccc;padding: 12px 24px;font-family: 'Noto Sans', Tahoma, Arial, sans-serif;">
 													<a href="#"><img src="https://media.mcclatchy.com/email-assets/global/logos-color/charlotte-color.png" alt="The Charlotte Observer logo" width="289" style="display: inline-block;border: 0;outline: none;text-decoration: none;" /></a>
 												</td>
 											</tr>
@@ -226,25 +227,25 @@ class StandardFramework extends HTMLElement {
 														</td>
 												</tr>
 												<tr>
-														<td align="left" valign="top" width="100%" style="padding: 8px 24px;font-family: 'McClatchy Sans Web', Tahoma, Arial, sans-serif;font-size: 11px;color: #525252;line-height: 16px;">
+														<td align="left" valign="top" width="100%" style="padding: 8px 24px;font-family: 'Noto Sans', Tahoma, Arial, sans-serif;font-size: 11px;color: #525252;line-height: 16px;">
 															Copyright &copy; 2020 Official Property Name.
 															All Rights Reserved.
 														</td>
 												</tr>
 												<tr>
-														<td align="left" valign="top" width="100%" style="padding: 8px 24px;font-family: 'McClatchy Sans Web', Tahoma, Arial, sans-serif;font-size: 11px;color: #525252;line-height: 16px;">
+														<td align="left" valign="top" width="100%" style="padding: 8px 24px;font-family: 'Noto Sans', Tahoma, Arial, sans-serif;font-size: 11px;color: #525252;line-height: 16px;">
 																Official Property Name<br>
 																123 Street Name<br>
 																City, ST 000000
 														</td>
 												</tr>
 												<tr>
-														<td align="left" valign="top" width="100%" style="padding: 8px 24px;font-family: 'McClatchy Sans Web', Tahoma, Arial, sans-serif;font-size: 11px;color: #525252;line-height: 16px;">
+														<td align="left" valign="top" width="100%" style="padding: 8px 24px;font-family: 'Noto Sans', Tahoma, Arial, sans-serif;font-size: 11px;color: #525252;line-height: 16px;">
 																We respect your right to privacy and protect your private information at all times.
 														</td>
 												</tr>
 											<tr>
-												<td align="left" valign="top" width="100%" style="padding: 8px 24px 24px;font-family: 'McClatchy Sans Web', Tahoma, Arial, sans-serif;font-size: 11px;color: #525252;line-height: 16px;">
+												<td align="left" valign="top" width="100%" style="padding: 8px 24px 24px;font-family: 'Noto Sans', Tahoma, Arial, sans-serif;font-size: 11px;color: #525252;line-height: 16px;">
 													<a href="#" style="font-size: 11px;color: #525252;">About Us</a>&nbsp;|&nbsp;
 													<a href="#" style="font-size: 11px;color: #525252;">Terms of Use</a>&nbsp;|&nbsp;
 													<a href="#" style="font-size: 11px;color: #525252;">Manage Newsletter Subscriptions</a>&nbsp;|&nbsp;

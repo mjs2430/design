@@ -12,13 +12,13 @@ This class is intended to be assigned to <code>td</code> (or on occasion <code>s
 </div>
 
 ### EXAMPLE
-<span style="font-family: 'McClatchy Sans Web', Tahoma, sans-serif;font-size:16px;font-weight:400;line-height:24px;text-transform:none;">Mistletoe dungeons expecto patronum floo powder duel. Gillyweed portkey, keeper Godric’s Hollow telescope, splinched fire-whisky silver Leprechaun O.W.L.</span>
+<span style="font-family: 'Noto Sans', Tahoma, sans-serif;font-size:16px;font-weight:400;line-height:24px;text-transform:none;">Mistletoe dungeons expecto patronum floo powder duel. Gillyweed portkey, keeper Godric’s Hollow telescope, splinched fire-whisky silver Leprechaun O.W.L.</span>
 <br><br>
 ### SPECIFICATIONS
 
 Property | Value
 --- | ---
-Font Stack | 'McClatchy Sans Web', Tahoma, sans-serif;
+Font Stack | 'Noto Sans', Tahoma, sans-serif;
 Font Size | 16px
 Line Height | 24px
 Font Weight | 400
