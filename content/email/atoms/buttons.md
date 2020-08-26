@@ -16,7 +16,7 @@ Note: Our buttons are coded so that the entire area of the button is clickable a
 
 ### HTML
 ```html
-<table role="presentation" border="0" cellpadding="0" cellspacing="0">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation">
 	<tr>
 		<td align="center" valign="top" class="button">
 			<a href="#" target="_blank" class="button-link">Button Text</a>
