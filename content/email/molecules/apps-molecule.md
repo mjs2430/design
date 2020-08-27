@@ -55,7 +55,6 @@ class AppMolecule extends HTMLElement {
 		 <style>
 			 @import url( '/css/email/eds.css' )
 		 </style>
-
 </head>
 <body>
 	<center>
@@ -76,7 +75,6 @@ class AppMolecule extends HTMLElement {
 </tr>
 <tr>
 	<td align="center" valign="top">
-
 		<!-- APP BADGES // -->
 		<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 			<tr>
@@ -89,7 +87,6 @@ class AppMolecule extends HTMLElement {
 			</tr>
 		</table>
 		<!-- // APP BADGES -->
-
 	</td>
 </tr>
 </table>
@@ -104,7 +101,6 @@ class AppMolecule extends HTMLElement {
 		<!-- // BODY TABLE -->
 	</center>
 </body>
-
 		`;
 		return t;   
 	}

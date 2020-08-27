@@ -29,7 +29,6 @@ class NewsletterDigest extends HTMLElement {
 			</style>
 		</head>
 		<body>
-
 		</body>
 		`;
 		return t;   
