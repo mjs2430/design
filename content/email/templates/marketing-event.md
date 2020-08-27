@@ -1,12 +1,11 @@
 ---
-title: "Newsletter | Digest"
-description: "email template for digest newsletters"
+title: "Marketing | Event"
+description: "email template for event promotion"
 menu: "templates"
 
 ---
 
-This is the most common newsletter design.
-<div class="note">The HTML for this template can be used as-is if needed, but if an update needs to be made to the live digest newsletter template, the AM team will need to be involved.</div>
+This email template can be used as-is or as a starting point for an event promotion email.
 
 <a class="button big promo" style="margin-bottom:24px;" href="#">Get HTML</a>
 

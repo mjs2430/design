@@ -1,12 +1,14 @@
 ---
-title: "Newsletter | Digest"
-description: "email template for digest newsletters"
+title: "Newsletter | Dynamic"
+description: "email template for dynamic newsletters"
 menu: "templates"
 
 ---
 
-This is the most common newsletter design.
-<div class="note">The HTML for this template can be used as-is if needed, but if an update needs to be made to the live digest newsletter template, the AM team will need to be involved.</div>
+This newsletter template is made up of different molecules and organisms that are triggered based upon the content.
+<div class="note">The HTML for molecules and organisms in this template can be used as-is if needed, but if an update needs to be made to the live dynamic newsletter template, the AM team will need to be involved.</div>
+
+The example shows all of the possible molecules and organisms in one template.
 
 <a class="button big promo" style="margin-bottom:24px;" href="#">Get HTML</a>
 
