@@ -31,6 +31,13 @@ In order for Adobe Campaign to properly track any URLs in its tables, the URLs h
 ```
 <br>
 
+### Importing Content From a CSV
+```
+<%= targetData.imageURL %>
+(Replace imageURL with whatever the name of the column is in the spreadsheet)
+```
+<br>
+
 ### Site Brand Table
 
 #### Property Names

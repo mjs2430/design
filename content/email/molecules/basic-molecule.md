@@ -58,7 +58,6 @@ class BasicMolecule extends HTMLElement {
 		 <style>
 			 @import url( '/css/email/eds.css' )
 		 </style>
-
 </head>
 <body>
 	<center>
@@ -74,7 +73,6 @@ class BasicMolecule extends HTMLElement {
 								<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="600" id="email-table">
 									<tr>
 										<td align="center" valign="top" width="100%" class="card bg-white">
-
 											<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 												<tr>
 													<td align="center" valign="top" class="pb16">
@@ -113,7 +111,6 @@ class BasicMolecule extends HTMLElement {
 		<!-- // BODY TABLE -->
 	</center>
 </body>
-
 		`;
 		return t;   
 	}
