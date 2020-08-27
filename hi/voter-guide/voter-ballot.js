@@ -67,10 +67,10 @@ class VoterBallot extends VoterBaseElement {
         width: auto;
       }
 
-      .submit[disabled] {
-        background-color: #ddd;
-        color: rgba(0,0,0,0.2);
-        cursor: wait;
+      .button.signin {
+        background-color: transparent;
+        border: none;
+        color: var(--bbc, #222);
       }
 
       .intro {
@@ -126,10 +126,6 @@ class VoterBallot extends VoterBaseElement {
         display: block;
       }
 
-      :host(.empty) .how-to-use {
-        display: none;
-      }
-
       .inline-print-logo {
         display: inline-block;
         vertical-align: middle;
@@ -183,7 +179,10 @@ class VoterBallot extends VoterBaseElement {
     </style>
 
     <form>
-      <img class="logo" src="https://media.mcclatchy.com/hi/voter-guide/icons/vg-logo.svg" alt="2020 Voter Guide logo">
+      ${this.enh ? `
+      <img class="logo" src="https://media.mcclatchy.com/2020/voter_guide/qa/icons/vg-logo-enh.svg" alt="2020 Voter Guide logo">`:`
+      <img class="logo" src="https://media.mcclatchy.com/hi/voter-guide/icons/vg-logo.svg" alt="Logo de Guía Electoral">`}
+
       <input type="text" class="address" name="address" placeholder="e.g., 1452 E 53rd St, Chicago, IL">
       <input type="submit" class="submit button impact" value="View my ballot"></a>
     </form>
@@ -194,18 +193,19 @@ class VoterBallot extends VoterBaseElement {
       </slot>
 
       <div class="how-to-use">
-        <h4 class="expander" onclick="this.classList.toggle('open')">How to use the voter guide</h4>
-        <p>Enter your home address in the search bar, then click VIEW MY BALLOT. </p>
-        <p>Scroll down to the boxes below to see each ballot item. (Please note some races might be missing due to data availability but will be updated accordingly.)</p>
-        <p>Click “See more candidate information” at the bottom of each box to learn more. Subscribers can click the COMPARE THE CANDIDATES blue box to view candidate responses to our questions. </p>
-        <p>Click the box next to each candidate you plan to vote for. When you’re finished, click the blue circle icon in the bottom right of the screen to print. Save the printout to refer to when it’s time to vote!</p>
-        <p>You can also bookmark this page if you would prefer not to print. We will load your previous choices when you return on the same device. We will not store your home address or choices on our servers or transmit them in any way; they are confined to your device.</p>
+        <h4 class="expander" onclick="this.classList.toggle('open')">${this.enh ? `CÓMO USAR LA GUÍA ELECTORAL` : `HOW TO USE THE VOTER GUIDE`}</h4>
+        <slot name="how-to">
+          <p>Enter your home address in the search bar, then click VIEW MY BALLOT. </p>
+          <p>Scroll down to the boxes below to see each ballot item. (Please note some races might be missing due to data availability but will be updated accordingly.)</p>
+          <p>Click “See more candidate information” at the bottom of each box to learn more. Subscribers can click the COMPARE THE CANDIDATES blue box to view candidate responses to our questions. </p>
+          <p>Click the box next to each candidate you plan to vote for. When you’re finished, click the blue circle icon in the bottom right of the screen to print. Save the printout to refer to when it’s time to vote!</p>
+          <p>You can also bookmark this page if you would prefer not to print. We will load your previous choices when you return on the same device. We will not store your home address or choices on our servers or transmit them in any way; they are confined to your device.</p>
+        </slot>
         <slot name="contact"></slot>
       </div>
 
       <div class="empty-message">
-        <h4>We're sorry</h4>
-        <p>We don't see any races. It's possible you are searching in a state we aren't covering. If you think there is an issue, please <a href="/customer-service">contact us</a>.</p>
+        <p>${this.enh ? `Lo lamentamos. No pudimos encontrar ninguna carrera. Por favor, verifique si dirección y pruebe otra vez.`:`We're sorry. We couldn't find any races. Please check your address and try again.`}</p>
       </div>
     </div>
 
@@ -221,7 +221,10 @@ class VoterBallot extends VoterBaseElement {
       <img slot="image" src="https://media.mcclatchy.com/target/assets/cc-decline-modal-laptop.png">
       <h1>You must be a subscriber to view this content</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus eros in ornare vulputate. Integer congue orci sit amet dui euismod tempus. Phasellus ut orci imperdiet, elementum augue et, accumsan.</p>
-      <a class="button big" data-interaction="Voter Guide clicked subscribe button" href="/subscribe">Subscribe now</a>
+      <div class="buttons">
+        <a class="button" data-interaction="Voter Guide clicked subscribe button" href="/subscribe/">Subscribe now</a>
+        <a class="button signin" href="${this.signInLink}">Sign In</a>
+      </div>
     </dynamic-modal>
     `;
     return t;
@@ -240,8 +243,12 @@ class VoterBallot extends VoterBaseElement {
     this.form = this.shadowRoot.querySelector("form");
     this.form.addEventListener("submit", (e) => {
       e.preventDefault();
-      this.getBallot();
-      trackInteraction("Voter Guide address searched");
+      if(this.ready) {
+        this.getBallot();
+        trackInteraction("Voter Guide address searched");
+      } else {
+        this.toast.message = "Still getting candidates for your previous search ..."
+      }
     });
 
     // Listen for selections and save
@@ -294,8 +301,9 @@ class VoterBallot extends VoterBaseElement {
 
     // Listen for a survey being clicked
     this.addEventListener("survey-clicked", (e) => {
+      let bd = window.location.hash.match("nopaywall");
       // Check subscriber status 
-      if(digitalData?.user?.subscription?.status == "sub_0") {
+      if(bd || digitalData?.user?.subscription?.status == "sub_0") {
         this.panel.race = e.detail.race;
         this.panel.show("survey");
         this.toast.message = "Getting survey details ...";
@@ -325,9 +333,9 @@ class VoterBallot extends VoterBaseElement {
   async getBallot() {
     let order = 0;
     this.ready = false;
-    this.submitButton.disabled = true;
     this.toast.message = "Getting your personalized ballot ...";
     this.toast.show();
+    this.classList.remove("empty");
 
     // Clear out a previous ballot
     this.querySelectorAll("voter-ballot-race, voter-ballot-measure").forEach(r => { r.remove(); });
@@ -345,9 +353,6 @@ class VoterBallot extends VoterBaseElement {
         return p.state != "US" && p.normalized_position.id != 11;
       });
 
-      // Check for an empty ballot
-      this.classList.toggle("empty", pos.length == 0);
-
       // Loop through what we got
       pos.forEach((p, i) => {
         const br = document.createElement("voter-ballot-race");
@@ -355,6 +360,11 @@ class VoterBallot extends VoterBaseElement {
         br.setAttribute("slot", "races");
         order += 1;
         br.style.order = order;
+
+        if(this.enh) {
+          br.classList.add("enh");
+        }
+
         this.appendChild(br);
       });
 
@@ -364,9 +374,9 @@ class VoterBallot extends VoterBaseElement {
       });
 
       this.classList.toggle("partial", pos.length > 0 && local.length == 0)
-
     } catch(err) {
       console.error("Issue parsing positions", err);
+      this.classList.add("empty");
     }
 
     // Load the measures
@@ -393,7 +403,6 @@ class VoterBallot extends VoterBaseElement {
     this.shadowRoot.querySelector("#races").hidden = false;
     this.ready = true;
     this.toast.hide();
-    this.submitButton.disabled = false;
   }
 
   // Load previous selections if any
@@ -436,6 +445,15 @@ class VoterBallot extends VoterBaseElement {
 
   set address(val) {
     this.form.address.value = val;
+  }
+
+  // Different UI for ENH
+  get enh() {
+    return this.hasAttribute("enh");
+  }
+
+  get signInLink() {
+    return `https://account.${pageInfo["marketInfo.domain"]}.com/static/signin/`;
   }
 }
 
