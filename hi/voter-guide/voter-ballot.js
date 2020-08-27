@@ -22,15 +22,17 @@ class VoterBallot extends VoterBaseElement {
     <style>
       :host {
         display: block;
-        padding: 15px;
         margin: 30px auto;
         max-width: 1140px;
+        box-sizing: content-box;
       }
 
       form {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0 15px;
+        margin: 30px 0;
       }
 
       form > * {
@@ -43,7 +45,7 @@ class VoterBallot extends VoterBaseElement {
 
       .logo {
         display: block;
-        width: 250px;
+        width: 350px;
       }
 
       .address {
@@ -62,7 +64,36 @@ class VoterBallot extends VoterBaseElement {
       }
 
       .button.submit {
-        width: 250px;
+        width: auto;
+      }
+
+      .button.signin {
+        background-color: transparent;
+        border: none;
+        color: var(--bbc, #222);
+      }
+
+      .intro {
+        max-width: var(--story-width);
+        margin: 0 auto;
+        padding: 0 15px;
+        --hf: var(--sans);
+        --ht: uppercase;
+        --hw: bold;
+      }
+
+      @media(min-width: 630px) {
+        :host {
+          padding: 0 15px;
+        }
+
+        .logo {
+          width: 400px;
+        }
+
+        .intro {
+          padding: 0;
+        }
       }
 
       slot[name="description"] {
@@ -79,7 +110,6 @@ class VoterBallot extends VoterBaseElement {
       }
 
       .grid {
-        margin-top: 30px;
         grid-auto-flow: dense;
       }
 
@@ -94,10 +124,6 @@ class VoterBallot extends VoterBaseElement {
 
       :host(.empty) .empty-message {
         display: block;
-      }
-
-      :host(.empty) .how-to-use {
-        display: none;
       }
 
       .inline-print-logo {
@@ -121,7 +147,7 @@ class VoterBallot extends VoterBaseElement {
       }
 
       @media print {
-        .story-body, .partial-message {
+        .intro, .partial-message {
           display: none !important;
         }
 
@@ -153,26 +179,33 @@ class VoterBallot extends VoterBaseElement {
     </style>
 
     <form>
-      <img class="logo" src="https://media.mcclatchy.com/hi/voter-guide/icons/vg-logo.svg" alt="2020 Voter Guide logo">
+      ${this.enh ? `
+      <img class="logo" src="https://media.mcclatchy.com/2020/voter_guide/qa/icons/vg-logo-enh.svg" alt="2020 Voter Guide logo">`:`
+      <img class="logo" src="https://media.mcclatchy.com/hi/voter-guide/icons/vg-logo.svg" alt="Logo de Guía Electoral">`}
+
       <input type="text" class="address" name="address" placeholder="e.g., 1452 E 53rd St, Chicago, IL">
       <input type="submit" class="submit button impact" value="View my ballot"></a>
     </form>
 
-    <div class="story-body">
+    <div class="intro">
       <slot name="description">
-        <p>Welcome to our Voter Guide. Please enter your address above to see races that will be on your November ballot and to read in-depth surveys with candidates. Addresses are used to personalize this content; no information you provide is saved or will be used for any other purpose. Some down-ballot races may be missing because of limitations in the available data.</p>
+        <p>Make informed choices in upcoming local elections with our Voter Guide. This interactive tool displays the races and candidates that will appear on your ballot, helping you select (and keep track of) your picks when it’s time to vote. Subscribers can access candidates’ answers to questions about issues important to your community.</p>
       </slot>
 
       <div class="how-to-use">
-        <h4 class="expander" onclick="this.classList.toggle('open')">How to use this guide</h4>
-        <p>Each race and measure on your ballot will be represented in a box below. To see additional information about the candidates click the "See more candidate information" near the bottom. Some races will have an additional button on the bottom. Click that to see candidate responses to our questions.</p>
-        <p>Once you are ready, click a candidate to make your choice. When you have finished making your selections, click the <svg class="inline-print-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M448 192V77.25c0-8.49-3.37-16.62-9.37-22.63L393.37 9.37c-6-6-14.14-9.37-22.63-9.37H96C78.33 0 64 14.33 64 32v160c-35.35 0-64 28.65-64 64v112c0 8.84 7.16 16 16 16h48v96c0 17.67 14.33 32 32 32h320c17.67 0 32-14.33 32-32v-96h48c8.84 0 16-7.16 16-16V256c0-35.35-28.65-64-64-64zm-64 256H128v-96h256v96zm0-224H128V64h192v48c0 8.84 7.16 16 16 16h48v96zm48 72c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24z"/></svg> icon at the bottom right of the screen to print your choices.</p>
-        <p>If you do not wish to print your ballot, you can also bookmark this page. When you return on the same phone, tablet, or computer, we will load your previous choices. We are not storing your choices on our servers or transmitting them in any way. They are confined to your device.</p>
+        <h4 class="expander" onclick="this.classList.toggle('open')">${this.enh ? `CÓMO USAR LA GUÍA ELECTORAL` : `HOW TO USE THE VOTER GUIDE`}</h4>
+        <slot name="how-to">
+          <p>Enter your home address in the search bar, then click VIEW MY BALLOT. </p>
+          <p>Scroll down to the boxes below to see each ballot item. (Please note some races might be missing due to data availability but will be updated accordingly.)</p>
+          <p>Click “See more candidate information” at the bottom of each box to learn more. Subscribers can click the COMPARE THE CANDIDATES blue box to view candidate responses to our questions. </p>
+          <p>Click the box next to each candidate you plan to vote for. When you’re finished, click the blue circle icon in the bottom right of the screen to print. Save the printout to refer to when it’s time to vote!</p>
+          <p>You can also bookmark this page if you would prefer not to print. We will load your previous choices when you return on the same device. We will not store your home address or choices on our servers or transmit them in any way; they are confined to your device.</p>
+        </slot>
+        <slot name="contact"></slot>
       </div>
 
       <div class="empty-message">
-        <h4>We're sorry</h4>
-        <p>We don't see any races. It's possible you are searching in a state we aren't covering. If you think there is an issue, please <a href="/customer-service">contact us</a>.</p>
+        <p>${this.enh ? `Lo lamentamos. No pudimos encontrar ninguna carrera. Por favor, verifique si dirección y pruebe otra vez.`:`We're sorry. We couldn't find any races. Please check your address and try again.`}</p>
       </div>
     </div>
 
@@ -188,7 +221,10 @@ class VoterBallot extends VoterBaseElement {
       <img slot="image" src="https://media.mcclatchy.com/target/assets/cc-decline-modal-laptop.png">
       <h1>You must be a subscriber to view this content</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus eros in ornare vulputate. Integer congue orci sit amet dui euismod tempus. Phasellus ut orci imperdiet, elementum augue et, accumsan.</p>
-      <a class="button big" data-interaction="Voter Guide clicked subscribe button" href="/subscribe">Subscribe now</a>
+      <div class="buttons">
+        <a class="button" data-interaction="Voter Guide clicked subscribe button" href="/subscribe/">Subscribe now</a>
+        <a class="button signin" href="${this.signInLink}">Sign In</a>
+      </div>
     </dynamic-modal>
     `;
     return t;
@@ -207,8 +243,12 @@ class VoterBallot extends VoterBaseElement {
     this.form = this.shadowRoot.querySelector("form");
     this.form.addEventListener("submit", (e) => {
       e.preventDefault();
-      this.getBallot();
-      trackInteraction("Voter Guide address searched");
+      if(this.ready) {
+        this.getBallot();
+        trackInteraction("Voter Guide address searched");
+      } else {
+        this.toast.message = "Still getting candidates for your previous search ..."
+      }
     });
 
     // Listen for selections and save
@@ -229,8 +269,12 @@ class VoterBallot extends VoterBaseElement {
       this.storage = storage;
     });
 
-    // Panel events
+
+    // Element shortcuts
+    this.toast = this.shadowRoot.querySelector("mc-toast");
+    this.paywall = this.shadowRoot.querySelector("dynamic-modal");
     this.panel = this.shadowRoot.querySelector("voter-panel");
+    this.submitButton = this.shadowRoot.querySelector(".submit");
 
     // Listen for more info clicks
     this.addEventListener("details-clicked", (e) => {
@@ -257,51 +301,31 @@ class VoterBallot extends VoterBaseElement {
 
     // Listen for a survey being clicked
     this.addEventListener("survey-clicked", (e) => {
+      let bd = window.location.hash.match("nopaywall");
       // Check subscriber status 
-      // if(digitalData?.user?.subscription?.status == "sub_0") {
-      //   this.panel.race = e.detail.race;
-      //   this.panel.show("survey");
-      //   this.toast.message = "Getting survey details ...";
-      //   this.toast.show();
-      //   trackInteraction("Voter Guide subscriber clicked survey button");
-      // } else {
-      //   this.paywall.show();
-      //   trackInteraction("Voter Guide non-subscriber clicked survey button");
-      // }
-
-      // Short circuit for testing
-      this.panel.race = e.detail.race;
-      this.panel.show("survey");
-      this.toast.message = "Getting survey details ...";
-      this.toast.show();
-      trackInteraction("Voter Guide subscriber clicked survey button");
+      if(bd || digitalData?.user?.subscription?.status == "sub_0") {
+        this.panel.race = e.detail.race;
+        this.panel.show("survey");
+        this.toast.message = "Getting survey details ...";
+        this.toast.show();
+        trackInteraction("Voter Guide subscriber clicked survey button");
+      } else {
+        this.paywall.show();
+        trackInteraction("Voter Guide non-subscriber clicked survey button");
+      }
     });
 
     this.addEventListener("survey-loaded", (e) => {
       this.toast.hide();
     });
-
-    // Shortcut to the toast
-    this.toast = this.shadowRoot.querySelector("mc-toast");
-
-    // Shortcut to the paywall
-    this.paywall = this.shadowRoot.querySelector("dynamic-modal");
   }
 
   // Runs when added to the DOM
   async connectedCallback() {
-    // Load previous selections if any
     if(this.storage && this.ready) {
       this.address = this.storage.address;
-
       await this.getBallot();
-
-      this.storage.selections.forEach((s) => {
-        let ele = this.querySelector(`[data-id="${s.id}"]`);
-        if(ele) ele.selected = s.selection;
-      });
-
-      this.showSaveButton();
+      this.loadSelections();
     }
   }
 
@@ -311,18 +335,16 @@ class VoterBallot extends VoterBaseElement {
     this.ready = false;
     this.toast.message = "Getting your personalized ballot ...";
     this.toast.show();
+    this.classList.remove("empty");
 
     // Clear out a previous ballot
-    this.querySelectorAll("voter-ballot-race, voter-ballot-measure").forEach(r => {
-      r.remove();
-    });
+    this.querySelectorAll("voter-ballot-race, voter-ballot-measure").forEach(r => { r.remove(); });
     this.classList.remove("partial");
 
     // API functions found in voter-element
     const [positions, measures] = await Promise.all([
       this.fetchPositions(this.address),
-      fetch("https://media.mcclatchy.com/2020/voter_guide/qa/data/measures.json").then(response => response.json())
-      // this.fetchMeasures(this.address)
+      this.fetchMeasures(this.address)
     ]);
 
     // Load the positions
@@ -331,16 +353,18 @@ class VoterBallot extends VoterBaseElement {
         return p.state != "US" && p.normalized_position.id != 11;
       });
 
-      // Check for an empty ballot
-      this.classList.toggle("empty", pos.length == 0);
-
       // Loop through what we got
-      pos.forEach((pos, i) => {
+      pos.forEach((p, i) => {
         const br = document.createElement("voter-ballot-race");
-        br.race = pos;
+        br.race = p;
         br.setAttribute("slot", "races");
         order += 1;
         br.style.order = order;
+
+        if(this.enh) {
+          br.classList.add("enh");
+        }
+
         this.appendChild(br);
       });
 
@@ -350,17 +374,17 @@ class VoterBallot extends VoterBaseElement {
       });
 
       this.classList.toggle("partial", pos.length > 0 && local.length == 0)
-
     } catch(err) {
       console.error("Issue parsing positions", err);
+      this.classList.add("empty");
     }
 
     // Load the measures
     try {
-      let pos = measures.data.voterguideMeasures.data.positions;
-      pos.forEach((pos, i) => {
+      let mes = measures.data.voterguideMeasures.data.positions;
+      mes.forEach((m, i) => {
         const bm = document.createElement("voter-ballot-measure");
-        bm.measure = pos;
+        bm.measure = m;
         bm.setAttribute("slot", "races");
         order += 1;
         bm.style.order = order;
@@ -370,10 +394,25 @@ class VoterBallot extends VoterBaseElement {
       console.error("Issues parsing ballot measures", err);
     }
 
+    // Load any previous selections
+    if(this.storage) {
+      this.loadSelections();
+    }
+
     // Show it and mark ready for more pulls
     this.shadowRoot.querySelector("#races").hidden = false;
     this.ready = true;
     this.toast.hide();
+  }
+
+  // Load previous selections if any
+  loadSelections() {
+    this.storage.selections.forEach((s) => {
+      let ele = this.querySelector(`[data-id="${s.id}"]`);
+      if(ele) ele.selected = s.selection;
+    });
+
+    this.showSaveButton();
   }
 
   showSaveButton(v = true) {
@@ -406,6 +445,15 @@ class VoterBallot extends VoterBaseElement {
 
   set address(val) {
     this.form.address.value = val;
+  }
+
+  // Different UI for ENH
+  get enh() {
+    return this.hasAttribute("enh");
+  }
+
+  get signInLink() {
+    return `https://account.${pageInfo["marketInfo.domain"]}.com/static/signin/`;
   }
 }
 

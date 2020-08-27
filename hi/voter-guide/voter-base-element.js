@@ -6,8 +6,7 @@
 class VoterBaseElement extends HTMLElement {
   constructor() {
     super();
-    this.endpoint = "https://qa1-voter-guide.misitemgr.com/api/";
-    // this.endpoint = "https://elections-api.mcclatchy.com/api/";
+    this.endpoint = "https://elections-api.mcclatchy.com/api/";
     this.electionDate = "2020-11-03";
   }
 

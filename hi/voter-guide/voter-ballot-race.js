@@ -117,6 +117,11 @@ class VoterBallotRace extends VoterBaseElement {
         transform: rotate(45deg);
       }
 
+      :host(.enh) .ballot-details,
+      :host(.enh) .survey-button {
+        display: none;
+      }
+
       @media print {
         :host {
           display: block;
@@ -208,7 +213,7 @@ class VoterBallotRace extends VoterBaseElement {
     <a class="summary ballot-details">See more candidate information</a>
 
     ${this.race.candidate_survey ? `
-    <a class="survey button promo" href="#">Candidates on the issues</a>
+    <a class="survey button promo" href="#">Compare the candidates</a>
     ` : ""}
     `;
     return t;

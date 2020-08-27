@@ -94,7 +94,7 @@ class VoterSurvey extends VoterBaseElement {
     </style>
 
     <div class="package intro">
-      <h2>Candidates on the issues</h2>
+      <h2>Compare the candidates</h2>
       <slot></slot>
     </div>
 

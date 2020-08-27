@@ -7,6 +7,7 @@ import VoterBaseElement from "./voter-base-element.js";
 import "./voter-survey.js";
 import "./voter-race-details.js";
 import "./voter-measure-details.js";
+import ScrollLock from "./scroll-lock.js";
 
 class VoterPanel extends VoterBaseElement {
 
@@ -111,11 +112,6 @@ class VoterPanel extends VoterBaseElement {
     }, false);
   }
 
-  hide() {
-    this.classList.remove("showing");
-    document.body.classList.remove("freeze");
-  }
-
   show(v = "survey") {
     while(this.card.firstChild) {
       this.card.lastChild.remove();
@@ -145,8 +141,14 @@ class VoterPanel extends VoterBaseElement {
 
     this.classList.add("showing");
     this.card.scrollTop = 0;
-    document.body.classList.add("freeze");
+    ScrollLock.enable();
   }
+
+  hide() {
+    this.classList.remove("showing");
+    ScrollLock.disable()
+  }
+
 
   // Swipe handler
   handleGesture() {

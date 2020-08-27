@@ -36,7 +36,7 @@ class PaywallMessage extends HTMLElement {
       let story = document.querySelector(".story-body");
 
       // Hide if paywall not dropped
-      if(pageInfo["access.tags"].match("matopend") == false) {
+      if(!pageInfo["access.tags"].match("matopend")) {
         this.hidden = true;
       }
 
