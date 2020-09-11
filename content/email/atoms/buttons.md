@@ -1,8 +1,7 @@
 ---
 title: "buttons"
-description: "EDS buttons`"
+description: "EDS buttons"
 menu: "atoms"
-
 ---
 
 All CSS for buttons is found in the framework. Buttons are made entirely of HTML and CSS and should never be images. The default button is dark gray with white text and a dark gray border.
@@ -12,10 +11,12 @@ Note: Our buttons are coded so that the entire area of the button is clickable a
 </div>
 
 ### Examples
-<eds-button></eds-button>
+<div>
+    <eds-button></eds-button>
+</div>
 
 ### HTML
-```html
+```html 
 <table border="0" cellpadding="0" cellspacing="0" role="presentation">
 	<tr>
 		<td align="center" valign="top" class="button">
@@ -37,34 +38,34 @@ class EdsButton extends HTMLElement {
 	get template() {
 		let t = document.createElement("template");
 		t.innerHTML = `
-		<head>
-			<style>
-				@import url( '/css/email/eds.css' )
-			</style>
-		</head>
-		<body>
-		<div style="padding: 12px;background-color: #f4f4f4;">
-			<table role="presentation" border="0" cellpadding="0" cellspacing="0">
-				<tr>
-					<td align="center" valign="top" class="button">
-						<a href="#" class="button-link">Button Text</a>
-					</td>
-					<td class="ps8"></td>
-					<td align="center" valign="top" class="button bg-blue">
-						<a href="#" class="button-link border-blue white">Button Text</a>
-					</td>
-					<td class="ps8"></td>
-					<td align="center" valign="top" class="button bg-white">
-						<a href="#" class="button-link border-white gray">Button Text</a>
-					</td>
-					<td class="ps8"></td>
-					<td align="center" valign="top" class="button bg-white">
-						<a href="#" class="button-link border-white blue">Button Text</a>
-					</td>
-				</tr>
-			</table>
-			</div>
-		</body>
+<head>
+    <style>
+        @import url( '/css/email/eds.css' )
+    </style>
+</head>
+<body>
+<div style="padding: 12px;background-color: #f4f4f4;">
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td align="center" valign="top" class="button">
+                <a href="#" class="button-link">Button Text</a>
+            </td>
+            <td class="ps8"></td>
+            <td align="center" valign="top" class="button bg-blue">
+                <a href="#" class="button-link border-blue white">Button Text</a>
+            </td>
+            <td class="ps8"></td>
+            <td align="center" valign="top" class="button bg-white">
+                <a href="#" class="button-link border-white gray">Button Text</a>
+            </td>
+            <td class="ps8"></td>
+            <td align="center" valign="top" class="button bg-white">
+                <a href="#" class="button-link border-white blue">Button Text</a>
+            </td>
+        </tr>
+    </table>
+    </div>
+</body>
 		`;
 		return t;
 	}
